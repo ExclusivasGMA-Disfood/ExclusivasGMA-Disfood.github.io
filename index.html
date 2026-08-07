@@ -1243,6 +1243,72 @@ body.visual-view .sub-divider{grid-column:1/-1}
 @media(prefers-reduced-motion:reduce){.country-chip{transition:none}}
 </style>
 
+
+<style id="gma-v32-ai">
+/* ===== GMA V32 · Asistente comercial cerrado al catálogo ===== */
+.ai-sheet{max-height:min(94dvh,860px)}
+.ai-content{overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:8px 18px 22px}
+.ai-intro{display:flex;gap:10px;align-items:flex-start;margin:4px 0 14px;padding:12px 13px;border:1px solid rgba(11,94,87,.13);background:var(--teal-tint);border-radius:15px}
+.ai-intro-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:11px;background:var(--teal);color:#fff;flex:none;font-size:17px}
+.ai-intro b{display:block;font-size:13px;margin-bottom:3px;color:var(--teal-dark)}
+.ai-intro p{margin:0;font-size:11.5px;line-height:1.45;color:var(--ink-soft)}
+.ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.ai-field{margin-bottom:10px}.ai-field label{display:block;font-size:10.5px;font-weight:750;color:var(--ink-soft);margin:0 0 6px;text-transform:uppercase;letter-spacing:.035em}
+.ai-select,.ai-textarea{width:100%;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:13px;font:600 13px/1.35 inherit;padding:11px 12px;outline:none}
+.ai-select{min-height:46px}.ai-textarea{resize:vertical;min-height:72px;max-height:150px;font-weight:500}
+.ai-select:focus,.ai-textarea:focus{border-color:rgba(11,94,87,.38);box-shadow:0 0 0 4px rgba(11,94,87,.08)}
+.ai-run{width:100%;min-height:48px;border:0;border-radius:15px;background:var(--teal);color:#fff;font-weight:760;font-size:14px;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;box-shadow:0 6px 18px rgba(11,94,87,.17)}
+.ai-run:disabled{opacity:.58;cursor:default}.ai-run .spinner{width:15px;height:15px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:aiSpin .75s linear infinite;display:none}.ai-run.loading .spinner{display:block}@keyframes aiSpin{to{transform:rotate(360deg)}}
+.ai-status{font-size:10.5px;line-height:1.4;color:var(--ink-soft);text-align:center;margin:8px 0 0}.ai-status strong{color:var(--teal-dark)}
+.ai-results{margin-top:16px}.ai-results:empty{display:none}
+.ai-summary{margin-bottom:10px;padding:10px 12px;border-radius:13px;background:#fff;border:1px solid var(--line);font-size:12px;line-height:1.5;color:var(--ink-soft)}
+.ai-summary b{color:var(--ink)}
+.ai-result-card{display:grid;grid-template-columns:50px minmax(0,1fr) auto;gap:10px;align-items:start;padding:11px 0;border-top:1px solid var(--line)}
+.ai-result-card:first-of-type{border-top:0}.ai-result-photo{width:50px;height:50px;border-radius:10px;overflow:hidden;background:#fff;border:1px solid var(--line);display:grid;place-items:center;color:#aaa;font-size:11px}
+.ai-result-photo img{width:100%;height:100%;object-fit:contain;display:block}.ai-result-main{min-width:0}.ai-result-name{font-size:13px;font-weight:720;line-height:1.28;color:var(--ink)}
+.ai-result-ref{font:500 9.5px/1.25 ui-monospace,"SFMono-Regular",Menlo,monospace;color:var(--ink-soft);margin-top:2px}.ai-result-reason{font-size:11px;line-height:1.42;color:var(--ink-soft);margin-top:5px}.ai-result-use{font-size:10.5px;line-height:1.38;color:var(--teal-dark);margin-top:4px}
+.ai-result-actions{display:flex;flex-direction:column;align-items:flex-end;gap:6px}.ai-fit{font-size:9px;font-weight:750;border-radius:99px;padding:4px 7px;background:var(--teal-tint);color:var(--teal-dark)}
+.ai-add{width:34px;height:34px;border:0;border-radius:50%;background:#fff;color:var(--teal);display:grid;place-items:center;box-shadow:0 2px 8px rgba(0,0,0,.14);cursor:pointer;font-size:18px;font-weight:700}.ai-add.selected{background:var(--teal);color:#fff}
+.ai-empty{padding:24px 12px;text-align:center;color:var(--ink-soft);font-size:12px;line-height:1.5}
+.nav-btn.ai-nav{color:var(--teal-dark)}.nav-btn.ai-nav svg{stroke-width:1.8}.nav-btn.ai-nav.active{background:rgba(11,94,87,.12)}
+@media(max-width:580px){
+  .bottom-nav{grid-template-columns:repeat(4,1fr)!important}
+  .ai-grid{grid-template-columns:1fr}.ai-content{padding-inline:14px}.ai-intro{margin-top:2px}.ai-result-card{grid-template-columns:46px minmax(0,1fr) 36px;gap:8px}.ai-result-photo{width:46px;height:46px}.ai-result-name{font-size:12.5px}.ai-result-reason{font-size:10.8px}.ai-result-actions{align-items:center}.ai-fit{display:none}
+}
+</style>
+
+
+<style id="gma-v34-conversational-ai">
+/* ===== GMA V34 · Asesor conversacional ===== */
+.ai-sheet{max-height:min(96dvh,920px)}
+.ai-content.chat-mode{padding:0;display:flex;flex-direction:column;min-height:0;overflow:hidden}
+.ai-profile{padding:10px 14px 8px;border-bottom:1px solid var(--line);background:rgba(250,250,252,.97);flex:none}
+.ai-profile-row{display:grid;grid-template-columns:1fr 1fr auto;gap:7px;align-items:center}
+.ai-profile .ai-select{min-height:39px;padding:8px 10px;font-size:12px;border-radius:11px}
+.ai-profile-toggle{border:0;background:var(--teal-tint);color:var(--teal-dark);border-radius:10px;min-height:39px;padding:0 10px;font-size:11px;font-weight:750;cursor:pointer}
+.ai-chat{flex:1;min-height:220px;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:16px 14px 22px;scroll-behavior:smooth;background:linear-gradient(180deg,#f7f7f9 0%,#f5f5f7 100%)}
+.ai-message{display:flex;margin:0 0 12px;gap:8px;align-items:flex-end}
+.ai-message.user{justify-content:flex-end}.ai-message.assistant{justify-content:flex-start}
+.ai-avatar{width:28px;height:28px;border-radius:9px;background:var(--teal);color:#fff;display:grid;place-items:center;font-size:13px;flex:none;box-shadow:0 2px 7px rgba(11,94,87,.15)}
+.ai-bubble{max-width:min(86%,650px);padding:10px 12px;border-radius:16px;font-size:13px;line-height:1.48;white-space:pre-wrap;overflow-wrap:anywhere}
+.ai-message.assistant .ai-bubble{background:#fff;color:var(--ink);border:1px solid rgba(0,0,0,.065);border-bottom-left-radius:6px;box-shadow:0 2px 10px rgba(0,0,0,.035)}
+.ai-message.user .ai-bubble{background:var(--teal);color:#fff;border-bottom-right-radius:6px}
+.ai-thinking{display:inline-flex;align-items:center;gap:4px;padding:11px 13px}.ai-thinking i{width:5px;height:5px;border-radius:50%;background:#8b8b91;animation:aiDot 1s infinite ease-in-out}.ai-thinking i:nth-child(2){animation-delay:.13s}.ai-thinking i:nth-child(3){animation-delay:.26s}@keyframes aiDot{0%,70%,100%{transform:translateY(0);opacity:.45}35%{transform:translateY(-4px);opacity:1}}
+.ai-chat-products{margin:2px 0 15px 36px;display:grid;gap:7px;max-width:690px}
+.ai-chat-product{display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:9px;align-items:center;background:#fff;border:1px solid rgba(0,0,0,.065);border-radius:14px;padding:8px;box-shadow:0 2px 9px rgba(0,0,0,.035)}
+.ai-chat-product-photo{width:48px;height:48px;border-radius:9px;border:1px solid var(--line);background:#fff;overflow:hidden;display:grid;place-items:center;color:#aaa;cursor:pointer}.ai-chat-product-photo img{width:100%;height:100%;object-fit:contain}
+.ai-chat-product-main{min-width:0}.ai-chat-product-name{font-size:12px;font-weight:720;line-height:1.25;color:var(--ink)}.ai-chat-product-meta{font:500 9px/1.3 ui-monospace,"SFMono-Regular",Menlo,monospace;color:var(--ink-soft);margin-top:2px}.ai-chat-product-reason{font-size:10.6px;line-height:1.35;color:var(--ink-soft);margin-top:4px}.ai-chat-product-role{display:inline-block;margin-top:4px;padding:3px 6px;border-radius:99px;background:var(--teal-tint);color:var(--teal-dark);font-size:8.5px;font-weight:750}
+.ai-chat-add{width:34px;height:34px;border:0;border-radius:50%;background:#f0f0f3;color:var(--teal);display:grid;place-items:center;font-size:18px;font-weight:750;cursor:pointer;transition:transform .12s ease,background .15s ease,color .15s ease}.ai-chat-add:active{transform:scale(.88)}.ai-chat-add.selected{background:var(--teal);color:#fff}
+.ai-ideas{margin:1px 0 14px 36px;display:grid;gap:6px;max-width:690px}.ai-idea{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:12px;padding:9px 11px}.ai-idea b{font-size:11.5px;color:var(--ink)}.ai-idea p{font-size:10.8px;line-height:1.4;color:var(--ink-soft);margin:3px 0 0}
+.ai-followups{margin:0 0 14px 36px;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}.ai-followups::-webkit-scrollbar{display:none}.ai-followup{flex:none;border:1px solid rgba(11,94,87,.18);background:#fff;color:var(--teal-dark);border-radius:999px;padding:7px 10px;font-size:10.5px;font-weight:650;cursor:pointer}
+.ai-composer{flex:none;border-top:1px solid rgba(0,0,0,.08);background:rgba(250,250,252,.98);padding:9px 12px calc(9px + env(safe-area-inset-bottom));display:flex;gap:7px;align-items:flex-end}
+.ai-composer textarea{flex:1;min-height:43px;max-height:112px;resize:none;border:1px solid rgba(0,0,0,.09);background:#fff;border-radius:15px;padding:11px 12px;font:500 13px/1.35 inherit;color:var(--ink);outline:none;overflow-y:auto}.ai-composer textarea:focus{border-color:rgba(11,94,87,.35);box-shadow:0 0 0 3px rgba(11,94,87,.07)}
+.ai-send{width:43px;height:43px;border-radius:50%;border:0;background:var(--teal);color:#fff;display:grid;place-items:center;cursor:pointer;flex:none;box-shadow:0 4px 13px rgba(11,94,87,.19)}.ai-send:disabled{opacity:.42}.ai-send svg{width:18px;height:18px}
+.ai-chat-toolbar{display:flex;align-items:center;justify-content:space-between;padding:6px 14px;border-bottom:1px solid var(--line);background:#fff;flex:none}.ai-chat-hint{font-size:10px;color:var(--ink-soft)}.ai-reset-chat{border:0;background:transparent;color:var(--clay);font-size:10.5px;font-weight:700;cursor:pointer;padding:6px}
+@media(max-width:580px){.ai-sheet{max-height:calc(100dvh - 4px);height:calc(100dvh - 4px)}.ai-profile{padding:7px 10px 6px}.ai-profile-row{grid-template-columns:1fr 1fr}.ai-profile-toggle{display:none}.ai-profile .ai-select{min-height:36px;font-size:11px;padding:6px 8px}.ai-chat{padding:12px 10px 18px}.ai-bubble{max-width:88%;font-size:12.5px;padding:9px 10px}.ai-avatar{width:26px;height:26px}.ai-chat-products,.ai-ideas,.ai-followups{margin-left:34px}.ai-chat-product{grid-template-columns:43px minmax(0,1fr) 32px;padding:7px;gap:7px}.ai-chat-product-photo{width:43px;height:43px}.ai-chat-product-name{font-size:11.5px}.ai-chat-product-reason{font-size:10px}.ai-chat-add{width:31px;height:31px}.ai-composer{padding-inline:9px}.ai-composer textarea{font-size:16px;min-height:42px}.ai-send{width:42px;height:42px}}
+@media(prefers-reduced-motion:reduce){.ai-chat{scroll-behavior:auto}.ai-thinking i{animation:none}}
+</style>
+
 </head>
 <body>
 <div class="offline-banner" id="offlineBanner">Sin conexión · la selección sigue guardándose en este dispositivo</div>
@@ -1340,7 +1406,7 @@ body.visual-view .sub-divider{grid-column:1/-1}
 
 <nav class="bottom-nav" aria-label="Navegación principal">
 <button class="nav-btn active" id="navHome"><svg viewBox="0 0 24 24" fill="none"><path d="M4 10.5 12 4l8 6.5V20H5v-9.5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Inicio</span></button>
-<button class="nav-btn" id="navSearch"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="2"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Buscar</span></button>
+<button class="nav-btn ai-nav" id="navAI"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l1.35 4.15L17.5 8.5l-4.15 1.35L12 14l-1.35-4.15L6.5 8.5l4.15-1.35L12 3Z" stroke="currentColor" stroke-linejoin="round"/><path d="M18.5 14l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2Z" stroke="currentColor" stroke-linejoin="round"/></svg><span>IA GMA</span></button>
 <button class="nav-btn" id="navIndex"><svg viewBox="0 0 24 24" fill="none"><path d="M5 6h14M5 12h14M5 18h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Filtros</span></button>
 <button class="nav-btn" id="navSelection"><span class="nav-count" id="navCount">0</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 7h12l-1 13H7L6 7Zm3 0V5a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Selección</span></button>
 </nav>
@@ -1438,12 +1504,13 @@ body.visual-view .sub-divider{grid-column:1/-1}
       <div class="filter-group-title">Región / D.O. española</div>
       <div class="filter-options" id="regionOptions">
         <button class="filter-option tap active" data-region="">Todas</button>
-        <button class="filter-option tap" data-region="Extremadura">Extremadura</button>
-        <button class="filter-option tap" data-region="Huelva">Huelva</button>
-        <button class="filter-option tap" data-region="Aragón">Aragón</button>
-        <button class="filter-option tap" data-region="Salamanca">Salamanca</button>
-        <button class="filter-option tap" data-region="Guijuelo">Guijuelo</button>
-        <button class="filter-option tap" data-region="Jabugo">Jabugo</button>
+        <button class="filter-option tap" data-region="Extremadura">Extremadura <span class="filter-count" data-region-count="Extremadura"></span></button>
+        <button class="filter-option tap" data-region="Huelva">Huelva <span class="filter-count" data-region-count="Huelva"></span></button>
+        <button class="filter-option tap" data-region="Aragón">Aragón <span class="filter-count" data-region-count="Aragón"></span></button>
+        <button class="filter-option tap" data-region="Salamanca">Salamanca <span class="filter-count" data-region-count="Salamanca"></span></button>
+        <button class="filter-option tap" data-region="Guijuelo">Guijuelo <span class="filter-count" data-region-count="Guijuelo"></span></button>
+        <button class="filter-option tap" data-region="León">León <span class="filter-count" data-region-count="León"></span></button>
+        <button class="filter-option tap" data-region="Jabugo">Jabugo <span class="filter-count" data-region-count="Jabugo"></span></button>
       </div>
     </div>
   </div>
@@ -1474,6 +1541,37 @@ body.visual-view .sub-divider{grid-column:1/-1}
     <button class="sheet-close tap" id="productClose" aria-label="Cerrar">✕</button>
   </div>
   <div class="product-detail" id="productDetail"></div>
+</div>
+
+
+<div class="sheet-backdrop" id="aiBackdrop"></div>
+<div class="sheet ai-sheet" id="aiSheet" role="dialog" aria-modal="true" aria-label="Asistente GMA">
+  <div class="sheet-handle"></div>
+  <div class="sheet-head">
+    <h2>Asesor GMA</h2>
+    <button class="sheet-close tap" id="aiClose" aria-label="Cerrar">✕</button>
+  </div>
+  <div class="ai-content chat-mode">
+    <div class="ai-profile">
+      <div class="ai-profile-row">
+        <select class="ai-select" id="aiBusiness" aria-label="Tipo de negocio">
+          <option value="">Tipo de negocio · opcional</option><option>Restaurante</option><option>Restaurante italiano</option><option>Pizzería</option><option>Gastrobar</option><option>Hotel</option><option>Cafetería</option><option>Charcutería</option><option>Carnicería</option><option>Supermercado</option><option>Catering</option><option>Kebab / Halal</option><option>Restaurante asiático</option><option>Restaurante mexicano</option>
+        </select>
+        <select class="ai-select" id="aiGoal" aria-label="Objetivo">
+          <option value="">Objetivo · opcional</option><option>Entrada fácil</option><option>Productos premium</option><option>Ahorrar elaboración</option><option>Aumentar ticket medio</option><option>Aperitivos y entrantes</option><option>Ingredientes para cocina</option><option>Postres</option><option>Producto listo para servir</option>
+        </select>
+        <button class="ai-profile-toggle" id="aiProfileApply" type="button">Aplicar contexto</button>
+      </div>
+    </div>
+    <div class="ai-chat-toolbar"><span class="ai-chat-hint">Cuéntame qué necesitas y vamos afinando juntos la mejor solución.</span><button class="ai-reset-chat" id="aiResetChat" type="button">Nueva conversación</button></div>
+    <div class="ai-chat" id="aiChatLog" role="log" aria-live="polite"></div>
+    <div class="ai-composer">
+      <textarea id="aiMessage" rows="1" maxlength="600" placeholder="Ej.: Tengo una cafetería y quiero mejorar la oferta de postres…"></textarea>
+      <button class="ai-send" id="aiSend" type="button" aria-label="Enviar">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 12 20 4l-5 16-3.1-6.1L4 12Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m12 14 8-10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
 </div>
 
 <div class="lightbox-backdrop" id="lightboxBackdrop">
@@ -1589,7 +1687,7 @@ const SEARCH_STOPWORDS = new Set(['ref','refs','referencia','referencias','no','
 
 // Geography is inferred from the commercial structure, not only from the legacy
 // `origin` field. Section/family rules deliberately override contradictory old data.
-const SPANISH_REGIONS = new Set(['Extremadura','Huelva','Aragón','Salamanca','Guijuelo','Jabugo']);
+const SPANISH_REGIONS = new Set(['Extremadura','Huelva','Aragón','Salamanca','Guijuelo','León','Jabugo']);
 function inferGeography(group, item){
   const title = normalize(group.title || '');
   const dept = normalize(group.dept || '');
@@ -1607,6 +1705,20 @@ function inferGeography(group, item){
   // Spanish D.O./regional labels are country Spain plus their specific region.
   if(SPANISH_REGIONS.has(raw)) return {country:'Nacional', region:raw};
 
+  // Regional provenance propagated from brands/families already identified elsewhere
+  // in this same catalogue. This makes chorizo, lomo, salchichón, loncheados, etc.
+  // appear when their real production area is selected.
+  if(title === 'embutidos - asturias y leon' || /\bde leon\b|maragato|margato|c\.pablo/.test(name))
+    return {country:'Nacional', region:'León'};
+  if(/montesano|monterroble/.test(name))
+    return {country:'Nacional', region:'Extremadura'};
+  if(/\bdiaz\b/.test(name))
+    return {country:'Nacional', region:'Salamanca'};
+  if(/beher|crego|\bprim\b/.test(name))
+    return {country:'Nacional', region:'Guijuelo'};
+  if(/\(aragon\)|\baragon\b/.test(name))
+    return {country:'Nacional', region:'Aragón'};
+
   // Trust explicit country values when they really are countries.
   const explicitCountries = {
     'nacional':'Nacional','frances':'Francés','italiano':'Italiano',
@@ -1620,7 +1732,7 @@ function inferGeography(group, item){
   // Brand/product signals cover references whose legacy origin is empty.
   if(/divella|viander|mutti|gran bologna|tre archi|villani|parmigiano|grana padano|pecorino|burrata|gorgonzola|scamorza|stracciatella|ricotta|moliterno|caccetti|aceto balsamico|balsamico/.test(name)) return {country:'Italiano', region};
   if(/beher|montesano|sansueña|la finca|rogu-sa|rogusa|gran capitan|flor de esgueva|aldonza|ventero/.test(name) || name.includes('(diaz)')) return {country:'Nacional', region};
-  if(/france|canard|roquefort|brie|president|societe/.test(name)) return {country:'Francés', region};
+  if(/france|canard|roquefort|\bbrie\b|president|societe/.test(name)) return {country:'Francés', region};
 
   return {country:'', region};
 }
@@ -1633,10 +1745,21 @@ DATA.forEach(group => group.items.forEach(item => {
 
 function updateOriginCounts(){
   const counts = {};
-  DATA.forEach(g => g.items.forEach(it => { if(it.country) counts[it.country] = (counts[it.country] || 0) + 1; }));
+  const regionCounts = {};
+  DATA.forEach(g => g.items.forEach(it => {
+    if(it.country) counts[it.country] = (counts[it.country] || 0) + 1;
+    if(it.region) regionCounts[it.region] = (regionCounts[it.region] || 0) + 1;
+  }));
   document.querySelectorAll('[data-country-count]').forEach(el => {
     const country = el.dataset.countryCount;
     const n = counts[country] || 0;
+    el.textContent = `· ${n}`;
+    const button = el.closest('.filter-option');
+    if(button) button.hidden = n === 0;
+  });
+  document.querySelectorAll('[data-region-count]').forEach(el => {
+    const region = el.dataset.regionCount;
+    const n = regionCounts[region] || 0;
     el.textContent = `· ${n}`;
     const button = el.closest('.filter-option');
     if(button) button.hidden = n === 0;
@@ -2863,7 +2986,7 @@ loadState();
 
   const goTop=()=>window.scrollTo({top:0,behavior:'smooth'});
   document.getElementById('navHome').onclick=goTop;
-  document.getElementById('navSearch').onclick=()=>{goTop();setTimeout(()=>document.getElementById('searchInput').focus(),350)};
+  // navAI is wired by the GMA AI module below.
   document.getElementById('navIndex').onclick=()=>openIndex();
   document.getElementById('heroIndexBtn').onclick=()=>openIndex();
   document.getElementById('navSelection').onclick=()=>{ if(favIds().length) openSheet(); else showToast('Aún no has seleccionado productos'); };
@@ -3203,11 +3326,145 @@ render();
   });
   reset?.addEventListener('click',()=>applyQuickCountry(''));
 
-  // Keep the carousel synchronized when origin is changed from the full filter sheet
-  // or cleared through the active-filter chips.
+
   const priorRender=render;
   render=function(){priorRender();paintCountries();};
   paintCountries();
+})();
+</script>
+
+
+<script id="gma-v34-ai-js">
+// ===== GMA V35 · Asesor conversacional real con memoria de sesión =====
+(function(){
+  const aiSheet=document.getElementById('aiSheet');
+  const aiBackdrop=document.getElementById('aiBackdrop');
+  const chatLog=document.getElementById('aiChatLog');
+  const messageEl=document.getElementById('aiMessage');
+  const sendBtn=document.getElementById('aiSend');
+  const businessEl=document.getElementById('aiBusiness');
+  const goalEl=document.getElementById('aiGoal');
+  const AI_ENDPOINT='https://gma-ai.b96jyvrfvh.workers.dev';
+  let aiCloseTimer=null, busy=false;
+  let conversation=[];
+  const AI_SESSION_KEY='gma_ai_session_v35';
+
+  const BUSINESS_RULES={
+    'restaurante':['jamon','queso','salmon','anchoa','pate','carne','pasta','gama del chef','postre','verdura','nata'],
+    'restaurante italiano':['pasta italiana','quesos italianos','mozzarella','burrata','parmig','pecorino','gorgonzola','tomate','embutidos - italianos','pesto','nata','mascarpone'],
+    'pizzeria':['mozzarella','burrata','tomate','pesto','gorgonzola','parmig','pecorino','salami','mortadela','guanciale','pancetta','anchoa','nata'],
+    'gastrobar':['gilda','anchoa','boqueron','hueva','jamon','queso','burrata','salmon','pate','secreto','gama del chef','postre'],
+    'hotel':['salmon','jamon','queso','pate','nata','postre','tarta','gama del chef','frutos secos','desayuno','mermelada','miel'],
+    'cafeteria':['nata','tarta','postre','brownie','coulant','bizcocho','frutos secos','queso','jamon','chocolate','cacao','mascarpone','crema','mermelada','confitura','miel','pistacho','almendra','avellana','vainilla','caramelo','helado','galleta','fruta','salmon'],
+    'charcuteria':['jamon','paleta','chorizo','salchichon','lomo','queso','salazon','anchoa','pate','embutido'],
+    'carniceria':['carne','secreto','cerdo','iberico','cachopo','costilla','carrillera','vacuno','pollo'],
+    'supermercado':['jamon','embutido','queso','salmon','pate','conserva','frutos secos','postre','snack'],
+    'catering':['gama del chef','pasta rellena','lasaña','lasana','cachopo','postre','tarta','jamon','queso','salmon','aperitivo','nata'],
+    'kebab / halal':['pollo','carne','queso','salsa','patata','vegetal','pan'],
+    'restaurante asiatico':['salmon','atun','salsa','verdura','arroz','gamba','pato'],
+    'restaurante mexicano':['carne','pollo','queso','salsa','nata','aguacate','vegetal','cerdo']
+  };
+  const CONCEPTS={
+    'postre':['tarta','postre','brownie','coulant','tiramis','cheesecake','nata','mascarpone','queso crema','chocolate','cacao','bizcocho','galleta','crema','caramelo','vainilla','helado','frutos secos','almendra','avellana','pistacho','mermelada','confitura','miel','fruta','copa'],
+    'desayuno':['jamon','queso','salmon','nata','mantequilla','mermelada','miel','frutos secos','tomate','pan','tarta','bizcocho'],
+    'brunch':['salmon','jamon','queso','burrata','huevo','nata','tarta','frutos secos','anchoa','tomate'],
+    'pizza':['mozzarella','burrata','tomate','pesto','gorgonzola','parmig','salami','mortadela','anchoa','guanciale'],
+    'pasta':['pasta','ravioli','tortell','lasana','lasaña','nata','parmig','gorgonzola','pesto','tomate','guanciale'],
+    'aperitivo':['gilda','anchoa','boqueron','pate','jamon','queso','salmon','hueva','frutos secos'],
+    'facil':['gama del chef','food vac','toke chef','listo','loncheado','cocinado','precocinado','tarta','gilda','pate','salmon'],
+    'premium':['bellota','100%','dominguez','burrata','foie','hueva','anchoa','trufa','premium'],
+    'ingrediente':['nata','mozzarella','queso','tomate','pesto','pasta','chocolate','frutos secos','carne','salsa'],
+    'terminado':['gama del chef','food vac','toke chef','tarta','coulant','brownie','lasaña','cachopo','gilda','pate','salmon','loncheado']
+  };
+  const NEGATIVE_DEPTS=new Set(['Menaje y servicios']);
+
+  function norm(v){return normalize(String(v||''));}
+  function escapeHtml(v){return String(v??'').replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));}
+  function allRows(){const rows=[];DATA.forEach((g,gi)=>g.items.forEach((it,ii)=>rows.push({group:g,item:it,id:itemId(gi,ii)})));return rows;}
+  function transcriptText(){return conversation.map(m=>m.content).join(' ');}
+  function inferredTokens(text){
+    const n=norm(text), out=[];
+    Object.entries(CONCEPTS).forEach(([key,tokens])=>{if(n.includes(key)) out.push(...tokens)});
+    if(/dulce|reposteria|repostería|merienda|meriendas|tarta|postre|copa|tiramis|cheesecake/.test(n))out.push(...CONCEPTS.postre);
+    if(/sin cocina|poca cocina|poca elaboracion|poca elaboración|rapido|rápido/.test(n))out.push(...CONCEPTS.facil,...CONCEPTS.terminado);
+    if(/hacer|elaborar|crear|montar/.test(n))out.push(...CONCEPTS.ingrediente);
+    return [...new Set(out.map(norm))];
+  }
+  function scoreRow(row,text,business,goal){
+    const g=row.group,it=row.item;if(NEGATIVE_DEPTS.has(g.dept))return -999;
+    const hay=norm([it.n,g.title,g.dept,it.sub,it.country,it.region,productDescription(g,it).desc,productDescription(g,it).use].filter(Boolean).join(' '));
+    let score=0;
+    const businessTokens=BUSINESS_RULES[norm(business)]||[];
+    const conceptTokens=inferredTokens(text+' '+goal);
+    businessTokens.forEach((t,i)=>{if(hay.includes(norm(t)))score+=Math.max(2,8-Math.floor(i/3));});
+    conceptTokens.forEach(t=>{if(hay.includes(t))score+=9});
+    norm(text+' '+goal).split(/\s+/).filter(w=>w.length>3).forEach(w=>{if(hay.includes(w))score+=3});
+    if(it.photo)score+=.6;if(it.isNew)score+=.2;
+    if(/navidad/.test(norm(g.dept+' '+g.title))&&!/navidad/.test(norm(text)))score-=12;
+    return score;
+  }
+  function candidatePool(){
+    const text=transcriptText();const business=businessEl.value||'';const goal=goalEl.value||'';
+    const scored=allRows().map(r=>({...r,score:scoreRow(r,text,business,goal)})).filter(r=>r.score>-900).sort((a,b)=>b.score-a.score);
+    const relevant=scored.filter(r=>r.score>0);
+    const picked=[],seen=new Set(),perGroup=new Map();
+    const add=(r,limit=10)=>{if(!r||seen.has(r.id))return false;const k=r.group.title,n=perGroup.get(k)||0;if(n>=limit)return false;picked.push(r);seen.add(r.id);perGroup.set(k,n+1);return true;};
+    for(const r of relevant){add(r,10);if(picked.length>=180)break;}
+    // Si la consulta es amplia, completamos con un surtido equilibrado para que la IA pueda descubrir soluciones no obvias.
+    if(picked.length<120){for(const r of scored){if(r.group.dept==='Menaje y servicios')continue;if(r.item.photo||r.item.isNew||r.score>=0)add(r,5);if(picked.length>=180)break;}}
+    return picked.slice(0,180);
+  }
+  function apiCandidate(row){const d=productDescription(row.group,row.item);return{ref:String(row.item.ref),name:row.item.n,family:row.group.title,section:row.group.dept,origin:row.item.country||'',region:row.item.region||'',price:Number(row.item.price||0),description:d.desc,use:d.use};}
+  function resolveByRef(ref){const target=String(ref).toLowerCase();for(let gi=0;gi<DATA.length;gi++)for(let ii=0;ii<DATA[gi].items.length;ii++)if(String(DATA[gi].items[ii].ref).toLowerCase()===target)return{group:DATA[gi],item:DATA[gi].items[ii],id:itemId(gi,ii)};return null;}
+
+  function addBubble(role,text){const wrap=document.createElement('div');wrap.className='ai-message '+role;wrap.innerHTML=role==='assistant'?`<div class="ai-avatar">✦</div><div class="ai-bubble">${escapeHtml(text)}</div>`:`<div class="ai-bubble">${escapeHtml(text)}</div>`;chatLog.appendChild(wrap);scrollChat();return wrap;}
+  function addThinking(){const wrap=document.createElement('div');wrap.className='ai-message assistant ai-pending';wrap.innerHTML='<div class="ai-avatar">✦</div><div class="ai-bubble ai-thinking"><i></i><i></i><i></i></div>';chatLog.appendChild(wrap);scrollChat();return wrap;}
+  function scrollChat(){requestAnimationFrame(()=>{chatLog.scrollTop=chatLog.scrollHeight;});}
+  function renderExtras(payload){
+    const recs=(payload.recommendations||[]).map(r=>({r,row:resolveByRef(r.ref)})).filter(x=>x.row).slice(0,12);
+    if(recs.length){const box=document.createElement('div');box.className='ai-chat-products';box.innerHTML=recs.map(({r,row})=>{const it=row.item,selected=Object.prototype.hasOwnProperty.call(favs,row.id);const photo=it.photo?`<img src="data:image/jpeg;base64,${it.photo}" alt="">`:'◌';return `<div class="ai-chat-product"><button class="ai-chat-product-photo" data-open-product="${row.id}" aria-label="Abrir ${escapeHtml(it.n)}">${photo}</button><div class="ai-chat-product-main"><div class="ai-chat-product-name">${escapeHtml(it.n)}</div><div class="ai-chat-product-meta">Ref. ${escapeHtml(it.ref)} · ${escapeHtml(row.group.title)}</div>${r.reason?`<div class="ai-chat-product-reason">${escapeHtml(r.reason)}</div>`:''}${r.role?`<span class="ai-chat-product-role">${escapeHtml(r.role)}</span>`:''}</div><button class="ai-chat-add ${selected?'selected':''}" data-ai-add="${row.id}" aria-label="${selected?'Quitar':'Añadir'}">${selected?'✓':'+'}</button></div>`;}).join('');chatLog.appendChild(box);}
+    const ideas=Array.isArray(payload.ideas)?payload.ideas.slice(0,4):[];if(ideas.length){const box=document.createElement('div');box.className='ai-ideas';box.innerHTML=ideas.map(x=>`<div class="ai-idea"><b>${escapeHtml(x.title||'Idea')}</b><p>${escapeHtml(x.description||'')}</p></div>`).join('');chatLog.appendChild(box);}
+    const follow=Array.isArray(payload.followups)?payload.followups.slice(0,4):[];if(follow.length){const box=document.createElement('div');box.className='ai-followups';box.innerHTML=follow.map(q=>`<button class="ai-followup" type="button" data-ai-followup="${escapeHtml(q)}">${escapeHtml(q)}</button>`).join('');chatLog.appendChild(box);}
+    scrollChat();
+  }
+  function localPayload(pool){
+    const business=businessEl.value||'este negocio',goal=goalEl.value||'';
+    const recs=pool.slice(0,10).map((r,i)=>{const d=productDescription(r.group,r.item);let role='Complemento';const h=norm(r.item.n+' '+r.group.title);if(/tarta|postre|brownie|coulant|lasaña|cachopo|gilda|pate|salmon|loncheado/.test(h))role='Producto listo';else if(/nata|chocolate|queso|mozzarella|frutos secos|tomate|pasta|salsa/.test(h))role='Para elaborar';return{ref:String(r.item.ref),reason:d.desc,use:d.use,role};});
+    return{message:`Para ${business.toLowerCase()}${goal?' y pensando en '+goal.toLowerCase():''}, combinaría producto listo con referencias para elaborar y así tener más opciones. Puedes decirme qué quieres priorizar y voy afinando la propuesta.`,recommendations:recs,ideas:[{title:'Enfoque práctico',description:'Combina referencias listas para servir con ingredientes que permitan personalizar la oferta sin complicar demasiado la operativa.'}],followups:['Quiero poca elaboración','Enséñame solo ingredientes','Dame opciones premium','¿Qué puedo combinar entre sí?']};
+  }
+
+  function saveAISession(){try{sessionStorage.setItem(AI_SESSION_KEY,JSON.stringify({conversation:conversation.slice(-20),business:businessEl.value||'',goal:goalEl.value||''}));}catch(e){}}
+  function restoreAISession(){try{const raw=sessionStorage.getItem(AI_SESSION_KEY);if(!raw)return false;const s=JSON.parse(raw);if(!Array.isArray(s.conversation)||!s.conversation.length)return false;businessEl.value=s.business||'';goalEl.value=s.goal||'';conversation=s.conversation.slice(-20).filter(m=>m&&['user','assistant'].includes(m.role)&&m.content);if(!conversation.length)return false;chatLog.innerHTML='';conversation.forEach(m=>addBubble(m.role,m.content));return true;}catch(e){return false;}}
+  function welcome(){chatLog.innerHTML='';conversation=[];try{sessionStorage.removeItem(AI_SESSION_KEY);}catch(e){}addBubble('assistant','Cuéntame qué tipo de negocio tienes o qué quieres mejorar. Puedo proponerte productos, combinaciones, ideas de uso y soluciones para la carta, y podemos ir afinándolo juntos.');}
+  function openAI(){clearTimeout(aiCloseTimer);aiBackdrop.classList.add('show');requestAnimationFrame(()=>{aiBackdrop.classList.add('in');aiSheet.classList.add('in')});document.body.style.overflow='hidden';document.querySelectorAll('.nav-btn').forEach(b=>b.classList.toggle('active',b.id==='navAI'));setTimeout(()=>messageEl.focus({preventScroll:true}),180);}
+  function closeAI(){aiBackdrop.classList.remove('in');aiSheet.classList.remove('in');clearTimeout(aiCloseTimer);aiCloseTimer=setTimeout(()=>aiBackdrop.classList.remove('show'),130);document.body.style.overflow='';document.getElementById('navAI')?.classList.remove('active');document.getElementById('navHome')?.classList.add('active');}
+
+  async function sendMessage(text){
+    text=String(text||'').trim();if(!text||busy)return;
+    busy=true;sendBtn.disabled=true;messageEl.value='';messageEl.style.height='auto';
+    addBubble('user',text);conversation.push({role:'user',content:text});saveAISession();
+    const thinking=addThinking();const pool=candidatePool();
+    try{
+      let payload;
+      if(AI_ENDPOINT&&pool.length){
+        const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),25000);
+        const res=await fetch(AI_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({businessType:businessEl.value||'',goal:goalEl.value||'',messages:conversation.slice(-12),candidates:pool.map(apiCandidate)}),signal:controller.signal});clearTimeout(timer);
+        if(!res.ok)throw new Error('AI '+res.status);payload=await res.json();
+      }else payload=localPayload(pool);
+      thinking.remove();const message=payload.message||payload.summary||'Te propongo estas opciones. Dime qué quieres priorizar y seguimos afinando.';addBubble('assistant',message);conversation.push({role:'assistant',content:message});saveAISession();renderExtras(payload);
+    }catch(e){thinking.remove();const payload=localPayload(pool);addBubble('assistant',payload.message);conversation.push({role:'assistant',content:payload.message});saveAISession();renderExtras(payload);}
+    finally{busy=false;sendBtn.disabled=false;messageEl.focus({preventScroll:true});}
+  }
+
+  document.getElementById('navAI')?.addEventListener('click',openAI);document.getElementById('aiClose')?.addEventListener('click',closeAI);aiBackdrop?.addEventListener('click',closeAI);
+  document.getElementById('aiResetChat')?.addEventListener('click',welcome);
+  document.getElementById('aiProfileApply')?.addEventListener('click',()=>{const bits=[businessEl.value,goalEl.value].filter(Boolean);if(bits.length)sendMessage('Ten en cuenta este contexto: '+bits.join(' · '));});
+  businessEl?.addEventListener('change',()=>{if(conversation.length===0&&businessEl.value)messageEl.placeholder=`Ej.: ¿Qué me propones para una ${businessEl.value.toLowerCase()}?`;});
+  sendBtn?.addEventListener('click',()=>sendMessage(messageEl.value));
+  messageEl?.addEventListener('input',()=>{messageEl.style.height='auto';messageEl.style.height=Math.min(messageEl.scrollHeight,112)+'px';});
+  messageEl?.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendMessage(messageEl.value);}});
+  chatLog?.addEventListener('click',e=>{const add=e.target.closest('[data-ai-add]');if(add){const id=add.dataset.aiAdd;toggleFav(id);const sel=Object.prototype.hasOwnProperty.call(favs,id);add.classList.toggle('selected',sel);add.textContent=sel?'✓':'+';return;}const open=e.target.closest('[data-open-product]');if(open){openProduct(open.dataset.openProduct);return;}const f=e.target.closest('[data-ai-followup]');if(f){sendMessage(f.dataset.aiFollowup||f.textContent);}});
+  if(!restoreAISession()) welcome();
 })();
 </script>
 
