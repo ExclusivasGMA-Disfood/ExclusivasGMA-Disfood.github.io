@@ -15,23 +15,23 @@ const files = fs.readdirSync(imagesDir, { withFileTypes: true })
 
 const manifest = {};
 const invalid = [];
-const duplicates = [];
+const slots = {};
 
 for (const name of files) {
   const ext = path.extname(name).toLowerCase();
-  const ref = path.basename(name, ext); // String: preserves leading zeros.
+  const stem = path.basename(name, ext);
+  const match = stem.match(/^(.*?)(?:-(\d+))?$/);
+  const ref = match[1]; // String: preserves leading zeros.
+  const slot = match[2] ? Number(match[2]) : 1;
 
   if (!Object.prototype.hasOwnProperty.call(references, ref)) {
     invalid.push(name);
     continue;
   }
 
-  if (manifest[ref]) {
-    duplicates.push([ref, manifest[ref], `images/products/${name}`]);
-    continue;
-  }
-
-  manifest[ref] = `images/products/${name}`;
+  slots[ref] ||= {};
+  if (slots[ref][slot]) throw new Error(`Duplicate image slot ${ref}-${slot}`);
+  slots[ref][slot] = `images/products/${name}`;
 }
 
 if (invalid.length) {
@@ -39,17 +39,15 @@ if (invalid.length) {
   for (const name of invalid) console.warn(`  - ${name}`);
 }
 
-if (duplicates.length) {
-  console.error('Duplicate primary image references detected:');
-  for (const [ref, a, b] of duplicates) console.error(`  - ${ref}: ${a} / ${b}`);
-  process.exit(1);
-}
-
 // Preserve tariff/reference order rather than converting refs to numbers.
 const ordered = {};
 for (const ref of Object.keys(references)) {
-  if (manifest[ref]) ordered[ref] = manifest[ref];
+  if (!slots[ref]) continue;
+  const numbers=Object.keys(slots[ref]).map(Number).sort((a,b)=>a-b);
+  if(numbers[0]!==1 || numbers.some((n,i)=>n!==i+1)) throw new Error(`Non-contiguous image slots for ${ref}`);
+  const images=numbers.map(n=>slots[ref][n]);
+  ordered[ref]=images.length===1?images[0]:images;
 }
 
 fs.writeFileSync(outputPath, JSON.stringify(ordered, null, 2) + '\n', 'utf8');
-console.log(`Manifest generated: ${Object.keys(ordered).length} images for ${Object.keys(references).length} valid references.`);
+console.log(`Manifest generated: ${Object.keys(ordered).length} references and ${files.length-invalid.length} image files.`);
