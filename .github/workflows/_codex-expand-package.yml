@@ -1,16 +1,10 @@
 name: Expand GMA catalog package
-
 on:
   push:
-    branches:
-      - codex/integrar-imagenes-catalogo
-    paths:
-      - '_codex_input/**'
-      - '.github/workflows/_codex-expand-package.yml'
-
+    branches: [codex/integrar-imagenes-catalogo]
+    paths: ['_codex_input/chunks-small/**', '.github/workflows/_codex-expand-package.yml']
 permissions:
   contents: write
-
 jobs:
   expand:
     runs-on: ubuntu-latest
@@ -19,11 +13,13 @@ jobs:
         with:
           ref: codex/integrar-imagenes-catalogo
           fetch-depth: 0
-
-      - name: Reassemble and expand prepared package
+      - name: Reassemble and validate package
         run: |
-          cat _codex_input/chunks/part-* > /tmp/gma-package.zip
+          cat _codex_input/chunks-small/part-* > /tmp/gma-package.zip
           test "$(wc -c < /tmp/gma-package.zip)" -eq 32839316
+          unzip -tq /tmp/gma-package.zip
+      - name: Expand catalog
+        run: |
           mkdir -p /tmp/gma-package
           unzip -q /tmp/gma-package.zip -d /tmp/gma-package
           cp -a /tmp/gma-package/.github .
@@ -35,7 +31,6 @@ jobs:
           test "$(find images/products -type f | wc -l)" -eq 540
           rm -rf _codex_input
           rm -f .github/workflows/_codex-expand-package.yml
-
       - name: Commit expanded catalog
         run: |
           git config user.name "github-actions[bot]"
