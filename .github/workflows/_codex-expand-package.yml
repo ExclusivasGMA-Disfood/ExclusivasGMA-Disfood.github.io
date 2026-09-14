@@ -1,0 +1,42 @@
+name: Expand GMA catalog package
+
+on:
+  push:
+    branches:
+      - codex/integrar-imagenes-catalogo
+    paths:
+      - '_codex_input/**'
+      - '.github/workflows/_codex-expand-package.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: codex/integrar-imagenes-catalogo
+          fetch-depth: 0
+
+      - name: Expand prepared package
+        run: |
+          mkdir -p /tmp/gma-package
+          unzip -q _codex_input/gma_images_github_ready.zip -d /tmp/gma-package
+          cp -a /tmp/gma-package/.github .
+          cp -a /tmp/gma-package/data .
+          cp -a /tmp/gma-package/images .
+          cp -a /tmp/gma-package/scripts .
+          cp _codex_input/index_manifest_integrado.html index.html
+          rm -rf _codex_input
+          rm -f .github/workflows/_codex-expand-package.yml
+          node scripts/build-image-manifest.mjs
+
+      - name: Commit expanded catalog
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Integrate product images and external manifest"
+          git push origin codex/integrar-imagenes-catalogo
