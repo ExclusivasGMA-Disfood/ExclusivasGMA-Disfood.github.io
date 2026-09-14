@@ -1,669 +1,90 @@
 {
-  "8005": {
-    "description": "ALITAS DE POLLO TEX MEX 5X1 (HALAL)"
+  "3": {
+    "description": "BOTTEBUONA SANGIOVESE TINTO (VINO)"
   },
-  "8003": {
-    "description": "BAKLAVA 48 UNIDADES (HALAL)"
+  "4": {
+    "description": "BOTTEBUONA ROSATO DEL SALENTO (VINO)"
   },
-  "6812": {
-    "description": "FIAMBRE DE PAVO (GEMI)"
-  },
-  "8009": {
-    "description": "FINGER DE POLLO CRISPY 5X1KG (HALAL)"
-  },
-  "8007": {
-    "description": "HAMBURGUESA DE TERNERA 110G (HALAL)"
-  },
-  "8008": {
-    "description": "HAMBURGUESA POLLO CRUNCHY 4KG (HALAL)"
-  },
-  "8006": {
-    "description": "NUGGETS POLLO 5KG VOLATYS (HALAL)"
-  },
-  "8010": {
-    "description": "PALOMITAS DE POLLO 4KG 8X500 (HALAL)"
-  },
-  "8002": {
-    "description": "PEPPERONI (HALAL)"
-  },
-  "8004": {
-    "description": "PIZZA TURCA (HALAL)"
-  },
-  "6744": {
-    "description": "ALMENDRA FRITA R.C. 1K (10U)"
-  },
-  "6742": {
-    "description": "COCKTAIL FRUTOS SECOS R-55 (900G) (10U)"
-  },
-  "6745": {
-    "description": "PANCHITOS FRITOS PIEL 1 KG (10U)"
-  },
-  "6740": {
-    "description": "BOLSA DE PATATAS 500 GR (6U)"
-  },
-  "6750": {
-    "description": "BOLSA DE PATATAS TRADICIONAL PREMIUM 40GR (20U) (RUBIO SNACKS)"
-  },
-  "6743": {
-    "description": "MORRO CASTILLO BARBACOA 800 GR (4U)"
-  },
-  "6610": {
-    "description": "ACEITE BENEOLIVE AOVE CRISTAL (0,25 L)"
-  },
-  "6616": {
-    "description": "ACEITE BOMBACHA GRANADA BLUE EVOO ( 500 ML )"
-  },
-  "6786": {
-    "description": "ACEITE BOMBACHA OLIVE BRANCH EVOO ( 500 ML )"
-  },
-  "6615": {
-    "description": "ACEITE BOMBACHA RED LINES EVOO ( 500 ML )"
-  },
-  "6612": {
-    "description": "ACEITE CAPRI 1573 TOPACIO ( 500 ML )"
-  },
-  "6611": {
-    "description": "ACEITE CAPRI PICUAL 1ER DIA COSECHA AOVE ( 500 ML )"
-  },
-  "6614": {
-    "description": "ACEITE CERAMICA ARBEQUINA AOVE ( 500 ML )"
-  },
-  "6613": {
-    "description": "ACEITE CERAMICA PICUAL AOVE ( 500 ML )"
-  },
-  "6667": {
-    "description": "ACEITE CERAMICA PICUAL CON ESTUCHE"
-  },
-  "6684": {
-    "description": "ACEITE SJR 500 ML SUMMUM AOVE ( 500 ML )"
-  },
-  "3325": {
-    "description": "ACEITE FREIR ALTO RENDIMIENTO (5 L)"
-  },
-  "2762": {
-    "description": "ACEITE VIRGEN EXTRA (5 L) (SELEC MARDIS)"
-  },
-  "313": {
-    "description": "OLIO CON PEPPERONCINO (ACEITE) (0.25 L) (VIANDER)"
-  },
-  "059": {
-    "description": "OLIO EXT. OLIVA AL TARTUFO BIANCO (ACEITE) (0,25 L) (VIANDER)"
-  },
-  "3464": {
-    "description": "ACEITUNA PICANTONA (LATA) (5 KG) (SELEC MARDIS)"
-  },
-  "6705": {
-    "description": "ACEITUNA PICANTONA (TARRO CRISTAL) (600 GR) (SELEC MARDIS)"
-  },
-  "701": {
-    "description": "ACEITUNAS NEGRAS LAMINADAS (LATA) (3 KG)"
-  },
-  "6747": {
-    "description": "ACEITUNAS PARTIDAS (EL ANTOJO DE LA ABUELA MARIA) (LATA) ( 2.5 KG)"
-  },
-  "6787": {
-    "description": "GILDA PULPO (36 PIEZAS) (SELEC MARDIS)"
-  },
-  "6144": {
-    "description": "GILDA SELEC ANCHOA (80 PIEZAS) (SELEC MARDIS)"
-  },
-  "6140": {
-    "description": "GILDA SELEC ANCHOA CANTABRICO (48 PIEZAS) (SELEC MARDIS)"
-  },
-  "6154": {
-    "description": "GILDA TRIPLE BOQUERON (35 PIEZAS) (SELEC MARDIS)"
-  },
-  "3079": {
-    "description": "ACETO BALSAMICO IGP (GARRAFA) (5 L)"
-  },
-  "3013": {
-    "description": "CREMA ACETO BALSAMICO (1 L)"
-  },
-  "2984": {
-    "description": "CREMA DE ACETO BALSAMICO (0.5 L)"
-  },
-  "5511": {
-    "description": "VINAGRE (15 X 1 L) (YBARRA)"
-  },
-  "2374": {
-    "description": "SAL BLANCA PETALOS CUBO (1.5 KG) (SELEC MARDIS)"
-  },
-  "2135": {
-    "description": "SAL NEGRA PETALOS CUBO (750 GR) (SELEC MARDIS)"
-  },
-  "6761": {
-    "description": "SALSA CARBONARA 235 ML \"TRE ARCHI\" (24U)"
-  },
-  "00353": {
-    "description": "SALSA CLASICA STEAK TARTAR BOLSA ( LA FINCA )"
-  },
-  "689": {
-    "description": "SALSA TARTUFATA ESPECIAL (580 GR) (VIANDER)"
-  },
-  "00355": {
-    "description": "SALSA TRUFA ESP CARPACCIO BOLSA ( LA FINCA )"
-  },
-  "442": {
-    "description": "PESTO GENOVESE (500 GR) (CONGELADO) (GEA)"
-  },
-  "146": {
-    "description": "RISO ARBORIO (ARROZ) (1KG) (DIVELLA)"
-  },
-  "6607": {
-    "description": "RISO CARNAROLI (ARROZ) (1 KG) (DIVELLA)"
-  },
-  "2665": {
-    "description": "HARINA FRITURA (5 KG) (SELEC MARDIS)"
-  },
-  "5722": {
-    "description": "PANKO PAN ESCAMAS (2 KG) (SELEC MARDIS)"
-  },
-  "536": {
-    "description": "HARINA 00 FORTE (25 KG) (DIVELLA)"
-  },
-  "534": {
-    "description": "HARINA 00 NAPOLETANA (25 KG) (DIVELLA)"
-  },
-  "392": {
-    "description": "HARINA 00 PIZZA (25 KG) (DIVELLA)"
-  },
-  "6256": {
-    "description": "HARINA AZUL PIZZERIA TIPO 00 25 KG (CAPUTO)"
-  },
-  "6364": {
-    "description": "HARINA ORO ROJO 00 10 KG (5 STAGIONI)"
-  },
-  "6180": {
-    "description": "HARINA SACO ROJO TIPO 00 25KG (CAPUTO)"
-  },
-  "6620": {
-    "description": "HARINA SIN GLUTEN 1 KG (CAPUTO)"
-  },
-  "6327": {
-    "description": "HARINA SUPERIOR AZUL 00 10 KG (5 STAGIONI)"
-  },
-  "448": {
-    "description": "LEVADURA SECA ATTIVO (500 GR) (VIANDER)"
-  },
-  "415": {
-    "description": "SEMOLA RIMACINATA (5 KG) (DIVELLA)"
-  },
-  "602": {
-    "description": "SPOLVERINA (10 KG) (5 STAGIONI)"
-  },
-  "905": {
-    "description": "BASE PER PIZZA BIANCA (SVILA)"
-  },
-  "2369": {
-    "description": "CANNELLONI SEMOLA (250G) (DIVELLA)"
-  },
-  "735": {
-    "description": "CAPELLI D`ANGELO (500 GR) (DIVELLA)"
-  },
-  "76": {
-    "description": "ELICOIDALI (500GR) (DIVELLA)"
-  },
-  "411": {
-    "description": "FARFALLE (500 GR) (DIVELLA)"
-  },
-  "416": {
-    "description": "FARFALLE (POMOD/SPIN) (500 GR) (DIVELLA)"
-  },
-  "126": {
-    "description": "FETTUCCINE UOVO (250GR) (DIVELLA)"
-  },
-  "119": {
-    "description": "FETTUCCINE UOVO (500GR) (DIVELLA)"
-  },
-  "400": {
-    "description": "FUSILLI (500 GR) (DIVELLA)"
-  },
-  "115": {
-    "description": "FUSILLI TRICOLOR (POMOD/ESP) (500GR) (DIVELLA)"
-  },
-  "412": {
-    "description": "HOJA LASAGNA UOVO (500 GR) (DIVELLA)"
-  },
-  "460": {
-    "description": "LINGUINE (500 GR) (DIVELLA)"
-  },
-  "130": {
-    "description": "PAPPARDELLE UOVO (250GR) (DIVELLA)"
-  },
-  "5301": {
-    "description": "PAPPARDELLE UOVO (500 GR) (DIVELLA)"
-  },
-  "3858": {
-    "description": "PENNE REGINE (500 GR) (DIVELLA)"
-  },
-  "96": {
-    "description": "PENNE ZITI RIGATE (500GR) (DIVELLA)"
-  },
-  "64": {
-    "description": "RIGATONI (500 GR) (DIVELLA)"
-  },
-  "62": {
-    "description": "SPAGUETTI (Nº8 RISTORANTE) (500 GR) (36 UD) (DIVELLA)"
-  },
-  "414": {
-    "description": "SPAGUETTINI (Nº 9) (500 GR) (DIVELLA)"
-  },
-  "124": {
-    "description": "TAGLIATELLE UOVO (250GR) (DIVELLA)"
-  },
-  "405": {
-    "description": "TAGLIATELLE UOVO (500 GR) (DIVELLA)"
-  },
-  "2167": {
-    "description": "CANNELONI DE CARNE (3 KG) (GEA)"
-  },
-  "2168": {
-    "description": "CANNELONI RICOTA / ESPINACI (3KG) (GEA)"
-  },
-  "2180": {
-    "description": "SFOGLIA PRECOTTA GIALLA (10 KG) (GEA)"
-  },
-  "2178": {
-    "description": "SFOGLIA PRECOTTA VERDE (10 KG) (GEA)"
-  },
-  "2177": {
-    "description": "TORTELLACCI NERI AL SALMONE (3 KG) (GEA)"
-  },
-  "2175": {
-    "description": "TORTELLONI GIGANTE CAPESANTE E GAMBERI (3 KG) (GEA)"
-  },
-  "3944": {
-    "description": "CANELON CON BOGAVANTE (GASTRONOMS)"
-  },
-  "4287": {
-    "description": "CANELON DE BRANDADA DE BACALAO Y AJO ESCALIVADO (GASTRONOMS)"
-  },
-  "6686": {
-    "description": "CANELON DE CORDERO CON HIERBAS PROVENZALES (30 UD) (GASTRONOMS)"
-  },
-  "5509": {
-    "description": "CANELON DE MERLUZA Y GAMBON (GASTRONOMS)"
-  },
-  "3876": {
-    "description": "CANELON DE PATO CONFITADO Y FOIE (GASTRONOMS)"
-  },
-  "3821": {
-    "description": "CANELON DE POLLO CON TRUFA (30 UD) (GASTRONOMS)"
-  },
-  "3816": {
-    "description": "RAVIOLI CRUJIENTE DE BUTIFARRA NEGRA Y MANZANA ASADA (GASTRONOMS)"
-  },
-  "3885": {
-    "description": "RAVIOLI CRUJIENTE DE CHISTORRA CON HUEVO (GASTRONOMS)"
-  },
-  "3811": {
-    "description": "RAVIOLI CRUJIENTE DE CORDERO AL ROMERO (GASTRONOMS)"
-  },
-  "6104": {
-    "description": "RAVIOLI CRUJIENTE DE POLLO CON TRUFA NEGRA (GASTRONOMS)"
-  },
-  "4404": {
-    "description": "RAVIOLI CRUJIENTE DE TORO AL VINO TINTO (GASTRONOMS)"
-  },
-  "3837": {
-    "description": "RAVIOLI CRUJIENTE SECRETO JAMON Y CEBOLLA OPORTO (GASTRONOMS)"
-  },
-  "962": {
-    "description": "ALLEGRI PENSIERI DEL DIAVOLO (3 KG) (GRAN BOLOGNA)"
-  },
-  "967": {
-    "description": "DOLCE VITA AL TARTUFUNGO (3 KG) (GRAN BOLOGNA)"
-  },
-  "957": {
-    "description": "GARGANELLI ROMAGNOLI (3 KG) (GRAN BOLOGNA)"
-  },
-  "1347": {
-    "description": "IL CARDINALE (3 KG) (GRAN BOLOGNA)"
+  "5": {
+    "description": "BOTTEBUONA TREBBIANO BLANCO (VINO)"
   },
   "25": {
     "description": "IL ROSSINI (3 KG) (GRAN BOLOGNA)"
   },
-  "2204": {
-    "description": "PAPPARDELLE (3 KG) (GRAN BOLOGNA)"
+  "45": {
+    "description": "PANCETTA LINEA MEZZA (2 KG) (SOSTER)"
   },
-  "986": {
-    "description": "PASSIONI PERE E PECORINO DI GROTA (3 KG) (GRAN BOLOGNA)"
+  "54": {
+    "description": "MOSCATO DOLCE 0.75 CL (TOSO)"
   },
-  "995": {
-    "description": "PIACERI AL 5 FORMAGGI (3 KG) (GRAN BOLOGNA)"
+  "62": {
+    "description": "SPAGUETTI (Nº8 RISTORANTE) (500 GR) (36 UD) (DIVELLA)"
   },
-  "2152": {
-    "description": "PIACERI AL SALMONE (3 KG) (GRAN BOLOGNA)"
+  "64": {
+    "description": "RIGATONI (500 GR) (DIVELLA)"
   },
-  "610": {
-    "description": "ROSETTE BOLOGNESI (3 KG) (GRAN BOLOGNA)"
+  "75": {
+    "description": "PATE AJO PLATO (3 KG) (POLCA)"
   },
-  "199": {
-    "description": "SOFFI DI VENTO (2 KG) (GRAN BOLOGNA)"
+  "76": {
+    "description": "ELICOIDALI (500GR) (DIVELLA)"
   },
-  "2205": {
-    "description": "SPAGHETTI ALLA CHITARRA (3 KG) (GRAN BOLOGNA)"
+  "96": {
+    "description": "PENNE ZITI RIGATE (500GR) (DIVELLA)"
   },
-  "959": {
-    "description": "TAGLIATELLE VERDI (3 KG) (GRAN BOLOGNA)"
+  "98": {
+    "description": "PROVOLONE DOLCE VALPADANA (5 KG)"
   },
-  "2203": {
-    "description": "TAGLIOLINE AL NERO DI SEPPIA (3 KG) (GRAN BOLOGNA)"
+  "115": {
+    "description": "FUSILLI TRICOLOR (POMOD/ESP) (500GR) (DIVELLA)"
   },
-  "2218": {
-    "description": "TAGLIOLINE GIALLE (3 KG) (GRAN BOLOGNA)"
+  "119": {
+    "description": "FETTUCCINE UOVO (500GR) (DIVELLA)"
   },
-  "604": {
-    "description": "TRE AMORI DEL MARE (3KG) (GRAN BOLOGNA)"
+  "121": {
+    "description": "JAMON IB. CEBO DE CAMPO 50% (B/ VERDE) (DIAZ)"
   },
-  "3176": {
-    "description": "AGNOLOTI CABRA, SPECK Y CEBOLLA (3 KG) (TRE ARCHI)"
+  "124": {
+    "description": "TAGLIATELLE UOVO (250GR) (DIVELLA)"
   },
-  "6765": {
-    "description": "CANELONES XL DE CARRILLERA E IDIAZABAL \"TRE ARCHI\" (30U)"
+  "126": {
+    "description": "FETTUCCINE UOVO (250GR) (DIVELLA)"
   },
-  "6763": {
-    "description": "CANELONES XL DE LA TIA PURA (ROPA VIEJA) (TRE ARCHI) (30U)"
-  },
-  "6764": {
-    "description": "CANELONES XL DE PATO Y TRUFA \"TRE ARCHI\" (30U)"
-  },
-  "2171": {
-    "description": "CAPPELLETTI DI VITELLO (3KG) (TRE ARCHI)"
-  },
-  "2172": {
-    "description": "CAPPELLETTI VERDI DI SPINACI, RICOTTA E NOCI (3KG) (TRE ARCHI)"
-  },
-  "6720": {
-    "description": "CAPPELLI DE FOIE, BACON Y CEBOLLA (3KG) (TRE ARCHI)"
-  },
-  "388": {
-    "description": "CUORE BOGAVANTE (3 KG) (TRE ARCHI)"
-  },
-  "1431": {
-    "description": "CUORE DE FOIE, BACON Y CEBOLLA (3KG) (TRE ARCHI)"
-  },
-  "6758": {
-    "description": "DELIZIA 6 FORMAGGI (3 KG) (TRE ARCHI)"
-  },
-  "3366": {
-    "description": "FAGOTTI FORMAGGIO E PERE (3KG) (TRI ARCHI)"
-  },
-  "3451": {
-    "description": "FIOCHETTI GORGONZOLA (3KG) (TRE ARCHI)"
-  },
-  "3436": {
-    "description": "GIGANTI CREMA GRANA PADANO Y ESPINACAS (2.5 KG) (TRE ARCHI)"
-  },
-  "3657": {
-    "description": "GIGANTI DE RABO DE TORO (2.5KG) (TRE ARCHI)"
-  },
-  "5596": {
-    "description": "GRANDE BOTTONE DE BERENJENA Y SCAMORZA (3KG) (TRE ARCHI)"
-  },
-  "5581": {
-    "description": "GRANDE OVALE DE CORDERO (3KG) (TRE ARCHI)"
-  },
-  "5580": {
-    "description": "GRANDE OVALE DE GAMBONES Y PUERRO (3KG) (TRE ARCHI)"
-  },
-  "3842": {
-    "description": "LASAÑA CARNE (PORCIONADA, BANDEJA) (TRE ARCHI)"
-  },
-  "6757": {
-    "description": "LASAÑA CARNE 1C/3BANDEJAS (4 RACIONES) (TRE ARCHI)"
-  },
-  "6755": {
-    "description": "LINGOTTO TOSCANO (3 KG) (TRE ARCHI)"
-  },
-  "2184": {
-    "description": "LUNETTE AL SALMON Y ENELDO (3KG) (TRE ARCHI)"
-  },
-  "4414": {
-    "description": "PAPARDELLE AL HUEVO (44 NIDOS)(TRE ARCHI)"
-  },
-  "363": {
-    "description": "RAVIOLI DI CARNE (3 KG) (TRE ARCHI)"
-  },
-  "5718": {
-    "description": "RAVIOLI FORMAGGI (3 KG) (TRE ARCHI)"
-  },
-  "3312": {
-    "description": "RAVIOLI GIGANTE AL POLLO TERIYAKI (2.5KG) (TRE ARCHI)"
-  },
-  "2169": {
-    "description": "RAVIOLONE DI VITELLO (3KG) (TRE ARCHI)"
-  },
-  "4411": {
-    "description": "SORRENTINO BURRATA DE PUGLIA (3KG) (TRE ARCHI)"
-  },
-  "6125": {
-    "description": "SORRENTINO DE BOLETUS Y TRUFA (3 KG) (TRE ARCHI)"
-  },
-  "4412": {
-    "description": "SORRENTINO VEGANO DE VERDURAS ASADAS (3 KG) (TRE ARCHI)"
-  },
-  "6760": {
-    "description": "TAGLIATELLE AL HUEVO (44NIDOS) (TRE ARCHI)"
-  },
-  "367": {
-    "description": "TORTELLI VERDI RICOTTA E SPINACI (3 KG) (TRE ARCHI)"
-  },
-  "1605": {
-    "description": "TORTELLINI DE CARNE (3 KG) (TRE ARCHI)"
-  },
-  "783": {
-    "description": "GNOCCHI PATATA (12U * 500G)"
-  },
-  "636": {
-    "description": "GNOCCHI RIPIERI FORMAGGI (12U* 500GR)"
-  },
-  "747": {
-    "description": "CREMA AI 5 FORMAGGI (420 GR) (VIANDER)"
-  },
-  "5677": {
-    "description": "CREMA AL 4 FORMAGGI (800 GR) (VIANDER)"
-  },
-  "513": {
-    "description": "CREMA DI FUNGHI PORCINI TARTUFATA (500 GR) (VIANDER)"
-  },
-  "980": {
-    "description": "CREMA DI NOCI (500 GR) (VIANDER)"
-  },
-  "623": {
-    "description": "CREMA DI PORCINI (500 GR) (VIANDER)"
-  },
-  "516": {
-    "description": "CREMA DI ZUCCA (420 GR) (CALABAZA) (VIANDER)"
-  },
-  "461": {
-    "description": "FANTASIA DI BOSCO 4 VARIETA TRIFOLATI (FUNGHI) (SETAS) (VIANDER)"
-  },
-  "608": {
-    "description": "MELANZANE GRIGLIATE 850 GR (VIANDER)"
-  },
-  "1617": {
-    "description": "OLIVE GOUR. NERE AL FORNO 1.5KG (VIANDER)"
-  },
-  "3719": {
-    "description": "PEPERONI FILETTI GRIGLIATI OLIO GIRASOLE (VIANDER)"
-  },
-  "700": {
-    "description": "DOPPIO CONCENTRATO POMODORO (800 GR) (VIANDER)"
-  },
-  "137": {
-    "description": "GRAN TRITO DI POMODORO (TOMATE) (4.1 KG) (DIVELLA)"
-  },
-  "1139": {
-    "description": "PASSATA POMODORO BOTE CRISTAL (TOMATE) (680 GR) (DIVELLA)"
-  },
-  "6792": {
-    "description": "PASSATA POMODORO MUTTI VETRO (TOMATE) (700GR)"
-  },
-  "736": {
-    "description": "POMODORI SECCHI LATA (800 GR) (VIANDER)"
-  },
-  "5670": {
-    "description": "POMODORINI GIALLI SEMISECCHI (VIANDER)"
-  },
-  "5669": {
-    "description": "POMODORINI ROSSI SEMISECCHI (VIANDER)"
-  },
-  "708": {
-    "description": "POMODORO CILIEGINO (800GR) (VIANDER)"
+  "130": {
+    "description": "PAPPARDELLE UOVO (250GR) (DIVELLA)"
   },
   "132": {
     "description": "POMODORO PELATI (TOMATE) (2.5 KG) (DIVELLA)"
   },
-  "6037": {
-    "description": "TOMATE ENTERO (TARRO) (720 GR) (MARZO)"
+  "136": {
+    "description": "SPECK AFFUMICATO (JAMON) (1/2 PIEZA) (SOSTER)"
   },
-  "2454": {
-    "description": "TOMATE ENTERO LATA (1 KG) (MARZO)"
+  "137": {
+    "description": "GRAN TRITO DI POMODORO (TOMATE) (4.1 KG) (DIVELLA)"
   },
-  "2455": {
-    "description": "TOMATE ENTERO LATA (1/2KG) (MARZO)"
+  "146": {
+    "description": "RISO ARBORIO (ARROZ) (1KG) (DIVELLA)"
   },
-  "2033": {
-    "description": "TOMATE ENTERO LATA (5KG) (MARZO)"
+  "166": {
+    "description": "GRANA PADANO (1/2 RUEDA)"
   },
-  "6808": {
-    "description": "TOMATE FRITO (5KG) (IAN)"
+  "193": {
+    "description": "CERVEZA PERONI \" NASTRO AZURRO \""
   },
-  "4830": {
-    "description": "TOMATE FRITO CASERO (1/2 KG) (DIMARDIS)"
+  "199": {
+    "description": "SOFFI DI VENTO (2 KG) (GRAN BOLOGNA)"
   },
-  "2631": {
-    "description": "TOMATE FRITO CASERO (3KG) (DIMARDIS)"
+  "214": {
+    "description": "QUESO PECORINO ROMANO (1/4) (SOSTER)"
   },
-  "1900": {
-    "description": "TOMATE FRITO LATA (3KG) (MARZO)"
+  "250": {
+    "description": "SAMBUCA BLANCA"
   },
-  "1989": {
-    "description": "TOMATE FRITO TARRO (250 GR) (MARZO)"
+  "255": {
+    "description": "AMARETTO 25% 0.70 L"
   },
-  "1988": {
-    "description": "TOMATE FRITO TARRO (580 GR) (MARZO)"
-  },
-  "1563": {
-    "description": "TOMATE SALSA PIZZA (5KG) (IAN)"
-  },
-  "993": {
-    "description": "TOMATE TRITURADO (5 KG) (IAN)"
-  },
-  "1997": {
-    "description": "TOMATE TRITURADO LATA (1 KG) (MARZO)"
-  },
-  "1996": {
-    "description": "TOMATE TRITURADO LATA (1/2 KG) (MARZO)"
-  },
-  "5265": {
-    "description": "TOMATE TRITURADO LATA (5KG) (MARZO)"
-  },
-  "6390": {
-    "description": "PIÑA EN SU JUGO (3 KG) (DIDI)"
-  },
-  "6719": {
-    "description": "ALCACHOFA 16/20 FRUTOS (12U) VEGA BAJA"
-  },
-  "5217": {
-    "description": "ALCACHOFA CONFITADA (1/2 TARRO CRISTAL) (SELEC MARDIS)"
-  },
-  "5917": {
-    "description": "ALCACHOFA FLOR CONFITADA EN ACEITE (12U) (IQF)"
-  },
-  "1014": {
-    "description": "ALCACHOFA TROCEADA (3 KG) (DIDI)"
-  },
-  "6041": {
-    "description": "CEBOLLA CARAMELIZADA (BOLSA) (1 KG)"
-  },
-  "941": {
-    "description": "CEBOLLA FRITA (LATA) (3 KG) (DIDI)"
-  },
-  "6023": {
-    "description": "CEBOLLA FRITA JULIANA (1KG)"
-  },
-  "5952": {
-    "description": "CEBOLLA FRITA JULIANA (5KG)"
-  },
-  "3676": {
-    "description": "BOLETUS DADOS HOSTELERIA (1 KG) (I.Q.F) (SELEC MARDIS)"
-  },
-  "5822": {
-    "description": "CHAMPIÑON LAMINADO (3KG)"
-  },
-  "1148": {
-    "description": "FUNGHI PORCINI SECCHI (BOLSA) (450 GR) (VIANDER)"
-  },
-  "3675": {
-    "description": "MEZCLA 4 SETAS CULTIVO (1 KG) (I.Q.F) (SELEC MARDIS)"
-  },
-  "1995": {
-    "description": "ALUBIAS BLANCAS POCHAS TARRO (1 KG) (MARZO)"
-  },
-  "1994": {
-    "description": "ALUBIAS BLANCAS POCHAS TARRO (1/2 KG) (MARZO)"
-  },
-  "2456": {
-    "description": "ALUBIAS PINTAS TARRO (1/2 KG) (MARZO)"
-  },
-  "1991": {
-    "description": "GARBANZOS AL NATURAL TARRO (1 KG) (MARZO)"
-  },
-  "1993": {
-    "description": "GARBANZOS AL NATURAL TARRO (1/2 KG) (MARZO)"
-  },
-  "6018": {
-    "description": "GARBANZOS CON BOLETUS (580 GR) (MARZO)"
-  },
-  "6665": {
-    "description": "HUMMUS DE GARBANZOS (MARZO)"
-  },
-  "1998": {
-    "description": "LENTEJAS AL NATURAL TARRO (1 KG) (MARZO)"
-  },
-  "1999": {
-    "description": "LENTEJAS AL NATURAL TARRO (1/2 KG) (MARZO)"
-  },
-  "2679": {
-    "description": "BORRAJA AL NATURAL TARRO (1 KG) (MARZO)"
-  },
-  "1992": {
-    "description": "CARDO AL NATURAL TARRO (1 KG) (MARZO)"
-  },
-  "3917": {
-    "description": "FRITADA CASERA TARRO (1/2 KG) (MARZO)"
-  },
-  "2009": {
-    "description": "JUDIAS VERDES AL NATURAL TARRO (1 KG) (MARZO)"
-  },
-  "6220": {
-    "description": "LATA YEMAS ESPARRAGO FINA EY5 (1/3 K) (MARZO)"
-  },
-  "2011": {
-    "description": "MACEDONIA DE VERDURAS TARRO (1 KG) (MARZO)"
-  },
-  "956": {
-    "description": "MAIZ DULCE (3 KG) (DIDI)"
-  },
-  "2016": {
-    "description": "MENESTRA DE VERDURAS TARRO (1 KG) (MARZO)"
-  },
-  "6632": {
-    "description": "PIMIENTO PIQUILLO 100% ASADO (4UDS*1KG) (IQF)"
-  },
-  "5951": {
-    "description": "PIMIENTO PIQUILLO 18/22 LATA 1/2 KG"
-  },
-  "5944": {
-    "description": "QUESO MEZCLA MARRON (MADURADO) (ALDONZA)"
-  },
-  "5957": {
-    "description": "QUESO SEMI MEZCLA (P. CASTELLANO)"
-  },
-  "6395": {
-    "description": "QUESO SEMICURADO MEZCLA (VERDES PRADOS) (3KG) (PRAMA)"
+  "260": {
+    "description": "QUESO CASTELLANO (MEZCLA) (SEMI) (3KG) (LUYAN)"
   },
   "261": {
     "description": "QUESO CASTELLANO 100 % OVEJA (CURADO) (3KG) (DM)"
@@ -671,713 +92,32 @@
   "262": {
     "description": "QUESO ZAMORANO PURO OVEJA (AÑEJO) (3KG) (DM)"
   },
-  "260": {
-    "description": "QUESO CASTELLANO (MEZCLA) (SEMI) (3KG) (LUYAN)"
-  },
-  "5175": {
-    "description": "QUESO ZAMORANO MEZCLA (MADURADO) (3KG) (LUYAN)"
-  },
-  "4010": {
-    "description": "QUESO PURO DE OVEJA (AÑEJO) (1/2 PIEZA) (SANSUEÑA)"
-  },
-  "5062": {
-    "description": "QUESO PURO DE OVEJA (AÑEJO) (1/4 PIEZA) (SANSUEÑA)"
-  },
-  "4704": {
-    "description": "QUESO PURO DE OVEJA (AÑEJO) (3 KG) (SANSUEÑA)"
-  },
-  "5309": {
-    "description": "QUESO PURO DE OVEJA (AÑEJO) (AJO) (1/2 PIEZA) (SANSUEÑA)"
-  },
-  "4117": {
-    "description": "QUESO PURO DE OVEJA (AÑEJO) (MANTECA) (1/2 PIEZA) (SANSUEÑA)"
-  },
-  "4705": {
-    "description": "QUESO PURO DE OVEJA (AÑEJO) (ROMERO) (1/2 PIEZA) (SANSUEÑA)"
-  },
-  "5215": {
-    "description": "QUESO PURO DE OVEJA (AÑEJO) (TRUFA) (1/2 PIEZA) (SANSUEÑA)"
-  },
-  "5554": {
-    "description": "QUESO PURO DE OVEJA CUÑA (AÑEJO) (250 GR) (SANSUEÑA)"
-  },
-  "5547": {
-    "description": "QUESO PURO DE OVEJA CUÑA (AÑEJO) (ACEITE) (1/8) (250 GR)(SANSUEÑA)"
-  },
-  "5553": {
-    "description": "QUESO PURO DE OVEJA CUÑA (AÑEJO) (AJO) (1/8) (250 GR) (SANSUEÑA)"
-  },
-  "5172": {
-    "description": "QUESO PURO DE OVEJA CUÑA (AÑEJO) (ROMERO) (1/8) (250 GR) (SANSUEÑA)"
-  },
-  "6240": {
-    "description": "QUESO PURO DE OVEJA CUÑA (AÑEJO) (TRUFA) (250 GR) (SANSUEÑA)"
-  },
-  "6375": {
-    "description": "QUESO ROMERO CUÑA (160 GR) (SANSUEÑA) (ENCARGO)"
-  },
-  "486": {
-    "description": "CREMA DE QUESO A LAS FINAS HIERBAS (1,8KG) (SOSTER)"
-  },
-  "5955": {
-    "description": "QUESO BARRA TIERNO (3KG) (ALDONZA)"
-  },
-  "5151": {
-    "description": "QUESO BRIE 60% M.G (1 KG) (PRESIDENT)"
-  },
-  "5400": {
-    "description": "QUESO BRIE 60% M.G. (3KG) (PRESIDENT) (ENCARGO)"
-  },
-  "1595": {
-    "description": "QUESO CREMA CUBO (3 KG) (KEN)"
-  },
-  "6752": {
-    "description": "QUESO CREMA SNEL (2KG) (KEN)"
-  },
-  "5149": {
-    "description": "QUESO FRESCO (BARRA) (1 KG) (VENTERO) (ENCARGO)"
-  },
-  "6714": {
-    "description": "QUESO FRESCO T. VILLALON 2 KG APROX ( SOSTER )"
-  },
-  "6335": {
-    "description": "QUESO CURADO DE CABRA (3 KG) (SANSUEÑA)"
-  },
-  "6336": {
-    "description": "QUESO CURADO DE CABRA CUÑA (250 GR APROX) (SANSUEÑA)"
-  },
-  "6334": {
-    "description": "QUESO CURADO DE CABRA (1/2 PIEZA) (SANSUEÑA)"
-  },
-  "5165": {
-    "description": "QUESO RULO CABRA (1 KG X 2UD) (PRESIDENT)"
-  },
-  "5947": {
-    "description": "QUESO RULO CABRA CON BLISTER (1KG) (ALDONZA)"
-  },
-  "5961": {
-    "description": "QUESO RULO MEZCLA CABRA AFINADO (850GR) (ALDONZA)"
-  },
-  "6030": {
-    "description": "ESTUCHE LAGRIMAS CUÑAS (SANSUEÑA)"
-  },
-  "6031": {
-    "description": "ESTUCHE LATA CUÑAS VARIADAS (SANSUEÑA)"
-  },
-  "2323": {
-    "description": "BURRATA (300 GR) (POR ENCARGO) (SOSTER)"
-  },
-  "1458": {
-    "description": "BURRATINA (6 UD * 125 GR) (SOSTER)"
-  },
-  "5047": {
-    "description": "BURRATINA (CONGELADA)(125 GR) (SKI)"
-  },
-  "947": {
-    "description": "GORGONZOLA GOLD (1/4) (1,5 KG) (SOSTER)"
-  },
-  "166": {
-    "description": "GRANA PADANO (1/2 RUEDA)"
-  },
-  "062": {
-    "description": "GRANA PADANO (1/8)"
-  },
-  "5823": {
-    "description": "GRANA PADANO (RUEDA ENTERA)"
-  },
-  "649": {
-    "description": "IL TRONCHETTO DI GRANA (1 KG APROX) (SOSTER)"
-  },
-  "064": {
-    "description": "MASCARPONE PLS (250 GR) (SOSTER)"
-  },
-  "065": {
-    "description": "MOZZARELLA BUFALA (125 GR) (SOSTER)"
-  },
-  "6691": {
-    "description": "MOZZARELLA BUFALA DOP GALDI 25 GR ( CUBO 500 GR) (SOSTER)"
-  },
-  "6583": {
-    "description": "MOZZARELLA FIORDILATTE NOBILI (15UD * 100 GR) (SOSTER)"
-  },
-  "053": {
-    "description": "MOZZARELLA FRESCA (10 UD * 125 GR) (SOSTER)"
-  },
-  "020": {
-    "description": "PARMESANO REGIANO (1/2 RUEDA) (+20 MESES)"
-  },
-  "049": {
-    "description": "PARMESANO REGIANO (1/8)"
-  },
-  "98": {
-    "description": "PROVOLONE DOLCE VALPADANA (5 KG)"
-  },
-  "4787": {
-    "description": "PROVOLONE LONCHAS (200 GR) (SOSTER)"
-  },
-  "1501": {
-    "description": "QUESO TIPO GRANA PADANO (1/8) (16 MESES) (SOSTER)"
-  },
-  "003": {
-    "description": "TALEGIO FORESTI (2 KG) (SOSTER)"
-  },
-  "214": {
-    "description": "QUESO PECORINO ROMANO (1/4) (SOSTER)"
-  },
-  "3881": {
-    "description": "QUESO AZUL DANES DESMIGADO (1,5 KG APROX) (SOSTER)"
-  },
-  "5627": {
-    "description": "QUESO AZUL RUEDA (3KG) (ST CLEMENS)"
-  },
-  "1060": {
-    "description": "QUESO BARRA GOUDA (3KG) (SOSTER)"
-  },
-  "5938": {
-    "description": "QUESO CHEDDAR BARRA (3KG) (ROJO) CORONA D´ORO"
-  },
-  "5625": {
-    "description": "QUESO EDAM BARRA (3.KG) CORONA D´ORO"
-  },
-  "5152": {
-    "description": "QUESO ROQUEFORT (1/2) (1,5 KG APROX) (SOCIETE)"
-  },
-  "5609": {
-    "description": "EMMENTAL ANALOGO (1 KG)"
-  },
-  "2158": {
-    "description": "EMMENTAL RALLADO (45% M.G) (1 KG) (FLFD)"
-  },
-  "512": {
-    "description": "MIX QUESO RALLADO LATA (1 KG) (SOSTER)"
-  },
-  "5250": {
-    "description": "QUESO CHEDDAR ROJO (LONCHAS) (1 KG)"
-  },
-  "6754": {
-    "description": "QUESO CHEDDAR ROJO (RALLADO) (2KG*6)"
-  },
-  "4150": {
-    "description": "QUESO EDAM LONCHA (1 KG)"
-  },
-  "6715": {
-    "description": "QUESO EDAM LONCHEADO 45 % 1 KG \" CORONA D´ORO \""
-  },
-  "2530": {
-    "description": "MOZZAEDAM CASA ITALIANA (6 x 2 KG)"
-  },
   "285": {
     "description": "MOZZARELLA 45% (5 x 2 KG) (ZUGER)"
   },
-  "6739": {
-    "description": "MOZZARELLA IZZIMO RALLADA PREMIUM 100 (6 x 2 KG)"
+  "313": {
+    "description": "OLIO CON PEPPERONCINO (ACEITE) (0.25 L) (VIANDER)"
   },
-  "2375": {
-    "description": "MOZZARELLA RALLADA (6 x 2 KG) (CASA ITALIANA)"
+  "357": {
+    "description": "MORTADELA PISTACHO BOLOGNIA MEZZA (5 KG) (VILLANI)"
   },
-  "2901": {
-    "description": "MOZZARELLA RALLADA 40% (5 X 2 KG) (DOLCE LATTE)"
+  "363": {
+    "description": "RAVIOLI DI CARNE (3 KG) (TRE ARCHI)"
   },
-  "6703": {
-    "description": "MOZZARELLA RALLADA 70/30 ( 4 x 2 KG ) ( DISFOOD )"
+  "367": {
+    "description": "TORTELLI VERDI RICOTTA E SPINACI (3 KG) (TRE ARCHI)"
   },
-  "6061": {
-    "description": "MOZZARELLA RALLADA BASIC (6 x 2 KG) (CASA ITALIANA)"
-  },
-  "6163": {
-    "description": "MOZZARELLA SAN MARCO (5 * 2 KG)"
-  },
-  "6617": {
-    "description": "PREPARADO RALLADO A BASE DE MOZZARELLA (6 x 2 KG) (CASA ITALIANA)"
-  },
-  "6417": {
-    "description": "CREMKEN YEMA DECORACION / CONGEL 7 KG (KEN)"
-  },
-  "6142": {
-    "description": "HUEVO COCIDO 70 UNIDADES (KEN)"
-  },
-  "6133": {
-    "description": "HUEVO OVOALIMENTAR LD II (1 KG) (KEN)"
-  },
-  "2303": {
-    "description": "KEN CULINARIO (1 L) (KEN)"
-  },
-  "4545": {
-    "description": "KEN GOURMET DUO (1 L) (KEN)"
-  },
-  "1576": {
-    "description": "KEN LACTEA 35% (UHT) (1 L) (KEN)"
-  },
-  "1324": {
-    "description": "KEN LACTEA AZUCARADA (1 L) (KEN)"
-  },
-  "6734": {
-    "description": "KEN NATA 38% S/C 1L"
-  },
-  "3144": {
-    "description": "KEN PRESTO (1 L) (KEN)"
-  },
-  "1320": {
-    "description": "KEN TOCINO DE CIELO (2,4 KG) (KEN)"
-  },
-  "3862": {
-    "description": "NATA ACIDA (2 L) (KEN)"
-  },
-  "933": {
-    "description": "NATA CULINARIA (1 L) (KEN)"
-  },
-  "1009": {
-    "description": "NATA PASTEURIZADA 35% (2 L) (KEN)"
-  },
-  "3786": {
-    "description": "NATA SNEL PARA COCINAR (1 L) (KEN)"
-  },
-  "3787": {
-    "description": "NATA SNEL PARA MONTAR Y COCINAR (1 L) (KEN)"
-  },
-  "1173": {
-    "description": "NATA SPRAY (0.5 L) (KEN)"
-  },
-  "1260": {
-    "description": "TRUFA (2,3 KG) (KEN)"
-  },
-  "1579": {
-    "description": "YOGUR GRIEGO CUBO (3,5 KG) (KEN)"
-  },
-  "6094": {
-    "description": "MANTEQUILLA KEN(PASTILLA 1 KG)"
-  },
-  "6488": {
-    "description": "JAMON BODEGA SIN PATA ( PESON )"
-  },
-  "6735": {
-    "description": "JAMON CEBO DE CAMPO 50% IBERICO (GALVAN)"
-  },
-  "6736": {
-    "description": "JAMON CEBO IBERICO 50%(GALVAN)"
-  },
-  "6486": {
-    "description": "JAMON RESERVA SIN PATA ( PESON )"
-  },
-  "5972": {
-    "description": "JAMON ARAGON RESERVA CON PATA (ARAGON)"
-  },
-  "6355": {
-    "description": "JAMON ARAGON TRADICION PATA CORTE (V) (ARAGON)"
-  },
-  "6042": {
-    "description": "JAMON GRAN RESERVA CON PATA (ARAGON)"
-  },
-  "1770": {
-    "description": "JAMON CEBO DE CAMPO 50% IBERICO (MONTESANO) (B/VERDE)"
-  },
-  "6221": {
-    "description": "JAMON CEBO DE CAMPO IB. 75% D.O. (MONTESANO) (B/VERDE)"
-  },
-  "2898": {
-    "description": "JAMON CEBO IB. 50% (MONTERROBLE) (B/BLANCA)"
-  },
-  "3654": {
-    "description": "JAMON IB. BELLOTA D.O. 100% (MONTESANO) (B/NEGRA)"
-  },
-  "3406": {
-    "description": "JAMON IB. BELLOTA 100% (MONTESANO) (B/NEGRA)"
-  },
-  "1902": {
-    "description": "JAMON IB. BELLOTA 50% (MONTESANO) (B/ROJA )"
-  },
-  "6481": {
-    "description": "JAMON BEHER ROJA SELECTO ( BEHER )"
-  },
-  "6809": {
-    "description": "JAMON BELLOTA IBERICO 75% (CREGO)"
-  },
-  "5328": {
-    "description": "JAMON BERNARDO SELECCION ( BEHER )"
-  },
-  "6727": {
-    "description": "JAMON CEBO 100% IBERICO CHANETES ( BEHER )"
-  },
-  "6113": {
-    "description": "JAMON CEBO DE CAMPO 100% IBERICO ECOLOGICO ( BEHER )"
-  },
-  "5327": {
-    "description": "JAMON CEBO DE CAMPO IBERICO 100% ROJA (B/VERDE) (BEHER)"
-  },
-  "5491": {
-    "description": "JAMON CEBO DE CAMPO IBERICO 50% (B/VERDE) (BEHER)"
-  },
-  "6717": {
-    "description": "JAMON CEBO IB. 50% ( PRIM )"
-  },
-  "6012": {
-    "description": "JAMON CEBO IB. 50% B/BLANCA (CREGO)"
-  },
-  "6112": {
-    "description": "JAMON DE BELLOTA 100% IBERICO ECOLOGICO ( BEHER )"
-  },
-  "5329": {
-    "description": "JAMON DE BELLOTA 100% IBERICO PATA NEGRA ORO C-18 ( BEHER )"
-  },
-  "5602": {
-    "description": "PALETA DE BELLOTA 100% IBERICA ECOLOGICA (BEHER)"
-  },
-  "6029": {
-    "description": "JAMON SERRANO (500 GR) (LONCHEADO) (EP)"
-  },
-  "4083": {
-    "description": "PICADILLO DE JAMON IB. DE CEBO (1KG) (B/BLANCA) (DIAZ)"
-  },
-  "5480": {
-    "description": "TACOS DE JAMON (GMA)"
-  },
-  "802": {
-    "description": "JAMON GRAN RESERVA (DIAZ)"
-  },
-  "803": {
-    "description": "JAMON GRAN RESERVA DUROC (G) (DIAZ)"
-  },
-  "425": {
-    "description": "JAMON IB. BELLOTA 100% (B/NEGRA)(DIAZ)"
-  },
-  "121": {
-    "description": "JAMON IB. CEBO DE CAMPO 50% (B/ VERDE) (DIAZ)"
-  },
-  "6687": {
-    "description": "PALETA GRAN RESERVA FORMATO BOCADILLO ( 280 G ) ( DIAZ )"
-  },
-  "6484": {
-    "description": "CENTRO JAMON GMA DISFOOD"
-  },
-  "6791": {
-    "description": "CENTRO JAMON IB. CEBO (B/BLANCA) (PULIDO) ( CREGO )"
-  },
-  "5978": {
-    "description": "CENTRO JAMON GRAN RESERVA (ARAGON)"
-  },
-  "5970": {
-    "description": "JAMON ARAGON GRAN RESERVA SIN PATA (ARAGON)"
-  },
-  "5971": {
-    "description": "JAMON ARAGON RESERVA SIN PATA (ARAGON)"
-  },
-  "5340": {
-    "description": "CENTRO JAMON IB. BELLOTA 50% (B/ ROJA) (MONTESANO)"
-  },
-  "3771": {
-    "description": "CENTRO JAMON IB. CEBO CAMPO PULIDO (B/ VERDE) (MONTESANO)"
-  },
-  "5348": {
-    "description": "CENTRO JAMON BELLOTA 100% IBERICO PATA NEGRA ORO ( BEHER )"
-  },
-  "5372": {
-    "description": "CENTRO JAMON CEBO DE CAMPO 100% IBERICO, ROJA ( BEHER )"
-  },
-  "989900": {
-    "description": "CENTRO JAMON SERRANO G.RESERVA (DIAZ)"
-  },
-  "4476": {
-    "description": "CENTRO JAMON SERRANO G.RESERVA (PULIDO) (DIAZ)"
-  },
-  "5525": {
-    "description": "SOBRE JAMON CORTE CUCHILLO BELLOTA 100% (90GR)(DFG)"
-  },
-  "5721": {
-    "description": "SOBRE JAMON CORTE CUCHILLO BELLOTA 50% (90 GR) (DFG)"
-  },
-  "6751": {
-    "description": "SOBRE JAMON CORTE CUCHILLO CEBO 100% (100GR) (DFG)"
-  },
-  "6120": {
-    "description": "SOBRE JAMON CORTE CUCHILLO CEBO 50% (90GR)(DFG)"
-  },
-  "5524": {
-    "description": "SOBRE JAMON CORTE CUCHILLO CEBO DE CAMPO (90 GR)(DFG)"
-  },
-  "6804": {
-    "description": "SOBRE JAMON CORTE CUCHILLO DUROC (100GR) (DFG)"
-  },
-  "5345": {
-    "description": "CENTRO PALETA BELLOTA 100% IB PULIDA ORO (B/NEGRA) ( BEHER )"
-  },
-  "6394": {
-    "description": "CENTRO PALETA DE BELLOTA 100% IBERICA ECOLOGICA ( BEHER )"
-  },
-  "6393": {
-    "description": "CENTRO PALETA DE CEBO DE CAMPO 100% IBERICA ECOLOGICA ( BEHER )"
-  },
-  "5330": {
-    "description": "CENTRO PALETA DE CEBO DE CAMPO 100% IBERICA PULIDA ( BEHER )"
-  },
-  "4727": {
-    "description": "CENTRO PALETA IB. CEBO (B/ BLANCA) (MONTERROBLE)"
-  },
-  "5168": {
-    "description": "PALETA DE BELLOTA 100% IBERICA (B/NEGRA) (MONTESANO)"
-  },
-  "5352": {
-    "description": "PALETA DE BELLOTA 100% IBERICA PATA NEGRA ORO (BEHER)"
-  },
-  "6770": {
-    "description": "PALETA DE CEBO DE CAMPO 100% IBERICA EN LONCHAS ( BEHER )"
-  },
-  "5351": {
-    "description": "PALETA DE CEBO DE CAMPO 100% IBERICA ROJA ( BEHER )"
-  },
-  "6153": {
-    "description": "PALETA GRAN RESERVA DUROC 4.5-5 K CURADA (DIAZ)"
-  },
-  "5068": {
-    "description": "PALETA IB. DE BELLOTA 100% (B/NEGRA) (DIAZ)"
-  },
-  "6790": {
-    "description": "CECINA ANGUS 1/2 PIEZA PULIDA VACIO (C.PABLO)"
-  },
-  "1966": {
-    "description": "CECINA CURADA (TAPA) (C.PABLO)"
-  },
-  "6107": {
-    "description": "CECINA CURADA BUEY SELEC ESPECIAL ED LIMITADA (C.PABLO)"
-  },
-  "2522": {
-    "description": "CECINA CURADA MEDIA TAPA (3,5 APROX) (C.PABLO)"
-  },
-  "6071": {
-    "description": "CECINA CURADA WAGYU MEDIA PIEZA PULIDA (C.PABLO) 2 piezas."
-  },
-  "5177": {
-    "description": "CHORIZO DE LEON DULCE (450 GR APROX) (C.PABLO)"
-  },
-  "5178": {
-    "description": "CHORIZO DE LEON PICANTE (450 GR APROX) (C.PABLO)"
-  },
-  "2493": {
-    "description": "CHORIZO MARAGATO DULCE (AL VACIO) (2,5 KG APROX) (C.PABLO)"
-  },
-  "2494": {
-    "description": "CHORIZO MARAGATO PICANTE (AL VACIO) (2,5 KG APROX) (C.PABLO)"
-  },
-  "5122": {
-    "description": "CREMA DE CECINA TARRINA (130 GR) (C.PABLO)"
-  },
-  "6069": {
-    "description": "LENGUA DE VACUNO CURADA Y COCIDA"
-  },
-  "1976": {
-    "description": "LONGANIZA MARGATO DULCE (AL VACIO) (3 KG APROX) (C.PABLO)"
-  },
-  "1977": {
-    "description": "LONGANIZA MARGATO PICANTE (AL VACIO) (3 KG APROX) (C.PABLO)"
-  },
-  "4964": {
-    "description": "PASTRAMI TRADICION AHUMADO (C.PABLO)"
-  },
-  "6693": {
-    "description": "CHORIZO EXTRA COLLAR ( 15U*C ) (GRAU)"
-  },
-  "6709": {
-    "description": "CHORIZO EXTRA COLLAR PICANTE ( 15U*C ) (GRAU)"
-  },
-  "6695": {
-    "description": "LOMO EMBUCHADO 1/2 CAÑAS ( 6U*C) (GRAU)"
-  },
-  "5335": {
-    "description": "LONGANIZA DE BELLOTA 100% IBERICA ( BEHER )"
-  },
-  "6704": {
-    "description": "LONGANIZA EXTRA FINA MAZOS (15UD MAZO) (3 UD X CJ) (GRAU)"
-  },
-  "6692": {
-    "description": "LONGANIZA EXTRA COLLAR (220 GR) ( 15UD * CJ ) (GRAU)"
-  },
-  "6694": {
-    "description": "LONGANIZA SECA FINA INDIVIDUAL ( 25U*C) (GRAU)"
-  },
-  "6017": {
-    "description": "SOBRASADA CERDO DUROC TRIPA NATURAL (DIAZ)"
-  },
-  "6795": {
-    "description": "SOBRASADA NDUJA DI SPILINGA IN SAC A POCHE 500 GR"
-  },
-  "797": {
-    "description": "CHORIZO BELLOTA (ENTERO) (DIAZ)"
-  },
-  "5334": {
-    "description": "CHORIZO CULAR DE BELLOTA 100% IBERICO ( BEHER )"
-  },
-  "5605": {
-    "description": "CHORIZO DE BELLOTA 100% IBERICO ECOLOGICO 500 G ( BEHER )"
-  },
-  "6789": {
-    "description": "CHORIZO EXTRA EN CIEGO MORCON (DIAZ)"
-  },
-  "1550": {
-    "description": "CHORIZO EXTRA MORCON TRADICION MATANZA (1/2 PIEZA) (DIAZ)"
-  },
-  "806": {
-    "description": "CHORIZO EXTRA ROJO CULAR DUROC (1/2 PIEZA) (DIAZ)"
-  },
-  "3781": {
-    "description": "CHORIZO IBERICO BELLOTA (ENTERO) (MONTESANO)"
-  },
-  "6737": {
-    "description": "CHORIZO IBERICO CULAR (ENTERO) ( GALVAN )"
-  },
-  "1806": {
-    "description": "CHORIZO IBERICO E. CULAR (ENTERO) (MONTESANO)"
-  },
-  "5338": {
-    "description": "CHORIZO VELA DE BELLOTA 100% IBERICO (500 GR) ( BEHER )"
-  },
-  "5350": {
-    "description": "LOMITO DE PRESA BELLOTA 100% IBERICO ( BEHER )"
-  },
-  "3510": {
-    "description": "LOMITO IBERICO 100% BELLOTA (MONTESANO)"
-  },
-  "5332": {
-    "description": "LOMO BEHER UNICO ( BEHER )"
-  },
-  "5379": {
-    "description": "LOMO BEHER UNICO (1/2 PIEZA) ( BEHER )"
-  },
-  "3780": {
-    "description": "LOMO BELLOTA 100% IB. (ENTERO) (MONTESANO)"
-  },
-  "6810": {
-    "description": "LOMO CEBO DE CAMPO IB 50% (1/2) (CREGO)"
-  },
-  "6716": {
-    "description": "LOMO CEBO IBERICO 50% ENTERO ( PRIM )"
-  },
-  "4861": {
-    "description": "LOMO CEBO IBERICO 50% ENTERO (MONTEROBLE)"
-  },
-  "5349": {
-    "description": "LOMO DE BELLOTA 100% IBERICO PATA NEGRA ( BEHER )"
-  },
-  "5380": {
-    "description": "LOMO DE BELLOTA 100% IBERICO PATA NEGRA (1/2 PIEZA) ( BEHER )"
-  },
-  "6455": {
-    "description": "LOMO DE CEBO IBERICO 50% EMBUCHADO ( CREGO )"
-  },
-  "6535": {
-    "description": "LOMO DUROC (MONROYO)"
-  },
-  "808": {
-    "description": "LOMO EMBUCHADO GRASO (1/2 PIEZA) (DIAZ)"
-  },
-  "6768": {
-    "description": "LOMO IB. DE CEBO (1/2 PIEZA) (IBISMA)"
-  },
-  "5378": {
-    "description": "LOMO IB. DE CEBO DE CAMPO 100% (1/2 PIEZA) ( BEHER )"
-  },
-  "5331": {
-    "description": "LOMO IB. DE CEBO DE CAMPO 100% (ENTERO) ( BEHER )"
-  },
-  "6805": {
-    "description": "LOMO IB. DE CEBO DE CAMPO 50% (1/2 PIEZA) (GALVAN)"
-  },
-  "3776": {
-    "description": "LOMO IB. DE CEBO DE CAMPO 50% (1/2 PIEZA) (MONTESANO)"
-  },
-  "796": {
-    "description": "SALCHICHON BELLOTA (ENTERO) (DIAZ)"
-  },
-  "5333": {
-    "description": "SALCHICHON CULAR DE BELLOTA 100% IBERICO ( BEHER )"
-  },
-  "5377": {
-    "description": "SALCHICHON CULAR DE BELLOTA 100% IBERICO (1/2 PIEZA) ( BEHER )"
-  },
-  "6738": {
-    "description": "SALCHICHON CULAR IBERICO (ENTERO) ( GALVAN )"
-  },
-  "1808": {
-    "description": "SALCHICHON CULAR IBERICO (ENTERO) (MONTESANO)"
-  },
-  "807": {
-    "description": "SALCHICHON EXTRA CULAR DUROC (1/2 PIEZA) (DIAZ)"
-  },
-  "3782": {
-    "description": "SALCHICHON IBERICO BELLOTA (ENTERO) (MONTESANO)"
-  },
-  "5375": {
-    "description": "SALCHICHON SARTA DE BELLOTA 100% IBERICO ( BEHER )"
-  },
-  "5339": {
-    "description": "SALCHICHON VELA BELLOTA 100% IBERICO (500 GR) ( BEHER )"
-  },
-  "417": {
-    "description": "BRESAOLA (1/2 PIEZA) (SOSTER)"
+  "388": {
+    "description": "CUORE BOGAVANTE (3 KG) (TRE ARCHI)"
   },
   "389": {
     "description": "COPPA CURADA (1.5 KG) (SOSTER)"
   },
-  "3919": {
-    "description": "GUANCIALE CURADO AHUMADO (AL VACIO) (SOSTER)"
+  "392": {
+    "description": "HARINA 00 PIZZA (25 KG) (DIVELLA)"
   },
-  "6721": {
-    "description": "GUANCIALE PAPADA DUROC (AL VACIO) ( DIAZ )"
-  },
-  "45": {
-    "description": "PANCETTA LINEA MEZZA (2 KG) (SOSTER)"
-  },
-  "6040": {
-    "description": "PEPPERONI (500 GR) (LONCHEADO) (EP)"
-  },
-  "6155": {
-    "description": "PORCHETTA COCIDA AL HORNO (6 KG) (SOSTER)"
-  },
-  "6633": {
-    "description": "PROSCIUTTO COTTO GRAN PAESE SIN GLUTEN"
-  },
-  "709": {
-    "description": "PROSCIUTTO CRUDO EMILIANO (VILLANI)"
-  },
-  "720": {
-    "description": "PROSCIUTTO PARMA (VILLANI)"
-  },
-  "026": {
-    "description": "SALAME PEPERONI (300 GR) (VILLANI)"
-  },
-  "4343": {
-    "description": "SALAMI MILANO EXPORT (VILLANI)"
-  },
-  "1006": {
-    "description": "SALAMI SPIANATA PICANTE (1 KG APROX) (SOSTER)"
-  },
-  "019": {
-    "description": "SALSICCIA NAPOLI PICANTE (400 GR) (VILLANI)"
-  },
-  "136": {
-    "description": "SPECK AFFUMICATO (JAMON) (1/2 PIEZA) (SOSTER)"
-  },
-  "429": {
-    "description": "BOTELLA SETAS SILVESTRES AL CHAMPAGNE (PATE) (1.8 KG) (POLCA)"
-  },
-  "490": {
-    "description": "PATE DE MANZANA MOLDE (1.5 KG) (POLCA)"
-  },
-  "75": {
-    "description": "PATE AJO PLATO (3 KG) (POLCA)"
-  },
-  "433": {
-    "description": "PATE ARDENES PLATO (3 KG) (POLCA)"
-  },
-  "419": {
-    "description": "PATE CEBOLLA CHALOTES PLATO (3 KG) (POLCA)"
-  },
-  "421": {
-    "description": "PATE CHAMPIÑON PLATO (3 KG) (POLCA)"
-  },
-  "426": {
-    "description": "PATE CREMA FINA HIGADO (3 KG) (POLCA)"
-  },
-  "434": {
-    "description": "PATE FINAS HIERBAS PLATO (3 KG) (POLCA)"
+  "400": {
+    "description": "FUSILLI (500 GR) (DIVELLA)"
   },
   "403": {
     "description": "PATE PATO AL OPORTO PLATO (3 KG) (POLCA)"
@@ -1385,596 +125,257 @@
   "404": {
     "description": "PATE PIMIENTA NEGRA PLATO (3 KG) (POLCA)"
   },
+  "405": {
+    "description": "TAGLIATELLE UOVO (500 GR) (DIVELLA)"
+  },
+  "411": {
+    "description": "FARFALLE (500 GR) (DIVELLA)"
+  },
+  "412": {
+    "description": "HOJA LASAGNA UOVO (500 GR) (DIVELLA)"
+  },
+  "414": {
+    "description": "SPAGUETTINI (Nº 9) (500 GR) (DIVELLA)"
+  },
+  "415": {
+    "description": "SEMOLA RIMACINATA (5 KG) (DIVELLA)"
+  },
+  "416": {
+    "description": "FARFALLE (POMOD/SPIN) (500 GR) (DIVELLA)"
+  },
+  "417": {
+    "description": "BRESAOLA (1/2 PIEZA) (SOSTER)"
+  },
+  "419": {
+    "description": "PATE CEBOLLA CHALOTES PLATO (3 KG) (POLCA)"
+  },
+  "421": {
+    "description": "PATE CHAMPIÑON PLATO (3 KG) (POLCA)"
+  },
+  "425": {
+    "description": "JAMON IB. BELLOTA 100% (B/NEGRA)(DIAZ)"
+  },
+  "426": {
+    "description": "PATE CREMA FINA HIGADO (3 KG) (POLCA)"
+  },
+  "429": {
+    "description": "BOTELLA SETAS SILVESTRES AL CHAMPAGNE (PATE) (1.8 KG) (POLCA)"
+  },
+  "433": {
+    "description": "PATE ARDENES PLATO (3 KG) (POLCA)"
+  },
+  "434": {
+    "description": "PATE FINAS HIERBAS PLATO (3 KG) (POLCA)"
+  },
   "435": {
     "description": "PATE PIMIENTA VERDE PLATO (3 KG) (POLCA)"
   },
-  "47024": {
-    "description": "MOUSSE DE CANNARD TARRINA BLANCA (1.5 KG) (POLCA)"
+  "440": {
+    "description": "MOSCATO ARTESANO D'ASTI DOCG (FIOCCO DE VITE)"
   },
-  "3219": {
-    "description": "MOUSSE DE PATO PURO 100% RULO (1.6 KG) (POLCA)"
+  "442": {
+    "description": "PESTO GENOVESE (500 GR) (CONGELADO) (GEA)"
   },
-  "1406": {
-    "description": "PATE ARDENES (BLOQUE) (1 KG) (POLCA)"
+  "448": {
+    "description": "LEVADURA SECA ATTIVO (500 GR) (VIANDER)"
   },
-  "1837": {
-    "description": "PATE CHEF CAMPAÑA PLATO (2 KG) (POLCA)"
+  "452": {
+    "description": "FRAGOLINO ROSSO 0,75 L (VINO) (TOSO)"
   },
-  "1601": {
-    "description": "PATE DE ARANDANOS PLATO (2 KG) (POLCA)"
+  "457": {
+    "description": "PROSECCO ARTESANO EXTRA DRY (TOSO)"
   },
-  "1273": {
-    "description": "PATE FINAS HIERBAS (BLOQUE) (1KG) (POLCA)"
+  "460": {
+    "description": "LINGUINE (500 GR) (DIVELLA)"
   },
-  "1409": {
-    "description": "PATE MANZANA (BLOQUE) (1 KG) (POLCA)"
-  },
-  "229160": {
-    "description": "PATE MOUSSE DE CANARD CON ARANDANOS (1.5 KG) (POLCA)"
-  },
-  "1408": {
-    "description": "PATE PATO AL OPORTO (BLOQUE) (1 KG) (POLCA)"
-  },
-  "1838": {
-    "description": "PATE PIMIENTA NEGRA PLATO (2 KG) (POLCA)"
-  },
-  "1407": {
-    "description": "PATE PIMIENTA VERDE (BLOQUE) (1 KG) (POLCA)"
-  },
-  "2297": {
-    "description": "BLOC DE FOIE 30% TROZOS (LATA) (1KG)"
-  },
-  "2406": {
-    "description": "BLOC DE FOIE GRAS (LATA) (1 KG)"
-  },
-  "5107": {
-    "description": "CONFIT DE CANARD (UD) (250G)"
-  },
-  "1620": {
-    "description": "CONFIT PATO (12 MUSLOS) (LATA)"
-  },
-  "1915": {
-    "description": "HIGADO DE PATO RESTAURACION (IQF)"
-  },
-  "868": {
-    "description": "MAGRET PATO VACIO (IQF) (UD) (400 G)"
-  },
-  "4720": {
-    "description": "MICUIT ORIGINE FRANCE (500 GR/UD)"
-  },
-  "5450": {
-    "description": "MOUSSE DE FOIE DE CANARD (PATE SUPERIOR) FABRIQUE FRANCE"
-  },
-  "5819": {
-    "description": "CALLOS (2.5KG) (ROGUSA)"
-  },
-  "5824": {
-    "description": "CALLOS (500GR) (ROGUSA)"
-  },
-  "5925": {
-    "description": "CALLOS COCIDOS (1KG) (ROGUSA)"
-  },
-  "5860": {
-    "description": "CALLOS MADRILEÑA (380GR) (LATA) (ROGUSA)"
-  },
-  "6446": {
-    "description": "MINUTEJOS (0.4 KG) (ROGUSA)"
-  },
-  "6143": {
-    "description": "OREJA COCIDA ADOBADA (0.5 KG) (ROGUSA)"
-  },
-  "5859": {
-    "description": "OREJA GUISADA LATA (380 GR) (ROGUSA)"
-  },
-  "3396": {
-    "description": "ABANICO DE CERDO DUROC (DIAZ)"
-  },
-  "3397": {
-    "description": "SOLOMILLO CERDO DUROC (CONGELADO) (DIAZ)"
-  },
-  "5475": {
-    "description": "LAGRIMAS DE COSTILLA 100% IBERICAS CONGELADAS ( BEHER )"
-  },
-  "5238": {
-    "description": "PLUMA DE BELLOTA 100% IBERICA CONG (B/NEGRA) (MONTESANO)"
-  },
-  "5570": {
-    "description": "PRESA DE BELLOTA 100% IBERICA CONG (MONTESANO)"
-  },
-  "4345": {
-    "description": "SECRETO DE BELLOTA IBERICO 100% (MONTESANO)"
-  },
-  "6086": {
-    "description": "SECRETO PAPADA IBERICO CONGELADO (MONTESANO)"
-  },
-  "5284": {
-    "description": "BACON AHUMADO CHEF LONCHEADO (1KG) (SQ)"
-  },
-  "1116": {
-    "description": "BACON AHUMADO MOLDE CON PIEL (SQ)"
-  },
-  "5283": {
-    "description": "BACON AHUMADO MOLDE SIN PIEL (SQ)"
-  },
-  "5292": {
-    "description": "BACON CHEF PIEZA (SQ)"
-  },
-  "5459": {
-    "description": "BACON EXTRA (SQ)"
-  },
-  "6801": {
-    "description": "BARRA SANDWICH LONCHAS (1KG) (DISFOOD)"
-  },
-  "5950": {
-    "description": "JAMON COCIDO 100% IBERICO BEHER"
-  },
-  "5285": {
-    "description": "JAMON COCIDO CLASSIC ( SQ )"
-  },
-  "6800": {
-    "description": "JAMON COCIDO EXTRA (11X11) LONCHAS (1KG) (DISFOOD)"
-  },
-  "6799": {
-    "description": "JAMON COCIDO EXTRA PRESTIGE LONCHAS (1KG) (DISFOOD)"
-  },
-  "5858": {
-    "description": "JAMON COCIDO OVAL (SQ)"
-  },
-  "6601": {
-    "description": "LACON AHUMADO (SQ)"
-  },
-  "1587": {
-    "description": "YORK SANDWICH (11X11)"
-  },
-  "357": {
-    "description": "MORTADELA PISTACHO BOLOGNIA MEZZA (5 KG) (VILLANI)"
-  },
-  "6811": {
-    "description": "MORTADELA PRESTIGE (GEMI)"
+  "461": {
+    "description": "FANTASIA DI BOSCO 4 VARIETA TRIFOLATI (FUNGHI) (SETAS) (VIANDER)"
   },
   "478": {
     "description": "MORTADELA TARTUFO (VILLANI)"
   },
-  "8001": {
-    "description": "BACON DE PAVO (HALAL)"
+  "486": {
+    "description": "CREMA DE QUESO A LAS FINAS HIERBAS (1,8KG) (SOSTER)"
   },
-  "8000": {
-    "description": "FIAMBRE JAMON DE PAVO (HALAL)"
+  "490": {
+    "description": "PATE DE MANZANA MOLDE (1.5 KG) (POLCA)"
   },
-  "5999": {
-    "description": "MIGAS BONITO CANT. AC. OLIVA (430GR) (EMILIA)"
+  "512": {
+    "description": "MIX QUESO RALLADO LATA (1 KG) (SOSTER)"
   },
-  "6004": {
-    "description": "PUNTILLA SIN PLUMA 450G (12U) SELEC MARDIS"
+  "513": {
+    "description": "CREMA DI FUNGHI PORCINI TARTUFATA (500 GR) (VIANDER)"
   },
-  "5996": {
-    "description": "RELANZON OLIVA (LATA) (180GR) (EMILIA)"
+  "516": {
+    "description": "CREMA DI ZUCCA (420 GR) (CALABAZA) (VIANDER)"
   },
-  "5987": {
-    "description": "VENTRESCA BONITO CANT. OLIVA LATA 120 GR EXTRA (EMILIA)"
+  "534": {
+    "description": "HARINA 00 NAPOLETANA (25 KG) (DIVELLA)"
   },
-  "4599": {
-    "description": "ANCHOA 00 CANT. OLIVA (TARRINA) (30 F) (350 GR) (SELEC MARDIS)"
+  "536": {
+    "description": "HARINA 00 FORTE (25 KG) (DIVELLA)"
   },
-  "5966": {
-    "description": "ANCHOA CANTABRICO OLIVA (LATA) (115 GR) (8F) PLATA(EMILIA)"
+  "602": {
+    "description": "SPOLVERINA (10 KG) (5 STAGIONI)"
   },
-  "5986": {
-    "description": "ANCHOA CANTABRICO OLIVA (LATA) (115 GR) (8F)ORO(EMILIA)"
+  "604": {
+    "description": "TRE AMORI DEL MARE (3KG) (GRAN BOLOGNA)"
   },
-  "5995": {
-    "description": "ANCHOA CANTABRICO OLIVA OCTAVILLO(LATA) (50 GR) (EMILIA)"
+  "608": {
+    "description": "MELANZANE GRIGLIATE 850 GR (VIANDER)"
   },
-  "5969": {
-    "description": "ANCHOA CANTABRICO TARRINA 50F (EMILIA)"
+  "610": {
+    "description": "ROSETTE BOLOGNESI (3 KG) (GRAN BOLOGNA)"
   },
-  "2151": {
-    "description": "ATUN ACEITE BOLSA (1 KG) (SELEC MARDIS) 16 U."
+  "623": {
+    "description": "CREMA DI PORCINI (500 GR) (VIANDER)"
   },
-  "6713": {
-    "description": "ATUN GIRASOL (LATA) (750 GR) (ARLEQUIN)"
+  "636": {
+    "description": "GNOCCHI RIPIERI FORMAGGI (12U* 500GR)"
   },
-  "6631": {
-    "description": "ATUN LATA RO. (1 KG) (MIAU)"
+  "649": {
+    "description": "IL TRONCHETTO DI GRANA (1 KG APROX) (SOSTER)"
   },
-  "5953": {
-    "description": "ATUN LOMITO GIRASOL LATA (900 GR) (ARLEQUIN)"
+  "689": {
+    "description": "SALSA TARTUFATA ESPECIAL (580 GR) (VIANDER)"
   },
-  "6636": {
-    "description": "VENTRESCA DE ATUN CLARO GIRASOL LATA (750 GR) (SELEC MARDIS)"
+  "700": {
+    "description": "DOPPIO CONCENTRATO POMODORO (800 GR) (VIANDER)"
   },
-  "5985": {
-    "description": "BOQUERONES EN VINAGRE (800 GR) (SOLEVANTE)"
+  "701": {
+    "description": "ACEITUNAS NEGRAS LAMINADAS (LATA) (3 KG)"
   },
-  "6698": {
-    "description": "CHIPIRON RELLENO ANGULA SUREMI AC. GIRASOL ( CAMBADOS"
+  "708": {
+    "description": "POMODORO CILIEGINO (800GR) (VIANDER)"
   },
-  "6699": {
-    "description": "CHIPIRONES EN SU TINTA 6/8 ( CAMBADOS )"
+  "709": {
+    "description": "PROSCIUTTO CRUDO EMILIANO (VILLANI)"
   },
-  "6697": {
-    "description": "NAVAJAS AL NATURA (LATA) (120 GR) (6/8 GIGANTE) ( CAMBADOS"
+  "720": {
+    "description": "PROSCIUTTO PARMA (VILLANI)"
   },
-  "6700": {
-    "description": "SARDINAS EN TOMATE 3/5 ( CAMBADOS )"
+  "735": {
+    "description": "CAPELLI D`ANGELO (500 GR) (DIVELLA)"
   },
-  "5968": {
-    "description": "PULPO EN SU JUGO (190-225GR) (EMILIA)"
+  "736": {
+    "description": "POMODORI SECCHI LATA (800 GR) (VIANDER)"
   },
-  "5967": {
-    "description": "PULPO EN SU JUGO (230-265GR) (EMILIA)"
+  "747": {
+    "description": "CREMA AI 5 FORMAGGI (420 GR) (VIANDER)"
   },
-  "3895": {
-    "description": "PULPO SELECCION COCIDO (1 PATA) (160-180 GR) (SELEC MARDIS)"
+  "754": {
+    "description": "CACCETTI AFFUMICATI CAMPAGNOLO (300 GR) (SOSTER) (ENCARGO)"
   },
-  "6779": {
-    "description": "BONITO EN ACEITE 180 GR"
+  "783": {
+    "description": "GNOCCHI PATATA (12U * 500G)"
   },
-  "6778": {
-    "description": "BONITO EN ACEITE 500 GR"
+  "796": {
+    "description": "SALCHICHON BELLOTA (ENTERO) (DIAZ)"
   },
-  "6780": {
-    "description": "BONITO EN ACEITE CUBO 2 KG"
+  "797": {
+    "description": "CHORIZO BELLOTA (ENTERO) (DIAZ)"
   },
-  "5907": {
-    "description": "CAPELLAN TARRINA PLASTICO (1 KG) (SELEC MARDIS)"
+  "802": {
+    "description": "JAMON GRAN RESERVA (DIAZ)"
   },
-  "5171": {
-    "description": "HUEVA DE ATUN DE ALMADRABA"
+  "803": {
+    "description": "JAMON GRAN RESERVA DUROC (G) (DIAZ)"
   },
-  "4831": {
-    "description": "HUEVA DE ATUNARRO"
+  "806": {
+    "description": "CHORIZO EXTRA ROJO CULAR DUROC (1/2 PIEZA) (DIAZ)"
   },
-  "5278": {
-    "description": "HUEVA DE MARUCA 1º"
+  "807": {
+    "description": "SALCHICHON EXTRA CULAR DUROC (1/2 PIEZA) (DIAZ)"
   },
-  "4807": {
-    "description": "HUEVA DE MUJOL"
-  },
-  "4592": {
-    "description": "HUEVA MARUCA EXTRA"
-  },
-  "6807": {
-    "description": "HUEVA MUJOL CONFITADA 180 GR"
-  },
-  "4593": {
-    "description": "LOMO BONITO"
-  },
-  "4832": {
-    "description": "MOJAMA 1ª"
-  },
-  "4591": {
-    "description": "MOJAMA EXTRA"
-  },
-  "5162": {
-    "description": "SARDINA AHUMADA EN ACEITE TARRINA 900G"
-  },
-  "6708": {
-    "description": "VISOL"
-  },
-  "5747": {
-    "description": "BACALAO TARRINA ( 1KG) (DOMINGUEZ)"
-  },
-  "6169": {
-    "description": "DISCO BACALAO AHUMADO ( 130 GR) (DOMINGUEZ)"
-  },
-  "5788": {
-    "description": "LOMO DE BACALAO (500 GR) (DOMINGUEZ)"
-  },
-  "5811": {
-    "description": "BLINIS BOLSA (30U) (DOMINGUEZ)"
-  },
-  "5812": {
-    "description": "BLINIS BOLSA (6U) (DOMINGUEZ)"
-  },
-  "5768": {
-    "description": "BOQUERONES EN VINAGRE LATA (425 GR) (DOMINGUEZ)"
-  },
-  "5776": {
-    "description": "COCKTAIL SALMON (1 KG) (DOMINGUEZ)"
-  },
-  "5796": {
-    "description": "COLIN TARRINA (1KG) (DOMINGUEZ)"
-  },
-  "5746": {
-    "description": "ENSALADA DE AHUMADOS (1 KG) (DOMINGUEZ)"
-  },
-  "5785": {
-    "description": "ENSALADA DE AHUMADOS (500 GR) (DOMINGUEZ)"
-  },
-  "6105": {
-    "description": "LINGOTTO DE BRANDADA DE BACALAO"
-  },
-  "5772": {
-    "description": "TARRINA COCKTAIL GAMBON SALVAJE (1KG) (DOMINGUEZ)"
-  },
-  "6033": {
-    "description": "DADOS DE SALMON (95 GR) (DOMINGUEZ)"
-  },
-  "5769": {
-    "description": "LOMO SALMON ENTERO (DOMINGUEZ) PESO VARIABLE"
-  },
-  "1127": {
-    "description": "LOMOS DE SALMON AHUMADO TARRINA 1KG (DOMINGUEZ)"
-  },
-  "5782": {
-    "description": "LOMOS SALMON SOBRES (100 GR) (DOMINGUEZ)"
-  },
-  "5783": {
-    "description": "LOMOS SALMON SOBRES (250 GR) (DOMINGUEZ)"
-  },
-  "6619": {
-    "description": "RECETA MAESTRA SALMON AHUMADO ( 1K ) (DOMINGUEZ)"
-  },
-  "6777": {
-    "description": "RECETA MAESTRA SALMON AHUMADO ( 500G ) (DOMINGUEZ)"
-  },
-  "5847": {
-    "description": "SALMON AHUMADO SUPREME SOBRES (100 GR) (DOMINGUEZ)"
-  },
-  "5779": {
-    "description": "SALMON ENTERO GRANDE (DOMINGUEZ)"
-  },
-  "5745": {
-    "description": "SALMON ENTERO PEQUEÑO (DOMINGUEZ)"
-  },
-  "5777": {
-    "description": "SALMON ENTERO SUPREME (DOMINGUEZ)"
-  },
-  "5778": {
-    "description": "SALMON MARINADO P. ENTERA (DOMINGUEZ)"
-  },
-  "5848": {
-    "description": "SALMON MARINADO SOBRE 100 GR (DOMINGUEZ)"
-  },
-  "5781": {
-    "description": "SALMON PLANCHA 700GR (NAVIDAD) (DOMINGUEZ)"
-  },
-  "5773": {
-    "description": "SALMON PRECORTADO BIPACK (DOMINGUEZ)"
-  },
-  "5780": {
-    "description": "SALMON PRECORTADO GRANDE (DOMINGUEZ)"
-  },
-  "5771": {
-    "description": "SALMON PRECORTADO PEQUEÑO (DOMINGUEZ)"
-  },
-  "6058": {
-    "description": "SALMON SUPREME EN LONCHAS (250 GR) (DOMINGUEZ)"
-  },
-  "1393": {
-    "description": "SALMON TARRINA 1 KG (DOMINGUEZ)"
-  },
-  "5959": {
-    "description": "SASHIMI DE SALMON AHUMADO ESTUCHE 150G (DOMINGUEZ)"
-  },
-  "5790": {
-    "description": "SURTIDO DE AHUMADOS (1KG) (DOMINGUEZ)"
-  },
-  "6034": {
-    "description": "TARTAR DE SALMON AHUMADO (150GR) (DOMINGUEZ)"
-  },
-  "5797": {
-    "description": "TARTAR SALMON (DOMINGUEZ)"
-  },
-  "3302": {
-    "description": "BACALAO ISLANDIA (1 KG) TARRINA (EL DUENDE)"
-  },
-  "3497": {
-    "description": "ENSALADA DE AHUMADOS (TARRINA TS) (1KG) (EL DUENDE)"
-  },
-  "6641": {
-    "description": "LOMOS DE SALMON NORUEGO (1 KG) ( DUENDE )"
-  },
-  "1193": {
-    "description": "RECORTES SALMON AHUMADO (1 KG) (CONGELADO)"
-  },
-  "6629": {
-    "description": "SALMON AHUMADO SUPREME (DUENDE)"
-  },
-  "6645": {
-    "description": "SALMON NORUEGO HOST (PRECORT) (1/2 PLANCHA) (500 GR) (GMA)"
-  },
-  "6635": {
-    "description": "SALMON NORUEGO HOSTELERIA AHUMANDO (TS) (500 GR) (DUENDE)"
-  },
-  "6646": {
-    "description": "SOLOMILLO BACALO DE ISLANDIA ( EL DUENDE )"
-  },
-  "6643": {
-    "description": "SOLOMILLO SALMON LOMO (350 GR) ( EL DUENDE )"
-  },
-  "6640": {
-    "description": "TARTAR SALMON (MONODOSIS) (80 GR) (EL DUENDE)"
-  },
-  "4385": {
-    "description": "SALMON NORUEGO HOST. (PRECORTADO) (GMA)"
-  },
-  "5903": {
-    "description": "AROMA CARCIOFO NAT (PAGANI)"
-  },
-  "5919": {
-    "description": "AROMA CARNE TIPO POLLO (PAGANI)"
-  },
-  "5940": {
-    "description": "AROMA CROSTACEO PAGANI)"
-  },
-  "5928": {
-    "description": "AROMA DE HUMO SMK NAT(PAGANI)"
-  },
-  "5904": {
-    "description": "AROMA JAMON IBERICO NAT (PAGANI)"
-  },
-  "5989": {
-    "description": "AROMA MT GRILL NAT (PAGANI)"
-  },
-  "6123": {
-    "description": "BURGER BM COMPLET (PAGANI)"
-  },
-  "5862": {
-    "description": "CRISPY BACON (PAGANI)"
-  },
-  "5884": {
-    "description": "CRISPY PIZZAIOLA (PAGANI)"
-  },
-  "6418": {
-    "description": "FAST FH ENVASE 1 KG (PAGANI)"
-  },
-  "5900": {
-    "description": "GUSTOSI LA BIONDA (PAGANI)"
-  },
-  "5896": {
-    "description": "GUSTOSI LA GENTILE (PAGANI)"
-  },
-  "5899": {
-    "description": "GUSTOSI LA LATINA (PAGANI)"
-  },
-  "5892": {
-    "description": "GUSTOSI LA PICANTE (PAGANI)"
-  },
-  "5894": {
-    "description": "GUSTOSI LA SICILIANA (PAGANI)"
-  },
-  "5897": {
-    "description": "GUSTOSI L'ORTOLANA (PAGANI)"
-  },
-  "5901": {
-    "description": "GUSTOSI AL FINOCCHIETTO (PAGANI)"
-  },
-  "5902": {
-    "description": "GUSTOSI CUOR DI PISTACCHIO (PAGANI)"
-  },
-  "6609": {
-    "description": "GUSTOSI L´ARROSTITA (PAGANI)"
-  },
-  "5866": {
-    "description": "GUSTOSI L´ORIENTALE (PAGANI)"
-  },
-  "6121": {
-    "description": "GUSTOSI LA ARABESQUE (PAGANI)"
-  },
-  "6595": {
-    "description": "GUSTOSI LA BALKANPRO (PAGANI)"
-  },
-  "5891": {
-    "description": "GUSTOSI LA BARBACUE (PAGANI)"
-  },
-  "5893": {
-    "description": "GUSTOSI LA BOSCAIOLA (PAGANI)"
-  },
-  "5890": {
-    "description": "GUSTOSI LA GIALLA (PAGANI)"
-  },
-  "5870": {
-    "description": "GUSTOSI LA MEDITERRANEA (PAGANI)"
-  },
-  "5869": {
-    "description": "GUSTOSI LA PIZZAIOLA (PAGANI)"
-  },
-  "5867": {
-    "description": "GUSTOSI LA ROSA (PAGANI)"
-  },
-  "5888": {
-    "description": "GUSTOSI LA ROSSA (PAGANI)"
-  },
-  "6122": {
-    "description": "GUSTOSI LA SCOZZESE (PAGANI)"
-  },
-  "5868": {
-    "description": "GUSTOSI LA SOLARE (PAGANI)"
-  },
-  "5889": {
-    "description": "GUSTOSI LA VERDE (PAGANI)"
-  },
-  "5965": {
-    "description": "GYROS GRILL (PAGANI)"
-  },
-  "6483": {
-    "description": "HAMBURGUESA BMEAT PG BBQ ( 2K ) ( PAGANI )"
-  },
-  "6482": {
-    "description": "HAMBURGUESA BMEAT PG TEX MEX ( PAGANI )"
-  },
-  "6075": {
-    "description": "MARINADO TERIYAKI 2L ( SANBROS )"
-  },
-  "5887": {
-    "description": "MARINATA CHEF (PAGANI)"
-  },
-  "6057": {
-    "description": "MARINATA GUSTO ARROSTO NAT (PAGANI)"
-  },
-  "6091": {
-    "description": "MIX 100C BECHAMEL BARAL 5KG"
-  },
-  "5874": {
-    "description": "MIX BURGER 66018 (PAGANI)"
-  },
-  "6785": {
-    "description": "MIX ENCO 1 KG (PAGANI)"
-  },
-  "5878": {
-    "description": "MIX ORTOLANO (PAGANI)"
-  },
-  "6081": {
-    "description": "MIX PESTO SNACK (PAGANI)"
-  },
-  "6333": {
-    "description": "MIX RED - SS ENVASE 1 KG (PAGANI)"
-  },
-  "5877": {
-    "description": "NOVIT BURGER MIX (PAGANI)"
-  },
-  "5882": {
-    "description": "PAGANI DELY RUB (PAGANI)"
-  },
-  "5881": {
-    "description": "PAGANI DRY RUB (PAGANI)"
-  },
-  "5883": {
-    "description": "PANATURA CROCCANTE (PAGANI)"
-  },
-  "5941": {
-    "description": "PANATURA SG FINE SIN GLUTEN 0.5 KG (PAGANI)"
-  },
-  "6596": {
-    "description": "PANATURA SG GIAPPO (PAGANI)"
-  },
-  "5885": {
-    "description": "PANGROSSO ARANCIO (PAGANI)"
-  },
-  "5863": {
-    "description": "PANGROSSO GIALLO (PAGANI)"
-  },
-  "5864": {
-    "description": "PASTELLA CHEF (PAGANI)"
-  },
-  "5879": {
-    "description": "PREMIX BURGER CHEF (PAGANI)"
-  },
-  "5876": {
-    "description": "PREMIX BURGER PIZZAIOLA (PAGANI)"
-  },
-  "5875": {
-    "description": "PREMIX CROCCHETTE (PAGANI)"
-  },
-  "5861": {
-    "description": "PREMIX TRAMEZZINI (PAGANI)"
-  },
-  "6156": {
-    "description": "ROXAN (PAGANI)"
-  },
-  "5865": {
-    "description": "TERIYAKI CLASSICA (PAGANI)"
-  },
-  "1430": {
-    "description": "CREMA TIRAMISU (4 X 270 GR) (VIANDER)"
+  "808": {
+    "description": "LOMO EMBUCHADO GRASO (1/2 PIEZA) (DIAZ)"
   },
   "853": {
     "description": "PANNA COTTA 1K ( VIANDER )"
   },
-  "3997": {
-    "description": "SAVOIARDI (400 GR) (15 UD) (DIVELLA)"
+  "868": {
+    "description": "MAGRET PATO VACIO (IQF) (UD) (400 G)"
+  },
+  "905": {
+    "description": "BASE PER PIZZA BIANCA (SVILA)"
+  },
+  "933": {
+    "description": "NATA CULINARIA (1 L) (KEN)"
+  },
+  "941": {
+    "description": "CEBOLLA FRITA (LATA) (3 KG) (DIDI)"
+  },
+  "947": {
+    "description": "GORGONZOLA GOLD (1/4) (1,5 KG) (SOSTER)"
+  },
+  "956": {
+    "description": "MAIZ DULCE (3 KG) (DIDI)"
+  },
+  "957": {
+    "description": "GARGANELLI ROMAGNOLI (3 KG) (GRAN BOLOGNA)"
+  },
+  "959": {
+    "description": "TAGLIATELLE VERDI (3 KG) (GRAN BOLOGNA)"
+  },
+  "962": {
+    "description": "ALLEGRI PENSIERI DEL DIAVOLO (3 KG) (GRAN BOLOGNA)"
+  },
+  "967": {
+    "description": "DOLCE VITA AL TARTUFUNGO (3 KG) (GRAN BOLOGNA)"
+  },
+  "971": {
+    "description": "CREMA FINA CON PATO Y NARANJA (1,5 KG) (POLCA)"
+  },
+  "980": {
+    "description": "CREMA DI NOCI (500 GR) (VIANDER)"
+  },
+  "986": {
+    "description": "PASSIONI PERE E PECORINO DI GROTA (3 KG) (GRAN BOLOGNA)"
+  },
+  "993": {
+    "description": "TOMATE TRITURADO (5 KG) (IAN)"
+  },
+  "995": {
+    "description": "PIACERI AL 5 FORMAGGI (3 KG) (GRAN BOLOGNA)"
+  },
+  "1006": {
+    "description": "SALAMI SPIANATA PICANTE (1 KG APROX) (SOSTER)"
+  },
+  "1009": {
+    "description": "NATA PASTEURIZADA 35% (2 L) (KEN)"
+  },
+  "1014": {
+    "description": "ALCACHOFA TROCEADA (3 KG) (DIDI)"
+  },
+  "1060": {
+    "description": "QUESO BARRA GOUDA (3KG) (SOSTER)"
+  },
+  "1116": {
+    "description": "BACON AHUMADO MOLDE CON PIEL (SQ)"
+  },
+  "1127": {
+    "description": "LOMOS DE SALMON AHUMADO TARRINA 1KG (DOMINGUEZ)"
+  },
+  "1136": {
+    "description": "SANGRE DE JUDAS SPUMANTE (CORTESOLE)"
+  },
+  "1139": {
+    "description": "PASSATA POMODORO BOTE CRISTAL (TOMATE) (680 GR) (DIVELLA)"
+  },
+  "1148": {
+    "description": "FUNGHI PORCINI SECCHI (BOLSA) (450 GR) (VIANDER)"
+  },
+  "1173": {
+    "description": "NATA SPRAY (0.5 L) (KEN)"
+  },
+  "1193": {
+    "description": "RECORTES SALMON AHUMADO (1 KG) (CONGELADO)"
+  },
+  "1260": {
+    "description": "TRUFA (2,3 KG) (KEN)"
+  },
+  "1273": {
+    "description": "PATE FINAS HIERBAS (BLOQUE) (1KG) (POLCA)"
   },
   "1307": {
     "description": "SIROPE CARAMELO (1,2 KG) (KEN)"
@@ -1985,110 +386,308 @@
   "1310": {
     "description": "SIROPE FRESA (1,2 KG) (KEN)"
   },
-  "6774": {
-    "description": "TARTA DE QUESO AL HORNO 1250GR (BAJOCERO)"
+  "1320": {
+    "description": "KEN TOCINO DE CIELO (2,4 KG) (KEN)"
   },
-  "5770": {
-    "description": "TIRAMISU CLASICO (TRE ARCHI)"
+  "1324": {
+    "description": "KEN LACTEA AZUCARADA (1 L) (KEN)"
   },
-  "3927": {
-    "description": "BROWNIE DE CHOCOLATE (36 UD) (SIN GLUTEN) (RACION) (FOOD VAC)"
+  "1333": {
+    "description": "BLOC MOUSSE DE OCA RULO CON SETAS (1,5 KG) (DERHEL)"
   },
-  "3906": {
-    "description": "COULAND CHOCOLATE BLANCO (36 UD) (SIN GLUTEN) (FOOD VAC)"
+  "1347": {
+    "description": "IL CARDINALE (3 KG) (GRAN BOLOGNA)"
   },
-  "3991": {
-    "description": "COULAND DE CHOCOLATE (MICROONDAS) (SIN GLUTEN) (36 UD) (FOOD VACC)"
+  "1393": {
+    "description": "SALMON TARRINA 1 KG (DOMINGUEZ)"
   },
-  "6131": {
-    "description": "HELADO DE CHOCOLATE 2.5 L"
+  "1406": {
+    "description": "PATE ARDENES (BLOQUE) (1 KG) (POLCA)"
   },
-  "6793": {
-    "description": "HELADO DE CHOCOLATE 5 L"
+  "1407": {
+    "description": "PATE PIMIENTA VERDE (BLOQUE) (1 KG) (POLCA)"
   },
-  "4340": {
-    "description": "HELADO DE MANTECADO ESPECIAL SIN GLUTEN 2.5 L"
+  "1408": {
+    "description": "PATE PATO AL OPORTO (BLOQUE) (1 KG) (POLCA)"
   },
-  "5237": {
-    "description": "HELADO DE TURRON 2.5L"
+  "1409": {
+    "description": "PATE MANZANA (BLOQUE) (1 KG) (POLCA)"
   },
-  "6132": {
-    "description": "HELADO DE VAINILLA TAITI 2.5 L"
+  "1410": {
+    "description": "VERDICCHIO DEI CASTELLI DI JESI DOC PIERSANTI 0.75 L (VINO)"
   },
-  "6794": {
-    "description": "HELADO DE VAINILLA TAITI 5 L"
+  "1430": {
+    "description": "CREMA TIRAMISU (4 X 270 GR) (VIANDER)"
   },
-  "4409": {
-    "description": "MERMELADA FRESA (370 GR) (MARZO)"
+  "1431": {
+    "description": "CUORE DE FOIE, BACON Y CEBOLLA (3KG) (TRE ARCHI)"
   },
-  "2452": {
-    "description": "MERMELADA MELOCOTON (370 GR) (MARZO)"
+  "1458": {
+    "description": "BURRATINA (6 UD * 125 GR) (SOSTER)"
   },
-  "5827": {
-    "description": "MERMELADA TOMATE (370 GR)(MARZO)"
+  "1479": {
+    "description": "PROSECCO EXTRA DRY 0.20 L"
   },
-  "6766": {
-    "description": "TARTA CARROT CAKE 3 PISOS"
+  "1501": {
+    "description": "QUESO TIPO GRANA PADANO (1/8) (16 MESES) (SOSTER)"
   },
-  "6767": {
-    "description": "TARTA DE CIOCCOLATO"
+  "1516": {
+    "description": "CARRILLERA DE CERDO BLANCO (220 G) ( TOKE CHEF)"
   },
-  "4875": {
-    "description": "VINO CLAUS RIBERA DUERO"
+  "1517": {
+    "description": "CARRILLERA DE TERNERA (0.5 KG) (TOKE CHEF)"
   },
-  "6590": {
-    "description": "900 VIÑAS GARNACHA 4 MESES"
+  "1530": {
+    "description": "SANGRE DE JUDAS (VINO) (SORBELLO)"
   },
-  "5298": {
-    "description": "CAMINOS A PARDOS GARNACHA 80"
+  "1550": {
+    "description": "CHORIZO EXTRA MORCON TRADICION MATANZA (1/2 PIEZA) (DIAZ)"
   },
-  "3195": {
-    "description": "DIAMOND RED BLEND (VINO) (COPPOLA)"
+  "1563": {
+    "description": "TOMATE SALSA PIZZA (5KG) (IAN)"
   },
-  "6159": {
-    "description": "LA AVENIER PINOTAGE SUDAFRICA"
+  "1570": {
+    "description": "PROSECCO VENETTO MILLESIMATO 0.75 (VINO) (TOSO)"
   },
-  "6682": {
-    "description": "VINO LAMURIA"
+  "1576": {
+    "description": "KEN LACTEA 35% (UHT) (1 L) (KEN)"
   },
-  "5474": {
-    "description": "VINO VD MONASTRELL"
+  "1579": {
+    "description": "YOGUR GRIEGO CUBO (3,5 KG) (KEN)"
   },
-  "6161": {
-    "description": "BORDEAUX THOMAS BARTON"
+  "1587": {
+    "description": "YORK SANDWICH (11X11)"
   },
-  "4511": {
-    "description": "CABERNET SAUVIGNON (VINO) (B&G)"
+  "1595": {
+    "description": "QUESO CREMA CUBO (3 KG) (KEN)"
   },
-  "4495": {
-    "description": "CHARDONNAY IGPPAYS (VINO) (B&G)"
+  "1601": {
+    "description": "PATE DE ARANDANOS PLATO (2 KG) (POLCA)"
   },
-  "6160": {
-    "description": "M DE MAGNOL"
+  "1605": {
+    "description": "TORTELLINI DE CARNE (3 KG) (TRE ARCHI)"
   },
-  "4512": {
-    "description": "MERLOT (VINO) (B&G)"
+  "1617": {
+    "description": "OLIVE GOUR. NERE AL FORNO 1.5KG (VIANDER)"
   },
-  "4496": {
-    "description": "SAUVIGNON BLANC IGP (VINO) (B&G)"
+  "1620": {
+    "description": "CONFIT PATO (12 MUSLOS) (LATA)"
   },
-  "5482": {
-    "description": "TRAMPOSO TINTO RIBERA DEL DUERO CAPA LARGA 0.75"
+  "1623": {
+    "description": "RABO DE TORO C/BOLETUS-HO (450 G) (TOKE CHEF)"
   },
-  "5734": {
-    "description": "VD 12 TINTO RIBERA DEL DUERO"
+  "1627": {
+    "description": "OSSOBUCO DE AÑOJO 425G (TOKE CHEF)"
   },
-  "5211": {
-    "description": "VINO VD TINTO RIBERA 4 MESES"
+  "1770": {
+    "description": "JAMON CEBO DE CAMPO 50% IBERICO (MONTESANO) (B/VERDE)"
   },
-  "5926": {
-    "description": "VINO RAMON BILBAO CRIANZA RIOJA"
+  "1806": {
+    "description": "CHORIZO IBERICO E. CULAR (ENTERO) (MONTESANO)"
+  },
+  "1808": {
+    "description": "SALCHICHON CULAR IBERICO (ENTERO) (MONTESANO)"
+  },
+  "1837": {
+    "description": "PATE CHEF CAMPAÑA PLATO (2 KG) (POLCA)"
+  },
+  "1838": {
+    "description": "PATE PIMIENTA NEGRA PLATO (2 KG) (POLCA)"
+  },
+  "1900": {
+    "description": "TOMATE FRITO LATA (3KG) (MARZO)"
+  },
+  "1902": {
+    "description": "JAMON IB. BELLOTA 50% (MONTESANO) (B/ROJA )"
+  },
+  "1915": {
+    "description": "HIGADO DE PATO RESTAURACION (IQF)"
+  },
+  "1966": {
+    "description": "CECINA CURADA (TAPA) (C.PABLO)"
+  },
+  "1976": {
+    "description": "LONGANIZA MARGATO DULCE (AL VACIO) (3 KG APROX) (C.PABLO)"
+  },
+  "1977": {
+    "description": "LONGANIZA MARGATO PICANTE (AL VACIO) (3 KG APROX) (C.PABLO)"
+  },
+  "1988": {
+    "description": "TOMATE FRITO TARRO (580 GR) (MARZO)"
+  },
+  "1989": {
+    "description": "TOMATE FRITO TARRO (250 GR) (MARZO)"
+  },
+  "1991": {
+    "description": "GARBANZOS AL NATURAL TARRO (1 KG) (MARZO)"
+  },
+  "1992": {
+    "description": "CARDO AL NATURAL TARRO (1 KG) (MARZO)"
+  },
+  "1993": {
+    "description": "GARBANZOS AL NATURAL TARRO (1/2 KG) (MARZO)"
+  },
+  "1994": {
+    "description": "ALUBIAS BLANCAS POCHAS TARRO (1/2 KG) (MARZO)"
+  },
+  "1995": {
+    "description": "ALUBIAS BLANCAS POCHAS TARRO (1 KG) (MARZO)"
+  },
+  "1996": {
+    "description": "TOMATE TRITURADO LATA (1/2 KG) (MARZO)"
+  },
+  "1997": {
+    "description": "TOMATE TRITURADO LATA (1 KG) (MARZO)"
+  },
+  "1998": {
+    "description": "LENTEJAS AL NATURAL TARRO (1 KG) (MARZO)"
+  },
+  "1999": {
+    "description": "LENTEJAS AL NATURAL TARRO (1/2 KG) (MARZO)"
+  },
+  "2009": {
+    "description": "JUDIAS VERDES AL NATURAL TARRO (1 KG) (MARZO)"
+  },
+  "2011": {
+    "description": "MACEDONIA DE VERDURAS TARRO (1 KG) (MARZO)"
+  },
+  "2016": {
+    "description": "MENESTRA DE VERDURAS TARRO (1 KG) (MARZO)"
+  },
+  "2033": {
+    "description": "TOMATE ENTERO LATA (5KG) (MARZO)"
+  },
+  "2111": {
+    "description": "VINO VERDEJO FINCA LA FUENTE"
+  },
+  "2119": {
+    "description": "MANITAS CERDO COCINADAS 380G (TOKE CHEF)"
+  },
+  "2135": {
+    "description": "SAL NEGRA PETALOS CUBO (750 GR) (SELEC MARDIS)"
+  },
+  "2151": {
+    "description": "ATUN ACEITE BOLSA (1 KG) (SELEC MARDIS) 16 U."
+  },
+  "2152": {
+    "description": "PIACERI AL SALMONE (3 KG) (GRAN BOLOGNA)"
+  },
+  "2158": {
+    "description": "EMMENTAL RALLADO (45% M.G) (1 KG) (FLFD)"
+  },
+  "2167": {
+    "description": "CANNELONI DE CARNE (3 KG) (GEA)"
+  },
+  "2168": {
+    "description": "CANNELONI RICOTA / ESPINACI (3KG) (GEA)"
+  },
+  "2169": {
+    "description": "RAVIOLONE DI VITELLO (3KG) (TRE ARCHI)"
+  },
+  "2171": {
+    "description": "CAPPELLETTI DI VITELLO (3KG) (TRE ARCHI)"
+  },
+  "2172": {
+    "description": "CAPPELLETTI VERDI DI SPINACI, RICOTTA E NOCI (3KG) (TRE ARCHI)"
+  },
+  "2175": {
+    "description": "TORTELLONI GIGANTE CAPESANTE E GAMBERI (3 KG) (GEA)"
+  },
+  "2177": {
+    "description": "TORTELLACCI NERI AL SALMONE (3 KG) (GEA)"
+  },
+  "2178": {
+    "description": "SFOGLIA PRECOTTA VERDE (10 KG) (GEA)"
+  },
+  "2180": {
+    "description": "SFOGLIA PRECOTTA GIALLA (10 KG) (GEA)"
+  },
+  "2184": {
+    "description": "LUNETTE AL SALMON Y ENELDO (3KG) (TRE ARCHI)"
+  },
+  "2203": {
+    "description": "TAGLIOLINE AL NERO DI SEPPIA (3 KG) (GRAN BOLOGNA)"
+  },
+  "2204": {
+    "description": "PAPPARDELLE (3 KG) (GRAN BOLOGNA)"
+  },
+  "2205": {
+    "description": "SPAGHETTI ALLA CHITARRA (3 KG) (GRAN BOLOGNA)"
+  },
+  "2218": {
+    "description": "TAGLIOLINE GIALLE (3 KG) (GRAN BOLOGNA)"
+  },
+  "2297": {
+    "description": "BLOC DE FOIE 30% TROZOS (LATA) (1KG)"
+  },
+  "2303": {
+    "description": "KEN CULINARIO (1 L) (KEN)"
+  },
+  "2323": {
+    "description": "BURRATA (300 GR) (POR ENCARGO) (SOSTER)"
+  },
+  "2369": {
+    "description": "CANNELLONI SEMOLA (250G) (DIVELLA)"
+  },
+  "2374": {
+    "description": "SAL BLANCA PETALOS CUBO (1.5 KG) (SELEC MARDIS)"
+  },
+  "2375": {
+    "description": "MOZZARELLA RALLADA (6 x 2 KG) (CASA ITALIANA)"
+  },
+  "2406": {
+    "description": "BLOC DE FOIE GRAS (LATA) (1 KG)"
   },
   "2409": {
     "description": "VINO RIOJA TINTO JOVEN GRAN MESTER"
   },
-  "3400": {
-    "description": "VINO TIERRAS DE MURILLO COLECC ANTIQUE"
+  "2410": {
+    "description": "VINO TINTO MECENAS RIOJA"
+  },
+  "2422": {
+    "description": "CROQUETA DE JAMON IBERICO (35 GR/UD) (3 KG) (7BJC)"
+  },
+  "2423": {
+    "description": "CROQUETA DE BACALAO (35 GR/UD) (3KG) (7BJC)"
+  },
+  "2452": {
+    "description": "MERMELADA MELOCOTON (370 GR) (MARZO)"
+  },
+  "2454": {
+    "description": "TOMATE ENTERO LATA (1 KG) (MARZO)"
+  },
+  "2455": {
+    "description": "TOMATE ENTERO LATA (1/2KG) (MARZO)"
+  },
+  "2456": {
+    "description": "ALUBIAS PINTAS TARRO (1/2 KG) (MARZO)"
+  },
+  "2463": {
+    "description": "PANCETA IBERICA SALADA (DIAZ)"
+  },
+  "2483": {
+    "description": "CROQUETA DE BOLETUS (35 GR/UD) (3KG) (7BJC)"
+  },
+  "2493": {
+    "description": "CHORIZO MARAGATO DULCE (AL VACIO) (2,5 KG APROX) (C.PABLO)"
+  },
+  "2494": {
+    "description": "CHORIZO MARAGATO PICANTE (AL VACIO) (2,5 KG APROX) (C.PABLO)"
+  },
+  "2522": {
+    "description": "CECINA CURADA MEDIA TAPA (3,5 APROX) (C.PABLO)"
+  },
+  "2530": {
+    "description": "MOZZAEDAM CASA ITALIANA (6 x 2 KG)"
+  },
+  "2631": {
+    "description": "TOMATE FRITO CASERO (3KG) (DIMARDIS)"
+  },
+  "2665": {
+    "description": "HARINA FRITURA (5 KG) (SELEC MARDIS)"
+  },
+  "2679": {
+    "description": "BORRAJA AL NATURAL TARRO (1 KG) (MARZO)"
   },
   "2752": {
     "description": "VINO TIERRAS DE MURILLO CRIANZA RIOJA"
@@ -2096,299 +695,32 @@
   "2753": {
     "description": "VINO TIERRAS DE MURILLO JOVEN RIOJA TINTO"
   },
-  "2410": {
-    "description": "VINO TINTO MECENAS RIOJA"
-  },
-  "5223": {
-    "description": "CAJA 5 BOLSAS SANGRIA BIB MARIA DE LA O 3L"
-  },
-  "3367": {
-    "description": "COJON DE GATO TINTO"
-  },
-  "4846": {
-    "description": "LA CHELO BLANCO SWEET"
-  },
-  "4677": {
-    "description": "LA CHELO VERMOUTH BOTELLA CRISTAL."
-  },
-  "5128": {
-    "description": "VERMOUTH LA CHELO BOLSA 3L"
-  },
-  "3379": {
-    "description": "AMARONE DELLA VALPOLICELLA CLASSICO DOC VINTAGE"
-  },
-  "5699": {
-    "description": "BARDOLINO DOC CLASSICO"
-  },
-  "4908": {
-    "description": "BAROLO DOCG (VINO) (RICOSSA)"
-  },
-  "4909": {
-    "description": "BAROLO RESERVA (VINO) (RICOSSA)"
-  },
-  "3": {
-    "description": "BOTTEBUONA SANGIOVESE TINTO (VINO)"
-  },
-  "5839": {
-    "description": "BRUNELLO DI MONTALCINO DAVINCI I CAPOLAVORI"
-  },
-  "083": {
-    "description": "CHIANTI FIASCO 0,75 (PAJA)"
-  },
-  "5850": {
-    "description": "CHIANTI RESERVA DOCG (VINO) (POGGIO DEL SASSO)"
-  },
-  "5799": {
-    "description": "GRAPPA DI NEBBIOLO MORRA"
-  },
-  "6052": {
-    "description": "LAMBRUSCO MODENESI DOC GRASP. TINTO"
-  },
-  "3268": {
-    "description": "LAMBRUSCO TINTO EMILIA (VINO) (BORGOFULVIA)"
-  },
-  "2798": {
-    "description": "LAMBRUSCO TINTO IGT (DECORDI)"
-  },
-  "3211": {
-    "description": "MONTEPULCIANO D´ABRUZZO DOC (VINO) (BORGOFULVIA)"
-  },
-  "3210": {
-    "description": "NERO D'AVOLA SICILIA (VINO) (BORGOFULVIA)"
-  },
-  "6020": {
-    "description": "PRIMITIVO CODICI IGP (VINO)"
-  },
-  "5871": {
-    "description": "RICOSSA BARBERA D´ASTI DOCG"
-  },
-  "6718": {
-    "description": "ROSSO BORGOFULVIA (VINO)"
-  },
-  "5838": {
-    "description": "ROSSO DI MONTALCINO DA VINCI"
-  },
-  "1530": {
-    "description": "SANGRE DE JUDAS (VINO) (SORBELLO)"
-  },
-  "1136": {
-    "description": "SANGRE DE JUDAS SPUMANTE (CORTESOLE)"
-  },
-  "3375": {
-    "description": "VALPOLICELLA CLASSICO DOC VINTAGE"
-  },
-  "3378": {
-    "description": "VALPOLICELLA RIPASSO DOC SUPERIORE \"MARA\""
-  },
-  "5849": {
-    "description": "VINO CHIANTI DOCG (POGGIO DEL SASSO)"
-  },
-  "4810": {
-    "description": "VINO MONTEPULCIANO ABRUZZO DOC (LA PIUMA)"
-  },
-  "6297": {
-    "description": "VINO PRIMITIVO V - ENOLOGY 0.75 * 6"
-  },
-  "6158": {
-    "description": "KIA ORANGE NUEVA ZELANDA"
-  },
-  "3187": {
-    "description": "MOSELLAND RIESLING CLASSIC"
-  },
-  "3263": {
-    "description": "RIESLING CLASSIC TROCKEN ( VINO BLANCO )"
-  },
-  "6072": {
-    "description": "THREE FINGER JACK CHARDONNAY (VINO)"
-  },
-  "4205": {
-    "description": "VINO ALBARIÑO COSECHERO RHIN"
-  },
-  "5927": {
-    "description": "VINO MAR DE FRADES ALBARIÑO"
-  },
-  "3165": {
-    "description": "VINO TIERRAS DE MURILLO BLANCO RIOJA"
-  },
-  "6725": {
-    "description": "VINO VIOGNIER & SAUVIGNON BLANC ( QEZ )"
-  },
-  "4866": {
-    "description": "ALBARIÑO FROIÑA CASA DO SOL"
-  },
-  "6065": {
-    "description": "TRAMPOSO GODELLO"
-  },
-  "6534": {
-    "description": "ACQUESI MOSCATO D´ASTI DOCG CASARITO"
-  },
-  "6129": {
-    "description": "BISTRO SAUVIGNON BLANC"
-  },
-  "6782": {
-    "description": "BORGOFULVIA BLANCO (VINO)"
-  },
-  "5": {
-    "description": "BOTTEBUONA TREBBIANO BLANCO (VINO)"
-  },
-  "3184": {
-    "description": "MALVASIA SPUMANTE DOLCE (VINO) (BORGOFULVIA)"
-  },
-  "440": {
-    "description": "MOSCATO ARTESANO D'ASTI DOCG (FIOCCO DE VITE)"
-  },
-  "54": {
-    "description": "MOSCATO DOLCE 0.75 CL (TOSO)"
-  },
-  "3189": {
-    "description": "MOSCATO SPUMANTE (BORGOFULVIA)"
-  },
-  "5949": {
-    "description": "NERO D´AVOLA AQUARELLO DOC STELV"
-  },
-  "5249": {
-    "description": "PINOT GRIGIO BLANCO DOC (SONETTI)"
-  },
-  "5910": {
-    "description": "PINOT GRIGIO DAVINCI I CAPOLAVORI"
-  },
-  "3377": {
-    "description": "PINOT GRIGIO DELLE VENEZIE IGT(CESARI)"
-  },
-  "1410": {
-    "description": "VERDICCHIO DEI CASTELLI DI JESI DOC PIERSANTI 0.75 L (VINO)"
-  },
-  "5915": {
-    "description": "VINO BLANCO KEN FORRESTER CHENIN BLANC"
-  },
-  "5929": {
-    "description": "VINO MONTALTO ACQUERELLO CHARDONNAY"
-  },
-  "6093": {
-    "description": "VINO MONTALTO ACQUERELLO VERMENTINO"
-  },
-  "5914": {
-    "description": "VINO PINOT GRIGIO AQUARELLO TERRE SICILIANE STELY"
-  },
-  "6128": {
-    "description": "B&G HERITAGE DUCHE D´UZES"
-  },
-  "6591": {
-    "description": "B&G PINOT NOIR"
-  },
-  "4450": {
-    "description": "COJON DE GATO VERDEJO RUEDA"
-  },
-  "2111": {
-    "description": "VINO VERDEJO FINCA LA FUENTE"
-  },
-  "6781": {
-    "description": "PINOT GRIGIO (VINO) (LA PIUMA)"
-  },
-  "3747": {
-    "description": "COJON DE GATO GODELLO"
+  "2762": {
+    "description": "ACEITE VIRGEN EXTRA (5 L) (SELEC MARDIS)"
   },
   "2785": {
     "description": "VINO TIERRAS DE MURILLO ROSADO RIOJA"
   },
-  "4": {
-    "description": "BOTTEBUONA ROSATO DEL SALENTO (VINO)"
-  },
-  "5268": {
-    "description": "CHIANTI DOCG (VINO) (LA PIUMA)"
-  },
-  "452": {
-    "description": "FRAGOLINO ROSSO 0,75 L (VINO) (TOSO)"
-  },
-  "2801": {
-    "description": "LAMBRUSCO DOC. MANTOVANO ROSADO"
-  },
-  "3177": {
-    "description": "LAMBRUSCO ROSADO (VINO) (BORGOFULVIA)"
+  "2798": {
+    "description": "LAMBRUSCO TINTO IGT (DECORDI)"
   },
   "2799": {
     "description": "LAMBRUSCO ROSADO IGT (DECORDI)"
   },
-  "5269": {
-    "description": "PECORINO TERRE DI CHIETI IGT (VINO) (LA PIUMA)"
+  "2801": {
+    "description": "LAMBRUSCO DOC. MANTOVANO ROSADO"
   },
-  "6748": {
-    "description": "PINOT GRIGIO BLUSH ROSADO(VINO) (LA PIUMA)"
+  "2898": {
+    "description": "JAMON CEBO IB. 50% (MONTERROBLE) (B/BLANCA)"
   },
-  "5920": {
-    "description": "PINOT GRIGIO ROSADO AQUARELLO"
-  },
-  "4098": {
-    "description": "PINOT GRIGIO ROSADO DOC (VINO) (SONETTI)"
-  },
-  "4993": {
-    "description": "VINO SEI ANIME ROSATO ACQUI"
-  },
-  "5443": {
-    "description": "CHAMPAGNE EMILE PARIS BRUT"
+  "2901": {
+    "description": "MOZZARELLA RALLADA 40% (5 X 2 KG) (DOLCE LATTE)"
   },
   "2904": {
     "description": "CREMANT D´ALSACE BRUT AOC (GUSTAVE LORENTZ)"
   },
-  "4134": {
-    "description": "LOUIS PERDRIER BRUT"
-  },
-  "5373": {
-    "description": "LOUIS PERDRIER BRUT 0.20 ( 24U )"
-  },
-  "4363": {
-    "description": "LOUIS PERDRIER BRUT MAGNUM"
-  },
-  "6628": {
-    "description": "LOUIS PERDRIER ICE EXCELLENCE"
-  },
-  "6152": {
-    "description": "LOUIS PERDRIER ROSADO MAGNUM"
-  },
-  "4135": {
-    "description": "LOUIS PERDRIER ROSE"
-  },
-  "6219": {
-    "description": "LOUIS PERDRIER ROSE ESTUCHADO"
-  },
-  "5851": {
-    "description": "MOONLIGHT & ROSES"
-  },
-  "6723": {
-    "description": "BLANC DE NOIRS ( QEZ )"
-  },
-  "6724": {
-    "description": "CHARDONNAY ( QEZ )"
-  },
-  "5483": {
-    "description": "PERLAGE CANAH PROSECCO VALD. DOCG BRUT"
-  },
-  "457": {
-    "description": "PROSECCO ARTESANO EXTRA DRY (TOSO)"
-  },
-  "1479": {
-    "description": "PROSECCO EXTRA DRY 0.20 L"
-  },
-  "6608": {
-    "description": "PROSECCO PIETRO TOSO MILLESIMATO 0.75 (VINO) (TOSO)"
-  },
-  "1570": {
-    "description": "PROSECCO VENETTO MILLESIMATO 0.75 (VINO) (TOSO)"
-  },
-  "193": {
-    "description": "CERVEZA PERONI \" NASTRO AZURRO \""
-  },
-  "6624": {
-    "description": "CERVEZA PERONI BIRRA DOPPIO MALTO IN VETRO PACK * 24"
-  },
-  "255": {
-    "description": "AMARETTO 25% 0.70 L"
-  },
-  "5132": {
-    "description": "CREMA DI MELONE (RUSSO)"
-  },
-  "3434": {
-    "description": "LIMONCELLO 25º (0.70L) (EMOZIONI)"
+  "2984": {
+    "description": "CREMA DE ACETO BALSAMICO (0.5 L)"
   },
   "2985": {
     "description": "LIMONCELLO 25º (2 L) (EMOZIONI)"
@@ -2396,149 +728,14 @@
   "2986": {
     "description": "LIMONCELLO IGP AMALFI 32º 0.70L (RUSSO)"
   },
-  "6148": {
-    "description": "MARSALA CREMOVO INTORCIA 1L"
+  "3013": {
+    "description": "CREMA ACETO BALSAMICO (1 L)"
   },
-  "6026": {
-    "description": "MARSALA INTORCIA 1L"
+  "3079": {
+    "description": "ACETO BALSAMICO IGP (GARRAFA) (5 L)"
   },
-  "250": {
-    "description": "SAMBUCA BLANCA"
-  },
-  "6726": {
-    "description": "ESTUCHE 3 BOTELLAS ( QEZ )"
-  },
-  "5311": {
-    "description": "QUESO MEZCLA CURADO (3 KG) (GRAN CAPITAN) - POR ENCARGO"
-  },
-  "5148": {
-    "description": "QUESO MEZCLA SEMI (3KG) (GRAN CAPITAN) - POR ENCARGO"
-  },
-  "5146": {
-    "description": "QUESO MEZCLA TIERNO (3 KG) (EL CIGARRAL) - POR ENCARGO"
-  },
-  "5153": {
-    "description": "QUESO ORO VIEJO (3 KG) (DON BERNARDO) (ENCARGO)"
-  },
-  "5154": {
-    "description": "QUESO OVEJA VIEJO (3,2 KG) (FLOR DE ESGUEVA) (ENCARGO)"
-  },
-  "5242": {
-    "description": "QUESO PURO DE OVEJA (AÑEJO) (EN ACEITE) (1/4 PIEZA) (SANSUEÑA)"
-  },
-  "5026": {
-    "description": "QUESO PURO DE OVEJA (AÑEJO) (TARRO EN ACEITE) (700 GR) (SANSUEÑA)"
-  },
-  "6036": {
-    "description": "QUESO PURO DE OVEJA (TARRO EN ACEITE) (200 GR) (SANSUEÑA)"
-  },
-  "754": {
-    "description": "CACCETTI AFFUMICATI CAMPAGNOLO (300 GR) (SOSTER) (ENCARGO)"
-  },
-  "5775": {
-    "description": "QUESO MOLITERNO TARTUFO (1/2 RUEDA) (2.7 KG) (ENCARGO)"
-  },
-  "5998": {
-    "description": "QUESO PECORINO ROMANO RUEDA (SOSTER) (ENCARGO)"
-  },
-  "6473": {
-    "description": "QUESO STRACCIATELLA PALAZZO (200 GR * 5UD) (SOSTER) (ENCARGO)"
-  },
-  "017": {
-    "description": "RICOTTA PLS (250 GR) (SOSTER) (ENCARGO)"
-  },
-  "4126": {
-    "description": "CUARTO TRASERO POLLO 1.6 APROX ( TOKE CHEF ) (ENCARGO)"
-  },
-  "3856": {
-    "description": "CROQUETAS DE PATO CONFITADO (GASTRONOMS)"
-  },
-  "1517": {
-    "description": "CARRILLERA DE TERNERA (0.5 KG) (TOKE CHEF)"
-  },
-  "1516": {
-    "description": "CARRILLERA DE CERDO BLANCO (220 G) ( TOKE CHEF)"
-  },
-  "4129": {
-    "description": "COSTILLA BARBACOA (400 G) ( TOKE CHEF )"
-  },
-  "2119": {
-    "description": "MANITAS CERDO COCINADAS 380G (TOKE CHEF)"
-  },
-  "1627": {
-    "description": "OSSOBUCO DE AÑOJO 425G (TOKE CHEF)"
-  },
-  "1623": {
-    "description": "RABO DE TORO C/BOLETUS-HO (450 G) (TOKE CHEF)"
-  },
-  "6773": {
-    "description": "CACHOPO POLLO, BACON Y QUESO (200GR/UD) (3KG) (7BJC) (ENCARGO)"
-  },
-  "6775": {
-    "description": "FINGERS CRUJIENTES POLLO (40GR/UD) (4.5KG) (7BJC) (ENCARGO)"
-  },
-  "6771": {
-    "description": "CROQUETA CARRILLERA AL VINO TINTO (33GR/UD) (3KG) (7BJC) (ENCARGO)"
-  },
-  "2423": {
-    "description": "CROQUETA DE BACALAO (35 GR/UD) (3KG) (7BJC)"
-  },
-  "2483": {
-    "description": "CROQUETA DE BOLETUS (35 GR/UD) (3KG) (7BJC)"
-  },
-  "2422": {
-    "description": "CROQUETA DE JAMON IBERICO (35 GR/UD) (3 KG) (7BJC)"
-  },
-  "5103": {
-    "description": "CROQUETA DE POLLO (35 GR/UD) (3 KG) (7BAJC)"
-  },
-  "6109": {
-    "description": "CROQUETA DE QUESO RULO DE CABRA (33GR/UD) (3KG) (7BJC) (ENCARGO)"
-  },
-  "3149": {
-    "description": "CROQUETA DE RABO TORO (35 GR/UD) (3 KG) (7BJC)"
-  },
-  "6772": {
-    "description": "CROQUETA GAMBA ROJA (33GR/UD) (3KG) (7BJC) (ENCARGO)"
-  },
-  "3962": {
-    "description": "ALCACHOFA CONFITADA EN ACEITE DE ARBEQUINA (FOOD VAC)"
-  },
-  "3961": {
-    "description": "BACALAO CONFITADO CON AJO 12UND X 210GR(FOOD VAC)"
-  },
-  "4103": {
-    "description": "COCHINILLO DESHUESADO (PLANCHA) (3 * 2.25 KG) (FOOD VAC)"
-  },
-  "3928": {
-    "description": "CODILLO DE CERDO CON HUESO (FOOD VAC)"
-  },
-  "5124": {
-    "description": "DELANTERO DE VACUNO (FOOD VAC)"
-  },
-  "3942": {
-    "description": "RABO DE VACUNO DESHUESADO (RACION) (16 UD) (FOOD VAC)"
-  },
-  "3989": {
-    "description": "SECRETO DE CERDO IBERICO (RACION) (12 UD) (FOOD VAC)"
-  },
-  "3912": {
-    "description": "TARTAR DE ATUN (32 UD) (FOOD VAC)"
-  },
-  "3911": {
-    "description": "TARTAR DE SALMON (32 UD) (FOOD VAC)"
-  },
-  "3990": {
-    "description": "TERRINA DE MELOSO DE VACUNO (RACION) (FOOD VAC)"
-  },
-  "5112": {
-    "description": "TERRINA DE OREJA DE CERDO (FOOD VAC)"
-  },
-  "3817": {
-    "description": "BRANDADA DE BACALAO (GASTRONOMS)"
-  },
-  "3841": {
-    "description": "MANITAS DE CERDO (PLANCHA MONORACION) (GASTRONOMS)"
+  "3144": {
+    "description": "KEN PRESTO (1 L) (KEN)"
   },
   "3147": {
     "description": "PIMIENTOS PIQUILLO RELLENOS BAC/MARISCO (7BJC)"
@@ -2546,101 +743,2180 @@
   "3148": {
     "description": "TIGRES (7BJC)"
   },
-  "6712": {
-    "description": "CHULETILLAS 100 % IBERICAS CONGELADAS ( BEHER )"
+  "3149": {
+    "description": "CROQUETA DE RABO TORO (35 GR/UD) (3 KG) (7BJC)"
   },
-  "5534": {
-    "description": "ABANICO 100% IBERICO CONGELADO ( BEHER )"
+  "3165": {
+    "description": "VINO TIERRAS DE MURILLO BLANCO RIOJA"
   },
-  "5494": {
-    "description": "CARRE DE BELLOTA 100% IBERICO CONGELADO ( BEHER )"
+  "3176": {
+    "description": "AGNOLOTI CABRA, SPECK Y CEBOLLA (3 KG) (TRE ARCHI)"
   },
-  "5571": {
-    "description": "CARRILLADA IBERICA CONG (MONTESANO)"
+  "3177": {
+    "description": "LAMBRUSCO ROSADO (VINO) (BORGOFULVIA)"
   },
-  "5476": {
-    "description": "CARRILLERA DE CERDO CONGELADA ( BEHER )"
+  "3184": {
+    "description": "MALVASIA SPUMANTE DOLCE (VINO) (BORGOFULVIA)"
   },
-  "5918": {
-    "description": "ENTRECOT 100% IBERICO MAXI (BEHER)"
+  "3187": {
+    "description": "MOSELLAND RIESLING CLASSIC"
   },
-  "5557": {
-    "description": "ENTRECOT DE BELLOTA 100% ( BEHER )"
+  "3189": {
+    "description": "MOSCATO SPUMANTE (BORGOFULVIA)"
   },
-  "5337": {
-    "description": "LOMO DE TOCINO 100% IBERICO SALADO ( BEHER )"
+  "3195": {
+    "description": "DIAMOND RED BLEND (VINO) (COPPOLA)"
   },
-  "6711": {
-    "description": "MOGOTE 100 % IBERICO CONGELADO ( BEHER )"
+  "3201": {
+    "description": "CAJA COPAS"
   },
-  "5336": {
-    "description": "PANCETA DE BELLOTA 100% IBERICA (ADOBADA) ( BEHER )"
+  "3210": {
+    "description": "NERO D'AVOLA SICILIA (VINO) (BORGOFULVIA)"
   },
-  "5374": {
-    "description": "PANCETA DE BELLOTA 100% IBERICA (SALADA) ( BEHER )"
+  "3211": {
+    "description": "MONTEPULCIANO D´ABRUZZO DOC (VINO) (BORGOFULVIA)"
   },
-  "2463": {
-    "description": "PANCETA IBERICA SALADA (DIAZ)"
+  "3219": {
+    "description": "MOUSSE DE PATO PURO 100% RULO (1.6 KG) (POLCA)"
   },
-  "4692": {
-    "description": "PAPADA IBÉRICA CURADA (4 KG APROX) (DIAZ)"
+  "3263": {
+    "description": "RIESLING CLASSIC TROCKEN ( VINO BLANCO )"
   },
-  "5466": {
-    "description": "PLUMA 100% IBERICA CONGELADA ( BEHER )"
+  "3268": {
+    "description": "LAMBRUSCO TINTO EMILIA (VINO) (BORGOFULVIA)"
   },
-  "5493": {
-    "description": "PLUMA 100% IBERICA DE BELLOTA CONGELADA ( BEHER )"
+  "3302": {
+    "description": "BACALAO ISLANDIA (1 KG) TARRINA (EL DUENDE)"
   },
-  "6729": {
-    "description": "PLUMA BELLOTA 100% IBERICA FRESCA ECOLOGICA ( BEHER )"
+  "3312": {
+    "description": "RAVIOLI GIGANTE AL POLLO TERIYAKI (2.5KG) (TRE ARCHI)"
   },
-  "5698": {
-    "description": "PLUMA DE CERDO IBERICO ENVASADA (DIAZ)"
+  "3325": {
+    "description": "ACEITE FREIR ALTO RENDIMIENTO (5 L)"
   },
-  "5365": {
-    "description": "PLUMA IBERICA CONGELADA ( BEHER )"
+  "3366": {
+    "description": "FAGOTTI FORMAGGIO E PERE (3KG) (TRI ARCHI)"
   },
-  "5538": {
-    "description": "PRESA 100% IBERICA DE BELLOTA CONGELADA ( BEHER )"
+  "3367": {
+    "description": "COJON DE GATO TINTO"
   },
-  "5364": {
-    "description": "PRESA 100% IBERICA CONGELADA ( BEHER )"
+  "3375": {
+    "description": "VALPOLICELLA CLASSICO DOC VINTAGE"
   },
-  "5594": {
-    "description": "PRESA BELLOTA 100% IBERICA CONGELADA ECOLOGICA ( BEHER )"
+  "3377": {
+    "description": "PINOT GRIGIO DELLE VENEZIE IGT(CESARI)"
   },
-  "6730": {
-    "description": "PRESA BELLOTA 100% IBERICA FRESCA ECOLOGICA ( BEHER )"
+  "3378": {
+    "description": "VALPOLICELLA RIPASSO DOC SUPERIORE \"MARA\""
+  },
+  "3379": {
+    "description": "AMARONE DELLA VALPOLICELLA CLASSICO DOC VINTAGE"
+  },
+  "3396": {
+    "description": "ABANICO DE CERDO DUROC (DIAZ)"
+  },
+  "3397": {
+    "description": "SOLOMILLO CERDO DUROC (CONGELADO) (DIAZ)"
+  },
+  "3400": {
+    "description": "VINO TIERRAS DE MURILLO COLECC ANTIQUE"
+  },
+  "3406": {
+    "description": "JAMON IB. BELLOTA 100% (MONTESANO) (B/NEGRA)"
+  },
+  "3434": {
+    "description": "LIMONCELLO 25º (0.70L) (EMOZIONI)"
+  },
+  "3436": {
+    "description": "GIGANTI CREMA GRANA PADANO Y ESPINACAS (2.5 KG) (TRE ARCHI)"
+  },
+  "3451": {
+    "description": "FIOCHETTI GORGONZOLA (3KG) (TRE ARCHI)"
+  },
+  "3464": {
+    "description": "ACEITUNA PICANTONA (LATA) (5 KG) (SELEC MARDIS)"
+  },
+  "3497": {
+    "description": "ENSALADA DE AHUMADOS (TARRINA TS) (1KG) (EL DUENDE)"
+  },
+  "3510": {
+    "description": "LOMITO IBERICO 100% BELLOTA (MONTESANO)"
+  },
+  "3654": {
+    "description": "JAMON IB. BELLOTA D.O. 100% (MONTESANO) (B/NEGRA)"
+  },
+  "3657": {
+    "description": "GIGANTI DE RABO DE TORO (2.5KG) (TRE ARCHI)"
+  },
+  "3675": {
+    "description": "MEZCLA 4 SETAS CULTIVO (1 KG) (I.Q.F) (SELEC MARDIS)"
+  },
+  "3676": {
+    "description": "BOLETUS DADOS HOSTELERIA (1 KG) (I.Q.F) (SELEC MARDIS)"
+  },
+  "3719": {
+    "description": "PEPERONI FILETTI GRIGLIATI OLIO GIRASOLE (VIANDER)"
+  },
+  "3747": {
+    "description": "COJON DE GATO GODELLO"
+  },
+  "3771": {
+    "description": "CENTRO JAMON IB. CEBO CAMPO PULIDO (B/ VERDE) (MONTESANO)"
+  },
+  "3776": {
+    "description": "LOMO IB. DE CEBO DE CAMPO 50% (1/2 PIEZA) (MONTESANO)"
+  },
+  "3780": {
+    "description": "LOMO BELLOTA 100% IB. (ENTERO) (MONTESANO)"
+  },
+  "3781": {
+    "description": "CHORIZO IBERICO BELLOTA (ENTERO) (MONTESANO)"
+  },
+  "3782": {
+    "description": "SALCHICHON IBERICO BELLOTA (ENTERO) (MONTESANO)"
+  },
+  "3786": {
+    "description": "NATA SNEL PARA COCINAR (1 L) (KEN)"
+  },
+  "3787": {
+    "description": "NATA SNEL PARA MONTAR Y COCINAR (1 L) (KEN)"
+  },
+  "3811": {
+    "description": "RAVIOLI CRUJIENTE DE CORDERO AL ROMERO (GASTRONOMS)"
+  },
+  "3816": {
+    "description": "RAVIOLI CRUJIENTE DE BUTIFARRA NEGRA Y MANZANA ASADA (GASTRONOMS)"
+  },
+  "3817": {
+    "description": "BRANDADA DE BACALAO (GASTRONOMS)"
+  },
+  "3821": {
+    "description": "CANELON DE POLLO CON TRUFA (30 UD) (GASTRONOMS)"
+  },
+  "3837": {
+    "description": "RAVIOLI CRUJIENTE SECRETO JAMON Y CEBOLLA OPORTO (GASTRONOMS)"
+  },
+  "3841": {
+    "description": "MANITAS DE CERDO (PLANCHA MONORACION) (GASTRONOMS)"
+  },
+  "3842": {
+    "description": "LASAÑA CARNE (PORCIONADA, BANDEJA) (TRE ARCHI)"
+  },
+  "3843": {
+    "description": "PATE QUARTET 3 SABORES (POLCA)"
+  },
+  "3856": {
+    "description": "CROQUETAS DE PATO CONFITADO (GASTRONOMS)"
+  },
+  "3858": {
+    "description": "PENNE REGINE (500 GR) (DIVELLA)"
+  },
+  "3862": {
+    "description": "NATA ACIDA (2 L) (KEN)"
+  },
+  "3876": {
+    "description": "CANELON DE PATO CONFITADO Y FOIE (GASTRONOMS)"
+  },
+  "3881": {
+    "description": "QUESO AZUL DANES DESMIGADO (1,5 KG APROX) (SOSTER)"
+  },
+  "3885": {
+    "description": "RAVIOLI CRUJIENTE DE CHISTORRA CON HUEVO (GASTRONOMS)"
+  },
+  "3895": {
+    "description": "PULPO SELECCION COCIDO (1 PATA) (160-180 GR) (SELEC MARDIS)"
+  },
+  "3906": {
+    "description": "COULAND CHOCOLATE BLANCO (36 UD) (SIN GLUTEN) (FOOD VAC)"
+  },
+  "3911": {
+    "description": "TARTAR DE SALMON (32 UD) (FOOD VAC)"
+  },
+  "3912": {
+    "description": "TARTAR DE ATUN (32 UD) (FOOD VAC)"
+  },
+  "3917": {
+    "description": "FRITADA CASERA TARRO (1/2 KG) (MARZO)"
+  },
+  "3919": {
+    "description": "GUANCIALE CURADO AHUMADO (AL VACIO) (SOSTER)"
+  },
+  "3927": {
+    "description": "BROWNIE DE CHOCOLATE (36 UD) (SIN GLUTEN) (RACION) (FOOD VAC)"
+  },
+  "3928": {
+    "description": "CODILLO DE CERDO CON HUESO (FOOD VAC)"
+  },
+  "3942": {
+    "description": "RABO DE VACUNO DESHUESADO (RACION) (16 UD) (FOOD VAC)"
+  },
+  "3944": {
+    "description": "CANELON CON BOGAVANTE (GASTRONOMS)"
+  },
+  "3961": {
+    "description": "BACALAO CONFITADO CON AJO 12UND X 210GR(FOOD VAC)"
+  },
+  "3962": {
+    "description": "ALCACHOFA CONFITADA EN ACEITE DE ARBEQUINA (FOOD VAC)"
+  },
+  "3989": {
+    "description": "SECRETO DE CERDO IBERICO (RACION) (12 UD) (FOOD VAC)"
+  },
+  "3990": {
+    "description": "TERRINA DE MELOSO DE VACUNO (RACION) (FOOD VAC)"
+  },
+  "3991": {
+    "description": "COULAND DE CHOCOLATE (MICROONDAS) (SIN GLUTEN) (36 UD) (FOOD VACC)"
+  },
+  "3997": {
+    "description": "SAVOIARDI (400 GR) (15 UD) (DIVELLA)"
+  },
+  "4010": {
+    "description": "QUESO PURO DE OVEJA (AÑEJO) (1/2 PIEZA) (SANSUEÑA)"
+  },
+  "4083": {
+    "description": "PICADILLO DE JAMON IB. DE CEBO (1KG) (B/BLANCA) (DIAZ)"
+  },
+  "4098": {
+    "description": "PINOT GRIGIO ROSADO DOC (VINO) (SONETTI)"
+  },
+  "4103": {
+    "description": "COCHINILLO DESHUESADO (PLANCHA) (3 * 2.25 KG) (FOOD VAC)"
+  },
+  "4117": {
+    "description": "QUESO PURO DE OVEJA (AÑEJO) (MANTECA) (1/2 PIEZA) (SANSUEÑA)"
+  },
+  "4126": {
+    "description": "CUARTO TRASERO POLLO 1.6 APROX ( TOKE CHEF ) (ENCARGO)"
+  },
+  "4129": {
+    "description": "COSTILLA BARBACOA (400 G) ( TOKE CHEF )"
+  },
+  "4134": {
+    "description": "LOUIS PERDRIER BRUT"
+  },
+  "4135": {
+    "description": "LOUIS PERDRIER ROSE"
+  },
+  "4150": {
+    "description": "QUESO EDAM LONCHA (1 KG)"
+  },
+  "4205": {
+    "description": "VINO ALBARIÑO COSECHERO RHIN"
+  },
+  "4287": {
+    "description": "CANELON DE BRANDADA DE BACALAO Y AJO ESCALIVADO (GASTRONOMS)"
+  },
+  "4340": {
+    "description": "HELADO DE MANTECADO ESPECIAL SIN GLUTEN 2.5 L"
+  },
+  "4343": {
+    "description": "SALAMI MILANO EXPORT (VILLANI)"
   },
   "4344": {
     "description": "PRESA DE BELLOTA 50% IBERICA CONG (MONTESANO)"
   },
-  "5326": {
-    "description": "SECRETO DE VENTRESCA 100% IBERICO CONGELADO ( BEHER )"
+  "4345": {
+    "description": "SECRETO DE BELLOTA IBERICO 100% (MONTESANO)"
   },
-  "5363": {
-    "description": "SECRETO EXTRA 100% IBERICO CONGELADO ( BEHER )"
+  "4362": {
+    "description": "LOMO DOBLADO BELLOTA 100% (MONTESANO)"
   },
-  "5593": {
-    "description": "SECRETO EXTRA BELLOTA 100% IBERICO CONGELADO ECOLOGICO ( BEHERK)"
+  "4363": {
+    "description": "LOUIS PERDRIER BRUT MAGNUM"
   },
-  "6731": {
-    "description": "SECRETO EXTRA BELLOTA 100% IBERICO FRESCO ECOLOGICO ( BEHER )"
+  "4385": {
+    "description": "SALMON NORUEGO HOST. (PRECORTADO) (GMA)"
   },
-  "5597": {
-    "description": "SOLOMILLO 100% IBERICO CONGELADO ( BEHER )"
+  "4404": {
+    "description": "RAVIOLI CRUJIENTE DE TORO AL VINO TINTO (GASTRONOMS)"
   },
-  "6732": {
-    "description": "SOLOMILLO BELLOTA 100% IBERICO FRESCO ECOLOGICO ( BEHER )"
+  "4409": {
+    "description": "MERMELADA FRESA (370 GR) (MARZO)"
+  },
+  "4411": {
+    "description": "SORRENTINO BURRATA DE PUGLIA (3KG) (TRE ARCHI)"
+  },
+  "4412": {
+    "description": "SORRENTINO VEGANO DE VERDURAS ASADAS (3 KG) (TRE ARCHI)"
+  },
+  "4414": {
+    "description": "PAPARDELLE AL HUEVO (44 NIDOS)(TRE ARCHI)"
+  },
+  "4450": {
+    "description": "COJON DE GATO VERDEJO RUEDA"
+  },
+  "4476": {
+    "description": "CENTRO JAMON SERRANO G.RESERVA (PULIDO) (DIAZ)"
+  },
+  "4495": {
+    "description": "CHARDONNAY IGPPAYS (VINO) (B&G)"
+  },
+  "4496": {
+    "description": "SAUVIGNON BLANC IGP (VINO) (B&G)"
+  },
+  "4511": {
+    "description": "CABERNET SAUVIGNON (VINO) (B&G)"
+  },
+  "4512": {
+    "description": "MERLOT (VINO) (B&G)"
+  },
+  "4545": {
+    "description": "KEN GOURMET DUO (1 L) (KEN)"
+  },
+  "4591": {
+    "description": "MOJAMA EXTRA"
+  },
+  "4592": {
+    "description": "HUEVA MARUCA EXTRA"
+  },
+  "4593": {
+    "description": "LOMO BONITO"
+  },
+  "4599": {
+    "description": "ANCHOA 00 CANT. OLIVA (TARRINA) (30 F) (350 GR) (SELEC MARDIS)"
+  },
+  "4677": {
+    "description": "LA CHELO VERMOUTH BOTELLA CRISTAL."
+  },
+  "4692": {
+    "description": "PAPADA IBÉRICA CURADA (4 KG APROX) (DIAZ)"
   },
   "4699": {
     "description": "SOLOMILLO DE BELLOTA IBERICO CONG (MONTESANO)"
   },
-  "6753": {
-    "description": "BURGER TERNERA (180GR) (24U) (CARPISA)"
+  "4704": {
+    "description": "QUESO PURO DE OVEJA (AÑEJO) (3 KG) (SANSUEÑA)"
+  },
+  "4705": {
+    "description": "QUESO PURO DE OVEJA (AÑEJO) (ROMERO) (1/2 PIEZA) (SANSUEÑA)"
+  },
+  "4720": {
+    "description": "MICUIT ORIGINE FRANCE (500 GR/UD)"
+  },
+  "4727": {
+    "description": "CENTRO PALETA IB. CEBO (B/ BLANCA) (MONTERROBLE)"
+  },
+  "4787": {
+    "description": "PROVOLONE LONCHAS (200 GR) (SOSTER)"
+  },
+  "4807": {
+    "description": "HUEVA DE MUJOL"
+  },
+  "4810": {
+    "description": "VINO MONTEPULCIANO ABRUZZO DOC (LA PIUMA)"
+  },
+  "4830": {
+    "description": "TOMATE FRITO CASERO (1/2 KG) (DIMARDIS)"
+  },
+  "4831": {
+    "description": "HUEVA DE ATUNARRO"
+  },
+  "4832": {
+    "description": "MOJAMA 1ª"
+  },
+  "4846": {
+    "description": "LA CHELO BLANCO SWEET"
+  },
+  "4861": {
+    "description": "LOMO CEBO IBERICO 50% ENTERO (MONTEROBLE)"
+  },
+  "4866": {
+    "description": "ALBARIÑO FROIÑA CASA DO SOL"
+  },
+  "4875": {
+    "description": "VINO CLAUS RIBERA DUERO"
+  },
+  "4908": {
+    "description": "BAROLO DOCG (VINO) (RICOSSA)"
+  },
+  "4909": {
+    "description": "BAROLO RESERVA (VINO) (RICOSSA)"
+  },
+  "4964": {
+    "description": "PASTRAMI TRADICION AHUMADO (C.PABLO)"
+  },
+  "4990": {
+    "description": "BLOC DE MOUSSE DE PATO A LA PIMIENTA (1.5 KG) (DERHEL)"
+  },
+  "4993": {
+    "description": "VINO SEI ANIME ROSATO ACQUI"
+  },
+  "5026": {
+    "description": "QUESO PURO DE OVEJA (AÑEJO) (TARRO EN ACEITE) (700 GR) (SANSUEÑA)"
+  },
+  "5047": {
+    "description": "BURRATINA (CONGELADA)(125 GR) (SKI)"
+  },
+  "5062": {
+    "description": "QUESO PURO DE OVEJA (AÑEJO) (1/4 PIEZA) (SANSUEÑA)"
+  },
+  "5068": {
+    "description": "PALETA IB. DE BELLOTA 100% (B/NEGRA) (DIAZ)"
+  },
+  "5103": {
+    "description": "CROQUETA DE POLLO (35 GR/UD) (3 KG) (7BAJC)"
+  },
+  "5107": {
+    "description": "CONFIT DE CANARD (UD) (250G)"
+  },
+  "5112": {
+    "description": "TERRINA DE OREJA DE CERDO (FOOD VAC)"
+  },
+  "5122": {
+    "description": "CREMA DE CECINA TARRINA (130 GR) (C.PABLO)"
+  },
+  "5124": {
+    "description": "DELANTERO DE VACUNO (FOOD VAC)"
+  },
+  "5128": {
+    "description": "VERMOUTH LA CHELO BOLSA 3L"
+  },
+  "5132": {
+    "description": "CREMA DI MELONE (RUSSO)"
+  },
+  "5146": {
+    "description": "QUESO MEZCLA TIERNO (3 KG) (EL CIGARRAL) - POR ENCARGO"
+  },
+  "5148": {
+    "description": "QUESO MEZCLA SEMI (3KG) (GRAN CAPITAN) - POR ENCARGO"
+  },
+  "5149": {
+    "description": "QUESO FRESCO (BARRA) (1 KG) (VENTERO) (ENCARGO)"
+  },
+  "5151": {
+    "description": "QUESO BRIE 60% M.G (1 KG) (PRESIDENT)"
+  },
+  "5152": {
+    "description": "QUESO ROQUEFORT (1/2) (1,5 KG APROX) (SOCIETE)"
+  },
+  "5153": {
+    "description": "QUESO ORO VIEJO (3 KG) (DON BERNARDO) (ENCARGO)"
+  },
+  "5154": {
+    "description": "QUESO OVEJA VIEJO (3,2 KG) (FLOR DE ESGUEVA) (ENCARGO)"
+  },
+  "5162": {
+    "description": "SARDINA AHUMADA EN ACEITE TARRINA 900G"
+  },
+  "5165": {
+    "description": "QUESO RULO CABRA (1 KG X 2UD) (PRESIDENT)"
+  },
+  "5168": {
+    "description": "PALETA DE BELLOTA 100% IBERICA (B/NEGRA) (MONTESANO)"
+  },
+  "5171": {
+    "description": "HUEVA DE ATUN DE ALMADRABA"
+  },
+  "5172": {
+    "description": "QUESO PURO DE OVEJA CUÑA (AÑEJO) (ROMERO) (1/8) (250 GR) (SANSUEÑA)"
+  },
+  "5175": {
+    "description": "QUESO ZAMORANO MEZCLA (MADURADO) (3KG) (LUYAN)"
+  },
+  "5177": {
+    "description": "CHORIZO DE LEON DULCE (450 GR APROX) (C.PABLO)"
+  },
+  "5178": {
+    "description": "CHORIZO DE LEON PICANTE (450 GR APROX) (C.PABLO)"
+  },
+  "5211": {
+    "description": "VINO VD TINTO RIBERA 4 MESES"
+  },
+  "5213": {
+    "description": "CHORIZO SARTA PICANTE SEGOVIA (3 KG DE 7UD APROX) (LA INMACULADA)"
+  },
+  "5215": {
+    "description": "QUESO PURO DE OVEJA (AÑEJO) (TRUFA) (1/2 PIEZA) (SANSUEÑA)"
+  },
+  "5217": {
+    "description": "ALCACHOFA CONFITADA (1/2 TARRO CRISTAL) (SELEC MARDIS)"
+  },
+  "5223": {
+    "description": "CAJA 5 BOLSAS SANGRIA BIB MARIA DE LA O 3L"
+  },
+  "5237": {
+    "description": "HELADO DE TURRON 2.5L"
+  },
+  "5238": {
+    "description": "PLUMA DE BELLOTA 100% IBERICA CONG (B/NEGRA) (MONTESANO)"
+  },
+  "5242": {
+    "description": "QUESO PURO DE OVEJA (AÑEJO) (EN ACEITE) (1/4 PIEZA) (SANSUEÑA)"
+  },
+  "5249": {
+    "description": "PINOT GRIGIO BLANCO DOC (SONETTI)"
+  },
+  "5250": {
+    "description": "QUESO CHEDDAR ROJO (LONCHAS) (1 KG)"
+  },
+  "5265": {
+    "description": "TOMATE TRITURADO LATA (5KG) (MARZO)"
+  },
+  "5268": {
+    "description": "CHIANTI DOCG (VINO) (LA PIUMA)"
+  },
+  "5269": {
+    "description": "PECORINO TERRE DI CHIETI IGT (VINO) (LA PIUMA)"
+  },
+  "5278": {
+    "description": "HUEVA DE MARUCA 1º"
+  },
+  "5283": {
+    "description": "BACON AHUMADO MOLDE SIN PIEL (SQ)"
+  },
+  "5284": {
+    "description": "BACON AHUMADO CHEF LONCHEADO (1KG) (SQ)"
+  },
+  "5285": {
+    "description": "JAMON COCIDO CLASSIC ( SQ )"
+  },
+  "5292": {
+    "description": "BACON CHEF PIEZA (SQ)"
+  },
+  "5298": {
+    "description": "CAMINOS A PARDOS GARNACHA 80"
+  },
+  "5301": {
+    "description": "PAPPARDELLE UOVO (500 GR) (DIVELLA)"
+  },
+  "5309": {
+    "description": "QUESO PURO DE OVEJA (AÑEJO) (AJO) (1/2 PIEZA) (SANSUEÑA)"
+  },
+  "5311": {
+    "description": "QUESO MEZCLA CURADO (3 KG) (GRAN CAPITAN) - POR ENCARGO"
+  },
+  "5325": {
+    "description": "EXPOSITOR ARBOL PARA 16 JAMONES DESMONTABLE"
+  },
+  "5326": {
+    "description": "SECRETO DE VENTRESCA 100% IBERICO CONGELADO ( BEHER )"
+  },
+  "5327": {
+    "description": "JAMON CEBO DE CAMPO IBERICO 100% ROJA (B/VERDE) (BEHER)"
+  },
+  "5328": {
+    "description": "JAMON BERNARDO SELECCION ( BEHER )"
+  },
+  "5329": {
+    "description": "JAMON DE BELLOTA 100% IBERICO PATA NEGRA ORO C-18 ( BEHER )"
+  },
+  "5330": {
+    "description": "CENTRO PALETA DE CEBO DE CAMPO 100% IBERICA PULIDA ( BEHER )"
+  },
+  "5331": {
+    "description": "LOMO IB. DE CEBO DE CAMPO 100% (ENTERO) ( BEHER )"
+  },
+  "5332": {
+    "description": "LOMO BEHER UNICO ( BEHER )"
+  },
+  "5333": {
+    "description": "SALCHICHON CULAR DE BELLOTA 100% IBERICO ( BEHER )"
+  },
+  "5334": {
+    "description": "CHORIZO CULAR DE BELLOTA 100% IBERICO ( BEHER )"
+  },
+  "5335": {
+    "description": "LONGANIZA DE BELLOTA 100% IBERICA ( BEHER )"
+  },
+  "5336": {
+    "description": "PANCETA DE BELLOTA 100% IBERICA (ADOBADA) ( BEHER )"
+  },
+  "5337": {
+    "description": "LOMO DE TOCINO 100% IBERICO SALADO ( BEHER )"
+  },
+  "5338": {
+    "description": "CHORIZO VELA DE BELLOTA 100% IBERICO (500 GR) ( BEHER )"
+  },
+  "5339": {
+    "description": "SALCHICHON VELA BELLOTA 100% IBERICO (500 GR) ( BEHER )"
+  },
+  "5340": {
+    "description": "CENTRO JAMON IB. BELLOTA 50% (B/ ROJA) (MONTESANO)"
+  },
+  "5345": {
+    "description": "CENTRO PALETA BELLOTA 100% IB PULIDA ORO (B/NEGRA) ( BEHER )"
+  },
+  "5348": {
+    "description": "CENTRO JAMON BELLOTA 100% IBERICO PATA NEGRA ORO ( BEHER )"
+  },
+  "5349": {
+    "description": "LOMO DE BELLOTA 100% IBERICO PATA NEGRA ( BEHER )"
+  },
+  "5350": {
+    "description": "LOMITO DE PRESA BELLOTA 100% IBERICO ( BEHER )"
+  },
+  "5351": {
+    "description": "PALETA DE CEBO DE CAMPO 100% IBERICA ROJA ( BEHER )"
+  },
+  "5352": {
+    "description": "PALETA DE BELLOTA 100% IBERICA PATA NEGRA ORO (BEHER)"
+  },
+  "5363": {
+    "description": "SECRETO EXTRA 100% IBERICO CONGELADO ( BEHER )"
+  },
+  "5364": {
+    "description": "PRESA 100% IBERICA CONGELADA ( BEHER )"
+  },
+  "5365": {
+    "description": "PLUMA IBERICA CONGELADA ( BEHER )"
+  },
+  "5372": {
+    "description": "CENTRO JAMON CEBO DE CAMPO 100% IBERICO, ROJA ( BEHER )"
+  },
+  "5373": {
+    "description": "LOUIS PERDRIER BRUT 0.20 ( 24U )"
+  },
+  "5374": {
+    "description": "PANCETA DE BELLOTA 100% IBERICA (SALADA) ( BEHER )"
+  },
+  "5375": {
+    "description": "SALCHICHON SARTA DE BELLOTA 100% IBERICO ( BEHER )"
+  },
+  "5376": {
+    "description": "CHORIZO CULAR DE BELLOTA 100% IBERICO (1/2 PIEZA) ( BEHER )"
+  },
+  "5377": {
+    "description": "SALCHICHON CULAR DE BELLOTA 100% IBERICO (1/2 PIEZA) ( BEHER )"
+  },
+  "5378": {
+    "description": "LOMO IB. DE CEBO DE CAMPO 100% (1/2 PIEZA) ( BEHER )"
+  },
+  "5379": {
+    "description": "LOMO BEHER UNICO (1/2 PIEZA) ( BEHER )"
+  },
+  "5380": {
+    "description": "LOMO DE BELLOTA 100% IBERICO PATA NEGRA (1/2 PIEZA) ( BEHER )"
+  },
+  "5400": {
+    "description": "QUESO BRIE 60% M.G. (3KG) (PRESIDENT) (ENCARGO)"
+  },
+  "5443": {
+    "description": "CHAMPAGNE EMILE PARIS BRUT"
+  },
+  "5450": {
+    "description": "MOUSSE DE FOIE DE CANARD (PATE SUPERIOR) FABRIQUE FRANCE"
+  },
+  "5459": {
+    "description": "BACON EXTRA (SQ)"
+  },
+  "5466": {
+    "description": "PLUMA 100% IBERICA CONGELADA ( BEHER )"
+  },
+  "5474": {
+    "description": "VINO VD MONASTRELL"
+  },
+  "5475": {
+    "description": "LAGRIMAS DE COSTILLA 100% IBERICAS CONGELADAS ( BEHER )"
+  },
+  "5476": {
+    "description": "CARRILLERA DE CERDO CONGELADA ( BEHER )"
+  },
+  "5480": {
+    "description": "TACOS DE JAMON (GMA)"
+  },
+  "5482": {
+    "description": "TRAMPOSO TINTO RIBERA DEL DUERO CAPA LARGA 0.75"
+  },
+  "5483": {
+    "description": "PERLAGE CANAH PROSECCO VALD. DOCG BRUT"
+  },
+  "5491": {
+    "description": "JAMON CEBO DE CAMPO IBERICO 50% (B/VERDE) (BEHER)"
+  },
+  "5493": {
+    "description": "PLUMA 100% IBERICA DE BELLOTA CONGELADA ( BEHER )"
+  },
+  "5494": {
+    "description": "CARRE DE BELLOTA 100% IBERICO CONGELADO ( BEHER )"
+  },
+  "5496": {
+    "description": "PORTAJAMONES GIRATORIO IBIZA"
+  },
+  "5497": {
+    "description": "PORTAJAMONES LACADO CASABLANCA"
+  },
+  "5509": {
+    "description": "CANELON DE MERLUZA Y GAMBON (GASTRONOMS)"
+  },
+  "5511": {
+    "description": "VINAGRE (15 X 1 L) (YBARRA)"
+  },
+  "5524": {
+    "description": "SOBRE JAMON CORTE CUCHILLO CEBO DE CAMPO (90 GR)(DFG)"
+  },
+  "5525": {
+    "description": "SOBRE JAMON CORTE CUCHILLO BELLOTA 100% (90GR)(DFG)"
+  },
+  "5534": {
+    "description": "ABANICO 100% IBERICO CONGELADO ( BEHER )"
+  },
+  "5538": {
+    "description": "PRESA 100% IBERICA DE BELLOTA CONGELADA ( BEHER )"
+  },
+  "5547": {
+    "description": "QUESO PURO DE OVEJA CUÑA (AÑEJO) (ACEITE) (1/8) (250 GR)(SANSUEÑA)"
+  },
+  "5553": {
+    "description": "QUESO PURO DE OVEJA CUÑA (AÑEJO) (AJO) (1/8) (250 GR) (SANSUEÑA)"
+  },
+  "5554": {
+    "description": "QUESO PURO DE OVEJA CUÑA (AÑEJO) (250 GR) (SANSUEÑA)"
+  },
+  "5557": {
+    "description": "ENTRECOT DE BELLOTA 100% ( BEHER )"
+  },
+  "5570": {
+    "description": "PRESA DE BELLOTA 100% IBERICA CONG (MONTESANO)"
+  },
+  "5571": {
+    "description": "CARRILLADA IBERICA CONG (MONTESANO)"
+  },
+  "5580": {
+    "description": "GRANDE OVALE DE GAMBONES Y PUERRO (3KG) (TRE ARCHI)"
+  },
+  "5581": {
+    "description": "GRANDE OVALE DE CORDERO (3KG) (TRE ARCHI)"
+  },
+  "5593": {
+    "description": "SECRETO EXTRA BELLOTA 100% IBERICO CONGELADO ECOLOGICO ( BEHERK)"
+  },
+  "5594": {
+    "description": "PRESA BELLOTA 100% IBERICA CONGELADA ECOLOGICA ( BEHER )"
+  },
+  "5596": {
+    "description": "GRANDE BOTTONE DE BERENJENA Y SCAMORZA (3KG) (TRE ARCHI)"
+  },
+  "5597": {
+    "description": "SOLOMILLO 100% IBERICO CONGELADO ( BEHER )"
+  },
+  "5602": {
+    "description": "PALETA DE BELLOTA 100% IBERICA ECOLOGICA (BEHER)"
+  },
+  "5604": {
+    "description": "LOMO DE BELLOTA 100% IBERICO PATA NEGRA ECOLOGICO( BEHER )"
+  },
+  "5605": {
+    "description": "CHORIZO DE BELLOTA 100% IBERICO ECOLOGICO 500 G ( BEHER )"
+  },
+  "5606": {
+    "description": "SALCHICHON DE BELLOTA 100% IBERICO ECOLOGICO 500 G ( BEHER )"
+  },
+  "5609": {
+    "description": "EMMENTAL ANALOGO (1 KG)"
+  },
+  "5618": {
+    "description": "BARQUETA JAMON CEBO DE CAMPO 100% IBERICO 360G ( BEHER )"
+  },
+  "5625": {
+    "description": "QUESO EDAM BARRA (3.KG) CORONA D´ORO"
+  },
+  "5627": {
+    "description": "QUESO AZUL RUEDA (3KG) (ST CLEMENS)"
+  },
+  "5639": {
+    "description": "CUCHILLO JAMONERO SOLINGEN"
+  },
+  "5641": {
+    "description": "JAMONERA AFINOX PECTUS"
+  },
+  "5642": {
+    "description": "TAQUITOS DE JAMON 100% IBERICO BOLSA 500G ( BEHER )"
+  },
+  "5652": {
+    "description": "ESTUCHE SALCHICHON DE BELLOTA 100% IBERICO ( BEHER )"
+  },
+  "5654": {
+    "description": "JAMON BEHER UNICO (90 GR) (C. CUCHILLO) (BEHER)"
+  },
+  "5669": {
+    "description": "POMODORINI ROSSI SEMISECCHI (VIANDER)"
+  },
+  "5670": {
+    "description": "POMODORINI GIALLI SEMISECCHI (VIANDER)"
+  },
+  "5677": {
+    "description": "CREMA AL 4 FORMAGGI (800 GR) (VIANDER)"
+  },
+  "5698": {
+    "description": "PLUMA DE CERDO IBERICO ENVASADA (DIAZ)"
+  },
+  "5699": {
+    "description": "BARDOLINO DOC CLASSICO"
+  },
+  "5718": {
+    "description": "RAVIOLI FORMAGGI (3 KG) (TRE ARCHI)"
+  },
+  "5721": {
+    "description": "SOBRE JAMON CORTE CUCHILLO BELLOTA 50% (90 GR) (DFG)"
+  },
+  "5722": {
+    "description": "PANKO PAN ESCAMAS (2 KG) (SELEC MARDIS)"
+  },
+  "5734": {
+    "description": "VD 12 TINTO RIBERA DEL DUERO"
+  },
+  "5745": {
+    "description": "SALMON ENTERO PEQUEÑO (DOMINGUEZ)"
+  },
+  "5746": {
+    "description": "ENSALADA DE AHUMADOS (1 KG) (DOMINGUEZ)"
+  },
+  "5747": {
+    "description": "BACALAO TARRINA ( 1KG) (DOMINGUEZ)"
+  },
+  "5749": {
+    "description": "JAMONERA BELLOTA III GIRATORIO"
+  },
+  "5768": {
+    "description": "BOQUERONES EN VINAGRE LATA (425 GR) (DOMINGUEZ)"
+  },
+  "5769": {
+    "description": "LOMO SALMON ENTERO (DOMINGUEZ) PESO VARIABLE"
+  },
+  "5770": {
+    "description": "TIRAMISU CLASICO (TRE ARCHI)"
+  },
+  "5771": {
+    "description": "SALMON PRECORTADO PEQUEÑO (DOMINGUEZ)"
+  },
+  "5772": {
+    "description": "TARRINA COCKTAIL GAMBON SALVAJE (1KG) (DOMINGUEZ)"
+  },
+  "5773": {
+    "description": "SALMON PRECORTADO BIPACK (DOMINGUEZ)"
+  },
+  "5775": {
+    "description": "QUESO MOLITERNO TARTUFO (1/2 RUEDA) (2.7 KG) (ENCARGO)"
+  },
+  "5776": {
+    "description": "COCKTAIL SALMON (1 KG) (DOMINGUEZ)"
+  },
+  "5777": {
+    "description": "SALMON ENTERO SUPREME (DOMINGUEZ)"
+  },
+  "5778": {
+    "description": "SALMON MARINADO P. ENTERA (DOMINGUEZ)"
+  },
+  "5779": {
+    "description": "SALMON ENTERO GRANDE (DOMINGUEZ)"
+  },
+  "5780": {
+    "description": "SALMON PRECORTADO GRANDE (DOMINGUEZ)"
+  },
+  "5781": {
+    "description": "SALMON PLANCHA 700GR (NAVIDAD) (DOMINGUEZ)"
+  },
+  "5782": {
+    "description": "LOMOS SALMON SOBRES (100 GR) (DOMINGUEZ)"
+  },
+  "5783": {
+    "description": "LOMOS SALMON SOBRES (250 GR) (DOMINGUEZ)"
+  },
+  "5785": {
+    "description": "ENSALADA DE AHUMADOS (500 GR) (DOMINGUEZ)"
+  },
+  "5788": {
+    "description": "LOMO DE BACALAO (500 GR) (DOMINGUEZ)"
+  },
+  "5790": {
+    "description": "SURTIDO DE AHUMADOS (1KG) (DOMINGUEZ)"
+  },
+  "5796": {
+    "description": "COLIN TARRINA (1KG) (DOMINGUEZ)"
+  },
+  "5797": {
+    "description": "TARTAR SALMON (DOMINGUEZ)"
+  },
+  "5799": {
+    "description": "GRAPPA DI NEBBIOLO MORRA"
+  },
+  "5811": {
+    "description": "BLINIS BOLSA (30U) (DOMINGUEZ)"
+  },
+  "5812": {
+    "description": "BLINIS BOLSA (6U) (DOMINGUEZ)"
+  },
+  "5819": {
+    "description": "CALLOS (2.5KG) (ROGUSA)"
+  },
+  "5822": {
+    "description": "CHAMPIÑON LAMINADO (3KG)"
+  },
+  "5823": {
+    "description": "GRANA PADANO (RUEDA ENTERA)"
+  },
+  "5824": {
+    "description": "CALLOS (500GR) (ROGUSA)"
+  },
+  "5827": {
+    "description": "MERMELADA TOMATE (370 GR)(MARZO)"
+  },
+  "5838": {
+    "description": "ROSSO DI MONTALCINO DA VINCI"
+  },
+  "5839": {
+    "description": "BRUNELLO DI MONTALCINO DAVINCI I CAPOLAVORI"
+  },
+  "5847": {
+    "description": "SALMON AHUMADO SUPREME SOBRES (100 GR) (DOMINGUEZ)"
+  },
+  "5848": {
+    "description": "SALMON MARINADO SOBRE 100 GR (DOMINGUEZ)"
+  },
+  "5849": {
+    "description": "VINO CHIANTI DOCG (POGGIO DEL SASSO)"
+  },
+  "5850": {
+    "description": "CHIANTI RESERVA DOCG (VINO) (POGGIO DEL SASSO)"
+  },
+  "5851": {
+    "description": "MOONLIGHT & ROSES"
+  },
+  "5858": {
+    "description": "JAMON COCIDO OVAL (SQ)"
+  },
+  "5859": {
+    "description": "OREJA GUISADA LATA (380 GR) (ROGUSA)"
+  },
+  "5860": {
+    "description": "CALLOS MADRILEÑA (380GR) (LATA) (ROGUSA)"
+  },
+  "5861": {
+    "description": "PREMIX TRAMEZZINI (PAGANI)"
+  },
+  "5862": {
+    "description": "CRISPY BACON (PAGANI)"
+  },
+  "5863": {
+    "description": "PANGROSSO GIALLO (PAGANI)"
+  },
+  "5864": {
+    "description": "PASTELLA CHEF (PAGANI)"
+  },
+  "5865": {
+    "description": "TERIYAKI CLASSICA (PAGANI)"
+  },
+  "5866": {
+    "description": "GUSTOSI L´ORIENTALE (PAGANI)"
+  },
+  "5867": {
+    "description": "GUSTOSI LA ROSA (PAGANI)"
+  },
+  "5868": {
+    "description": "GUSTOSI LA SOLARE (PAGANI)"
+  },
+  "5869": {
+    "description": "GUSTOSI LA PIZZAIOLA (PAGANI)"
+  },
+  "5870": {
+    "description": "GUSTOSI LA MEDITERRANEA (PAGANI)"
+  },
+  "5871": {
+    "description": "RICOSSA BARBERA D´ASTI DOCG"
+  },
+  "5874": {
+    "description": "MIX BURGER 66018 (PAGANI)"
+  },
+  "5875": {
+    "description": "PREMIX CROCCHETTE (PAGANI)"
+  },
+  "5876": {
+    "description": "PREMIX BURGER PIZZAIOLA (PAGANI)"
+  },
+  "5877": {
+    "description": "NOVIT BURGER MIX (PAGANI)"
+  },
+  "5878": {
+    "description": "MIX ORTOLANO (PAGANI)"
+  },
+  "5879": {
+    "description": "PREMIX BURGER CHEF (PAGANI)"
+  },
+  "5881": {
+    "description": "PAGANI DRY RUB (PAGANI)"
+  },
+  "5882": {
+    "description": "PAGANI DELY RUB (PAGANI)"
+  },
+  "5883": {
+    "description": "PANATURA CROCCANTE (PAGANI)"
+  },
+  "5884": {
+    "description": "CRISPY PIZZAIOLA (PAGANI)"
+  },
+  "5885": {
+    "description": "PANGROSSO ARANCIO (PAGANI)"
+  },
+  "5887": {
+    "description": "MARINATA CHEF (PAGANI)"
+  },
+  "5888": {
+    "description": "GUSTOSI LA ROSSA (PAGANI)"
+  },
+  "5889": {
+    "description": "GUSTOSI LA VERDE (PAGANI)"
+  },
+  "5890": {
+    "description": "GUSTOSI LA GIALLA (PAGANI)"
+  },
+  "5891": {
+    "description": "GUSTOSI LA BARBACUE (PAGANI)"
+  },
+  "5892": {
+    "description": "GUSTOSI LA PICANTE (PAGANI)"
+  },
+  "5893": {
+    "description": "GUSTOSI LA BOSCAIOLA (PAGANI)"
+  },
+  "5894": {
+    "description": "GUSTOSI LA SICILIANA (PAGANI)"
+  },
+  "5896": {
+    "description": "GUSTOSI LA GENTILE (PAGANI)"
+  },
+  "5897": {
+    "description": "GUSTOSI L'ORTOLANA (PAGANI)"
+  },
+  "5899": {
+    "description": "GUSTOSI LA LATINA (PAGANI)"
+  },
+  "5900": {
+    "description": "GUSTOSI LA BIONDA (PAGANI)"
+  },
+  "5901": {
+    "description": "GUSTOSI AL FINOCCHIETTO (PAGANI)"
+  },
+  "5902": {
+    "description": "GUSTOSI CUOR DI PISTACCHIO (PAGANI)"
+  },
+  "5903": {
+    "description": "AROMA CARCIOFO NAT (PAGANI)"
+  },
+  "5904": {
+    "description": "AROMA JAMON IBERICO NAT (PAGANI)"
+  },
+  "5907": {
+    "description": "CAPELLAN TARRINA PLASTICO (1 KG) (SELEC MARDIS)"
+  },
+  "5910": {
+    "description": "PINOT GRIGIO DAVINCI I CAPOLAVORI"
+  },
+  "5911": {
+    "description": "BOLSA VACIO COCCION 30*40 500 U"
+  },
+  "5912": {
+    "description": "BOLSA VACIO 30*40 500 U"
+  },
+  "5914": {
+    "description": "VINO PINOT GRIGIO AQUARELLO TERRE SICILIANE STELY"
+  },
+  "5915": {
+    "description": "VINO BLANCO KEN FORRESTER CHENIN BLANC"
+  },
+  "5917": {
+    "description": "ALCACHOFA FLOR CONFITADA EN ACEITE (12U) (IQF)"
+  },
+  "5918": {
+    "description": "ENTRECOT 100% IBERICO MAXI (BEHER)"
+  },
+  "5919": {
+    "description": "AROMA CARNE TIPO POLLO (PAGANI)"
+  },
+  "5920": {
+    "description": "PINOT GRIGIO ROSADO AQUARELLO"
+  },
+  "5925": {
+    "description": "CALLOS COCIDOS (1KG) (ROGUSA)"
+  },
+  "5926": {
+    "description": "VINO RAMON BILBAO CRIANZA RIOJA"
+  },
+  "5927": {
+    "description": "VINO MAR DE FRADES ALBARIÑO"
+  },
+  "5928": {
+    "description": "AROMA DE HUMO SMK NAT(PAGANI)"
+  },
+  "5929": {
+    "description": "VINO MONTALTO ACQUERELLO CHARDONNAY"
+  },
+  "5938": {
+    "description": "QUESO CHEDDAR BARRA (3KG) (ROJO) CORONA D´ORO"
+  },
+  "5940": {
+    "description": "AROMA CROSTACEO PAGANI)"
+  },
+  "5941": {
+    "description": "PANATURA SG FINE SIN GLUTEN 0.5 KG (PAGANI)"
+  },
+  "5944": {
+    "description": "QUESO MEZCLA MARRON (MADURADO) (ALDONZA)"
+  },
+  "5947": {
+    "description": "QUESO RULO CABRA CON BLISTER (1KG) (ALDONZA)"
+  },
+  "5949": {
+    "description": "NERO D´AVOLA AQUARELLO DOC STELV"
+  },
+  "5950": {
+    "description": "JAMON COCIDO 100% IBERICO BEHER"
+  },
+  "5951": {
+    "description": "PIMIENTO PIQUILLO 18/22 LATA 1/2 KG"
+  },
+  "5952": {
+    "description": "CEBOLLA FRITA JULIANA (5KG)"
+  },
+  "5953": {
+    "description": "ATUN LOMITO GIRASOL LATA (900 GR) (ARLEQUIN)"
+  },
+  "5955": {
+    "description": "QUESO BARRA TIERNO (3KG) (ALDONZA)"
+  },
+  "5957": {
+    "description": "QUESO SEMI MEZCLA (P. CASTELLANO)"
+  },
+  "5959": {
+    "description": "SASHIMI DE SALMON AHUMADO ESTUCHE 150G (DOMINGUEZ)"
+  },
+  "5961": {
+    "description": "QUESO RULO MEZCLA CABRA AFINADO (850GR) (ALDONZA)"
+  },
+  "5965": {
+    "description": "GYROS GRILL (PAGANI)"
+  },
+  "5966": {
+    "description": "ANCHOA CANTABRICO OLIVA (LATA) (115 GR) (8F) PLATA(EMILIA)"
+  },
+  "5967": {
+    "description": "PULPO EN SU JUGO (230-265GR) (EMILIA)"
+  },
+  "5968": {
+    "description": "PULPO EN SU JUGO (190-225GR) (EMILIA)"
+  },
+  "5969": {
+    "description": "ANCHOA CANTABRICO TARRINA 50F (EMILIA)"
+  },
+  "5970": {
+    "description": "JAMON ARAGON GRAN RESERVA SIN PATA (ARAGON)"
+  },
+  "5971": {
+    "description": "JAMON ARAGON RESERVA SIN PATA (ARAGON)"
+  },
+  "5972": {
+    "description": "JAMON ARAGON RESERVA CON PATA (ARAGON)"
+  },
+  "5978": {
+    "description": "CENTRO JAMON GRAN RESERVA (ARAGON)"
+  },
+  "5985": {
+    "description": "BOQUERONES EN VINAGRE (800 GR) (SOLEVANTE)"
+  },
+  "5986": {
+    "description": "ANCHOA CANTABRICO OLIVA (LATA) (115 GR) (8F)ORO(EMILIA)"
+  },
+  "5987": {
+    "description": "VENTRESCA BONITO CANT. OLIVA LATA 120 GR EXTRA (EMILIA)"
+  },
+  "5989": {
+    "description": "AROMA MT GRILL NAT (PAGANI)"
+  },
+  "5995": {
+    "description": "ANCHOA CANTABRICO OLIVA OCTAVILLO(LATA) (50 GR) (EMILIA)"
+  },
+  "5996": {
+    "description": "RELANZON OLIVA (LATA) (180GR) (EMILIA)"
+  },
+  "5998": {
+    "description": "QUESO PECORINO ROMANO RUEDA (SOSTER) (ENCARGO)"
+  },
+  "5999": {
+    "description": "MIGAS BONITO CANT. AC. OLIVA (430GR) (EMILIA)"
+  },
+  "6004": {
+    "description": "PUNTILLA SIN PLUMA 450G (12U) SELEC MARDIS"
+  },
+  "6007": {
+    "description": "BANDEJA GASTRONORM"
+  },
+  "6012": {
+    "description": "JAMON CEBO IB. 50% B/BLANCA (CREGO)"
+  },
+  "6017": {
+    "description": "SOBRASADA CERDO DUROC TRIPA NATURAL (DIAZ)"
+  },
+  "6018": {
+    "description": "GARBANZOS CON BOLETUS (580 GR) (MARZO)"
+  },
+  "6020": {
+    "description": "PRIMITIVO CODICI IGP (VINO)"
+  },
+  "6023": {
+    "description": "CEBOLLA FRITA JULIANA (1KG)"
+  },
+  "6026": {
+    "description": "MARSALA INTORCIA 1L"
+  },
+  "6029": {
+    "description": "JAMON SERRANO (500 GR) (LONCHEADO) (EP)"
+  },
+  "6030": {
+    "description": "ESTUCHE LAGRIMAS CUÑAS (SANSUEÑA)"
+  },
+  "6031": {
+    "description": "ESTUCHE LATA CUÑAS VARIADAS (SANSUEÑA)"
+  },
+  "6033": {
+    "description": "DADOS DE SALMON (95 GR) (DOMINGUEZ)"
+  },
+  "6034": {
+    "description": "TARTAR DE SALMON AHUMADO (150GR) (DOMINGUEZ)"
+  },
+  "6036": {
+    "description": "QUESO PURO DE OVEJA (TARRO EN ACEITE) (200 GR) (SANSUEÑA)"
+  },
+  "6037": {
+    "description": "TOMATE ENTERO (TARRO) (720 GR) (MARZO)"
+  },
+  "6040": {
+    "description": "PEPPERONI (500 GR) (LONCHEADO) (EP)"
+  },
+  "6041": {
+    "description": "CEBOLLA CARAMELIZADA (BOLSA) (1 KG)"
+  },
+  "6042": {
+    "description": "JAMON GRAN RESERVA CON PATA (ARAGON)"
+  },
+  "6050": {
+    "description": "JAMONERA MOD BANQUETA"
+  },
+  "6052": {
+    "description": "LAMBRUSCO MODENESI DOC GRASP. TINTO"
+  },
+  "6057": {
+    "description": "MARINATA GUSTO ARROSTO NAT (PAGANI)"
+  },
+  "6058": {
+    "description": "SALMON SUPREME EN LONCHAS (250 GR) (DOMINGUEZ)"
+  },
+  "6061": {
+    "description": "MOZZARELLA RALLADA BASIC (6 x 2 KG) (CASA ITALIANA)"
+  },
+  "6065": {
+    "description": "TRAMPOSO GODELLO"
+  },
+  "6066": {
+    "description": "MOUSSE PATO TRUFADO (1.6 KG) (POLCA)"
+  },
+  "6069": {
+    "description": "LENGUA DE VACUNO CURADA Y COCIDA"
+  },
+  "6071": {
+    "description": "CECINA CURADA WAGYU MEDIA PIEZA PULIDA (C.PABLO) 2 piezas."
+  },
+  "6072": {
+    "description": "THREE FINGER JACK CHARDONNAY (VINO)"
+  },
+  "6075": {
+    "description": "MARINADO TERIYAKI 2L ( SANBROS )"
+  },
+  "6081": {
+    "description": "MIX PESTO SNACK (PAGANI)"
+  },
+  "6086": {
+    "description": "SECRETO PAPADA IBERICO CONGELADO (MONTESANO)"
+  },
+  "6091": {
+    "description": "MIX 100C BECHAMEL BARAL 5KG"
+  },
+  "6093": {
+    "description": "VINO MONTALTO ACQUERELLO VERMENTINO"
+  },
+  "6094": {
+    "description": "MANTEQUILLA KEN(PASTILLA 1 KG)"
+  },
+  "6104": {
+    "description": "RAVIOLI CRUJIENTE DE POLLO CON TRUFA NEGRA (GASTRONOMS)"
+  },
+  "6105": {
+    "description": "LINGOTTO DE BRANDADA DE BACALAO"
+  },
+  "6107": {
+    "description": "CECINA CURADA BUEY SELEC ESPECIAL ED LIMITADA (C.PABLO)"
+  },
+  "6109": {
+    "description": "CROQUETA DE QUESO RULO DE CABRA (33GR/UD) (3KG) (7BJC) (ENCARGO)"
+  },
+  "6112": {
+    "description": "JAMON DE BELLOTA 100% IBERICO ECOLOGICO ( BEHER )"
+  },
+  "6113": {
+    "description": "JAMON CEBO DE CAMPO 100% IBERICO ECOLOGICO ( BEHER )"
+  },
+  "6114": {
+    "description": "LOMO CEBO DE CAMPO 100 IBERICO ECOLOGICO( BEHER )"
+  },
+  "6115": {
+    "description": "ESTUCHE LOMO CEBO CAMPO 100% ECOLOGICO (BEHER)"
+  },
+  "6116": {
+    "description": "ESTUCHE CHORIZO DE BELLOTA 100% ECOLOGICO (BEHER)"
+  },
+  "6117": {
+    "description": "ESTUCHE SALCHICHON DE BELLOTA 100% ECOLOGICO (BEHER)"
+  },
+  "6118": {
+    "description": "PACK 3 1/2 PIEZAS C/C 100% IBERICO ECOLOGICO (BEHER)"
+  },
+  "6120": {
+    "description": "SOBRE JAMON CORTE CUCHILLO CEBO 50% (90GR)(DFG)"
+  },
+  "6121": {
+    "description": "GUSTOSI LA ARABESQUE (PAGANI)"
+  },
+  "6122": {
+    "description": "GUSTOSI LA SCOZZESE (PAGANI)"
+  },
+  "6123": {
+    "description": "BURGER BM COMPLET (PAGANI)"
+  },
+  "6124": {
+    "description": "BANDEJA JAMON CEBO CAMPO (500 GR) ( BEHER )"
+  },
+  "6125": {
+    "description": "SORRENTINO DE BOLETUS Y TRUFA (3 KG) (TRE ARCHI)"
+  },
+  "6128": {
+    "description": "B&G HERITAGE DUCHE D´UZES"
+  },
+  "6129": {
+    "description": "BISTRO SAUVIGNON BLANC"
+  },
+  "6131": {
+    "description": "HELADO DE CHOCOLATE 2.5 L"
+  },
+  "6132": {
+    "description": "HELADO DE VAINILLA TAITI 2.5 L"
+  },
+  "6133": {
+    "description": "HUEVO OVOALIMENTAR LD II (1 KG) (KEN)"
+  },
+  "6134": {
+    "description": "SOBRE LOMO CEBO IBERICO (100 GR) (MONTESANO)"
+  },
+  "6135": {
+    "description": "MESA QUESOS Y EMBUTIDOS"
+  },
+  "6136": {
+    "description": "MESA QUESOS Y EMBUTIDOS"
+  },
+  "6137": {
+    "description": "MESA QUESOS Y EMBUTIDOS"
+  },
+  "6140": {
+    "description": "GILDA SELEC ANCHOA CANTABRICO (48 PIEZAS) (SELEC MARDIS)"
+  },
+  "6141": {
+    "description": "PLATO KRION"
+  },
+  "6142": {
+    "description": "HUEVO COCIDO 70 UNIDADES (KEN)"
+  },
+  "6143": {
+    "description": "OREJA COCIDA ADOBADA (0.5 KG) (ROGUSA)"
+  },
+  "6144": {
+    "description": "GILDA SELEC ANCHOA (80 PIEZAS) (SELEC MARDIS)"
+  },
+  "6148": {
+    "description": "MARSALA CREMOVO INTORCIA 1L"
+  },
+  "6152": {
+    "description": "LOUIS PERDRIER ROSADO MAGNUM"
+  },
+  "6153": {
+    "description": "PALETA GRAN RESERVA DUROC 4.5-5 K CURADA (DIAZ)"
+  },
+  "6154": {
+    "description": "GILDA TRIPLE BOQUERON (35 PIEZAS) (SELEC MARDIS)"
+  },
+  "6155": {
+    "description": "PORCHETTA COCIDA AL HORNO (6 KG) (SOSTER)"
+  },
+  "6156": {
+    "description": "ROXAN (PAGANI)"
+  },
+  "6158": {
+    "description": "KIA ORANGE NUEVA ZELANDA"
+  },
+  "6159": {
+    "description": "LA AVENIER PINOTAGE SUDAFRICA"
+  },
+  "6160": {
+    "description": "M DE MAGNOL"
+  },
+  "6161": {
+    "description": "BORDEAUX THOMAS BARTON"
   },
   "6162": {
     "description": "CARPACCIO RACIONADO 90GR ( LA FINCA )(CNG)"
+  },
+  "6163": {
+    "description": "MOZZARELLA SAN MARCO (5 * 2 KG)"
+  },
+  "6169": {
+    "description": "DISCO BACALAO AHUMADO ( 130 GR) (DOMINGUEZ)"
+  },
+  "6180": {
+    "description": "HARINA SACO ROJO TIPO 00 25KG (CAPUTO)"
+  },
+  "6219": {
+    "description": "LOUIS PERDRIER ROSE ESTUCHADO"
+  },
+  "6220": {
+    "description": "LATA YEMAS ESPARRAGO FINA EY5 (1/3 K) (MARZO)"
+  },
+  "6221": {
+    "description": "JAMON CEBO DE CAMPO IB. 75% D.O. (MONTESANO) (B/VERDE)"
+  },
+  "6223": {
+    "description": "MESA QUESOS Y EMBUTIDOS"
+  },
+  "6224": {
+    "description": "MESA QUESOS Y EMBUTIDOS"
+  },
+  "6228": {
+    "description": "MESA QUESOS Y EMBUTIDOS"
+  },
+  "6240": {
+    "description": "QUESO PURO DE OVEJA CUÑA (AÑEJO) (TRUFA) (250 GR) (SANSUEÑA)"
+  },
+  "6256": {
+    "description": "HARINA AZUL PIZZERIA TIPO 00 25 KG (CAPUTO)"
+  },
+  "6297": {
+    "description": "VINO PRIMITIVO V - ENOLOGY 0.75 * 6"
+  },
+  "6327": {
+    "description": "HARINA SUPERIOR AZUL 00 10 KG (5 STAGIONI)"
+  },
+  "6333": {
+    "description": "MIX RED - SS ENVASE 1 KG (PAGANI)"
+  },
+  "6334": {
+    "description": "QUESO CURADO DE CABRA (1/2 PIEZA) (SANSUEÑA)"
+  },
+  "6335": {
+    "description": "QUESO CURADO DE CABRA (3 KG) (SANSUEÑA)"
+  },
+  "6336": {
+    "description": "QUESO CURADO DE CABRA CUÑA (250 GR APROX) (SANSUEÑA)"
+  },
+  "6355": {
+    "description": "JAMON ARAGON TRADICION PATA CORTE (V) (ARAGON)"
+  },
+  "6364": {
+    "description": "HARINA ORO ROJO 00 10 KG (5 STAGIONI)"
+  },
+  "6375": {
+    "description": "QUESO ROMERO CUÑA (160 GR) (SANSUEÑA) (ENCARGO)"
+  },
+  "6390": {
+    "description": "PIÑA EN SU JUGO (3 KG) (DIDI)"
+  },
+  "6392": {
+    "description": "MESA QUESOS Y EMBUTIDOS"
+  },
+  "6393": {
+    "description": "CENTRO PALETA DE CEBO DE CAMPO 100% IBERICA ECOLOGICA ( BEHER )"
+  },
+  "6394": {
+    "description": "CENTRO PALETA DE BELLOTA 100% IBERICA ECOLOGICA ( BEHER )"
+  },
+  "6395": {
+    "description": "QUESO SEMICURADO MEZCLA (VERDES PRADOS) (3KG) (PRAMA)"
+  },
+  "6417": {
+    "description": "CREMKEN YEMA DECORACION / CONGEL 7 KG (KEN)"
+  },
+  "6418": {
+    "description": "FAST FH ENVASE 1 KG (PAGANI)"
+  },
+  "6446": {
+    "description": "MINUTEJOS (0.4 KG) (ROGUSA)"
+  },
+  "6455": {
+    "description": "LOMO DE CEBO IBERICO 50% EMBUCHADO ( CREGO )"
+  },
+  "6473": {
+    "description": "QUESO STRACCIATELLA PALAZZO (200 GR * 5UD) (SOSTER) (ENCARGO)"
+  },
+  "6474": {
+    "description": "JAMONERO MOD. JEREZ SEREGRAFIADO DIAZ"
+  },
+  "6481": {
+    "description": "JAMON BEHER ROJA SELECTO ( BEHER )"
+  },
+  "6482": {
+    "description": "HAMBURGUESA BMEAT PG TEX MEX ( PAGANI )"
+  },
+  "6483": {
+    "description": "HAMBURGUESA BMEAT PG BBQ ( 2K ) ( PAGANI )"
+  },
+  "6484": {
+    "description": "CENTRO JAMON GMA DISFOOD"
+  },
+  "6486": {
+    "description": "JAMON RESERVA SIN PATA ( PESON )"
+  },
+  "6488": {
+    "description": "JAMON BODEGA SIN PATA ( PESON )"
+  },
+  "6534": {
+    "description": "ACQUESI MOSCATO D´ASTI DOCG CASARITO"
+  },
+  "6535": {
+    "description": "LOMO DUROC (MONROYO)"
+  },
+  "6548": {
+    "description": "TARTA DE QUESO"
+  },
+  "6549": {
+    "description": "MESA QUESOS Y EMBUTIDOS"
+  },
+  "6583": {
+    "description": "MOZZARELLA FIORDILATTE NOBILI (15UD * 100 GR) (SOSTER)"
+  },
+  "6587": {
+    "description": "SALCHICHON DE BELLOTA 100% IBERICO BANDEJA ( BEHER )"
+  },
+  "6588": {
+    "description": "CHORIZO DE BELLOTA 100% IBERICO BANDEJA ( BEHER )"
+  },
+  "6590": {
+    "description": "900 VIÑAS GARNACHA 4 MESES"
+  },
+  "6591": {
+    "description": "B&G PINOT NOIR"
+  },
+  "6593": {
+    "description": "MESA DE QUESOS POR COMENSAL"
+  },
+  "6595": {
+    "description": "GUSTOSI LA BALKANPRO (PAGANI)"
+  },
+  "6596": {
+    "description": "PANATURA SG GIAPPO (PAGANI)"
+  },
+  "6601": {
+    "description": "LACON AHUMADO (SQ)"
+  },
+  "6607": {
+    "description": "RISO CARNAROLI (ARROZ) (1 KG) (DIVELLA)"
+  },
+  "6608": {
+    "description": "PROSECCO PIETRO TOSO MILLESIMATO 0.75 (VINO) (TOSO)"
+  },
+  "6609": {
+    "description": "GUSTOSI L´ARROSTITA (PAGANI)"
+  },
+  "6610": {
+    "description": "ACEITE BENEOLIVE AOVE CRISTAL (0,25 L)"
+  },
+  "6611": {
+    "description": "ACEITE CAPRI PICUAL 1ER DIA COSECHA AOVE ( 500 ML )"
+  },
+  "6612": {
+    "description": "ACEITE CAPRI 1573 TOPACIO ( 500 ML )"
+  },
+  "6613": {
+    "description": "ACEITE CERAMICA PICUAL AOVE ( 500 ML )"
+  },
+  "6614": {
+    "description": "ACEITE CERAMICA ARBEQUINA AOVE ( 500 ML )"
+  },
+  "6615": {
+    "description": "ACEITE BOMBACHA RED LINES EVOO ( 500 ML )"
+  },
+  "6616": {
+    "description": "ACEITE BOMBACHA GRANADA BLUE EVOO ( 500 ML )"
+  },
+  "6617": {
+    "description": "PREPARADO RALLADO A BASE DE MOZZARELLA (6 x 2 KG) (CASA ITALIANA)"
+  },
+  "6619": {
+    "description": "RECETA MAESTRA SALMON AHUMADO ( 1K ) (DOMINGUEZ)"
+  },
+  "6620": {
+    "description": "HARINA SIN GLUTEN 1 KG (CAPUTO)"
+  },
+  "6624": {
+    "description": "CERVEZA PERONI BIRRA DOPPIO MALTO IN VETRO PACK * 24"
+  },
+  "6628": {
+    "description": "LOUIS PERDRIER ICE EXCELLENCE"
+  },
+  "6629": {
+    "description": "SALMON AHUMADO SUPREME (DUENDE)"
+  },
+  "6630": {
+    "description": "MESA DE QUESOS, EMBUTIDOS Y SALAZONES POR COMENSAL"
+  },
+  "6631": {
+    "description": "ATUN LATA RO. (1 KG) (MIAU)"
+  },
+  "6632": {
+    "description": "PIMIENTO PIQUILLO 100% ASADO (4UDS*1KG) (IQF)"
+  },
+  "6633": {
+    "description": "PROSCIUTTO COTTO GRAN PAESE SIN GLUTEN"
+  },
+  "6635": {
+    "description": "SALMON NORUEGO HOSTELERIA AHUMANDO (TS) (500 GR) (DUENDE)"
+  },
+  "6636": {
+    "description": "VENTRESCA DE ATUN CLARO GIRASOL LATA (750 GR) (SELEC MARDIS)"
+  },
+  "6640": {
+    "description": "TARTAR SALMON (MONODOSIS) (80 GR) (EL DUENDE)"
+  },
+  "6641": {
+    "description": "LOMOS DE SALMON NORUEGO (1 KG) ( DUENDE )"
+  },
+  "6643": {
+    "description": "SOLOMILLO SALMON LOMO (350 GR) ( EL DUENDE )"
+  },
+  "6645": {
+    "description": "SALMON NORUEGO HOST (PRECORT) (1/2 PLANCHA) (500 GR) (GMA)"
+  },
+  "6646": {
+    "description": "SOLOMILLO BACALO DE ISLANDIA ( EL DUENDE )"
+  },
+  "6654": {
+    "description": "MESA DE QUESOS Y EMBUTIDOS"
+  },
+  "6665": {
+    "description": "HUMMUS DE GARBANZOS (MARZO)"
+  },
+  "6667": {
+    "description": "ACEITE CERAMICA PICUAL CON ESTUCHE"
+  },
+  "6669": {
+    "description": "ESTUCHE CHORIZO DE BELLOTA 100% IBERICO ( BEHER )"
+  },
+  "6670": {
+    "description": "ESTUCHE LOMO CEBO DE CAMPO 100 % IBERICO ( BEHER )"
+  },
+  "6671": {
+    "description": "ESTUCHE PALETA CEBO DE CAMPO 100 % IBERICO ( BEHER )"
+  },
+  "6672": {
+    "description": "ESTUCHE PANCETA DE BELLOTA 100% IBERICA ( BEHER )"
+  },
+  "6673": {
+    "description": "LOMO BEHER UNICO 450G APROX CAJA HEXAGONAL ( BEHER )"
+  },
+  "6674": {
+    "description": "CHORIZO BELLOTA 100% IBERICO 450G APROX CAJA HEXAGONAL ( BEHER)"
+  },
+  "6682": {
+    "description": "VINO LAMURIA"
+  },
+  "6684": {
+    "description": "ACEITE SJR 500 ML SUMMUM AOVE ( 500 ML )"
+  },
+  "6686": {
+    "description": "CANELON DE CORDERO CON HIERBAS PROVENZALES (30 UD) (GASTRONOMS)"
+  },
+  "6687": {
+    "description": "PALETA GRAN RESERVA FORMATO BOCADILLO ( 280 G ) ( DIAZ )"
+  },
+  "6691": {
+    "description": "MOZZARELLA BUFALA DOP GALDI 25 GR ( CUBO 500 GR) (SOSTER)"
+  },
+  "6692": {
+    "description": "LONGANIZA EXTRA COLLAR (220 GR) ( 15UD * CJ ) (GRAU)"
+  },
+  "6693": {
+    "description": "CHORIZO EXTRA COLLAR ( 15U*C ) (GRAU)"
+  },
+  "6694": {
+    "description": "LONGANIZA SECA FINA INDIVIDUAL ( 25U*C) (GRAU)"
+  },
+  "6695": {
+    "description": "LOMO EMBUCHADO 1/2 CAÑAS ( 6U*C) (GRAU)"
+  },
+  "6697": {
+    "description": "NAVAJAS AL NATURA (LATA) (120 GR) (6/8 GIGANTE) ( CAMBADOS"
+  },
+  "6698": {
+    "description": "CHIPIRON RELLENO ANGULA SUREMI AC. GIRASOL ( CAMBADOS"
+  },
+  "6699": {
+    "description": "CHIPIRONES EN SU TINTA 6/8 ( CAMBADOS )"
+  },
+  "6700": {
+    "description": "SARDINAS EN TOMATE 3/5 ( CAMBADOS )"
+  },
+  "6703": {
+    "description": "MOZZARELLA RALLADA 70/30 ( 4 x 2 KG ) ( DISFOOD )"
+  },
+  "6704": {
+    "description": "LONGANIZA EXTRA FINA MAZOS (15UD MAZO) (3 UD X CJ) (GRAU)"
+  },
+  "6705": {
+    "description": "ACEITUNA PICANTONA (TARRO CRISTAL) (600 GR) (SELEC MARDIS)"
+  },
+  "6708": {
+    "description": "VISOL"
+  },
+  "6709": {
+    "description": "CHORIZO EXTRA COLLAR PICANTE ( 15U*C ) (GRAU)"
+  },
+  "6710": {
+    "description": "BARQUETA DE PALETA DE BELLOTA 100% IBERICA 100 GR ( BEHER )"
+  },
+  "6711": {
+    "description": "MOGOTE 100 % IBERICO CONGELADO ( BEHER )"
+  },
+  "6712": {
+    "description": "CHULETILLAS 100 % IBERICAS CONGELADAS ( BEHER )"
+  },
+  "6713": {
+    "description": "ATUN GIRASOL (LATA) (750 GR) (ARLEQUIN)"
+  },
+  "6714": {
+    "description": "QUESO FRESCO T. VILLALON 2 KG APROX ( SOSTER )"
+  },
+  "6715": {
+    "description": "QUESO EDAM LONCHEADO 45 % 1 KG \" CORONA D´ORO \""
+  },
+  "6716": {
+    "description": "LOMO CEBO IBERICO 50% ENTERO ( PRIM )"
+  },
+  "6717": {
+    "description": "JAMON CEBO IB. 50% ( PRIM )"
+  },
+  "6718": {
+    "description": "ROSSO BORGOFULVIA (VINO)"
+  },
+  "6719": {
+    "description": "ALCACHOFA 16/20 FRUTOS (12U) VEGA BAJA"
+  },
+  "6720": {
+    "description": "CAPPELLI DE FOIE, BACON Y CEBOLLA (3KG) (TRE ARCHI)"
+  },
+  "6721": {
+    "description": "GUANCIALE PAPADA DUROC (AL VACIO) ( DIAZ )"
+  },
+  "6723": {
+    "description": "BLANC DE NOIRS ( QEZ )"
+  },
+  "6724": {
+    "description": "CHARDONNAY ( QEZ )"
+  },
+  "6725": {
+    "description": "VINO VIOGNIER & SAUVIGNON BLANC ( QEZ )"
+  },
+  "6726": {
+    "description": "ESTUCHE 3 BOTELLAS ( QEZ )"
+  },
+  "6727": {
+    "description": "JAMON CEBO 100% IBERICO CHANETES ( BEHER )"
+  },
+  "6729": {
+    "description": "PLUMA BELLOTA 100% IBERICA FRESCA ECOLOGICA ( BEHER )"
+  },
+  "6730": {
+    "description": "PRESA BELLOTA 100% IBERICA FRESCA ECOLOGICA ( BEHER )"
+  },
+  "6731": {
+    "description": "SECRETO EXTRA BELLOTA 100% IBERICO FRESCO ECOLOGICO ( BEHER )"
+  },
+  "6732": {
+    "description": "SOLOMILLO BELLOTA 100% IBERICO FRESCO ECOLOGICO ( BEHER )"
+  },
+  "6734": {
+    "description": "KEN NATA 38% S/C 1L"
+  },
+  "6735": {
+    "description": "JAMON CEBO DE CAMPO 50% IBERICO (GALVAN)"
+  },
+  "6736": {
+    "description": "JAMON CEBO IBERICO 50%(GALVAN)"
+  },
+  "6737": {
+    "description": "CHORIZO IBERICO CULAR (ENTERO) ( GALVAN )"
+  },
+  "6738": {
+    "description": "SALCHICHON CULAR IBERICO (ENTERO) ( GALVAN )"
+  },
+  "6739": {
+    "description": "MOZZARELLA IZZIMO RALLADA PREMIUM 100 (6 x 2 KG)"
+  },
+  "6740": {
+    "description": "BOLSA DE PATATAS 500 GR (6U)"
+  },
+  "6742": {
+    "description": "COCKTAIL FRUTOS SECOS R-55 (900G) (10U)"
+  },
+  "6743": {
+    "description": "MORRO CASTILLO BARBACOA 800 GR (4U)"
+  },
+  "6744": {
+    "description": "ALMENDRA FRITA R.C. 1K (10U)"
+  },
+  "6745": {
+    "description": "PANCHITOS FRITOS PIEL 1 KG (10U)"
+  },
+  "6747": {
+    "description": "ACEITUNAS PARTIDAS (EL ANTOJO DE LA ABUELA MARIA) (LATA) ( 2.5 KG)"
+  },
+  "6748": {
+    "description": "PINOT GRIGIO BLUSH ROSADO(VINO) (LA PIUMA)"
+  },
+  "6750": {
+    "description": "BOLSA DE PATATAS TRADICIONAL PREMIUM 40GR (20U) (RUBIO SNACKS)"
+  },
+  "6751": {
+    "description": "SOBRE JAMON CORTE CUCHILLO CEBO 100% (100GR) (DFG)"
+  },
+  "6752": {
+    "description": "QUESO CREMA SNEL (2KG) (KEN)"
+  },
+  "6753": {
+    "description": "BURGER TERNERA (180GR) (24U) (CARPISA)"
+  },
+  "6754": {
+    "description": "QUESO CHEDDAR ROJO (RALLADO) (2KG*6)"
+  },
+  "6755": {
+    "description": "LINGOTTO TOSCANO (3 KG) (TRE ARCHI)"
+  },
+  "6757": {
+    "description": "LASAÑA CARNE 1C/3BANDEJAS (4 RACIONES) (TRE ARCHI)"
+  },
+  "6758": {
+    "description": "DELIZIA 6 FORMAGGI (3 KG) (TRE ARCHI)"
+  },
+  "6760": {
+    "description": "TAGLIATELLE AL HUEVO (44NIDOS) (TRE ARCHI)"
+  },
+  "6761": {
+    "description": "SALSA CARBONARA 235 ML \"TRE ARCHI\" (24U)"
+  },
+  "6763": {
+    "description": "CANELONES XL DE LA TIA PURA (ROPA VIEJA) (TRE ARCHI) (30U)"
+  },
+  "6764": {
+    "description": "CANELONES XL DE PATO Y TRUFA \"TRE ARCHI\" (30U)"
+  },
+  "6765": {
+    "description": "CANELONES XL DE CARRILLERA E IDIAZABAL \"TRE ARCHI\" (30U)"
+  },
+  "6766": {
+    "description": "TARTA CARROT CAKE 3 PISOS"
+  },
+  "6767": {
+    "description": "TARTA DE CIOCCOLATO"
+  },
+  "6768": {
+    "description": "LOMO IB. DE CEBO (1/2 PIEZA) (IBISMA)"
+  },
+  "6770": {
+    "description": "PALETA DE CEBO DE CAMPO 100% IBERICA EN LONCHAS ( BEHER )"
+  },
+  "6771": {
+    "description": "CROQUETA CARRILLERA AL VINO TINTO (33GR/UD) (3KG) (7BJC) (ENCARGO)"
+  },
+  "6772": {
+    "description": "CROQUETA GAMBA ROJA (33GR/UD) (3KG) (7BJC) (ENCARGO)"
+  },
+  "6773": {
+    "description": "CACHOPO POLLO, BACON Y QUESO (200GR/UD) (3KG) (7BJC) (ENCARGO)"
+  },
+  "6774": {
+    "description": "TARTA DE QUESO AL HORNO 1250GR (BAJOCERO)"
+  },
+  "6775": {
+    "description": "FINGERS CRUJIENTES POLLO (40GR/UD) (4.5KG) (7BJC) (ENCARGO)"
+  },
+  "6777": {
+    "description": "RECETA MAESTRA SALMON AHUMADO ( 500G ) (DOMINGUEZ)"
+  },
+  "6778": {
+    "description": "BONITO EN ACEITE 500 GR"
+  },
+  "6779": {
+    "description": "BONITO EN ACEITE 180 GR"
+  },
+  "6780": {
+    "description": "BONITO EN ACEITE CUBO 2 KG"
+  },
+  "6781": {
+    "description": "PINOT GRIGIO (VINO) (LA PIUMA)"
+  },
+  "6782": {
+    "description": "BORGOFULVIA BLANCO (VINO)"
+  },
+  "6785": {
+    "description": "MIX ENCO 1 KG (PAGANI)"
+  },
+  "6786": {
+    "description": "ACEITE BOMBACHA OLIVE BRANCH EVOO ( 500 ML )"
+  },
+  "6787": {
+    "description": "GILDA PULPO (36 PIEZAS) (SELEC MARDIS)"
+  },
+  "6789": {
+    "description": "CHORIZO EXTRA EN CIEGO MORCON (DIAZ)"
+  },
+  "6790": {
+    "description": "CECINA ANGUS 1/2 PIEZA PULIDA VACIO (C.PABLO)"
+  },
+  "6791": {
+    "description": "CENTRO JAMON IB. CEBO (B/BLANCA) (PULIDO) ( CREGO )"
+  },
+  "6792": {
+    "description": "PASSATA POMODORO MUTTI VETRO (TOMATE) (700GR)"
+  },
+  "6793": {
+    "description": "HELADO DE CHOCOLATE 5 L"
+  },
+  "6794": {
+    "description": "HELADO DE VAINILLA TAITI 5 L"
+  },
+  "6795": {
+    "description": "SOBRASADA NDUJA DI SPILINGA IN SAC A POCHE 500 GR"
+  },
+  "6799": {
+    "description": "JAMON COCIDO EXTRA PRESTIGE LONCHAS (1KG) (DISFOOD)"
+  },
+  "6800": {
+    "description": "JAMON COCIDO EXTRA (11X11) LONCHAS (1KG) (DISFOOD)"
+  },
+  "6801": {
+    "description": "BARRA SANDWICH LONCHAS (1KG) (DISFOOD)"
+  },
+  "6804": {
+    "description": "SOBRE JAMON CORTE CUCHILLO DUROC (100GR) (DFG)"
+  },
+  "6805": {
+    "description": "LOMO IB. DE CEBO DE CAMPO 50% (1/2 PIEZA) (GALVAN)"
+  },
+  "6807": {
+    "description": "HUEVA MUJOL CONFITADA 180 GR"
+  },
+  "6808": {
+    "description": "TOMATE FRITO (5KG) (IAN)"
+  },
+  "6809": {
+    "description": "JAMON BELLOTA IBERICO 75% (CREGO)"
+  },
+  "6810": {
+    "description": "LOMO CEBO DE CAMPO IB 50% (1/2) (CREGO)"
+  },
+  "6811": {
+    "description": "MORTADELA PRESTIGE (GEMI)"
+  },
+  "6812": {
+    "description": "FIAMBRE DE PAVO (GEMI)"
+  },
+  "8000": {
+    "description": "FIAMBRE JAMON DE PAVO (HALAL)"
+  },
+  "8001": {
+    "description": "BACON DE PAVO (HALAL)"
+  },
+  "8002": {
+    "description": "PEPPERONI (HALAL)"
+  },
+  "8003": {
+    "description": "BAKLAVA 48 UNIDADES (HALAL)"
+  },
+  "8004": {
+    "description": "PIZZA TURCA (HALAL)"
+  },
+  "8005": {
+    "description": "ALITAS DE POLLO TEX MEX 5X1 (HALAL)"
+  },
+  "8006": {
+    "description": "NUGGETS POLLO 5KG VOLATYS (HALAL)"
+  },
+  "8007": {
+    "description": "HAMBURGUESA DE TERNERA 110G (HALAL)"
+  },
+  "8008": {
+    "description": "HAMBURGUESA POLLO CRUNCHY 4KG (HALAL)"
+  },
+  "8009": {
+    "description": "FINGER DE POLLO CRISPY 5X1KG (HALAL)"
+  },
+  "8010": {
+    "description": "PALOMITAS DE POLLO 4KG 8X500 (HALAL)"
+  },
+  "8297": {
+    "description": "CAPON FERMIER RELLENO MANZANA Y CIRUELA (3 KG) (DERHEL)"
+  },
+  "9072": {
+    "description": "HOJALDRES DOS SALMONES (2 KG) (DERHEL)"
+  },
+  "9372": {
+    "description": "PASTEL BRETON CON VIEIRAS (1,6 KG) (DERHEL)"
+  },
+  "9412": {
+    "description": "MOUSSE DE PATO CON TRUFA TERRINA FORMA ZUECO (DERHEL)"
+  },
+  "9458": {
+    "description": "BLOC DE MOUSSE DE PATO PUR CANARD (1,5 KG) (DERHEL)"
+  },
+  "10041": {
+    "description": "PATE CON AVELLANAS Y SETAS (CAMPANA) (1.5 KG) (POLCA)"
+  },
+  "12029": {
+    "description": "PATE INOX. CON NUECES (2.5 KG) (POLCA)"
+  },
+  "12161": {
+    "description": "PATE EN HOJALDRE DE PATO CON HIGOS 2.5 KG (DERHEL)"
+  },
+  "13198": {
+    "description": "RILLETES DE PATO (86%) (2 KG) (DERHEL)"
+  },
+  "20714": {
+    "description": "PASTEL DE SALMON (1,6 KG) (DERHEL)"
+  },
+  "20799": {
+    "description": "PASTEL DE CANGREJOS DE RIO A LA AMERICANA (1,6 KG) (DERHEL)"
+  },
+  "28038": {
+    "description": "PATE CREMA FINA PATO NARANJA (1.5 KG) (POLCA)"
+  },
+  "29027": {
+    "description": "TARRINA DE NAVIDAD CON ARANDANOS (1.7 KG) (POLCA)"
+  },
+  "29029": {
+    "description": "PATE INOX CON ARANDANOS (2.5 KG) (POLCA)"
+  },
+  "41011": {
+    "description": "PATE DE LIEBRE (BLOQUE) (1KG) (POLCA)"
+  },
+  "42057": {
+    "description": "PATE JABALI (1.6 KG) (POLCA)"
+  },
+  "43011": {
+    "description": "PATE DE CORZO (BLOQUE) (1 KG) (POLCA)"
+  },
+  "44011": {
+    "description": "PATE FAISÁN CON ARMAGNAC (1 KG) (POLCA)"
+  },
+  "44057": {
+    "description": "PATE FAISAN CON ARMAGNAC (1.6 KG) (POLCA)"
+  },
+  "47024": {
+    "description": "MOUSSE DE CANNARD TARRINA BLANCA (1.5 KG) (POLCA)"
+  },
+  "48027": {
+    "description": "TARRINA DE NAVIDAD MOUSSE DE OCA (1.6 KG) (POLCA)"
+  },
+  "48079": {
+    "description": "PATE MOUSSE DE OCA (230 GR) (POLCA)"
+  },
+  "68058": {
+    "description": "PARFAIT CREMA FINA CHAMPIÑONES (1.05 KG) (POLCA)"
+  },
+  "77027": {
+    "description": "TARRINA DE NAVIDAD CON CUATRO PIMIENTAS (1.7 KG) (POLCA)"
+  },
+  "77029": {
+    "description": "PATE INOX. 4 PIMIENTAS (2.5 KG) (POLCA)"
+  },
+  "81058": {
+    "description": "PARFAIT CREMA FINA CON PATO Y NARANJAS (1.05 KG) (POLCA)"
+  },
+  "85058": {
+    "description": "PARFAIT CREMA FINA CON ARANDANOS (1.050 KG) (POLCA)"
+  },
+  "89011": {
+    "description": "PATE CON JAMON IBERICO (1.5 KG) (POLCA)"
+  },
+  "99995": {
+    "description": "MESA QUESOS 100 PERSONAS"
+  },
+  "99998": {
+    "description": "SERVICIOS DE APOYO A LA GESTION COMERCIAL Y DISTRIBUCION"
+  },
+  "100591": {
+    "description": "FONDELYS (1.6 KG) (DERHEL)"
+  },
+  "113150": {
+    "description": "MOUSSE DE CANARD CON HIGOS (1 KG) (POLCA)"
+  },
+  "127160": {
+    "description": "PATE CREMA PATO AL OPORTO (1,6 KG) (POLCA)"
+  },
+  "130160": {
+    "description": "CREMA DE AVE AL CURRY CON MANGO (1,65KG) (POLCA)"
+  },
+  "130161": {
+    "description": "PATE AL OPORTO ELEGANCE (1,60KG) (POLCA)"
+  },
+  "140308": {
+    "description": "MOUSSE DE OCA AL SAUTERNES (2 KG) (DERHEL)"
+  },
+  "151825": {
+    "description": "CAPON FERMIER RELLENO DE MANZANA Y CIRUELAS (3 KG) (DERHEL)"
+  },
+  "229160": {
+    "description": "PATE MOUSSE DE CANARD CON ARANDANOS (1.5 KG) (POLCA)"
+  },
+  "473160": {
+    "description": "PATE CON CEBOLLA CARAMELIZADA (1.6 KG) (POLCA)"
+  },
+  "989900": {
+    "description": "CENTRO JAMON SERRANO G.RESERVA (DIAZ)"
+  },
+  "059": {
+    "description": "OLIO EXT. OLIVA AL TARTUFO BIANCO (ACEITE) (0,25 L) (VIANDER)"
+  },
+  "00353": {
+    "description": "SALSA CLASICA STEAK TARTAR BOLSA ( LA FINCA )"
+  },
+  "00355": {
+    "description": "SALSA TRUFA ESP CARPACCIO BOLSA ( LA FINCA )"
+  },
+  "062": {
+    "description": "GRANA PADANO (1/8)"
+  },
+  "064": {
+    "description": "MASCARPONE PLS (250 GR) (SOSTER)"
+  },
+  "065": {
+    "description": "MOZZARELLA BUFALA (125 GR) (SOSTER)"
+  },
+  "053": {
+    "description": "MOZZARELLA FRESCA (10 UD * 125 GR) (SOSTER)"
+  },
+  "020": {
+    "description": "PARMESANO REGIANO (1/2 RUEDA) (+20 MESES)"
+  },
+  "049": {
+    "description": "PARMESANO REGIANO (1/8)"
+  },
+  "003": {
+    "description": "TALEGIO FORESTI (2 KG) (SOSTER)"
+  },
+  "026": {
+    "description": "SALAME PEPERONI (300 GR) (VILLANI)"
+  },
+  "019": {
+    "description": "SALSICCIA NAPOLI PICANTE (400 GR) (VILLANI)"
+  },
+  "083": {
+    "description": "CHIANTI FIASCO 0,75 (PAJA)"
+  },
+  "017": {
+    "description": "RICOTTA PLS (250 GR) (SOSTER) (ENCARGO)"
   },
   "04000": {
     "description": "STEAK TARTAR MARINADO 170GR CONGELADO ( LA FINCA )"
@@ -2725,281 +3001,5 @@
   },
   "04033": {
     "description": "SOLOMILLO DEL CARNICERO Y SALSA ( LA FINCA ) CNG"
-  },
-  "6124": {
-    "description": "BANDEJA JAMON CEBO CAMPO (500 GR) ( BEHER )"
-  },
-  "6710": {
-    "description": "BARQUETA DE PALETA DE BELLOTA 100% IBERICA 100 GR ( BEHER )"
-  },
-  "5618": {
-    "description": "BARQUETA JAMON CEBO DE CAMPO 100% IBERICO 360G ( BEHER )"
-  },
-  "6674": {
-    "description": "CHORIZO BELLOTA 100% IBERICO 450G APROX CAJA HEXAGONAL ( BEHER)"
-  },
-  "6588": {
-    "description": "CHORIZO DE BELLOTA 100% IBERICO BANDEJA ( BEHER )"
-  },
-  "6116": {
-    "description": "ESTUCHE CHORIZO DE BELLOTA 100% ECOLOGICO (BEHER)"
-  },
-  "6669": {
-    "description": "ESTUCHE CHORIZO DE BELLOTA 100% IBERICO ( BEHER )"
-  },
-  "6115": {
-    "description": "ESTUCHE LOMO CEBO CAMPO 100% ECOLOGICO (BEHER)"
-  },
-  "6670": {
-    "description": "ESTUCHE LOMO CEBO DE CAMPO 100 % IBERICO ( BEHER )"
-  },
-  "6671": {
-    "description": "ESTUCHE PALETA CEBO DE CAMPO 100 % IBERICO ( BEHER )"
-  },
-  "6672": {
-    "description": "ESTUCHE PANCETA DE BELLOTA 100% IBERICA ( BEHER )"
-  },
-  "6117": {
-    "description": "ESTUCHE SALCHICHON DE BELLOTA 100% ECOLOGICO (BEHER)"
-  },
-  "5652": {
-    "description": "ESTUCHE SALCHICHON DE BELLOTA 100% IBERICO ( BEHER )"
-  },
-  "5654": {
-    "description": "JAMON BEHER UNICO (90 GR) (C. CUCHILLO) (BEHER)"
-  },
-  "6673": {
-    "description": "LOMO BEHER UNICO 450G APROX CAJA HEXAGONAL ( BEHER )"
-  },
-  "6118": {
-    "description": "PACK 3 1/2 PIEZAS C/C 100% IBERICO ECOLOGICO (BEHER)"
-  },
-  "6587": {
-    "description": "SALCHICHON DE BELLOTA 100% IBERICO BANDEJA ( BEHER )"
-  },
-  "6134": {
-    "description": "SOBRE LOMO CEBO IBERICO (100 GR) (MONTESANO)"
-  },
-  "5642": {
-    "description": "TAQUITOS DE JAMON 100% IBERICO BOLSA 500G ( BEHER )"
-  },
-  "5376": {
-    "description": "CHORIZO CULAR DE BELLOTA 100% IBERICO (1/2 PIEZA) ( BEHER )"
-  },
-  "5213": {
-    "description": "CHORIZO SARTA PICANTE SEGOVIA (3 KG DE 7UD APROX) (LA INMACULADA)"
-  },
-  "6114": {
-    "description": "LOMO CEBO DE CAMPO 100 IBERICO ECOLOGICO( BEHER )"
-  },
-  "5604": {
-    "description": "LOMO DE BELLOTA 100% IBERICO PATA NEGRA ECOLOGICO( BEHER )"
-  },
-  "4362": {
-    "description": "LOMO DOBLADO BELLOTA 100% (MONTESANO)"
-  },
-  "5606": {
-    "description": "SALCHICHON DE BELLOTA 100% IBERICO ECOLOGICO 500 G ( BEHER )"
-  },
-  "9458": {
-    "description": "BLOC DE MOUSSE DE PATO PUR CANARD (1,5 KG) (DERHEL)"
-  },
-  "8297": {
-    "description": "CAPON FERMIER RELLENO MANZANA Y CIRUELA (3 KG) (DERHEL)"
-  },
-  "151825": {
-    "description": "CAPON FERMIER RELLENO DE MANZANA Y CIRUELAS (3 KG) (DERHEL)"
-  },
-  "971": {
-    "description": "CREMA FINA CON PATO Y NARANJA (1,5 KG) (POLCA)"
-  },
-  "9072": {
-    "description": "HOJALDRES DOS SALMONES (2 KG) (DERHEL)"
-  },
-  "140308": {
-    "description": "MOUSSE DE OCA AL SAUTERNES (2 KG) (DERHEL)"
-  },
-  "9412": {
-    "description": "MOUSSE DE PATO CON TRUFA TERRINA FORMA ZUECO (DERHEL)"
-  },
-  "9372": {
-    "description": "PASTEL BRETON CON VIEIRAS (1,6 KG) (DERHEL)"
-  },
-  "20799": {
-    "description": "PASTEL DE CANGREJOS DE RIO A LA AMERICANA (1,6 KG) (DERHEL)"
-  },
-  "41011": {
-    "description": "PATE DE LIEBRE (BLOQUE) (1KG) (POLCA)"
-  },
-  "13198": {
-    "description": "RILLETES DE PATO (86%) (2 KG) (DERHEL)"
-  },
-  "130160": {
-    "description": "CREMA DE AVE AL CURRY CON MANGO (1,65KG) (POLCA)"
-  },
-  "113150": {
-    "description": "MOUSSE DE CANARD CON HIGOS (1 KG) (POLCA)"
-  },
-  "130161": {
-    "description": "PATE AL OPORTO ELEGANCE (1,60KG) (POLCA)"
-  },
-  "10041": {
-    "description": "PATE CON AVELLANAS Y SETAS (CAMPANA) (1.5 KG) (POLCA)"
-  },
-  "473160": {
-    "description": "PATE CON CEBOLLA CARAMELIZADA (1.6 KG) (POLCA)"
-  },
-  "89011": {
-    "description": "PATE CON JAMON IBERICO (1.5 KG) (POLCA)"
-  },
-  "28038": {
-    "description": "PATE CREMA FINA PATO NARANJA (1.5 KG) (POLCA)"
-  },
-  "127160": {
-    "description": "PATE CREMA PATO AL OPORTO (1,6 KG) (POLCA)"
-  },
-  "43011": {
-    "description": "PATE DE CORZO (BLOQUE) (1 KG) (POLCA)"
-  },
-  "44011": {
-    "description": "PATE FAISÁN CON ARMAGNAC (1 KG) (POLCA)"
-  },
-  "44057": {
-    "description": "PATE FAISAN CON ARMAGNAC (1.6 KG) (POLCA)"
-  },
-  "42057": {
-    "description": "PATE JABALI (1.6 KG) (POLCA)"
-  },
-  "48079": {
-    "description": "PATE MOUSSE DE OCA (230 GR) (POLCA)"
-  },
-  "29027": {
-    "description": "TARRINA DE NAVIDAD CON ARANDANOS (1.7 KG) (POLCA)"
-  },
-  "77027": {
-    "description": "TARRINA DE NAVIDAD CON CUATRO PIMIENTAS (1.7 KG) (POLCA)"
-  },
-  "48027": {
-    "description": "TARRINA DE NAVIDAD MOUSSE DE OCA (1.6 KG) (POLCA)"
-  },
-  "4990": {
-    "description": "BLOC DE MOUSSE DE PATO A LA PIMIENTA (1.5 KG) (DERHEL)"
-  },
-  "1333": {
-    "description": "BLOC MOUSSE DE OCA RULO CON SETAS (1,5 KG) (DERHEL)"
-  },
-  "100591": {
-    "description": "FONDELYS (1.6 KG) (DERHEL)"
-  },
-  "6066": {
-    "description": "MOUSSE PATO TRUFADO (1.6 KG) (POLCA)"
-  },
-  "68058": {
-    "description": "PARFAIT CREMA FINA CHAMPIÑONES (1.05 KG) (POLCA)"
-  },
-  "85058": {
-    "description": "PARFAIT CREMA FINA CON ARANDANOS (1.050 KG) (POLCA)"
-  },
-  "81058": {
-    "description": "PARFAIT CREMA FINA CON PATO Y NARANJAS (1.05 KG) (POLCA)"
-  },
-  "20714": {
-    "description": "PASTEL DE SALMON (1,6 KG) (DERHEL)"
-  },
-  "12161": {
-    "description": "PATE EN HOJALDRE DE PATO CON HIGOS 2.5 KG (DERHEL)"
-  },
-  "29029": {
-    "description": "PATE INOX CON ARANDANOS (2.5 KG) (POLCA)"
-  },
-  "77029": {
-    "description": "PATE INOX. 4 PIMIENTAS (2.5 KG) (POLCA)"
-  },
-  "12029": {
-    "description": "PATE INOX. CON NUECES (2.5 KG) (POLCA)"
-  },
-  "3843": {
-    "description": "PATE QUARTET 3 SABORES (POLCA)"
-  },
-  "6007": {
-    "description": "BANDEJA GASTRONORM"
-  },
-  "5912": {
-    "description": "BOLSA VACIO 30*40 500 U"
-  },
-  "5911": {
-    "description": "BOLSA VACIO COCCION 30*40 500 U"
-  },
-  "3201": {
-    "description": "CAJA COPAS"
-  },
-  "5639": {
-    "description": "CUCHILLO JAMONERO SOLINGEN"
-  },
-  "5325": {
-    "description": "EXPOSITOR ARBOL PARA 16 JAMONES DESMONTABLE"
-  },
-  "5641": {
-    "description": "JAMONERA AFINOX PECTUS"
-  },
-  "5749": {
-    "description": "JAMONERA BELLOTA III GIRATORIO"
-  },
-  "6050": {
-    "description": "JAMONERA MOD BANQUETA"
-  },
-  "6474": {
-    "description": "JAMONERO MOD. JEREZ SEREGRAFIADO DIAZ"
-  },
-  "6141": {
-    "description": "PLATO KRION"
-  },
-  "5496": {
-    "description": "PORTAJAMONES GIRATORIO IBIZA"
-  },
-  "5497": {
-    "description": "PORTAJAMONES LACADO CASABLANCA"
-  },
-  "6593": {
-    "description": "MESA DE QUESOS POR COMENSAL"
-  },
-  "6654": {
-    "description": "MESA DE QUESOS Y EMBUTIDOS"
-  },
-  "6630": {
-    "description": "MESA DE QUESOS, EMBUTIDOS Y SALAZONES POR COMENSAL"
-  },
-  "99995": {
-    "description": "MESA QUESOS 100 PERSONAS"
-  },
-  "6392": {
-    "description": "MESA QUESOS Y EMBUTIDOS"
-  },
-  "6549": {
-    "description": "MESA QUESOS Y EMBUTIDOS"
-  },
-  "6223": {
-    "description": "MESA QUESOS Y EMBUTIDOS"
-  },
-  "6224": {
-    "description": "MESA QUESOS Y EMBUTIDOS"
-  },
-  "6228": {
-    "description": "MESA QUESOS Y EMBUTIDOS"
-  },
-  "6135": {
-    "description": "MESA QUESOS Y EMBUTIDOS"
-  },
-  "6136": {
-    "description": "MESA QUESOS Y EMBUTIDOS"
-  },
-  "6137": {
-    "description": "MESA QUESOS Y EMBUTIDOS"
-  },
-  "99998": {
-    "description": "SERVICIOS DE APOYO A LA GESTION COMERCIAL Y DISTRIBUCION"
-  },
-  "6548": {
-    "description": "TARTA DE QUESO"
   }
 }
