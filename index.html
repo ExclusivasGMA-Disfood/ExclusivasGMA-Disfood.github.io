@@ -194,7 +194,6 @@
   .dept-icon svg{width:19px;height:19px;display:block;}
   .dept-header:first-of-type{margin-top:6px;}
   .dept-header-label{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-  .dept-header-count{font-weight:600;color:var(--ink-soft);opacity:.8;}
   .dept-header .chev{flex:none;width:20px;height:20px;transition:transform .18s ease;color:var(--ink-soft);}
   .dept-header.open .chev{transform:rotate(180deg);}
   .dept-header.open{color:var(--teal-dark);}
@@ -204,7 +203,6 @@
   .group-header{width:100%;display:flex;align-items:center;gap:11px;background:none;border:none;cursor:pointer;text-align:left;padding:15px 16px;min-height:58px;transition:background .16s ease;}
   .group-title-wrap{flex:1;min-width:0;}
   .group-title{color:var(--ink);line-height:1.3;font-family:inherit;font-weight:680;font-size:15px;letter-spacing:-.015em;}
-  .group-count{border-radius:99px;flex:none;font-family:inherit;font-size:11px;color:#707078;background:#f0f0f3;padding:4px 9px;}
   .chev{transition:transform .3s ease;flex:none;color:var(--ink-soft);}
   .group.open .chev{transform:rotate(180deg);}
   .group-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease;}
@@ -547,7 +545,6 @@
     .item{gap:7px;}
     .item-photo{width:62px;height:62px;}
     .price-block{max-width:45%;}
-    .group-count{display:none;}
     .sheet-item{grid-template-columns:46px minmax(0,1fr) 72px!important;column-gap:8px!important;}
     body.visual-view .sheet-item{grid-template-columns:46px minmax(0,1fr) 72px!important;column-gap:8px!important;}
     body.compact-view .sheet-item{grid-template-columns:46px minmax(0,1fr) 72px!important;column-gap:8px!important;}
@@ -733,6 +730,14 @@
 .gma-account-dialog input:focus{outline:2px solid #BB080B;outline-offset:1px}
 .gma-account-dialog form button{border:0;border-radius:9px;background:#4E061D;color:white;padding:12px;font-weight:650;cursor:pointer}
 .gma-account-status{min-height:1.4em}
+@media(min-width:760px){
+  /* Keep the view switch in the top bar and reclaim the extra sticky row. */
+  .gma-topbar-inner>.catalog-toolbar{display:flex!important;flex:0 1 270px;min-width:0;justify-content:flex-end;margin:0 0 0 auto;}
+  .gma-topbar-inner>.catalog-toolbar .view-label{display:none;}
+  .gma-topbar-inner>.catalog-toolbar .view-switch{min-width:226px;}
+  #controls:not(.has-active-filters){display:none;}
+  #controls.has-active-filters{padding:6px 16px;border-radius:0 0 12px 12px;}
+}
 
 body{font-family:'Geist',sans-serif;background:var(--paper)}
 h1,h2,h3,.sheet-head h2{font-family:'Merriweather',serif;letter-spacing:-.02em}
@@ -1453,7 +1458,6 @@ function render(){
     const deptGroups=DATA.map((g,gi)=>({g,gi})).filter(x=>x.g.dept===dept);
     const deptFrag=document.createDocumentFragment();
     let deptHasVisible=false;
-    let deptVisibleCount=0;
 
     for(const {g:grp,gi} of deptGroups){
       if(familyFilter && grp.title!==familyFilter) continue;
@@ -1461,7 +1465,6 @@ function render(){
       const visibleInGroup=visibleItems.length;
       if(!visibleInGroup) continue;
       totalVisible+=visibleInGroup;
-      deptVisibleCount+=visibleInGroup;
       deptHasVisible=true;
 
       const groupSection=document.createElement('div');
@@ -1475,12 +1478,10 @@ function render(){
       header.className='group-header tap';
       const shouldOpen=openGroups.has(grp.title);
       header.setAttribute('aria-expanded',shouldOpen?'true':'false');
-      const countLabel=hasActiveFilter && visibleInGroup!==grp.items.length ? `${visibleInGroup} de ${grp.items.length}` : `${grp.items.length}`;
       header.innerHTML=`
         <span class="swatch" style="background:${grp.color}"></span>
         ${subfamilyIcon(grp.title)}
         <span class="group-title-wrap"><div class="group-title">${grp.title}</div></span>
-        <span class="group-count">${countLabel}</span>
         <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
       const body=document.createElement('div'); body.className='group-body';
       const inner=document.createElement('div'); inner.className='group-body-inner';
@@ -1497,7 +1498,7 @@ function render(){
       deptHeader.className='dept-header tap'+(isOpen?' open':'');
       deptHeader.dataset.dept=dept;
       deptHeader.setAttribute('aria-expanded',isOpen?'true':'false');
-      deptHeader.innerHTML=`<span class="dept-icon" style="color:${DEPT_COLOR[dept]};background:color-mix(in srgb, ${DEPT_COLOR[dept]} 16%, transparent)">${DEPT_ICONS[dept]||''}</span><span class="dept-header-label">${dept}</span><span class="dept-header-count">${deptVisibleCount}</span><svg class="chev" width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+      deptHeader.innerHTML=`<span class="dept-icon" style="color:${DEPT_COLOR[dept]};background:color-mix(in srgb, ${DEPT_COLOR[dept]} 16%, transparent)">${DEPT_ICONS[dept]||''}</span><span class="dept-header-label">${dept}</span><svg class="chev" width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
       rootFrag.append(deptHeader);
       if(isOpen) rootFrag.append(deptFrag);
     }
@@ -1516,6 +1517,7 @@ function render(){
   }
   resultCount.textContent=hasActiveFilter ? `${totalVisible} resultados` : '';
   document.querySelector('.quick-row')?.classList.toggle('has-content', hasActiveFilter);
+  controls.classList.toggle('has-active-filters',hasActiveFilter);
   const catalogueTotal=DATA.reduce((sum,g)=>sum+g.items.length,0);
   document.getElementById('statTotal').textContent=catalogueTotal;
   const mainCount=document.getElementById('catalogMainCount'); if(mainCount) mainCount.textContent=`${totalVisible} de ${catalogueTotal} referencias`;
@@ -2424,7 +2426,7 @@ function buildCatalogIndex(){
       if(grp.dept !== name) return;
       const btn = document.createElement('button');
       btn.className = 'index-link tap';
-      btn.innerHTML = `<span>${grp.title}</span><small>${grp.items.length} refs. ›</small>`;
+      btn.innerHTML = `<span>${grp.title}</span><small aria-hidden="true">›</small>`;
       btn.addEventListener('click', () => jumpToGroup(grp.title, name));
       list.appendChild(btn);
     });
@@ -2687,7 +2689,7 @@ render();
     const val=dept&&dept!=='all'?dept:'';
     const families=DATA.filter(g=>!val||g.dept===val).slice().sort((a,b)=>a.title.localeCompare(b.title,'es'));
     famSel.innerHTML='<option value="">Todas las familias</option>';
-    families.forEach(g=>{const o=document.createElement('option');o.value=g.title;o.textContent=`${g.title} · ${g.items.length}`;famSel.appendChild(o);});
+    families.forEach(g=>{const o=document.createElement('option');o.value=g.title;o.textContent=g.title;famSel.appendChild(o);});
     famSel.value=selected&&families.some(g=>g.title===selected)?selected:'';
     if(selected&&!famSel.value) stagedFamily='';
   };
@@ -2834,7 +2836,15 @@ render();
   const menu=document.getElementById('topMenuPanel');
   const search=document.getElementById('searchInput');
   const dialog=document.getElementById('accountDialog');
+  const toolbar=document.querySelector('#controls .catalog-toolbar');
+  const toolbarHome=document.getElementById('controls');
+  const wideScreen=window.matchMedia('(min-width:760px)');
   const updateHeight=()=>document.documentElement.style.setProperty('--topbar-h',header.getBoundingClientRect().height+'px');
+  const placeToolbar=()=>{
+    if(wideScreen.matches)header.querySelector('.gma-topbar-inner').insertBefore(toolbar,header.querySelector('.gma-topbar-actions'));
+    else toolbarHome.appendChild(toolbar);
+    requestAnimationFrame(()=>{setControlsHeight();updateHeight();});
+  };
   const positionAccount=()=>{
     const rect=accountButton.getBoundingClientRect();
     dialog.style.setProperty('--account-top',rect.bottom+'px');
@@ -2862,6 +2872,8 @@ render();
     if(open&&focus)search.focus({preventScroll:true});
   };
   if(typeof ResizeObserver!=='undefined')new ResizeObserver(updateHeight).observe(header);
+  if(wideScreen.addEventListener)wideScreen.addEventListener('change',placeToolbar);
+  else wideScreen.addListener(placeToolbar);
   window.addEventListener('resize',()=>{updateHeight();if(dialog.classList.contains('open'))positionAccount();});
   searchButton.addEventListener('click',()=>showSearch(!header.classList.contains('search-open'),true));
   search.addEventListener('focus',()=>showSearch(true));
@@ -2911,7 +2923,7 @@ render();
     if(header.classList.contains('menu-open')){closeMenu();menuButton.focus();return;}
     if(header.classList.contains('search-open')){showSearch(false);searchButton.focus();}
   });
-  updateHeight();
+  placeToolbar();
 })();
 </script>
 </body>
