@@ -1479,13 +1479,14 @@ body.visual-view .sub-divider{grid-column:1/-1}
       <div class="filter-origin-note">El origen se calcula por sección, familia, marca y datos de la referencia.</div>
     </div>
     <div class="filter-group">
-      <div class="filter-group-title">Región / D.O. española</div>
+      <div class="filter-group-title">Zona española</div>
       <div class="filter-options" id="regionOptions">
         <button class="filter-option tap active" data-region="">Todas</button>
         <button class="filter-option tap" data-region="Extremadura">Extremadura</button>
         <button class="filter-option tap" data-region="Huelva">Huelva</button>
         <button class="filter-option tap" data-region="Aragón">Aragón</button>
         <button class="filter-option tap" data-region="Salamanca">Salamanca</button>
+        <button class="filter-option tap" data-region="León">León</button>
         <button class="filter-option tap" data-region="Guijuelo">Guijuelo</button>
         <button class="filter-option tap" data-region="Jabugo">Jabugo</button>
       </div>
@@ -1657,7 +1658,7 @@ const SEARCH_STOPWORDS = new Set(['ref','refs','referencia','referencias','no','
 
 // Catalogue origin filter: product and brand evidence takes precedence over
 // old, incomplete origin labels; unspecified products default to Spain.
-const SPANISH_REGIONS = new Set(['Extremadura','Huelva','Aragón','Salamanca','Guijuelo','Jabugo']);
+const SPANISH_REGIONS = new Set(['Extremadura','Huelva','Aragón','Salamanca','León','Guijuelo','Jabugo']);
 function inferGeography(group, item){
   const title = normalize(group.title || '');
   const dept = normalize(group.dept || '');
@@ -1672,6 +1673,7 @@ function inferGeography(group, item){
   if(/\bgalvan\b/.test(name)) return spanish('Huelva');
   if(/\baragon\b|\bpeson\b|\bmonroyo\b/.test(name)) return spanish('Aragón');
   if(/\bibisma\b/.test(name)) return spanish('Salamanca');
+  if(/\bc\.pablo\b/.test(name)) return spanish('León');
 
   // Italian suppliers also occur outside the dedicated Italian families.
   if(/\bdivella\b|\bgran bologna\b|\bgea\b|\bcaputo\b|\b5 stagioni\b|\bviander\b|\bvillani\b|\bsoster\b|\btre archi\b|\bmutti\b|\bparmigiano\b|\bgrana padano\b|\bpecorino\b|\bburrata\b|\bgorgonzola\b|\bscamorza\b|\bstracciatella\b|\bricotta\b|\bmoliterno\b|\bcaccetti\b|\bbalsamico\b|\bnduja\b/.test(name)) return {country:'Italiano', region:''};
