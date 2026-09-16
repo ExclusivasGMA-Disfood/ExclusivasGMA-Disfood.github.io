@@ -318,7 +318,7 @@
   .lightbox-name{font-family:'Geist',sans-serif;font-weight:700;font-size:14px;color:var(--ink);margin-top:12px;line-height:1.35;}
   .lightbox-close-btn{margin-top:14px;font-family:'Geist',sans-serif;font-size:12.5px;font-weight:600;color:var(--ink-soft);background:var(--paper-dim);border:none;border-radius:99px;padding:9px 18px;cursor:pointer;}
   .product-sheet{max-height:92vh!important;will-change:transform;transform:translate3d(0,100%,0);}
-  .product-detail{overflow-y:auto;padding:8px 18px 22px;}
+  .product-detail{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:8px 18px 22px;}
   .product-visual{position:relative;border:1px solid var(--line);overflow:hidden;display:flex;align-items:center;justify-content:center;aspect-ratio:1 / 1;margin:8px auto 16px;width:min(100%,430px);background:#fff;border-radius:18px;border-color:rgba(0,0,0,.075);box-shadow:0 1px 2px rgba(0,0,0,.025);}
   .product-nav-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.94);box-shadow:0 2px 10px rgba(15,23,20,.22);display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--ink);touch-action:manipulation;}
   .product-nav-arrow:active{transform:translateY(-50%) scale(.92);}
@@ -471,7 +471,8 @@
     .group{align-self:start;margin:0;}
     .fav-bar{left:50%;right:auto;transform:translateX(-50%);}
     .fav-bar.pulse{animation:none;}
-    .product-sheet{max-width:620px;left:50%;right:auto;width:calc(100% - 48px);border-radius:20px 20px 0 0;}
+    .product-sheet{max-width:620px;left:50%;right:auto;width:calc(100% - 48px);max-height:min(92dvh,calc(100dvh - 16px))!important;border-radius:20px 20px 0 0;transform:translate3d(-50%,100%,0);}
+    .product-sheet.in{transform:translate3d(-50%,0,0);}
     .product-detail{padding-left:24px;padding-right:24px;}
     .hero-stats{max-width:420px;}
     .visual-view .group-items{grid-template-columns:repeat(2,minmax(0,1fr));}
@@ -698,21 +699,28 @@
 .gma-topbar-actions{display:flex;align-items:center;gap:6px}
 .gma-icon-btn{position:relative;width:42px;height:42px;display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:50%;background:transparent;color:#4E061D;cursor:pointer}
 .gma-icon-btn:hover,.gma-icon-btn:focus-visible{background:rgba(78,6,29,.08)}
-.gma-icon-btn.has-filters{background:var(--teal-tint);color:var(--teal)}
-.gma-icon-btn.has-filters::after{content:"";position:absolute;width:7px;height:7px;border-radius:50%;background:#BB080B;transform:translate(13px,-13px)}
 .gma-icon-btn svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.gma-search-panel{display:none;background:#fff;border-top:1px solid rgba(78,6,29,.09)}
-.gma-topbar.search-open .gma-search-panel{display:block}
+.gma-search-panel{max-height:0;opacity:0;visibility:hidden;overflow:hidden;pointer-events:none;background:#fff;transition:max-height .3s ease,opacity .25s ease,visibility 0s linear .3s}
+.gma-topbar.search-open .gma-search-panel{max-height:90px;opacity:1;visibility:visible;pointer-events:auto;border-top:1px solid rgba(78,6,29,.09);transition:max-height .3s ease,opacity .25s ease}
 .gma-search-inner{max-width:1180px;margin:auto;padding:11px 32px;display:flex;align-items:center;gap:12px}
 .gma-search-inner .search{box-shadow:none;background:transparent;border:0;border-bottom:1px solid #4E061D;border-radius:0;padding:0 4px;height:40px}
 .gma-search-inner .search:focus-within{box-shadow:none;border-color:#BB080B}
 .gma-search-inner .search input{font-family:'Geist',sans-serif;color:#4E061D;font-size:16px}
 .gma-search-inner .search input::placeholder{color:#9a8a8e}
 .gma-search-inner .filter-btn{height:42px;width:42px;flex:none;border:1px solid rgba(78,6,29,.15);background:var(--teal-tint);color:var(--teal);border-radius:12px}
+.gma-burger{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px}
+.gma-burger i{width:20px;height:2px;background:currentColor;display:block;transition:transform .25s ease,opacity .25s ease}
+.gma-topbar.menu-open .gma-burger i:first-child{transform:translateY(7px) rotate(45deg)}
+.gma-topbar.menu-open .gma-burger i:nth-child(2){opacity:0}
+.gma-topbar.menu-open .gma-burger i:last-child{transform:translateY(-7px) rotate(-45deg)}
+.gma-menu-panel{position:absolute;right:max(14px,calc((100vw - 1180px)/2 + 32px));top:100%;width:min(320px,calc(100vw - 28px));padding:8px 0;background:#fff;border:1px solid var(--line);border-radius:0 0 14px 14px;box-shadow:0 14px 30px rgba(0,0,0,.12);opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-9px);transition:opacity .25s ease,transform .25s ease,visibility 0s linear .25s}
+.gma-topbar.menu-open .gma-menu-panel{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0);transition:opacity .25s ease,transform .25s ease}
+.gma-menu-panel button{display:block;width:100%;padding:13px 20px;border:0;border-bottom:1px solid rgba(78,6,29,.08);background:#fff;color:var(--teal);font-size:15px;text-align:left;cursor:pointer}
+.gma-menu-panel button:last-child{border-bottom:0}
+.gma-menu-panel button:hover,.gma-menu-panel button:focus-visible{background:var(--teal-tint)}
 .gma-hidden-control{display:none!important}
-.gma-account-backdrop{position:fixed;inset:0;z-index:100;background:rgba(20,9,14,.56)}
-.gma-account-dialog{position:fixed;z-index:101;top:50%;left:50%;transform:translate(-50%,-50%);width:min(420px,calc(100vw - 28px));max-height:calc(100dvh - 28px);overflow:auto;background:#fff;color:#2b2b2b;border-radius:18px;padding:24px;box-shadow:0 20px 60px rgba(20,9,14,.22);font-family:'Geist',sans-serif}
-.gma-account-backdrop[hidden],.gma-account-dialog[hidden]{display:none}
+.gma-account-dialog{position:fixed;z-index:41;top:var(--account-top,65px);right:var(--account-right,70px);width:min(350px,calc(100vw - 68px));max-height:calc(100dvh - var(--account-top,65px) - 12px);overflow:auto;background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:0 0 14px 14px;padding:20px;box-shadow:0 14px 30px rgba(0,0,0,.12);font-family:'Geist',sans-serif;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-9px);transition:opacity .25s ease,transform .25s ease,visibility 0s linear .25s}
+.gma-account-dialog.open{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0);transition:opacity .25s ease,transform .25s ease}
 .gma-account-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .gma-account-head h2{margin:0;color:#4E061D;font:400 25px/1.25 'Merriweather',serif}
 .gma-account-head button{border:0;background:transparent;color:#4E061D;font-size:20px;cursor:pointer;padding:6px}
@@ -733,6 +741,7 @@ h1,h2,h3,.sheet-head h2{font-family:'Merriweather',serif;letter-spacing:-.02em}
 .gma-search-inner{padding:10px 14px;gap:7px}
 }
 @media(max-width:350px){.gma-wordmark img{height:32px}.gma-icon-btn{width:36px;height:40px}}
+@media(prefers-reduced-motion:reduce){.gma-search-panel,.gma-menu-panel,.gma-account-dialog,.gma-burger i{transition:none}}
 </style>
 
 
@@ -753,17 +762,24 @@ h1,h2,h3,.sheet-head h2{font-family:'Merriweather',serif;letter-spacing:-.02em}
     <a class="gma-wordmark" href="./" aria-label="GMA Disfood, inicio"><img src="images/gma-logo-catalogo.png" alt="GMA Disfood" width="791" height="384"></a>
     <div class="gma-topbar-actions">
       <button type="button" class="gma-icon-btn" id="topSearchToggle" aria-label="Mostrar buscador" aria-expanded="false" aria-controls="topSearchPanel"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-5-5"/></svg></button>
-      <button type="button" class="gma-icon-btn" id="topSelection" aria-label="Área de cliente"><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"/></svg></button>
-      <button type="button" class="gma-icon-btn" id="topMenuToggle" aria-label="Filtrar catálogo"><svg viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></svg></button>
+      <button type="button" class="gma-icon-btn" id="topSelection" aria-label="Área de cliente" aria-expanded="false" aria-controls="accountDialog"><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"/></svg></button>
+      <button type="button" class="gma-icon-btn gma-burger" id="topMenuToggle" aria-label="Menú" aria-expanded="false" aria-controls="topMenuPanel"><i></i><i></i><i></i></button>
     </div>
   </div>
   <div class="gma-search-panel" id="topSearchPanel"><div class="gma-search-inner">
     <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input id="searchInput" type="search" placeholder="Buscar producto, categoría o referencia…" autocomplete="off" aria-label="Buscar productos"><button class="clear-btn tap" id="clearSearch" aria-label="Borrar búsqueda">✕</button></div>
     <button class="filter-btn tap" id="filterBtn" aria-label="Filtros"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M7 12h10M10 18h4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span class="filter-badge" id="filterBadge"></span></button>
   </div></div>
+  <nav class="gma-menu-panel" id="topMenuPanel" aria-label="Menú principal" aria-hidden="true">
+    <button type="button" data-menu-action="filters">Filtros</button>
+    <button type="button" data-menu-action="home">Inicio</button>
+    <button type="button" data-menu-action="products">Productos</button>
+    <button type="button" data-menu-action="catalog">Catálogo</button>
+    <button type="button" data-menu-action="about">Nosotros</button>
+    <button type="button" data-menu-action="contact">Contacto</button>
+  </nav>
 </header>
-<div class="gma-account-backdrop" id="accountBackdrop" hidden></div>
-<section class="gma-account-dialog" id="accountDialog" role="dialog" aria-modal="true" aria-labelledby="accountTitle" hidden>
+<section class="gma-account-dialog" id="accountDialog" role="dialog" aria-modal="false" aria-labelledby="accountTitle" aria-hidden="true">
   <div class="gma-account-head"><h2 id="accountTitle">Área de cliente</h2><button type="button" id="accountClose" aria-label="Cerrar">✕</button></div>
   <p>Acceso para clientes. Disponible próximamente.</p>
   <form id="accountForm" autocomplete="off">
@@ -2062,11 +2078,6 @@ function updateFilterBadge(){
   badge.textContent = n;
   badge.classList.toggle('show', n > 0);
   document.getElementById('filterBtn').classList.toggle('active', n > 0);
-  const topFilter=document.getElementById('topMenuToggle');
-  if(topFilter){
-    topFilter.classList.toggle('has-filters',n>0);
-    topFilter.setAttribute('aria-label',n?`Filtrar catálogo, ${n} filtros activos`:'Filtrar catálogo');
-  }
 }
 document.getElementById('filterBtn').addEventListener('click', openFilterPanel);
 document.getElementById('filterClose').addEventListener('click', closeFilterPanel);
@@ -2727,37 +2738,89 @@ render();
 
 <script id="gma-topbar-interactions">
 (()=>{
-  const header=document.getElementById('siteHeader'), searchButton=document.getElementById('topSearchToggle');
-  const filterButton=document.getElementById('topMenuToggle'), search=document.getElementById('searchInput');
+  const header=document.getElementById('siteHeader');
+  const searchButton=document.getElementById('topSearchToggle');
+  const accountButton=document.getElementById('topSelection');
+  const menuButton=document.getElementById('topMenuToggle');
+  const menu=document.getElementById('topMenuPanel');
+  const search=document.getElementById('searchInput');
+  const dialog=document.getElementById('accountDialog');
   const updateHeight=()=>document.documentElement.style.setProperty('--topbar-h',header.getBoundingClientRect().height+'px');
-  if(typeof ResizeObserver!=='undefined')new ResizeObserver(updateHeight).observe(header);
-  window.addEventListener('resize',updateHeight);
+  const positionAccount=()=>{
+    const rect=accountButton.getBoundingClientRect();
+    dialog.style.setProperty('--account-top',rect.bottom+'px');
+    dialog.style.setProperty('--account-right',(window.innerWidth-rect.right)+'px');
+  };
+  const closeMenu=()=>{
+    header.classList.remove('menu-open');
+    menuButton.setAttribute('aria-expanded','false');
+    menu.setAttribute('aria-hidden','true');
+  };
+  const closeAccount=(restoreFocus=false)=>{
+    if(!dialog.classList.contains('open'))return;
+    dialog.classList.remove('open');
+    dialog.setAttribute('aria-hidden','true');
+    accountButton.setAttribute('aria-expanded','false');
+    document.getElementById('accountForm').reset();
+    if(restoreFocus)accountButton.focus();
+  };
   const showSearch=(open,focus=false)=>{
-    header.classList.toggle('search-open',open);searchButton.setAttribute('aria-expanded',String(open));
+    if(open){closeMenu();closeAccount();}
+    header.classList.toggle('search-open',open);
+    searchButton.setAttribute('aria-expanded',String(open));
     searchButton.setAttribute('aria-label',open?'Ocultar buscador':'Mostrar buscador');
-    updateHeight();if(open&&focus)search.focus({preventScroll:true});
+    updateHeight();
+    if(open&&focus)search.focus({preventScroll:true});
   };
+  if(typeof ResizeObserver!=='undefined')new ResizeObserver(updateHeight).observe(header);
+  window.addEventListener('resize',()=>{updateHeight();if(dialog.classList.contains('open'))positionAccount();});
   searchButton.addEventListener('click',()=>showSearch(!header.classList.contains('search-open'),true));
-  filterButton.addEventListener('click',()=>document.getElementById('navIndex').click());
   search.addEventListener('focus',()=>showSearch(true));
-  const dialog=document.getElementById('accountDialog'),backdrop=document.getElementById('accountBackdrop');
-  const closeAccount=()=>{
-    dialog.hidden=true;backdrop.hidden=true;document.getElementById('accountForm').reset();
-    document.getElementById('topSelection').focus();
-  };
-  document.getElementById('topSelection').addEventListener('click',()=>{
-    backdrop.hidden=false;dialog.hidden=false;document.getElementById('accountStatus').textContent='';
-    document.getElementById('accountUsername').focus();
+  accountButton.addEventListener('click',()=>{
+    const opening=!dialog.classList.contains('open');
+    showSearch(false);closeMenu();
+    if(!opening){closeAccount();return;}
+    positionAccount();
+    dialog.classList.add('open');
+    dialog.setAttribute('aria-hidden','false');
+    accountButton.setAttribute('aria-expanded','true');
+    document.getElementById('accountStatus').textContent='';
+    document.getElementById('accountUsername').focus({preventScroll:true});
   });
-  document.getElementById('accountClose').addEventListener('click',closeAccount);
-  backdrop.addEventListener('click',closeAccount);
+  document.getElementById('accountClose').addEventListener('click',()=>closeAccount(true));
   document.getElementById('accountForm').addEventListener('submit',event=>{
-    event.preventDefault();document.getElementById('accountPassword').value='';
+    event.preventDefault();
+    document.getElementById('accountPassword').value='';
     document.getElementById('accountStatus').textContent='El acceso de clientes estará disponible próximamente.';
   });
+  menuButton.addEventListener('click',()=>{
+    const opening=!header.classList.contains('menu-open');
+    showSearch(false);closeAccount();
+    header.classList.toggle('menu-open',opening);
+    menuButton.setAttribute('aria-expanded',String(opening));
+    menu.setAttribute('aria-hidden',String(!opening));
+  });
+  menu.addEventListener('click',event=>{
+    const item=event.target.closest('[data-menu-action]');
+    if(!item)return;
+    closeMenu();
+    switch(item.dataset.menuAction){
+      case 'filters': openFilterPanel();break;
+      case 'home': scrollImmediately(0);break;
+      case 'products':
+      case 'catalog': scrollToResults();break;
+      default: showToast('Disponible próximamente');
+    }
+  });
+  document.addEventListener('pointerdown',event=>{
+    if(!header.contains(event.target)){closeMenu();showSearch(false);}
+    if(!dialog.contains(event.target)&&!accountButton.contains(event.target))closeAccount();
+  });
   document.addEventListener('keydown',event=>{
-    if(event.key==='Escape'&&!dialog.hidden){closeAccount();return}
-    if(event.key==='Escape'&&header.classList.contains('search-open')&&!search.value){showSearch(false);searchButton.focus()}
+    if(event.key!=='Escape')return;
+    if(dialog.classList.contains('open')){closeAccount(true);return;}
+    if(header.classList.contains('menu-open')){closeMenu();menuButton.focus();return;}
+    if(header.classList.contains('search-open')){showSearch(false);searchButton.focus();}
   });
   updateHeight();
 })();
