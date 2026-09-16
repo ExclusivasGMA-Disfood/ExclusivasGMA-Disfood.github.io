@@ -1668,7 +1668,7 @@ function inferGeography(group, item){
   const spanish = region => ({country:'Nacional', region});
   // Brand-level regional assignments apply to jamón, charcutería and their packs.
   if(/\bmontesano\b|\bmonterroble\b|\bmonteroble\b/.test(name)) return spanish('Extremadura');
-  if(/\bbeher\b|\bcrego\b|\bprim\b/.test(name)) return spanish('Guijuelo');
+  if(/\bbeherk?\b|\bcrego\b|\bprim\b/.test(name)) return spanish('Guijuelo');
   if(/\bdiaz\b/.test(name)) return spanish('Salamanca');
   if(/\bgalvan\b/.test(name)) return spanish('Huelva');
   if(/\baragon\b|\bpeson\b|\bmonroyo\b/.test(name)) return spanish('Aragón');
