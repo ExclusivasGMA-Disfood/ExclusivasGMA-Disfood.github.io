@@ -112,7 +112,6 @@
   .chip{flex:none;font-family:'Geist',sans-serif;font-weight:600;border-radius:99px;border:1px solid var(--line);color:var(--ink-soft);cursor:pointer;white-space:nowrap;display:flex;align-items:center;gap:5px;scroll-snap-align:start;font-size:12.5px;padding:8px 13px;background:rgba(255,255,255,.88);transition:transform .16s ease,background .18s ease,color .18s ease,border-color .18s ease;border-color:rgba(0,0,0,.075);}
   .chip .n{opacity:.6;}
   .result-count{font-size:11px;color:var(--ink-soft);font-family:'Geist',monospace;text-align:center;flex:none;white-space:nowrap;margin-left:auto;}
-  .clear-filters-link{font-family:'Geist',sans-serif;font-weight:700;color:var(--clay);background:none;border:none;cursor:pointer;font-size:11px;text-decoration:underline;padding:0;margin-left:4px;}
   .filter-content{padding:8px 18px 20px;}
   .filter-group{padding:16px 0;border-top:1px solid var(--line);}
   .filter-group:first-child{border-top:none;padding-top:6px;}
@@ -129,15 +128,12 @@
   .chip:active{transform:scale(.96);}
   .chip.active{background:var(--teal);color:#fff;border-color:var(--teal);box-shadow:0 4px 12px rgba(78,6,29,.16);}
   .result-count[aria-live]{min-width:0;}
-  .quick-row{display:flex;align-items:center;gap:8px;margin-top:0;min-height:0;}
-  .quick-row.has-content{margin-top:8px;min-height:30px;}
-  .quick-clear{border:1px solid var(--line);border-radius:999px;background:#fff;font-size:11px;font-weight:650;padding:6px 10px;white-space:nowrap;cursor:pointer;color:var(--clay);margin-left:auto;}
-  .quick-clear[hidden]{display:none!important;}
-  .quick-clear:not([hidden]) + .result-count{margin-left:0;}
-  .active-filter-bar{display:none;gap:6px;overflow-x:auto;padding:7px 0 1px;scrollbar-width:none;-webkit-overflow-scrolling:touch;}
+  .quick-row{display:flex;align-items:center;gap:8px;margin-top:0;min-height:0;min-width:0;}
+  .quick-row.has-content{min-height:28px;}
+  .active-filter-bar{display:none;gap:6px;overflow-x:auto;min-width:0;flex:1;padding:0;scrollbar-width:none;-webkit-overflow-scrolling:touch;}
   .active-filter-bar.show{display:flex;}
   .active-filter-bar::-webkit-scrollbar{display:none;}
-  .active-filter-chip{flex:none;border:0;background:var(--teal-tint);color:var(--teal-dark);border-radius:999px;padding:6px 9px;font-size:10.5px;font-weight:650;cursor:pointer;white-space:nowrap;}
+  .active-filter-chip{flex:none;border:0;background:var(--teal-tint);color:var(--teal-dark);border-radius:999px;padding:6px 9px;min-height:28px;font-size:10.5px;font-weight:650;cursor:pointer;white-space:nowrap;}
   .active-filter-clear{background:var(--clay-tint);color:var(--clay);}
 
   /* ===================================================================
@@ -182,7 +178,6 @@
   .country-section{padding:13px 0 14px;background:var(--paper);border-bottom:1px solid var(--line);}
   .country-head{padding:0 16px 9px;display:flex;align-items:end;justify-content:space-between;gap:12px;}
   .country-head h2{margin:1px 0 0;font:800 17px/1.15 'Geist',sans-serif;letter-spacing:-.01em;color:var(--ink);}
-  .country-reset{min-height:40px;border:0;background:transparent;color:var(--teal);font-size:11px;font-weight:750;padding:7px 3px;cursor:pointer;white-space:nowrap;}
   .country-scroll{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:8px;padding:0 16px;overflow:visible;}
   .country-chip{min-width:0;height:52px;border:1px solid rgba(28,35,33,.10);background:#fff;border-radius:15px;padding:7px 10px;display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-rows:auto auto;column-gap:8px;align-items:center;text-align:left;color:var(--ink);box-shadow:0 2px 7px rgba(28,35,33,.045);cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;transition:transform .11s ease,background .15s ease,border-color .15s ease,box-shadow .15s ease;}
   .country-chip:hover{border-color:rgba(28,35,33,.16);box-shadow:0 3px 10px rgba(28,35,33,.065);}
@@ -659,13 +654,13 @@
     .discovery-head h2{font-size:17px;}
     .discovery-card-body{padding:6px 7px 8px;}
     .discovery-name{font-size:10.8px;}
-    .quick-row.has-content{margin-top:6px;}
+    .quick-row.has-content{margin-top:0;}
     .catalog-toolbar{display:flex!important;margin-top:5px;}
     .view-label{display:none;}
     .view-switch{width:100%;min-width:0;}
     .view-btn{height:31px!important;}
     .view-btn span{font-size:9px;}
-    .active-filter-bar{padding-top:6px;}
+    .active-filter-bar{padding-top:0;}
     body.visual-view .group-items{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;padding:7px;}
     body.visual-view .item-name{font-size:11.5px;}
     .visual-view .ref{font-size:8.5px;}
@@ -800,17 +795,15 @@ h1,h2,h3,.sheet-head h2{font-family:'Merriweather',serif;letter-spacing:-.02em}
   <section class="country-section" id="countryDiscovery" aria-label="Filtrar por país de origen">
     <div class="country-head">
       <div><span class="discovery-kicker">Origen</span><h2>Explorar por país</h2></div>
-      <button class="country-reset" id="countryResetTop" type="button" hidden>Quitar filtro</button>
     </div>
     <div class="country-scroll" id="countryCarousel" role="list" aria-label="Países de origen"></div>
   </section>
 
   <div class="controls" id="controls">
     <div class="quick-row">
-      <button class="quick-clear tap" id="quickClearBtn" hidden>Limpiar filtros</button>
+      <div class="active-filter-bar" id="activeFilterBar" aria-label="Filtros activos"></div>
       <span class="result-count" id="resultCount" aria-live="polite"></span>
     </div>
-    <div class="active-filter-bar" id="activeFilterBar" aria-live="polite"></div>
     <div class="catalog-toolbar">
       <span class="view-label">Vista</span>
       <div class="view-switch" role="group" aria-label="Cambiar vista">
@@ -1434,9 +1427,7 @@ function render(){
   if(carouselSection && carouselSection.dataset.hasItems!=='false'){
     carouselSection.style.display=hasActiveFilter?'none':'';
   }
-  resultCount.innerHTML=hasActiveFilter
-    ? `${totalVisible} resultados <button class="clear-filters-link tap" id="clearFiltersLink">quitar</button>`
-    : '';
+  resultCount.textContent=hasActiveFilter ? `${totalVisible} resultados` : '';
   document.querySelector('.quick-row')?.classList.toggle('has-content', hasActiveFilter);
   const catalogueTotal=DATA.reduce((sum,g)=>sum+g.items.length,0);
   document.getElementById('statTotal').textContent=catalogueTotal;
@@ -1869,9 +1860,6 @@ function clearAllFilters(){
   render();
 }
 document.getElementById('emptyReset').addEventListener('click', clearAllFilters);
-resultCount.addEventListener('click', (e) => {
-  if(e.target.closest('#clearFiltersLink')) clearAllFilters();
-});
 
 let scrollToResultsFrame = 0;
 function scrollToResults(){
@@ -2569,7 +2557,6 @@ render();
 (function(){
   const deptSel=document.getElementById('deptFilterSelect');
   const famSel=document.getElementById('familyFilterSelect');
-  const quickClear=document.getElementById('quickClearBtn');
   const activeBar=document.getElementById('activeFilterBar');
 
   function populateDepartments(){
@@ -2592,9 +2579,9 @@ render();
 
   function activeParts(){
     const p=[];
-    if(currentDept!=='all')p.push(['dept',`Sección: ${currentDept}`]);
+    if(currentDept!=='all'&&!familyFilter)p.push(['dept',`Sección: ${currentDept}`]);
     if(familyFilter)p.push(['family',`Familia: ${familyFilter}`]);
-    if(countryFilter)p.push(['country',`Origen: ${{Nacional:'España',Francés:'Francia',Italiano:'Italia'}[countryFilter]||countryFilter}`]);
+    if(countryFilter&&!regionFilter)p.push(['country',`${{Nacional:'España',Francés:'Francia',Italiano:'Italia'}[countryFilter]||countryFilter}`]);
     if(regionFilter)p.push(['region',regionFilter]);
     if(searchTerm)p.push(['search','Búsqueda']);
     return p;
@@ -2602,9 +2589,8 @@ render();
   window.renderActiveFilters=function(){
     if(!activeBar)return;
     const parts=activeParts();
-    activeBar.innerHTML=parts.map(([k,label])=>`<button class="active-filter-chip" data-clear="${k}">${label} ×</button>`).join('')+(parts.length?'<button class="active-filter-chip active-filter-clear" data-clear="all">Limpiar todo</button>':'');
+    activeBar.innerHTML=parts.map(([k,label])=>`<button class="active-filter-chip" type="button" data-clear="${k}" aria-label="Quitar filtro ${label}">${label} ×</button>`).join('')+(parts.length>1?'<button class="active-filter-chip active-filter-clear" type="button" data-clear="all">Limpiar</button>':'');
     activeBar.classList.toggle('show',parts.length>0);
-    if(quickClear)quickClear.hidden=parts.length===0;
   };
   function clearOne(k){
     if(k==='all'){clearAllFilters();renderActiveFilters();return;}
@@ -2616,7 +2602,6 @@ render();
     updateFilterBadge();render();renderActiveFilters();
   }
   activeBar?.addEventListener('click',e=>{const b=e.target.closest('[data-clear]');if(b)clearOne(b.dataset.clear);});
-  quickClear?.addEventListener('click',()=>clearOne('all'));
 
   // Keep active-filter bar synchronized with every render without changing the core renderer.
   const coreRender=render; render=function(){coreRender();renderActiveFilters();};
@@ -2724,7 +2709,6 @@ render();
 <script id="country-filter-js">
 (()=>{
   const carousel=document.getElementById('countryCarousel');
-  const reset=document.getElementById('countryResetTop');
   if(!carousel) return;
   const countries=[
     {value:'',label:'Todos',flag:'🌍'},
@@ -2747,7 +2731,6 @@ render();
       const active=(countryFilter||'')===c.value;
       return `<button class="country-chip${active?' active':''}" type="button" data-country-quick="${c.value}" role="listitem" aria-pressed="${active}"><span class="country-flag" aria-hidden="true">${c.flag}</span><span class="country-name">${c.label}</span><span class="country-num">${n} referencias</span></button>`;
     }).join('');
-    if(reset) reset.hidden=!countryFilter;
   }
   function applyQuickCountry(value){
     const next=(value && countryFilter===value)?'':value;
@@ -2764,7 +2747,6 @@ render();
     const btn=e.target.closest('[data-country-quick]');if(!btn)return;
     applyQuickCountry(btn.dataset.countryQuick||'');
   });
-  reset?.addEventListener('click',()=>applyQuickCountry(''));
 
   // Keep the carousel synchronized when origin is changed from the full filter sheet
   // or cleared through the active-filter chips.
