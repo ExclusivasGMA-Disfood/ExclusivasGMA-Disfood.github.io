@@ -44,7 +44,7 @@
   .hero{
     position:relative; background:linear-gradient(155deg,#0C1113 0%,#161E20 48%,var(--teal-dark) 100%);
     color:#F4F1E6; padding:26px 20px 20px; overflow:hidden;
-    border-bottom:3px solid var(--saffron);
+    border-bottom:0;
   }
   .hero::before{
     content:""; position:absolute; inset:0; opacity:.16;
@@ -1281,13 +1281,13 @@ body.visual-view .sub-divider{grid-column:1/-1}
 @media (min-width:640px){.hero-logo-mark-img{height:32px;}.hero-logo-word-img{height:12px;}}
 .hero-search-row{display:flex!important;flex:1 1 auto!important;min-width:0!important;align-items:center!important;gap:8px!important;}
 .hero-search-row .search{background:rgba(255,255,255,.13)!important;border:1px solid rgba(255,255,255,.22)!important;box-shadow:none!important;height:38px!important;padding:0 10px!important;}
-.hero-search-row .search:focus-within{background:rgba(255,255,255,.19)!important;border-color:rgba(224,176,76,.6)!important;box-shadow:0 0 0 3px rgba(224,176,76,.16)!important;}
+.hero-search-row .search:focus-within{background:rgba(255,255,255,.19)!important;border-color:#6DB3A5!important;box-shadow:0 0 0 3px rgba(109,179,165,.22)!important;}
 .hero-search-row .search svg{stroke:#F4F1E6!important;opacity:.8;}
 .hero-search-row .search input{color:#F4F1E6!important;font-size:14px!important;}
 .hero-search-row .search input::placeholder{color:rgba(244,241,230,.6)!important;}
 .hero-search-row .clear-btn{background:rgba(255,255,255,.2)!important;color:#1C2321!important;}
 .hero-search-row .filter-btn{background:rgba(255,255,255,.13)!important;border:1px solid rgba(255,255,255,.22)!important;color:#F4F1E6!important;height:38px!important;width:38px!important;}
-.hero-search-row .filter-btn.active{background:var(--saffron)!important;border-color:var(--saffron)!important;color:#1C2321!important;}
+.hero-search-row .filter-btn.active{background:var(--teal)!important;border-color:#6DB3A5!important;color:#fff!important;}
 @media (min-width:640px){.hero-search-row .search,.hero-search-row .filter-btn{height:44px!important;}.hero-search-row .filter-btn{width:44px!important;}}
 .controls{top:var(--topbar-h,64px)!important;z-index:30!important;}
 </style>
@@ -1475,7 +1475,6 @@ body.visual-view .sub-divider{grid-column:1/-1}
         <button class="filter-option tap" data-country="Italiano">🇮🇹 Italia <span class="filter-count" data-country-count="Italiano"></span></button>
         <button class="filter-option tap" data-country="Bélgica">🇧🇪 Bélgica <span class="filter-count" data-country-count="Bélgica"></span></button>
         <button class="filter-option tap" data-country="Noruega">🇳🇴 Noruega <span class="filter-count" data-country-count="Noruega"></span></button>
-        <button class="filter-option tap" data-country="Turquía / Árabe">🇹🇷 Turquía / Árabe <span class="filter-count" data-country-count="Turquía / Árabe"></span></button>
       </div>
       <div class="filter-origin-note">El origen se calcula por sección, familia, marca y datos de la referencia.</div>
     </div>
@@ -1656,8 +1655,8 @@ function wordVariants(word){
 // search like "ref 6744" still finds reference 6744.
 const SEARCH_STOPWORDS = new Set(['ref','refs','referencia','referencias','no','nº','n','num','numero']);
 
-// Geography is inferred from the commercial structure, not only from the legacy
-// `origin` field. Section/family rules deliberately override contradictory old data.
+// Catalogue origin filter: product and brand evidence takes precedence over
+// old, incomplete origin labels; unspecified products default to Spain.
 const SPANISH_REGIONS = new Set(['Extremadura','Huelva','Aragón','Salamanca','Guijuelo','Jabugo']);
 function inferGeography(group, item){
   const title = normalize(group.title || '');
@@ -1665,33 +1664,24 @@ function inferGeography(group, item){
   const name = normalize(item.n || '');
   const raw = item.origin || '';
   const rawNorm = normalize(raw);
-  const region = SPANISH_REGIONS.has(raw) ? raw : '';
+  const spanish = region => ({country:'Nacional', region});
+  // Brand-level regional assignments apply to jamón, charcutería and their packs.
+  if(/\bmontesano\b|\bmonterroble\b|\bmonteroble\b/.test(name)) return spanish('Extremadura');
+  if(/\bbeher\b|\bcrego\b|\bprim\b/.test(name)) return spanish('Guijuelo');
+  if(/\bdiaz\b/.test(name)) return spanish('Salamanca');
+  if(/\bgalvan\b/.test(name)) return spanish('Huelva');
+  if(/\baragon\b|\bpeson\b|\bmonroyo\b/.test(name)) return spanish('Aragón');
+  if(/\bibisma\b/.test(name)) return spanish('Salamanca');
 
-  // Explicit commercial rules requested for this catalogue.
-  if(dept === 'pasta italiana' || /quesos italianos|embutidos - italianos|conservas italianas|tomate - italia|pecorino/.test(title)) return {country:'Italiano', region};
-  if(title === 'pato y oca') return {country:'Francés', region};
-  if(name.includes('polca') || title === 'navidad — pates') return {country:'Bélgica', region};
-  if(name.includes('derhel') || name.includes('origine france') || name.includes('fabrique france')) return {country:'Francés', region};
-
-  // Spanish D.O./regional labels are country Spain plus their specific region.
-  if(SPANISH_REGIONS.has(raw)) return {country:'Nacional', region:raw};
-
-  // Trust explicit country values when they really are countries.
-  const explicitCountries = {
-    'nacional':'Nacional','frances':'Francés','italiano':'Italiano',
-    'belgica':'Bélgica','noruega':'Noruega','turquia / arabe':'Turquía / Árabe'
-  };
-  if(explicitCountries[rawNorm]) return {country:explicitCountries[rawNorm], region};
-
-  // Strong family rules for products whose commercial family already defines origin.
-  if(/nacional|asturias y leon|jamones por calidad|paletas por calidad|centros de jamon|centros de paleta|sobres, picadillos y loncheados|^chorizo$|^lomos$|^salchichon$|carne de cerdo iberico|carnes ibericas|embutidos - ibericos/.test(title)) return {country:'Nacional', region};
-
-  // Brand/product signals cover references whose legacy origin is empty.
-  if(/divella|viander|mutti|gran bologna|tre archi|villani|parmigiano|grana padano|pecorino|burrata|gorgonzola|scamorza|stracciatella|ricotta|moliterno|caccetti|aceto balsamico|balsamico/.test(name)) return {country:'Italiano', region};
-  if(/beher|montesano|sansueña|la finca|rogu-sa|rogusa|gran capitan|flor de esgueva|aldonza|ventero/.test(name) || name.includes('(diaz)')) return {country:'Nacional', region};
-  if(/france|canard|roquefort|brie|president|societe/.test(name)) return {country:'Francés', region};
-
-  return {country:'', region};
+  // Italian suppliers also occur outside the dedicated Italian families.
+  if(/\bdivella\b|\bgran bologna\b|\bgea\b|\bcaputo\b|\b5 stagioni\b|\bviander\b|\bvillani\b|\bsoster\b|\btre archi\b|\bmutti\b|\bparmigiano\b|\bgrana padano\b|\bpecorino\b|\bburrata\b|\bgorgonzola\b|\bscamorza\b|\bstracciatella\b|\bricotta\b|\bmoliterno\b|\bcaccetti\b|\bbalsamico\b|\bnduja\b/.test(name)) return {country:'Italiano', region:''};
+  if(dept === 'pasta italiana' || /quesos italianos|embutidos - italianos|conservas italianas|tomate - italia|pecorino/.test(title)) return {country:'Italiano', region:''};
+  if(title === 'pato y oca' || /\bderhel\b|origine france|fabrique france|\bfrance\b|\bcanard\b|\broquefort\b|\bbrie\b|\bpresident\b|\bsociete\b/.test(name)) return {country:'Francés', region:''};
+  if(name.includes('polca') || title === 'navidad — pates') return {country:'Bélgica', region:''};
+  const foreign = {'italiano':'Italiano','frances':'Francés','belgica':'Bélgica','noruega':'Noruega'};
+  if(foreign[rawNorm]) return {country:foreign[rawNorm], region:''};
+  if(SPANISH_REGIONS.has(raw)) return spanish(raw);
+  return spanish('');
 }
 
 DATA.forEach(group => group.items.forEach(item => {
@@ -2206,7 +2196,7 @@ function renderProductDetail(id){
       ${productFact('Familia', group.title)}
       ${productFact('Departamento', group.dept)}
       ${productFact('Formato', format)}
-      ${productFact('Origen', item.origin || 'No indicado')}
+      ${productFact('Origen', item.region || ({Nacional:'España', Italiano:'Italia', Francés:'Francia', Bélgica:'Bélgica', Noruega:'Noruega'}[item.country] || 'No indicado'))}
     </div>
     <div class="product-detail-nav"><button class="product-nav-btn tap" id="productPrevBtn">← Anterior</button><span id="productPosition"></span><button class="product-nav-btn tap" id="productNextBtn">Siguiente →</button></div>
     <div class="product-detail-actions">
@@ -3314,8 +3304,7 @@ render();
     {value:'Italiano',label:'Italia',flag:'🇮🇹'},
     {value:'Francés',label:'Francia',flag:'🇫🇷'},
     {value:'Bélgica',label:'Bélgica',flag:'🇧🇪'},
-    {value:'Noruega',label:'Noruega',flag:'🇳🇴'},
-    {value:'Turquía / Árabe',label:'Turquía / Árabe',flag:'🇹🇷'}
+    {value:'Noruega',label:'Noruega',flag:'🇳🇴'}
   ];
   function countryCounts(){
     const counts={};let total=0;
