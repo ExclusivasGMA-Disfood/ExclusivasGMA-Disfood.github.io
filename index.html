@@ -730,6 +730,7 @@
 .gma-menu-inner a,.gma-menu-inner button{text-align:left;color:#4E061D;background:#F3F3F4;border:0;border-radius:9px;padding:12px 14px;font-family:'Geist',sans-serif;font-weight:600;font-size:14px;cursor:pointer;text-decoration:none}
 .gma-menu-inner a:hover,.gma-menu-inner button:hover{background:#F5ECF0}
 .gma-hidden-control{display:none!important}
+.country-section{scroll-margin-top:calc(var(--topbar-h,65px) + 8px)}
 body{font-family:'Geist',sans-serif;background:#F3F3F4}
 h1,h2,h3,.discovery-head h2,.country-head h2,.group-title,.dept-header-label,.sheet-head h2{font-family:'Merriweather',serif;letter-spacing:-.02em}
 .bottom-nav{background:rgba(255,255,255,.97);border-color:rgba(78,6,29,.13)}
@@ -1001,7 +1002,7 @@ function ensurePdfLibraries(){
 window.addEventListener('keydown',(e)=>{
   const tag=(document.activeElement&&document.activeElement.tagName)||'';
   if(e.key==='/' && !['INPUT','TEXTAREA'].includes(tag) && !document.querySelector('.sheet.in')){
-    e.preventDefault(); document.getElementById('searchInput')?.focus();
+    e.preventDefault(); if(!document.getElementById('siteHeader').classList.contains('search-open')) document.getElementById('topSearchToggle').click(); else document.getElementById('searchInput').focus();
   }
   if(e.key==='Escape' && document.activeElement===document.getElementById('searchInput') && document.getElementById('searchInput').value){
     document.getElementById('searchInput').value='';
@@ -2358,7 +2359,7 @@ loadState();
 
   const goTop=()=>window.scrollTo({top:0,behavior:'smooth'});
   document.getElementById('navHome').onclick=goTop;
-  document.getElementById('navSearch').onclick=()=>{goTop();setTimeout(()=>document.getElementById('searchInput').focus(),350)};
+  document.getElementById('navSearch').onclick=()=>{goTop();if(!document.getElementById('siteHeader').classList.contains('search-open'))document.getElementById('topSearchToggle').click();else document.getElementById('searchInput').focus()};
   document.getElementById('navIndex').onclick=()=>openIndex();
   document.getElementById('heroIndexBtn').onclick=()=>openIndex();
   document.getElementById('navSelection').onclick=()=>{ if(favIds().length) openSheet(); else showToast('Aún no has seleccionado productos'); };
