@@ -714,22 +714,29 @@
 .gma-icon-btn{width:42px;height:42px;display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:50%;background:transparent;color:#4E061D;cursor:pointer}
 .gma-icon-btn:hover,.gma-icon-btn:focus-visible{background:rgba(78,6,29,.08)}
 .gma-icon-btn svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.gma-burger{display:flex;flex-direction:column;gap:5px}.gma-burger i{display:block;width:20px;height:2px;background:currentColor;transition:transform .2s ease,opacity .2s ease}
-.gma-topbar.menu-open .gma-burger i:first-child{transform:translateY(7px) rotate(45deg)}
-.gma-topbar.menu-open .gma-burger i:nth-child(2){opacity:0}
-.gma-topbar.menu-open .gma-burger i:last-child{transform:translateY(-7px) rotate(-45deg)}
-.gma-search-panel,.gma-topbar-menu{display:none;background:#fff;border-top:1px solid rgba(78,6,29,.09)}
-.gma-topbar.search-open .gma-search-panel,.gma-topbar.menu-open .gma-topbar-menu{display:block}
+.gma-search-panel{display:none;background:#fff;border-top:1px solid rgba(78,6,29,.09)}
+.gma-topbar.search-open .gma-search-panel{display:block}
 .gma-search-inner{max-width:1180px;margin:auto;padding:11px 32px;display:flex;align-items:center;gap:12px}
 .gma-search-inner .search{box-shadow:none;background:transparent;border:0;border-bottom:1px solid #4E061D;border-radius:0;padding:0 4px;height:40px}
 .gma-search-inner .search:focus-within{box-shadow:none;border-color:#BB080B}
 .gma-search-inner .search input{font-family:'Geist',sans-serif;color:#4E061D;font-size:16px}
 .gma-search-inner .search input::placeholder{color:#9a8a8e}
 .gma-search-inner .filter-btn{height:42px;width:42px;flex:none;border:1px solid rgba(78,6,29,.15);background:#F5ECF0;color:#4E061D;border-radius:12px}
-.gma-menu-inner{max-width:1180px;margin:auto;padding:8px 32px 14px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-.gma-menu-inner a,.gma-menu-inner button{text-align:left;color:#4E061D;background:#F3F3F4;border:0;border-radius:9px;padding:12px 14px;font-family:'Geist',sans-serif;font-weight:600;font-size:14px;cursor:pointer;text-decoration:none}
-.gma-menu-inner a:hover,.gma-menu-inner button:hover{background:#F5ECF0}
 .gma-hidden-control{display:none!important}
+.gma-account-backdrop{position:fixed;inset:0;z-index:100;background:rgba(20,9,14,.56)}
+.gma-account-dialog{position:fixed;z-index:101;top:50%;left:50%;transform:translate(-50%,-50%);width:min(420px,calc(100vw - 28px));max-height:calc(100dvh - 28px);overflow:auto;background:#fff;color:#2b2b2b;border-radius:18px;padding:24px;box-shadow:0 20px 60px rgba(20,9,14,.22);font-family:'Geist',sans-serif}
+.gma-account-backdrop[hidden],.gma-account-dialog[hidden]{display:none}
+.gma-account-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.gma-account-head h2{margin:0;color:#4E061D;font:400 25px/1.25 'Merriweather',serif}
+.gma-account-head button{border:0;background:transparent;color:#4E061D;font-size:20px;cursor:pointer;padding:6px}
+.gma-account-dialog>p{font-size:14px;color:#70636A;line-height:1.5}
+.gma-account-dialog form{display:grid;gap:9px}
+.gma-account-dialog label{font-size:13px;font-weight:600;color:#4E061D}
+.gma-account-dialog input{width:100%;border:1px solid rgba(78,6,29,.2);border-radius:9px;padding:11px 12px;margin-bottom:8px;font-size:16px;background:#fff}
+.gma-account-dialog input:focus{outline:2px solid #BB080B;outline-offset:1px}
+.gma-account-dialog form button{border:0;border-radius:9px;background:#4E061D;color:white;padding:12px;font-weight:650;cursor:pointer}
+.gma-account-status{min-height:1.4em}
+
 .country-section{scroll-margin-top:calc(var(--topbar-h,65px) + 8px)}
 body{font-family:'Geist',sans-serif;background:#F3F3F4}
 h1,h2,h3,.discovery-head h2,.country-head h2,.group-title,.dept-header-label,.sheet-head h2{font-family:'Merriweather',serif;letter-spacing:-.02em}
@@ -762,18 +769,28 @@ h1,h2,h3,.discovery-head h2,.country-head h2,.group-title,.dept-header-label,.sh
     <a class="gma-wordmark" href="./" aria-label="GMA Disfood, inicio"><img src="images/gma-logo-catalogo.png" alt="GMA Disfood" width="791" height="384"></a>
     <div class="gma-topbar-actions">
       <button type="button" class="gma-icon-btn" id="topSearchToggle" aria-label="Mostrar buscador" aria-expanded="false" aria-controls="topSearchPanel"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-5-5"/></svg></button>
-      <button type="button" class="gma-icon-btn" id="topSelection" aria-label="Ver selección"><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"/></svg></button>
-      <button type="button" class="gma-icon-btn gma-burger" id="topMenuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="topMenu"><i></i><i></i><i></i></button>
+      <button type="button" class="gma-icon-btn" id="topSelection" aria-label="Área de cliente"><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"/></svg></button>
+      <button type="button" class="gma-icon-btn" id="topMenuToggle" aria-label="Filtrar catálogo"><svg viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></svg></button>
     </div>
   </div>
   <div class="gma-search-panel" id="topSearchPanel"><div class="gma-search-inner">
     <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input id="searchInput" type="search" placeholder="Buscar producto, categoría o referencia…" autocomplete="off" aria-label="Buscar productos"><button class="clear-btn tap" id="clearSearch" aria-label="Borrar búsqueda">✕</button></div>
     <button class="filter-btn tap" id="filterBtn" aria-label="Filtros"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M7 12h10M10 18h4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span class="filter-badge" id="filterBadge"></span></button>
   </div></div>
-  <nav class="gma-topbar-menu" id="topMenu" aria-label="Menú del catálogo"><div class="gma-menu-inner"><a href="./">Inicio</a><a href="#countryDiscovery">Explorar por país</a><button type="button" id="topMenuFamilies">Familias y filtros</button><a href="catalogo-cliente.html">Catálogo Cliente</a></div></nav>
 </header>
+<div class="gma-account-backdrop" id="accountBackdrop" hidden></div>
+<section class="gma-account-dialog" id="accountDialog" role="dialog" aria-modal="true" aria-labelledby="accountTitle" hidden>
+  <div class="gma-account-head"><h2 id="accountTitle">Área de cliente</h2><button type="button" id="accountClose" aria-label="Cerrar">✕</button></div>
+  <p>Acceso para clientes. Disponible próximamente.</p>
+  <form id="accountForm" autocomplete="off">
+    <label for="accountUsername">Nombre de usuario</label><input id="accountUsername" name="username" type="text" autocomplete="off" placeholder="Usuario">
+    <label for="accountPassword">Contraseña</label><input id="accountPassword" name="password" type="password" autocomplete="off" placeholder="Contraseña">
+    <button type="submit">Acceder</button>
+  </form>
+  <p class="gma-account-status" id="accountStatus" role="status" aria-live="polite"></p>
+</section>
 <div class="app">
-  <button class="gma-hidden-control" id="heroIndexBtn" type="button" tabindex="-1" aria-hidden="true"></button>
+  <div class="gma-hidden-control" aria-hidden="true"><span id="statTotal"></span><span id="statCats"></span><span id="statFav"></span><button id="heroIndexBtn" type="button" tabindex="-1"></button></div>
 
   <section class="discovery-section discovery-best" id="bestDiscovery" aria-label="Más vendidas">
     <div class="discovery-head"><div><span class="discovery-kicker">Sugerencias</span><h2>Más vendidas</h2></div><span class="discovery-count">20 sugerencias</span></div>
@@ -2754,27 +2771,36 @@ render();
 <script id="gma-topbar-interactions">
 (()=>{
   const header=document.getElementById('siteHeader'), searchButton=document.getElementById('topSearchToggle');
-  const menuButton=document.getElementById('topMenuToggle'), search=document.getElementById('searchInput');
+  const filterButton=document.getElementById('topMenuToggle'), search=document.getElementById('searchInput');
   const updateHeight=()=>document.documentElement.style.setProperty('--topbar-h',header.getBoundingClientRect().height+'px');
-  new ResizeObserver(updateHeight).observe(header);
+  if(typeof ResizeObserver!=='undefined')new ResizeObserver(updateHeight).observe(header);
+  window.addEventListener('resize',updateHeight);
   const showSearch=(open,focus=false)=>{
     header.classList.toggle('search-open',open);searchButton.setAttribute('aria-expanded',String(open));
     searchButton.setAttribute('aria-label',open?'Ocultar buscador':'Mostrar buscador');
     updateHeight();if(open&&focus)search.focus({preventScroll:true});
   };
-  const showMenu=open=>{
-    header.classList.toggle('menu-open',open);menuButton.setAttribute('aria-expanded',String(open));
-    menuButton.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');updateHeight();
-  };
-  searchButton.addEventListener('click',()=>{showMenu(false);showSearch(!header.classList.contains('search-open'),true)});
-  menuButton.addEventListener('click',()=>{showSearch(false);showMenu(!header.classList.contains('menu-open'))});
+  searchButton.addEventListener('click',()=>showSearch(!header.classList.contains('search-open'),true));
+  filterButton.addEventListener('click',()=>document.getElementById('navIndex').click());
   search.addEventListener('focus',()=>showSearch(true));
-  document.getElementById('topSelection').addEventListener('click',()=>document.getElementById('navSelection').click());
-  document.getElementById('topMenuFamilies').addEventListener('click',()=>{showMenu(false);document.getElementById('navIndex').click()});
-  document.querySelectorAll('#topMenu a').forEach(link=>link.addEventListener('click',()=>showMenu(false)));
+  const dialog=document.getElementById('accountDialog'),backdrop=document.getElementById('accountBackdrop');
+  const closeAccount=()=>{
+    dialog.hidden=true;backdrop.hidden=true;document.getElementById('accountForm').reset();
+    document.getElementById('topSelection').focus();
+  };
+  document.getElementById('topSelection').addEventListener('click',()=>{
+    backdrop.hidden=false;dialog.hidden=false;document.getElementById('accountStatus').textContent='';
+    document.getElementById('accountUsername').focus();
+  });
+  document.getElementById('accountClose').addEventListener('click',closeAccount);
+  backdrop.addEventListener('click',closeAccount);
+  document.getElementById('accountForm').addEventListener('submit',event=>{
+    event.preventDefault();document.getElementById('accountPassword').value='';
+    document.getElementById('accountStatus').textContent='El acceso de clientes estará disponible próximamente.';
+  });
   document.addEventListener('keydown',event=>{
-    if(event.key==='Escape'&&header.classList.contains('menu-open')){showMenu(false);menuButton.focus()}
-    else if(event.key==='Escape'&&header.classList.contains('search-open')&&!search.value){showSearch(false);searchButton.focus()}
+    if(event.key==='Escape'&&!dialog.hidden){closeAccount();return}
+    if(event.key==='Escape'&&header.classList.contains('search-open')&&!search.value){showSearch(false);searchButton.focus()}
   });
   updateHeight();
 })();
