@@ -186,28 +186,10 @@
   .discovery-new .discovery-scroll{grid-template-rows:1fr!important;}
 
   /* ===================================================================
-     6. Países y navegación
-     =================================================================== */
-
-  .country-section{padding:13px 0 14px;background:var(--paper);border-bottom:1px solid var(--line);}
-  .country-head{padding:0 16px 9px;display:flex;align-items:end;justify-content:space-between;gap:12px;}
-  .country-head h2{margin:1px 0 0;font:800 17px/1.15 'Geist',sans-serif;letter-spacing:-.01em;color:var(--ink);}
-  .country-scroll{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:8px;padding:0 16px;overflow:visible;}
-  .country-chip{min-width:0;height:52px;border:1px solid rgba(28,35,33,.10);background:#fff;border-radius:15px;padding:7px 10px;display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-rows:auto auto;column-gap:8px;align-items:center;text-align:left;color:var(--ink);box-shadow:0 2px 7px rgba(28,35,33,.045);cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;transition:transform .11s ease,background .15s ease,border-color .15s ease,box-shadow .15s ease;}
-  .country-chip:hover{border-color:rgba(28,35,33,.16);box-shadow:0 3px 10px rgba(28,35,33,.065);}
-  .country-chip:active{transform:scale(.975);}
-  .country-chip.active{background:var(--teal-tint);border:2px solid var(--teal);padding:6px 9px;box-shadow:0 3px 12px rgba(78,6,29,.16);}
-  .country-flag{grid-row:1/3;font-size:21px;line-height:1;}
-  .country-name{font-size:11.5px;line-height:1.12;font-weight:750;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .country-num{font:500 9px/1.1 'Geist',monospace;color:var(--ink-soft);white-space:nowrap;}
-  .country-chip.active .country-name{color:var(--teal-dark);}
-  .country-chip.active .country-num{color:var(--teal-dark);}
-
-  /* ===================================================================
      7. Grupos, familias y categorías
      =================================================================== */
 
-  .dept-header{position:sticky;top:var(--controls-h);z-index:15;background:#F1F1F1;padding:13px 16px;margin-top:14px;font-family:'Geist',sans-serif;font-size:15px;font-weight:700;letter-spacing:0;text-transform:none;color:var(--ink);display:flex;align-items:center;gap:12px;width:100%;border:none;cursor:pointer;text-align:left;border-bottom:1px solid var(--line);}
+  .dept-header{position:sticky;top:calc(var(--topbar-h,65px) + var(--controls-h));z-index:15;background:#F1F1F1;padding:13px 16px;margin-top:14px;font-family:'Geist',sans-serif;font-size:15px;font-weight:700;letter-spacing:0;text-transform:none;color:var(--ink);display:flex;align-items:center;gap:12px;width:100%;border:none;cursor:pointer;text-align:left;border-bottom:1px solid var(--line);}
   .dept-icon{width:34px;height:34px;flex:none;display:flex;align-items:center;justify-content:center;border-radius:9px;}
   .dept-icon svg{width:19px;height:19px;display:block;}
   .dept-header:first-of-type{margin-top:6px;}
@@ -485,7 +467,7 @@
     .hero p{font-size:14px;}
     .controls{padding:14px 24px 12px;border-radius:0 0 18px 18px;max-width:1180px;margin-inline:auto;}
     .groups{padding-right:24px;padding-bottom:12px;padding-left:24px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:start;}
-    .dept-header{margin:12px -24px 0;padding-left:24px;top:var(--controls-h);grid-column:1/-1;}
+    .dept-header{margin:12px -24px 0;padding-left:24px;top:calc(var(--topbar-h,65px) + var(--controls-h));grid-column:1/-1;}
     .group{align-self:start;margin:0;}
     .fav-bar{left:50%;right:auto;transform:translateX(-50%);}
     .fav-bar.pulse{animation:none;}
@@ -517,10 +499,6 @@
   @media (min-width:900px) {
     .session-bar{max-width:1160px;margin-left:auto;margin-right:auto;}
     .session-title{font-size:13.5px;}
-    .country-section{padding:15px 0;}
-    .country-scroll{grid-template-columns:repeat(auto-fit,minmax(128px,1fr));gap:10px;}
-    .country-chip{height:54px;padding:8px 12px;}
-    .country-name{font-size:12px;}
   }
 
   /* ===================================================================
@@ -599,7 +577,7 @@
     .session-meta{font-size:8.5px;margin-top:2px;gap:6px;}
     .carousel-head h2{font-size:15px;}
     .group-header{gap:8px;touch-action:manipulation;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;padding:13px 13px;min-height:54px;}
-    .dept-header{top:var(--controls-h);padding:14px 12px;font-size:15px;margin-top:5px;}
+    .dept-header{top:calc(var(--topbar-h,65px) + var(--controls-h));padding:14px 12px;font-size:15px;margin-top:5px;}
     .fav-bar{display:none!important;}
     .nav-btn{gap:1px;font-size:9.5px;border-radius:15px;}
     .backtop{bottom:77px!important;right:11px;width:38px;height:38px;transition:opacity .18s ease,transform .18s ease;}
@@ -612,7 +590,7 @@
     .group.open{border-color:rgba(78,6,29,.28);box-shadow:0 1px 3px rgba(78,6,29,.06),0 9px 24px rgba(78,6,29,.09);}
     .group.open .group-header{background:linear-gradient(180deg,#fff,color-mix(in srgb,var(--fam,var(--teal)) 15%,#fff));border-bottom:1px solid color-mix(in srgb,var(--fam,var(--teal)) 32%,var(--line));}
     :root{--nav-h:60px;--radius-lg:18px;--radius-md:14px;--controls-h:132px;}
-    .group{scroll-margin-top:calc(var(--controls-h) + 7px);margin:8px 0;border-radius:18px;box-shadow:0 1px 2px rgba(15,23,20,.035),0 6px 18px rgba(15,23,20,.065);}
+    .group{scroll-margin-top:calc(var(--topbar-h,65px) + var(--controls-h) + 7px);margin:8px 0;border-radius:18px;box-shadow:0 1px 2px rgba(15,23,20,.035),0 6px 18px rgba(15,23,20,.065);}
     .group-title-wrap{min-width:0;}
     .group-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
     .item-photo-wrap{align-self:center;}
@@ -686,14 +664,6 @@
     body.visual-view .item-name{font-size:11.5px;}
     .visual-view .ref{font-size:8.5px;}
     .visual-view .price{font-size:12.5px;}
-    .country-section{padding:10px 0 11px;}
-    .country-head{padding:0 14px 8px;}
-    .country-head h2{font-size:16px;}
-    .country-scroll{grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:7px;padding:0 14px;}
-    .country-chip{height:50px;border-radius:14px;padding:6px 9px;column-gap:7px;}
-    .country-flag{font-size:19px;}
-    .country-name{font-size:11px;}
-    .country-num{font-size:8.5px;}
   }
 
   /* --- @media (max-width:350px) --- */
@@ -703,7 +673,6 @@
     .price-case{font-size:8.2px;}
     .discovery-scroll{grid-auto-columns:108px;}
     .view-btn span{display:none;}
-    .country-scroll{grid-template-columns:repeat(2,minmax(0,1fr));}
   }
 
   /* ===================================================================
@@ -720,7 +689,6 @@
     *{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important;animation:none!important;transition:none!important;}
     *::before{scroll-behavior:auto!important;animation:none!important;transition:none!important;}
     *::after{scroll-behavior:auto!important;animation:none!important;transition:none!important;}
-    .country-chip{transition:none;}
   }
 
 /* Cabecera de marca: logo, búsqueda y navegación. */
@@ -756,7 +724,6 @@
 .gma-account-dialog form button{border:0;border-radius:9px;background:#4E061D;color:white;padding:12px;font-weight:650;cursor:pointer}
 .gma-account-status{min-height:1.4em}
 
-.country-section{scroll-margin-top:calc(var(--topbar-h,65px) + 8px)}
 body{font-family:'Geist',sans-serif;background:var(--paper)}
 h1,h2,h3,.sheet-head h2{font-family:'Merriweather',serif;letter-spacing:-.02em}
 .bottom-nav{background:rgba(255,255,255,.97);border-color:rgba(78,6,29,.13)}
@@ -813,13 +780,6 @@ h1,h2,h3,.sheet-head h2{font-family:'Merriweather',serif;letter-spacing:-.02em}
     <div class="discovery-head"><div><span class="discovery-kicker">Sugerencias</span><h2>Más vendidas</h2></div><span class="discovery-count">20 sugerencias</span></div>
     <div class="discovery-scroll" id="bestDiscoveryScroll"></div>
   </section>
-  <section class="country-section" id="countryDiscovery" aria-label="Filtrar por país de origen">
-    <div class="country-head">
-      <div><span class="discovery-kicker">Origen</span><h2>Explorar por país</h2></div>
-    </div>
-    <div class="country-scroll" id="countryCarousel" role="list" aria-label="Países de origen"></div>
-  </section>
-
   <div class="controls" id="controls">
     <div class="quick-row">
       <div class="active-filter-bar" id="activeFilterBar" aria-label="Filtros activos"></div>
@@ -1547,6 +1507,13 @@ const lightboxBackdrop = document.getElementById('lightboxBackdrop');
 // so closing one must not unlock scroll while the other is still open.
 let scrollLockCount = 0;
 let savedScrollY = 0;
+function scrollImmediately(y){
+  const root=document.documentElement;
+  const previous=root.style.scrollBehavior;
+  root.style.scrollBehavior='auto';
+  window.scrollTo({top:Math.max(0,y),behavior:'auto'});
+  root.style.scrollBehavior=previous;
+}
 function lockScroll(){
   if(scrollLockCount === 0){
     savedScrollY = window.scrollY;
@@ -1562,7 +1529,7 @@ function unlockScroll(){
     document.body.style.position = '';
     document.body.style.top = '';
     document.body.style.width = '';
-    window.scrollTo(0, savedScrollY);
+    scrollImmediately(savedScrollY);
   }
 }
 
@@ -1903,6 +1870,7 @@ function clearAllFilters(){
   document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
   resetOpenState();
   render();
+  scrollToResults();
 }
 document.getElementById('emptyReset').addEventListener('click', clearAllFilters);
 
@@ -1910,12 +1878,14 @@ let scrollToResultsFrame = 0;
 function scrollToResults(){
   cancelAnimationFrame(scrollToResultsFrame);
   scrollToResultsFrame = requestAnimationFrame(() => {
+    // Place the first catalogue section directly below the fixed header and
+    // view controls, including when the search panel changes header height.
+    const headerH=document.getElementById('siteHeader')?.getBoundingClientRect().height||0;
     const controlsH = controls.offsetHeight;
     const rect = groupsEl.getBoundingClientRect();
-    const target = window.scrollY + rect.top - controlsH - 4;
+    const target = window.scrollY + rect.top - headerH - controlsH - 4;
     if(Math.abs(target - window.scrollY) > 4){
-      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      window.scrollTo({top: Math.max(0, target), behavior: reduceMotion ? 'auto' : 'smooth'});
+      scrollImmediately(target);
     }
   });
 }
@@ -2132,6 +2102,7 @@ document.getElementById('filterReset').addEventListener('click', () => {
   closeFilterPanel();
   resetOpenState();
   render();
+  scrollToResults();
 });
 
 
@@ -2646,7 +2617,7 @@ render();
     if(k==='country'){countryFilter='';regionFilter='';}
     if(k==='region')regionFilter='';
     if(k==='search'){searchTerm='';const s=document.getElementById('searchInput');if(s)s.value='';document.getElementById('clearSearch')?.classList.remove('show');}
-    updateFilterBadge();render();renderActiveFilters();
+    updateFilterBadge();render();renderActiveFilters();scrollToResults();
   }
   activeBar?.addEventListener('click',e=>{const b=e.target.closest('[data-clear]');if(b)clearOne(b.dataset.clear);});
 
@@ -2753,55 +2724,6 @@ render();
 })();
 </script>
 
-<script id="country-filter-js">
-(()=>{
-  const carousel=document.getElementById('countryCarousel');
-  if(!carousel) return;
-  const countries=[
-    {value:'',label:'Todos',flag:'🌍'},
-    {value:'Nacional',label:'España',flag:'🇪🇸'},
-    {value:'Italiano',label:'Italia',flag:'🇮🇹'},
-    {value:'Francés',label:'Francia',flag:'🇫🇷'},
-    {value:'Bélgica',label:'Bélgica',flag:'🇧🇪'},
-    {value:'Noruega',label:'Noruega',flag:'🇳🇴'}
-  ];
-  function countryCounts(){
-    const counts={};let total=0;
-    DATA.forEach(g=>g.items.forEach(it=>{total++;if(it.country)counts[it.country]=(counts[it.country]||0)+1;}));
-    counts.__total=total;return counts;
-  }
-  function paintCountries(){
-    const counts=countryCounts();
-    const visible=countries.filter(c=>!c.value || (counts[c.value]||0)>0);
-    carousel.innerHTML=visible.map(c=>{
-      const n=c.value?(counts[c.value]||0):counts.__total;
-      const active=(countryFilter||'')===c.value;
-      return `<button class="country-chip${active?' active':''}" type="button" data-country-quick="${c.value}" role="listitem" aria-pressed="${active}"><span class="country-flag" aria-hidden="true">${c.flag}</span><span class="country-name">${c.label}</span><span class="country-num">${n} referencias</span></button>`;
-    }).join('');
-  }
-  function applyQuickCountry(value){
-    const next=(value && countryFilter===value)?'':value;
-    countryFilter=next;
-    // A country change invalidates a region filter unless Spain remains active.
-    if(countryFilter!=='Nacional') regionFilter='';
-    stagedCountry=countryFilter; stagedRegion=regionFilter;
-    updateFilterBadge();
-    if(typeof syncFilterUI==='function') syncFilterUI();
-    render();
-    paintCountries();
-  }
-  carousel.addEventListener('click',e=>{
-    const btn=e.target.closest('[data-country-quick]');if(!btn)return;
-    applyQuickCountry(btn.dataset.countryQuick||'');
-  });
-
-  // Keep the carousel synchronized when origin is changed from the full filter sheet
-  // or cleared through the active-filter chips.
-  const priorRender=render;
-  render=function(){priorRender();paintCountries();};
-  paintCountries();
-})();
-</script>
 
 <script id="gma-topbar-interactions">
 (()=>{
