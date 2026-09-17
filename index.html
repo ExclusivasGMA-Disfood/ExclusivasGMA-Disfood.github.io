@@ -347,13 +347,14 @@
   .product-gallery-thumb{flex:0 0 58px;width:58px;height:58px;padding:3px;border:1px solid var(--line);border-radius:10px;background:#fff;cursor:pointer;}
   .product-gallery-thumb.active{border-color:var(--teal);box-shadow:0 0 0 2px rgba(28,111,101,.14);}
   .product-gallery-thumb img{width:100%;height:100%;object-fit:contain;display:block;border-radius:7px;}
-  /* Ref. 3436: dos vistas de la misma fotografía; el original permanece intacto. */
-  .item-photo:has(.product-crop-3436),.discovery-photo:has(.product-crop-3436),.product-visual:has(.product-crop-3436),.pilot-thumb-frame{position:relative;overflow:hidden;}
-  .item-photo img.product-crop-3436,.discovery-photo img.product-crop-3436,.product-visual img.product-crop-3436,.pilot-thumb-frame img.product-crop-3436{position:absolute!important;left:-12%!important;top:-42%!important;width:240%!important;height:240%!important;max-width:none!important;min-width:0!important;object-fit:fill!important;padding:0!important;border-radius:0!important;}
+  /* Vistas de producto e información para fotos técnicas: conserva intacta la fotografía. */
+  .item-photo:has(.product-photo-crop),.discovery-photo:has(.product-photo-crop),.product-visual:has(.product-photo-crop),.pilot-thumb-frame{position:relative;overflow:hidden;}
+  .item-photo img.product-photo-crop,.discovery-photo img.product-photo-crop,.product-visual img.product-photo-crop,.pilot-thumb-frame img.product-photo-crop{position:absolute!important;left:-12%!important;top:-42%!important;width:240%!important;height:240%!important;max-width:none!important;min-width:0!important;object-fit:fill!important;padding:0!important;border-radius:0!important;}
   .product-gallery-thumb.pilot-gallery-thumb{width:86px;height:auto;flex-basis:86px;padding:5px 4px;}
   .pilot-thumb-frame{display:block;width:58px;height:58px;margin:auto;border-radius:7px;}
   .pilot-thumb-frame img{width:100%;height:100%;object-fit:contain;display:block;}
   .pilot-thumb-label{display:block;padding:4px 0 1px;font-size:10px;font-weight:650;line-height:1.15;text-align:center;color:var(--ink-soft);}
+  .supplier-source{display:inline-block;margin:-6px 0 12px;color:var(--teal-dark);font-size:11px;font-weight:650;text-decoration:underline;text-underline-offset:3px;}
   .product-nav-btn:active{transform:scale(.96);background:#ededf1;}
   .product-description{margin:11px 0 2px;padding:12px 13px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 2px 8px rgba(0,0,0,.025);}
   .product-description b{display:block;font-size:12px;margin-bottom:4px;}
@@ -1300,12 +1301,18 @@ function imageUrlsFor(item){
   const value = IMAGE_MANIFEST[ref];
   return Array.isArray(value) ? value.filter(Boolean) : (value ? [value] : []);
 }
-function imageUrlFor(item){ return imageUrlsFor(item)[0] || ''; }
+const SUPPLIER_PRODUCT_PHOTOS = Object.freeze({
+  '3451':'https://trearchi.es/wp-content/uploads/2020/05/PR.-FIOCCHETTI.jpg'
+});
+function imageUrlFor(item){ return SUPPLIER_PRODUCT_PHOTOS[productRefKey(item)] || imageUrlsFor(item)[0] || ''; }
 // La primera vista de esta referencia encuadra el producto dentro de la foto original.
 // La segunda muestra la ficha original completa; el manifiesto sigue siendo la fuente única.
-function productPhotoCropClass(item){ return productRefKey(item)==='3436' ? 'product-crop-3436' : ''; }
+function productPhotoCropClass(item){ return productRefKey(item)==='3436' ? 'product-photo-crop' : ''; }
 function productGalleryViews(item){
   const urls=imageUrlsFor(item);
+  if(productRefKey(item)==='3451' && urls.length===1)
+    return [{url:SUPPLIER_PRODUCT_PHOTOS['3451'],crop:false,label:'Producto'},
+            {url:urls[0],crop:false,label:'Información'}];
   if(productPhotoCropClass(item) && urls.length===1)
     return [{url:urls[0],crop:true,label:'Producto'},{url:urls[0],crop:false,label:'Información'}];
   return urls.map((url,i)=>({url,crop:false,label:`Foto ${i+1}`}));
@@ -1730,12 +1737,13 @@ function renderProductDetail(id){
   const imageViews = productGalleryViews(item);
   const safeName = item.n.replace(/"/g,'&quot;');
   const visual = imageViews.length
-    ? `<div class="product-gallery"><div class="product-visual"><img class="${imageViews[0].crop?'product-crop-3436':''}" src="${imageViews[0].url}" alt="${safeName}" loading="eager" decoding="async"><button class="product-nav-arrow prev tap" id="productPrevArrow" type="button" aria-label="Producto anterior"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></button><button class="product-nav-arrow next tap" id="productNextArrow" type="button" aria-label="Producto siguiente"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>${imageViews.length>1?`<div class="product-gallery-thumbs">${imageViews.map((view,i)=>`<button class="product-gallery-thumb ${imageViews[0].crop?'pilot-gallery-thumb':''} ${i===0?'active':''}" data-gallery-index="${i}" aria-label="Ver ${view.label}">${imageViews[0].crop?`<span class="pilot-thumb-frame"><img class="${view.crop?'product-crop-3436':''}" src="${view.url}" alt="" loading="lazy" decoding="async"></span><span class="pilot-thumb-label">${view.label}</span>`:`<img src="${view.url}" alt="" loading="lazy" decoding="async">`}</button>`).join('')}</div>`:''}</div>`
+    ? `<div class="product-gallery"><div class="product-visual"><img class="${imageViews[0].crop?'product-photo-crop':''}" src="${imageViews[0].url}" alt="${safeName}" loading="eager" decoding="async"><button class="product-nav-arrow prev tap" id="productPrevArrow" type="button" aria-label="Producto anterior"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></button><button class="product-nav-arrow next tap" id="productNextArrow" type="button" aria-label="Producto siguiente"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>${imageViews.length>1?`<div class="product-gallery-thumbs">${imageViews.map((view,i)=>`<button class="product-gallery-thumb ${imageViews[0].label==='Producto'?'pilot-gallery-thumb':''} ${i===0?'active':''}" data-gallery-index="${i}" aria-label="Ver ${view.label}">${imageViews[0].label==='Producto'?`<span class="pilot-thumb-frame"><img class="${view.crop?'product-photo-crop':''}" src="${view.url}" alt="" loading="lazy" decoding="async"></span><span class="pilot-thumb-label">${view.label}</span>`:`<img src="${view.url}" alt="" loading="lazy" decoding="async">`}</button>`).join('')}</div>`:''}</div>`
     : `<div class="product-visual placeholder" style="--fam:${group.color}"><svg viewBox="0 0 24 24" fill="none"><path d="M3 7a2 2 0 0 1 2-2h2l1.5-2h7L17 5h2a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="13" r="3.2" stroke="currentColor" stroke-width="1.5"/></svg>${item.origin?`<span class="fam-origin">${item.origin}</span>`:''}<button class="product-nav-arrow prev tap" id="productPrevArrow" type="button" aria-label="Producto anterior"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></button><button class="product-nav-arrow next tap" id="productNextArrow" type="button" aria-label="Producto siguiente"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>`;
   productDetail.innerHTML = `
     ${visual}
     <h3 class="product-detail-title">${item.n}</h3>
     <div class="product-detail-ref">Referencia ${item.ref}</div>
+    ${productRefKey(item)==='3451'?'<a class="supplier-source" href="https://trearchi.es/producto/fiocchetti-gorgonzola/" target="_blank" rel="noopener noreferrer">Ficha del fabricante TRE ARCHI ↗</a>':''}
     ${(()=>{const c=productDescription(group,item);return `<div class="product-description"><b>Sobre el producto</b><p>${c.desc}</p><p class="use">${c.use}</p></div>`})()}
     <div class="product-facts">
       ${productFact('Familia', group.title)}
@@ -1786,7 +1794,7 @@ function renderProductDetail(id){
   const thumbs = productDetail.querySelectorAll('.product-gallery-thumb');
   thumbs.forEach(btn => btn.onclick = () => {
     const index = Number(btn.dataset.galleryIndex || 0);
-    if(img && imageViews[index]) { img.src = imageViews[index].url; img.classList.toggle('product-crop-3436', !!imageViews[index].crop); }
+    if(img && imageViews[index]) { img.src = imageViews[index].url; img.classList.toggle('product-photo-crop', !!imageViews[index].crop); }
     thumbs.forEach(x => x.classList.toggle('active', x === btn));
   });
   if(img) img.onclick = () => openLightbox(img.src, item.n);
