@@ -7,6 +7,10 @@ const allowed = new Set(Object.keys(refs));
 // completo a las antiguas tomas de proveedor. Evitamos que una reconstrucción
 // futura del manifiesto vuelva a añadir imágenes secundarias obsoletas.
 const singleEditorialPhotoRefs = new Set(['6740', '6742', '6743', '6744', '6745', '6750']);
+const preferredProductPhotos = new Map([
+  ['5722', '5722-fondo-blanco-selec-mardis.jpg'],
+  ['6607', '6607-oficial-divella.jpg']
+]);
 const groups = {};
 for (const name of fs.readdirSync(dir).sort()) {
   const ext = path.extname(name).toLowerCase();
@@ -16,6 +20,7 @@ for (const name of fs.readdirSync(dir).sort()) {
   if (!match) continue;
   const ref = match[1];
   if (!allowed.has(ref)) continue;
+  if (preferredProductPhotos.has(ref) && name !== preferredProductPhotos.get(ref)) continue;
   const suffix = match[2];
   if (singleEditorialPhotoRefs.has(ref) && suffix) continue;
   const numbered = suffix.match(/^-(\d+)$/);
