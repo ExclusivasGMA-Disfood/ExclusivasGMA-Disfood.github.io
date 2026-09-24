@@ -21,7 +21,7 @@ for (const name of fs.readdirSync(dir).sort()) {
   const numbered = suffix.match(/^-(\d+)$/);
   const order = suffix === '-producto-tre-archi'
     ? 0
-    : suffix === '-informacion-tre-archi'
+    : suffix === '-informacion-tre-archi' || suffix === '-informacion-pasta'
       ? 100
       : numbered
         ? 10 + Number(numbered[1])

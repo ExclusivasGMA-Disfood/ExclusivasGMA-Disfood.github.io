@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <style>.brand{font:700 27px Arial,sans-serif;letter-spacing:4px}.ref{font:600 24px Arial,sans-serif}.title{font:700 46px Arial,sans-serif}.label{font:700 19px Arial,sans-serif;letter-spacing:1px;fill:#65766c}.value{font:700 34px Arial,sans-serif;fill:#183f30}.ingredients{font:400 23px Arial,sans-serif;fill:#26352f}.note{font:400 18px Arial,sans-serif;fill:#68746d}</style>
+  <rect width="1200" height="1200" fill="#f7f5ef"/><rect x="44" y="44" width="1112" height="1112" rx="34" fill="#fff" stroke="#dfe6df" stroke-width="3"/>
+  <rect x="44" y="44" width="1112" height="122" rx="34" fill="#294637"/><rect x="44" y="120" width="1112" height="46" fill="#294637"/>
+  <text x="92" y="120" class="brand" fill="#fff">GEA · INFORMACIÓN</text><text x="1108" y="120" text-anchor="end" class="ref" fill="#d9ff55">REF. 2177</text>
+  <text x="92" y="230" class="title" fill="#11110f"><tspan x="92" dy="0">Tortellacci Neri al Salmone</tspan></text><line x1="92" y1="348" x2="1108" y2="348" stroke="#dfe6df" stroke-width="3"/>
+  <g transform="translate(92 395)"><text class="label">Formato catálogo</text><text class="value" y="44" style="font-size:34px"><tspan x="0" dy="0">3 kg</tspan></text></g><g transform="translate(612 395)"><text class="label">Familia</text><text class="value" y="44" style="font-size:34px"><tspan x="0" dy="0">Pasta Rellena (IQF)</tspan></text></g><g transform="translate(92 507)"><text class="label">Tipo</text><text class="value" y="44" style="font-size:27px"><tspan x="0" dy="0">Tortellini, Cappelletti y</tspan><tspan x="0" dy="33">Formas Rellenas</tspan></text></g>
+  <line x1="92" y1="860" x2="1108" y2="860" stroke="#dfe6df" stroke-width="3"/>
+  <text x="92" y="910" class="label">INFORMACIÓN TÉCNICA PENDIENTE</text>
+  <text x="92" y="975" class="ingredients">Datos del fabricante pendientes de verificar.</text>
+  <text x="92" y="1090" class="note"><tspan x="92" dy="0">Consultar el envase o la ficha técnica del fabricante para ingredientes, alérgenos, peso y cocción.</tspan></text>
+  <text x="1108" y="1130" text-anchor="end" class="note">EXCLUSIVAS GMA · CATÁLOGO PROFESIONAL</text>
+  </svg>

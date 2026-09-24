@@ -1501,15 +1501,9 @@ function imageUrlsFor(item){
   if(!version) return urls;
   return urls.map(url=>`${url}${url.includes('?') ? '&' : '?'}v=${version}`);
 }
-const SUPPLIER_PRODUCT_INFO = Object.freeze({
-  '3451':{
-    title:'Datos técnicos · TRE ARCHI',
-    facts:[['Relleno','47%'],['Peso medio','6 g/unidad'],['Rendimiento','35%'],['Cocción','5 min aprox.'],['Ración orientativa','120 g · 20 unidades'],['Dimensiones','21 × 36 mm'],['Formato fabricante','3 kg']],
-    ingredients:'Sémola de trigo duro, agua y huevo fresco pasteurizado. Relleno: queso Gorgonzola 45%, ricotta, pan rallado, queso Grana Padano, sal y pimienta negra.'
-  }
-});
+const SUPPLIER_PRODUCT_INFO = Object.freeze({});
 function isTreArchiProductPhoto(url){ return /-producto-tre-archi\.[a-z0-9]+$/i.test(url || ''); }
-function isTreArchiInfoCard(url){ return /-informacion-tre-archi\.[a-z0-9]+$/i.test(url || ''); }
+function isProductInfoCard(url){ return /-informacion-(?:tre-archi|pasta)\.[a-z0-9]+$/i.test(url || ''); }
 function imageUrlFor(item){
   const urls=imageUrlsFor(item);
   return urls.find(isTreArchiProductPhoto) || urls[0] || '';
@@ -1525,7 +1519,7 @@ function productGalleryViews(item){
   const ref=productRefKey(item);
   const urls=imageUrlsFor(item);
   const treProduct=urls.find(isTreArchiProductPhoto);
-  const explicitInfo=urls.find(isTreArchiInfoCard);
+  const explicitInfo=urls.find(isProductInfoCard);
   if(treProduct || explicitInfo){
     const product=treProduct || urls.find(url=>url!==explicitInfo);
     const info=explicitInfo || urls.find(url=>url!==product);
@@ -1536,15 +1530,11 @@ function productGalleryViews(item){
     urls.filter(url=>!used.has(url)).forEach((url,i)=>views.push({url,crop:false,label:`Foto ${i+3}`}));
     return views;
   }
-  if(ref==='1605' && urls.length>1)
-    return [{url:urls[0],crop:false,label:'Producto'},
-            {url:urls[1],crop:false,label:'Información'},
-            ...urls.slice(2).map((url,i)=>({url,crop:false,label:`Foto ${i+3}`}))];
   if(productPhotoCropClass(item) && urls.length===1)
     return [{url:urls[0],crop:true,label:'Producto'},{url:urls[0],crop:false,label:'Información'}];
   return urls.map((url,i)=>({url,crop:false,label:`Foto ${i+1}`}));
 }
-window.GMA_IMAGE_MANIFEST_READY = fetch('data/images-manifest.json?v=20260922-tre-archi', { cache:'no-store' })
+window.GMA_IMAGE_MANIFEST_READY = fetch('data/images-manifest.json?v=20260924-pasta', { cache:'no-store' })
   .then(response => {
     if(!response.ok) throw new Error(`No se pudo cargar images-manifest.json (${response.status})`);
     return response.json();
