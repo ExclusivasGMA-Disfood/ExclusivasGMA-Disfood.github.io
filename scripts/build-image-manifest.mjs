@@ -19,9 +19,9 @@ for (const name of fs.readdirSync(dir).sort()) {
   const suffix = match[2];
   if (singleEditorialPhotoRefs.has(ref) && suffix) continue;
   const numbered = suffix.match(/^-(\d+)$/);
-  const order = suffix === '-producto-tre-archi'
+  const order = suffix === '-producto-tre-archi' || suffix === '-producto-selec-mardis'
     ? 0
-    : suffix === '-informacion-tre-archi' || suffix === '-informacion-pasta'
+    : suffix === '-informacion-tre-archi' || suffix === '-informacion-pasta' || suffix === '-informacion-fabricante'
       ? 100
       : numbered
         ? 10 + Number(numbered[1])

@@ -1479,9 +1479,13 @@ function findItem(id){ const [gi, ii] = id.split('-').map(Number); return DATA[g
 // data/images-manifest.json usando SIEMPRE la referencia exacta como texto.
 const IMAGE_MANIFEST = Object.create(null);
 const IMAGE_ASSET_VERSIONS = Object.freeze({
+  '2409':'20260924-selec-mardis',
+  '2665':'20260924-selec-mardis',
+  '2762':'20260924-selec-mardis',
   '2898':'20260924-fondo-blanco',
   '3881':'20260924-fondo-blanco',
   '5627':'20260924-fondo-blanco',
+  '6636':'20260924-selec-mardis',
   '6684':'20260923-fondo-blanco',
   '6705':'20260923-fondo-blanco',
   '6740':'20260923-fondo-blanco',
@@ -1505,8 +1509,8 @@ function imageUrlsFor(item){
   return urls.map(url=>`${url}${url.includes('?') ? '&' : '?'}v=${version}`);
 }
 const SUPPLIER_PRODUCT_INFO = Object.freeze({});
-function isTreArchiProductPhoto(url){ return /-producto-tre-archi\.[a-z0-9]+$/i.test(url || ''); }
-function isProductInfoCard(url){ return /-informacion-(?:tre-archi|pasta)\.[a-z0-9]+$/i.test(url || ''); }
+function isTreArchiProductPhoto(url){ return /-producto-tre-archi\.[a-z0-9]+(?:[?#].*)?$/i.test(url || ''); }
+function isProductInfoCard(url){ return /-informacion-(?:tre-archi|pasta|fabricante)\.[a-z0-9]+(?:[?#].*)?$/i.test(url || ''); }
 function imageUrlFor(item){
   const urls=imageUrlsFor(item);
   return urls.find(isTreArchiProductPhoto) || urls[0] || '';

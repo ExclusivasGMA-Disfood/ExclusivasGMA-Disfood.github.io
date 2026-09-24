@@ -319,7 +319,7 @@
   "2375": "images/products/2375.jpg",
   "2409": [
     "images/products/2409.jpg",
-    "images/products/2409-2.webp"
+    "images/products/2409-informacion-fabricante.webp"
   ],
   "2422": "images/products/2422.jpg",
   "2423": "images/products/2423.jpg",
@@ -333,10 +333,16 @@
   "2522": "images/products/2522.jpg",
   "2530": "images/products/2530.jpg",
   "2631": "images/products/2631.jpg",
-  "2665": "images/products/2665.jpg",
+  "2665": [
+    "images/products/2665-producto-selec-mardis.jpg",
+    "images/products/2665-informacion-fabricante.jpg"
+  ],
   "2679": "images/products/2679.jpg",
   "2752": "images/products/2752.jpg",
-  "2762": "images/products/2762.jpg",
+  "2762": [
+    "images/products/2762-producto-selec-mardis.jpg",
+    "images/products/2762-informacion-fabricante.jpg"
+  ],
   "2799": "images/products/2799.jpg",
   "2898": [
     "images/products/2898.jpg",
