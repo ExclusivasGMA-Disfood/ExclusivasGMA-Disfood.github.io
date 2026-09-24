@@ -23,6 +23,9 @@ jobs:
       - name: Rebuild manifest
         run: node scripts/build-image-manifest.mjs
 
+      - name: Check catalog before committing manifest
+        run: node scripts/check-catalog.mjs
+
       - name: Commit manifest if changed
         run: |
           if git diff --quiet -- data/images-manifest.json; then

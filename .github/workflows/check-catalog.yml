@@ -1,0 +1,22 @@
+name: Comprobar catálogo
+
+on:
+  push:
+    paths:
+      - 'index.html'
+      - 'data/**'
+      - 'images/products/**'
+      - 'scripts/**'
+      - '.github/workflows/check-catalog.yml'
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node scripts/build-product-specs.mjs --check
+      - run: node scripts/check-catalog.mjs
