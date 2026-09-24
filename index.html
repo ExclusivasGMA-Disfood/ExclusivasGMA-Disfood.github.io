@@ -286,6 +286,7 @@
   .image-error{display:flex!important;align-items:center;justify-content:center;color:var(--ink-soft);font-size:10px;text-align:center;padding:8px;background:var(--paper-dim)!important;position:relative;}
   .sheet-item .item-photo{box-shadow:none;background:#fff;border:1px solid var(--line);overflow:hidden;width:52px!important;height:52px!important;border-radius:9px!important;aspect-ratio:1 / 1!important;min-width:52px!important;max-width:52px!important;flex:0 0 52px!important;padding:0!important;}
   .item-photo img{width:100%;height:100%;object-fit:cover;display:block;padding:0;border-radius:inherit;background:#fff;transition:opacity .16s ease;}
+  .item-photo img[src*="2665-producto-selec-mardis"]{object-fit:contain;padding:4px;}
   .sheet-item .item-photo img{display:block;border-radius:inherit;background:#fff;width:100%!important;height:100%!important;object-fit:contain!important;padding:2px!important;}
   .visual-view .item-photo{width:100%;height:auto;aspect-ratio:1 / 1;border-radius:10px;}
   .image-error img{display:none!important;}
@@ -1482,6 +1483,8 @@ const IMAGE_MANIFEST = Object.create(null);
 const IMAGE_ASSET_VERSIONS = Object.freeze({
   '2409':'20260924-selec-mardis',
   '2665':'20260924-selec-mardis',
+  '5722':'20260924-fondo-blanco',
+  '6607':'20260924-oficial-divella',
   '2762':'20260924-selec-mardis',
   '2898':'20260924-fondo-blanco',
   '3881':'20260924-fondo-blanco',
@@ -1542,7 +1545,7 @@ function productGalleryViews(item){
     return [{url:urls[0],crop:true,label:'Producto'},{url:urls[0],crop:false,label:'Información'}];
   return urls.map((url,i)=>({url,crop:false,label:`Foto ${i+1}`}));
 }
-window.GMA_IMAGE_MANIFEST_READY = fetch('data/images-manifest.json?v=20260924-pasta', { cache:'no-store' })
+window.GMA_IMAGE_MANIFEST_READY = fetch('data/images-manifest.json?v=20260924-harina-arroz', { cache:'no-store' })
   .then(response => {
     if(!response.ok) throw new Error(`No se pudo cargar images-manifest.json (${response.status})`);
     return response.json();
