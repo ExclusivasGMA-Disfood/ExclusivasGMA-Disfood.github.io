@@ -8,7 +8,10 @@ const allowed = new Set(Object.keys(refs));
 // futura del manifiesto vuelva a añadir imágenes secundarias obsoletas.
 const singleEditorialPhotoRefs = new Set(['6740', '6742', '6743', '6744', '6745', '6750']);
 const preferredProductPhotos = new Map([
+  ['853', '853-2.webp'],
+  ['5311', '5311-2.webp'],
   ['5722', '5722-fondo-blanco-selec-mardis.jpg'],
+  ['5867', '5867-2.webp'],
   ['6607', '6607-oficial-divella.jpg']
 ]);
 const groups = {};

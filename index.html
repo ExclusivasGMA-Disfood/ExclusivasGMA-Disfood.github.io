@@ -1483,9 +1483,12 @@ function findItem(id){ const [gi, ii] = id.split('-').map(Number); return DATA[g
 // data/images-manifest.json usando SIEMPRE la referencia exacta como texto.
 const IMAGE_MANIFEST = Object.create(null);
 const IMAGE_ASSET_VERSIONS = Object.freeze({
+  '853':'20260924-foto-correcta',
   '2409':'20260924-selec-mardis',
   '2665':'20260924-selec-mardis',
   '5722':'20260924-fondo-blanco',
+  '5311':'20260924-foto-correcta',
+  '5867':'20260924-foto-correcta',
   '6607':'20260924-oficial-divella',
   '2762':'20260924-selec-mardis',
   '2898':'20260924-fondo-blanco',
@@ -1547,7 +1550,7 @@ function productGalleryViews(item){
     return [{url:urls[0],crop:true,label:'Producto'},{url:urls[0],crop:false,label:'Información'}];
   return urls.map((url,i)=>({url,crop:false,label:`Foto ${i+1}`}));
 }
-window.GMA_IMAGE_MANIFEST_READY = fetch('data/images-manifest.json?v=20260924-harina-arroz', { cache:'no-store' })
+window.GMA_IMAGE_MANIFEST_READY = fetch('data/images-manifest.json?v=20260924-tres-fotos-correctas', { cache:'no-store' })
   .then(response => {
     if(!response.ok) throw new Error(`No se pudo cargar images-manifest.json (${response.status})`);
     return response.json();
