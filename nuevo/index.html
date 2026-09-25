@@ -1190,6 +1190,99 @@ html body .desktop-view-button{font-size:11.5px!important}
 html body .sheet-client input{min-height:44px}
 html body .session-main{min-height:44px;display:flex;flex-direction:column;justify-content:center}
 
+/* ---------- Concepto 2: carácter editorial con el sistema GMA ---------- */
+:root{
+  --bx-paper:#F3F3F4;--bx-white:#FFFFFF;--bx-ink:#241D20;--bx-mute:#665F5D;
+  --bx-red:#BB080B;--bx-line:#4E061D;--bx-hair:rgba(78,6,29,.13);--bx-tint:#EFEFE3;
+}
+html,html body{background:var(--bx-paper);color:var(--bx-ink)}
+html body .gma-topbar{background:rgba(243,243,244,.96);border-bottom:1px solid var(--bx-hair);box-shadow:0 3px 16px rgba(78,6,29,.045)}
+html body .gma-icon-btn{color:var(--bx-line)}
+@media(hover:hover){html body .gma-icon-btn:hover{background:var(--bx-line);color:#fff}}
+html body .gma-burger i{background:var(--bx-line)}
+html body .gma-menu-panel,html body .gma-search-panel,html body .gma-account-dialog{background:#fff;border:1px solid var(--bx-hair);border-radius:16px;box-shadow:0 16px 42px rgba(78,6,29,.14)}
+html body .gma-menu-panel button{font-size:19px;font-weight:650}
+@media(hover:hover){html body .gma-menu-panel button:hover{background:var(--bx-tint);color:var(--bx-line)}}
+
+/* Portada: titular potente, con más aire y acento de marca */
+html body .bx-hero{padding:32px 18px 0;max-width:1180px}
+html body .bx-kicker{color:var(--bx-line);font-size:10px;letter-spacing:.16em;margin-bottom:17px}
+html body .bx-kicker::before{width:9px;height:9px;background:var(--bx-red);box-shadow:0 0 0 4px rgba(187,8,11,.1)}
+html body .bx-title{max-width:920px;font-size:clamp(40px,9.5vw,82px);line-height:.99;letter-spacing:-.06em;color:var(--bx-line)}
+html body .bx-hl{background:var(--bx-red);color:#fff;border-radius:3px;padding:0 .09em .045em;box-shadow:4px 4px 0 rgba(78,6,29,.10)}
+html body .bx-search{max-width:780px;margin-top:24px;padding:5px 5px 5px 19px;background:#fff;border:1px solid rgba(78,6,29,.2);border-radius:15px;box-shadow:0 8px 22px rgba(78,6,29,.08);transition:border-color .15s,box-shadow .15s}
+html body .bx-search:focus-within{border-color:var(--bx-red);box-shadow:0 0 0 4px rgba(187,8,11,.09);transform:none}
+html body .bx-search input{height:48px;font-size:16px;color:var(--bx-ink)}
+html body .bx-search input::placeholder{color:#817A75}
+html body .bx-search button{height:44px;padding:0 21px;border-radius:11px;background:var(--bx-line);font:650 14px 'Geist',sans-serif;letter-spacing:0}
+@media(hover:hover){html body .bx-search button:hover{background:var(--bx-red)}}
+html body .bx-quick{margin-top:15px;gap:7px}
+html body .bx-chip{min-height:40px;padding:0 14px;border:1px solid rgba(78,6,29,.19);border-radius:999px;background:rgba(255,255,255,.58);color:var(--bx-line);font:600 12.5px 'Geist',sans-serif;letter-spacing:0}
+html body .bx-chip:active{transform:scale(.97)}
+@media(hover:hover){html body .bx-chip:hover{background:var(--bx-line);border-color:var(--bx-line);color:#fff}}
+html body .bx-stats{margin-top:27px;border-top:1px solid var(--bx-hair)}
+html body .bx-stat{padding-top:14px}
+html body .bx-stat+.bx-stat{border-left:1px solid var(--bx-hair)}
+html body .bx-stat b{color:var(--bx-line);font-size:clamp(27px,7vw,48px);letter-spacing:-.055em}
+html body .bx-stat span{color:var(--bx-mute);font-size:10px!important;letter-spacing:.11em}
+html body .bx-marquee{margin-top:19px;background:var(--bx-line);border-radius:12px 12px 0 0;padding:9px 0}
+html body .bx-track span{font-size:clamp(18px,4.3vw,29px);font-weight:700;letter-spacing:-.025em;color:var(--bx-tint);-webkit-text-stroke:0}
+html body .bx-track span:nth-child(3n){color:#E5A1A3}
+html body .bx-track span::after{color:#D8CFB6}
+@media(min-width:760px){
+  html body .bx-hero{padding:42px 32px 0}
+  html body .bx-title{max-width:880px}
+  html body .bx-quick{margin-top:17px}
+  html body .bx-stats{margin-top:29px}
+}
+
+/* Catálogo: conservar la jerarquía de familias con trazos y tarjetas más finos */
+html body .controls{background:rgba(243,243,244,.94)!important;border-bottom:1px solid var(--bx-hair);box-shadow:0 5px 18px rgba(78,6,29,.045)}
+html body .search{border:1px solid rgba(78,6,29,.16);border-radius:13px;box-shadow:0 2px 8px rgba(78,6,29,.035)}
+html body .search:focus-within{border-color:rgba(187,8,11,.5);box-shadow:0 0 0 3px rgba(187,8,11,.08)}
+html body .filter-btn{border:1px solid rgba(78,6,29,.16);border-radius:13px;background:#fff;color:var(--bx-line)}
+html body .filter-btn.active{background:var(--bx-line);color:#fff}
+html body .chip,html body .active-filter-chip{background:#fff;color:var(--bx-line);border:1px solid rgba(78,6,29,.16);border-radius:999px;font-weight:600}
+html body .chip.active,html body .active-filter-chip{background:var(--bx-line)!important;color:#fff!important;border-color:var(--bx-line)}
+html body .view-switch,html body .desktop-view-switch{border:1px solid var(--bx-hair);background:#fff}
+html body .view-btn.active,html body .desktop-view-button.active{background:var(--bx-line);color:#fff}
+html body #expandAll,html body .desktop-filter-button{border:1px solid var(--bx-hair);color:var(--bx-line);background:#fff}
+html body .discovery-section{padding-top:28px}
+html body .discovery-head h2{font-size:clamp(25px,4vw,31px);letter-spacing:-.045em;color:var(--bx-line)}
+html body .discovery-count{border:1px solid var(--bx-hair);color:var(--bx-line);background:#fff}
+html body .discovery-card{border:1px solid var(--bx-hair);border-radius:13px;box-shadow:0 3px 12px rgba(78,6,29,.055)}
+@media(hover:hover){html body .discovery-card:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(78,6,29,.12)}}
+html body .discovery-add,html body .desktop-add,html body .add-btn{background:var(--bx-line);box-shadow:0 2px 8px rgba(78,6,29,.18)}
+html body .discovery-card.fav .discovery-add,html body .desktop-product-card.fav .desktop-add,html body .item.fav .add-btn{background:var(--bx-red)}
+html body .groups{padding-top:21px}
+html body .dept-header{border-top:1px solid rgba(78,6,29,.2);padding:16px 5px 16px 0}
+html body .dept-header-label{font-size:clamp(25px,6.7vw,37px);color:var(--bx-line);letter-spacing:-.045em}
+html body .dept-header::before{color:var(--bx-red)}
+html body .dept-header .chev{color:var(--bx-line)}
+html body .dept-header.open,html body .dept-header:active{background:var(--bx-line);color:#fff;border-radius:10px 10px 0 0;padding-left:12px}
+html body .dept-header.open .dept-header-label,html body .dept-header.open .chev{color:#fff}
+html body .group{border:1px solid var(--bx-hair);border-radius:12px;box-shadow:0 3px 12px rgba(78,6,29,.035)}
+html body .group.open .group-header{background:var(--bx-tint);border-bottom:1px solid var(--bx-hair)}
+html body .item,html body .desktop-product-card{border:1px solid rgba(78,6,29,.10);border-radius:12px;box-shadow:0 2px 8px rgba(78,6,29,.035)}
+@media(hover:hover){html body .item:hover,html body .desktop-product-card:hover{border-color:rgba(78,6,29,.25);transform:translateY(-2px);box-shadow:0 8px 18px rgba(78,6,29,.09)}}
+html body .item-photo,html body .desktop-product-photo{background:var(--bx-tint)}
+html body .desktop-panel{border:1px solid var(--bx-hair);border-radius:17px;box-shadow:0 5px 18px rgba(78,6,29,.04)}
+html body .desktop-main-head h2{font-size:clamp(30px,3.5vw,48px);letter-spacing:-.05em}
+html body .desktop-selection-open,html body .btn-primary{background:var(--bx-line);border-radius:12px}
+html body .bottom-nav{background:var(--bx-line)!important;box-shadow:0 9px 24px rgba(78,6,29,.25)}
+html body .fav-bar{background:var(--bx-line)}
+html body .filter-option{border:1px solid var(--bx-hair);color:var(--bx-line)}
+html body .filter-option.active{background:var(--bx-line);color:#fff}
+html body :focus-visible{outline-color:var(--bx-red)}
+@media(max-width:759px){
+  html body .bx-hero{padding:28px 16px 0}
+  html body .bx-title{font-size:clamp(39px,10.4vw,58px)}
+  html body .bx-stats{margin-top:22px}
+  html body .bx-stat{padding-right:5px}
+  html body .bx-stat+.bx-stat{padding-left:9px}
+  html body .bx-stat span{font-size:9px!important;letter-spacing:.07em}
+  html body .discovery-section{padding-top:23px}
+}
 </style>
 </head>
 <body>
