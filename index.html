@@ -799,7 +799,7 @@ h1,h2,h3,.sheet-head h2{font-family:'Merriweather',serif;letter-spacing:-.02em}
 
 /* Catálogo de escritorio: navegación, producto y selección visibles a la vez. */
 .desktop-catalog{display:none}
-@media(min-width:1000px){
+@media(min-width:1000px), (orientation:landscape) and (min-width:640px) and (max-width:999px) and (pointer:coarse){
   body{background:var(--brand-cream)}
   .gma-topbar-inner>.catalog-toolbar{display:none!important}
   #newDiscovery,#bestDiscovery{padding-top:11px;padding-bottom:5px;border-bottom:1px solid rgba(75,5,29,.09)}
@@ -904,6 +904,31 @@ h1,h2,h3,.sheet-head h2{font-family:'Merriweather',serif;letter-spacing:-.02em}
 @media(min-width:1000px) and (max-width:1160px){
   .desktop-catalog{grid-template-columns:205px minmax(0,1fr) 238px;padding-inline:16px;gap:10px}
   .desktop-products{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+/* El móvil apaisado usa el catálogo de escritorio con dos paneles y controles táctiles. */
+@media (orientation:landscape) and (min-width:640px) and (max-width:999px) and (pointer:coarse){
+  body{padding-bottom:70px}
+  .desktop-catalog{grid-template-columns:clamp(158px,24vw,205px) minmax(0,1fr);gap:10px;padding:0 12px 72px}
+  .desktop-selection{display:none}
+  .desktop-side{top:calc(var(--topbar-h,65px) + 8px);max-height:calc(100dvh - var(--topbar-h,65px) - 16px)}
+  .desktop-panel-head{padding:11px}
+  .desktop-main{min-height:0}
+  .desktop-main-head{padding:10px 12px;gap:8px;flex-wrap:wrap}
+  .desktop-main-head h2{font-size:17px}
+  .desktop-products{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;padding:10px}
+  .desktop-product-photo{aspect-ratio:1.4}
+  .desktop-dept-button,.desktop-group-button{min-height:44px}
+  .desktop-add{width:44px;height:44px}
+  .desktop-view-button{min-height:40px}
+  .bottom-nav{display:grid!important;left:50%;right:auto;bottom:max(5px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(360px,calc(100vw - 24px));height:52px;grid-template-columns:repeat(3,1fr)}
+  #navSearch{display:none!important}
+  .backtop{bottom:68px!important}
+  .product-sheet{width:calc(100vw - 20px);height:calc(100dvh - 12px);border-radius:14px}
+  .product-sheet .sheet-head{padding:10px 14px}
+  .product-sheet .product-detail{padding:10px 12px}
+  .product-detail-layout{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:12px}
+  .product-detail-media .product-visual{max-height:calc(100dvh - 120px)}
+  .product-detail-title{font-size:18px!important}
 }
 @media(prefers-reduced-motion:reduce){.desktop-product-card,.product-sheet{transition:none}}
 @media(max-width:999px){
@@ -3289,6 +3314,7 @@ render();
     return `<article class="discovery-card ${selected?'fav':''}" data-product-id="${id}">${badge?`<span class="discovery-badge">${badge}</span>`:''}<button class="discovery-open" type="button" aria-label="Ver ficha de ${accessibleName}"><span class="discovery-photo ${imageUrl?'':'placeholder'}" ${imageUrl?'':`style="--fam:${famColor}"`}>${photo}</span><span class="discovery-card-body"><span class="discovery-name">${it.n}</span><span class="discovery-ref">Ref. ${it.ref}</span></span></button><button class="discovery-add" type="button" data-id="${id}" aria-pressed="${selected}" aria-label="${selected?'Quitar de la selección':'Añadir a la selección'}"><svg viewBox="0 0 24 24">${icon}</svg></button></article>`;
   }
   function findRef(ref){for(let gi=0;gi<DATA.length;gi++)for(let ii=0;ii<DATA[gi].items.length;ii++){const it=DATA[gi].items[ii];if(String(it.ref)===String(ref))return {it,id:itemId(gi,ii)}}return null;}
+  const desktopShowcaseMedia=window.matchMedia('(min-width:1000px), (orientation:landscape) and (min-width:640px) and (max-width:999px) and (pointer:coarse)');
   function buildDiscovery(){
     /* Seleccion editorial de 30 novedades (referencias reales existentes en DATA).
        Curada a mano: 3 jamones, 3 mozzarella (Burrata / Fior di Latte / Bufala), 3 salmon,
@@ -3296,7 +3322,7 @@ render();
        familias para completar el recorrido. Ninguna referencia se inventa: mismo patron
        que FEATURED_REFS, resuelto via findRef() sobre la base de datos real. */
     const NOVEDADES_REFS=window.GMA_CATALOG_CURATION.new;
-    const desktopShowcase=window.matchMedia('(min-width:1000px)').matches;
+    const desktopShowcase=desktopShowcaseMedia.matches;
     const fresh=NOVEDADES_REFS.map(findRef).filter(Boolean);
     const freshHtml=fresh.map(x=>cardFor(x.it,x.id,'Nuevo')).join('');
     const newEl=document.getElementById('newDiscoveryScroll');if(newEl)newEl.innerHTML=freshHtml+(desktopShowcase?'':freshHtml);
@@ -3325,6 +3351,7 @@ render();
   });
   window.GMA_REBUILD_DISCOVERY=buildDiscovery;
   buildDiscovery();
+  desktopShowcaseMedia.addEventListener?.('change',buildDiscovery);
   window.GMA_IMAGE_MANIFEST_READY?.then(()=>buildDiscovery());
 
   // Carruseles tipo escaparate: se desplazan solos y se pausan al tocarlos o pasar el ratón.
@@ -3332,7 +3359,7 @@ render();
   window.addEventListener('scroll',()=>{pageScrollUntil=performance.now()+350;},{passive:true});
   function initShowcaseAutoScroll(el, speed){
     if(!el) return;
-    if(window.matchMedia('(min-width:1000px)').matches) return;
+    if(desktopShowcaseMedia.matches) return;
     if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     let paused=false, resumeTimer=null, visible=true, pos=0;
     const io=new IntersectionObserver(entries=>{
@@ -3348,7 +3375,8 @@ render();
     el.addEventListener('mouseenter', pause);
     el.addEventListener('mouseleave', scheduleResume);
     function step(){
-      if(!paused && visible && !document.hidden && performance.now()>pageScrollUntil){
+      if(desktopShowcaseMedia.matches)el.classList.remove('autoplay-active');
+      else if(!paused && visible && !document.hidden && performance.now()>pageScrollUntil){
         el.classList.add('autoplay-active');
         const half=el.scrollWidth/2;
         if(half>2){
@@ -3497,7 +3525,7 @@ render();
   const meta=document.getElementById('desktopResultMeta');
   const selectionList=document.getElementById('desktopSelectionList');
   const selectionCount=document.getElementById('desktopSelectionCount');
-  const desktopMedia=window.matchMedia('(min-width:1000px)');
+  const desktopMedia=window.matchMedia('(min-width:1000px), (orientation:landscape) and (min-width:640px) and (max-width:999px) and (pointer:coarse)');
   let desktopView=localStorage.getItem('gma-desktop-view')||'grid';
   let forcedGroup=null;
   let openDept=null;
