@@ -802,15 +802,16 @@ h1,h2,h3,.sheet-head h2{font-family:'Merriweather',serif;letter-spacing:-.02em}
 @media(min-width:1000px){
   body{background:var(--brand-cream)}
   .gma-topbar-inner>.catalog-toolbar{display:none!important}
-  #bestDiscovery{margin-bottom:12px;padding-top:11px;padding-bottom:5px;border-bottom:1px solid rgba(75,5,29,.09)}
-  #bestDiscovery .discovery-head{padding-top:0;padding-bottom:6px}
-  #bestDiscovery .discovery-scroll{grid-auto-columns:124px;gap:9px;padding-bottom:9px}
-  #bestDiscovery .discovery-photo{aspect-ratio:1.55}
-  #bestDiscovery .discovery-card-body{padding:7px 8px 8px}
-  #bestDiscovery .discovery-name{min-height:31px;font-size:12px}
-  #bestDiscovery .discovery-ref{font-size:11px}
-  #bestDiscovery .discovery-add{width:30px;height:30px;right:7px;bottom:7px}
-  #controls,#sessionBar,#groups,#emptyState,#newDiscovery,#bestDiscovery2{display:none!important}
+  #newDiscovery,#bestDiscovery{padding-top:11px;padding-bottom:5px;border-bottom:1px solid rgba(75,5,29,.09)}
+  #bestDiscovery{margin-bottom:12px}
+  #newDiscovery .discovery-head,#bestDiscovery .discovery-head{padding-top:0;padding-bottom:6px}
+  #newDiscovery .discovery-scroll,#bestDiscovery .discovery-scroll{grid-auto-columns:124px;gap:9px;padding-bottom:9px}
+  #newDiscovery .discovery-photo,#bestDiscovery .discovery-photo{aspect-ratio:1.55}
+  #newDiscovery .discovery-card-body,#bestDiscovery .discovery-card-body{padding:7px 8px 8px}
+  #newDiscovery .discovery-name,#bestDiscovery .discovery-name{min-height:31px;font-size:12px}
+  #newDiscovery .discovery-ref,#bestDiscovery .discovery-ref{font-size:11px}
+  #newDiscovery .discovery-add,#bestDiscovery .discovery-add{width:30px;height:30px;right:7px;bottom:7px}
+  #controls,#sessionBar,#groups,#emptyState{display:none!important}
   .desktop-catalog{display:grid;grid-template-columns:236px minmax(0,1fr) 272px;gap:14px;align-items:start;padding:0 24px 28px}
   .desktop-panel{background:var(--platinum);border:1px solid rgba(75,5,29,.1);border-radius:18px;box-shadow:0 3px 14px rgba(35,20,25,.055)}
   .desktop-side,.desktop-selection{position:sticky;top:calc(var(--topbar-h,66px) + 14px);max-height:calc(100dvh - var(--topbar-h,66px) - 28px);overflow:hidden;display:flex;flex-direction:column}
@@ -956,6 +957,10 @@ h1,h2,h3,.sheet-head h2{font-family:'Merriweather',serif;letter-spacing:-.02em}
   <h1 class="sr-only">Catálogo profesional GMA Disfood</h1>
   <div class="gma-hidden-control" aria-hidden="true"><span id="statTotal"></span><span id="statCats"></span><span id="statFav"></span><button id="heroIndexBtn" type="button" tabindex="-1"></button></div>
 
+  <section class="discovery-section discovery-new" id="newDiscovery" aria-label="Novedades">
+    <div class="discovery-head"><div><span class="discovery-kicker">Últimas incorporaciones</span><h2>Novedades</h2></div><span class="discovery-count" id="newDiscoveryCount"></span></div>
+    <div class="discovery-scroll" id="newDiscoveryScroll"></div>
+  </section>
   <section class="discovery-section discovery-best" id="bestDiscovery" aria-label="Selección GMA">
     <div class="discovery-head"><div><span class="discovery-kicker">Recomendaciones del catálogo</span><h2>Selección GMA</h2></div><span class="discovery-count" id="bestDiscoveryCount"></span></div>
     <div class="discovery-scroll" id="bestDiscoveryScroll"></div>
@@ -1033,15 +1038,6 @@ h1,h2,h3,.sheet-head h2{font-family:'Merriweather',serif;letter-spacing:-.02em}
     <p>No hay productos que coincidan con la búsqueda o el filtro activo.</p>
     <button class="tap" id="emptyReset">Quitar filtros</button>
   </div>
-
-  <section class="discovery-section discovery-new" id="newDiscovery" aria-label="Novedades">
-    <div class="discovery-head"><div><span class="discovery-kicker">Últimas incorporaciones</span><h2>Novedades</h2></div><span class="discovery-count" id="newDiscoveryCount"></span></div>
-    <div class="discovery-scroll" id="newDiscoveryScroll"></div>
-  </section>
-  <section class="discovery-section discovery-best" id="bestDiscovery2" aria-label="Selección GMA">
-    <div class="discovery-head"><div><span class="discovery-kicker">Recomendaciones del catálogo</span><h2>Selección GMA</h2></div><span class="discovery-count" id="bestDiscoveryCount2"></span></div>
-    <div class="discovery-scroll" id="bestDiscoveryScroll2"></div>
-  </section>
 
   <footer>GMA Disfood · Catálogo profesional interactivo · Consulta las condiciones con tu comercial</footer>
 </div>
@@ -3291,11 +3287,8 @@ render();
     /* Selección editorial de 25 referencias del catálogo; no representa ventas medidas. */
     const FEATURED_REFS=window.GMA_CATALOG_CURATION.featured;
     const best=FEATURED_REFS.map(findRef).filter(Boolean),bestHtml=best.map(x=>cardFor(x.it,x.id,'Selección')).join('');
-    for(const countId of ['bestDiscoveryCount','bestDiscoveryCount2']){
-      const count=document.getElementById(countId);
-      if(count)count.textContent=`${best.length} referencias`;
-    }
-    const bestEl=document.getElementById('bestDiscoveryScroll');if(bestEl)bestEl.innerHTML=bestHtml+(desktopShowcase?'':bestHtml);const bestEl2=document.getElementById('bestDiscoveryScroll2');if(bestEl2)bestEl2.innerHTML=bestHtml+(desktopShowcase?'':bestHtml);
+    const count=document.getElementById('bestDiscoveryCount');if(count)count.textContent=`${best.length} referencias`;
+    const bestEl=document.getElementById('bestDiscoveryScroll');if(bestEl)bestEl.innerHTML=bestHtml+(desktopShowcase?'':bestHtml);
   }
   document.addEventListener('click',e=>{
     const add=e.target.closest('.discovery-add');
@@ -3357,7 +3350,6 @@ render();
   if(document.fonts && document.fonts.ready) document.fonts.ready.then(syncTopBarHeight);
   initShowcaseAutoScroll(document.getElementById('newDiscoveryScroll'), 0.32);
   initShowcaseAutoScroll(document.getElementById('bestDiscoveryScroll'), 0.32);
-  initShowcaseAutoScroll(document.getElementById('bestDiscoveryScroll2'), 0.32);
 
   // Families now belong in Filters. Existing family/index shortcuts open the filter sheet.
   const openFilters=()=>openFilterPanel();
