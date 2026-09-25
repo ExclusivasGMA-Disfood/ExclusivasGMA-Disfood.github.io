@@ -1251,7 +1251,7 @@ html body .session-main{min-height:44px;display:flex;flex-direction:column;justi
   </section>
 
   <section class="discovery-section discovery-best" id="bestDiscovery" aria-label="Más vendidas">
-    <div class="discovery-head"><div><span class="discovery-kicker">Sugerencias</span><h2>Más vendidas</h2></div><span class="discovery-count">20 sugerencias</span></div>
+    <div class="discovery-head"><div><span class="discovery-kicker">Sugerencias</span><h2>Más vendidas</h2></div><span class="discovery-count" id="bestDiscoveryCount"></span></div>
     <div class="discovery-scroll" id="bestDiscoveryScroll"></div>
   </section>
 
@@ -3576,7 +3576,7 @@ render();
        3 anchoa/boqueron, pulpo, Lomo Beher, 3 Ken, y 13 altas recientes (isNew) de otras
        familias para completar el recorrido. Ninguna referencia se inventa: mismo patron
        que BEST_SELLER_REFS, resuelto via findRef() sobre la base de datos real. */
-    const NOVEDADES_REFS=['5329','6112','6486','2323','6583','6691','1127','6058','6777','5966','5969','5985','3895','5332','4545','3144','6752','6809','6674','6473','6807','6773','6772','6774','6781','6786','6765','6791','3816','6779'];
+    const NOVEDADES_REFS=window.GMA_CATALOG_CURATION?.new||[];
     const desktopShowcase=window.matchMedia('(min-width:1000px)').matches;
     const fresh=NOVEDADES_REFS.map(findRef).filter(Boolean);
     const freshHtml=fresh.map(x=>cardFor(x.it,x.id,'Nuevo')).join('');
@@ -3586,8 +3586,8 @@ render();
     /* El catálogo actual no contiene cifras de venta por referencia. Esta lista es una
        selección comercial editable de 25 productos representativos; cuando se conecten
        ventas reales, basta sustituir BEST_SELLER_REFS por el ranking del ERP. */
-    const BEST_SELLER_REFS=['1902','802','065','2375','6619','5847','403','229160','5986','4599','6140','4807','4345','3842','367','2175','1576','6766','6767','2323','2901','6256','049','2303','5959'];
-    const best=BEST_SELLER_REFS.map(findRef).filter(Boolean),bestHtml=best.map(x=>cardFor(x.it,x.id,'Top')).join(''),bestEl=document.getElementById('bestDiscoveryScroll');if(bestEl)bestEl.innerHTML=bestHtml+(desktopShowcase?'':bestHtml);const bestEl2=document.getElementById('bestDiscoveryScroll2');if(bestEl2)bestEl2.innerHTML=bestHtml+(desktopShowcase?'':bestHtml);
+    const BEST_SELLER_REFS=window.GMA_CATALOG_CURATION?.featured||[];
+    const best=BEST_SELLER_REFS.map(findRef).filter(Boolean);const bestCount=document.getElementById('bestDiscoveryCount');if(bestCount)bestCount.textContent=`${best.length} sugerencias`;const bestHtml=best.map(x=>cardFor(x.it,x.id,'Top')).join(''),bestEl=document.getElementById('bestDiscoveryScroll');if(bestEl)bestEl.innerHTML=bestHtml+(desktopShowcase?'':bestHtml);const bestEl2=document.getElementById('bestDiscoveryScroll2');if(bestEl2)bestEl2.innerHTML=bestHtml+(desktopShowcase?'':bestHtml);
   }
   document.addEventListener('click',e=>{
     const add=e.target.closest('.discovery-add');
