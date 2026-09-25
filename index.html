@@ -590,7 +590,7 @@
     .hero h1{margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:17px!important;line-height:1.15;}
     .hero-copy>p:not(.hero-eyebrow){display:none;}
     #heroIndexBtn{display:none;}
-    .controls{border-radius:0;box-shadow:0 5px 18px rgba(28,35,33,.06);position:sticky;will-change:transform;transform:translateZ(0);-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background:rgba(243,243,244,.985)!important;padding:9px 12px 8px;padding-top:8px;padding-bottom:7px;}
+    .controls{border-radius:0;box-shadow:0 5px 18px rgba(28,35,33,.06);position:sticky;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background:rgba(243,243,244,.985)!important;padding:9px 12px 8px;padding-top:8px;padding-bottom:7px;}
     .search{padding:8px 10px;border-radius:13px;height:44px;padding-inline:12px;}
     .session-bar{margin:7px 10px 0;border-radius:11px;gap:7px;padding:7px 10px;margin-top:5px;}
     .session-title{font-size:11.5px;}
@@ -607,7 +607,7 @@
     #navSearch{display:none!important;}
     .item-photo{background:#fff;width:74px;height:74px;border-radius:12px;}
     .carousel-photo{background:#fff;}
-    .groups{overscroll-behavior-y:contain;contain:layout style;padding:5px 10px 6px;padding-inline:8px;}
+    .groups{padding:5px 10px 6px;padding-inline:8px;}
     .group.open{border-color:rgba(75,5,29,.28);box-shadow:0 1px 3px rgba(75,5,29,.06),0 9px 24px rgba(75,5,29,.09);}
     .group.open .group-header{background:linear-gradient(180deg,#fff,color-mix(in srgb,var(--fam,var(--teal)) 15%,#fff));border-bottom:1px solid color-mix(in srgb,var(--fam,var(--teal)) 32%,var(--line));}
     :root{--nav-h:60px;--radius-lg:18px;--radius-md:14px;--controls-h:132px;}
@@ -615,7 +615,7 @@
     .group-title-wrap{min-width:0;}
     .group-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
     .item-photo-wrap{align-self:center;}
-    .item-photo img{display:block;transform:translateZ(0);}
+    .item-photo img{display:block;}
     .ref{margin-top:3px;}
     .sheet-list{-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding-inline:14px;}
     .lightbox-backdrop{padding:18px 14px;}
@@ -625,7 +625,7 @@
     .chip{touch-action:manipulation;font-size:12px;padding:7px 12px;}
     .filter-option{touch-action:manipulation;}
     .group-body{transition:none!important;transition-duration:.22s;}
-    .item{touch-action:manipulation;-webkit-tap-highlight-color:transparent;gap:11px;transform:translateZ(0);padding:10px 7px;min-height:94px;margin:5px 0;border:1px solid rgba(0,0,0,.055);box-shadow:0 1px 2px rgba(15,23,20,.035),0 5px 16px rgba(15,23,20,.06);}
+    .item{touch-action:manipulation;-webkit-tap-highlight-color:transparent;gap:11px;padding:10px 7px;min-height:94px;margin:5px 0;border:1px solid rgba(0,0,0,.055);box-shadow:0 1px 2px rgba(15,23,20,.035),0 5px 16px rgba(15,23,20,.06);}
     body.selected-review .group{border-color:rgba(75,5,29,.14);}
     body.selected-review .group-header{padding-top:10px;padding-bottom:10px;}
     .group-header .chev{transition:transform .16s ease;}
@@ -906,6 +906,10 @@ h1,h2,h3,.sheet-head h2{font-family:'Merriweather',serif;letter-spacing:-.02em}
   .desktop-products{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(prefers-reduced-motion:reduce){.desktop-product-card,.product-sheet{transition:none}}
+@media(max-width:999px){
+  /* Las cabeceras de departamentos fluyen con las familias en móvil. */
+  .dept-header{position:relative;top:auto;}
+}
 </style>
 
 
@@ -1685,9 +1689,15 @@ function deferGroupItems(groupSection){
   else mountGroupItems(groupSection);
 }
 window.GMA_REFRESH_DEFERRED_GROUPS=()=>{
-  groupsEl.querySelectorAll('.group.deferred-mount').forEach(group=>{
+  groupsEl.querySelectorAll('.group[data-virtualized="1"]').forEach(group=>{
     const list=group.querySelector('.group-items');
-    if(list) list.style.minHeight=`${deferredGroupHeight(group.dataset.itemCount)}px`;
+    if(!list) return;
+    // Cuando el usuario cambia de vista, la reserva debe adoptar el tamaño
+    // de las tarjetas nuevas y no conservar el de la vista anterior.
+    if(group.dataset.mounted==='1'){
+      list.style.minHeight='';
+      list.style.minHeight=`${Math.ceil(list.getBoundingClientRect().height)}px`;
+    } else list.style.minHeight=`${deferredGroupHeight(group.dataset.itemCount)}px`;
   });
 };
 
@@ -1765,7 +1775,11 @@ function mountGroupItems(groupSection){
     prevWasDividerOrFirst=false;
   }
   list.replaceChildren(frag);
-  list.style.minHeight='';
+  // Un grupo diferido conserva su altura reservada al montar las tarjetas.
+  // Así el documento no se encoge mientras el dedo sigue desplazándolo.
+  if(groupSection.dataset.virtualized==='1'){
+    list.style.minHeight=`${Math.ceil(list.getBoundingClientRect().height)}px`;
+  } else list.style.minHeight='';
   groupSection.classList.remove('deferred-mount');
   groupSection.dataset.mounted='1';
   groupSection.dataset.mountVersion=String(Number(groupSection.dataset.mountVersion||0)+1);
@@ -3310,6 +3324,8 @@ render();
   window.GMA_IMAGE_MANIFEST_READY?.then(()=>buildDiscovery());
 
   // Carruseles tipo escaparate: se desplazan solos y se pausan al tocarlos o pasar el ratón.
+  let pageScrollUntil=0;
+  window.addEventListener('scroll',()=>{pageScrollUntil=performance.now()+350;},{passive:true});
   function initShowcaseAutoScroll(el, speed){
     if(!el) return;
     if(window.matchMedia('(min-width:1000px)').matches) return;
@@ -3328,7 +3344,7 @@ render();
     el.addEventListener('mouseenter', pause);
     el.addEventListener('mouseleave', scheduleResume);
     function step(){
-      if(!paused && visible && !document.hidden){
+      if(!paused && visible && !document.hidden && performance.now()>pageScrollUntil){
         el.classList.add('autoplay-active');
         const half=el.scrollWidth/2;
         if(half>2){
