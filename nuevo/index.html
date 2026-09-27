@@ -8,7 +8,7 @@
 <!-- Catálogo GMA: imágenes externas optimizadas y galería por referencia -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
 
 <style id="gma-catalog-styles">
 
@@ -943,7 +943,6 @@ h1,h2,h3,.sheet-head h2{font-family:'Merriweather',serif;letter-spacing:-.02em}
   "areaServed": { "@type": "City", "name": "Alicante" }
 }
 </script>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&display=swap" rel="stylesheet">
 <style id="gma-redesign">
 /* =====================================================================
    GMA · Rediseño "Editorial" — moderno, atrevido, tipografía grande
@@ -952,8 +951,9 @@ h1,h2,h3,.sheet-head h2{font-family:'Merriweather',serif;letter-spacing:-.02em}
 :root{
   --bx-paper:#F3F1EC; --bx-white:#FFFFFF; --bx-ink:#0C0C0D; --bx-mute:#75726B;
   --bx-red:#F0321E; --bx-line:#0C0C0D; --bx-hair:rgba(12,12,13,.14); --bx-tint:#E8E5DD;
-  --bx-font:'Bricolage Grotesque','Geist',-apple-system,'Helvetica Neue',Arial,sans-serif;
-  --bx-mono:'Geist',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --bx-font:'Geist',sans-serif;
+  --bx-mono:'Geist',sans-serif;
+  --bx-heading:'Merriweather',serif;
   --paper:var(--bx-paper); --paper-dim:var(--bx-tint); --ink:var(--bx-ink); --ink-soft:var(--bx-mute); --line:var(--bx-hair);
 }
 html,html body{background:var(--bx-paper);color:var(--bx-ink)}
@@ -1283,6 +1283,12 @@ html body :focus-visible{outline-color:var(--bx-red)}
   html body .bx-stat span{font-size:9px!important;letter-spacing:.07em}
   html body .discovery-section{padding-top:23px}
 }
+/* Dos únicas familias tipográficas también en la versión alternativa. */
+html body .bx-title{font-family:var(--bx-heading);line-height:1.1;letter-spacing:-.035em}
+html body .discovery-head h2,html body .desktop-main-head h2,
+html body .desktop-panel-head h2,html body .sheet-head h2,
+html body .product-detail-title,html body .gma-account-head h2,
+html body .dept-header-label,html body .carousel-head h2{font-family:var(--bx-heading)}
 </style>
 </head>
 <body>
