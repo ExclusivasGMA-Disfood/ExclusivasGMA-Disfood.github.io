@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "images": [
+    {
+      "ref": "6112",
+      "source": "images/products/6112.jpg",
+      "sourceSize": [
+        1200,
+        1200
+      ],
+      "contentBox": [
+        130,
+        130,
+        1070,
+        1070
+      ],
+      "innerMargin": 0.08,
+      "reason": "Marco blanco exterior de 130 px. Encuadre manual revisado; fotografía original intacta."
+    }
+  ],
+  "carousels": [
+    {
+      "ref": "6772",
+      "source": "images/products/6772.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        29,
+        0,
+        570,
+        600
+      ],
+      "fit": "cover",
+      "position": [
+        0.5,
+        1
+      ],
+      "reason": "Eliminar franjas laterales; priorizar las croquetas en la zona inferior."
+    },
+    {
+      "ref": "6774",
+      "source": "images/products/6774.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        0,
+        100,
+        600,
+        500
+      ],
+      "fit": "cover",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "reason": "Eliminar bandas superior e inferior; centrar la tarta."
+    },
+    {
+      "ref": "403",
+      "source": "images/products/403.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        0,
+        10,
+        600,
+        590
+      ],
+      "fit": "cover",
+      "position": [
+        0.5,
+        1
+      ],
+      "reason": "Fondo continuo hasta el borde, priorizar paté y plato inferior."
+    },
+    {
+      "ref": "229160",
+      "source": "images/products/229160.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        0,
+        84,
+        600,
+        516
+      ],
+      "fit": "cover",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "reason": "Eliminar bandas blancas y centrar la terrina; el encuadre puede cortar decoración y extremos de la bandeja."
+    },
+    {
+      "ref": "5986",
+      "source": "images/products/5986.png",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        190,
+        125,
+        410,
+        460
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.03,
+      "reason": "Envase completo ampliado, con fondo blanco continuo."
+    }
+  ]
+}
