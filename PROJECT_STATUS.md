@@ -42,3 +42,7 @@ El siguiente encargo autoriza mejorar los tres desplegables, seguir la familia a
 ## Etiquetas Top
 
 Petición posterior: cambiar únicamente la etiqueta «Selección» de las tarjetas del carrusel a «Top». Se cambia en `assets/discovery.js`, compartido por ambas páginas; recursos versionados en ambos HTML. La recomendación sigue siendo editorial, sin afirmar ventas medidas. Las fotos 5329 y 6112 se inspeccionaron: 6112 incorpora un amplio borde blanco en el archivo. Se propone normalizar el fondo sobrante y la escala visual por tipo de producto con copias derivadas y manifiesto JSON; esa propuesta no se ha aplicado todavía.
+
+## Encuadre individual autorizado: 6112
+
+El usuario aprobó normalizar los dos jamones señalados. 5329 ya sirve de referencia de escala; 6112 recibe un encuadre manual del área 130,130–1070,1070 de su fuente 1200×1200, con margen visual del 8 %. Se configura en `data/image-framing.json` y se aplica mediante `assets/image-framing.js`; el archivo original y el manifiesto de imágenes permanecen intactos. No es una regla automática para todas las fotos. La prueba con edición generativa se descartó porque retocaba detalles del producto. No usarla como fuente de catálogo.
