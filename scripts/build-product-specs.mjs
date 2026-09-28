@@ -16,8 +16,8 @@ const specs = {};
 for (const sourcePath of sources) {
   const source = JSON.parse(readFileSync(join(root, sourcePath), 'utf8'));
   for (const [ref, entry] of Object.entries(source)) {
-    // Publicar solo fichas con una fuente verificable y datos factuales.
-    if (!entry.source || !Array.isArray(entry.facts) || !entry.facts.some(([label, value]) => label && value)) continue;
+    // Publicar solo fichas completas, con fuente verificable, datos factuales e ingredientes.
+    if (!entry.source || !entry.ingredients || !Array.isArray(entry.facts) || !entry.facts.some(([label, value]) => label && value)) continue;
     if (specs[ref]) throw new Error(`Referencia repetida entre fabricantes: ${ref}`);
     specs[ref] = {
       title: `Datos declarados · ${entry.brand}`,
