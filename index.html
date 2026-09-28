@@ -967,6 +967,93 @@ h1,h2,h3,.discovery-head h2,.carousel-head h2,.dept-header-label,
 :root{--font-body:'Geist',sans-serif;--font-heading:'Merriweather',serif;--bx-font:'Geist',sans-serif;--bx-heading:'Merriweather',serif}
 html body,html body button,html body input,html body textarea,html body select{font-family:var(--font-body)}
 html body :is(h1,h2,h3,h4,h5,h6,.bx-title,.group-title,.item-name,.desktop-product-name,.product-name,.product-detail-title,.dept-header-label){font-family:var(--font-heading)}
+
+/* Ajustes de lectura y proporción para tarjetas y ficha en móvil. */
+html body .discovery-add{
+  top:8px;
+  right:8px;
+  bottom:auto;
+  width:32px;
+  height:32px;
+  border:1px solid rgba(20,20,20,.12);
+}
+@media(max-width:600px){
+  html body .discovery-scroll,
+  html body #newDiscovery .discovery-scroll,
+  html body #bestDiscovery .discovery-scroll{
+    grid-auto-columns:clamp(132px,36vw,148px)!important;
+    gap:10px!important;
+    padding-inline:14px!important;
+  }
+  html body .discovery-head{
+    align-items:flex-end;
+    gap:10px;
+    padding-inline:16px!important;
+  }
+  html body .discovery-head h2{
+    font-size:clamp(23px,6vw,27px)!important;
+    line-height:1.12;
+    margin:0;
+  }
+  html body .discovery-card-body,
+  html body #newDiscovery .discovery-card-body,
+  html body #bestDiscovery .discovery-card-body{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    min-width:0;
+    padding:9px 9px 10px!important;
+  }
+  html body .discovery-name,
+  html body #newDiscovery .discovery-name,
+  html body #bestDiscovery .discovery-name{
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:3!important;
+    min-height:3.9em;
+    overflow:hidden;
+    font-size:13px!important;
+    line-height:1.3;
+    overflow-wrap:anywhere;
+  }
+  html body .discovery-ref,
+  html body #newDiscovery .discovery-ref,
+  html body #bestDiscovery .discovery-ref{
+    display:block;
+    margin-top:0;
+    font-size:11.5px!important;
+    line-height:1.25;
+    white-space:nowrap;
+  }
+  html body .product-detail{
+    padding-inline:16px!important;
+  }
+  html body .product-detail-title,
+  html body .product-sheet .product-detail-title{
+    font-size:clamp(19px,5.4vw,23px)!important;
+    line-height:1.24!important;
+    letter-spacing:-.02em!important;
+    overflow-wrap:anywhere;
+  }
+  html body .supplier-technical{
+    padding:13px;
+  }
+  html body .supplier-technical-title{
+    font-size:14px;
+    line-height:1.3;
+  }
+  html body .supplier-technical dl{
+    grid-template-columns:minmax(0,1fr);
+    gap:10px;
+  }
+  html body .supplier-technical dt{
+    font-size:11px;
+  }
+  html body .supplier-technical dd{
+    font-size:13px;
+    line-height:1.5;
+  }
+}
 </style>
 
 
