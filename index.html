@@ -1283,7 +1283,7 @@ window.addEventListener('keydown',(e)=>{
 </script>
 
 <script src="data/catalog-data.js?v=20260925-conservas-familias"></script>
-<script src="data/product-specs.js?v=20260924-auditoria"></script>
+<script src="data/product-specs.js?v=20260928-dominguez"></script>
 <script>
 const DATA = window.GMA_CATALOG_DATA;
 const DEPTS = window.GMA_CATALOG_DEPARTMENTS;
@@ -1576,7 +1576,10 @@ function imageUrlsFor(item){
   const ref = productRefKey(item);
   if(!ref) return [];
   const value = IMAGE_MANIFEST[ref];
-  const urls = Array.isArray(value) ? value.filter(Boolean) : (value ? [value] : []);
+  // La primera foto de 5790 muestra colín; la segunda sí es el surtido.
+  // Se corrige aquí para afectar únicamente a la web principal.
+  const urls = ref==='5790' ? ['images/products/5790-2.webp'] :
+    (Array.isArray(value) ? value.filter(Boolean) : (value ? [value] : []));
   const version = IMAGE_ASSET_VERSIONS[ref];
   if(!version) return urls;
   return urls.map(url=>`${url}${url.includes('?') ? '&' : '?'}v=${version}`);
