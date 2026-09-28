@@ -321,6 +321,12 @@
   .lightbox-card img{border:1px solid var(--line);width:100%;aspect-ratio:1 / 1;object-fit:contain;border-radius:12px;background:#fff;padding:0;display:block;max-width:100%;}
   .lightbox-name{font-family:'Geist',sans-serif;font-weight:700;font-size:14px;color:var(--ink);margin-top:12px;line-height:1.35;}
   .lightbox-close-btn{margin-top:14px;font-family:'Geist',sans-serif;font-size:12.5px;font-weight:600;color:var(--ink-soft);background:var(--paper-dim);border:none;border-radius:99px;padding:9px 18px;cursor:pointer;}
+  .lightbox-actions{display:flex;gap:10px;justify-content:center;margin-top:14px;}
+  .lightbox-select{flex:1;min-height:44px;border:0;border-radius:12px;background:var(--brand-wine);color:#fff;font-weight:700;cursor:pointer;}
+  .lightbox-select[aria-pressed="true"]{background:var(--night-bordeaux);}
+  .lightbox-close-btn{min-height:44px;margin-top:0;padding-inline:16px;}
+  .product-photo-select{position:absolute;right:12px;bottom:12px;z-index:4;min-height:40px;padding:0 12px;border:1px solid rgba(75,5,29,.18);border-radius:999px;background:#fff;color:var(--brand-wine);font-size:12px;font-weight:700;box-shadow:0 3px 12px rgba(0,0,0,.14);cursor:pointer;}
+  .product-photo-select[aria-pressed="true"]{background:var(--night-bordeaux);color:#fff;}
   .product-sheet{max-height:92vh!important;will-change:transform;transform:translate3d(0,100%,0);}
   .product-detail{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:8px 18px 22px;}
   .product-visual{position:relative;border:1px solid var(--line);overflow:hidden;display:flex;align-items:center;justify-content:center;aspect-ratio:1 / 1;margin:8px auto 16px;width:min(100%,430px);background:#fff;border-radius:18px;border-color:rgba(0,0,0,.075);box-shadow:0 1px 2px rgba(0,0,0,.025);}
@@ -729,6 +735,22 @@
 .gma-search-inner .search input{font-family:'Geist',sans-serif;color:var(--brick-ember);font-size:16px}
 .gma-search-inner .search input::placeholder{color:#9a8a8e}
 .gma-search-inner .filter-btn{height:42px;width:42px;flex:none;border:1px solid rgba(75,5,29,.15);background:var(--teal-tint);color:var(--teal);border-radius:12px}
+.gma-search-inner .clear-btn{display:flex;visibility:hidden}
+.gma-search-inner .clear-btn.show{visibility:visible}
+.search-suggestions{position:absolute;top:100%;left:max(14px,calc((100vw - 1180px)/2 + 32px));z-index:3;width:min(520px,calc(100vw - 28px));max-height:min(60dvh,430px);overflow:auto;background:#fff;border:1px solid rgba(75,5,29,.14);border-radius:0 0 16px 16px;box-shadow:0 16px 30px rgba(35,20,25,.18);overscroll-behavior:contain}
+.search-suggestions[hidden]{display:none!important}
+.search-suggestions-head{margin:0;padding:13px 15px 8px;color:var(--ink-soft);font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
+.search-suggestion{display:flex;align-items:center;gap:11px;width:100%;min-height:64px;padding:8px 14px;border:0;border-top:1px solid var(--line);background:#fff;color:var(--ink);text-align:left;cursor:pointer}
+.search-suggestion:hover,.search-suggestion.is-active,.search-suggestion:focus-visible{background:var(--soft-linen);outline:0}
+.search-suggestion-photo{flex:0 0 48px;display:grid;place-items:center;width:48px;height:48px;overflow:hidden;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--brand-wine)}
+.search-suggestion-photo img{width:100%;height:100%;object-fit:contain}
+.search-suggestion-photo svg{width:22px;height:22px;stroke:currentColor;fill:none}
+.search-suggestion-copy{display:block;min-width:0}
+.search-suggestion-name{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2;font-size:13px;font-weight:700;line-height:1.28}
+.search-suggestion-meta{display:block;margin-top:4px;color:var(--ink-soft);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.search-suggestions-all{width:100%;min-height:43px;padding:10px 15px;border:0;border-top:1px solid var(--line);background:var(--platinum);color:var(--brand-wine);text-align:left;font-size:12px;font-weight:700;cursor:pointer}
+.search-suggestions-empty{padding:12px 15px;color:var(--ink-soft);font-size:12px}
+@media(max-width:640px){.search-suggestions{left:12px;width:calc(100vw - 24px);max-height:min(52dvh,370px)}}
 .gma-burger{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px}
 .gma-burger i{width:20px;height:2px;background:currentColor;display:block;transition:transform .25s ease,opacity .25s ease}
 .gma-topbar.menu-open .gma-burger i:first-child{transform:translateY(7px) rotate(45deg)}
@@ -966,9 +988,14 @@ h1,h2,h3,.discovery-head h2,.carousel-head h2,.dept-header-label,
     </div>
   </div>
   <div class="gma-search-panel" id="topSearchPanel"><div class="gma-search-inner">
-    <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input id="searchInput" type="search" placeholder="Buscar producto, categoría o referencia…" autocomplete="off" aria-label="Buscar productos"><button class="clear-btn tap" id="clearSearch" aria-label="Borrar búsqueda">✕</button></div>
+    <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input id="searchInput" type="search" placeholder="Buscar producto, categoría o referencia…" autocomplete="off" aria-label="Buscar productos" aria-autocomplete="list" aria-expanded="false" aria-controls="searchSuggestionList"><button class="clear-btn tap" id="clearSearch" aria-label="Borrar búsqueda">✕</button></div>
     <button class="filter-btn tap" id="filterBtn" aria-label="Filtros"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M7 12h10M10 18h4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span class="filter-badge" id="filterBadge"></span></button>
   </div></div>
+  <div class="search-suggestions" id="searchSuggestions" hidden>
+    <p class="search-suggestions-head">Productos sugeridos</p>
+    <div id="searchSuggestionList" role="listbox" aria-label="Productos sugeridos"></div>
+    <button class="search-suggestions-all" id="searchSuggestionsAll" type="button">Ver todos los resultados →</button>
+  </div>
   <nav class="gma-menu-panel" id="topMenuPanel" aria-label="Menú principal" aria-hidden="true">
     <button type="button" data-menu-action="filters">Filtros</button>
     <button type="button" data-menu-action="home">Inicio</button>
@@ -1205,7 +1232,7 @@ h1,h2,h3,.discovery-head h2,.carousel-head h2,.dept-header-label,
   <div class="lightbox-card" id="lightboxCard">
     <img id="lightboxImg" src="" alt="">
     <div class="lightbox-name" id="lightboxName"></div>
-    <button class="lightbox-close-btn tap" id="lightboxClose">Cerrar</button>
+    <div class="lightbox-actions"><button class="lightbox-select" id="lightboxSelect" type="button" hidden>+ Añadir a la selección</button><button class="lightbox-close-btn tap" id="lightboxClose">Cerrar</button></div>
   </div>
 </div>
 
@@ -1967,7 +1994,7 @@ groupsEl.addEventListener('click', (e) => {
   if(photo){
     e.stopPropagation();
     const name = photo.closest('.item').querySelector('.item-name').textContent;
-    openLightbox(photo.src, name, photo.closest('.item'));
+    openLightbox(photo.src, name, photo.closest('.item'), photo.closest('.item').dataset.id);
     return;
   }
   const itemRow = e.target.closest('.item');
@@ -2279,6 +2306,13 @@ function renderProductDetail(id){
   if(nextArrow){nextArrow.hidden=onlyOneProduct;nextArrow.onclick=e=>{e.stopPropagation();goToNextProduct();};}
   const visualEl=productDetail.querySelector('.product-visual');
   if(visualEl){
+    const selectOnPhoto=document.createElement('button');
+    selectOnPhoto.type='button';
+    selectOnPhoto.className='product-photo-select';
+    selectOnPhoto.setAttribute('aria-pressed',String(selected));
+    selectOnPhoto.textContent=selected?'✓ Seleccionado':'+ Añadir a la selección';
+    selectOnPhoto.addEventListener('click',e=>{e.stopPropagation();toggleFav(id);});
+    visualEl.appendChild(selectOnPhoto);
     let startX=0,startY=0;
     visualEl.addEventListener('touchstart',e=>{
       if(e.touches.length!==1)return;
@@ -2345,7 +2379,7 @@ bindBackdropClose(productBackdrop, closeProduct);
 
 let lightboxOpen = false;
 let lightboxCloseTimer = null;
-function openLightbox(src, name, sourceEl){
+function openLightbox(src, name, sourceEl, id){
   if(!src) return;
   if(lightboxCloseTimer){
     clearTimeout(lightboxCloseTimer);
@@ -2355,6 +2389,11 @@ function openLightbox(src, name, sourceEl){
   img.src = src;
   img.alt = name || 'Imagen ampliada del producto';
   document.getElementById('lightboxName').textContent = name || '';
+  const select=document.getElementById('lightboxSelect');
+  select.hidden=!id;
+  select.dataset.id=id||'';
+  select.setAttribute('aria-pressed',String(!!id&&Object.prototype.hasOwnProperty.call(favs,id)));
+  select.textContent=id&&Object.prototype.hasOwnProperty.call(favs,id)?'✓ Seleccionado':'+ Añadir a la selección';
   lightboxBackdrop.classList.add('show');
   // Forzar un nuevo fotograma garantiza que la transición funcione también
   // después de cerrar y volver a abrir el visor en Safari/iOS.
@@ -2382,11 +2421,15 @@ function closeLightbox(){
 }
 bindReliableClose(document.getElementById('lightboxClose'), closeLightbox);
 bindBackdropClose(lightboxBackdrop, closeLightbox);
+document.getElementById('lightboxSelect').addEventListener('click',e=>{
+  const id=e.currentTarget.dataset.id;
+  if(id) toggleFav(id);
+});
 document.getElementById('sheetList').addEventListener('click', (e) => {
   const photo = e.target.closest('.item-photo.has-photo img');
   if(!photo) return;
   const name = photo.closest('.sheet-item').querySelector('.sheet-item-name').textContent;
-  openLightbox(photo.src, name, photo.closest('.sheet-item'));
+  openLightbox(photo.src, name, photo.closest('.sheet-item'), photo.closest('.sheet-item').dataset.id);
 });
 
 const PLUS_ICON = '<path d="M12 5v14M5 12h14" stroke-linecap="round"/>';
@@ -2410,6 +2453,17 @@ function toggleFav(id){
 
 function syncSelectionState(id){
   const isFav = Object.prototype.hasOwnProperty.call(favs,id);
+  if(currentProductId===id){
+    const photoButton=productDetail.querySelector('.product-photo-select');
+    if(photoButton){photoButton.setAttribute('aria-pressed',String(isFav));photoButton.textContent=isFav?'✓ Seleccionado':'+ Añadir a la selección';}
+    const detailButton=document.getElementById('productSelectBtn');
+    if(detailButton)detailButton.textContent=isFav?'✓ Quitar de la selección':'+ Añadir a la selección';
+  }
+  const lightboxButton=document.getElementById('lightboxSelect');
+  if(lightboxOpen&&lightboxButton.dataset.id===id){
+    lightboxButton.setAttribute('aria-pressed',String(isFav));
+    lightboxButton.textContent=isFav?'✓ Seleccionado':'+ Añadir a la selección';
+  }
   document.querySelectorAll(`.add-btn[data-id="${id}"]`).forEach(btn=>{
     btn.closest('.item, .sheet-item')?.classList.toggle('fav',isFav);
     btn.setAttribute('aria-pressed',String(isFav));
@@ -2485,41 +2539,114 @@ async function loadState(){
   setControlsHeight();
 }
 
-// ---- search (debounced) ----
-let searchDebounce;
-document.getElementById('searchInput').addEventListener('input', (e) => {
-  clearTimeout(searchDebounce);
-  const val = e.target.value;
-  document.getElementById('clearSearch').classList.toggle('show', val.trim().length > 0);
-  searchDebounce = setTimeout(() => {
-    const nextTerm=normalize(val.trim());
-    const startsSearch=!searchTerm && !!nextTerm;
-    searchTerm = nextTerm;
-    resetOpenState();
-    // Una búsqueda enseña directamente los productos encontrados: abre sus
-    // departamentos y familias para que nunca quede un único resultado oculto.
-    if(searchTerm){
-      currentVisibleGroups().forEach(g=>{
-        openDepts.add(g.dept);
-        openGroups.add(g.title);
-      });
+// Al escribir solo cambia el desplegable. El catálogo y la posición de lectura
+// se actualizan una vez, cuando se confirma con Intro o «Ver resultados».
+const searchInput=document.getElementById('searchInput');
+const searchSuggestions=document.getElementById('searchSuggestions');
+const searchSuggestionList=document.getElementById('searchSuggestionList');
+const suggestionCatalog=DATA.flatMap((group,gi)=>group.items.map((item,ii)=>({
+  id:itemId(gi,ii),item,group,name:normalize(item.n),ref:String(item.ref)
+})));
+let suggestedProducts=[];
+let activeSuggestion=-1;
+function hideSearchSuggestions(){
+  searchSuggestions.hidden=true;
+  searchInput.setAttribute('aria-expanded','false');
+  searchInput.removeAttribute('aria-activedescendant');
+  activeSuggestion=-1;
+}
+function markActiveSuggestion(index){
+  activeSuggestion=index;
+  searchSuggestionList.querySelectorAll('.search-suggestion').forEach((row,i)=>{
+    const active=i===index;
+    row.classList.toggle('is-active',active);
+    row.setAttribute('aria-selected',String(active));
+    if(active){
+      searchInput.setAttribute('aria-activedescendant',row.id);
+      if(row.offsetTop+row.offsetHeight>searchSuggestions.scrollTop+searchSuggestions.clientHeight)
+        searchSuggestions.scrollTop=row.offsetTop+row.offsetHeight-searchSuggestions.clientHeight;
+      else if(row.offsetTop<searchSuggestions.scrollTop) searchSuggestions.scrollTop=row.offsetTop;
     }
+  });
+  if(index<0)searchInput.removeAttribute('aria-activedescendant');
+}
+function updateSearchSuggestions(){
+  const typed=searchInput.value.trim();
+  const query=normalize(typed);
+  document.getElementById('clearSearch').classList.toggle('show',!!typed);
+  if(!query||!document.getElementById('siteHeader').classList.contains('search-open')){
+    hideSearchSuggestions();return;
+  }
+  suggestedProducts=suggestionCatalog.filter(({item,group})=>
+    matchesQuery(item.s,query)||matchesQuery(normalize(group.title),query)||matchesQuery(normalize(group.dept),query)
+  ).map(result=>{
+    const {name,ref,group}=result;
+    const rank=ref===query?0:ref.startsWith(query)?1:name.startsWith(query)?2:
+      matchesQuery(name,query)?3:matchesQuery(normalize(group.title),query)?4:5;
+    return {...result,rank};
+  }).sort((a,b)=>a.rank-b.rank||a.item.n.localeCompare(b.item.n,'es')).slice(0,6);
+  searchSuggestionList.innerHTML=suggestedProducts.length?suggestedProducts.map(({id,item,group},i)=>{
+    const photo=imageUrlFor(item);
+    const image=photo?`<img src="${escapeCatalogText(photo)}" alt="" loading="lazy" decoding="async">`:
+      '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="m6 16 4-4 3 3 2-2 3 3"/></svg>';
+    return `<button class="search-suggestion" type="button" role="option" id="searchSuggestion${i}" data-id="${id}" aria-selected="false"><span class="search-suggestion-photo">${image}</span><span class="search-suggestion-copy"><span class="search-suggestion-name">${escapeCatalogText(item.n)}</span><span class="search-suggestion-meta">Ref. ${escapeCatalogText(item.ref)} · ${escapeCatalogText(group.title)}</span></span></button>`;
+  }).join(''):'<div class="search-suggestions-empty">No hay productos sugeridos. Puedes buscar en todo el catálogo.</div>';
+  document.getElementById('searchSuggestionsAll').textContent=`Ver todos los resultados de «${typed}» →`;
+  searchSuggestions.hidden=false;
+  searchInput.setAttribute('aria-expanded','true');
+  markActiveSuggestion(-1);
+}
+function commitSearch(){
+  const nextTerm=normalize(searchInput.value.trim());
+  hideSearchSuggestions();
+  searchInput.blur();
+  if(nextTerm!==searchTerm){
+    searchTerm=nextTerm;
+    resetOpenState();
+    if(searchTerm)currentVisibleGroups().forEach(g=>{openDepts.add(g.dept);openGroups.add(g.title);});
     render();
-    // El carrusel ofrece el vistazo inicial pedido; después el usuario conserva
-    // libertad para elegir Lista o Visual sin que cada pulsación cambie la vista.
-    if(startsSearch) document.querySelector('.view-btn[data-view="carousel"]')?.click();
-    if(searchTerm) scrollToResults();
-  }, 180);
+  }
+  if(nextTerm)setTimeout(scrollToResults,180);
+}
+function openSearchSuggestion(id){
+  hideSearchSuggestions();
+  searchInput.blur();
+  openProduct(id,document.getElementById('topSearchToggle'));
+}
+searchInput.addEventListener('input',e=>{if(!e.isComposing)updateSearchSuggestions();});
+searchInput.addEventListener('compositionend',updateSearchSuggestions);
+searchInput.addEventListener('keydown',e=>{
+  if(e.isComposing)return;
+  if(e.key==='ArrowDown'||e.key==='ArrowUp'){
+    if(searchSuggestions.hidden||!suggestedProducts.length)return;
+    e.preventDefault();
+    markActiveSuggestion((activeSuggestion+(e.key==='ArrowDown'?1:-1)+suggestedProducts.length)%suggestedProducts.length);
+  }else if(e.key==='Enter'){
+    e.preventDefault();
+    if(activeSuggestion>=0&&suggestedProducts[activeSuggestion])openSearchSuggestion(suggestedProducts[activeSuggestion].id);
+    else commitSearch();
+  }else if(e.key==='Escape'&&!searchSuggestions.hidden){
+    e.preventDefault();e.stopPropagation();hideSearchSuggestions();
+  }
 });
+searchSuggestionList.addEventListener('click',e=>{
+  const row=e.target.closest('.search-suggestion');
+  if(row)openSearchSuggestion(row.dataset.id);
+});
+document.getElementById('searchSuggestionsAll').addEventListener('click',commitSearch);
 document.getElementById('clearSearch').addEventListener('click', () => {
-  document.getElementById('searchInput').value = '';
-  searchTerm = '';
-  resetOpenState();
+  searchInput.value='';
   document.getElementById('clearSearch').classList.remove('show');
-  render();
+  hideSearchSuggestions();
+  if(searchTerm){searchTerm='';resetOpenState();render();}
+  searchInput.focus({preventScroll:true});
 });
+window.GMA_HIDE_SEARCH_SUGGESTIONS=hideSearchSuggestions;
+window.GMA_UPDATE_SEARCH_SUGGESTIONS=updateSearchSuggestions;
+window.GMA_IMAGE_MANIFEST_READY?.then(()=>{if(!searchSuggestions.hidden)updateSearchSuggestions();});
 function clearAllFilters(){
   document.getElementById('searchInput').value = '';
+  hideSearchSuggestions();
   searchTerm = '';
   currentDept = 'all';
   onlyNew = false;
@@ -2542,8 +2669,10 @@ function scrollToResults(){
     // Place the first catalogue section directly below the fixed header and
     // view controls, including when the search panel changes header height.
     const headerH=document.getElementById('siteHeader')?.getBoundingClientRect().height||0;
-    const controlsH = controls.offsetHeight;
-    const rect = groupsEl.getBoundingClientRect();
+    const desktopCatalog=document.getElementById('desktopCatalog');
+    const showDesktop=desktopCatalog&&getComputedStyle(desktopCatalog).display!=='none';
+    const controlsH = showDesktop?0:controls.offsetHeight;
+    const rect = (showDesktop?desktopCatalog:groupsEl).getBoundingClientRect();
     const target = window.scrollY + rect.top - headerH - controlsH - 4;
     if(Math.abs(target - window.scrollY) > 4){
       scrollImmediately(target);
@@ -2637,6 +2766,7 @@ function renderSheet(){
       const qty = favs[id];
       const row = document.createElement('div');
       row.className = 'sheet-item';
+      row.dataset.id = id;
       const imageUrl = imageUrlFor(it);
       const photoHtml = imageUrl
         ? `<div class="item-photo has-photo"><img class="${productPhotoCropClass(it)}" src="${imageUrl}" alt="" loading="lazy" decoding="async"></div>`
@@ -3073,7 +3203,7 @@ loadState();
 
   const goTop=()=>window.scrollTo({top:0,behavior:'smooth'});
   document.getElementById('navHome').onclick=goTop;
-  document.getElementById('navSearch').onclick=()=>{goTop();if(!document.getElementById('siteHeader').classList.contains('search-open'))document.getElementById('topSearchToggle').click();else document.getElementById('searchInput').focus()};
+  document.getElementById('navSearch').onclick=()=>{if(!document.getElementById('siteHeader').classList.contains('search-open'))document.getElementById('topSearchToggle').click();else document.getElementById('searchInput').focus({preventScroll:true})};
   document.getElementById('navIndex').onclick=()=>openIndex();
   document.getElementById('heroIndexBtn').onclick=()=>openIndex();
   document.getElementById('navSelection').onclick=()=>{ if(favIds().length) openSheet(); else showToast('Aún no has seleccionado productos'); };
@@ -3458,6 +3588,7 @@ render();
   const showSearch=(open,focus=false)=>{
     if(open){closeMenu();closeAccount();}
     header.classList.toggle('search-open',open);
+    if(!open)window.GMA_HIDE_SEARCH_SUGGESTIONS?.();
     searchButton.setAttribute('aria-expanded',String(open));
     searchButton.setAttribute('aria-label',open?'Ocultar buscador':'Mostrar buscador');
     updateHeight();
@@ -3468,7 +3599,7 @@ render();
   else wideScreen.addListener(placeToolbar);
   window.addEventListener('resize',()=>{updateHeight();if(dialog.classList.contains('open'))positionAccount();});
   searchButton.addEventListener('click',()=>showSearch(!header.classList.contains('search-open'),true));
-  search.addEventListener('focus',()=>showSearch(true));
+  search.addEventListener('focus',()=>{showSearch(true);window.GMA_UPDATE_SEARCH_SUGGESTIONS?.();});
   accountButton.addEventListener('click',()=>{
     const opening=!dialog.classList.contains('open');
     showSearch(false);closeMenu();
@@ -3508,7 +3639,7 @@ render();
   document.addEventListener('pointerdown',event=>{
     // El buscador permanece abierto mientras se toca o desplaza el catálogo.
     // Cerrarlo en pointerdown movía los resultados bajo el dedo antes del click.
-    if(!header.contains(event.target)) closeMenu();
+    if(!header.contains(event.target)){closeMenu();window.GMA_HIDE_SEARCH_SUGGESTIONS?.();}
     if(!dialog.contains(event.target)&&!accountButton.contains(event.target))closeAccount();
   });
   document.addEventListener('keydown',event=>{
