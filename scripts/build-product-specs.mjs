@@ -7,6 +7,7 @@ const sources = [
   'data/pasta-rellena-info.json',
   'data/ahumados-dominguez-info.json',
   'data/montesano-info.json',
+  'data/crego-info.json',
 ];
 const outputPath = join(root, 'data/product-specs.js');
 const specs = {};

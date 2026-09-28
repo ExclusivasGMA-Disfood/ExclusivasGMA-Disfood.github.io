@@ -1,0 +1,14 @@
+{
+  "6012": {
+    "brand": "IBÉRICOS CREGO",
+    "facts": [["Producto", "Jamón de cebo ibérico"], ["Raza ibérica", "50 %"], ["Precinto", "Blanco"], ["Conservación", "Lugar fresco y seco, entre 5 y 10 °C"]],
+    "ingredients": "Jamón de cerdo ibérico, sal, azúcar, conservadores E-252 y E-250, antioxidantes E-331(iii) y E-301.",
+    "source": "https://ibericoscrego.com/producto/jamon-de-cebo-iberico-50/"
+  },
+  "6455": {
+    "brand": "IBÉRICOS CREGO",
+    "facts": [["Producto", "Lomo de cebo ibérico embuchado"], ["Raza ibérica", "50 %"], ["Elaboración", "Con pimentón y especias"], ["Conservación", "Lugar fresco y seco, entre 5 y 10 °C; retirar la tripa antes de consumir"]],
+    "ingredients": "Lomo de cebo ibérico, sal, especias, pimentón, aceite de oliva, azúcar, dextrosa, antioxidantes E-300 y E-331(iii), conservadores E-250 y E-252.",
+    "source": "https://ibericoscrego.com/producto/lomo-de-cebo-iberico-embuchado/"
+  }
+}
