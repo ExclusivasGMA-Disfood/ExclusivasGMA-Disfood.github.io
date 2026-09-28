@@ -11,3 +11,5 @@ Se priorizan producto visible y fondos blancos o transparentes sobre blanco. Se 
 Archivos: data/catalog-data.js, data/image-framing.json, assets/discovery.js, assets/image-framing.js; versiones de recursos en index.html y nuevo/index.html. scripts/check-catalog.mjs actualiza los tamaños esperados de selección y exige foto y marca isNew para las novedades.
 
 Verificación: inspección visual de las 14 fuentes; suite funcional y validación de imágenes antes de publicar. Revisión de la página publicada al terminar. No se afirma prueba física en iPhone.
+
+Resultado: publicación 78a86b1 desplegada correctamente. 12/12 pruebas funcionales; 748 imágenes válidas. Comprobación en producción de 6 novedades, 8 Top y carga correcta de las 14 fotos. Captura de escritorio: seleccion-blanco-publicada.jpg. No se repitió la prueba responsive en esta sesión; no se cambiaron dimensiones ni puntos de ruptura.
