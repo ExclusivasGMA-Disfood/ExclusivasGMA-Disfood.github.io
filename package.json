@@ -1,0 +1,6 @@
+{
+  "name": "gma-catalog-quality",
+  "private": true,
+  "scripts": {"test": "node scripts/build-product-specs.mjs --check && node scripts/check-catalog.mjs && node scripts/check-images.mjs && node --test scripts/catalog.test.mjs"},
+  "devDependencies": {"happy-dom": "20.0.11", "sharp": "0.34.5"}
+}

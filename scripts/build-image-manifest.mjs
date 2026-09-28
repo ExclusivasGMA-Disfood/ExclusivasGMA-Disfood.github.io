@@ -41,5 +41,7 @@ for (const ref of Object.keys(groups).sort()) {
   const urls = groups[ref].sort((a,b)=>a.order-b.order).map(x=>x.url);
   manifest[ref] = urls.length === 1 ? urls[0] : urls;
 }
+// Galería vinculada manualmente: mantenerla al incorporar fotos nuevas.
+if (manifest['989900'] && fs.existsSync('images/products/4476.jpg')) manifest['989900']=[...new Set([].concat(manifest['989900'],'images/products/4476.jpg'))];
 fs.writeFileSync('data/images-manifest.json', JSON.stringify(manifest,null,2)+'\n');
 console.log('Manifest actualizado:', Object.keys(manifest).length, 'referencias con foto');

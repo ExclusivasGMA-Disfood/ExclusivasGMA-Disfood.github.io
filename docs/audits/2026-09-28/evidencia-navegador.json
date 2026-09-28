@@ -1,0 +1,88 @@
+{
+  "cards": [
+    {
+      "buttonWidth": 30,
+      "imageFit": "contain",
+      "imageHeight": 122,
+      "overlapTitle": true,
+      "photoHeight": 78.703125,
+      "ref": "Ref. 5329"
+    },
+    {
+      "buttonWidth": 30,
+      "imageFit": "contain",
+      "imageHeight": 122,
+      "overlapTitle": true,
+      "photoHeight": 78.703125,
+      "ref": "Ref. 6112"
+    },
+    {
+      "buttonWidth": 30,
+      "imageFit": null,
+      "overlapTitle": true,
+      "photoHeight": 78.703125,
+      "ref": "Ref. 6486"
+    },
+    {
+      "buttonWidth": 30,
+      "imageFit": "contain",
+      "imageHeight": 122,
+      "overlapTitle": true,
+      "photoHeight": 78.703125,
+      "ref": "Ref. 2323"
+    },
+    {
+      "buttonWidth": 30,
+      "imageFit": "contain",
+      "imageHeight": 122,
+      "overlapTitle": true,
+      "photoHeight": 78.703125,
+      "ref": "Ref. 6583"
+    },
+    {
+      "buttonWidth": 30,
+      "imageFit": "contain",
+      "imageHeight": 122,
+      "overlapTitle": true,
+      "photoHeight": 78.703125,
+      "ref": "Ref. 6691"
+    },
+    {
+      "buttonWidth": 30,
+      "imageFit": "contain",
+      "imageHeight": 122,
+      "overlapTitle": true,
+      "photoHeight": 78.703125,
+      "ref": "Ref. 1127"
+    },
+    {
+      "buttonWidth": 30,
+      "imageFit": "contain",
+      "imageHeight": 122,
+      "overlapTitle": true,
+      "photoHeight": 78.703125,
+      "ref": "Ref. 6058"
+    },
+    {
+      "buttonWidth": 30,
+      "imageFit": null,
+      "overlapTitle": true,
+      "photoHeight": 78.703125,
+      "ref": "Ref. 6777"
+    },
+    {
+      "buttonWidth": 30,
+      "imageFit": "contain",
+      "imageHeight": 122,
+      "overlapTitle": true,
+      "photoHeight": 78.703125,
+      "ref": "Ref. 5966"
+    }
+  ],
+  "styleRestorationMarker": true,
+  "url": "https://exclusivasgma-disfood.github.io/",
+  "viewport": {
+    "height": 936,
+    "width": 1363
+  }
+}

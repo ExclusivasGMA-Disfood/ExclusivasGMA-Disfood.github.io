@@ -293,7 +293,7 @@ function imageUrlsFor(item){
   const value = IMAGE_MANIFEST[ref];
   // La primera foto de 5790 muestra colín; la segunda sí es el surtido.
   // Se corrige aquí para afectar únicamente a la web principal.
-  const urls = ref==='5790' ? ['/images/products/5790-2.webp'] :
+  const urls = ref==='5790' ? ['images/products/5790-2.webp'] :
     (Array.isArray(value) ? value.filter(Boolean) : (value ? [value] : []));
   const version = IMAGE_ASSET_VERSIONS[ref];
   if(!version) return urls;
@@ -774,6 +774,7 @@ groupsEl.addEventListener('click', (e) => {
   }
 });
 groupsEl.addEventListener('keydown', (e) => {
+  if(e.target.closest('button,input,a,select'))return;
   const row = e.target.closest('.item');
   if(row && (e.key === 'Enter' || e.key === ' ')){
     e.preventDefault();

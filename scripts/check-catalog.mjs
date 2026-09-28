@@ -49,13 +49,30 @@ for (const [ref, value] of Object.entries(manifest)) {
   }
 }
 for (const [ref, info] of Object.entries(specs)) {
-  if (!refs.has(ref) || !info.ingredients || !info.source) fail(`Ficha técnica incompleta: ${ref}`);
+  if (!refs.has(ref) || !info.source || !info.facts?.length || !['with-ingredients','facts-only'].includes(info.completeness)) fail(`Ficha técnica incompleta: ${ref}`);
   if (info.source?.startsWith('images/') && !existsSync(join(root, info.source))) fail(`Fuente local inexistente: ${ref}`);
 }
-for (const [, source] of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)) {
-  if (source.trim()) new Script(source);
+for (const page of ['index.html','nuevo/index.html']) {
+  const content=read(page);
+  for (const match of content.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g)) {
+    if(match[1].includes('application/ld+json')){JSON.parse(match[2]);continue;}
+    const src=match[1].match(/src="([^"?]+)/)?.[1];
+    if(src&&!src.startsWith('http'))new Script(read(src));
+    else if(match[2].trim())new Script(match[2]);
+  }
+  if (/20 sugerencias|<h2>Más vendidas<\/h2>/.test(content)) fail(`${page}: selección presentada como ventas reales`);
+  if (/data:image\/[^;]+;base64/.test(content)) fail(`${page}: imagen incrustada en Base64`);
+  for(const id of ['desktopExpandAll','productSheet','searchSuggestions','lightboxSelect']){
+    if(!content.includes(`id="${id}"`))fail(`${page}: falta ${id}`);
+  }
 }
-if (/20 sugerencias|<h2>Más vendidas<\/h2>/.test(html)) fail('El escaparate aún se presenta como ventas reales');
+// A source with verified facts may not disappear merely because ingredients are missing.
+for(const file of ['pasta-rellena','ahumados-dominguez','montesano','crego','diaz']){
+  const entries=JSON.parse(read(`data/${file}-info.json`));
+  for(const [ref,info] of Object.entries(entries)){
+    if(info.source&&info.facts?.some(([k,v])=>k&&v)&&!specs[ref])fail(`Datos documentados excluidos: ${ref}`);
+  }
+}
 
 if (errors.length) {
   console.error(errors.join('\n'));

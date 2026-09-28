@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - 'index.html'
+      - 'nuevo/**'
+      - 'assets/**'
+      - 'package*.json'
       - 'data/**'
       - 'images/products/**'
       - 'scripts/**'
@@ -18,5 +21,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: node scripts/build-product-specs.mjs --check
-      - run: node scripts/check-catalog.mjs
+      - run: npm ci
+      - run: npm test

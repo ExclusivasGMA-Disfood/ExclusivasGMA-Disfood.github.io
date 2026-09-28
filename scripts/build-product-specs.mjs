@@ -16,14 +16,16 @@ const specs = {};
 for (const sourcePath of sources) {
   const source = JSON.parse(readFileSync(join(root, sourcePath), 'utf8'));
   for (const [ref, entry] of Object.entries(source)) {
-    // Publicar solo fichas completas, con fuente verificable, datos factuales e ingredientes.
-    if (!entry.source || !entry.ingredients || !Array.isArray(entry.facts) || !entry.facts.some(([label, value]) => label && value)) continue;
+    // Publicar hechos documentados; los ingredientes son un campo opcional explícito.
+    if (!entry.source || !Array.isArray(entry.facts) || !entry.facts.some(([label, value]) => label && value)) continue;
     if (specs[ref]) throw new Error(`Referencia repetida entre fabricantes: ${ref}`);
     specs[ref] = {
       title: `Datos declarados · ${entry.brand}`,
+      completeness: entry.ingredients ? 'with-ingredients' : 'facts-only',
       facts: entry.facts.filter(([label, value]) => label && value),
       ...(entry.ingredients ? { ingredients: entry.ingredients } : {}),
       source: entry.source,
+      ...(entry.image_note ? {imageNote:entry.image_note} : {}),
       ...(entry.origin ? { origin: entry.origin } : {}),
     };
   }
@@ -37,4 +39,4 @@ if (process.argv.includes('--check')) {
 } else {
   writeFileSync(outputPath, output);
 }
-console.log(`${Object.keys(specs).length} fichas técnicas con fuente e ingredientes`);
+console.log(`${Object.keys(specs).length} registros documentados con estado de ingredientes`);
