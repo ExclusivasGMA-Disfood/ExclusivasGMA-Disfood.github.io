@@ -77,7 +77,7 @@
 
     /* Selección editorial de 25 referencias del catálogo; no representa ventas medidas. */
     const FEATURED_REFS=window.GMA_CATALOG_CURATION.featured;
-    const best=FEATURED_REFS.map(findRef).filter(Boolean),bestHtml=best.map(x=>cardFor(x.it,x.id,'Selección')).join('');
+    const best=FEATURED_REFS.map(findRef).filter(Boolean),bestHtml=best.map(x=>cardFor(x.it,x.id,'Top')).join('');
     const count=document.getElementById('bestDiscoveryCount');if(count)count.textContent=`${best.length} referencias`;
     const bestEl=document.getElementById('bestDiscoveryScroll');if(bestEl)bestEl.innerHTML=bestHtml;
   }

@@ -38,3 +38,7 @@ La aclaración final del usuario pide corregir el diseño actual y documentar ca
 ## UX autorizada: cabecera y móvil horizontal
 
 El siguiente encargo autoriza mejorar los tres desplegables, seguir la familia al bajar y adaptar dimensiones en móvil horizontal. Registro: `docs/audits/2026-09-28/UX-CABECERA-Y-HORIZONTAL.md`. Los paneles de cabecera se superponen sin alterar el flujo; solo uno abierto. La familia leída se marca sin cambiar filtros ni reconstruir productos. Solo entre 640–999 px en horizontal se reduce la cabecera a 44 px y se usan fotos laterales en Cuadrícula/Lista. No extender esos tamaños a móvil vertical o escritorio.
+
+## Etiquetas Top
+
+Petición posterior: cambiar únicamente la etiqueta «Selección» de las tarjetas del carrusel a «Top». Se cambia en `assets/discovery.js`, compartido por ambas páginas; recursos versionados en ambos HTML. La recomendación sigue siendo editorial, sin afirmar ventas medidas. Las fotos 5329 y 6112 se inspeccionaron: 6112 incorpora un amplio borde blanco en el archivo. Se propone normalizar el fondo sobrante y la escala visual por tipo de producto con copias derivadas y manifiesto JSON; esa propuesta no se ha aplicado todavía.
