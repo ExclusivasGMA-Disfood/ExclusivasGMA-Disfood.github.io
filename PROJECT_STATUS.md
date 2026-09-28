@@ -4,7 +4,7 @@
 
 - Catálogo oficial: `/`. Presentación alternativa: `/nuevo/` (sin indexación).
 - 1.001 referencias; 17 departamentos y 79 familias. No publicar precios.
-- Geist para interfaz y lectura; Merriweather para títulos editoriales.
+- Geist para interfaz y lectura; Merriweather para títulos y nombres de producto, tal como estaba antes de la auditoría.
 - Referencia estética anterior a Crego: `82f3ca8d013bbd444bdb13b8c89641194098f933`.
 - Mantener encabezado, colores y organización; no mezclar una importación de proveedor con un rediseño.
 - Fotografías como archivos en `images/products/`, relacionadas mediante `data/images-manifest.json`. Nunca imágenes de producto incrustadas en Base64.
@@ -26,3 +26,7 @@ El catálogo de escritorio/horizontal muestra todo el resultado y carga lotes pr
 4. Verificar el despliegue y los archivos servidos. Registrar la versión y las limitaciones reales; CI verde no sustituye una revisión visual.
 
 No revertir datos o eliminar hechos documentados para lograr una validación verde. Un campo ausente debe tener un estado explícito.
+
+## Corrección de continuidad visual
+
+La revisión posterior a `b9f7d9f` elimina las ampliaciones de tarjetas y títulos introducidas por la auditoría. Los anchos, proporciones y tipografías vuelven a los definidos en los temas anteriores (`aac7ae58`); se conserva la contención de imágenes y la separación de referencia/botón. No sustituir la página principal por `/nuevo/`. Mantener las reparaciones funcionales y todos los datos.
