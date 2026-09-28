@@ -901,6 +901,20 @@ h1,h2,h3,.sheet-head h2{font-family:'Merriweather',serif;letter-spacing:-.02em}
   .desktop-products{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(prefers-reduced-motion:reduce){.desktop-product-card,.product-sheet{transition:none}}
+
+/* Tipografía solicitada: Geist para interfaz y Merriweather para títulos y productos. */
+:root{--font-body:'Geist',sans-serif;--font-heading:'Merriweather',serif;--bx-font:'Geist',sans-serif;--bx-heading:'Merriweather',serif}
+html body,html body button,html body input,html body textarea,html body select{font-family:var(--font-body)}
+html body :is(h1,h2,h3,h4,h5,h6,.bx-title,.group-title,.item-name,.desktop-product-name,.product-name,.product-detail-title,.dept-header-label){font-family:var(--font-heading)}
+
+/* Ajustes puntuales para conservar la estética anterior y corregir interacción móvil. */
+@media(max-width:600px){
+ html body .discovery-add{top:8px;right:8px;bottom:auto;width:32px;height:32px;border:1px solid rgba(20,20,20,.12)}
+}
+html body .product-visual img.product-photo-crop{position:static!important;inset:auto!important;left:auto!important;top:auto!important;width:100%!important;height:100%!important;max-width:100%!important;object-fit:contain!important;padding:8px!important;border-radius:inherit!important}
+.desktop-expand-all{display:none;align-items:center;justify-content:center;min-height:40px;padding:0 14px;border:1px solid rgba(75,5,29,.16);border-radius:10px;background:var(--soft-linen);color:var(--brand-wine);font:700 11.5px/1 'Geist',sans-serif;cursor:pointer}
+.desktop-expand-all:focus-visible{outline:3px solid rgba(75,5,29,.25);outline-offset:2px}
+@media (orientation:landscape) and (min-width:640px) and (max-width:999px) and (pointer:coarse){html body .desktop-expand-all{display:inline-flex}}
 </style>
 
 
