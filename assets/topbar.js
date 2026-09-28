@@ -5,6 +5,9 @@
   const menuButton=document.getElementById('topMenuToggle');
   const menu=document.getElementById('topMenuPanel');
   const search=document.getElementById('searchInput');
+  const searchPanel=document.getElementById('topSearchPanel');
+  searchPanel.appendChild(document.getElementById('searchSuggestions'));
+  searchPanel.setAttribute('aria-hidden','true');
   const dialog=document.getElementById('accountDialog');
   const toolbar=document.querySelector('#controls .catalog-toolbar');
   const toolbarHome=document.getElementById('controls');
@@ -17,7 +20,7 @@
   };
   const positionAccount=()=>{
     const rect=accountButton.getBoundingClientRect();
-    dialog.style.setProperty('--account-top',rect.bottom+'px');
+    dialog.style.setProperty('--account-top',header.getBoundingClientRect().bottom+'px');
     dialog.style.setProperty('--account-right',(window.innerWidth-rect.right)+'px');
   };
   const closeMenu=()=>{
@@ -31,17 +34,20 @@
     dialog.setAttribute('aria-hidden','true');
     accountButton.setAttribute('aria-expanded','false');
     dialog.inert=true;
-    if(restoreFocus)accountButton.focus();
+    if(restoreFocus)accountButton.focus({preventScroll:true});
   };
   const showSearch=(open,focus=false)=>{
     if(open){closeMenu();closeAccount();}
-    header.classList.toggle('search-open',open);document.getElementById('topSearchPanel').inert=!open;
+    if(!open&&searchPanel.contains(document.activeElement))document.activeElement.blur();
+    header.classList.toggle('search-open',open);searchPanel.inert=!open;
+    searchPanel.setAttribute('aria-hidden',String(!open));
     if(!open)window.GMA_HIDE_SEARCH_SUGGESTIONS?.();
     searchButton.setAttribute('aria-expanded',String(open));
     searchButton.setAttribute('aria-label',open?'Ocultar buscador':'Mostrar buscador');
     updateHeight();
     if(open&&focus)search.focus({preventScroll:true});
   };
+  window.GMA_CLOSE_SEARCH=()=>showSearch(false);
   if(typeof ResizeObserver!=='undefined')new ResizeObserver(updateHeight).observe(header);
   if(wideScreen.addEventListener)wideScreen.addEventListener('change',placeToolbar);
   else wideScreen.addListener(placeToolbar);
@@ -66,6 +72,7 @@
     header.classList.toggle('menu-open',opening);
     menuButton.setAttribute('aria-expanded',String(opening));
     menu.setAttribute('aria-hidden',String(!opening));menu.inert=!opening;
+    if(opening)menu.querySelector('button')?.focus({preventScroll:true});
   });
   menu.addEventListener('click',event=>{
     const item=event.target.closest('[data-menu-action]');
@@ -80,16 +87,15 @@
     }
   });
   document.addEventListener('pointerdown',event=>{
-    // El buscador permanece abierto mientras se toca o desplaza el catálogo.
-    // Cerrarlo en pointerdown movía los resultados bajo el dedo antes del click.
-    if(!header.contains(event.target)){closeMenu();window.GMA_HIDE_SEARCH_SUGGESTIONS?.();}
+    // Overlay panels never change document height when dismissed.
+    if(!header.contains(event.target)){closeMenu();showSearch(false);}
     if(!dialog.contains(event.target)&&!accountButton.contains(event.target))closeAccount();
   });
   document.addEventListener('keydown',event=>{
     if(event.key!=='Escape')return;
     if(dialog.classList.contains('open')){closeAccount(true);return;}
-    if(header.classList.contains('menu-open')){closeMenu();menuButton.focus();return;}
-    if(header.classList.contains('search-open')){showSearch(false);searchButton.focus();}
+    if(header.classList.contains('menu-open')){closeMenu();menuButton.focus({preventScroll:true});return;}
+    if(header.classList.contains('search-open')){showSearch(false);searchButton.focus({preventScroll:true});}
   });
   placeToolbar();
 })();

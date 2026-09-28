@@ -98,3 +98,37 @@ test('PDF: documento real con selección extensa y sin precios',async()=>{
    assert.ok((pdf.match(/\/Type \/Page\b/g)||[]).length>1,'La selección extensa ocupa varias páginas');
  }finally{await w.happyDOM.close();}
 });
+
+for(const page of ['index.html','nuevo/index.html']){
+ test(`${page}: paneles exclusivos, cierre y foco`,async()=>{
+  const w=await app(page);try{const d=w.document;
+   d.querySelector('#topSearchToggle').click();
+   assert.equal(d.activeElement.id,'searchInput');
+   assert.equal(d.querySelector('#topSearchPanel').getAttribute('aria-hidden'),'false');
+   d.querySelector('#topSelection').click();
+   assert.equal(d.querySelector('#topSearchPanel').inert,true);
+   assert.equal(d.querySelector('#accountDialog').getAttribute('aria-hidden'),'false');
+   d.querySelector('#topMenuToggle').click();
+   assert.equal(d.querySelector('#accountDialog').inert,true);
+   assert.equal(d.querySelector('#topMenuPanel').getAttribute('aria-hidden'),'false');
+   d.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));
+   assert.equal(d.querySelector('#topMenuPanel').inert,true);
+   assert.equal(d.activeElement.id,'topMenuToggle');
+  }finally{await w.happyDOM.close();}
+ });
+ test(`${page}: el scroll marca la familia sin filtrar ni reemplazar productos`,async()=>{
+  const w=await app(page);try{const d=w.document;
+   const cards=[...d.querySelectorAll('.desktop-product-card')],ids=cards.map(e=>e.dataset.id);
+   let offset=0;
+   cards.forEach((el,i)=>el.getBoundingClientRect=()=>({top:i*140-offset,bottom:(i+1)*140-offset,height:140}));
+   const target=cards.findIndex(e=>e.dataset.id.split('-')[0]!==cards[0].dataset.id.split('-')[0]);
+   assert.ok(target>0);offset=target*140;
+   w.dispatchEvent(new w.Event('scroll'));await new Promise(r=>setTimeout(r,40));
+   assert.equal(d.querySelector('[aria-current="location"]').dataset.desktopGroup,cards[target].dataset.id.split('-')[0]);
+   assert.deepEqual([...d.querySelectorAll('.desktop-product-card')].map(e=>e.dataset.id),ids);
+   assert.equal(d.querySelector('.desktop-product-card'),cards[0]);
+   offset=0;w.dispatchEvent(new w.Event('scroll'));await new Promise(r=>setTimeout(r,40));
+   assert.equal(d.querySelector('[aria-current="location"]').dataset.desktopGroup,cards[0].dataset.id.split('-')[0]);
+  }finally{await w.happyDOM.close();}
+ });
+}

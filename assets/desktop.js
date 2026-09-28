@@ -19,6 +19,56 @@
   const DESKTOP_BATCH=72;
   let desktopLimit=DESKTOP_BATCH;
   let desktopScopeKey='';
+  let readingGroup=null;
+  let trackingFrame=0;
+  const readingLabel=document.createElement('div');
+  readingLabel.className='desktop-reading-family';
+  readingLabel.setAttribute('aria-label','Familia en pantalla');
+  readingLabel.hidden=true;
+  products.before(readingLabel);
+
+  function trackReadingPosition(){
+    trackingFrame=0;
+    if(!desktopMedia.matches)return;
+    const cards=products.querySelectorAll('.desktop-product-card');
+    if(!cards.length)return;
+    const line=document.getElementById('siteHeader').getBoundingClientRect().bottom+32;
+    // Grid rows have ordered bottoms. Binary search avoids measuring every product on scroll.
+    let low=0,high=cards.length;
+    while(low<high){const mid=(low+high)>>1;if(cards[mid].getBoundingClientRect().bottom<=line)low=mid+1;else high=mid;}
+    const card=cards[low];
+    if(!card||card.getBoundingClientRect().top>=window.innerHeight)return;
+    const gi=Number(card.dataset.id.split('-')[0]);
+    if(gi===readingGroup)return;
+    const group=DATA[gi];if(!group)return;
+    readingGroup=gi;
+    readingLabel.textContent=group.dept+' · '+group.title;
+    readingLabel.hidden=false;
+    openDept=group.dept;
+    familyList.querySelectorAll('.desktop-dept').forEach(el=>{
+      const active=el.dataset.dept===group.dept;
+      el.classList.toggle('active',active);
+      el.querySelector('.desktop-dept-button').setAttribute('aria-expanded',String(active));
+    });
+    let current;
+    familyList.querySelectorAll('.desktop-group-button').forEach(button=>{
+      const active=Number(button.dataset.desktopGroup)===gi;
+      button.classList.toggle('active',active);
+      if(active){button.setAttribute('aria-current','location');current=button;}
+      else button.removeAttribute('aria-current');
+    });
+    // Scroll only the sidebar, never the page or the product list.
+    if(current){const a=current.getBoundingClientRect(),b=familyList.getBoundingClientRect();
+      if(a.top<b.top)familyList.scrollTop+=a.top-b.top-4;
+      else if(a.bottom>b.bottom)familyList.scrollTop+=a.bottom-b.bottom+4;
+    }
+  }
+  function queueReadingPosition(){
+    if(!trackingFrame)trackingFrame=requestAnimationFrame(trackReadingPosition);
+  }
+  window.addEventListener('scroll',queueReadingPosition,{passive:true});
+  window.addEventListener('resize',queueReadingPosition,{passive:true});
+
 
   const esc=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const groupRows=()=>DATA.map((group,gi)=>({group,gi,visible:getVisibleItemsForGroup(group,gi).items}));
@@ -39,6 +89,7 @@
     return true;
   }
   function renderNavigation(rows,activeGi){
+    readingGroup=null;
     familyList.innerHTML=DEPTS.map(({name})=>{
       const deptRows=rows.filter(row=>row.group.dept===name);
       if(!deptRows.length)return '';
@@ -88,6 +139,8 @@
     const visibleLimit=desktopLimit;
     window.GMA_DESKTOP_ITEMS=entries.map(({it,id,group:g})=>({it,id,g}));
     const visibleEntries=entries.slice(0,visibleLimit);
+    readingLabel.hidden=!entries.length;
+    readingLabel.textContent=entries.length?entries[0].group.dept+' · '+entries[0].group.title:'';
     const remaining=Math.max(0,entries.length-visibleEntries.length);
     meta.textContent=`${entries.length} ${entries.length===1?'producto':'productos'}`;
     products.className=`desktop-products ${desktopView==='grid'?'':desktopView}`;

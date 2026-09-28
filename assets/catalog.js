@@ -1330,6 +1330,7 @@ function updateSearchSuggestions(){
   markActiveSuggestion(-1);
 }
 function commitSearch(){
+  window.GMA_CLOSE_SEARCH?.();
   const nextTerm=normalize(searchInput.value.trim());
   hideSearchSuggestions();
   searchInput.blur();
@@ -1342,6 +1343,7 @@ function commitSearch(){
   if(nextTerm)setTimeout(scrollToResults,180);
 }
 function openSearchSuggestion(id){
+  window.GMA_CLOSE_SEARCH?.();
   hideSearchSuggestions();
   searchInput.blur();
   openProduct(id,document.getElementById('topSearchToggle'));

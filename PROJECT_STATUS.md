@@ -34,3 +34,7 @@ La revisión posterior a `b9f7d9f` elimina las ampliaciones de tarjetas y títul
 ## Regla vigente: revisar el estado actual, no recuperar otra versión
 
 La aclaración final del usuario pide corregir el diseño actual y documentar cambios, no seguir comparando/restaurando versiones. Leer `AGENTS.md` y `docs/audits/2026-09-28/CONTINUIDAD-Y-ENCUADRE.md`. La barra de vistas y Desplegar todo comparten fila. Fotos completas, centradas, con margen interior del 8 %, sin cover ni zoom. No tocar anchos de tarjetas o cabecera como consecuencia de una corrección de fotografías.
+
+## UX autorizada: cabecera y móvil horizontal
+
+El siguiente encargo autoriza mejorar los tres desplegables, seguir la familia al bajar y adaptar dimensiones en móvil horizontal. Registro: `docs/audits/2026-09-28/UX-CABECERA-Y-HORIZONTAL.md`. Los paneles de cabecera se superponen sin alterar el flujo; solo uno abierto. La familia leída se marca sin cambiar filtros ni reconstruir productos. Solo entre 640–999 px en horizontal se reduce la cabecera a 44 px y se usan fotos laterales en Cuadrícula/Lista. No extender esos tamaños a móvil vertical o escritorio.
