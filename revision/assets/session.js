@@ -14,11 +14,12 @@
   }
   function setSaveState(state){
     if(!saveEl)return; clearTimeout(savePulse); saveEl.className='save-state '+state;
+    const notice=document.querySelector('.selection-persist');if(notice)notice.textContent=state==='error'?'No se ha podido guardar. Mantén esta página abierta.':state==='saving'?'Guardando selección…':'La selección se conserva en este dispositivo.';
     saveEl.textContent=state==='saving'?'Guardando…':state==='error'?'No guardado':'Guardado';
     
   }
   const oldSave=saveState;
-  saveState=async function(){setSaveState('saving');try{const r=await oldSave();setSaveState(r?'saved':'error');updateSessionBar();return r}catch(e){setSaveState('error');updateSessionBar()}};
+  saveState=async function(){setSaveState('saving');try{const r=await oldSave();setSaveState(r?'saved':'error');if(!r)showToast('No se pudo guardar en este dispositivo. Mantén la página abierta.');updateSessionBar();return r}catch(e){setSaveState('error');updateSessionBar()}};
   const oldStats=updateStats;
   updateStats=function(){oldStats();updateSessionBar();};
 

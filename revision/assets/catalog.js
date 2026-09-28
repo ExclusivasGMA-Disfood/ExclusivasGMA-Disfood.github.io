@@ -1656,7 +1656,7 @@ document.getElementById('filterReset').addEventListener('click', () => {
 let clearArmed = false;
 let clearArmTimer;
 document.getElementById('sheetClear').addEventListener('click', async () => {
-  if(favIds().length === 0) return;
+  if(favIds().length === 0 && !clientName) return;
   const btn = document.getElementById('sheetClear');
   if(!clearArmed){
     clearArmed = true;
@@ -1667,7 +1667,7 @@ document.getElementById('sheetClear').addEventListener('click', async () => {
   window.clearTimeout(clearArmTimer);
   clearArmed = false;
   btn.textContent = 'Vaciar';
-  favs = {};
+  favs = {};clientName='';document.getElementById('clientInput').value='';
   await saveState(); updateStats(); render(); renderSheet();
 });
 
@@ -1836,7 +1836,7 @@ async function generatePdf(){
     }
 
     doc.save(`Propuesta_GMA_${slug(clientName)}.pdf`);
-    showToast('PDF generado y descargado.');
+    showToast('PDF preparado. Comprueba las descargas del navegador.');
   } catch(err){
     await copyProposalAsPdfFallback();
   } finally {

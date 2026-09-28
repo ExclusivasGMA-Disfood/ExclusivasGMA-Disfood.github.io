@@ -190,7 +190,6 @@
     const wasExpanded=landscapeShowAll&&!landscapeDepartmentFocus;
     landscapeShowAll=!wasExpanded;landscapeDepartmentFocus=null;desktopGroupFocused=wasExpanded;
     forcedGroup=firstAllowedGroup(groupRows());renderDesktopCatalog();
-    document.querySelector('.desktop-main')?.scrollIntoView({behavior:'smooth',block:'start'});
   });
   document.getElementById('desktopOpenSelection').addEventListener('click',openSheet);
   document.getElementById('desktopCopySelection').addEventListener('click',async()=>{

@@ -15,8 +15,8 @@ function loadExternalScript(src){
 }
 function ensurePdfLibraries(){
   if(window.jspdf?.jsPDF?.API?.autoTable)return Promise.resolve();
-  if(!pdfLibrariesPromise)pdfLibrariesPromise=loadExternalScript('https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js')
-    .then(()=>loadExternalScript('https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js'))
+  if(!pdfLibrariesPromise)pdfLibrariesPromise=loadExternalScript('assets/vendor/jspdf.umd.min.js')
+    .then(()=>loadExternalScript('assets/vendor/jspdf.plugin.autotable.min.js'))
     .catch(error=>{pdfLibrariesPromise=null;throw error;});
   return pdfLibrariesPromise;
 }
