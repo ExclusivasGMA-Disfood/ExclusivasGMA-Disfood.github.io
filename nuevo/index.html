@@ -1289,6 +1289,11 @@ html body .discovery-head h2,html body .desktop-main-head h2,
 html body .desktop-panel-head h2,html body .sheet-head h2,
 html body .product-detail-title,html body .gma-account-head h2,
 html body .dept-header-label,html body .carousel-head h2{font-family:var(--bx-heading)}
+
+/* Tipografía global: Geist para interfaz y lectura; Merriweather para títulos y productos. */
+:root{--font-body:'Geist',sans-serif;--font-heading:'Merriweather',serif;--bx-font:'Geist',sans-serif;--bx-heading:'Merriweather',serif}
+html body,html body button,html body input,html body textarea,html body select{font-family:var(--font-body)}
+html body :is(h1,h2,h3,h4,h5,h6,.bx-title,.group-title,.item-name,.desktop-product-name,.product-name,.product-detail-title,.dept-header-label){font-family:var(--font-heading)}
 </style>
 </head>
 <body>
