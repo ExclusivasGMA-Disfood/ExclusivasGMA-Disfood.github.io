@@ -1,0 +1,51 @@
+{
+  "1902": {
+    "brand": "MONTESANO",
+    "origin": "Extremadura (España)",
+    "facts": [["Producto", "Jamón de bellota ibérico"], ["Raza ibérica", "50 %"], ["Precinto", "Rojo"]],
+    "ingredients": "Jamón ibérico, sal y conservadores E-250 y E-252.",
+    "source": "https://www.ibericosmontesano.es/products/jamon-de-bellota-50-iberico"
+  },
+  "3406": {
+    "brand": "MONTESANO",
+    "origin": "Extremadura (España)",
+    "facts": [["Producto", "Jamón de bellota ibérico"], ["Raza ibérica", "100 %"], ["Precinto", "Negro"]],
+    "ingredients": "Jamón ibérico, sal y conservadores E-250 y E-252.",
+    "source": "https://www.ibericosmontesano.es/products/jamon-de-bellota-100-iberico-1"
+  },
+  "3654": {
+    "brand": "MONTESANO",
+    "origin": "D.O.P. Dehesa de Extremadura (España)",
+    "facts": [["Producto", "Jamón de bellota ibérico"], ["Raza ibérica", "100 %"], ["Denominación", "D.O.P. Dehesa de Extremadura"], ["Precinto", "Negro"]],
+    "ingredients": "Jamón ibérico, sal y conservadores E-250 y E-252.",
+    "source": "https://www.ibericosmontesano.es/products/jamon-de-bellota-do-extremadura-100-iberico"
+  },
+  "3510": {
+    "brand": "MONTESANO",
+    "origin": "Extremadura (España)",
+    "facts": [["Producto", "Lomito de bellota"], ["Raza ibérica", "100 %"], ["Elaboración", "Adobado con pimentón y especias"]],
+    "ingredients": "Presa de entraña de cerdo ibérico de bellota, sal, pimentón, azúcar, ajo, antioxidante E-301, especias, corrector de acidez E-331 y conservadores E-252 y E-250.",
+    "source": "https://www.ibericosmontesano.es/products/lomito-iberico-de-bellota-100-iberico"
+  },
+  "3780": {
+    "brand": "MONTESANO",
+    "origin": "Extremadura (España)",
+    "facts": [["Producto", "Lomo de bellota ibérico"], ["Raza ibérica", "100 %"], ["Elaboración", "Con pimentón"]],
+    "ingredients": "Lomo de cerdo ibérico, sal, pimentón, azúcar, ajo, antioxidante E-301, especias, corrector de acidez E-331 y conservadores E-252 y E-250.",
+    "source": "https://www.ibericosmontesano.es/products/lomo-de-bellota-100-iberico-con-pimenton"
+  },
+  "4362": {
+    "brand": "MONTESANO",
+    "origin": "Extremadura (España)",
+    "facts": [["Producto", "Lomo doblado de bellota"], ["Raza ibérica", "100 %"], ["Elaboración", "Sin pimentón"]],
+    "ingredients": "Lomo de cerdo ibérico, sal, azúcar, ajo, antioxidante E-301, especias, corrector de acidez E-331 y conservadores E-252 y E-250.",
+    "source": "https://www.ibericosmontesano.es/products/lomo-de-bellota-100-iberico-doblado-sin-pimenton"
+  },
+  "5168": {
+    "brand": "MONTESANO",
+    "origin": "Extremadura (España)",
+    "facts": [["Producto", "Paleta de bellota ibérica"], ["Raza ibérica", "100 %"], ["Precinto", "Negro"], ["Curación", "Mínimo 24 meses, según el fabricante"]],
+    "ingredients": "Paleta ibérica, sal y conservadores E-250 y E-252.",
+    "source": "https://www.ibericosmontesano.es/products/paleta-de-bellota-100-iberica"
+  }
+}
