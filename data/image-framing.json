@@ -20,17 +20,17 @@
   ],
   "carousels": [
     {
-      "ref": "6744",
-      "source": "images/products/6744.jpg",
+      "ref": "6154",
+      "source": "images/products/6154.jpg",
       "sourceSize": [
-        1000,
-        1000
+        600,
+        600
       ],
       "contentBox": [
-        50,
-        50,
-        850,
-        965
+        145,
+        45,
+        565,
+        545
       ],
       "fit": "contain",
       "position": [
@@ -125,17 +125,17 @@
       "reason": "Producto completo sobre blanco. Encuadre individual revisado para equilibrar escala y centrado; original intacto."
     },
     {
-      "ref": "6742",
-      "source": "images/products/6742.jpg",
+      "ref": "6766",
+      "source": "images/products/6766.png",
       "sourceSize": [
-        1000,
-        1000
+        600,
+        600
       ],
       "contentBox": [
-        30,
-        25,
-        850,
-        970
+        0,
+        140,
+        600,
+        465
       ],
       "fit": "contain",
       "position": [

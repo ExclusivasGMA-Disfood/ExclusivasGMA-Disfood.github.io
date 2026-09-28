@@ -13,3 +13,7 @@ Archivos: data/catalog-data.js, data/image-framing.json, assets/discovery.js, as
 Verificación: inspección visual de las 14 fuentes; suite funcional y validación de imágenes antes de publicar. Revisión de la página publicada al terminar. No se afirma prueba física en iPhone.
 
 Resultado: publicación 78a86b1 desplegada correctamente. 12/12 pruebas funcionales; 748 imágenes válidas. Comprobación en producción de 6 novedades, 8 Top y carga correcta de las 14 fotos. Captura de escritorio: seleccion-blanco-publicada.jpg. No se repitió la prueba responsive en esta sesión; no se cambiaron dimensiones ni puntos de ruptura.
+
+## Sustitución solicitada de frutos secos
+
+Se sustituyen exclusivamente en Novedades la almendra 6744 por gilda triple de boquerón 6154 y el cocktail 6742 por tarta Carrot Cake tres pisos 6766. Ambas sustitutas tienen isNew y foto revisada sobre blanco. Se actualizan los dos encuadres contain en JSON y las versiones de recursos. Top, resto del carrusel, geometría y catálogo completos permanecen iguales. La elección es editorial, sin afirmar un ranking de ventas. Validación del catálogo y de las 748 imágenes antes de publicar; verificación de referencias e imágenes servidas al finalizar.

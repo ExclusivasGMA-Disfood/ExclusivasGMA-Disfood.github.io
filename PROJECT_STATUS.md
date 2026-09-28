@@ -54,3 +54,7 @@ El usuario autoriza probar 6772, 6774, 403, 229160 y 5986 con fotos hasta los bo
 ## Selección cuidada sobre blanco — criterio vigente
 
 Tras valorar el piloto, el usuario autoriza elegir productos apetecibles con fondo blanco. Se sustituye la selección de los carruseles: Top 8 referencias (1902, 6140, 3842, 4599, 6767, 049, 802, 6256); Novedades 6 referencias marcadas isNew (6744, 3816, 6777, 6786, 6765, 6742). Todos conservan su ficha en el catálogo; no se borran productos. Se retiran los cinco encuadres del piloto y se configuran encuadres contain individuales para los 14 destacados, con margen del 8 % y producto completo. Se mantienen las dimensiones actuales, tipografías, controles y estructura. Registro: docs/audits/2026-09-28/SELECCION-FONDO-BLANCO.md.
+
+## Sustitución solicitada de frutos secos
+
+Se sustituyen exclusivamente en Novedades la almendra 6744 por gilda triple de boquerón 6154 y el cocktail 6742 por tarta Carrot Cake tres pisos 6766. Ambas sustitutas tienen isNew y foto revisada sobre blanco. Se actualizan los dos encuadres contain en JSON y las versiones de recursos. Top, resto del carrusel, geometría y catálogo completos permanecen iguales. La elección es editorial, sin afirmar un ranking de ventas. Validación del catálogo y de las 748 imágenes antes de publicar; verificación de referencias e imágenes servidas al finalizar.
