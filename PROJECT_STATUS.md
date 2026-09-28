@@ -46,3 +46,7 @@ Petición posterior: cambiar únicamente la etiqueta «Selección» de las tarje
 ## Encuadre individual autorizado: 6112
 
 El usuario aprobó normalizar los dos jamones señalados. 5329 ya sirve de referencia de escala; 6112 recibe un encuadre manual del área 130,130–1070,1070 de su fuente 1200×1200, con margen visual del 8 %. Se configura en `data/image-framing.json` y se aplica mediante `assets/image-framing.js`; el archivo original y el manifiesto de imágenes permanecen intactos. No es una regla automática para todas las fotos. La prueba con edición generativa se descartó porque retocaba detalles del producto. No usarla como fuente de catálogo.
+
+## Piloto de imágenes hasta el borde en Novedades y Top
+
+El usuario autoriza probar 6772, 6774, 403, 229160 y 5986 con fotos hasta los bordes curvos de los dos carruseles. Esta autorización sustituye la regla general de margen/contain solo para esas cinco fotos y esos dos carruseles. Encuadres manuales en `data/image-framing.json`: platos con fondo continuo y la lata completa ampliada sobre blanco. La terrina 229160 puede perder los extremos laterales de la bandeja en formato cuadrado. No alterar imágenes originales, fichas ampliadas, listas, tipografías ni dimensiones de tarjeta. No extender el piloto a otras referencias sin petición.
