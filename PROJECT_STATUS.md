@@ -30,3 +30,7 @@ No revertir datos o eliminar hechos documentados para lograr una validación ver
 ## Corrección de continuidad visual
 
 La revisión posterior a `b9f7d9f` elimina las ampliaciones de tarjetas y títulos introducidas por la auditoría. Los anchos, proporciones y tipografías vuelven a los definidos en los temas anteriores (`aac7ae58`); se conserva la contención de imágenes y la separación de referencia/botón. No sustituir la página principal por `/nuevo/`. Mantener las reparaciones funcionales y todos los datos.
+
+## Regla vigente: revisar el estado actual, no recuperar otra versión
+
+La aclaración final del usuario pide corregir el diseño actual y documentar cambios, no seguir comparando/restaurando versiones. Leer `AGENTS.md` y `docs/audits/2026-09-28/CONTINUIDAD-Y-ENCUADRE.md`. La barra de vistas y Desplegar todo comparten fila. Fotos completas, centradas, con margen interior del 8 %, sin cover ni zoom. No tocar anchos de tarjetas o cabecera como consecuencia de una corrección de fotografías.
