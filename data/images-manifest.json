@@ -725,7 +725,10 @@
   "5996": "images/products/5996.jpg",
   "5998": "images/products/5998.jpg",
   "5999": "images/products/5999.jpg",
-  "6012": "images/products/6012.webp",
+  "6012": [
+    "images/products/6012.jpg",
+    "images/products/6012-2.jpg"
+  ],
   "6026": "images/products/6026.jpg",
   "6030": "images/products/6030.jpg",
   "6031": "images/products/6031.jpg",
@@ -764,6 +767,7 @@
   "6364": "images/products/6364.webp",
   "6417": "images/products/6417.jpg",
   "6446": "images/products/6446.png",
+  "6455": "images/products/6455.jpg",
   "6473": "images/products/6473.jpg",
   "6481": "images/products/6481.jpg",
   "6583": "images/products/6583.jpg",

@@ -1,14 +1,72 @@
 {
   "6012": {
     "brand": "IBÉRICOS CREGO",
-    "facts": [["Producto", "Jamón de cebo ibérico"], ["Raza ibérica", "50 %"], ["Precinto", "Blanco"], ["Conservación", "Lugar fresco y seco, entre 5 y 10 °C"]],
-    "ingredients": "Jamón de cerdo ibérico, sal, azúcar, conservadores E-252 y E-250, antioxidantes E-331(iii) y E-301.",
+    "facts": [
+      [
+        "Producto",
+        "Jamón de cebo ibérico"
+      ],
+      [
+        "Raza ibérica",
+        "50 %"
+      ],
+      [
+        "Precinto",
+        "Blanco"
+      ],
+      [
+        "Alimentación",
+        "Principalmente cereales y piensos"
+      ],
+      [
+        "Color",
+        "De rosa a rojo púrpura en la parte magra; grasa brillante"
+      ],
+      [
+        "Olor y sabor",
+        "Delicado, poco salado y de aroma agradable"
+      ],
+      [
+        "Textura",
+        "Homogénea y poco fibrosa"
+      ],
+      [
+        "Conservación",
+        "Lugar fresco y seco, entre 5 y 10 °C"
+      ]
+    ],
+    "ingredients": "Jamón de cerdo ibérico, sal, azúcar, conservadores (E-252, E-250) y antioxidantes (E-331iii, E-301).",
     "source": "https://ibericoscrego.com/producto/jamon-de-cebo-iberico-50/"
   },
   "6455": {
     "brand": "IBÉRICOS CREGO",
-    "facts": [["Producto", "Lomo de cebo ibérico embuchado"], ["Raza ibérica", "50 %"], ["Elaboración", "Con pimentón y especias"], ["Conservación", "Lugar fresco y seco, entre 5 y 10 °C; retirar la tripa antes de consumir"]],
-    "ingredients": "Lomo de cebo ibérico, sal, especias, pimentón, aceite de oliva, azúcar, dextrosa, antioxidantes E-300 y E-331(iii), conservadores E-250 y E-252.",
+    "facts": [
+      [
+        "Producto",
+        "Lomo de cebo ibérico embuchado"
+      ],
+      [
+        "Raza ibérica",
+        "50 %"
+      ],
+      [
+        "Elaboración",
+        "Con pimentón y especias"
+      ],
+      [
+        "Color",
+        "Rosado a rojo; aspecto marmóreo por la grasa infiltrada"
+      ],
+      [
+        "Aroma y sabor",
+        "Aroma intenso y sabor característico"
+      ],
+      [
+        "Conservación",
+        "Lugar fresco y seco, entre 5 y 10 °C; airear 30 minutos y retirar la tripa antes de consumir"
+      ]
+    ],
+    "ingredients": "Lomo de cebo ibérico, sal, especias, pimentón, aceite de oliva, azúcar, dextrosa, antioxidantes (E-300, E-331iii) y conservadores (E-250, E-252).",
     "source": "https://ibericoscrego.com/producto/lomo-de-cebo-iberico-embuchado/"
   }
 }
