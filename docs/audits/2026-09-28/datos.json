@@ -1,0 +1,117 @@
+{
+  "products": 1001,
+  "departments": 17,
+  "families": 79,
+  "withImages": 641,
+  "specs": 61,
+  "suppressed": [
+    {
+      "ref": "3821",
+      "brand": "GASTRÒNOMS",
+      "facts": 4,
+      "source": "https://gastronoms.es/wp-content/uploads/2024/03/catalago-gastronoms-2024.pdf#page=21"
+    },
+    {
+      "ref": "3876",
+      "brand": "GASTRÒNOMS",
+      "facts": 4,
+      "source": "https://gastronoms.es/wp-content/uploads/2024/03/catalago-gastronoms-2024.pdf#page=21"
+    },
+    {
+      "ref": "3885",
+      "brand": "GASTRÒNOMS",
+      "facts": 4,
+      "source": "https://gastronoms.es/wp-content/uploads/2024/03/catalago-gastronoms-2024.pdf#page=13"
+    },
+    {
+      "ref": "3944",
+      "brand": "GASTRÒNOMS",
+      "facts": 4,
+      "source": "https://gastronoms.es/wp-content/uploads/2024/03/catalago-gastronoms-2024.pdf#page=21"
+    },
+    {
+      "ref": "4404",
+      "brand": "GASTRÒNOMS",
+      "facts": 4,
+      "source": "https://gastronoms.es/wp-content/uploads/2024/03/catalago-gastronoms-2024.pdf#page=13"
+    },
+    {
+      "ref": "5509",
+      "brand": "GASTRÒNOMS",
+      "facts": 4,
+      "source": "https://gastronoms.es/wp-content/uploads/2024/03/catalago-gastronoms-2024.pdf#page=21"
+    },
+    {
+      "ref": "6104",
+      "brand": "GASTRÒNOMS",
+      "facts": 4,
+      "source": "https://gastronoms.es/wp-content/uploads/2024/03/catalago-gastronoms-2024.pdf#page=13"
+    },
+    {
+      "ref": "121",
+      "brand": "CHACINERÍAS DÍAZ",
+      "facts": 5,
+      "source": "https://www.chacineriasdiaz.com/producto/jamones/jamon-de-cebo-de-campo-iberico/"
+    },
+    {
+      "ref": "425",
+      "brand": "CHACINERÍAS DÍAZ",
+      "facts": 4,
+      "source": "https://www.chacineriasdiaz.com/producto/jamones/jamon-de-bellota-iberico/"
+    },
+    {
+      "ref": "796",
+      "brand": "CHACINERÍAS DÍAZ",
+      "facts": 3,
+      "source": "https://www.chacineriasdiaz.com/producto/lomos-y-embutidos-para-corte/"
+    },
+    {
+      "ref": "797",
+      "brand": "CHACINERÍAS DÍAZ",
+      "facts": 3,
+      "source": "https://www.chacineriasdiaz.com/producto/lomos-y-embutidos-para-corte/"
+    },
+    {
+      "ref": "803",
+      "brand": "CHACINERÍAS DÍAZ",
+      "facts": 3,
+      "source": "https://www.chacineriasdiaz.com/producto/jamones/jamon-serrano/"
+    },
+    {
+      "ref": "4476",
+      "brand": "CHACINERÍAS DÍAZ",
+      "facts": 2,
+      "source": "https://www.chacineriasdiaz.com/producto/jamones/jamon-serrano/"
+    },
+    {
+      "ref": "5068",
+      "brand": "CHACINERÍAS DÍAZ",
+      "facts": 3,
+      "source": "https://www.chacineriasdiaz.com/producto/paleta-iberica-de-bellota/"
+    },
+    {
+      "ref": "6153",
+      "brand": "CHACINERÍAS DÍAZ",
+      "facts": 2,
+      "source": "https://www.chacineriasdiaz.com/producto/jamones/"
+    },
+    {
+      "ref": "989900",
+      "brand": "CHACINERÍAS DÍAZ",
+      "facts": 2,
+      "source": "https://www.chacineriasdiaz.com/producto/jamones/jamon-serrano/"
+    }
+  ],
+  "featuredMissingPhoto": [],
+  "newMissingPhoto": [
+    "6486",
+    "6777",
+    "5985",
+    "6752",
+    "6809",
+    "6807",
+    "6781",
+    "6791",
+    "6779"
+  ]
+}

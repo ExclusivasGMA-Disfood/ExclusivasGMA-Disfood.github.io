@@ -1,0 +1,129 @@
+{
+  "index.html": {
+    "bytes": 263174,
+    "gzip_bytes": 66059,
+    "css_bytes": 91377,
+    "important_count": 268,
+    "inline_scripts": 11,
+    "landscape_mentions": 6,
+    "metadata": [
+      "<meta charset=\"UTF-8\">",
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+      "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
+      "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>",
+      "<link href=\"https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap\" rel=\"stylesheet\">"
+    ]
+  },
+  "nuevo/index.html": {
+    "bytes": 313284,
+    "gzip_bytes": 81434,
+    "css_bytes": 116559,
+    "important_count": 312,
+    "inline_scripts": 14,
+    "landscape_mentions": 1,
+    "metadata": [
+      "<meta charset=\"UTF-8\">",
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+      "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
+      "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>",
+      "<link href=\"https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap\" rel=\"stylesheet\">",
+      "<meta name=\"description\" content=\"Catálogo profesional de GMA Disfood: más de 1.000 referencias de ibéricos, quesos, pasta fresca, conservas y más para hostelería. Alicante.\">",
+      "<meta name=\"theme-color\" content=\"#F3F1EC\">",
+      "<link rel=\"canonical\" href=\"https://exclusivasgma-disfood.github.io/nuevo/\">",
+      "<meta name=\"robots\" content=\"noindex,nofollow\">",
+      "<meta property=\"og:type\" content=\"website\">",
+      "<meta property=\"og:locale\" content=\"es_ES\">",
+      "<meta property=\"og:site_name\" content=\"GMA Disfood\">",
+      "<meta property=\"og:title\" content=\"Catálogo profesional GMA Disfood\">",
+      "<meta property=\"og:description\" content=\"Más de 1.000 referencias para hostelería: ibéricos, quesos, pasta fresca, conservas y más. Distribución Horeca en Alicante.\">",
+      "<meta property=\"og:url\" content=\"https://exclusivasgma-disfood.github.io/nuevo/\">"
+    ]
+  },
+  "images": {
+    "references": 641,
+    "galleries": 100,
+    "unique_files": 746,
+    "decode_failures": [
+      {
+        "path": "images/products/4476.jpg",
+        "error": "cannot identify image file 'images/products/4476.jpg'"
+      }
+    ],
+    "total_bytes": 48512894,
+    "over_500kb": 0,
+    "over_2000px": 0,
+    "largest": [
+      {
+        "path": "images/products/1009.jpg",
+        "bytes": 322186,
+        "w": 890,
+        "h": 1070,
+        "format": "JPEG"
+      },
+      {
+        "path": "images/products/6446.png",
+        "bytes": 311293,
+        "w": 600,
+        "h": 600,
+        "format": "PNG"
+      },
+      {
+        "path": "images/products/5177.png",
+        "bytes": 290065,
+        "w": 600,
+        "h": 600,
+        "format": "PNG"
+      },
+      {
+        "path": "images/products/5627.jpg",
+        "bytes": 288921,
+        "w": 1254,
+        "h": 1254,
+        "format": "JPEG"
+      },
+      {
+        "path": "images/products/5122.png",
+        "bytes": 282852,
+        "w": 600,
+        "h": 600,
+        "format": "PNG"
+      },
+      {
+        "path": "images/products/4964.png",
+        "bytes": 281388,
+        "w": 600,
+        "h": 600,
+        "format": "PNG"
+      },
+      {
+        "path": "images/products/1563.png",
+        "bytes": 273905,
+        "w": 600,
+        "h": 600,
+        "format": "PNG"
+      },
+      {
+        "path": "images/products/01163.png",
+        "bytes": 270081,
+        "w": 600,
+        "h": 600,
+        "format": "PNG"
+      },
+      {
+        "path": "images/products/6155.png",
+        "bytes": 262968,
+        "w": 600,
+        "h": 600,
+        "format": "PNG"
+      },
+      {
+        "path": "images/products/6760.png",
+        "bytes": 242076,
+        "w": 600,
+        "h": 600,
+        "format": "PNG"
+      }
+    ],
+    "svg_valid": 58
+  }
+}
