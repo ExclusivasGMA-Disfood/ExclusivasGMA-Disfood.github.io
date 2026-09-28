@@ -31,12 +31,16 @@ for (const item of products) {
 for (const group of groups) {
   if (!departments.some(dept => dept.name === group.dept)) fail(`Departamento sin definir: ${group.dept}`);
 }
-for (const [name, expected] of [['featured', 25], ['new', 30]]) {
+for (const [name, expected] of [['featured', 8], ['new', 6]]) {
   const selected = curation[name];
   if (!Array.isArray(selected) || selected.length !== expected) fail(`Selección ${name}: cantidad inesperada`);
   if (!Array.isArray(selected)) continue;
   if (new Set(selected).size !== selected.length) fail(`Selección ${name}: referencias duplicadas`);
-  for (const ref of selected) if (!refs.has(ref)) fail(`Selección ${name}: falta la referencia ${ref}`);
+  for (const ref of selected) {
+    if (!refs.has(ref)) fail(`Selección ${name}: falta la referencia ${ref}`);
+    if (!manifest[ref]) fail(`Selección ${name}: falta foto de ${ref}`);
+    if (name === 'new' && !products.find(p => p.ref === ref)?.isNew) fail(`Novedad sin marcar: ${ref}`);
+  }
 }
 for (const [ref, value] of Object.entries(manifest)) {
   if (!refs.has(ref)) fail(`Imagen asignada a una referencia inexistente: ${ref}`);

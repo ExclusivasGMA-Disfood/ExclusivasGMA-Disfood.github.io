@@ -27,8 +27,8 @@ for(const page of ['index.html','nuevo/index.html']){
  test(`${page}: catálogo, escaparates, familias y recorrido`,async()=>{
   const w=await app(page);try{
     const d=w.document;
-    assert.equal(d.querySelectorAll('#newDiscovery .discovery-card').length,30);
-    assert.equal(d.querySelectorAll('#bestDiscovery .discovery-card').length,25);
+    assert.equal(d.querySelectorAll('#newDiscovery .discovery-card').length,6);
+    assert.equal(d.querySelectorAll('#bestDiscovery .discovery-card').length,8);
     assert.match(d.querySelector('#desktopResultMeta').textContent,/1001/);
     assert.equal(d.querySelectorAll('.desktop-product-card').length,72);
     const button=d.querySelector('.desktop-dept-button');const name=button.dataset.desktopDept;

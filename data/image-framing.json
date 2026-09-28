@@ -20,28 +20,92 @@
   ],
   "carousels": [
     {
-      "ref": "6772",
-      "source": "images/products/6772.jpg",
+      "ref": "6744",
+      "source": "images/products/6744.jpg",
+      "sourceSize": [
+        1000,
+        1000
+      ],
+      "contentBox": [
+        50,
+        50,
+        850,
+        965
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08,
+      "reason": "Producto completo sobre blanco. Encuadre individual revisado para equilibrar escala y centrado; original intacto."
+    },
+    {
+      "ref": "3816",
+      "source": "images/products/3816.jpg",
+      "sourceSize": [
+        1200,
+        1200
+      ],
+      "contentBox": [
+        160,
+        365,
+        1030,
+        850
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08,
+      "reason": "Producto completo sobre blanco. Encuadre individual revisado para equilibrar escala y centrado; original intacto."
+    },
+    {
+      "ref": "6777",
+      "source": "images/products/6777.webp",
+      "sourceSize": [
+        1028,
+        972
+      ],
+      "contentBox": [
+        0,
+        0,
+        1028,
+        972
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08,
+      "reason": "Producto completo sobre blanco. Encuadre individual revisado para equilibrar escala y centrado; original intacto."
+    },
+    {
+      "ref": "6786",
+      "source": "images/products/6786.jpg",
       "sourceSize": [
         600,
         600
       ],
       "contentBox": [
-        29,
-        0,
-        570,
-        600
+        110,
+        75,
+        465,
+        575
       ],
-      "fit": "cover",
+      "fit": "contain",
       "position": [
         0.5,
-        1
+        0.5
       ],
-      "reason": "Eliminar franjas laterales; priorizar las croquetas en la zona inferior."
+      "innerMargin": 0.08,
+      "reason": "Producto completo sobre blanco. Encuadre individual revisado para equilibrar escala y centrado; original intacto."
     },
     {
-      "ref": "6774",
-      "source": "images/products/6774.jpg",
+      "ref": "6765",
+      "source": "images/products/6765.png",
       "sourceSize": [
         600,
         600
@@ -50,75 +114,204 @@
         0,
         100,
         600,
-        500
-      ],
-      "fit": "cover",
-      "position": [
-        0.5,
-        0.5
-      ],
-      "reason": "Eliminar bandas superior e inferior; centrar la tarta."
-    },
-    {
-      "ref": "403",
-      "source": "images/products/403.jpg",
-      "sourceSize": [
-        600,
-        600
-      ],
-      "contentBox": [
-        0,
-        10,
-        600,
-        590
-      ],
-      "fit": "cover",
-      "position": [
-        0.5,
-        1
-      ],
-      "reason": "Fondo continuo hasta el borde, priorizar paté y plato inferior."
-    },
-    {
-      "ref": "229160",
-      "source": "images/products/229160.jpg",
-      "sourceSize": [
-        600,
-        600
-      ],
-      "contentBox": [
-        0,
-        84,
-        600,
-        516
-      ],
-      "fit": "cover",
-      "position": [
-        0.5,
-        0.5
-      ],
-      "reason": "Eliminar bandas blancas y centrar la terrina; el encuadre puede cortar decoración y extremos de la bandeja."
-    },
-    {
-      "ref": "5986",
-      "source": "images/products/5986.png",
-      "sourceSize": [
-        600,
-        600
-      ],
-      "contentBox": [
-        190,
-        125,
-        410,
-        460
+        570
       ],
       "fit": "contain",
       "position": [
         0.5,
         0.5
       ],
-      "innerMargin": 0.03,
-      "reason": "Envase completo ampliado, con fondo blanco continuo."
+      "innerMargin": 0.08,
+      "reason": "Producto completo sobre blanco. Encuadre individual revisado para equilibrar escala y centrado; original intacto."
+    },
+    {
+      "ref": "6742",
+      "source": "images/products/6742.jpg",
+      "sourceSize": [
+        1000,
+        1000
+      ],
+      "contentBox": [
+        30,
+        25,
+        850,
+        970
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08,
+      "reason": "Producto completo sobre blanco. Encuadre individual revisado para equilibrar escala y centrado; original intacto."
+    },
+    {
+      "ref": "1902",
+      "source": "images/products/1902.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        0,
+        125,
+        600,
+        530
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08,
+      "reason": "Producto completo sobre blanco. Encuadre individual revisado para equilibrar escala y centrado; original intacto."
+    },
+    {
+      "ref": "6140",
+      "source": "images/products/6140.jpg",
+      "sourceSize": [
+        212,
+        240
+      ],
+      "contentBox": [
+        0,
+        0,
+        212,
+        240
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08,
+      "reason": "Producto completo sobre blanco. Encuadre individual revisado para equilibrar escala y centrado; original intacto."
+    },
+    {
+      "ref": "3842",
+      "source": "images/products/3842-producto-tre-archi.jpg",
+      "sourceSize": [
+        1200,
+        1200
+      ],
+      "contentBox": [
+        55,
+        350,
+        1150,
+        930
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08,
+      "reason": "Producto completo sobre blanco. Encuadre individual revisado para equilibrar escala y centrado; original intacto."
+    },
+    {
+      "ref": "4599",
+      "source": "images/products/4599.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        75,
+        105,
+        525,
+        515
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08,
+      "reason": "Producto completo sobre blanco. Encuadre individual revisado para equilibrar escala y centrado; original intacto."
+    },
+    {
+      "ref": "6767",
+      "source": "images/products/6767.png",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        0,
+        145,
+        600,
+        465
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08,
+      "reason": "Producto completo sobre blanco. Encuadre individual revisado para equilibrar escala y centrado; original intacto."
+    },
+    {
+      "ref": "049",
+      "source": "images/products/049.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        65,
+        65,
+        540,
+        530
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08,
+      "reason": "Producto completo sobre blanco. Encuadre individual revisado para equilibrar escala y centrado; original intacto."
+    },
+    {
+      "ref": "802",
+      "source": "images/products/802.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        195,
+        50,
+        390,
+        545
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08,
+      "reason": "Producto completo sobre blanco. Encuadre individual revisado para equilibrar escala y centrado; original intacto."
+    },
+    {
+      "ref": "6256",
+      "source": "images/products/6256.png",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        155,
+        30,
+        425,
+        535
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08,
+      "reason": "Producto completo sobre blanco. Encuadre individual revisado para equilibrar escala y centrado; original intacto."
     }
   ]
 }

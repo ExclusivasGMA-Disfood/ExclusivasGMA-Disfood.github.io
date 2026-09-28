@@ -63,11 +63,7 @@
   function findRef(ref){for(let gi=0;gi<DATA.length;gi++)for(let ii=0;ii<DATA[gi].items.length;ii++){const it=DATA[gi].items[ii];if(String(it.ref)===String(ref))return {it,id:itemId(gi,ii)}}return null;}
   const desktopShowcaseMedia=window.matchMedia('(min-width:1000px), (orientation:landscape) and (min-width:640px) and (max-width:999px)');
   function buildDiscovery(){
-    /* Seleccion editorial de 30 novedades (referencias reales existentes en DATA).
-       Curada a mano: 3 jamones, 3 mozzarella (Burrata / Fior di Latte / Bufala), 3 salmon,
-       3 anchoa/boqueron, pulpo, Lomo Beher, 3 Ken, y 13 altas recientes (isNew) de otras
-       familias para completar el recorrido. Ninguna referencia se inventa: mismo patron
-       que FEATURED_REFS, resuelto via findRef() sobre la base de datos real. */
+    /* Novedades seleccionadas por foto sobre blanco; todas conservan isNew. */
     const NOVEDADES_REFS=window.GMA_CATALOG_CURATION.new;
     const desktopShowcase=desktopShowcaseMedia.matches;
     const fresh=NOVEDADES_REFS.map(findRef).filter(Boolean);
@@ -75,7 +71,7 @@
     const newEl=document.getElementById('newDiscoveryScroll');if(newEl)newEl.innerHTML=freshHtml;
     const c=document.getElementById('newDiscoveryCount');if(c)c.textContent=`${fresh.length} referencias`;
 
-    /* Selección editorial de 25 referencias del catálogo; no representa ventas medidas. */
+    /* Selección editorial de ocho referencias con fotografía sobre blanco; no representa ventas medidas. */
     const FEATURED_REFS=window.GMA_CATALOG_CURATION.featured;
     const best=FEATURED_REFS.map(findRef).filter(Boolean),bestHtml=best.map(x=>cardFor(x.it,x.id,'Top')).join('');
     const count=document.getElementById('bestDiscoveryCount');if(count)count.textContent=`${best.length} referencias`;
