@@ -8,6 +8,7 @@ const sources = [
   'data/ahumados-dominguez-info.json',
   'data/montesano-info.json',
   'data/crego-info.json',
+  'data/diaz-info.json',
 ];
 const outputPath = join(root, 'data/product-specs.js');
 const specs = {};
@@ -15,13 +16,13 @@ const specs = {};
 for (const sourcePath of sources) {
   const source = JSON.parse(readFileSync(join(root, sourcePath), 'utf8'));
   for (const [ref, entry] of Object.entries(source)) {
-    // Publicar solo fichas con una fuente verificable y lista de ingredientes.
-    if (!entry.source || !entry.ingredients) continue;
+    // Publicar solo fichas con una fuente verificable y datos factuales.
+    if (!entry.source || !Array.isArray(entry.facts) || !entry.facts.some(([label, value]) => label && value)) continue;
     if (specs[ref]) throw new Error(`Referencia repetida entre fabricantes: ${ref}`);
     specs[ref] = {
       title: `Datos declarados · ${entry.brand}`,
       facts: entry.facts.filter(([label, value]) => label && value),
-      ingredients: entry.ingredients,
+      ...(entry.ingredients ? { ingredients: entry.ingredients } : {}),
       source: entry.source,
       ...(entry.origin ? { origin: entry.origin } : {}),
     };

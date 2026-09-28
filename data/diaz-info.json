@@ -1,0 +1,164 @@
+{
+  "121": {
+    "brand": "CHACINERÍAS DÍAZ",
+    "facts": [
+      [
+        "Producto",
+        "Jamón ibérico de cebo de campo"
+      ],
+      [
+        "Cría",
+        "Animales criados al aire libre"
+      ],
+      [
+        "Alimentación",
+        "Recursos naturales del terreno complementados con pienso"
+      ],
+      [
+        "Curación",
+        "Mínimo 2 años"
+      ],
+      [
+        "Peso mínimo",
+        "7 kg"
+      ]
+    ],
+    "source": "https://www.chacineriasdiaz.com/producto/jamones/jamon-de-cebo-de-campo-iberico/"
+  },
+  "425": {
+    "brand": "CHACINERÍAS DÍAZ",
+    "facts": [
+      [
+        "Producto",
+        "Jamón de bellota 100% ibérico"
+      ],
+      [
+        "Alimentación",
+        "Bellotas y recursos naturales del campo durante los últimos meses; sin pienso en ese periodo"
+      ],
+      [
+        "Curación",
+        "Mínimo 2 años"
+      ],
+      [
+        "Peso mínimo",
+        "5,75 kg"
+      ]
+    ],
+    "source": "https://www.chacineriasdiaz.com/producto/jamones/jamon-de-bellota-iberico/"
+  },
+  "796": {
+    "brand": "CHACINERÍAS DÍAZ",
+    "facts": [
+      [
+        "Producto",
+        "Salchichón extra ibérico"
+      ],
+      [
+        "Elaboración",
+        "Selección de carnes magras ibéricas, especias y curación natural"
+      ],
+      [
+        "Variante",
+        "Bellota o cebo, según la carne empleada"
+      ]
+    ],
+    "source": "https://www.chacineriasdiaz.com/producto/lomos-y-embutidos-para-corte/"
+  },
+  "797": {
+    "brand": "CHACINERÍAS DÍAZ",
+    "facts": [
+      [
+        "Producto",
+        "Chorizo extra ibérico"
+      ],
+      [
+        "Elaboración",
+        "Selección de carnes magras ibéricas y secado natural"
+      ],
+      [
+        "Variante",
+        "Bellota o cebo, según la carne empleada"
+      ]
+    ],
+    "source": "https://www.chacineriasdiaz.com/producto/lomos-y-embutidos-para-corte/"
+  },
+  "803": {
+    "brand": "CHACINERÍAS DÍAZ",
+    "facts": [
+      [
+        "Producto",
+        "Jamón Serrano Gran Reserva cruce Duroc"
+      ],
+      [
+        "Curación",
+        "En algunos casos, más de dos años"
+      ],
+      [
+        "Certificación",
+        "Especialidad Tradicional Garantizada del Jamón Serrano (ETG)"
+      ]
+    ],
+    "source": "https://www.chacineriasdiaz.com/producto/jamones/jamon-serrano/"
+  },
+  "4476": {
+    "brand": "CHACINERÍAS DÍAZ",
+    "facts": [
+      [
+        "Producto",
+        "Centro de jamón Serrano Gran Reserva"
+      ],
+      [
+        "Presentación",
+        "Deshuesado, limpio y pulido"
+      ]
+    ],
+    "source": "https://www.chacineriasdiaz.com/producto/jamones/jamon-serrano/"
+  },
+  "5068": {
+    "brand": "CHACINERÍAS DÍAZ",
+    "facts": [
+      [
+        "Producto",
+        "Paleta de bellota 100% ibérica"
+      ],
+      [
+        "Alimentación",
+        "Bellota y recursos naturales de la dehesa"
+      ],
+      [
+        "Curación",
+        "Más de 24 meses"
+      ]
+    ],
+    "source": "https://www.chacineriasdiaz.com/producto/paleta-iberica-de-bellota/"
+  },
+  "6153": {
+    "brand": "CHACINERÍAS DÍAZ",
+    "facts": [
+      [
+        "Producto",
+        "Paleta Gran Reserva cruce Duroc"
+      ],
+      [
+        "Curación",
+        "12–16 meses"
+      ]
+    ],
+    "source": "https://www.chacineriasdiaz.com/producto/jamones/"
+  },
+  "989900": {
+    "brand": "CHACINERÍAS DÍAZ",
+    "facts": [
+      [
+        "Producto",
+        "Centro de jamón Serrano Gran Reserva"
+      ],
+      [
+        "Presentación",
+        "Deshuesado; la gama incluye centros limpios y pulidos"
+      ]
+    ],
+    "source": "https://www.chacineriasdiaz.com/producto/jamones/jamon-serrano/"
+  }
+}

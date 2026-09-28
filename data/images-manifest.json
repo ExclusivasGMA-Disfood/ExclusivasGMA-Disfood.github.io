@@ -18,7 +18,10 @@
   "98": "images/products/98.jpg",
   "115": "images/products/115.jpg",
   "119": "images/products/119.jpg",
-  "121": "images/products/121.jpg",
+  "121": [
+    "images/products/121.jpg",
+    "images/products/121-2.jpg"
+  ],
   "124": "images/products/124.jpg",
   "126": "images/products/126.jpg",
   "130": "images/products/130.jpg",
@@ -72,7 +75,8 @@
   "421": "images/products/421.jpg",
   "425": [
     "images/products/425.jpg",
-    "images/products/425-2.webp"
+    "images/products/425-2.webp",
+    "images/products/425-3.jpg"
   ],
   "426": "images/products/426.jpg",
   "429": "images/products/429.jpg",
@@ -116,13 +120,22 @@
     "images/products/783.jpg",
     "images/products/783-informacion-pasta.svg"
   ],
-  "796": "images/products/796.jpg",
-  "797": "images/products/797.jpg",
+  "796": [
+    "images/products/796.jpg",
+    "images/products/796-2.jpg"
+  ],
+  "797": [
+    "images/products/797.jpg",
+    "images/products/797-2.jpg"
+  ],
   "802": [
     "images/products/802.jpg",
     "images/products/802-2.webp"
   ],
-  "803": "images/products/803.jpg",
+  "803": [
+    "images/products/803.jpg",
+    "images/products/803-2.jpg"
+  ],
   "806": "images/products/806.jpg",
   "807": "images/products/807.jpg",
   "808": "images/products/808.jpg",
@@ -499,6 +512,7 @@
     "images/products/4414-producto-tre-archi.jpg",
     "images/products/4414.jpg"
   ],
+  "4476": "images/products/4476.jpg",
   "4495": "images/products/4495.png",
   "4496": "images/products/4496.png",
   "4511": [
@@ -534,7 +548,10 @@
   "4964": "images/products/4964.png",
   "5026": "images/products/5026.jpg",
   "5047": "images/products/5047.jpg",
-  "5068": "images/products/5068.jpg",
+  "5068": [
+    "images/products/5068.jpg",
+    "images/products/5068-2.jpg"
+  ],
   "5103": "images/products/5103.jpg",
   "5122": "images/products/5122.png",
   "5124": "images/products/5124.jpg",
@@ -757,6 +774,7 @@
   "6143": "images/products/6143.jpg",
   "6144": "images/products/6144.jpg",
   "6148": "images/products/6148.jpg",
+  "6153": "images/products/6153.jpg",
   "6154": "images/products/6154.jpg",
   "6155": "images/products/6155.png",
   "6162": "images/products/6162.jpg",
@@ -900,7 +918,10 @@
   "130161": "images/products/130161.jpg",
   "229160": "images/products/229160.jpg",
   "473160": "images/products/473160.jpg",
-  "989900": "images/products/989900.jpg",
+  "989900": [
+    "images/products/989900.jpg",
+    "images/products/4476.jpg"
+  ],
   "00258": "images/products/00258.jpg",
   "003": "images/products/003.jpg",
   "00353": "images/products/00353.jpg",

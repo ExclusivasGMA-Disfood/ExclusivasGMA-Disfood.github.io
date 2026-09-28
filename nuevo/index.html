@@ -1915,7 +1915,8 @@ function supplierTechnicalHtml(item){
   const info=SUPPLIER_PRODUCT_INFO[productRefKey(item)];
   if(!info) return '';
   const facts=info.facts.map(([label,value])=>`<div><dt>${label}</dt><dd>${value}</dd></div>`).join('');
-  return `<section class="supplier-technical" aria-label="Información técnica del fabricante"><b class="supplier-technical-title">${info.title}</b><dl>${facts}<div class="supplier-ingredients"><dt>Ingredientes declarados</dt><dd>${info.ingredients}</dd></div></dl></section>`;
+  const ingredients=info.ingredients?`<div class="supplier-ingredients"><dt>Ingredientes declarados</dt><dd>${info.ingredients}</dd></div>`:'';
+  return `<section class="supplier-technical" aria-label="Información técnica del fabricante"><b class="supplier-technical-title">${info.title}</b><dl>${facts}${ingredients}</dl></section>`;
 }
 function productPhotoCropClass(item){ return ''; }
 function productGalleryViews(item){
