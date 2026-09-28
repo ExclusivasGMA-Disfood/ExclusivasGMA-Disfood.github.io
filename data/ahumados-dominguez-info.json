@@ -1,120 +1,140 @@
 {
   "1127": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "Según lote: Noruega, Islandia o Islas Feroe",
     "facts": [["Presentación", "Lomos en tarrina · 1 kg"], ["Peso escurrido", "700 g"], ["Conservación", "Entre 0 y 4 °C; tras abrir, máximo 5 días"]],
     "ingredients": "SALMÓN (PESCADO) (Salmo salar), aceite de girasol, sal, azúcar y humo natural.",
     "source": "https://www.ahumadosdominguez.es/producto/lomo-de-salmon-ahumado-en-aceite/"
   },
   "1393": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "Según lote: Noruega, Islandia o Islas Feroe",
     "facts": [["Presentación", "Salmón ahumado en lonchas y aceite · 1 kg"], ["Peso escurrido", "700 g"], ["Conservación", "Entre 0 y 4 °C; tras abrir, máximo 5 días"]],
     "ingredients": "SALMÓN (PESCADO) (Salmo salar), aceite de girasol, sal, azúcar y humo natural.",
     "source": "https://www.ahumadosdominguez.es/producto/salmon-ahumado-en-aceite/"
   },
   "5747": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "Pesca en zona FAO 27 · Atlántico noreste",
     "facts": [["Presentación", "Bacalao ahumado en lonchas, en aceite · 1 kg"], ["Pesca", "Atlántico noreste, zona FAO 27"], ["Conservación", "Entre 0 y 4 °C; tras abrir, máximo 5 días"]],
     "ingredients": "BACALAO (PESCADO) (Gadus morhua), aceite de girasol, sal, azúcar y humo natural.",
     "source": "https://www.ahumadosdominguez.es/producto/bacalao-ahumado-en-aceite-girasol/"
   },
   "5768": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "Según lote: zonas FAO 27, 37 o 34",
     "facts": [["Presentación", "Boquerones especiales aliñados en vinagre · lata de 425 g"], ["Elaboración", "Aliñados con aceite y salsa de tomate"], ["Conservación", "Entre 0 y 4 °C"]],
     "ingredients": "BOQUERÓN (PESCADO) (Engraulis encrasicolus), aceite de girasol, tomate (corrector de la acidez E-330), cebolla, ajo, vinagre 1,5% (DIÓXIDO DE AZUFRE) y sal.",
     "source": "https://www.ahumadosdominguez.es/producto/boquerones-alinados-en-vinagre/"
   },
   "5773": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "Según lote: Noruega, Islandia o Islas Feroe",
     "facts": [["Presentación", "Dos partes precortadas en lonchas · 1 kg"], ["Producción", "Salmón de acuicultura"], ["Conservación", "Entre 0 y 4 °C"]],
     "ingredients": "SALMÓN (PESCADO) (Salmo salar), sal, azúcar y humo natural.",
     "source": "https://www.ahumadosdominguez.es/producto/salmon-ahumado-precortado-en-dos-piezas/"
   },
   "5780": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "Según lote: Noruega, Islandia o Islas Feroe",
     "facts": [["Presentación", "Pieza grande precortada en lonchas · 1,5 kg"], ["Producción", "Salmón de acuicultura"], ["Conservación", "Entre 0 y 4 °C"]],
     "ingredients": "SALMÓN (PESCADO) (Salmo salar), sal, azúcar y humo natural.",
     "source": "https://www.ahumadosdominguez.es/producto/salmon-ahumado-pieza-entera-grande/"
   },
   "5782": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "Según lote: Noruega, Islandia o Islas Feroe",
     "facts": [["Corte", "Lomo de salmón ahumado · 100 g"], ["Producción", "Salmón de acuicultura"], ["Conservación", "Entre 0 y 4 °C; tras abrir, máximo 3 días"]],
     "ingredients": "SALMÓN (PESCADO) (Salmo salar), sal, azúcar y humo natural.",
     "source": "https://www.ahumadosdominguez.es/producto/lomo-de-salmon-ahumado-precortado/"
   },
   "5783": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "Según lote: Noruega, Islandia o Islas Feroe",
     "facts": [["Corte", "Lomo de salmón ahumado · 250 g"], ["Producción", "Salmón de acuicultura"], ["Conservación", "Entre 0 y 4 °C; tras abrir, máximo 3 días"]],
     "ingredients": "SALMÓN (PESCADO) (Salmo salar), sal, azúcar y humo natural.",
     "source": "https://www.ahumadosdominguez.es/producto/lomo-de-salmon-ahumado-250g/"
   },
   "5785": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "Varía según la especie y el lote",
     "facts": [["Presentación", "Ensalada de ahumados · 500 g"], ["Pescados", "Salmón, trucha, bacalao y colín"], ["Conservación", "Entre 0 y 4 °C; tras abrir, máximo 5 días"]],
     "ingredients": "SALMÓN (PESCADO) (Salmo salar), TRUCHA (PESCADO) (Oncorhynchus mykiss), BACALAO (PESCADO) (Gadus morhua), COLÍN (PESCADO) (Pollachius virens), aceite de girasol, sal, azúcar y humo natural.",
     "source": "https://www.ahumadosdominguez.es/producto/ensalada-de-ahumados/"
   },
   "5788": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "Pesca en zona FAO 27 · Atlántico noreste",
     "facts": [["Presentación", "Lomos de bacalao ahumado · 500 g"], ["Peso escurrido", "350 g"], ["Conservación", "Entre 0 y 4 °C; tras abrir, máximo 3 días"]],
     "ingredients": "BACALAO (PESCADO) (Gadus morhua), aceite de girasol, aceite de oliva virgen extra, sal, azúcar y humo natural.",
     "source": "https://www.ahumadosdominguez.es/producto/lomo-de-bacalao-ahumado-precortado-500-g/"
   },
   "5790": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "Varía según la especie y el lote",
     "facts": [["Presentación", "Surtido de ahumados · 1 kg"], ["Peso escurrido", "800 g"], ["Conservación", "Entre 0 y 4 °C; tras abrir, máximo 5 días"]],
     "ingredients": "SALMÓN (PESCADO) (Salmo salar), BACALAO (PESCADO) (Gadus morhua), COLÍN (PESCADO) (Pollachius virens), aceite de girasol, sal, azúcar y humo natural.",
     "source": "https://www.ahumadosdominguez.es/producto/surtido-de-ahumados/"
   },
   "5811": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "No indicado por el fabricante",
     "facts": [["Presentación", "30 mini blinis · bolsa de 135 g"], ["Diámetro", "4 cm por unidad"], ["Conservación", "Entre 0 y 4 °C; tras abrir, máximo 2 días"]],
     "ingredients": "Harina de TRIGO, agua, aceite de girasol, LACTOSA, proteína de LECHE, LECHE en polvo desnatada, suero en polvo, HUEVO deshidratado y clara de HUEVO, levadura (carbonatos sódicos y difosfatos), sal, antioxidante (ácido ascórbico).",
     "source": "https://www.ahumadosdominguez.es/producto/blinis-mini-especial-cocktail/"
   },
   "5812": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "No indicado por el fabricante",
     "facts": [["Presentación", "6 blinis grandes · bolsa de 160 g"], ["Diámetro", "9 cm por unidad"], ["Conservación", "Entre 0 y 4 °C; tras abrir, máximo 2 días"]],
     "ingredients": "Harina de TRIGO, agua, aceite de girasol, LACTOSA, proteína de LECHE, LECHE en polvo desnatada, suero en polvo, HUEVO deshidratado y clara de HUEVO, levadura (carbonatos sódicos y difosfatos), sal, antioxidante (ácido ascórbico).",
     "source": "https://www.ahumadosdominguez.es/producto/blinis-grandes/"
   },
   "5847": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "Según lote: Noruega, Islandia o Islas Feroe",
     "facts": [["Presentación", "Salmón ahumado Suprême en lonchas finas · 100 g"], ["Producción", "Salmón de acuicultura"], ["Conservación", "Entre 0 y 4 °C; tras abrir, máximo 3 días"]],
     "ingredients": "SALMÓN (PESCADO) (Salmo salar), sal, azúcar y humo natural.",
     "source": "https://www.ahumadosdominguez.es/producto/salmon-ahumado-supreme-en-lonchas/"
   },
   "5848": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "Según lote: Noruega o Islandia",
     "facts": [["Presentación", "Salmón marinado en lonchas finas · 100 g"], ["Elaboración", "Marinado con eneldo"], ["Conservación", "Entre 0 y 4 °C; tras abrir, máximo 3 días"]],
     "ingredients": "SALMÓN (PESCADO) (Salmo salar), sal, azúcar y eneldo.",
     "source": "https://www.ahumadosdominguez.es/producto/salmon-marinado-en-lonchas/"
   },
   "5959": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "Según lote: Noruega, Islandia o Islas Feroe",
     "facts": [["Presentación", "Sashimi de salmón ahumado · 150 g"], ["Producción", "Salmón de acuicultura"], ["Conservación", "Entre 0 y 4 °C; tras abrir, máximo 3 días"]],
     "ingredients": "SALMÓN (PESCADO) (Salmo salar), sal, azúcar y humo natural.",
     "source": "https://www.ahumadosdominguez.es/producto/sashimi-de-salmon-ahumado/"
   },
   "6033": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "Según lote: Noruega, Islandia o Islas Feroe",
     "facts": [["Presentación", "Dados de salmón ahumado Suprême · 95 g"], ["Trazas declaradas", "Puede contener gluten, crustáceos y huevo"], ["Conservación", "Entre 0 y 4 °C; tras abrir, máximo 3 días"]],
     "ingredients": "SALMÓN (PESCADO) (Salmo salar), sal, azúcar y humo natural. Puede contener trazas de gluten, crustáceos y huevo.",
     "source": "https://www.ahumadosdominguez.es/producto/dados-de-salmon-ahumado-95-g/"
   },
   "6034": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "Consultar etiqueta y lote",
     "facts": [["Presentación", "Tartar de salmón ahumado · 150 g"], ["Elaboración", "Con aguacate, mayonesa y lima"], ["Conservación", "Entre 0 y 4 °C; tras abrir, máximo 3 días"]],
     "ingredients": "SALMÓN (PESCADO) ahumado 78% (SALMÓN (PESCADO), sal, azúcar, humo natural), mahonesa (aceite de soja, agua, vinagre de vino blanco, yema de HUEVO, azúcar, sal, almidón modificado, aroma, zumo de limón concentrado, antioxidante E-385, extracto de pimentón, colorante carotenos), aguacate (pulpa de aguacate, antioxidante ácido ascórbico y acidulante ácido cítrico), aceite de girasol, salsa suave (agua, aceite de girasol, vinagre de vino blanco, almidón modificado, azúcar, yema de HUEVO, sal, jarabe de glucosa deshidratado, emulgente E-476, espesantes [goma garrofín, goma guar], antioxidante E-385, aroma, colorante carotenos), aceite de oliva virgen extra, cebolla, zumo de lima, pimienta y sal. Puede contener trazas de crustáceos.",
     "source": "https://www.ahumadosdominguez.es/producto/tartar-de-salmon-ahumado-150-g/"
   },
   "6058": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "Según lote: Noruega, Islandia o Islas Feroe",
     "facts": [["Presentación", "Salmón ahumado Suprême en lonchas · 250 g"], ["Producción", "Salmón de acuicultura"], ["Conservación", "Entre 0 y 4 °C; tras abrir, máximo 3 días"]],
     "ingredients": "SALMÓN (PESCADO) (Salmo salar), sal, azúcar y humo natural.",
     "source": "https://www.ahumadosdominguez.es/producto/salmon-ahumado-lonchas-250g/"
   },
   "6777": {
     "brand": "AHUMADOS DOMÍNGUEZ",
+    "origin": "Consultar etiqueta y lote",
     "facts": [["Presentación", "Receta Maestra de salmón ahumado · 500 g"], ["Salmón ahumado", "80%"], ["Conservación", "Entre 0 y 4 °C; tras abrir, máximo 3 días"]],
     "ingredients": "SALMÓN (PESCADO) ahumado 80% (SALMÓN (PESCADO), sal, azúcar, humo natural), mayonesa (aceite de soja, agua, vinagre de vino blanco, yema de HUEVO, azúcar, sal, almidón modificado, aroma, zumo de limón concentrado, antioxidante E-385, extracto de pimentón y colorante carotenos), pepinillos agridulces 9% (pepinillos, agua, vinagre de alcohol, jarabe de glucosa-fructosa, sal, azúcar y aroma natural) y aceituna gordal deshuesada 9% (aceituna, agua, sal y acidulante ácido láctico). Puede contener trazas de crustáceos.",
     "source": "https://www.ahumadosdominguez.es/producto/receta-maestra-de-salmon-ahumado-500-g/"

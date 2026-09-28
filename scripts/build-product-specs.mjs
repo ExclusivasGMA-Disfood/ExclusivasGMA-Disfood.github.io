@@ -21,6 +21,7 @@ for (const sourcePath of sources) {
       facts: entry.facts.filter(([label, value]) => label && value),
       ingredients: entry.ingredients,
       source: entry.source,
+      ...(entry.origin ? { origin: entry.origin } : {}),
     };
   }
 }

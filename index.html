@@ -1283,7 +1283,7 @@ window.addEventListener('keydown',(e)=>{
 </script>
 
 <script src="data/catalog-data.js?v=20260925-conservas-familias"></script>
-<script src="data/product-specs.js?v=20260928-dominguez"></script>
+<script src="data/product-specs.js?v=20260928-dominguez-origen"></script>
 <script>
 const DATA = window.GMA_CATALOG_DATA;
 const DEPTS = window.GMA_CATALOG_DEPARTMENTS;
@@ -2280,7 +2280,7 @@ function renderProductDetail(id){
           ${productFact('Familia', group.title)}
           ${productFact('Departamento', group.dept)}
           ${productFact('Formato', format)}
-          ${productFact('Origen orientativo', item.region || ({Nacional:'España', Italiano:'Italia', Francés:'Francia', Bélgica:'Bélgica', Noruega:'Noruega'}[item.country] || 'No indicado'))}
+          ${productFact('Origen orientativo', SUPPLIER_PRODUCT_INFO[item.ref]?.origin || item.region || ({Nacional:'España', Italiano:'Italia', Francés:'Francia', Bélgica:'Bélgica', Noruega:'Noruega'}[item.country] || 'No indicado'))}
         </div>
         <div class="product-detail-nav"><button class="product-nav-btn tap" id="productPrevBtn">← Anterior</button><span id="productPosition"></span><button class="product-nav-btn tap" id="productNextBtn">Siguiente →</button></div>
         <div class="product-detail-actions">
