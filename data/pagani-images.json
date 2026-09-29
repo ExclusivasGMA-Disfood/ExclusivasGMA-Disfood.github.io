@@ -1,7 +1,7 @@
 {
   "supplier": "Pagani Chef",
   "verifiedAt": "2026-09-29",
-  "processing": "Imágenes oficiales completas, convertidas a WebP sin recortes ni retoques.",
+  "processing": "Fotografías de la web conservadas completas y convertidas a WebP. La imagen 6596 se extrae del área individual identificada en el folleto PDF, conservando la fotografía circular completa y su fondo impreso, sin retoque generativo.",
   "images": [
     {
       "reference": "5865",
@@ -36,6 +36,21 @@
       "file": "images/products/6609.webp",
       "sourcePage": "https://paganichef.it/prodotto/gustosi-larrostita/",
       "sourceImage": "https://paganichef.it/wp-content/uploads/2025/03/Arrostita_Main.jpg",
+      "role": "primary"
+    },
+    {
+      "reference": "6596",
+      "file": "images/products/6596.webp",
+      "sourcePage": "https://www.fratellipagani.it/croccanti-novita-fratelli-pagani-e-pagani-chef-presentano-nuove-panature-senza-glutine/",
+      "sourceImage": "https://www.fratellipagani.it/wp-content/uploads/2023/08/Nuove-panature-SG-Pagani-Chef_2023.pdf",
+      "pdfPage": 1,
+      "manufacturerCode": "71075",
+      "pdfClipPoints": [
+        80,
+        518,
+        173,
+        610
+      ],
       "role": "primary"
     }
   ],
@@ -169,17 +184,11 @@
       "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
     },
     {
-      "reference": "6596",
-      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
-    },
-    {
       "reference": "6785",
       "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
     }
   ],
   "infoPending": [
-    "5874",
-    "5875",
     "5903",
     "5904",
     "5919",
@@ -191,9 +200,35 @@
     "6123",
     "6156",
     "6333",
-    "6418",
     "6482",
     "6483",
     "6785"
-  ]
+  ],
+  "pdfReview": {
+    "date": "2026-09-29",
+    "index": "https://unitedchef.gr/συνταγές-προϊόντα/",
+    "documents": [
+      {
+        "title": "Brochure 2022",
+        "id": "1ggLC_XxilkZy_fymfOOX_pkwG5nLO2pw",
+        "pages": 45
+      },
+      {
+        "title": "Brochure 2019",
+        "id": "1-Y63tD2d9XsomI98JS4i0hsvM-u2HoLu",
+        "pages": 115
+      },
+      {
+        "title": "Product Catalogue",
+        "id": "1f_EK6KJ212slGrzMs_s_vHttRXI8Losj",
+        "pages": 79
+      },
+      {
+        "title": "Fish Sector",
+        "id": "1AVRwxKsfRhQajzoT4bWTb9UP3JA_Lrq3",
+        "pages": 32
+      }
+    ],
+    "result": "Una fotografía individual confirmada (71075). Las ilustraciones de gamas y recetas no se asignan como fotografías de ingredientes individuales. Tres fichas adicionales identificadas por nombre y código; no se equipara Roxan sin sufijo a las variantes B/C/Bomb."
+  }
 }

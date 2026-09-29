@@ -766,5 +766,67 @@
         "71075"
       ]
     ]
+  },
+  "5874": {
+    "brand": "Pagani Chef",
+    "source": "https://drive.google.com/file/d/1f_EK6KJ212slGrzMs_s_vHttRXI8Losj/view",
+    "facts": [
+      [
+        "Producto",
+        "Mezcla en polvo para preparados de carne tipo hamburguesa."
+      ],
+      [
+        "Código del fabricante",
+        "66018 (660BURGER018)."
+      ],
+      [
+        "Aspecto",
+        "Polvo de color rosa anaranjado, con aroma y sabor característicos."
+      ]
+    ]
+  },
+  "5875": {
+    "brand": "Pagani Chef",
+    "source": "https://drive.google.com/file/d/1f_EK6KJ212slGrzMs_s_vHttRXI8Losj/view",
+    "facts": [
+      [
+        "Producto",
+        "Preparado en polvo para elaborar croquetas."
+      ],
+      [
+        "Código del fabricante",
+        "65005 (65CROCCHE5P0)."
+      ],
+      [
+        "Aspecto",
+        "Polvo blanco de sabor neutro."
+      ],
+      [
+        "Preparación",
+        "Mezclar con agua, dejar reposar y cocinar después de formar las piezas."
+      ]
+    ]
+  },
+  "6418": {
+    "brand": "Pagani Chef",
+    "source": "https://drive.google.com/file/d/1AVRwxKsfRhQajzoT4bWTb9UP3JA_Lrq3/view",
+    "facts": [
+      [
+        "Producto",
+        "Mezcla a base de almidones y fibras funcionales para preparados de pescado picado."
+      ],
+      [
+        "Código del fabricante",
+        "67002."
+      ],
+      [
+        "Aplicaciones",
+        "Hamburguesas y otros preparados de pescado, como salmón o bacalao."
+      ],
+      [
+        "Función",
+        "Aporta cohesión y estructura después de la cocción."
+      ]
+    ]
   }
 }
