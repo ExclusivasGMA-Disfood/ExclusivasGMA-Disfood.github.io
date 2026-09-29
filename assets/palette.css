@@ -1,0 +1,50 @@
+/* Paleta oficial GMA. Capa común: solo color, nunca geometría ni tipografía. */
+:root{
+ --soft-linen:#EFEFE3;--brick-ember:#BB080B;--platinum:#F3F3F4;
+ --sand-dune:#D2CFB6;--night-bordeaux:#4B051D;
+ --ink:#2C2C2C;--ink-soft:#5A5055;--surface:#fff;
+ --brand-wine:var(--brick-ember);--brand-red:var(--brick-ember);
+ --brand-wine-dark:var(--night-bordeaux);--brand-gold:var(--sand-dune);
+ --brand-cream:var(--soft-linen);--paper:var(--soft-linen);--paper-dim:var(--platinum);
+ --surface-2:var(--platinum);--saffron:var(--sand-dune);
+ --saffron-tint:color-mix(in srgb,var(--sand-dune) 36%,var(--platinum));
+ --teal:var(--brick-ember);--teal-dark:var(--night-bordeaux);
+ --teal-tint:color-mix(in srgb,var(--brick-ember) 8%,var(--platinum));
+ --clay:var(--brick-ember);--clay-tint:var(--teal-tint);
+ --sage:var(--night-bordeaux);--dusty:var(--night-bordeaux);
+ --rust:var(--brick-ember);--moss:var(--night-bordeaux);--mustard:var(--night-bordeaux);
+ --olive:var(--night-bordeaux);--wheat:var(--brick-ember);--brick:var(--night-bordeaux);
+ --celadon:var(--night-bordeaux);--mauve:var(--night-bordeaux);--umber:var(--brick-ember);
+ --aubergine:var(--night-bordeaux);--lagoon:var(--night-bordeaux);--navy:var(--night-bordeaux);
+ --meadow:var(--brick-ember);--berry:var(--night-bordeaux);--indigo:var(--night-bordeaux);
+ --fern:var(--night-bordeaux);--spruce:var(--brick-ember);
+ --bx-paper:var(--soft-linen);--bx-white:#fff;--bx-ink:var(--ink);--bx-mute:var(--ink-soft);
+ --bx-red:var(--brick-ember);--bx-line:var(--night-bordeaux);
+ --bx-hair:rgba(75,5,29,.13);--bx-tint:var(--platinum);
+}
+/* Fondos tranquilos; las fotos y marcas conservan blanco puro. */
+html body .gma-brands,html body .item-photo,html body .desktop-product-photo{background:#fff}
+html body .item-photo.placeholder,html body .desktop-product-photo.placeholder{background:var(--soft-linen)}
+html body .discovery-badge{background:var(--night-bordeaux)!important;color:#fff!important}
+/* Referencias, recuentos y ayuda: un único gris legible. */
+html body :is(footer,.nav-btn,.desktop-dept-button span:last-child,.desktop-group-button small,
+.desktop-group-button span:last-child,.desktop-result-meta,.desktop-selection-empty,.desktop-selection-note,
+.desktop-empty,.desktop-view-button,.selection-persist,.discovery-ref,.ref,.product-detail-ref,
+.desktop-product-ref,.desktop-selection-ref,.image-fallback){color:var(--ink-soft)!important}
+html body .desktop-dept.active>.desktop-dept-button span:last-child{color:inherit!important}
+html body :is(input,textarea)::placeholder{color:var(--ink-soft)!important;opacity:1}
+html body .image-error::after{color:var(--ink-soft)}
+/* Navegación clara y estados seleccionados inequívocos en ambas rutas. */
+html body .bottom-nav{background:rgba(243,243,244,.97)!important}
+html body .nav-btn.active{background:rgba(75,5,29,.10);color:var(--night-bordeaux)!important}
+html body .desktop-view-button.active{background:#fff;color:var(--brick-ember)!important}
+html body .desktop-selection-open,html body .btn-primary{background:var(--brick-ember);color:#fff}
+html body :is(.discovery-card.fav .discovery-add,.desktop-product-card.fav .desktop-add,.item.fav .add-btn){background:var(--sand-dune);color:var(--night-bordeaux)}
+html body :is(.discovery-card.fav .discovery-add,.desktop-product-card.fav .desktop-add,.item.fav .add-btn) svg{stroke:currentColor}
+html body .bx-track span:nth-child(3n),html body .bx-track span::after{color:var(--sand-dune)}
+html body .dept-header.open::before{color:var(--sand-dune)}
+/* El foco se distingue también sobre blanco; arena no se usa como texto claro. */
+html body :focus-visible{outline-color:var(--brick-ember)}
+html body button.nav-btn.active{color:var(--night-bordeaux)!important}
+html body button.desktop-view-button.active{color:var(--brick-ember)!important}
+html body .desktop-panel-head h2{color:var(--night-bordeaux)}

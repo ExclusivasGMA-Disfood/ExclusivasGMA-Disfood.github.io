@@ -114,3 +114,7 @@ El usuario no apreciaba el efecto: pasa a 750 ms, 18 px y escalonado de 110 ms p
 ## Criterio vigente: logos estáticos y oro al seleccionar
 
 Eliminada la entrada escalonada por petición del usuario. Al pulsar un logo se vuelve dorado con un brillo breve; solo uno activo y segunda pulsación lo desactiva. Botones accesibles por teclado, sin cambios de orden/tamaño ni selección de productos. Movimiento reducido sin brillo animado. Sustituye los efectos de entrada anteriores. Ver docs/audits/2026-09-29/LOGOS-ORO-SELECCION.md.
+
+## Paleta oficial y contraste auditado
+
+Sand Dune corregido a #D2CFB6 (RGB 210,207,182). Nueva assets/palette.css común a ambas rutas: conserva geometría y datos, unifica roles de los cinco colores oficiales y mejora grises de recuentos, navegación y ayudas. Arena/burdeos en selección; oro de logos conservado como excepción. Auditoría y límites: docs/audits/2026-09-29/PALETA-Y-CONTRASTE.md.
