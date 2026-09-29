@@ -15,6 +15,7 @@ const sources = [
   'data/cecinas-pablo-info.json',
   'data/italian-beverages-info.json',
   'data/galvan-info.json',
+  'data/villani-info.json',
 ];
 const outputPath = join(root, 'data/product-specs.js');
 const specs = {};

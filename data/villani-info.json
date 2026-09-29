@@ -1,0 +1,83 @@
+{
+  "478": {
+    "brand": "Villani",
+    "source": "https://www.villanisalumi.it/le-specialita/le-nostre-mortadelle/tartufo",
+    "facts": [
+      [
+        "Producto",
+        "Mortadela Tartufó con trufa de verano."
+      ],
+      [
+        "Elaboración",
+        "Con paleta de cerdo y dados de grasa de papada."
+      ],
+      [
+        "Declaraciones del fabricante",
+        "Sin gluten, sin derivados de la leche y sin polifosfatos añadidos."
+      ]
+    ]
+  },
+  "019": {
+    "brand": "Villani",
+    "source": "https://alivini.com/wp-content/uploads/product_pdf/F1401295-TS.pdf",
+    "sourcePage": "https://www.villanisalumi.it/le-specialita/i-nostri-salami/salsiccia-napoli",
+    "facts": [
+      [
+        "Variedad",
+        "Salsiccia Napoli Forte, picante."
+      ],
+      [
+        "Formato",
+        "Pieza de aproximadamente 400 g, en tripa natural y con forma de herradura."
+      ],
+      [
+        "Características",
+        "Condimentada con chile; sabor especiado y notas ahumadas."
+      ]
+    ],
+    "ingredients": "Carne de cerdo, sal, aromas naturales, especias, dextrosa, sacarosa, aromas de humo, antioxidante (ascorbato de sodio) y conservadores (nitrito de sodio y nitrato de potasio)."
+  },
+  "709": {
+    "brand": "Villani",
+    "source": "https://valcoiberia.com/wp-content/uploads/2021/06/CRUDO-EMILIANO.pdf",
+    "facts": [
+      [
+        "Producto",
+        "Prosciutto crudo Emiliano, jamón curado de cerdo."
+      ],
+      [
+        "Características",
+        "Sabor dulce y aroma suave característico."
+      ]
+    ],
+    "ingredients": "Carne de cerdo y sal."
+  },
+  "4343": {
+    "brand": "Villani",
+    "source": "https://hermesgourmet.odoo.com/en/shop/123031-salame-milano-export-x2kg-sv-ct4pz-villani-24285",
+    "facts": [
+      [
+        "Producto",
+        "Salame Milano Export de Villani."
+      ]
+    ]
+  },
+  "720": {
+    "brand": "Villani",
+    "source": "https://www.villanisalumi.it/le-specialita/i-nostri-crudi/parma-dop",
+    "facts": [
+      [
+        "Producto",
+        "Prosciutto di Parma DOP."
+      ],
+      [
+        "Elaboración",
+        "Elaborado y curado en Langhirano (Parma), conforme al pliego de la DOP."
+      ],
+      [
+        "Características",
+        "Sabor dulce y aroma de bodega."
+      ]
+    ]
+  }
+}

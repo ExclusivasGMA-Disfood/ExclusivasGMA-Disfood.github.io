@@ -1,0 +1,49 @@
+{
+  "supplier": "Villani",
+  "verifiedAt": "2026-09-29",
+  "processing": "Compresión WebP y reducción proporcional; sin recortes ni retoque de producto.",
+  "images": [
+    {
+      "reference": "478",
+      "file": "images/products/478.webp",
+      "role": "primary",
+      "sourcePage": "https://www.villanisalumi.it/le-specialita/le-nostre-mortadelle/tartufo",
+      "sourceImage": "https://www.villanisalumi.it/sites/default/files/2021-12/Mortadella%20al%20Tartufo.jpg"
+    },
+    {
+      "reference": "709",
+      "file": "images/products/709.webp",
+      "role": "primary",
+      "sourcePage": "https://productositalianos.es/producto/prosciutto-crudo-emiliano-sin-hueso-5-8kg-aprox-villani/",
+      "sourceImage": "https://cdn-ilbneib.nitrocdn.com/ItFPeCxQHUfZxAsIEaAhiiBcGJbzwmnT/assets/images/optimized/rev-83e7535/productositalianos.es/wp-content/uploads/Emiliano-villani.png"
+    },
+    {
+      "reference": "4343",
+      "file": "images/products/4343.webp",
+      "role": "primary",
+      "sourcePage": "https://hermesgourmet.odoo.com/en/shop/123031-salame-milano-export-x2kg-sv-ct4pz-villani-24285",
+      "sourceImage": "https://hermesgourmet.odoo.com/web/image/product.template/24285/image_1920?unique=e0dc677"
+    },
+    {
+      "reference": "019",
+      "file": "images/products/019.webp",
+      "role": "primary",
+      "sourcePage": "https://alivini.com/product/salamella-forte-400g-villani/",
+      "sourceImage": "https://alivini.com/wp-content/uploads/2023/05/F1401295.png"
+    }
+  ],
+  "pending": [
+    {
+      "reference": "720",
+      "reason": "Existen Parma con hueso, addobbo y special; la referencia GMA no concreta formato. No se elige una variante sin confirmación."
+    },
+    {
+      "reference": "026",
+      "reason": "No se confirma Salame Peperoni de 300 g. La web muestra Peperoncino de 240 g, que no se equipara automáticamente."
+    }
+  ],
+  "existingPhotoPreserved": [
+    "357"
+  ],
+  "logo": "El SVG oficial coincide con el original conservado; no se duplica ni modifica."
+}
