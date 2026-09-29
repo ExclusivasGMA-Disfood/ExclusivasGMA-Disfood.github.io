@@ -21,6 +21,7 @@ const sources = [
   'data/selec-mardis-info.json',
   'data/viander-info.json',
   'data/gran-bologna-info.json',
+  'data/san-esteban-info.json',
 ];
 const outputPath = join(root, 'data/product-specs.js');
 const specs = {};

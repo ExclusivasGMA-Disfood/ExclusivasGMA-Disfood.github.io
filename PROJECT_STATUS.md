@@ -126,3 +126,7 @@ Actualizadas 16 fotos originales extraídas del PDF y 16 fichas verificadas; 962
 ## Familias: paleta plana estricta
 
 Petición posterior: eliminar los difuminados rojo/morado de familias y subfamilias. Capa común con burdeos/marfil para familias, platino para subfamilias cerradas y arena para abiertas/activas. Separadores, contadores y navegación usan valores exactos, sin mezclas ni degradados. Ver docs/audits/2026-09-29/FAMILIAS-PALETA-PLANA.md.
+
+## Bodegas San Esteban: Tierras de Murillo
+
+Cinco fichas y fotos oficiales (3165, 2785, 2753, 2752, 3400). Antique mantiene su identidad histórica. Blanco sin composición varietal por discrepancia de fuentes. Fuentes en data/san-esteban-info.json y data/san-esteban-images.json. Ver docs/audits/2026-09-29/SAN-ESTEBAN.md. Sin cambios de diseño.

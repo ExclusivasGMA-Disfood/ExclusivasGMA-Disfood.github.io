@@ -8,6 +8,12 @@ const allowed = new Set(Object.keys(refs));
 // futura del manifiesto vuelva a añadir imágenes secundarias obsoletas.
 const singleEditorialPhotoRefs = new Set(['6740', '6742', '6743', '6744', '6745', '6750']);
 const preferredProductPhotos = new Map([
+  ['3165', '3165-sanesteban.png'],
+  ['2785', '2785-sanesteban.png'],
+  ['2753', '2753-sanesteban.png'],
+  ['2752', '2752-sanesteban.png'],
+  ['3400', '3400-sanesteban.png'],
+
   ['962', '962-granbologna.png'],
   ['967', '967-granbologna.png'],
   ['1347', '1347-granbologna.png'],

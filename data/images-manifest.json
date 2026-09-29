@@ -330,7 +330,7 @@
     "images/products/2665-informacion-fabricante.jpg"
   ],
   "2679": "images/products/2679.jpg",
-  "2752": "images/products/2752.jpg",
+  "2752": "images/products/2752-sanesteban.png",
   "2762": [
     "images/products/2762-producto-selec-mardis.jpg",
     "images/products/2762-informacion-fabricante.jpg"
@@ -354,7 +354,7 @@
   "3147": "images/products/3147.jpg",
   "3148": "images/products/3148.jpg",
   "3149": "images/products/3149.jpg",
-  "3165": "images/products/3165.jpg",
+  "3165": "images/products/3165-sanesteban.png",
   "3176": [
     "images/products/3176-producto-tre-archi.jpg",
     "images/products/3176-informacion-pasta.svg"
@@ -1081,5 +1081,8 @@
   "059": "images/products/059.jpg",
   "062": "images/products/062.jpg",
   "064": "images/products/064.jpg",
-  "065": "images/products/065.jpg"
+  "065": "images/products/065.jpg",
+  "2785": "images/products/2785-sanesteban.png",
+  "2753": "images/products/2753-sanesteban.png",
+  "3400": "images/products/3400-sanesteban.png"
 }

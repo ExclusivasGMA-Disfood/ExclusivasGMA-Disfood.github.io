@@ -1,0 +1,175 @@
+{
+  "3165": {
+    "brand": "Tierras de Murillo · Bodegas San Esteban",
+    "facts": [
+      [
+        "Bodega",
+        "San Esteban, Murillo de Río Leza (La Rioja)"
+      ],
+      [
+        "Tipo",
+        "Vino blanco joven, DOCa Rioja"
+      ],
+      [
+        "Formato",
+        "75 cl; caja de 6 botellas"
+      ],
+      [
+        "Perfil",
+        "Frutal y fresco, con notas cítricas y florales"
+      ],
+      [
+        "Servicio recomendado",
+        "5–8 °C"
+      ],
+      [
+        "Maridaje",
+        "Tapas y cocina mediterránea"
+      ]
+    ],
+    "source": "https://www.bodegassanesteban.com/jovenes/",
+    "verification_note": "La tienda indica 100 % viura y Jóvenes indica viura y tempranillo blanco. Composición varietal omitida hasta confirmar añada.",
+    "additional_sources": [
+      "https://www.bodegassanesteban.com/producto/blanco-caja-6/"
+    ]
+  },
+  "2785": {
+    "brand": "Tierras de Murillo · Bodegas San Esteban",
+    "facts": [
+      [
+        "Bodega",
+        "San Esteban, Murillo de Río Leza (La Rioja)"
+      ],
+      [
+        "Tipo",
+        "Vino rosado joven, DOCa Rioja"
+      ],
+      [
+        "Variedad de uva",
+        "Tempranillo"
+      ],
+      [
+        "Formato",
+        "75 cl; caja de 6 botellas"
+      ],
+      [
+        "Perfil",
+        "Rosa salmón, fresco y frutal, con recuerdos de fresa y fruta de hueso"
+      ],
+      [
+        "Servicio recomendado",
+        "8–9 °C"
+      ],
+      [
+        "Maridaje",
+        "Carnes blancas, salmón ahumado, ensaladas de pasta y mariscos"
+      ]
+    ],
+    "source": "https://www.bodegassanesteban.com/producto/rosado-caja-6/"
+  },
+  "2753": {
+    "brand": "Tierras de Murillo · Bodegas San Esteban",
+    "facts": [
+      [
+        "Bodega",
+        "San Esteban, Murillo de Río Leza (La Rioja)"
+      ],
+      [
+        "Tipo",
+        "Vino tinto joven, DOCa Rioja"
+      ],
+      [
+        "Variedad de uva",
+        "Tempranillo"
+      ],
+      [
+        "Formato",
+        "75 cl; caja de 6 botellas"
+      ],
+      [
+        "Perfil",
+        "Frutos rojos y negros con regaliz; boca sedosa y final frutal"
+      ],
+      [
+        "Servicio recomendado",
+        "14 °C"
+      ],
+      [
+        "Maridaje",
+        "Comidas ligeras"
+      ]
+    ],
+    "source": "https://www.bodegassanesteban.com/jovenes/",
+    "additional_sources": [
+      "https://www.bodegassanesteban.com/producto/tinto-caja-6/"
+    ]
+  },
+  "2752": {
+    "brand": "Tierras de Murillo · Bodegas San Esteban",
+    "facts": [
+      [
+        "Bodega",
+        "San Esteban, Murillo de Río Leza (La Rioja)"
+      ],
+      [
+        "Tipo",
+        "Vino tinto crianza, DOCa Rioja"
+      ],
+      [
+        "Variedad de uva",
+        "Tempranillo"
+      ],
+      [
+        "Elaboración",
+        "Fermentación controlada y crianza de 12 meses en barricas de roble"
+      ],
+      [
+        "Perfil",
+        "Fruta madura, regaliz y recuerdos de vainilla y especias"
+      ],
+      [
+        "Servicio recomendado",
+        "17 °C"
+      ],
+      [
+        "Maridaje",
+        "Platos contundentes"
+      ]
+    ],
+    "source": "https://www.bodegassanesteban.com/varietalesmadurados/",
+    "additional_sources": [
+      "https://www.bodegassanesteban.com/producto/crianza-caja-6/"
+    ]
+  },
+  "3400": {
+    "brand": "Tierras de Murillo · Bodegas San Esteban",
+    "facts": [
+      [
+        "Bodega",
+        "San Esteban, Murillo de Río Leza (La Rioja)"
+      ],
+      [
+        "Producto del fabricante",
+        "Tierras de Murillo Antique nº 1"
+      ],
+      [
+        "Tipo",
+        "Vino tinto"
+      ],
+      [
+        "Variedad de uva",
+        "100 % tempranillo"
+      ],
+      [
+        "Viñedo",
+        "Viñas de secano anteriores a 1940, en vaso, sobre suelo arcilloferroso"
+      ],
+      [
+        "Elaboración",
+        "Vendimia manual y fermentación de 16 días a temperatura controlada con remontados suaves"
+      ]
+    ],
+    "source": "https://www.bodegassanesteban.com/en/wines/",
+    "verification_note": "Tinto Antique nº 1 de la sección histórica oficial. No sustituir por Colección Privada ni Antique nº 2 blanco. Sin añada, graduación ni envejecimiento no documentados."
+  }
+}

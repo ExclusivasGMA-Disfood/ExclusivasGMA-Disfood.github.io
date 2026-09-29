@@ -1,0 +1,42 @@
+{
+  "supplier": "Bodegas San Esteban",
+  "verifiedAt": "2026-09-29",
+  "processing": "PNG oficiales originales sin edición ni reconstrucción.",
+  "images": [
+    {
+      "reference": "3165",
+      "file": "images/products/3165-sanesteban.png",
+      "source": "https://www.bodegassanesteban.com/wp-content/uploads/2025/04/TdM-blancobotella.png",
+      "sha256": "e643169ffd4c00c1121236a200eb82fffd7278c943b65e52c2de38405d29eabc",
+      "previousGallery": "images/products/3165.jpg"
+    },
+    {
+      "reference": "2785",
+      "file": "images/products/2785-sanesteban.png",
+      "source": "https://www.bodegassanesteban.com/wp-content/uploads/2025/04/TdM-rosado-botella.png",
+      "sha256": "0f8619689b2f20a287657735f9dd8a75cb138754a8f7ada9c876ceada0a5d313",
+      "previousGallery": null
+    },
+    {
+      "reference": "2753",
+      "file": "images/products/2753-sanesteban.png",
+      "source": "https://www.bodegassanesteban.com/wp-content/uploads/2025/04/TdM-tinto-botella.png",
+      "sha256": "dd65677fc41dbe83979f103164812e95f5fc9ca686bd1162f55d608b758fc34c",
+      "previousGallery": null
+    },
+    {
+      "reference": "2752",
+      "file": "images/products/2752-sanesteban.png",
+      "source": "https://www.bodegassanesteban.com/wp-content/uploads/2025/04/tinto-Crianza.png",
+      "sha256": "7cefdefdf3ffd2f5b891613693369d70ce9ad99f6249f9cdc722aff05e0b10f2",
+      "previousGallery": "images/products/2752.jpg"
+    },
+    {
+      "reference": "3400",
+      "file": "images/products/3400-sanesteban.png",
+      "source": "https://www.bodegassanesteban.com/wp-content/uploads/2019/06/antique-n1-600.png",
+      "sha256": "de5030c97bf05336a443cdeeba8edc6f24cd62813fc2b82acd40be298726d1cb",
+      "previousGallery": null
+    }
+  ]
+}
