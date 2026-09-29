@@ -1,0 +1,115 @@
+{
+  "supplier": "La Finca / Bazkaleku",
+  "verifiedAt": "2026-09-29T03:51:25.903Z",
+  "processing": "Conversión a WebP sin recorte, ampliación ni retoque del producto. Se conservan las imágenes principales existentes.",
+  "images": [
+    {
+      "reference": "02342",
+      "file": "images/products/02342.webp",
+      "role": "primary",
+      "sourcePage": "https://condalchef.com/bazkaleku-original-8-costillas-con-hueso-malla-12-14kg-bazkaleku",
+      "sourceImage": "https://condalchef.com/pub/media/catalog/product/cache/763d4bbdc12715146fc963b54216b4b1/b/a/bazkaleku_8costillas_bkseleccion_502342.jpg",
+      "sourceTitle": "LOMO ALTO 8 COSTILLAS BAZKALEKU ORIGINAL C/H MALLA 12/14 Kg 1 Lomo · BAZKALEKU",
+      "match": "Coincidencia de producto y corte/formato en la ficha del distribuidor."
+    },
+    {
+      "reference": "01164",
+      "file": "images/products/01164.webp",
+      "role": "primary",
+      "sourcePage": "https://condalchef.com/lomo-8-costillas-de-vaca-bk-selecci-n-con-hueso-malla-15kg-bazkaleku",
+      "sourceImage": "https://condalchef.com/pub/media/catalog/product/cache/763d4bbdc12715146fc963b54216b4b1/b/a/bazkaleku_8costillas_bkseleccion_501164.jpg",
+      "sourceTitle": "LOMO ALTO DE VACA BK SELECCIÓN CON HUESO MALLA 15Kg · BAZKALEKU",
+      "match": "Coincidencia de producto y corte/formato en la ficha del distribuidor."
+    },
+    {
+      "reference": "00191",
+      "file": "images/products/00191.webp",
+      "role": "primary",
+      "sourcePage": "https://condalchef.com/cadera-de-vaca-bk-vac-o6-kg-1-cadera-la-finca",
+      "sourceImage": "https://condalchef.com/pub/media/catalog/product/cache/763d4bbdc12715146fc963b54216b4b1/b/a/bazkaleku_cadera_500191.jpg",
+      "sourceTitle": "CADERA DE VACA BK 6Kg 1 Cadera Vacío · LA FINCA",
+      "match": "Coincidencia de producto y corte/formato en la ficha del distribuidor."
+    },
+    {
+      "reference": "01274",
+      "file": "images/products/01274.webp",
+      "role": "primary",
+      "sourcePage": "https://condalchef.com/chuleta-de-vaca-bk-seleccion-500-600-gr-vacio-caja-de-8-chuletas",
+      "sourceImage": "https://condalchef.com/pub/media/catalog/product/cache/763d4bbdc12715146fc963b54216b4b1/b/a/bazkaleku_chuletabkseleccion_501274.jpg",
+      "sourceTitle": "CHULETA DE VACA BK SELECCION (8ud x 500/600gr) Vacío · BAZKALEKU",
+      "match": "Coincidencia de producto y corte/formato en la ficha del distribuidor."
+    },
+    {
+      "reference": "01719",
+      "file": "images/products/01719-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://condalchef.com/lomo-bajo-de-vaca-bk-sin-hueso-mediano-vac-o-6kg-bazkaleku",
+      "sourceImage": "https://condalchef.com/pub/media/catalog/product/cache/763d4bbdc12715146fc963b54216b4b1/b/a/bazkaleku_lomobajobkseleccion_501719.jpg",
+      "sourceTitle": "LOMO BAJO DE VACA BK SIN HUESO MEDIANO VACÍO 6Kg · BAZKALEKU",
+      "match": "Coincidencia de producto y corte/formato en la ficha del distribuidor."
+    },
+    {
+      "reference": "01154",
+      "file": "images/products/01154-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://condalchef.com/lomo-bajo-de-vaca-bk-sin-hueso-grande-7kg-vac-o-bazkaleku",
+      "sourceImage": "https://condalchef.com/pub/media/catalog/product/cache/763d4bbdc12715146fc963b54216b4b1/b/a/bazkaleku_lomobajobkseleccion_501154.jpg",
+      "sourceTitle": "LOMO BAJO DE VACA BK SIN HUESO GRANDE 7Kg VACÍO · BAZKALEKU",
+      "match": "Coincidencia de producto y corte/formato en la ficha del distribuidor."
+    },
+    {
+      "reference": "01163",
+      "file": "images/products/01163-3.webp",
+      "role": "secondary",
+      "sourcePage": "https://condalchef.com/lomo-entero-de-vaca-bk-selecci-n-con-hueso-malla-26kg-bazkaleku",
+      "sourceImage": "https://condalchef.com/pub/media/catalog/product/cache/763d4bbdc12715146fc963b54216b4b1/b/a/bazkaleku_lomoentero_bkseleccion_501163.jpg",
+      "sourceTitle": "LOMO ENTERO DE VACA BK SELECCIÓN CON HUESO MALLA 26Kg · BAZKALEKU",
+      "match": "Coincidencia de producto y corte/formato en la ficha del distribuidor."
+    },
+    {
+      "reference": "01382",
+      "file": "images/products/01382.webp",
+      "role": "primary",
+      "sourcePage": "https://condalchef.com/solomillo-bk-selecci-n-porcionado-170-180grs-ultracongelado-bazkaleku",
+      "sourceImage": "https://condalchef.com/pub/media/catalog/product/cache/763d4bbdc12715146fc963b54216b4b1/b/a/bazkaleku_solomillo_501382_1.jpg",
+      "sourceTitle": "SOLOMILLO BK SELECCIÓN PORCIONADO 170/180GRS ULTRACONGELADO · BAZKALEKU",
+      "match": "Coincidencia de producto y corte/formato en la ficha del distribuidor."
+    },
+    {
+      "reference": "00048",
+      "file": "images/products/00048.webp",
+      "role": "primary",
+      "sourcePage": "https://www.elcorteingles.es/supermercado/B001018487500078-la-finca-cecina-de-vacuno-seleccion-sobre-90-g/",
+      "sourceImage": "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201809/26/00118487500078____7__600x600.jpg",
+      "sourceTitle": "Cecina de vacuno Selección, sobre 90 g",
+      "match": "Coincidencia de producto y corte/formato en la ficha del distribuidor."
+    },
+    {
+      "reference": "00568",
+      "file": "images/products/00568.webp",
+      "role": "primary",
+      "sourcePage": "https://condalchef.com/entrecot-de-vaca-bk-vacio-10ud-x-380-420gr-la-finca",
+      "sourceImage": "https://condalchef.com/pub/media/catalog/product/cache/8c87592ad8b4593f90b9a8a5a0206c49/p/o/porcionado_lomobajo_2.png",
+      "sourceTitle": "Entrecot de vaca BK 380/420 g",
+      "match": "Coincidencia de producto y corte/formato en la ficha del distribuidor."
+    },
+    {
+      "reference": "04139",
+      "file": "images/products/04139.webp",
+      "role": "primary",
+      "sourcePage": "https://condalchef.com/mollejas-dos-primaveras-ultracongelado-5bolsas-x-1-kg-la-finca",
+      "sourceImage": "https://condalchef.com/pub/media/catalog/product/cache/8c87592ad8b4593f90b9a8a5a0206c49/l/a/lafinca_mollejas_500313.jpg",
+      "sourceTitle": "Mollejas de corazón de vacuno ultracongeladas",
+      "match": "Coinciden proveedor, mollejas de corazón de vacuno y conservación congelada; foto ilustrativa del producto, no del formato comercial."
+    },
+    {
+      "reference": "00072",
+      "file": "images/products/00072.webp",
+      "role": "primary",
+      "sourcePage": "https://www.riscalesalimentacion.com/products/pulled-pork-la-finca",
+      "sourceImage": "https://www.riscalesalimentacion.com/cdn/shop/files/1481_PLANTILLA_FOTOS_WEB_1200x1200.png?v=1782403994",
+      "sourceTitle": "Pulled pork La Finca",
+      "match": "Coincidencia de producto y corte/formato en la ficha del distribuidor."
+    }
+  ]
+}

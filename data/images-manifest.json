@@ -926,24 +926,40 @@
     "images/products/989900.jpg",
     "images/products/4476.jpg"
   ],
+  "00048": "images/products/00048.webp",
+  "00072": "images/products/00072.webp",
+  "00191": "images/products/00191.webp",
   "00258": "images/products/00258.jpg",
   "003": "images/products/003.jpg",
   "00353": "images/products/00353.jpg",
-  "01154": "images/products/01154.jpg",
+  "00568": "images/products/00568.webp",
+  "01154": [
+    "images/products/01154.jpg",
+    "images/products/01154-2.webp"
+  ],
   "01163": [
     "images/products/01163.png",
-    "images/products/01163-2.webp"
+    "images/products/01163-2.webp",
+    "images/products/01163-3.webp"
   ],
+  "01164": "images/products/01164.webp",
+  "01274": "images/products/01274.webp",
+  "01382": "images/products/01382.webp",
   "017": "images/products/017.jpg",
-  "01719": "images/products/01719.jpg",
+  "01719": [
+    "images/products/01719.jpg",
+    "images/products/01719-2.webp"
+  ],
   "01755": "images/products/01755.png",
   "020": "images/products/020.jpg",
   "02259": "images/products/02259.jpg",
+  "02342": "images/products/02342.webp",
   "02442": "images/products/02442.jpg",
   "02535": "images/products/02535.jpg",
   "02709": "images/products/02709.jpg",
   "03946": "images/products/03946.jpg",
   "04000": "images/products/04000.jpg",
+  "04139": "images/products/04139.webp",
   "049": "images/products/049.jpg",
   "053": "images/products/053.jpg",
   "059": "images/products/059.jpg",
