@@ -1,0 +1,63 @@
+{
+  "supplier": "Conservas Marzo",
+  "verifiedAt": "2026-09-29T04:03:35.309Z",
+  "processing": "Compresión y reducción sin recortes ni retoques del producto.",
+  "images": [
+    {
+      "reference": "1900",
+      "file": "images/products/1900.webp",
+      "role": "primary",
+      "sourcePage": "https://conservasmarzo.com/productos/78-tomate-frito.html",
+      "sourceImage": "https://conservasmarzo.com/146-thickbox_default/tomate-frito.jpg",
+      "note": "Coinciden producto y formato en la ficha oficial."
+    },
+    {
+      "reference": "3917",
+      "file": "images/products/3917.webp",
+      "role": "primary",
+      "sourcePage": "https://conservasmarzo.com/productos/86-fritada-casera.html",
+      "sourceImage": "https://conservasmarzo.com/148-thickbox_default/fritada-casera.jpg",
+      "note": "Coinciden producto y formato en la ficha oficial."
+    },
+    {
+      "reference": "6018",
+      "file": "images/products/6018.webp",
+      "role": "primary",
+      "sourcePage": "https://conservasmarzo.com/productos/106-garbanzos-con-boletus.html",
+      "sourceImage": "https://conservasmarzo.com/165-thickbox_default/garbanzos-con-boletus.jpg",
+      "note": "Coinciden producto y formato en la ficha oficial."
+    },
+    {
+      "reference": "6665",
+      "file": "images/products/6665.webp",
+      "role": "primary",
+      "sourcePage": "https://conservasmarzo.com/productos/101-hummus-de-garbanzo.html",
+      "sourceImage": "https://conservasmarzo.com/138-thickbox_default/hummus-de-garbanzo.jpg",
+      "note": "Coinciden producto y formato en la ficha oficial."
+    },
+    {
+      "reference": "1996",
+      "file": "images/products/1996-oficial-marzo.webp",
+      "role": "corrected-primary",
+      "sourcePage": "https://conservasmarzo.com/productos/80-tomate-triturado-extra.html",
+      "sourceImage": "https://conservasmarzo.com/80-thickbox_default/tomate-triturado-extra.jpg",
+      "note": "Fotografía oficial del formato de medio kilo; corrige la imagen anterior del envase grande."
+    },
+    {
+      "reference": "1999",
+      "file": "images/products/1999-oficial-marzo.webp",
+      "role": "corrected-primary",
+      "sourcePage": "https://conservasmarzo.com/productos/46-lentejas-extra.html",
+      "sourceImage": "https://conservasmarzo.com/46-thickbox_default/lentejas-extra.jpg",
+      "note": "Fotografía oficial del formato de medio kilo; corrige la imagen anterior del envase grande."
+    },
+    {
+      "reference": "1991",
+      "file": "images/products/1991-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://conservasmarzo.com/productos/45-garbanzos-extra.html",
+      "sourceImage": "https://conservasmarzo.com/125-thickbox_default/garbanzos-extra.jpg",
+      "note": "Sugerencia de presentación publicada por el fabricante; no representa el contenido del envase."
+    }
+  ]
+}

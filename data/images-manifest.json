@@ -248,6 +248,7 @@
   "1808": "images/products/1808.jpg",
   "1837": "images/products/1837.jpg",
   "1838": "images/products/1838.jpg",
+  "1900": "images/products/1900.webp",
   "1902": [
     "images/products/1902.jpg",
     "images/products/1902-2.webp"
@@ -255,15 +256,18 @@
   "1966": "images/products/1966.jpg",
   "1988": "images/products/1988.jpg",
   "1989": "images/products/1989.jpg",
-  "1991": "images/products/1991.jpg",
+  "1991": [
+    "images/products/1991.jpg",
+    "images/products/1991-2.webp"
+  ],
   "1992": "images/products/1992.jpg",
   "1993": "images/products/1993.jpg",
   "1994": "images/products/1994.jpg",
   "1995": "images/products/1995.jpg",
-  "1996": "images/products/1996.jpg",
+  "1996": "images/products/1996-oficial-marzo.webp",
   "1997": "images/products/1997.jpg",
   "1998": "images/products/1998.jpg",
-  "1999": "images/products/1999.jpg",
+  "1999": "images/products/1999-oficial-marzo.webp",
   "2009": "images/products/2009.jpg",
   "2011": "images/products/2011.jpg",
   "2016": "images/products/2016.jpg",
@@ -464,6 +468,7 @@
   "3906": "images/products/3906.jpg",
   "3911": "images/products/3911.jpg",
   "3912": "images/products/3912.jpg",
+  "3917": "images/products/3917.webp",
   "3919": "images/products/3919.jpg",
   "3927": "images/products/3927.jpg",
   "3928": "images/products/3928.jpg",
@@ -747,6 +752,7 @@
     "images/products/6012.webp",
     "images/products/6012-2.jpg"
   ],
+  "6018": "images/products/6018.webp",
   "6026": "images/products/6026.jpg",
   "6030": "images/products/6030.jpg",
   "6031": "images/products/6031.jpg",
@@ -803,6 +809,7 @@
   "6616": "images/products/6616.jpg",
   "6619": "images/products/6619.jpg",
   "6636": "images/products/6636.jpg",
+  "6665": "images/products/6665.webp",
   "6667": "images/products/6667.jpg",
   "6669": "images/products/6669.jpg",
   "6670": "images/products/6670.jpg",

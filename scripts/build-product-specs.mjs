@@ -10,6 +10,7 @@ const sources = [
   'data/crego-info.json',
   'data/diaz-info.json',
   'data/la-finca-info.json',
+  'data/marzo-info.json',
 ];
 const outputPath = join(root, 'data/product-specs.js');
 const specs = {};

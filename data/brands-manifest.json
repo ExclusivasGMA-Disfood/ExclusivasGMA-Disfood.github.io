@@ -770,6 +770,47 @@
       ],
       "width": 400,
       "height": 69
+    },
+    {
+      "id": "marzo",
+      "name": "Conservas Marzo",
+      "source": "https://conservasmarzo.com/",
+      "sourceImage": "https://conservasmarzo.com/img/logo_marzo.svg",
+      "original": "images/brands/originals/marzo.svg",
+      "image": "images/brands/marzo.png",
+      "width": 400,
+      "height": 106,
+      "references": [
+        "6037",
+        "2454",
+        "2455",
+        "2033",
+        "1900",
+        "1989",
+        "1988",
+        "1997",
+        "1996",
+        "5265",
+        "2679",
+        "1992",
+        "3917",
+        "2009",
+        "2011",
+        "2016",
+        "6220",
+        "4409",
+        "2452",
+        "5827",
+        "1998",
+        "1999",
+        "1991",
+        "1993",
+        "6018",
+        "6665",
+        "1995",
+        "1994",
+        "2456"
+      ]
     }
   ]
 }
