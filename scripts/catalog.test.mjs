@@ -217,3 +217,24 @@ test('Huerta: dos familias, legumbres reunidas y búsqueda por subgrupo',async()
   w.testFilter('huerta italia');assert.equal(w.document.querySelectorAll('.desktop-product-card').length,17);
  }finally{await w.happyDOM.close();}
 });
+
+for(const page of ['index.html','nuevo/index.html']){
+ test(`${page}: cierre táctil sin confundir lectura, gesto corto ni desplazamiento lateral`,async()=>{
+  const w=await app(page,390,844);try{
+   const d=w.document,open=d.querySelector('.discovery-open'),sheet=d.querySelector('#productSheet');
+   const touch=(el,type,x,y)=>{const e=new w.Event(type,{bubbles:true,cancelable:true});Object.defineProperties(e,{touches:{value:type==='touchend'?[]:[{clientX:x,clientY:y}]},changedTouches:{value:[{clientX:x,clientY:y}]}});el.dispatchEvent(e);};
+   const swipe=(el,dx,dy)=>{touch(el,'touchstart',100,100);touch(el,'touchmove',100+dx,100+dy);touch(el,'touchend',100+dx,100+dy);};
+   open.click();let detail=d.querySelector('#productDetail');
+   detail.scrollTop=120;swipe(detail,0,100);assert.equal(sheet.getAttribute('aria-hidden'),'false');
+   detail.scrollTop=0;swipe(detail,100,10);assert.equal(sheet.getAttribute('aria-hidden'),'false');
+   swipe(detail,0,35);assert.equal(sheet.getAttribute('aria-hidden'),'false');
+   swipe(detail,0,100);assert.equal(sheet.getAttribute('aria-hidden'),'true');
+   open.click();touch(d.querySelector('#productClose'),'touchend',100,100);assert.equal(sheet.getAttribute('aria-hidden'),'true');
+   w.eval("openLightbox('images/products/2631-frontal.jpg','Tomate',null)");
+   assert.ok(d.querySelector('#lightboxCloseTop svg'));
+   touch(d.querySelector('#lightboxCloseTop'),'touchend',100,100);assert.equal(d.querySelector('#lightboxBackdrop').getAttribute('aria-hidden'),'true');
+   w.eval("openLightbox('images/products/2631-frontal.jpg','Tomate',null)");
+   swipe(d.querySelector('#lightboxImg'),0,100);assert.equal(d.querySelector('#lightboxBackdrop').getAttribute('aria-hidden'),'true');
+  }finally{await w.happyDOM.close();}
+ });
+}

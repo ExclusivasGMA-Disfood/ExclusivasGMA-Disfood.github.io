@@ -86,3 +86,7 @@ La captura posterior pide fotos como al reducir la página, manteniendo el resto
 ## Títulos de destacados en dos líneas
 
 Ajuste posterior solicitado: en móvil los nombres pasan de 12 a 11 px y de tres a dos líneas, con puntos suspensivos. Fotos de 100 px y resto de interfaz intactos. Registro: docs/audits/2026-09-29/DESTACADOS-DOS-LINEAS.md.
+
+## Cierre de ventanas de producto
+
+La ficha tiene aspa SVG de 44 px y el visor de fotos una nueva aspa superior que sigue accesible al desplazar. Ambos cierran al tirar hacia abajo desde el inicio del contenido (70 px); leer texto ya desplazado no cierra la ventana. Alturas basadas en viewport dinámico. Sin cambios en carruseles ni datos. 19 pruebas y matriz Chromium en ambas rutas; no probado en iPhone físico. Registro: docs/audits/2026-09-29/CIERRE-VENTANAS.md.

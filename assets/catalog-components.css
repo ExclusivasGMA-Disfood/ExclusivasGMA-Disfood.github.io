@@ -172,3 +172,9 @@ html body :is(#newDiscovery,#bestDiscovery) .discovery-add{top:8px;right:8px;bot
  html body :is(#newDiscovery,#bestDiscovery) .discovery-name{font-size:11px;line-height:1.25;-webkit-line-clamp:2;min-height:2.5em;max-height:2.5em;overflow:hidden;text-overflow:ellipsis}
  html body :is(#newDiscovery,#bestDiscovery) .discovery-ref{font-size:11px}
 }
+
+/* Cierre visible y accesible incluso con las barras del navegador móvil. */
+html body .product-sheet{max-height:92dvh!important}
+html body #productClose,html body #lightboxCloseTop{width:44px;height:44px;min-width:44px;background:#fff;color:#4b051d;border:1px solid rgba(75,5,29,.15)}
+html body .lightbox-card{max-height:calc(100dvh - 48px - env(safe-area-inset-top) - env(safe-area-inset-bottom));overflow-y:auto;overscroll-behavior:contain}
+html body .lightbox-head{position:sticky;top:0;z-index:5;display:flex;justify-content:flex-end;padding-bottom:8px;background:var(--paper)}

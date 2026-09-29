@@ -918,6 +918,41 @@ function bindReliableClose(button, closeFn){
   });
 }
 
+// Solo cerrar al tirar hacia abajo desde el inicio del contenido. Un gesto
+// iniciado a mitad de una ficha sigue desplazando su texto normalmente.
+function bindPullDownClose(panel, closeFn){
+  let start=null;
+  let suppressClickUntil=0;
+  panel.addEventListener('touchstart',e=>{
+    start=null;
+    if(e.touches.length!==1 || e.target.closest('button,a,input,select,textarea')) return;
+    for(let el=e.target;el && panel.contains(el);el=el.parentElement){
+      if(el.scrollTop>1) return;
+    }
+    start={x:e.touches[0].clientX,y:e.touches[0].clientY,dragging:false};
+  },{passive:true});
+  panel.addEventListener('touchmove',e=>{
+    if(!start) return;
+    if(e.touches.length!==1){start=null;return;}
+    const dx=e.touches[0].clientX-start.x,dy=e.touches[0].clientY-start.y;
+    if(!start.dragging && (dy < -12 || Math.abs(dx)>Math.max(12,dy))){start=null;return;}
+    if(dy>14 && dy>Math.abs(dx)*1.4) start.dragging=true;
+    if(start.dragging) e.preventDefault();
+  },{passive:false});
+  panel.addEventListener('touchend',e=>{
+    const gesture=start;start=null;
+    if(!gesture || !gesture.dragging || e.changedTouches.length!==1) return;
+    e.preventDefault();
+    suppressClickUntil=performance.now()+500;
+    const dx=e.changedTouches[0].clientX-gesture.x,dy=e.changedTouches[0].clientY-gesture.y;
+    if(dy>=70 && dy>Math.abs(dx)*1.4) closeFn();
+  },{passive:false});
+  panel.addEventListener('touchcancel',()=>{start=null;},{passive:true});
+  panel.addEventListener('click',e=>{
+    if(performance.now()<suppressClickUntil){e.preventDefault();e.stopImmediatePropagation();}
+  },true);
+}
+
 function bindBackdropClose(backdrop, closeFn){
   if(!backdrop) return;
   let start=null;
@@ -1150,6 +1185,7 @@ ${new URL('?ref='+encodeURIComponent(item.ref),location.href).href}`;
 }
 bindReliableClose(document.getElementById('productClose'), closeProduct);
 bindBackdropClose(productBackdrop, closeProduct);
+bindPullDownClose(productSheet, closeProduct);
 
 let lightboxOpen = false;
 let lightboxCloseTimer = null;
@@ -1196,6 +1232,8 @@ function closeLightbox(){
   unlockScroll();
 }
 bindReliableClose(document.getElementById('lightboxClose'), closeLightbox);
+bindReliableClose(document.getElementById('lightboxCloseTop'), closeLightbox);
+bindPullDownClose(document.getElementById('lightboxCard'), closeLightbox);
 bindBackdropClose(lightboxBackdrop, closeLightbox);
 document.getElementById('lightboxSelect').addEventListener('click',e=>{
   const id=e.currentTarget.dataset.id;
