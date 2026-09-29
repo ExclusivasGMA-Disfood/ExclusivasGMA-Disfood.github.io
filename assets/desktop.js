@@ -109,11 +109,11 @@
       ? `<img class="${productPhotoCropClass(it)}" src="${esc(image)}" alt="" loading="lazy" decoding="async">`
       : `${categoryPlaceholderSvg(group.title)}${it.origin?`<span class="fam-origin">${esc(it.origin)}</span>`:''}`;
     return `<article class="desktop-product-card ${selected?'fav':''}" data-id="${id}">
-      <button class="desktop-product-open" type="button" aria-label="Ver ficha de ${esc(it.n)}">
+      <button class="desktop-product-open" type="button" aria-label="Ver ficha de ${esc(productCardName(it))}">
         <span class="desktop-product-photo ${image?'':'placeholder'}" ${image?'':`style="--fam:${esc(group.color)}"`}>${photo}</span>
-        <span class="desktop-product-copy"><span class="desktop-product-name">${esc(it.n)}</span><span class="desktop-product-ref">Ref. ${esc(it.ref)}</span><span class="desktop-product-family">${esc(group.title)}</span></span>
+        <span class="desktop-product-copy"><span class="desktop-product-name">${esc(productCardName(it))}</span><span class="desktop-product-ref">${esc(productCardReference(it))}</span><span class="desktop-product-family">${esc(group.title)}</span></span>
       </button>
-      <button class="desktop-add" type="button" data-id="${id}" aria-pressed="${selected}" aria-label="${selected?'Quitar de la selección':'Añadir a la selección'}: ${esc(it.n)}"><svg viewBox="0 0 24 24">${selected?CHECK_ICON:PLUS_ICON}</svg></button>
+      <button class="desktop-add" type="button" data-id="${id}" aria-pressed="${selected}" aria-label="${productFormatGroup(it)&&!selectedOnly?'Elegir formato':selected?'Quitar de la selección':'Añadir a la selección'}: ${esc(productCardName(it))}"><svg viewBox="0 0 24 24">${selected?CHECK_ICON:PLUS_ICON}</svg></button>
     </article>`;
   }
   function renderProducts(rows,activeGi){
@@ -217,7 +217,7 @@
     const more=event.target.closest('.desktop-more-button');
     if(more){appendMore();return;}
     const add=event.target.closest('.desktop-add');
-    if(add){event.preventDefault();event.stopPropagation();toggleFav(add.dataset.id);return;}
+    if(add){event.preventDefault();event.stopPropagation();const id=add.dataset.id;if(productFormatGroup(findItem(id))&&!selectedOnly)openProduct(id,add);else toggleFav(id);return;}
     const open=event.target.closest('.desktop-product-open');
     if(open){const card=open.closest('.desktop-product-card');if(card)openProduct(card.dataset.id,open);}
   });

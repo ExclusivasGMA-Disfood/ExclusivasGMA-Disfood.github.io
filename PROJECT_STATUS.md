@@ -58,3 +58,7 @@ Tras valorar el piloto, el usuario autoriza elegir productos apetecibles con fon
 ## Sustitución solicitada de frutos secos
 
 Se sustituyen exclusivamente en Novedades la almendra 6744 por gilda triple de boquerón 6154 y el cocktail 6742 por tarta Carrot Cake tres pisos 6766. Ambas sustitutas tienen isNew y foto revisada sobre blanco. Se actualizan los dos encuadres contain en JSON y las versiones de recursos. Top, resto del carrusel, geometría y catálogo completos permanecen iguales. La elección es editorial, sin afirmar un ranking de ventas. Validación del catálogo y de las 748 imágenes antes de publicar; verificación de referencias e imágenes servidas al finalizar.
+
+## Piloto autorizado: formatos de tomate Marzo
+
+Diez referencias de tomate frito, triturado y entero de Marzo se muestran en tres tarjetas, con selector de formato dentro de la ficha. Mapa explícito en data/product-formats.js; no extenderlo a otras marcas/productos sin petición. Mermelada separada. La búsqueda se aplica antes de agrupar y una referencia exacta abre su formato; seleccionados y PDF mantienen cada SKU/cantidad independiente. Permanecen 1.001 referencias y 994 tarjetas en navegación sin filtros. Registro y validación: docs/audits/2026-09-29/MARZO-FORMATOS.md.

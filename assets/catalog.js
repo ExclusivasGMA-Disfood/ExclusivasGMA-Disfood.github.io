@@ -479,16 +479,49 @@ window.GMA_REFRESH_DEFERRED_GROUPS=()=>{
   });
 };
 
+// Group only explicitly approved product variants, after applying filters.
+function productFormatGroup(item){
+  return (window.GMA_PRODUCT_FORMATS||[]).find(g=>g.formats.some(([ref])=>ref===String(item.ref)));
+}
+function productFormatKey(item){return productFormatGroup(item)?.name||String(item.ref);}
+function collapseProductFormats(entries){
+  if(selectedOnly)return entries; // Review every selected SKU independently.
+  const positions=new Map(), grouped=[];
+  for(const entry of entries){
+    const key=productFormatKey(entry.it);
+    if(!positions.has(key)){positions.set(key,grouped.length);grouped.push(entry);}
+    else {
+      const index=positions.get(key);
+      // Prefer an available photo, but only among formats matching the active filters.
+      if(!imageUrlFor(grouped[index].it)&&imageUrlFor(entry.it))grouped[index]=entry;
+    }
+  }
+  return grouped;
+}
+function productCardName(item){return (!selectedOnly&&productFormatGroup(item)?.name)||item.n;}
+function productCardReference(item){
+  const g=!selectedOnly&&productFormatGroup(item);
+  return g?`${g.formats.length} formatos · Elegir formato`:`Ref. ${item.ref}`;
+}
+function productFormatSelector(item){
+  const g=productFormatGroup(item);if(!g)return '';
+  const options=g.formats.map(([ref,label])=>{
+    let id;DATA.forEach((group,gi)=>group.items.forEach((it,ii)=>{if(String(it.ref)===ref)id=itemId(gi,ii);}));
+    return `<option value="${id}" ${ref===String(item.ref)?'selected':''}>${escapeCatalogText(label)} · Ref. ${ref}${favs.hasOwnProperty(id)?' · Seleccionado':''}</option>`;
+  }).join('');
+  return `<div class="product-format-picker"><label for="productFormatSelect">Elige el formato</label><select id="productFormatSelect">${options}</select></div>`;
+}
+
 function getVisibleItemsForGroup(grp, gi){
   const groupWideMatch = groupMatchesTextOnly(grp);
   let items = grp.items.map((it, ii) => ({it, ii}));
-  return {groupWideMatch, items: items.filter(({it,ii}) => {
+  return {groupWideMatch, items: collapseProductFormats(items.filter(({it,ii}) => {
     const id=itemId(gi,ii);
     return (!searchTerm || groupWideMatch || matchesQuery(it.s, searchTerm)) &&
       (!onlyNew || it.isNew) &&
       (!selectedOnly || Object.prototype.hasOwnProperty.call(favs,id)) &&
       matchesOrigin(it);
-  })};
+  }))};
 }
 
 // Build product rows only when a family is actually opened. This is the key
@@ -524,7 +557,7 @@ function mountGroupItems(groupSection){
     row.dataset.id=id;
     row.setAttribute('role','button');
     row.setAttribute('tabindex','0');
-    row.setAttribute('aria-label',`Ver ficha de ${it.n}`);
+    row.setAttribute('aria-label',`Ver ficha de ${productCardName(it)}`);
     const imageUrl=imageUrlFor(it);
     const photoHtml=imageUrl
       ? `<div class="item-photo has-photo"><img class="${productPhotoCropClass(it)}" data-src="${imageUrl}" alt="" loading="lazy" decoding="async"></div>`
@@ -532,21 +565,21 @@ function mountGroupItems(groupSection){
     row.innerHTML=`
       <div class="item-photo-wrap">
         ${photoHtml}
-        <button class="add-btn tap" data-id="${id}" aria-label="${isFav?'Quitar de la selección':'Añadir a la selección'}: ${escapeCatalogText(it.n)}" aria-pressed="${isFav}">
+        <button class="add-btn tap" data-id="${id}" aria-label="${productFormatGroup(it)&&!selectedOnly?'Elegir formato':isFav?'Quitar de la selección':'Añadir a la selección'}: ${escapeCatalogText(productCardName(it))}" aria-pressed="${isFav}">
           <svg viewBox="0 0 24 24">${isFav?'<path d="M4 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/>':'<path d="M12 5v14M5 12h14" stroke-linecap="round"/>'}</svg>
         </button>
       </div>
       <div class="item-body">
         <div class="item-top">
           <div>
-            <div class="item-name">${highlightRegex?highlightName(it.n,highlightRegex):it.n}</div>
+            <div class="item-name">${highlightRegex?highlightName(productCardName(it),highlightRegex):productCardName(it)}</div>
             <div class="item-meta">
               ${it.isNew?'<span class="tag new-badge">Nuevo</span>':''}
               ${(it.modo==='K'||it.unid<=1)?`<span class="tag">${it.unid} ud/caja</span>`:''}
             </div>
-            <div class="ref">Ref. ${it.ref}</div>
+            <div class="ref">${productCardReference(it)}</div>
           </div>
-          ${priceBlockHtml(it)}
+          ${productFormatGroup(it)&&!selectedOnly?'':priceBlockHtml(it)}
         </div>
       </div>`;
     frag.appendChild(row);
@@ -704,13 +737,17 @@ groupsEl.addEventListener('click', (e) => {
   const favBtn = e.target.closest('.add-btn');
   if(favBtn){
     e.stopPropagation();
-    toggleFav(favBtn.dataset.id);
+    const targetId=favBtn.dataset.id;
+    if(productFormatGroup(findItem(targetId))&&!selectedOnly)openProduct(targetId,favBtn.closest('.item'));
+    else toggleFav(targetId);
     return;
   }
   const photo = e.target.closest('.item-photo.has-photo img');
   if(photo){
     e.stopPropagation();
-    const name = photo.closest('.item').querySelector('.item-name').textContent;
+    const row=photo.closest('.item');
+    if(productFormatGroup(findItem(row.dataset.id))&&!selectedOnly){openProduct(row.dataset.id,row);return;}
+    const name = row.querySelector('.item-name').textContent;
     openLightbox(photo.src, name, photo.closest('.item'), photo.closest('.item').dataset.id);
     return;
   }
@@ -944,7 +981,7 @@ function getCurrentFilteredItems(){
     if(!matchesOrigin(it))return;
     out.push({g,it,id});
   }));
-  return out;
+  return collapseProductFormats(out);
 }
 
 
@@ -991,6 +1028,7 @@ function renderProductDetail(id){
       <div class="product-detail-info">
         <h3 class="product-detail-title">${escapeCatalogText(item.n)}</h3>
         <div class="product-detail-ref">Referencia ${item.ref}</div>
+        ${productFormatSelector(item)}
         ${SUPPLIER_PRODUCT_INFO[item.ref]?'':(()=>{const c=productDescription(group,item);return `<div class="product-description"><b>Sobre el producto</b><p>${c.desc}</p><p class="use">${c.use}</p></div>`})()}
         ${supplierTechnicalHtml(item)}
         <div class="product-facts">
@@ -1007,13 +1045,16 @@ function renderProductDetail(id){
         <div class="product-note">Información orientativa de catálogo. La selección no formaliza un pedido.</div>
       </div>
     </div>`;
+  const formatSelect=document.getElementById('productFormatSelect');
+  if(formatSelect)formatSelect.onchange=()=>{currentProductId=formatSelect.value;renderProductDetail(currentProductId);};
   document.getElementById('productSelectBtn').onclick = () => {
     toggleFav(id);
     renderProductDetail(id);
   };
   document.getElementById('productShareBtn').onclick = () => shareProduct(id);
   const navItems = productNavigationItems || getCurrentFilteredItems();
-  const navPos = navItems.findIndex(x=>x.id===id);
+  const exactPos=navItems.findIndex(x=>x.id===id);
+  const navPos = exactPos>=0?exactPos:navItems.findIndex(x=>productFormatKey(x.it)===productFormatKey(item));
   const posEl=document.getElementById('productPosition'); if(posEl) posEl.textContent=navPos>=0?`${navPos+1} de ${navItems.length}`:'';
   const goToPrevProduct=()=>{if(navItems.length<=1)return;const x=navItems[(navPos-1+navItems.length)%navItems.length];currentProductId=x.id;renderProductDetail(x.id);};
   const goToNextProduct=()=>{if(navItems.length<=1)return;const x=navItems[(navPos+1)%navItems.length];currentProductId=x.id;renderProductDetail(x.id);};

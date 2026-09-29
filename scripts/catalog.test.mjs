@@ -19,7 +19,7 @@ async function app(page='index.html',width=1366,height=900){
     const src=m[1].match(/src="([^"?]+)/)?.[1];
     scripts.push(src?fs.readFileSync(src,'utf8'):m[2]);
   }
-  window.eval(scripts.join('\n;\n')+'\nwindow.testStorage=GMAStorage;window.testLoadScript=loadExternalScript;window.testGeneratePdf=generatePdf;');
+  window.eval(scripts.join('\n;\n')+'\nwindow.testStorage=GMAStorage;window.testLoadScript=loadExternalScript;window.testGeneratePdf=generatePdf;window.testFilter=(q,sel=false)=>{searchTerm=q;selectedOnly=sel;currentVisibleGroups().forEach(g=>{openDepts.add(g.dept);openGroups.add(g.title);});render();};window.testData=DATA;window.testVisible=()=>getVisibleItemsForGroup(DATA[5],5).items;');
   await new Promise(resolve=>setTimeout(resolve,50));
   return window;
 }
@@ -29,16 +29,16 @@ for(const page of ['index.html','nuevo/index.html']){
     const d=w.document;
     assert.equal(d.querySelectorAll('#newDiscovery .discovery-card').length,6);
     assert.equal(d.querySelectorAll('#bestDiscovery .discovery-card').length,8);
-    assert.match(d.querySelector('#desktopResultMeta').textContent,/1001/);
+    assert.match(d.querySelector('#desktopResultMeta').textContent,/994/);
     assert.equal(d.querySelectorAll('.desktop-product-card').length,72);
     const button=d.querySelector('.desktop-dept-button');const name=button.dataset.desktopDept;
     button.click();assert.equal(d.querySelector(`[data-desktop-dept="${name}"]`).getAttribute('aria-expanded'),'false');
     d.querySelector(`[data-desktop-dept="${name}"]`).click();assert.equal(d.querySelector(`[data-desktop-dept="${name}"]`).getAttribute('aria-expanded'),'true');
-    d.querySelector('#desktopExpandAll').click();assert.match(d.querySelector('#desktopResultMeta').textContent,/1001/);
+    d.querySelector('#desktopExpandAll').click();assert.match(d.querySelector('#desktopResultMeta').textContent,/994/);
     d.querySelector('.desktop-more-button').click();assert.equal(d.querySelectorAll('.desktop-product-card').length,144);
     while(d.querySelector('.desktop-more-button'))d.querySelector('.desktop-more-button').click();
-    assert.equal(d.querySelectorAll('.desktop-product-card').length,1001);
-    assert.equal(new Set([...d.querySelectorAll('.desktop-product-card')].map(e=>e.dataset.id)).size,1001);
+    assert.equal(d.querySelectorAll('.desktop-product-card').length,994);
+    assert.equal(new Set([...d.querySelectorAll('.desktop-product-card')].map(e=>e.dataset.id)).size,994);
     d.querySelector('#desktopExpandAll').click();assert.equal(d.querySelector('#desktopExpandAll').getAttribute('aria-expanded'),'false');
     d.querySelector('#desktopExpandAll').click();assert.equal(d.querySelector('#desktopExpandAll').getAttribute('aria-expanded'),'true');
     d.querySelector('.desktop-group-button').click();const size=d.querySelectorAll('.desktop-product-card').length;
@@ -129,6 +129,56 @@ for(const page of ['index.html','nuevo/index.html']){
    assert.equal(d.querySelector('.desktop-product-card'),cards[0]);
    offset=0;w.dispatchEvent(new w.Event('scroll'));await new Promise(r=>setTimeout(r,40));
    assert.equal(d.querySelector('[aria-current="location"]').dataset.desktopGroup,cards[0].dataset.id.split('-')[0]);
+  }finally{await w.happyDOM.close();}
+ });
+}
+
+for(const page of ['index.html','nuevo/index.html']){
+ test(`${page}: tomates Marzo agrupados, formatos y selección independiente`,async()=>{
+  const w=await app(page);try{
+   const d=w.document;
+   w.testFilter('tomate marzo');
+   const cards=[...d.querySelectorAll('.desktop-product-card')];
+   assert.equal(cards.length,4,'Tres grupos de tomate y una mermelada');
+   const frito=cards.find(c=>c.textContent.includes('Tomate frito · Marzo'));
+   assert.ok(frito);frito.querySelector('.desktop-add').click();
+   assert.equal(w.eval('favIds().length'),0,'El + pide formato, no elige una referencia silenciosamente');
+   const select=d.querySelector('#productFormatSelect');assert.equal(select.options.length,3);
+   const ids=[...select.options].map(o=>o.value);
+   for(const id of ids.slice(0,2)){
+    const picker=d.querySelector('#productFormatSelect');picker.value=id;picker.dispatchEvent(new w.Event('change'));
+    const ref=w.eval(`findItem('${id}').ref`);
+    assert.match(d.querySelector('.product-detail-ref').textContent,new RegExp(ref));
+    d.querySelector('#productSelectBtn').click();
+    await new Promise(r=>setTimeout(r,20));
+   }
+   assert.equal(w.eval('favIds().length'),2);
+   assert.ok([...d.querySelectorAll('.desktop-selection-name')].every(e=>/250 GR|580 GR/i.test(e.textContent)));
+   assert.match(d.querySelector('#productPosition').textContent,/de 4$/);
+   // A reference search must select the matching format, even if it is not the first card.
+   d.querySelector('#productClose').click();
+   w.testFilter('1988');
+   assert.equal(d.querySelectorAll('.desktop-product-card').length,1);
+   d.querySelector('.desktop-product-open').click();
+   assert.match(d.querySelector('.product-detail-ref').textContent,/1988/);
+   assert.equal(d.querySelector('#productFormatSelect').selectedOptions[0].textContent.includes('580 g'),true);
+   d.querySelector('#productClose').click();
+   w.testFilter('',true);
+   assert.equal(d.querySelectorAll('.desktop-product-card').length,2,'La revisión muestra ambos formatos seleccionados');
+   assert.equal(w.testData.reduce((n,g)=>n+g.items.length,0),1001,'No se elimina ninguna referencia');
+   const mobileRefs=w.testVisible().map(x=>x.it.ref);
+   assert.equal(mobileRefs.length,2);
+   const saved=JSON.parse(w.localStorage.getItem('gma-catalog-state'));
+   assert.equal(Object.keys(saved.favRefs).length,2);
+   w.eval(fs.readFileSync('assets/vendor/jspdf.umd.min.js','utf8'));
+   w.eval(fs.readFileSync('assets/vendor/jspdf.plugin.autotable.min.js','utf8'));
+   const Real=w.jspdf.jsPDF;let pdfBytes;
+   function Capture(...args){const doc=new Real(...args);doc.save=()=>{pdfBytes=doc.output('arraybuffer');};return doc;}
+   Capture.API=Real.API;w.jspdf.jsPDF=Capture;
+   await w.testGeneratePdf();
+   const pdf=Buffer.from(pdfBytes).toString('latin1');
+   assert.match(pdf,/1988/);assert.match(pdf,/1989/);assert.doesNotMatch(pdf,/1900/);
+
   }finally{await w.happyDOM.close();}
  });
 }
