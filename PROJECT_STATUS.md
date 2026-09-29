@@ -94,3 +94,7 @@ La ficha tiene aspa SVG de 44 px y el visor de fotos una nueva aspa superior que
 ## Navegación estable y controles fijos
 
 En horizontal/escritorio, la cabecera del catálogo con las vistas y Desplegar/Recoger queda fija bajo la cabecera superior; franja de familia debajo. Cambios de vista, desplegado y giro conservan el producto/familia leído, incluyendo referencias posteriores al primer bloque. Recoger mantiene familia actual en horizontal y departamento en vertical. Nuevo assets/navigation-position.js, cargado antes de views.js. 21 pruebas y revisión Chromium en ambas rutas; sin prueba física en iPhone. Ver docs/audits/2026-09-29/NAVEGACION-ESTABLE.md.
+
+## Dimardis ½ KG y textos señalados
+
+4830 usa ahora images/products/4830-500g.jpg: adaptación visual solicitada, con peso 500 g, fondo blanco y lata recta. No tratar como foto original del fabricante. 2631 mantiene su foto propia. Normalizados nombres 4830, 2631 y 6617; KG en selector Dimardis. 21 pruebas y comprobación de cambio entre formatos en ambas rutas. Registro: docs/audits/2026-09-29/DIMARDIS-MEDIO-KILO-TEXTOS.md.

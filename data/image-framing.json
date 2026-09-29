@@ -397,16 +397,16 @@
     },
     {
       "ref": "4830",
-      "source": "images/products/4830.jpg",
+      "source": "images/products/4830-500g.jpg",
       "sourceSize": [
-        600,
-        600
+        1000,
+        1000
       ],
       "contentBox": [
-        157,
-        155,
-        438,
-        477
+        214,
+        118,
+        785,
+        896
       ],
       "fit": "contain",
       "innerMargin": 0.08,
