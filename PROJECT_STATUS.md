@@ -118,3 +118,7 @@ Eliminada la entrada escalonada por petición del usuario. Al pulsar un logo se 
 ## Paleta oficial y contraste auditado
 
 Sand Dune corregido a #D2CFB6 (RGB 210,207,182). Nueva assets/palette.css común a ambas rutas: conserva geometría y datos, unifica roles de los cinco colores oficiales y mejora grises de recuentos, navegación y ayudas. Arena/burdeos en selección; oro de logos conservado como excepción. Auditoría y límites: docs/audits/2026-09-29/PALETA-Y-CONTRASTE.md.
+
+## Gran Bologna: catálogo oficial 2026
+
+Actualizadas 16 fotos originales extraídas del PDF y 16 fichas verificadas; 962 y 604 reciben foto de producto. Fuentes por página/objeto y hash en data/gran-bologna-images.json; hechos en data/gran-bologna-info.json. Sustituidas 10 entradas antiguas, total 247 fichas contrastadas. Corregidos pato/Edam/cocción y origen Italiano; Soffi identificado como pasta sin relleno, conservando organización GMA. Fotos nativas del PDF con detalle limitado, sin generación ni base64. Ver docs/audits/2026-09-29/GRAN-BOLOGNA.md.

@@ -1,0 +1,235 @@
+{
+  "supplier": "Gran Bologna",
+  "verifiedAt": "2026-09-29",
+  "catalogEdition": "2026",
+  "catalogPdf": "https://granbologna.it/wp-content/uploads/GranBologna_IT.pdf",
+  "catalogPdfEnglish": "https://granbologna.it/wp-content/uploads/GranBologna_EN.pdf",
+  "sha256": "29ef5f8fce9278f59e75a947f9546d85b5f702855686ceeca526a9a304866fa7",
+  "processing": "Extracción de imágenes originales y sus máscaras alfa del PDF, sin recreación, recorte, reescalado ni relleno generativo. Resolución nativa del catálogo; fondo blanco proporcionado por la ficha.",
+  "images": [
+    {
+      "reference": "962",
+      "file": "images/products/962-granbologna.png",
+      "source": "https://granbologna.it/wp-content/uploads/GranBologna_IT.pdf#page=40",
+      "pdfPage": 40,
+      "printedPage": 38,
+      "imageObject": 445,
+      "width": 173,
+      "height": 153,
+      "previousGallery": "images/products/962-informacion-pasta.svg",
+      "role": "primary"
+    },
+    {
+      "reference": "967",
+      "file": "images/products/967-granbologna.png",
+      "source": "https://granbologna.it/wp-content/uploads/GranBologna_IT.pdf#page=40",
+      "pdfPage": 40,
+      "printedPage": 38,
+      "imageObject": 1045,
+      "width": 171,
+      "height": 162,
+      "previousGallery": [
+        "images/products/967.jpg",
+        "images/products/967-informacion-pasta.svg"
+      ],
+      "role": "primary"
+    },
+    {
+      "reference": "1347",
+      "file": "images/products/1347-granbologna.png",
+      "source": "https://granbologna.it/wp-content/uploads/GranBologna_IT.pdf#page=20",
+      "pdfPage": 20,
+      "printedPage": 18,
+      "imageObject": 121,
+      "width": 194,
+      "height": 260,
+      "previousGallery": [
+        "images/products/1347.jpg",
+        "images/products/1347-informacion-pasta.svg"
+      ],
+      "role": "primary"
+    },
+    {
+      "reference": "25",
+      "file": "images/products/25-granbologna.png",
+      "source": "https://granbologna.it/wp-content/uploads/GranBologna_IT.pdf#page=15",
+      "pdfPage": 15,
+      "printedPage": 13,
+      "imageObject": 71,
+      "width": 239,
+      "height": 251,
+      "previousGallery": [
+        "images/products/25.jpg",
+        "images/products/25-informacion-pasta.svg"
+      ],
+      "role": "primary"
+    },
+    {
+      "reference": "986",
+      "file": "images/products/986-granbologna.png",
+      "source": "https://granbologna.it/wp-content/uploads/GranBologna_IT.pdf#page=45",
+      "pdfPage": 45,
+      "printedPage": 43,
+      "imageObject": 496,
+      "width": 253,
+      "height": 163,
+      "previousGallery": [
+        "images/products/986.jpg",
+        "images/products/986-informacion-pasta.svg"
+      ],
+      "role": "primary"
+    },
+    {
+      "reference": "995",
+      "file": "images/products/995-granbologna.png",
+      "source": "https://granbologna.it/wp-content/uploads/GranBologna_IT.pdf#page=44",
+      "pdfPage": 44,
+      "printedPage": 42,
+      "imageObject": 480,
+      "width": 217,
+      "height": 162,
+      "previousGallery": [
+        "images/products/995.jpg",
+        "images/products/995-informacion-pasta.svg"
+      ],
+      "role": "primary"
+    },
+    {
+      "reference": "2152",
+      "file": "images/products/2152-granbologna.png",
+      "source": "https://granbologna.it/wp-content/uploads/GranBologna_IT.pdf#page=44",
+      "pdfPage": 44,
+      "printedPage": 42,
+      "imageObject": 474,
+      "width": 196,
+      "height": 152,
+      "previousGallery": [
+        "images/products/2152.jpg",
+        "images/products/2152-informacion-pasta.svg"
+      ],
+      "role": "primary"
+    },
+    {
+      "reference": "610",
+      "file": "images/products/610-granbologna.png",
+      "source": "https://granbologna.it/wp-content/uploads/GranBologna_IT.pdf#page=72",
+      "pdfPage": 72,
+      "printedPage": 70,
+      "imageObject": 783,
+      "width": 182,
+      "height": 162,
+      "previousGallery": [
+        "images/products/610.jpg",
+        "images/products/610-informacion-pasta.svg"
+      ],
+      "role": "primary"
+    },
+    {
+      "reference": "199",
+      "file": "images/products/199-granbologna.png",
+      "source": "https://granbologna.it/wp-content/uploads/GranBologna_IT.pdf#page=59",
+      "pdfPage": 59,
+      "printedPage": 57,
+      "imageObject": 657,
+      "width": 239,
+      "height": 138,
+      "previousGallery": [
+        "images/products/199.jpg",
+        "images/products/199-informacion-pasta.svg"
+      ],
+      "role": "primary"
+    },
+    {
+      "reference": "604",
+      "file": "images/products/604-granbologna.png",
+      "source": "https://granbologna.it/wp-content/uploads/GranBologna_IT.pdf#page=23",
+      "pdfPage": 23,
+      "printedPage": 21,
+      "imageObject": 160,
+      "width": 292,
+      "height": 241,
+      "previousGallery": "images/products/604-informacion-pasta.svg",
+      "role": "primary"
+    },
+    {
+      "reference": "957",
+      "file": "images/products/957-granbologna.png",
+      "source": "https://granbologna.it/wp-content/uploads/GranBologna_IT.pdf#page=59",
+      "pdfPage": 59,
+      "printedPage": 57,
+      "imageObject": 661,
+      "width": 210,
+      "height": 219,
+      "previousGallery": [
+        "images/products/957.jpg",
+        "images/products/957-2.webp"
+      ],
+      "role": "primary"
+    },
+    {
+      "reference": "2204",
+      "file": "images/products/2204-granbologna.png",
+      "source": "https://granbologna.it/wp-content/uploads/GranBologna_IT.pdf#page=55",
+      "pdfPage": 55,
+      "printedPage": 53,
+      "imageObject": 609,
+      "width": 204,
+      "height": 205,
+      "previousGallery": "images/products/2204.jpg",
+      "role": "primary"
+    },
+    {
+      "reference": "2205",
+      "file": "images/products/2205-granbologna.png",
+      "source": "https://granbologna.it/wp-content/uploads/GranBologna_IT.pdf#page=55",
+      "pdfPage": 55,
+      "printedPage": 53,
+      "imageObject": 607,
+      "width": 186,
+      "height": 165,
+      "previousGallery": "images/products/2205.jpg",
+      "role": "primary"
+    },
+    {
+      "reference": "959",
+      "file": "images/products/959-granbologna.png",
+      "source": "https://granbologna.it/wp-content/uploads/GranBologna_IT.pdf#page=50",
+      "pdfPage": 50,
+      "printedPage": 48,
+      "imageObject": 531,
+      "width": 221,
+      "height": 177,
+      "previousGallery": "images/products/959.jpg",
+      "role": "primary"
+    },
+    {
+      "reference": "2203",
+      "file": "images/products/2203-granbologna.png",
+      "source": "https://granbologna.it/wp-content/uploads/GranBologna_IT.pdf#page=53",
+      "pdfPage": 53,
+      "printedPage": 51,
+      "imageObject": 581,
+      "width": 204,
+      "height": 182,
+      "previousGallery": "images/products/2203.jpg",
+      "role": "primary"
+    },
+    {
+      "reference": "2218",
+      "file": "images/products/2218-granbologna.png",
+      "source": "https://granbologna.it/wp-content/uploads/GranBologna_IT.pdf#page=52",
+      "pdfPage": 52,
+      "printedPage": 50,
+      "imageObject": 573,
+      "width": 216,
+      "height": 173,
+      "previousGallery": "images/products/2218.jpg",
+      "role": "primary"
+    }
+  ],
+  "pending": [],
+  "notes": [
+    "Las galerías antiguas con información de otra edición se sustituyen para evitar contradicciones.",
+    "995: fotografía verde completa; no se usa el fragmento de otra pieza parcialmente oculto en la composición del PDF."
+  ]
+}
