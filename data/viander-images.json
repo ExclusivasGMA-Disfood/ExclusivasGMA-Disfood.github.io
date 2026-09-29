@@ -1,0 +1,43 @@
+{
+  "supplier": "Viander",
+  "verifiedAt": "2026-09-29",
+  "catalogPdf": "https://viander.vianderapp.it/wp-content/uploads/vnd/2026/05/Viander_CatalogoGenerale_Web_2026-1.pdf",
+  "pdfPagesReviewed": [
+    20,
+    42,
+    50
+  ],
+  "processing": "Fotografías oficiales completas, convertidas a WebP sin recortes ni modificaciones del producto.",
+  "images": [
+    {
+      "reference": "1617",
+      "file": "images/products/1617-viander.webp",
+      "source": "https://www.viander.it/prodotti-viander/olive-nere-gourmet-al-forno/",
+      "sourceImage": "https://www.viander.it/wp-content/uploads/2025/01/08020.png",
+      "role": "primary"
+    },
+    {
+      "reference": "5677",
+      "file": "images/products/5677-viander.webp",
+      "source": "https://www.viander.it/prodotti-viander/crema-ai-formaggi/",
+      "sourceImage": "https://www.viander.it/wp-content/uploads/2025/01/15019.png",
+      "role": "primary"
+    },
+    {
+      "reference": "5669",
+      "file": "images/products/5669-viander.webp",
+      "source": "https://www.viander.it/prodotti-viander/pomodorini-rossi-semisecchi/",
+      "sourceImage": "https://www.viander.it/wp-content/uploads/2025/01/18453.png",
+      "role": "primary"
+    },
+    {
+      "reference": "5670",
+      "file": "images/products/5670-viander.webp",
+      "source": "https://www.viander.it/prodotti-viander/pomodorini-gialli-semisecchi/",
+      "sourceImage": "https://www.viander.it/wp-content/uploads/2025/01/18452.png",
+      "role": "primary"
+    }
+  ],
+  "pending": [],
+  "logo": "Se conserva el logotipo oficial existente."
+}

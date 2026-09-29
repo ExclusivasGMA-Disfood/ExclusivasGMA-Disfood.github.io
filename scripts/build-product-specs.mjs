@@ -19,6 +19,7 @@ const sources = [
   'data/pagani-info.json',
   'data/le-5-stagioni-info.json',
   'data/selec-mardis-info.json',
+  'data/viander-info.json',
 ];
 const outputPath = join(root, 'data/product-specs.js');
 const specs = {};
