@@ -110,3 +110,7 @@ La petición posterior elimina los seis bloques/títulos: una cuadrícula contin
 ## Entrada de logos reforzada
 
 El usuario no apreciaba el efecto: pasa a 750 ms, 18 px y escalonado de 110 ms por columna. Espera imagen decodificada y activa por encima de la navegación inferior. Sin cambios de tamaños ni orden; respeta movimiento reducido. Ver docs/audits/2026-09-29/LOGOS-EFECTO-VISIBLE.md.
+
+## Criterio vigente: logos estáticos y oro al seleccionar
+
+Eliminada la entrada escalonada por petición del usuario. Al pulsar un logo se vuelve dorado con un brillo breve; solo uno activo y segunda pulsación lo desactiva. Botones accesibles por teclado, sin cambios de orden/tamaño ni selección de productos. Movimiento reducido sin brillo animado. Sustituye los efectos de entrada anteriores. Ver docs/audits/2026-09-29/LOGOS-ORO-SELECCION.md.
