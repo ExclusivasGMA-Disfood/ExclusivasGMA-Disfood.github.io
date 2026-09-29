@@ -837,9 +837,9 @@
       "source": "https://astorgourmet.es/es/cecina/media-pieza-de-cecina-de-wagyu-251",
       "sourceImage": "https://astorgourmet.es/img/m/3-small_default.jpg",
       "original": "images/brands/originals/cecinas-pablo.jpg",
-      "image": "images/brands/cecinas-pablo.jpg",
-      "width": 98,
-      "height": 127,
+      "image": "images/brands/cecinas-pablo-transparent.png",
+      "width": 348,
+      "height": 172,
       "references": [
         "6790",
         "1966",
@@ -854,7 +854,8 @@
         "4964",
         "1976",
         "1977"
-      ]
+      ],
+      "processing": "Derivado monocromo con blanco convertido en transparencia, conservando los trazos del original. Márgenes vacíos ajustados al contenido."
     },
     {
       "id": "bg",
@@ -946,12 +947,13 @@
       "source": "https://shop.toso.it/it/morra/193-grappa-di-nebbiolo.html",
       "sourceImage": "https://shop.toso.it/img/m/12.jpg",
       "original": "images/brands/originals/morra.jpg",
-      "image": "images/brands/morra.png",
+      "image": "images/brands/morra-transparent.png",
       "width": 314,
       "height": 200,
       "references": [
         "5799"
-      ]
+      ],
+      "processing": "Derivado monocromo con blanco convertido en transparencia, conservando los trazos del original. Márgenes vacíos ajustados al contenido."
     },
     {
       "id": "moselland",
