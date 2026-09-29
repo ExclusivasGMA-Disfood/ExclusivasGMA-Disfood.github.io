@@ -896,6 +896,143 @@
         "1976",
         "1977"
       ]
+    },
+    {
+      "id": "bg",
+      "name": "Barton & Guestier",
+      "source": "https://www.barton-guestier.com/our-wines/varietal-wines-b-g-bistro/bistro-pinot-noir-48/",
+      "sourceImage": "https://www.barton-guestier.com/pics/communs/BG_logo.png",
+      "original": "images/brands/originals/bg.png",
+      "image": "images/brands/bg.png",
+      "width": 211,
+      "height": 90,
+      "references": [
+        "4511",
+        "4495",
+        "4512",
+        "4496",
+        "6128",
+        "6591",
+        "6161"
+      ]
+    },
+    {
+      "id": "ramon-bilbao",
+      "name": "Ramón Bilbao",
+      "source": "https://bodegasramonbilbao.com/carta-vinos/ramon-bilbao-crianza/",
+      "sourceImage": "https://bodegasramonbilbao.com/wp-content/uploads/2026/03/ramon-bilbao-logo-horizontal-sin-new.svg",
+      "original": "images/brands/originals/ramon-bilbao.svg",
+      "image": "images/brands/ramon-bilbao.png",
+      "width": 306,
+      "height": 34,
+      "references": [
+        "5926"
+      ]
+    },
+    {
+      "id": "mar-de-frades",
+      "name": "Mar de Frades",
+      "source": "https://mardefrades.es/vinos/mar-de-frades/",
+      "sourceImage": "https://mardefrades.es/wp-content/uploads/2024/07/mar-de-frades-logo-vinedos-atlanticos.webp",
+      "original": "images/brands/originals/mar-de-frades.webp",
+      "image": "images/brands/mar-de-frades.png",
+      "width": 400,
+      "height": 87,
+      "references": [
+        "5927"
+      ]
+    },
+    {
+      "id": "emile-paris",
+      "name": "Emile Paris",
+      "source": "https://champagne-emile-paris.com/lescuveesemileparis/brut/",
+      "sourceImage": "https://champagne-emile-paris.com/wp-content/uploads/2019/05/emile-paris.png",
+      "original": "images/brands/originals/emile-paris.png",
+      "image": "images/brands/emile-paris.png",
+      "width": 400,
+      "height": 122,
+      "references": [
+        "5443"
+      ]
+    },
+    {
+      "id": "moonlight-roses",
+      "name": "Moonlight & Roses",
+      "source": "https://www.moonlightandroses.fr/",
+      "sourceImage": "https://moonlightandroses.fr/wp-content/uploads/2022/01/logo-moon.svg",
+      "original": "images/brands/originals/moonlight-roses.svg",
+      "image": "images/brands/moonlight-roses.png",
+      "width": 231,
+      "height": 200,
+      "references": [
+        "5851"
+      ]
+    },
+    {
+      "id": "three-finger-jack",
+      "name": "Three Finger Jack",
+      "source": "https://3fingerjack.com/",
+      "sourceImage": "https://3fingerjack.com/wp-content/uploads/sites/2/2022/06/logo-1.png",
+      "original": "images/brands/originals/three-finger-jack.png",
+      "image": "images/brands/three-finger-jack.png",
+      "width": 400,
+      "height": 135,
+      "references": [
+        "6072"
+      ]
+    },
+    {
+      "id": "morra",
+      "name": "Morra",
+      "source": "https://shop.toso.it/it/morra/193-grappa-di-nebbiolo.html",
+      "sourceImage": "https://shop.toso.it/img/m/12.jpg",
+      "original": "images/brands/originals/morra.jpg",
+      "image": "images/brands/morra.png",
+      "width": 314,
+      "height": 200,
+      "references": [
+        "5799"
+      ]
+    },
+    {
+      "id": "moselland",
+      "name": "Moselland",
+      "source": "https://en.moselland.de/",
+      "sourceImage": "https://en.moselland.de/wp-content/uploads/Moselland_Logo_Pos.svg",
+      "original": "images/brands/originals/moselland.svg",
+      "image": "images/brands/moselland.png",
+      "width": 230,
+      "height": 137,
+      "references": [
+        "3187"
+      ]
+    },
+    {
+      "id": "enology",
+      "name": "Vi Enology",
+      "source": "https://vienology.com/es/sobre-nosotros",
+      "sourceImage": "https://vienology.com/es/sobre-nosotros#logo",
+      "original": "images/brands/originals/enology.svg",
+      "image": "images/brands/enology.png",
+      "width": 174,
+      "height": 89,
+      "references": [
+        "6297"
+      ]
+    },
+    {
+      "id": "decordi",
+      "name": "Decordi",
+      "source": "https://www.decordi.it/prodotti/",
+      "sourceImage": "https://www.decordi.it/prodotti/#logo_decordi",
+      "original": "images/brands/originals/decordi.svg",
+      "image": "images/brands/decordi.png",
+      "width": 400,
+      "height": 129,
+      "references": [
+        "2798",
+        "2799"
+      ]
     }
   ]
 }
