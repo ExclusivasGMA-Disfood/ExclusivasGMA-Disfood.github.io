@@ -1,0 +1,21 @@
+{
+  "00048": {
+    "brand": "CARNE DE LA FINCA",
+    "facts": [
+      [
+        "Producto",
+        "Cecina de vacuno selección"
+      ],
+      [
+        "Presentación",
+        "Sobre de 90 g, envasado al vacío"
+      ],
+      [
+        "Servicio",
+        "Lista para consumir. Abrir el envase 30 minutos antes y dejar atemperar."
+      ]
+    ],
+    "ingredients": "Carne de vacuno, sal y humo natural.",
+    "source": "https://carnedelafinca.com/producto/cecina-de-vaca-seleccion/"
+  }
+}

@@ -727,6 +727,49 @@
         "3263",
         "5915"
       ]
+    },
+    {
+      "id": "la-finca",
+      "name": "Carne de La Finca",
+      "source": "https://carnedelafinca.com/",
+      "sourceImage": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2560,h_462/https://carnedelafinca.com/wp-content/uploads/2024/07/logo-la-finca-negro-1.png",
+      "original": "images/brands/originals/la-finca.png",
+      "image": "images/brands/la-finca.png",
+      "references": [
+        "6162",
+        "04000",
+        "00048",
+        "02259",
+        "02342",
+        "00191",
+        "00258",
+        "02442",
+        "04139",
+        "02709",
+        "02711",
+        "00072",
+        "03946",
+        "01274",
+        "02496",
+        "01164",
+        "01154",
+        "01719",
+        "01163",
+        "03089",
+        "03329",
+        "02910",
+        "01755",
+        "00568",
+        "03330",
+        "02535",
+        "01382",
+        "01266",
+        "04033",
+        "00353",
+        "00355"
+      ],
+      "width": 400,
+      "height": 69
     }
   ]
 }

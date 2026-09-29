@@ -9,6 +9,7 @@ const sources = [
   'data/montesano-info.json',
   'data/crego-info.json',
   'data/diaz-info.json',
+  'data/la-finca-info.json',
 ];
 const outputPath = join(root, 'data/product-specs.js');
 const specs = {};
