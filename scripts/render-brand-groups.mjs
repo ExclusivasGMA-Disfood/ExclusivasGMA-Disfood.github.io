@@ -11,16 +11,13 @@ const logo=id=>{
 };
 const html=`<section class="gma-brands" aria-labelledby="gmaBrandsTitle">
     <h2 class="gma-brands__heading" id="gmaBrandsTitle">Marcas de nuestro catálogo</h2>
-${groups.map(g=>`    <div class="gma-brands__family" role="group" aria-labelledby="brand-family-${g.id}">
-      <h3 class="gma-brands__family-title" id="brand-family-${g.id}">${escape(g.title)}</h3>
-      <ul class="gma-brands__grid">
-${g.brands.map(logo).join('\n')}
-      </ul>
-    </div>`).join('\n')}
+    <ul class="gma-brands__grid">
+${ids.map(logo).join('\n')}
+    </ul>
   </section>`;
 for(const page of ['index.html','nuevo/index.html']){
  const original=fs.readFileSync(page,'utf8');
  if(!original.includes('<section class="gma-brands"'))throw Error('Falta panel de marcas');
  fs.writeFileSync(page,original.replace(/<section class="gma-brands"[\s\S]*?<\/section>/,html));
 }
-console.log(`${brands.length} marcas organizadas en ${groups.length} familias en ambas páginas`);
+console.log(`${brands.length} marcas ordenadas en una cuadrícula continua en ambas páginas`);

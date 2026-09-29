@@ -102,3 +102,7 @@ En horizontal/escritorio, la cabecera del catálogo con las vistas y Desplegar/R
 ## Panel de marcas por familias
 
 39 logos en seis bloques editoriales por especialidad, definidos en data/brand-groups.json. Regenerar el HTML con node scripts/render-brand-groups.mjs al cambiar ese orden. Filas incompletas centradas, títulos discretos, monocromo y fondo blanco; B&G oscuro mediante CSS para hacer visible su fuente blanca. Sin cambios de producto ni animaciones. Entrada suave por bloques solo propuesta, no autorizada/aplicada. Ver docs/audits/2026-09-29/LOGOS-POR-FAMILIAS.md.
+
+## Criterio vigente de logos: juntos, sin familias visibles
+
+La petición posterior elimina los seis bloques/títulos: una cuadrícula continua con el mismo orden editorial. data/brand-groups.json sirve solo para ordenar; render-brand-groups.mjs aplana la lista. assets/brands.js activa entrada suave de 380 ms y 6 px una vez por logo, respetando movimiento reducido y sin ocultarlos si no hay JS. Sustituye la presentación descrita en el apartado anterior. Ver docs/audits/2026-09-29/LOGOS-CONTINUOS-Y-EFECTO.md.
