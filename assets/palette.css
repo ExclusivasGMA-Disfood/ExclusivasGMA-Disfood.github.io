@@ -64,3 +64,6 @@ html body :is(.desktop-dept-button,.desktop-group-button) :is(span:last-child,sm
 html body .dept-header.open,html body .dept-header:active{background:var(--night-bordeaux)!important;color:var(--soft-linen)!important}
 html body .dept-header .dept-header-label,html body .dept-header.open .dept-header-label,
 html body .dept-header.open .chev,html body .dept-header::before{color:var(--soft-linen)!important}
+
+/* Fondo general blanco, solicitado por el usuario; paleta de componentes intacta. */
+html,html body{background:#FFFFFF!important}

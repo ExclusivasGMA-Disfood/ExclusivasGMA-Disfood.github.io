@@ -134,3 +134,7 @@ Cinco fichas y fotos oficiales (3165, 2785, 2753, 2752, 3400). Antique mantiene 
 ## Patés Polca y Qez: cinco ajustes fotográficos
 
 77029 y 12029 con encuadre individual para suprimir el exceso de blanco. Qez 6723, 6724 y 6726 con presentación frontal sobre blanco, imágenes WebP locales y manifiesto actualizado. Sin cambios de tarjetas ni estética general. Registro: docs/audits/2026-09-29/PATES-QEZ-FOTOS.md.
+
+## Fondo general blanco
+
+Por petición del usuario, html/body usan blanco puro #FFFFFF en ambas rutas. Paleta corporativa y componentes conservados. Registro: docs/audits/2026-09-29/FONDO-BLANCO.md.
