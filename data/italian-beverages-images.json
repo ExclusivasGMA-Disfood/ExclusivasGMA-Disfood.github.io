@@ -1,0 +1,75 @@
+{
+  "verifiedAt": "2026-09-29",
+  "scope": "Borgofulvia, Poggio del Sasso, La Piuma, Montalto y Toso",
+  "processing": "Imágenes completas descargadas de fuentes identificadas. Conversión WebP y reducción proporcional, sin recortes, retoques ni imágenes incrustadas.",
+  "images": [
+    {
+      "reference": "6718",
+      "file": "images/products/6718.webp",
+      "role": "primary",
+      "sourcePage": "https://borgofulvia.it/prodotto/rosso/",
+      "sourceImage": "https://borgofulvia.it/wp-content/uploads/2022/09/ROSSO-BORGOFULVIA-FRONTE.png"
+    },
+    {
+      "reference": "6782",
+      "file": "images/products/6782.webp",
+      "role": "primary",
+      "sourcePage": "https://borgofulvia.it/prodotto/bianco/",
+      "sourceImage": "https://borgofulvia.it/wp-content/uploads/2022/09/BIANCO-BORGOFULVIA-FRONTE.png"
+    },
+    {
+      "reference": "5849",
+      "file": "images/products/5849.webp",
+      "role": "primary",
+      "sourcePage": "https://www.ges-sorrentino.de/produkte/cantina-di-montalcino-poggio-del-sasso-chianti-750-ml-4/",
+      "sourceImage": "https://www.ges-sorrentino.de/wp-content/uploads/2021/02/poggio-del-sasso-chianti.png"
+    },
+    {
+      "reference": "5850",
+      "file": "images/products/5850.webp",
+      "role": "primary",
+      "sourcePage": "https://www.ges-sorrentino.de/produkte/cantina-di-montalcino-poggio-del-sasso-chianti-riserva-750-ml-3/",
+      "sourceImage": "https://www.ges-sorrentino.de/wp-content/uploads/2021/02/poggio-del-sasso-chianti-riserva.png"
+    },
+    {
+      "reference": "6608",
+      "file": "images/products/6608.webp",
+      "role": "primary",
+      "sourcePage": "https://shop.toso.it/it/pietro-toso/96-prosecco-millesimato-doc-extra-dry.html",
+      "sourceImage": "https://shop.toso.it/165-large_default/prosecco-millesimato-doc-extra-dry.jpg"
+    },
+    {
+      "reference": "54",
+      "file": "images/products/54.webp",
+      "role": "primary",
+      "sourcePage": "https://shop.toso.it/it/toso/92-moscato-spumante-vino-spumante-di-qualita-del-tipo-aromatico-dolce.html",
+      "sourceImage": "https://shop.toso.it/196-large_default/moscato-spumante-vino-spumante-di-qualita-del-tipo-aromatico-dolce.jpg"
+    },
+    {
+      "reference": "6748",
+      "file": "images/products/6748.webp",
+      "role": "primary",
+      "sourcePage": "https://vinotecacollado.com/vinos/11677-la-piuma-pinot-grigio-blush-terre-siciliane-2025.html",
+      "sourceImage": "https://vinotecacollado.com/23780-large_default/la-piuma-pinot-grigio-blush-terre-siciliane-2025.jpg"
+    },
+    {
+      "reference": "6781",
+      "file": "images/products/6781.webp",
+      "role": "primary",
+      "sourcePage": "https://vinotecacollado.com/vinos/11775-la-piuma-pinot-grigio-delle-venezie-doc-2025.html",
+      "sourceImage": "https://vinotecacollado.com/23992-large_default/la-piuma-pinot-grigio-delle-venezie-doc-2025.jpg"
+    }
+  ],
+  "pending": {
+    "5929": "La página de Chardonnay utiliza la misma foto genérica que Vermentino; no identifica la variedad. No asignada.",
+    "6093": "Foto de etiqueta genérica compartida con Chardonnay: pendiente imagen inequívoca de Acquerello Vermentino.",
+    "6682": "Lamuria: sin identificación inequívoca.",
+    "2410": "Mecenas Rioja: resultados de variedades y orígenes distintos; no asignar sin identificar botella.",
+    "6297": "V-Enology Vinero Primitivo: no localizada botella completa confirmada.",
+    "6219": "Louis Perdrier Rosé estuchado: falta fotografía del estuche exacto."
+  },
+  "informationNotes": [
+    "No se trasladan añadas, graduaciones variables ni listas de ingredientes incompletas.",
+    "6781: excluidos el texto de Echo Falls y la clasificación IGT contradictoria de la ficha comercial; denominación comprobada en etiqueta."
+  ]
+}
