@@ -82,3 +82,7 @@ Novedades y Selección GMA reciben un ajuste discreto de proporciones y espacios
 ## Fotos pequeñas en destacados móviles
 
 La captura posterior pide fotos como al reducir la página, manteniendo el resto al tamaño normal. Solo hasta 639 px: tarjetas destacadas de 100 px, foto completa con proporción 1,16, títulos de 12 px y hasta tres líneas, referencia de 11 px. Escritorio, horizontal, cabecera y catálogo general intactos. El porcentaje exacto del zoom de la captura no es verificable; proporciones compatibles aproximadamente con 75 %. Registro: docs/audits/2026-09-29/FOTOS-DESTACADOS-MOVIL.md.
+
+## Títulos de destacados en dos líneas
+
+Ajuste posterior solicitado: en móvil los nombres pasan de 12 a 11 px y de tres a dos líneas, con puntos suspensivos. Fotos de 100 px y resto de interfaz intactos. Registro: docs/audits/2026-09-29/DESTACADOS-DOS-LINEAS.md.
