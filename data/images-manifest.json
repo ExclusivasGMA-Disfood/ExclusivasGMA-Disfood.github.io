@@ -7,6 +7,7 @@
     "images/products/25-informacion-pasta.svg"
   ],
   "45": "images/products/45.png",
+  "54": "images/products/54.webp",
   "62": [
     "images/products/62.jpg",
     "images/products/62-2.webp"
@@ -770,6 +771,8 @@
   "5823": "images/products/5823.jpg",
   "5847": "images/products/5847.jpg",
   "5848": "images/products/5848.jpg",
+  "5849": "images/products/5849.webp",
+  "5850": "images/products/5850.webp",
   "5851": "images/products/5851.webp",
   "5858": "images/products/5858.jpg",
   "5859": [
@@ -902,6 +905,7 @@
   "6591": "images/products/6591.webp",
   "6601": "images/products/6601.jpg",
   "6607": "images/products/6607-oficial-divella.jpg",
+  "6608": "images/products/6608.webp",
   "6610": "images/products/6610.jpg",
   "6611": "images/products/6611.jpg",
   "6612": "images/products/6612.jpg",
@@ -942,6 +946,7 @@
   ],
   "6716": "images/products/6716.jpg",
   "6717": "images/products/6717.jpg",
+  "6718": "images/products/6718.webp",
   "6720": [
     "images/products/6720-producto-tre-archi.jpg",
     "images/products/6720-informacion-pasta.svg"
@@ -965,6 +970,7 @@
   "6744": "images/products/6744.jpg",
   "6745": "images/products/6745.jpg",
   "6747": "images/products/6747.jpg",
+  "6748": "images/products/6748.webp",
   "6750": "images/products/6750.jpg",
   "6755": [
     "images/products/6755.png",
@@ -1010,6 +1016,8 @@
     "images/products/6777.webp",
     "images/products/6777-2.webp"
   ],
+  "6781": "images/products/6781.webp",
+  "6782": "images/products/6782.webp",
   "6786": "images/products/6786.jpg",
   "10041": "images/products/10041.jpg",
   "12029": "images/products/12029.jpg",
@@ -1079,13 +1087,5 @@
   "059": "images/products/059.jpg",
   "062": "images/products/062.jpg",
   "064": "images/products/064.jpg",
-  "065": "images/products/065.jpg",
-  "6718": "images/products/6718.webp",
-  "6782": "images/products/6782.webp",
-  "5849": "images/products/5849.webp",
-  "5850": "images/products/5850.webp",
-  "6608": "images/products/6608.webp",
-  "54": "images/products/54.webp",
-  "6748": "images/products/6748.webp",
-  "6781": "images/products/6781.webp"
+  "065": "images/products/065.jpg"
 }
