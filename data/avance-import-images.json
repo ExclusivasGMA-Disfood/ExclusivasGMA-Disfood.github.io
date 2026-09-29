@@ -1,0 +1,351 @@
+{
+  "supplier": "Avance Import / Burbujas y Vinos",
+  "verifiedAt": "2026-09-29T04:17:25.497Z",
+  "processing": "Conversión a WebP, sin recortes ni retoques. Se conservan las fotografías principales existentes.",
+  "images": [
+    {
+      "reference": "5298",
+      "file": "images/products/5298.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/camino-a-pardos-80/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2026/04/CaminoPardos80_Garnacha_075_VD_ByV.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "5298",
+      "file": "images/products/5298-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/camino-a-pardos-80/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2026/04/camino-a-pardos-80-vino-tinto-copa.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "4908",
+      "file": "images/products/4908-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/ricossa-barolo-docg/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2026/06/Ricossa_Barolo_075_Lifestyle_01_ByV-1.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "4677",
+      "file": "images/products/4677-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/la-chelo-vermu-rojo-artesanal/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2026/01/LaChelo_Vermut_075_Lifestyle_01_ByV.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "5871",
+      "file": "images/products/5871.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/ricossa-barbera-asti-docg/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2026/07/Ricossa_Barbera_Asti_075_ByV.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "5871",
+      "file": "images/products/5871-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/ricossa-barbera-asti-docg/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2026/07/Ricossa_Barbera_Asti_075_Lifestyle_01_ByV.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "4846",
+      "file": "images/products/4846.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/la-chelo-sweet-malvar-madrid/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2026/01/La_Chelo_Sweet_botella_75cl.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "4846",
+      "file": "images/products/4846-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/la-chelo-sweet-malvar-madrid/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2026/01/La_Chelo_Sweet_botella_75cl_Lifestyle.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "6128",
+      "file": "images/products/6128.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/barton-guestier-heritage-duche-duzes/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/12/Heritage_BartonGuestier_Duche_DUZES_botella075.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "6128",
+      "file": "images/products/6128-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/barton-guestier-heritage-duche-duzes/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/12/Heritage_BartonGuestier_Duche_DUZES_botella075_Lifestyle.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "4993",
+      "file": "images/products/4993.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/ricossa-sei-anime-acqui-docg/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2026/07/Ricossa_SeiAnime_Rosato_075_ByV.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "4993",
+      "file": "images/products/4993-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/ricossa-sei-anime-acqui-docg/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2026/07/Ricossa_SeiAnime_Rosato_075_Lifestyle_01_ByV.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "6160",
+      "file": "images/products/6160.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/barton-guestier-m-de-magnol-aoc-medoc/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/12/MdeMagnol_Haut_Medoc_BsrtonGuestier_botella075.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "6160",
+      "file": "images/products/6160-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/barton-guestier-m-de-magnol-aoc-medoc/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/12/MdeMagnol_Haut_Medoc_BartonGuestier_075_Lifestyle.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "3367",
+      "file": "images/products/3367.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/cojon-de-gato-tinto-somontano/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/12/CojonDeGato_Tinto_Roble_075_ByV.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "3367",
+      "file": "images/products/3367-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/cojon-de-gato-tinto-somontano/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/12/CojonDeGato_Somontano_Tinto_Roble_075_Lifestyle_01_ByV.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "4866",
+      "file": "images/products/4866.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/froina-casa-do-sol-albarino-rias-baixas/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2026/01/Froina_CasaDoSol_vino-blanco_-botella_075_VD_ByV.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "3747",
+      "file": "images/products/3747.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/cojon-de-gato-valdeorras-godello/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/11/CojonDeGato_Godello_075_VD_ByV-1.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "3747",
+      "file": "images/products/3747-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/cojon-de-gato-valdeorras-godello/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/11/CojonDeGato_Godello_075_Lifestyle_01_VD_ByV.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "6065",
+      "file": "images/products/6065.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/tramposo-valdeorras-godello/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/11/Tramposo_Godello_075_VD_ByV-1.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "6065",
+      "file": "images/products/6065-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/tramposo-valdeorras-godello/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/11/Tramposo_Godello_075_Lifestyle_01_VD_ByV.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "5482",
+      "file": "images/products/5482.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/tramposo-ribera-del-duero/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/11/Tramposo_RiberaDelDuero_075_VD_ByV.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "5482",
+      "file": "images/products/5482-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/tramposo-ribera-del-duero/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/11/Tramposo_CapaLarga_075_Lifestyle_01_VD_ByV.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "5211",
+      "file": "images/products/5211.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/vd4-ribera-del-duero-tempranillo/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/12/VD4_075_VD_ByV.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "5211",
+      "file": "images/products/5211-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/vd4-ribera-del-duero-tempranillo/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/12/Vino_tinto_VD4_Ribera_del_Duero_botella075_VinosDivertidos_Lifestyle.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "4450",
+      "file": "images/products/4450.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/cojon-de-gato-rueda-verdejo/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/11/CojonDeGato_Verdejo_075_VD_ByV-1.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "4450",
+      "file": "images/products/4450-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/cojon-de-gato-rueda-verdejo/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/11/CojonDeGato_Verdejo_075_Lifestyle_01_VD_ByV.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "2904",
+      "file": "images/products/2904.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/gustave-lorentz-cremant-dalsace-brut/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2026/08/GustaveLorentz_Cremant_Alsace_075_ByV-1.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "6534",
+      "file": "images/products/6534.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/casarito-moscato-dasti-docg/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2026/09/Moscato_DAsti_Casarito_075_ByV.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "6534",
+      "file": "images/products/6534-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/casarito-moscato-dasti-docg/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2026/09/Moscato_DAsti_Casarito_075_Lifestyle_01_ByV.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "5483",
+      "file": "images/products/5483.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/canah-brut-prosecco-superiore-docg-bio/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2026/09/Perlage_Canah_Prosecco_075_ByV.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "5483",
+      "file": "images/products/5483-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/canah-brut-prosecco-superiore-docg-bio/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2026/09/Perlage_Canah_Prosecco_075_Lifestyle_01_ByV.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "6628",
+      "file": "images/products/6628.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/louis-perdrier-ice-francia/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/11/LouisPerdrier_Brut_ICE_075_ByV.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "6628",
+      "file": "images/products/6628-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/louis-perdrier-ice-francia/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/11/LouisPerdrier_Brut_ICE_075_Lifestyle_01_ByV.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "4363",
+      "file": "images/products/4363.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/louis-perdrier-brut-excellence-magnum/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/10/LOUIS-PERDRIER-BRUT-MAGNUM.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "6152",
+      "file": "images/products/6152.webp",
+      "role": "primary",
+      "sourcePage": "https://burbujasyvinos.com/product/louis-perdrier-rose-excellence-magnum/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/11/LouisPerdrier_Rose_Magnum_ByV.png",
+      "note": "Coincidencia de producto y formato; se conserva la fotografía oficial del proveedor."
+    },
+    {
+      "reference": "4134",
+      "file": "images/products/4134-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/louis-perdrier-brut-excellence/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2024/07/LOUIS-PERDRIER-BRUT-75-y-MAGNUM-LIFESTYLE1.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "4135",
+      "file": "images/products/4135-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/louis-perdrier-rose-excellence/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/11/LouisPerdrier_Rose_075_Lifestyle_01_ByV.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "440",
+      "file": "images/products/440-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/toso-fiocco-di-vite-moscato-dasti-docg/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/11/Moscato_FiccoDiVite_075_Lifestyle_01_ByV.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "3268",
+      "file": "images/products/3268-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/borgofulvia-lambrusco-rosso-dolce/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2026/03/Lambrusco_Tinto_Borgofulvia_075_Lifestyle_01_ByV.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "3177",
+      "file": "images/products/3177-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/borgofulvia-lambrusco-rosato-dolce/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2026/03/Lambrusco_Rosado_Borgofulvia_075_Lifestyle.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "2986",
+      "file": "images/products/2986-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/limoncello-italiano-amalfi-igp/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/11/Limoncello_Russo_075_Lifestyle_01_ByV.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    },
+    {
+      "reference": "5132",
+      "file": "images/products/5132-2.webp",
+      "role": "secondary",
+      "sourcePage": "https://burbujasyvinos.com/product/licor-crema-melon-italiano-russo-1899/",
+      "sourceImage": "https://burbujasyvinos.com/wp-content/uploads/2025/11/Russo1899_CremaDiMelone_070_Lifestyle_01_ByV.png",
+      "note": "Imagen de ambientación del proveedor; los alimentos y accesorios no forman parte de la referencia."
+    }
+  ]
+}

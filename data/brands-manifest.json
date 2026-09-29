@@ -811,6 +811,66 @@
         "1994",
         "2456"
       ]
+    },
+    {
+      "id": "louis-perdrier",
+      "name": "Louis Perdrier",
+      "source": "https://www.louis-perdrier.com/es/",
+      "sourceImage": "https://www.louis-perdrier.com/pics/logo.png",
+      "original": "images/brands/originals/louis-perdrier.png",
+      "image": "images/brands/louis-perdrier.png",
+      "width": 182,
+      "height": 78,
+      "references": [
+        "4134",
+        "5373",
+        "4363",
+        "6628",
+        "6152",
+        "4135",
+        "6219"
+      ]
+    },
+    {
+      "id": "avance-import",
+      "name": "Avance Import",
+      "source": "https://www.louis-perdrier.com/es/",
+      "sourceImage": "https://www.louis-perdrier.com/pics/logo-avance-import.jpg",
+      "original": "images/brands/originals/avance-import.jpg",
+      "image": "images/brands/avance-import.png",
+      "width": 120,
+      "height": 51,
+      "references": [
+        "440",
+        "2904",
+        "2986",
+        "3177",
+        "3268",
+        "3367",
+        "3747",
+        "4134",
+        "4135",
+        "4363",
+        "4450",
+        "4677",
+        "4846",
+        "4866",
+        "4908",
+        "4993",
+        "5132",
+        "5211",
+        "5298",
+        "5373",
+        "5482",
+        "5483",
+        "5871",
+        "6065",
+        "6128",
+        "6152",
+        "6160",
+        "6534",
+        "6628"
+      ]
     }
   ]
 }

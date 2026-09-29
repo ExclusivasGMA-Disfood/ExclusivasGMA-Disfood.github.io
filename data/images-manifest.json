@@ -83,7 +83,10 @@
   "433": "images/products/433.jpg",
   "434": "images/products/434.jpg",
   "435": "images/products/435.jpg",
-  "440": "images/products/440.jpg",
+  "440": [
+    "images/products/440.jpg",
+    "images/products/440-2.webp"
+  ],
   "442": "images/products/442.jpg",
   "448": "images/products/448.jpg",
   "452": "images/products/452.jpg",
@@ -363,9 +366,13 @@
     "images/products/2898-2.webp"
   ],
   "2901": "images/products/2901.jpg",
+  "2904": "images/products/2904.webp",
   "2984": "images/products/2984.jpg",
   "2985": "images/products/2985.jpg",
-  "2986": "images/products/2986.png",
+  "2986": [
+    "images/products/2986.png",
+    "images/products/2986-2.webp"
+  ],
   "3079": "images/products/3079.jpg",
   "3144": "images/products/3144.jpg",
   "3147": "images/products/3147.jpg",
@@ -376,14 +383,20 @@
     "images/products/3176-producto-tre-archi.jpg",
     "images/products/3176-informacion-pasta.svg"
   ],
-  "3177": "images/products/3177.jpg",
+  "3177": [
+    "images/products/3177.jpg",
+    "images/products/3177-2.webp"
+  ],
   "3184": "images/products/3184.jpg",
   "3189": "images/products/3189.jpg",
   "3195": "images/products/3195.webp",
   "3210": "images/products/3210.jpg",
   "3211": "images/products/3211.jpg",
   "3219": "images/products/3219.jpg",
-  "3268": "images/products/3268.jpg",
+  "3268": [
+    "images/products/3268.jpg",
+    "images/products/3268-2.webp"
+  ],
   "3312": [
     "images/products/3312-producto-tre-archi.jpg",
     "images/products/3312-informacion-pasta.svg"
@@ -392,6 +405,10 @@
   "3366": [
     "images/products/3366-producto-tre-archi.jpg",
     "images/products/3366-informacion-pasta.svg"
+  ],
+  "3367": [
+    "images/products/3367.webp",
+    "images/products/3367-2.webp"
   ],
   "3377": "images/products/3377.jpg",
   "3396": [
@@ -428,6 +445,10 @@
   ],
   "3675": "images/products/3675.png",
   "3719": "images/products/3719.jpg",
+  "3747": [
+    "images/products/3747.webp",
+    "images/products/3747-2.webp"
+  ],
   "3771": "images/products/3771.jpg",
   "3776": "images/products/3776.jpg",
   "3780": "images/products/3780.jpg",
@@ -492,13 +513,20 @@
   ],
   "4126": "images/products/4126.jpg",
   "4129": "images/products/4129.jpg",
-  "4134": "images/products/4134.jpg",
-  "4135": "images/products/4135.jpg",
+  "4134": [
+    "images/products/4134.jpg",
+    "images/products/4134-2.webp"
+  ],
+  "4135": [
+    "images/products/4135.jpg",
+    "images/products/4135-2.webp"
+  ],
   "4150": "images/products/4150.jpg",
   "4205": "images/products/4205.jpg",
   "4287": "images/products/4287.jpg",
   "4345": "images/products/4345.jpg",
   "4362": "images/products/4362.jpg",
+  "4363": "images/products/4363.webp",
   "4385": "images/products/4385.jpg",
   "4404": [
     "images/products/4404.jpg",
@@ -516,6 +544,10 @@
   "4414": [
     "images/products/4414-producto-tre-archi.jpg",
     "images/products/4414.jpg"
+  ],
+  "4450": [
+    "images/products/4450.webp",
+    "images/products/4450-2.webp"
   ],
   "4476": "images/products/4476.jpg",
   "4495": "images/products/4495.png",
@@ -536,7 +568,10 @@
     "images/products/4599.jpg",
     "images/products/4599-2.webp"
   ],
-  "4677": "images/products/4677.jpg",
+  "4677": [
+    "images/products/4677.jpg",
+    "images/products/4677-2.webp"
+  ],
   "4699": "images/products/4699.jpg",
   "4704": "images/products/4704.jpg",
   "4705": "images/products/4705.jpg",
@@ -547,10 +582,22 @@
   "4830": "images/products/4830.jpg",
   "4831": "images/products/4831.jpg",
   "4832": "images/products/4832.jpg",
+  "4846": [
+    "images/products/4846.webp",
+    "images/products/4846-2.webp"
+  ],
+  "4866": "images/products/4866.webp",
   "4875": "images/products/4875.jpg",
-  "4908": "images/products/4908.jpg",
+  "4908": [
+    "images/products/4908.jpg",
+    "images/products/4908-2.webp"
+  ],
   "4909": "images/products/4909.png",
   "4964": "images/products/4964.png",
+  "4993": [
+    "images/products/4993.webp",
+    "images/products/4993-2.webp"
+  ],
   "5026": "images/products/5026.jpg",
   "5047": "images/products/5047.jpg",
   "5068": [
@@ -560,7 +607,10 @@
   "5103": "images/products/5103.jpg",
   "5122": "images/products/5122.png",
   "5124": "images/products/5124.jpg",
-  "5132": "images/products/5132.jpg",
+  "5132": [
+    "images/products/5132.jpg",
+    "images/products/5132-2.webp"
+  ],
   "5146": "images/products/5146.jpg",
   "5148": "images/products/5148.jpg",
   "5149": "images/products/5149.jpg",
@@ -571,6 +621,10 @@
   "5165": "images/products/5165.jpg",
   "5175": "images/products/5175.jpg",
   "5177": "images/products/5177.png",
+  "5211": [
+    "images/products/5211.webp",
+    "images/products/5211-2.webp"
+  ],
   "5213": "images/products/5213.jpg",
   "5215": "images/products/5215.jpg",
   "5249": "images/products/5249.jpg",
@@ -581,6 +635,10 @@
   "5284": "images/products/5284.jpg",
   "5285": "images/products/5285.jpg",
   "5292": "images/products/5292.jpg",
+  "5298": [
+    "images/products/5298.webp",
+    "images/products/5298-2.webp"
+  ],
   "5301": "images/products/5301.jpg",
   "5311": "images/products/5311-2.webp",
   "5326": "images/products/5326.jpg",
@@ -620,6 +678,14 @@
   "5474": "images/products/5474.png",
   "5475": "images/products/5475.jpg",
   "5476": "images/products/5476.jpg",
+  "5482": [
+    "images/products/5482.webp",
+    "images/products/5482-2.webp"
+  ],
+  "5483": [
+    "images/products/5483.webp",
+    "images/products/5483-2.webp"
+  ],
   "5493": "images/products/5493.jpg",
   "5509": [
     "images/products/5509.jpg",
@@ -708,6 +774,10 @@
   "5868": "images/products/5868.png",
   "5869": "images/products/5869.png",
   "5870": "images/products/5870.png",
+  "5871": [
+    "images/products/5871.webp",
+    "images/products/5871-2.webp"
+  ],
   "5888": "images/products/5888.png",
   "5889": "images/products/5889.png",
   "5890": "images/products/5890.png",
@@ -758,6 +828,10 @@
   "6031": "images/products/6031.jpg",
   "6042": "images/products/6042.jpg",
   "6058": "images/products/6058.jpg",
+  "6065": [
+    "images/products/6065.webp",
+    "images/products/6065-2.webp"
+  ],
   "6066": "images/products/6066.jpg",
   "6069": "images/products/6069.png",
   "6094": "images/products/6094.jpg",
@@ -774,15 +848,24 @@
     "images/products/6125-producto-tre-archi.jpg",
     "images/products/6125-informacion-pasta.svg"
   ],
+  "6128": [
+    "images/products/6128.webp",
+    "images/products/6128-2.webp"
+  ],
   "6133": "images/products/6133.jpg",
   "6140": "images/products/6140.jpg",
   "6142": "images/products/6142.jpg",
   "6143": "images/products/6143.jpg",
   "6144": "images/products/6144.jpg",
   "6148": "images/products/6148.jpg",
+  "6152": "images/products/6152.webp",
   "6153": "images/products/6153.jpg",
   "6154": "images/products/6154.jpg",
   "6155": "images/products/6155.png",
+  "6160": [
+    "images/products/6160.webp",
+    "images/products/6160-2.webp"
+  ],
   "6162": "images/products/6162.jpg",
   "6180": "images/products/6180.jpg",
   "6220": "images/products/6220.jpg",
@@ -795,6 +878,10 @@
   "6455": "images/products/6455.jpg",
   "6473": "images/products/6473.jpg",
   "6481": "images/products/6481.jpg",
+  "6534": [
+    "images/products/6534.webp",
+    "images/products/6534-2.webp"
+  ],
   "6583": "images/products/6583.jpg",
   "6587": "images/products/6587.jpg",
   "6588": "images/products/6588.jpg",
@@ -808,6 +895,10 @@
   "6615": "images/products/6615.jpg",
   "6616": "images/products/6616.jpg",
   "6619": "images/products/6619.jpg",
+  "6628": [
+    "images/products/6628.webp",
+    "images/products/6628-2.webp"
+  ],
   "6636": "images/products/6636.jpg",
   "6665": "images/products/6665.webp",
   "6667": "images/products/6667.jpg",

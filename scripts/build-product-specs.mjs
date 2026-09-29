@@ -11,6 +11,7 @@ const sources = [
   'data/diaz-info.json',
   'data/la-finca-info.json',
   'data/marzo-info.json',
+  'data/avance-import-info.json',
 ];
 const outputPath = join(root, 'data/product-specs.js');
 const specs = {};
