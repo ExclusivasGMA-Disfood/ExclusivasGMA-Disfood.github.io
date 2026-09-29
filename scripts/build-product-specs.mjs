@@ -16,6 +16,7 @@ const sources = [
   'data/italian-beverages-info.json',
   'data/galvan-info.json',
   'data/villani-info.json',
+  'data/pagani-info.json',
 ];
 const outputPath = join(root, 'data/product-specs.js');
 const specs = {};

@@ -1,0 +1,199 @@
+{
+  "supplier": "Pagani Chef",
+  "verifiedAt": "2026-09-29",
+  "processing": "Imágenes oficiales completas, convertidas a WebP sin recortes ni retoques.",
+  "images": [
+    {
+      "reference": "5865",
+      "file": "images/products/5865.webp",
+      "sourcePage": "https://paganichef.it/prodotto/etnike-classica/",
+      "sourceImage": "https://paganichef.it/wp-content/uploads/2021/06/pdt-etnike-classica.jpg",
+      "role": "primary"
+    },
+    {
+      "reference": "6121",
+      "file": "images/products/6121.webp",
+      "sourcePage": "https://paganichef.it/prodotto/gustosi-larabesque/",
+      "sourceImage": "https://paganichef.it/wp-content/uploads/2024/03/BOTTIGLIACIOTOLA_ARABESQUE-1011x1024.png",
+      "role": "primary"
+    },
+    {
+      "reference": "6122",
+      "file": "images/products/6122.webp",
+      "sourcePage": "https://paganichef.it/prodotto/gustosi-la-scozzese/",
+      "sourceImage": "https://paganichef.it/wp-content/uploads/2024/03/BOTTIGLIACIOTOLA_LA-SCOZZESE-1011x1024.png",
+      "role": "primary"
+    },
+    {
+      "reference": "6595",
+      "file": "images/products/6595.webp",
+      "sourcePage": "https://paganichef.it/prodotto/gustosi-balkanpro/",
+      "sourceImage": "https://paganichef.it/wp-content/uploads/2025/02/BalkanPro_Main.jpg",
+      "role": "primary"
+    },
+    {
+      "reference": "6609",
+      "file": "images/products/6609.webp",
+      "sourcePage": "https://paganichef.it/prodotto/gustosi-larrostita/",
+      "sourceImage": "https://paganichef.it/wp-content/uploads/2025/03/Arrostita_Main.jpg",
+      "role": "primary"
+    }
+  ],
+  "pending": [
+    {
+      "reference": "5861",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5862",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5863",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5864",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5874",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5875",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5876",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5877",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5878",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5879",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5881",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5882",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5883",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5884",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5885",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5887",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5903",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5904",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5919",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5928",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5940",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5941",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5965",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "5989",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "6057",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "6081",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "6123",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "6156",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "6333",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "6418",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "6482",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "6483",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "6596",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    },
+    {
+      "reference": "6785",
+      "reason": "No se ha localizado una foto individual identificada para esta referencia; las fotos de gama no se asignan como foto del producto."
+    }
+  ],
+  "infoPending": [
+    "5874",
+    "5875",
+    "5903",
+    "5904",
+    "5919",
+    "5928",
+    "5940",
+    "5941",
+    "5989",
+    "6081",
+    "6123",
+    "6156",
+    "6333",
+    "6418",
+    "6482",
+    "6483",
+    "6785"
+  ]
+}
