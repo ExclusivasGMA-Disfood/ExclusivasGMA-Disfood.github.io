@@ -1,0 +1,19 @@
+{
+  "supplier": "Le 5 Stagioni",
+  "verifiedAt": "2026-09-29",
+  "processing": "Fotografía oficial completa, sin recortes ni retoques; convertida a WebP conservando la transparencia.",
+  "images": [
+    {
+      "reference": "602",
+      "file": "images/products/602.webp",
+      "sourcePage": "https://le5stagioni.com/es/prodotto/spolverina-per-pizza/",
+      "sourceImage": "https://le5stagioni.com/wp-content/uploads/2025/03/Spolverina-per-Pizza.png",
+      "role": "primary"
+    }
+  ],
+  "existingPhotosPreserved": [
+    "6327",
+    "6364"
+  ],
+  "pending": []
+}

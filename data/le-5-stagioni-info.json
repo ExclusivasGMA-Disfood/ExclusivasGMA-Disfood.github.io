@@ -1,0 +1,64 @@
+{
+  "602": {
+    "brand": "Le 5 Stagioni",
+    "source": "https://le5stagioni.com/es/prodotto/spolverina-per-pizza/",
+    "facts": [
+      [
+        "Producto",
+        "Harina de trigo duro para espolvorear la mesa de trabajo y extender la pizza."
+      ],
+      [
+        "Características",
+        "Menos pulverulenta que la harina blanca; favorece una corteza dorada y crujiente."
+      ],
+      [
+        "Formato",
+        "Saco de 10 kg."
+      ]
+    ]
+  },
+  "6327": {
+    "brand": "Le 5 Stagioni",
+    "source": "https://le5stagioni.com/es/prodotto/superiore/",
+    "facts": [
+      [
+        "Producto",
+        "Harina de trigo blando tipo 00."
+      ],
+      [
+        "Aplicaciones",
+        "Masas directas e indirectas de fermentación larga que requieren elasticidad."
+      ],
+      [
+        "Maduración",
+        "Adecuada para maduración a temperatura controlada en frigorífico."
+      ],
+      [
+        "Formato",
+        "Saco de 10 kg."
+      ]
+    ]
+  },
+  "6364": {
+    "brand": "Le 5 Stagioni",
+    "source": "https://le5stagioni.com/es/prodotto/la-oro/",
+    "facts": [
+      [
+        "Producto",
+        "Harina de trigo blando tipo 00."
+      ],
+      [
+        "Aplicaciones",
+        "Masas de fermentación larga y alta hidratación que requieren elasticidad y resistencia."
+      ],
+      [
+        "Uso adicional",
+        "Indicada para refrescar la masa madre y para maduración en frigorífico."
+      ],
+      [
+        "Formato",
+        "Saco de 10 kg."
+      ]
+    ]
+  }
+}

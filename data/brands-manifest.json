@@ -1077,6 +1077,21 @@
         "6738",
         "6805"
       ]
+    },
+    {
+      "id": "le-5-stagioni",
+      "name": "Le 5 Stagioni",
+      "source": "https://le5stagioni.com/es/",
+      "sourceImage": "https://le5stagioni.com/wp-content/uploads/2024/12/Le5Stagioni_logo.svg",
+      "original": "images/brands/originals/le-5-stagioni.svg",
+      "image": "images/brands/le-5-stagioni.png",
+      "width": 343,
+      "height": 200,
+      "references": [
+        "602",
+        "6327",
+        "6364"
+      ]
     }
   ]
 }
