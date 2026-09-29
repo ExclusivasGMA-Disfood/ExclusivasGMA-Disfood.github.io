@@ -2,11 +2,7 @@
   "3": "images/products/3.jpg",
   "4": "images/products/4.jpg",
   "5": "images/products/5.jpg",
-  "25": [
-    "images/products/25-granbologna.png",
-    "images/products/25.jpg",
-    "images/products/25-informacion-pasta.svg"
-  ],
+  "25": "images/products/25-granbologna.png",
   "45": "images/products/45.png",
   "54": "images/products/54.webp",
   "62": "images/products/62-2.webp",
@@ -30,11 +26,7 @@
   "146": "images/products/146.jpg",
   "166": "images/products/166.jpg",
   "193": "images/products/193.jpg",
-  "199": [
-    "images/products/199-granbologna.png",
-    "images/products/199.jpg",
-    "images/products/199-informacion-pasta.svg"
-  ],
+  "199": "images/products/199-granbologna.png",
   "214": "images/products/214.jpg",
   "250": "images/products/250.jpg",
   "255": "images/products/255.jpg",
@@ -102,16 +94,9 @@
   "534": "images/products/534.jpg",
   "536": "images/products/536.jpg",
   "602": "images/products/602.webp",
-  "604": [
-    "images/products/604-granbologna.png",
-    "images/products/604-informacion-pasta.svg"
-  ],
+  "604": "images/products/604-granbologna.png",
   "608": "images/products/608.jpg",
-  "610": [
-    "images/products/610-granbologna.png",
-    "images/products/610.jpg",
-    "images/products/610-informacion-pasta.svg"
-  ],
+  "610": "images/products/610-granbologna.png",
   "623": "images/products/623.jpg",
   "636": [
     "images/products/636.jpg",
@@ -160,37 +145,15 @@
   "941": "images/products/941.jpg",
   "947": "images/products/947.jpg",
   "956": "images/products/956.jpg",
-  "957": [
-    "images/products/957-granbologna.png",
-    "images/products/957.jpg",
-    "images/products/957-2.webp"
-  ],
-  "959": [
-    "images/products/959-granbologna.png",
-    "images/products/959.jpg"
-  ],
-  "962": [
-    "images/products/962-granbologna.png",
-    "images/products/962-informacion-pasta.svg"
-  ],
-  "967": [
-    "images/products/967-granbologna.png",
-    "images/products/967.jpg",
-    "images/products/967-informacion-pasta.svg"
-  ],
+  "957": "images/products/957-granbologna.png",
+  "959": "images/products/959-granbologna.png",
+  "962": "images/products/962-granbologna.png",
+  "967": "images/products/967-granbologna.png",
   "971": "images/products/971.jpg",
   "980": "images/products/980.jpg",
-  "986": [
-    "images/products/986-granbologna.png",
-    "images/products/986.jpg",
-    "images/products/986-informacion-pasta.svg"
-  ],
+  "986": "images/products/986-granbologna.png",
   "993": "images/products/993.png",
-  "995": [
-    "images/products/995-granbologna.png",
-    "images/products/995.jpg",
-    "images/products/995-informacion-pasta.svg"
-  ],
+  "995": "images/products/995-granbologna.png",
   "1006": "images/products/1006.jpg",
   "1009": [
     "images/products/1009.jpg",
@@ -216,11 +179,7 @@
     "images/products/1320-2.webp"
   ],
   "1324": "images/products/1324.jpg",
-  "1347": [
-    "images/products/1347-granbologna.png",
-    "images/products/1347.jpg",
-    "images/products/1347-informacion-pasta.svg"
-  ],
+  "1347": "images/products/1347-granbologna.png",
   "1393": [
     "images/products/1393.jpg",
     "images/products/1393-2.webp",
@@ -301,11 +260,7 @@
     "images/products/2151.jpg",
     "images/products/2151-2.webp"
   ],
-  "2152": [
-    "images/products/2152-granbologna.png",
-    "images/products/2152.jpg",
-    "images/products/2152-informacion-pasta.svg"
-  ],
+  "2152": "images/products/2152-granbologna.png",
   "2158": "images/products/2158.jpg",
   "2167": [
     "images/products/2167.jpg",
@@ -344,22 +299,10 @@
     "images/products/2184-producto-tre-archi.jpg",
     "images/products/2184-informacion-pasta.svg"
   ],
-  "2203": [
-    "images/products/2203-granbologna.png",
-    "images/products/2203.jpg"
-  ],
-  "2204": [
-    "images/products/2204-granbologna.png",
-    "images/products/2204.jpg"
-  ],
-  "2205": [
-    "images/products/2205-granbologna.png",
-    "images/products/2205.jpg"
-  ],
-  "2218": [
-    "images/products/2218-granbologna.png",
-    "images/products/2218.jpg"
-  ],
+  "2203": "images/products/2203-granbologna.png",
+  "2204": "images/products/2204-granbologna.png",
+  "2205": "images/products/2205-granbologna.png",
+  "2218": "images/products/2218-granbologna.png",
   "2297": "images/products/2297.jpg",
   "2303": "images/products/2303.jpg",
   "2323": "images/products/2323.jpg",

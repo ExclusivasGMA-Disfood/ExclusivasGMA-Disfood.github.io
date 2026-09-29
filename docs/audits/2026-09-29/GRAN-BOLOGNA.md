@@ -42,3 +42,7 @@ Correcciones destacadas frente a la documentación anterior: Rossini indica pato
 ## Verificación
 
 npm ci y npm test: 21 pruebas; catálogo 999 referencias, 722 referencias con algún recurso visual según el validador (incluye SVG), 846 recursos visuales activos y 247 fichas documentadas. Las 16 fotos originales se decodifican; las páginas asociadas se revisan visualmente. Chromium en ambas rutas, 390×844 y 844×390: búsqueda de los 16 productos (25 mediante «Il Rossini», por tratarse de una referencia de dos cifras), foto exacta, ficha técnica, apertura/cierre, ausencia de enlaces externos visibles y ausencia de desbordamiento/errores JavaScript. Revisión visual de capturas. No probado en iPhone físico. Verificar publicación y recursos públicos antes de confirmar al usuario.
+
+## Incidencia de publicación resuelta
+
+El workflow automático reconstruyó el manifiesto en cc648f7 y reintrodujo galerías históricas, cancelando el primer despliegue. Se restaura el manifiesto editorial completo ya validado y se añade un guard al workflow: si el commit de imágenes incluye explícitamente images-manifest.json, no se reconstruye. El generador añade preferencias exclusivas para los 16 PNG Gran Bologna, también en reconstrucciones posteriores. No se adopta ninguna modificación colateral del bot.

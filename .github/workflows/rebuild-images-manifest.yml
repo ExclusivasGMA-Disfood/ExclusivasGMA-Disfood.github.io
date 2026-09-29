@@ -14,13 +14,26 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
+      # Una importación editorial ya incluye el manifiesto exacto: no reordenarlo.
+      - name: Detect curated manifest
+        id: curated
+        run: |
+          if git show --format= --name-only HEAD | grep -qx 'data/images-manifest.json'; then
+            echo "updated=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "updated=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Rebuild manifest
+        if: steps.curated.outputs.updated != 'true'
         run: node scripts/build-image-manifest.mjs
 
       - name: Check catalog before committing manifest
