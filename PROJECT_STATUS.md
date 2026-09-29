@@ -78,3 +78,7 @@ Retiradas 6703 (mozzarella rallada 70/30 Disfood) y 6754 (cheddar rojo rallado).
 ## Refinado autorizado de los carruseles destacados
 
 Novedades y Selección GMA reciben un ajuste discreto de proporciones y espacios. Sus 14 referencias tienen títulos breves específicos (discoveryName) y nombres completos revisados en español; unidades G/KG/ML según criterio del usuario. No extender esta geometría a las tarjetas del catálogo general. Registro: docs/audits/2026-09-29/CARRUSELES-REFINADOS.md.
+
+## Fotos pequeñas en destacados móviles
+
+La captura posterior pide fotos como al reducir la página, manteniendo el resto al tamaño normal. Solo hasta 639 px: tarjetas destacadas de 100 px, foto completa con proporción 1,16, títulos de 12 px y hasta tres líneas, referencia de 11 px. Escritorio, horizontal, cabecera y catálogo general intactos. El porcentaje exacto del zoom de la captura no es verificable; proporciones compatibles aproximadamente con 75 %. Registro: docs/audits/2026-09-29/FOTOS-DESTACADOS-MOVIL.md.

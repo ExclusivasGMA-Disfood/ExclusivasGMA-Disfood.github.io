@@ -165,3 +165,10 @@ html body :is(#newDiscovery,#bestDiscovery) .discovery-ref{padding-right:0;min-h
  html body :is(#newDiscovery,#bestDiscovery) .discovery-scroll{grid-auto-columns:120px}
 }
 html body :is(#newDiscovery,#bestDiscovery) .discovery-add{top:8px;right:8px;bottom:auto}
+
+/* Tamaño de foto solicitado a partir de la captura móvil; sin zoom global. */
+@media(max-width:639px){
+ html body :is(#newDiscovery,#bestDiscovery) .discovery-scroll{grid-auto-columns:100px}
+ html body :is(#newDiscovery,#bestDiscovery) .discovery-name{font-size:12px;line-height:1.25;-webkit-line-clamp:3;min-height:3.75em;max-height:3.75em}
+ html body :is(#newDiscovery,#bestDiscovery) .discovery-ref{font-size:11px}
+}
