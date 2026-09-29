@@ -1,0 +1,11 @@
+{
+  "criterion": "Agrupación editorial por especialidad principal de cada marca en el catálogo; una marca puede tener productos en otros departamentos.",
+  "groups": [
+    {"id":"jamones-carnes","title":"Jamones, embutidos y carnes","brands":["beher","montesano","crego","diaz","galvan","cecinas-pablo","villani","la-finca"]},
+    {"id":"quesos","title":"Quesos y lácteos","brands":["sansuena","soster","ken"]},
+    {"id":"conservas","title":"Pescados, aperitivos y conservas","brands":["dominguez","emilia","selec-mardis","marzo","viander"]},
+    {"id":"pasta-harinas","title":"Pasta, harinas y panadería","brands":["tre-archi","gastronoms","divella","caputo","le-5-stagioni"]},
+    {"id":"cocina","title":"Patés y cocina preparada","brands":["polca","pagani","toke"]},
+    {"id":"vinos","title":"Vinos y espumosos","brands":["ramon-bilbao","mar-de-frades","bg","moonlight-roses","emile-paris","louis-perdrier","decordi","la-piuma","poggio-del-sasso","montalto","toso","morra","enology","moselland","three-finger-jack"]}
+  ]
+}

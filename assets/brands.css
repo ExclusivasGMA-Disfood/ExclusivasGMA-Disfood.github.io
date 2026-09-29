@@ -10,3 +10,14 @@
 /* Only the right-hand BEHER identity, preserving the official original. */
 .gma-brands__beher{position:relative;display:block;width:100%;max-width:180px;aspect-ratio:390 / 129;overflow:hidden}
 .gma-brands__beher>.gma-brands__logo{position:absolute;left:-53.846154%;top:0;width:153.846154%;height:100%;max-width:none;max-height:none;object-fit:fill}
+
+/* Familias editoriales; última fila centrada sin alterar los logotipos. */
+.gma-brands__family{max-width:1080px;margin:0 auto;padding:22px 0;border-top:1px solid #ecebe6}
+.gma-brands__family:first-of-type{border-top:0;padding-top:0}
+.gma-brands__family-title{margin:0 0 12px;text-align:center;font:600 13px/1.5 Geist,sans-serif;color:#625759;letter-spacing:.025em}
+.gma-brands__grid{display:flex;flex-wrap:wrap;justify-content:center}
+.gma-brands__item{flex:0 0 calc((100% - 96px)/5)}
+@media(max-width:699px){.gma-brands__family{padding:18px 0}.gma-brands__family-title{font-size:12px;margin-bottom:8px}.gma-brands__item{flex-basis:calc((100% - 16px)/3)}}
+@media(max-width:359px){.gma-brands__item{flex-basis:calc((100% - 8px)/2)}}
+/* El original B&G es blanco con transparencia: hacerlo legible sobre blanco. */
+.gma-brands__item[data-brand="bg"] .gma-brands__logo{filter:brightness(0) opacity(.8)}

@@ -98,3 +98,7 @@ En horizontal/escritorio, la cabecera del catálogo con las vistas y Desplegar/R
 ## Dimardis ½ KG y textos señalados
 
 4830 usa ahora images/products/4830-500g.jpg: adaptación visual solicitada, con peso 500 g, fondo blanco y lata recta. No tratar como foto original del fabricante. 2631 mantiene su foto propia. Normalizados nombres 4830, 2631 y 6617; KG en selector Dimardis. 21 pruebas y comprobación de cambio entre formatos en ambas rutas. Registro: docs/audits/2026-09-29/DIMARDIS-MEDIO-KILO-TEXTOS.md.
+
+## Panel de marcas por familias
+
+39 logos en seis bloques editoriales por especialidad, definidos en data/brand-groups.json. Regenerar el HTML con node scripts/render-brand-groups.mjs al cambiar ese orden. Filas incompletas centradas, títulos discretos, monocromo y fondo blanco; B&G oscuro mediante CSS para hacer visible su fuente blanca. Sin cambios de producto ni animaciones. Entrada suave por bloques solo propuesta, no autorizada/aplicada. Ver docs/audits/2026-09-29/LOGOS-POR-FAMILIAS.md.
