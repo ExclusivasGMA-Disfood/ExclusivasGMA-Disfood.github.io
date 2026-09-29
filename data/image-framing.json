@@ -554,6 +554,48 @@
         0.5,
         0.5
       ]
+    },
+    {
+      "ref": "77029",
+      "source": "images/products/77029.jpg",
+      "sourceSize": [
+        1200,
+        1200
+      ],
+      "contentBox": [
+        450,
+        510,
+        752,
+        690
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08,
+      "reason": "Encuadre manual del paté completo y asas; eliminar margen blanco excesivo sin editar el original."
+    },
+    {
+      "ref": "12029",
+      "source": "images/products/12029.jpg",
+      "sourceSize": [
+        1200,
+        1200
+      ],
+      "contentBox": [
+        450,
+        510,
+        752,
+        690
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08,
+      "reason": "Encuadre manual del paté completo y asas; eliminar margen blanco excesivo sin editar el original."
     }
   ]
 }

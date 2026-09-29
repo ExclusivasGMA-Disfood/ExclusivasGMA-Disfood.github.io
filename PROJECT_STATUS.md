@@ -130,3 +130,7 @@ Petición posterior: eliminar los difuminados rojo/morado de familias y subfamil
 ## Bodegas San Esteban: Tierras de Murillo
 
 Cinco fichas y fotos oficiales (3165, 2785, 2753, 2752, 3400). Antique mantiene su identidad histórica. Blanco sin composición varietal por discrepancia de fuentes. Fuentes en data/san-esteban-info.json y data/san-esteban-images.json. Ver docs/audits/2026-09-29/SAN-ESTEBAN.md. Sin cambios de diseño.
+
+## Patés Polca y Qez: cinco ajustes fotográficos
+
+77029 y 12029 con encuadre individual para suprimir el exceso de blanco. Qez 6723, 6724 y 6726 con presentación frontal sobre blanco, imágenes WebP locales y manifiesto actualizado. Sin cambios de tarjetas ni estética general. Registro: docs/audits/2026-09-29/PATES-QEZ-FOTOS.md.
