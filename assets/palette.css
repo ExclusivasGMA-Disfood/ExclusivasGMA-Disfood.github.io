@@ -67,3 +67,6 @@ html body .dept-header.open .chev,html body .dept-header::before{color:var(--sof
 
 /* Fondo general blanco, solicitado por el usuario; paleta de componentes intacta. */
 html,html body{background:#FFFFFF!important}
+
+/* Novedades y Selección: superficies blancas en las dos presentaciones. */
+html body :is(.discovery-section,.discovery-head,.discovery-scroll,.discovery-card,.discovery-open,.discovery-card-body,.discovery-photo){background:#FFFFFF!important}

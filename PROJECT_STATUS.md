@@ -138,3 +138,7 @@ Cinco fichas y fotos oficiales (3165, 2785, 2753, 2752, 3400). Antique mantiene 
 ## Fondo general blanco
 
 Por petición del usuario, html/body usan blanco puro #FFFFFF en ambas rutas. Paleta corporativa y componentes conservados. Registro: docs/audits/2026-09-29/FONDO-BLANCO.md.
+
+## Novedades y Selección sobre blanco
+
+Ampliación expresa del fondo blanco a todas las superficies de Novedades y Selección GMA: secciones, cabeceras, carruseles, tarjetas, textos y fotos/placeholder. Insignias y acciones conservan la paleta. Ambas rutas verificadas. Ver docs/audits/2026-09-29/DISCOVERY-BLANCO.md.
