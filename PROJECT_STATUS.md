@@ -3,7 +3,7 @@
 ## Identidad y alcance
 
 - Catálogo oficial: `/`. Presentación alternativa: `/nuevo/` (sin indexación).
-- 1.001 referencias; 17 departamentos y 79 familias. No publicar precios.
+- 1.001 referencias; 17 departamentos y 73 familias. No publicar precios.
 - Geist para interfaz y lectura; Merriweather para títulos y nombres de producto, tal como estaba antes de la auditoría.
 - Referencia estética anterior a Crego: `82f3ca8d013bbd444bdb13b8c89641194098f933`.
 - Mantener encabezado, colores y organización; no mezclar una importación de proveedor con un rediseño.
@@ -66,3 +66,7 @@ Diez referencias de tomate frito, triturado y entero de Marzo se muestran en tre
 ## BEHER y Tomate Nacional: ampliación autorizada
 
 BEHER muestra solo su identidad principal derecha mediante una ventana CSS sobre el original oficial. Dimardis 4830 y 2631 comparten una tarjeta con dos formatos y foto preferida 2631. Marzo frito y triturado prefieren 1988 y 1997 sobre blanco. Se conservan 1.001 referencias y se muestran 993 tarjetas sin filtros. Las 12 fotos disponibles de Tomate Nacional tienen encuadres manuales contain, centrados y con margen del 8 %, configurados en data/image-framing.json. No se modifica ningún archivo de fotografía ni se añaden reglas automáticas para otras familias. Ver docs/audits/2026-09-29/BEHER-TOMATE-NACIONAL.md.
+
+## Organización de la Huerta
+
+El departamento pasa a Conservas de la Huerta. Dos familias: Huerta Nacional (Tomate Nacional, Verduras Selectas, Verduras y Frutas en Conserva, Legumbres) y Huerta Italia (Conserva Italiana, Tomate Italia). Lentejas, garbanzos y alubias se reúnen en Legumbres. Se conservan las 1.001 referencias, la selección por referencia y las agrupaciones de formatos. Registro: docs/audits/2026-09-29/HUERTA-ORGANIZACION.md.

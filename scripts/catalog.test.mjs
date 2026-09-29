@@ -19,7 +19,7 @@ async function app(page='index.html',width=1366,height=900){
     const src=m[1].match(/src="([^"?]+)/)?.[1];
     scripts.push(src?fs.readFileSync(src,'utf8'):m[2]);
   }
-  window.eval(scripts.join('\n;\n')+'\nwindow.testStorage=GMAStorage;window.testLoadScript=loadExternalScript;window.testGeneratePdf=generatePdf;window.testFilter=(q,sel=false)=>{searchTerm=q;selectedOnly=sel;currentVisibleGroups().forEach(g=>{openDepts.add(g.dept);openGroups.add(g.title);});render();};window.testData=DATA;window.testVisible=()=>getVisibleItemsForGroup(DATA[5],5).items;');
+  window.eval(scripts.join('\n;\n')+'\nwindow.testStorage=GMAStorage;window.testLoadScript=loadExternalScript;window.testGeneratePdf=generatePdf;window.testFilter=(q,sel=false)=>{searchTerm=q;selectedOnly=sel;currentVisibleGroups().forEach(g=>{openDepts.add(g.dept);openGroups.add(g.title);});render();};window.testData=DATA;window.testVisible=()=>getVisibleItemsForGroup(DATA.find(g=>g.title==="Huerta Nacional"),DATA.findIndex(g=>g.title==="Huerta Nacional")).items;');
   await new Promise(resolve=>setTimeout(resolve,50));
   return window;
 }
@@ -205,3 +205,15 @@ for(const page of ['index.html','nuevo/index.html']){
   }finally{await w.happyDOM.close();}
  });
 }
+
+test('Huerta: dos familias, legumbres reunidas y búsqueda por subgrupo',async()=>{
+ const w=await app();try{
+  const groups=w.testData.filter(g=>g.dept==='Conservas de la Huerta');
+  assert.deepEqual(Array.from(groups,g=>g.title),['Huerta Nacional','Huerta Italia']);
+  assert.equal(groups[0].items.length,47);assert.equal(groups[1].items.length,17);
+  assert.equal(groups[0].items.filter(i=>i.sub==='Legumbres').length,9);
+  w.testFilter('legumbres');assert.equal(w.document.querySelectorAll('.desktop-product-card').length,9);
+  w.testFilter('tomate nacional');assert.equal(w.document.querySelectorAll('.desktop-product-card').length,7);
+  w.testFilter('huerta italia');assert.equal(w.document.querySelectorAll('.desktop-product-card').length,17);
+ }finally{await w.happyDOM.close();}
+});
