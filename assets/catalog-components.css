@@ -178,3 +178,15 @@ html body .product-sheet{max-height:92dvh!important}
 html body #productClose,html body #lightboxCloseTop{width:44px;height:44px;min-width:44px;background:#fff;color:#4b051d;border:1px solid rgba(75,5,29,.15)}
 html body .lightbox-card{max-height:calc(100dvh - 48px - env(safe-area-inset-top) - env(safe-area-inset-bottom));overflow-y:auto;overscroll-behavior:contain}
 html body .lightbox-head{position:sticky;top:0;z-index:5;display:flex;justify-content:flex-end;padding-bottom:8px;background:var(--paper)}
+
+/* Controles persistentes: mismo contexto al navegar en horizontal/escritorio. */
+@media(min-width:1000px), (orientation:landscape) and (min-width:640px) and (max-width:999px){
+ html body .desktop-main-head{position:sticky;top:var(--topbar-h,65px);z-index:20;background:var(--platinum,var(--paper-dim,#f3f3f4))}
+ html body .desktop-reading-family{top:calc(var(--topbar-h,65px) + var(--desktop-toolbar-h,100px));z-index:19}
+}
+
+html.catalog-repositioning #groups .group-body,html.catalog-repositioning #groups .item{transition:none!important}
+
+@media(min-width:640px) and (max-width:1100px){
+ html body .desktop-main-head>.desktop-view-switch,html body .desktop-main-head>.desktop-expand-all{grid-row:2}
+}

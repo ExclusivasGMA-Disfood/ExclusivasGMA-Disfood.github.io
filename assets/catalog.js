@@ -1305,6 +1305,7 @@ function currentVisibleGroups(){
 function updateExpandLabel(){
   const control=document.getElementById('expandAll');
   if(!control) return;
+  const anchor=window.GMA_NAV?.capture();
   const visibleGroups=currentVisibleGroups();
   const allOpen = visibleGroups.length > 0 && visibleGroups.every(g => openDepts.has(g.dept) && openGroups.has(g.title));
   control.innerHTML = allOpen
@@ -1525,6 +1526,7 @@ document.getElementById('expandAll')?.addEventListener('click', () => {
   const control=document.getElementById('expandAll');
   if(control?.disabled) return;
   if(control){control.disabled=true;control.setAttribute('aria-busy','true');}
+  const anchor=window.GMA_NAV?.capture();
   const visibleGroups=currentVisibleGroups();
   const allOpen=visibleGroups.length>0 && visibleGroups.every(g=>openDepts.has(g.dept) && openGroups.has(g.title));
   if(allOpen){
@@ -1538,6 +1540,7 @@ document.getElementById('expandAll')?.addEventListener('click', () => {
   }
   groupsEl.classList.add('bulk-update');
   render();
+  window.GMA_NAV?.restore(anchor);
   let finished=false;
   const finishBulkUpdate=()=>{
     if(finished)return;

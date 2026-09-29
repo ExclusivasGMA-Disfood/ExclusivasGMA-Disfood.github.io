@@ -238,3 +238,23 @@ for(const page of ['index.html','nuevo/index.html']){
   }finally{await w.happyDOM.close();}
  });
 }
+
+for(const page of ['index.html','nuevo/index.html']){
+ test(`${page}: cambiar vista y recoger conserva la familia leída después del primer bloque`,async()=>{
+  const w=await app(page);try{
+   const d=w.document;
+   d.querySelector('.desktop-more-button').click();
+   const card=d.querySelectorAll('.desktop-product-card')[100];
+   const id=card.dataset.id,gi=Number(id.split('-')[0]);
+   w.GMA_NAV.capture=()=>({id,gi,offset:0});
+   w.GMA_NAV.restore=()=>{};
+   d.querySelector('[data-desktop-view="visual"]').click();
+   assert.ok(d.querySelector(`#desktopProducts [data-id="${id}"]`),'No perder productos cargados después de los primeros 72');
+   d.querySelector('#desktopExpandAll').click();
+   assert.ok(d.querySelector(`#desktopProducts [data-id="${id}"]`),'Recoger conserva la familia actual');
+   assert.equal(d.querySelector('#desktopCatalogTitle').textContent,w.testData[gi].title);
+   d.querySelector('#desktopExpandAll').click();
+   assert.ok(d.querySelector(`#desktopProducts [data-id="${id}"]`),'Desplegar conserva el producto actual');
+  }finally{await w.happyDOM.close();}
+ });
+}

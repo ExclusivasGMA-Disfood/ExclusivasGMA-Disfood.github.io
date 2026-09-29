@@ -6,6 +6,7 @@
   document.getElementById('guideClose')?.addEventListener('click',()=>{guide.remove();GMAStorage.setItem('gma-guide-hidden','1');setControlsHeight();});
 
   function setView(view){
+    const anchor=window.GMA_NAV?.capture();
     if(view==='compact') view='carousel';
     if(!['standard','carousel','visual'].includes(view)) view='standard';
     body.classList.remove('compact-view','carousel-view','visual-view');
@@ -14,6 +15,7 @@
     document.querySelectorAll('.view-btn').forEach(b=>b.classList.toggle('active',b.dataset.view===view));
     GMAStorage.setItem('gma-catalog-view',view);
     window.GMA_REFRESH_DEFERRED_GROUPS?.();
+    window.GMA_NAV?.restore(anchor);
   }
   document.querySelectorAll('.view-btn').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));
   setView(GMAStorage.getItem('gma-catalog-view')||'standard');

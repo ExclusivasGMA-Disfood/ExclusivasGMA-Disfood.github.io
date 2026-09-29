@@ -19,6 +19,7 @@
   const DESKTOP_BATCH=72;
   let desktopLimit=DESKTOP_BATCH;
   let desktopScopeKey='';
+  let navigationAnchor=null;
   let readingGroup=null;
   let trackingFrame=0;
   const readingLabel=document.createElement('div');
@@ -32,7 +33,7 @@
     if(!desktopMedia.matches)return;
     const cards=products.querySelectorAll('.desktop-product-card');
     if(!cards.length)return;
-    const line=document.getElementById('siteHeader').getBoundingClientRect().bottom+32;
+    const line=window.GMA_NAV?.line()||document.getElementById('siteHeader').getBoundingClientRect().bottom+32;
     // Grid rows have ordered bottoms. Binary search avoids measuring every product on scroll.
     let low=0,high=cards.length;
     while(low<high){const mid=(low+high)>>1;if(cards[mid].getBoundingClientRect().bottom<=line)low=mid+1;else high=mid;}
@@ -136,6 +137,7 @@
     }
     const scopeKey=[searchTerm,onlyNew,selectedOnly,countryFilter,regionFilter,currentDept,familyFilter,activeGi,desktopGroupFocused,landscapeShowAll,landscapeDepartmentFocus,desktopView].join('|');
     if(scopeKey!==desktopScopeKey){desktopScopeKey=scopeKey;desktopLimit=DESKTOP_BATCH;}
+    if(navigationAnchor){const at=entries.findIndex(x=>navigationAnchor.id?x.id===navigationAnchor.id:navigationAnchor.gi!=null?Number(x.id.split('-')[0])===navigationAnchor.gi:x.group.dept===navigationAnchor.dept);if(at>=0)desktopLimit=Math.max(desktopLimit,Math.ceil((at+1)/DESKTOP_BATCH)*DESKTOP_BATCH);}
     const visibleLimit=desktopLimit;
     window.GMA_DESKTOP_ITEMS=entries.map(({it,id,group:g})=>({it,id,g}));
     const visibleEntries=entries.slice(0,visibleLimit);
@@ -234,15 +236,19 @@
     if(selectedOnly)render();
   });
   document.querySelectorAll('.desktop-view-button').forEach(button=>button.addEventListener('click',()=>{
+    navigationAnchor=window.GMA_NAV?.capture();
     desktopView=button.dataset.desktopView;
     GMAStorage.setItem('gma-desktop-view',desktopView);
     renderDesktopCatalog();
+    window.GMA_NAV?.restore(navigationAnchor);navigationAnchor=null;
   }));
   document.getElementById('desktopFilters').addEventListener('click',()=>{desktopGroupFocused=false;landscapeShowAll=true;landscapeDepartmentFocus=null;openFilterPanel();});
   document.getElementById('desktopExpandAll').addEventListener('click',()=>{
+    navigationAnchor=window.GMA_NAV?.capture();
     const wasExpanded=landscapeShowAll&&!landscapeDepartmentFocus;
     landscapeShowAll=!wasExpanded;landscapeDepartmentFocus=null;desktopGroupFocused=wasExpanded;
-    forcedGroup=firstAllowedGroup(groupRows());renderDesktopCatalog();
+    forcedGroup=navigationAnchor?.gi??readingGroup??firstAllowedGroup(groupRows());renderDesktopCatalog();
+    window.GMA_NAV?.restore(navigationAnchor);navigationAnchor=null;
   });
   document.getElementById('desktopOpenSelection').addEventListener('click',openSheet);
   document.getElementById('desktopCopySelection').addEventListener('click',async()=>{
@@ -252,7 +258,18 @@
     try{await navigator.clipboard.writeText(text);showToast('Selección copiada');}catch(error){showToast('No se pudo copiar la selección');}
   });
   document.getElementById('searchInput')?.addEventListener('input',()=>{forcedGroup=null;desktopGroupFocused=false;landscapeShowAll=true;landscapeDepartmentFocus=null;});
-  desktopMedia.addEventListener?.('change',event=>{if(event.matches)renderDesktopCatalog();});
+  desktopMedia.addEventListener?.('change',event=>{
+    navigationAnchor=window.GMA_NAV?.beforeRotation();
+    if(event.matches){
+      if(navigationAnchor){landscapeShowAll=true;landscapeDepartmentFocus=null;desktopGroupFocused=false;forcedGroup=navigationAnchor.gi??groupRows().find(row=>row.group.dept===navigationAnchor.dept)?.gi;}
+      renderDesktopCatalog();
+    }else if(navigationAnchor){
+      const group=DATA[navigationAnchor.gi];
+      if(group){openDepts.add(group.dept);openGroups.add(group.title);}
+      render();
+    }
+    window.GMA_NAV?.afterRotation();window.GMA_NAV?.restore(navigationAnchor);navigationAnchor=null;
+  });
 
   const baseRender=render;
   let previousFilters='';
@@ -276,4 +293,8 @@
   };
   window.GMA_RENDER_DESKTOP=renderDesktopCatalog;
   renderDesktopCatalog();
+  const head=document.querySelector('.desktop-main-head');
+  const measureHead=()=>document.documentElement.style.setProperty('--desktop-toolbar-h',head.getBoundingClientRect().height+'px');
+  if('ResizeObserver' in window)new ResizeObserver(measureHead).observe(head);
+  measureHead();
 })();

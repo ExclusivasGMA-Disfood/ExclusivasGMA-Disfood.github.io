@@ -90,3 +90,7 @@ Ajuste posterior solicitado: en móvil los nombres pasan de 12 a 11 px y de tres
 ## Cierre de ventanas de producto
 
 La ficha tiene aspa SVG de 44 px y el visor de fotos una nueva aspa superior que sigue accesible al desplazar. Ambos cierran al tirar hacia abajo desde el inicio del contenido (70 px); leer texto ya desplazado no cierra la ventana. Alturas basadas en viewport dinámico. Sin cambios en carruseles ni datos. 19 pruebas y matriz Chromium en ambas rutas; no probado en iPhone físico. Registro: docs/audits/2026-09-29/CIERRE-VENTANAS.md.
+
+## Navegación estable y controles fijos
+
+En horizontal/escritorio, la cabecera del catálogo con las vistas y Desplegar/Recoger queda fija bajo la cabecera superior; franja de familia debajo. Cambios de vista, desplegado y giro conservan el producto/familia leído, incluyendo referencias posteriores al primer bloque. Recoger mantiene familia actual en horizontal y departamento en vertical. Nuevo assets/navigation-position.js, cargado antes de views.js. 21 pruebas y revisión Chromium en ambas rutas; sin prueba física en iPhone. Ver docs/audits/2026-09-29/NAVEGACION-ESTABLE.md.
