@@ -417,16 +417,16 @@
     },
     {
       "ref": "2631",
-      "source": "images/products/2631.jpg",
+      "source": "images/products/2631-frontal.jpg",
       "sourceSize": [
-        600,
-        600
+        1000,
+        1000
       ],
       "contentBox": [
-        79,
-        51,
-        515,
-        547
+        134,
+        82,
+        866,
+        920
       ],
       "fit": "contain",
       "innerMargin": 0.08,

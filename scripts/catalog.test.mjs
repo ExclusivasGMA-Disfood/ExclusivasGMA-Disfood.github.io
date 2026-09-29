@@ -191,7 +191,7 @@ for(const page of ['index.html','nuevo/index.html']){
    const cards=[...d.querySelectorAll('.desktop-product-card')];
    assert.equal(cards.length,1);
    assert.match(cards[0].textContent,/2 formatos/);
-   assert.match(cards[0].querySelector('img').getAttribute('src'),/2631\.jpg/);
+   assert.match(cards[0].querySelector('img').getAttribute('src'),/2631-frontal\.jpg/);
    cards[0].querySelector('.desktop-add').click();
    assert.equal(d.querySelector('#productFormatSelect').options.length,2);
    assert.match(d.querySelector('.product-detail-ref').textContent,/2631/);
