@@ -1,0 +1,82 @@
+{
+  "6735": {
+    "brand": "Galván",
+    "source": "https://www.jamonesgalvan.es/prop/documentos/0007-0007-3.JamonCeboCampo50.pdf",
+    "sourcePage": "https://www.jamonesgalvan.es/index.php?id=3&l=E&plant=1&proc=producto",
+    "facts": [
+      [
+        "Producto",
+        "Jamón de cebo de campo, 50 % raza ibérica."
+      ],
+      [
+        "Curación",
+        "Entre 36 y 48 meses en secaderos naturales y bodegas, según el fabricante."
+      ],
+      [
+        "Elaborador",
+        "Ibéricos de Bellota Galván, Cumbres Mayores (Huelva)."
+      ]
+    ],
+    "ingredients": "Jamón, sal, azúcar, antioxidante E-331 y conservadores E-252 y E-250."
+  },
+  "6736": {
+    "brand": "Galván",
+    "source": "https://www.jamonesgalvan.es/prop/documentos/0008-0008-4.JamonIbericoCebo50.pdf",
+    "sourcePage": "https://www.jamonesgalvan.es/index.php?id=4&l=E&plant=1&proc=producto",
+    "facts": [
+      [
+        "Producto",
+        "Jamón de cebo, 50 % raza ibérica."
+      ],
+      [
+        "Curación",
+        "Entre 36 y 48 meses en secaderos naturales y bodegas, según el fabricante."
+      ],
+      [
+        "Elaborador",
+        "Ibéricos de Bellota Galván, Cumbres Mayores (Huelva)."
+      ]
+    ],
+    "ingredients": "Jamón, sal, azúcar, antioxidante E-331 y conservadores E-252 y E-250."
+  },
+  "6737": {
+    "brand": "Galván",
+    "source": "https://www.jamonesgalvan.es/prop/documentos/0019-14.ChorizoCularBellota.pdf",
+    "sourcePage": "https://www.jamonesgalvan.es/index.php?id=14&l=E&plant=1&proc=producto",
+    "facts": [
+      [
+        "Producto",
+        "Chorizo cular ibérico de bellota."
+      ],
+      [
+        "Elaboración",
+        "Embutido en tripa natural de cerdo y curado en secaderos naturales durante aproximadamente 70 días."
+      ],
+      [
+        "Alérgenos declarados",
+        "Leche y soja."
+      ]
+    ],
+    "ingredients": "Carne y grasa de cerdo ibérico, sal, ajo, dextrosa, LACTOSA, dextrina, PROTEÍNAS DE SOJA, PROTEÍNAS DE LECHE, especias, emulgentes (E-450i, E-450iii), antioxidantes (E-300, E-301, E-330), potenciador del sabor (E-621), conservantes (E-252, E-250) y tripa natural comestible."
+  },
+  "6738": {
+    "brand": "Galván",
+    "source": "https://www.jamonesgalvan.es/prop/documentos/0018-13.SalchichonBellota.pdf",
+    "sourcePage": "https://www.jamonesgalvan.es/index.php?id=13&l=E&plant=1&proc=producto",
+    "facts": [
+      [
+        "Producto",
+        "Salchichón cular ibérico de bellota."
+      ],
+      [
+        "Elaboración",
+        "Embutido en tripa natural de cerdo y curado en secaderos naturales durante aproximadamente 70 días."
+      ],
+      [
+        "Características",
+        "Sabor especiado con notas de pimienta."
+      ]
+    ],
+    "ingredients": "Carne y grasa de cerdo ibérico de bellota, pimienta, ajo, sal común, dextrina, proteína de cerdo, dextrosa, especias, antioxidante E-301, conservadores E-250 y E-252 y colorante E-120."
+  }
+}

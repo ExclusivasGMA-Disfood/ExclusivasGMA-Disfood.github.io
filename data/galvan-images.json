@@ -1,0 +1,41 @@
+{
+  "supplier": "Ibéricos de Bellota Galván",
+  "verifiedAt": "2026-09-29",
+  "processing": "Fotografías oficiales completas, comprimidas como WebP sin recortes ni retoques.",
+  "images": [
+    {
+      "reference": "6735",
+      "file": "images/products/6735.webp",
+      "role": "primary",
+      "sourcePage": "https://www.jamonesgalvan.es/index.php?id=3&l=E&plant=1&proc=producto",
+      "sourceImage": "https://www.jamonesgalvan.es/prop/prods/prod_00004.png"
+    },
+    {
+      "reference": "6736",
+      "file": "images/products/6736.webp",
+      "role": "primary",
+      "sourcePage": "https://www.jamonesgalvan.es/index.php?id=4&l=E&plant=1&proc=producto",
+      "sourceImage": "https://www.jamonesgalvan.es/prop/prods/prod_00005.png"
+    },
+    {
+      "reference": "6737",
+      "file": "images/products/6737.webp",
+      "role": "primary",
+      "sourcePage": "https://www.jamonesgalvan.es/index.php?id=14&l=E&plant=1&proc=producto",
+      "sourceImage": "https://www.jamonesgalvan.es/prop/prods/prod_00015.jpg"
+    },
+    {
+      "reference": "6738",
+      "file": "images/products/6738.webp",
+      "role": "primary",
+      "sourcePage": "https://www.jamonesgalvan.es/index.php?id=13&l=E&plant=1&proc=producto",
+      "sourceImage": "https://www.jamonesgalvan.es/prop/prods/prod_00112.png"
+    }
+  ],
+  "pending": [
+    {
+      "reference": "6805",
+      "reason": "GMA indica lomo de cebo de campo 50%, media pieza. La ficha y el PDF oficiales localizados corresponden a lomo de cebo 50%, sin confirmar cebo de campo ni media pieza. No se asignan."
+    }
+  ]
+}

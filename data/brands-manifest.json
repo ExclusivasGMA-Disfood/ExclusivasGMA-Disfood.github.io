@@ -1060,6 +1060,23 @@
         "6093"
       ],
       "processing": "Logo oficial vigente."
+    },
+    {
+      "id": "galvan",
+      "name": "Galván",
+      "source": "https://www.jamonesgalvan.es/",
+      "sourceImage": "https://www.jamonesgalvan.es/prop/pics/tgal_0038.png",
+      "original": "images/brands/originals/galvan.png",
+      "image": "images/brands/galvan.png",
+      "width": 193,
+      "height": 200,
+      "references": [
+        "6735",
+        "6736",
+        "6737",
+        "6738",
+        "6805"
+      ]
     }
   ]
 }
