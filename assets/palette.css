@@ -48,3 +48,19 @@ html body :focus-visible{outline-color:var(--brick-ember)}
 html body button.nav-btn.active{color:var(--night-bordeaux)!important}
 html body button.desktop-view-button.active{color:var(--brick-ember)!important}
 html body .desktop-panel-head h2{color:var(--night-bordeaux)}
+/* Familias y subfamilias: paleta exacta, sin degradados ni tintes mezclados. */
+html body .dept-header{background:var(--night-bordeaux)!important;color:var(--soft-linen)!important;box-shadow:none}
+html body .dept-header .chev{color:var(--soft-linen)!important}
+html body .group{background:var(--platinum)!important;border-color:var(--sand-dune)!important;box-shadow:none}
+html body .group-header{background:var(--platinum)!important;color:var(--night-bordeaux)!important;border-color:var(--sand-dune)!important;border-left-color:var(--night-bordeaux)!important}
+html body .group.open .group-header,html body .group-header:hover,html body .group-header:active{background:var(--sand-dune)!important;border-color:var(--sand-dune)!important;border-left-color:var(--night-bordeaux)!important}
+html body .group-title,html body .group-header .chev{color:var(--night-bordeaux)!important}
+html body .group-count{background:var(--soft-linen)!important;color:var(--night-bordeaux)!important}
+html body .sub-divider{background:var(--soft-linen)!important;color:var(--night-bordeaux)!important;border-color:var(--sand-dune)!important}
+html body .desktop-dept-button,html body .desktop-group-button{background:var(--platinum)!important;color:var(--night-bordeaux)!important;border-color:var(--sand-dune)!important}
+html body .desktop-dept.active>.desktop-dept-button,html body .desktop-dept-button:hover{background:var(--night-bordeaux)!important;color:var(--soft-linen)!important}
+html body .desktop-group-button.active,html body .desktop-group-button:hover{background:var(--sand-dune)!important;color:var(--night-bordeaux)!important;border-color:var(--night-bordeaux)!important}
+html body :is(.desktop-dept-button,.desktop-group-button) :is(span:last-child,small){color:inherit!important}
+html body .dept-header.open,html body .dept-header:active{background:var(--night-bordeaux)!important;color:var(--soft-linen)!important}
+html body .dept-header .dept-header-label,html body .dept-header.open .dept-header-label,
+html body .dept-header.open .chev,html body .dept-header::before{color:var(--soft-linen)!important}

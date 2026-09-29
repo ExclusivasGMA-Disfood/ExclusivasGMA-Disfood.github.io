@@ -122,3 +122,7 @@ Sand Dune corregido a #D2CFB6 (RGB 210,207,182). Nueva assets/palette.css común
 ## Gran Bologna: catálogo oficial 2026
 
 Actualizadas 16 fotos originales extraídas del PDF y 16 fichas verificadas; 962 y 604 reciben foto de producto. Fuentes por página/objeto y hash en data/gran-bologna-images.json; hechos en data/gran-bologna-info.json. Sustituidas 10 entradas antiguas, total 247 fichas contrastadas. Corregidos pato/Edam/cocción y origen Italiano; Soffi identificado como pasta sin relleno, conservando organización GMA. Fotos nativas del PDF con detalle limitado, sin generación ni base64. Ver docs/audits/2026-09-29/GRAN-BOLOGNA.md.
+
+## Familias: paleta plana estricta
+
+Petición posterior: eliminar los difuminados rojo/morado de familias y subfamilias. Capa común con burdeos/marfil para familias, platino para subfamilias cerradas y arena para abiertas/activas. Separadores, contadores y navegación usan valores exactos, sin mezclas ni degradados. Ver docs/audits/2026-09-29/FAMILIAS-PALETA-PLANA.md.
