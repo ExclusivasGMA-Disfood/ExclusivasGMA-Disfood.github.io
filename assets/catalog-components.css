@@ -151,3 +151,17 @@ html body .desktop-main{overflow:clip}
 .product-format-picker label{display:block;font-weight:600;margin-bottom:6px}
 .product-format-picker select{display:block;width:100%;max-width:100%;min-width:0;box-sizing:border-box;font:inherit;color:inherit;background:var(--paper,#fff);border:1px solid var(--line,#d8d3cc);border-radius:10px;padding:12px 10px;min-height:44px}
 .product-format-picker select:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+
+/* Ajuste sutil autorizado de Novedades y Selección GMA. */
+html body :is(#newDiscovery,#bestDiscovery) .discovery-scroll{grid-auto-columns:132px}
+html body :is(#newDiscovery,#bestDiscovery) .discovery-photo{aspect-ratio:1.16}
+html body :is(#newDiscovery,#bestDiscovery) .discovery-card-body{padding:6px 8px 7px}
+html body :is(#newDiscovery,#bestDiscovery) .discovery-name{overflow-wrap:normal;line-height:1.25;min-height:2.5em;max-height:2.5em}
+html body :is(#newDiscovery,#bestDiscovery) .discovery-ref{padding-right:0;min-height:0;line-height:1.25;margin-top:3px}
+@media(min-width:1000px), (orientation:landscape) and (min-width:640px) and (max-width:999px){
+ html body :is(#newDiscovery,#bestDiscovery) .discovery-photo{aspect-ratio:1.6}
+}
+@media(max-width:350px){
+ html body :is(#newDiscovery,#bestDiscovery) .discovery-scroll{grid-auto-columns:120px}
+}
+html body :is(#newDiscovery,#bestDiscovery) .discovery-add{top:8px;right:8px;bottom:auto}

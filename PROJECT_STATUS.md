@@ -74,3 +74,7 @@ El departamento pasa a Conservas de la Huerta. Dos familias: Huerta Nacional (To
 ## Bajas solicitadas: mozzarella y cheddar rallados
 
 Retiradas 6703 (mozzarella rallada 70/30 Disfood) y 6754 (cheddar rojo rallado). Quedan 999 referencias y 991 tarjetas; sin cambios de diseño. Se conserva el mapa histórico de IDs para no alterar selecciones guardadas. Ver docs/audits/2026-09-29/BAJAS-QUESOS.md.
+
+## Refinado autorizado de los carruseles destacados
+
+Novedades y Selección GMA reciben un ajuste discreto de proporciones y espacios. Sus 14 referencias tienen títulos breves específicos (discoveryName) y nombres completos revisados en español; unidades G/KG/ML según criterio del usuario. No extender esta geometría a las tarjetas del catálogo general. Registro: docs/audits/2026-09-29/CARRUSELES-REFINADOS.md.
