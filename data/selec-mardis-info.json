@@ -1,0 +1,157 @@
+{
+  "2135": {
+    "brand": "Selec Mardis",
+    "source": "https://www.selecmardis.com/alimentacion.pdf",
+    "sourcePage": 4,
+    "facts": [
+      [
+        "Producto",
+        "Sal negra en escamas de la gama Mardisal."
+      ],
+      [
+        "Presentación",
+        "Cubo de 750 g."
+      ]
+    ]
+  },
+  "2374": {
+    "brand": "Selec Mardis",
+    "source": "https://www.selecmardis.com/alimentacion.pdf",
+    "sourcePage": 4,
+    "facts": [
+      [
+        "Producto",
+        "Sal blanca en escamas de la gama Mardisal."
+      ],
+      [
+        "Presentación",
+        "Cubo de 1,5 kg."
+      ]
+    ]
+  },
+  "2151": {
+    "brand": "Selec Mardis",
+    "source": "https://www.selecmardis.com/pescados.pdf",
+    "sourcePage": 3,
+    "facts": [
+      [
+        "Producto",
+        "Atún en aceite de girasol."
+      ],
+      [
+        "Presentación",
+        "Bolsa de 1 kg."
+      ]
+    ]
+  },
+  "2762": {
+    "brand": "Selec Mardis",
+    "source": "https://www.selecmardis.com/alimentacion.pdf",
+    "sourcePage": 2,
+    "facts": [
+      [
+        "Producto",
+        "Aceite de oliva virgen extra."
+      ],
+      [
+        "Presentación",
+        "Garrafa de 5 litros."
+      ]
+    ]
+  },
+  "2665": {
+    "brand": "Selec Mardis",
+    "source": "https://www.selecmardis.com/alimentacion.pdf",
+    "sourcePage": 4,
+    "facts": [
+      [
+        "Producto",
+        "Harina especial para fritura de pescado."
+      ],
+      [
+        "Presentación",
+        "Bolsa de 5 kg."
+      ]
+    ]
+  },
+  "5722": {
+    "brand": "Selec Mardis",
+    "source": "https://www.selecmardis.com/alimentacion.pdf",
+    "sourcePage": 4,
+    "facts": [
+      [
+        "Producto",
+        "Pan rallado japonés tipo panko."
+      ]
+    ]
+  },
+  "6144": {
+    "brand": "Selec Mardis",
+    "source": "https://www.selecmardis.com/pescados.pdf",
+    "sourcePage": 3,
+    "facts": [
+      [
+        "Presentación",
+        "Gildas en cubo de 2 kg, con 80 unidades."
+      ]
+    ]
+  },
+  "6636": {
+    "brand": "Selec Mardis",
+    "source": "https://www.selecmardis.com/pescados.pdf",
+    "sourcePage": 3,
+    "facts": [
+      [
+        "Producto",
+        "Ventresca de atún claro en aceite de girasol."
+      ],
+      [
+        "Presentación",
+        "Conserva en lata."
+      ]
+    ]
+  },
+  "3676": {
+    "brand": "Selec Mardis",
+    "source": "https://www.selecmardis.com/vegetales.pdf",
+    "sourcePage": 3,
+    "facts": [
+      [
+        "Producto",
+        "Boletus (ceps) cortados en dados o tacos."
+      ],
+      [
+        "Conservación declarada",
+        "Producto congelado."
+      ]
+    ],
+    "image_note": "Fotografía de presentación del alimento del catálogo del proveedor. El formato de venta es el indicado en el nombre de esta referencia."
+  },
+  "6004": {
+    "brand": "Selec Mardis",
+    "source": "https://www.selecmardis.com/pescados.pdf",
+    "sourcePage": 2,
+    "facts": [
+      [
+        "Producto",
+        "Puntilla limpia sin pluma."
+      ]
+    ],
+    "image_note": "Fotografía de presentación del alimento del catálogo del proveedor. El formato de venta es el indicado en el nombre de esta referencia."
+  },
+  "5217": {
+    "brand": "Selec Mardis",
+    "source": "https://www.selecmardis.com/vegetales.pdf",
+    "sourcePage": 2,
+    "facts": [
+      [
+        "Producto",
+        "Alcachofas con tallo en aceite de oliva virgen."
+      ],
+      [
+        "Presentación",
+        "Tarro de cristal."
+      ]
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "supplier": "Selec Mardis",
+  "verifiedAt": "2026-09-29",
+  "processing": "Extracción directa de las imágenes raster incrustadas en los PDF oficiales; conversión a WebP sin recortes ni alteración del alimento.",
+  "images": [
+    {
+      "reference": "3676",
+      "file": "images/products/3676.webp",
+      "sourceImage": "https://www.selecmardis.com/vegetales.pdf",
+      "pdfPage": 3,
+      "pdfImageXref": 35,
+      "role": "primary"
+    },
+    {
+      "reference": "6004",
+      "file": "images/products/6004.webp",
+      "sourceImage": "https://www.selecmardis.com/pescados.pdf",
+      "pdfPage": 2,
+      "pdfImageXref": 24,
+      "role": "primary"
+    },
+    {
+      "reference": "5217",
+      "file": "images/products/5217.webp",
+      "sourceImage": "https://www.selecmardis.com/vegetales.pdf",
+      "pdfPage": 2,
+      "pdfImageXref": 26,
+      "role": "primary"
+    }
+  ],
+  "pending": [
+    {
+      "reference": "5907",
+      "reason": "Capellán en tarrina de 1 kg no localizado en los catálogos revisados."
+    },
+    {
+      "reference": "6787",
+      "reason": "Gilda de pulpo de 36 unidades no localizada; las gildas del PDF son otra variante."
+    },
+    {
+      "reference": "3302",
+      "reason": "Bacalao Islandia en tarrina de 1 kg: no se ha confirmado equivalencia con las variantes del PDF."
+    }
+  ],
+  "logo": "El archivo oficial descargado coincide con el original existente; se conserva.",
+  "formatNotes": {
+    "3676": "El PDF muestra una presentación del alimento para bolsa de 2,5 kg; GMA vende 1 kg. Se conserva el formato GMA, sin mostrar el envase de otra medida.",
+    "6004": "El PDF indica bolsa de 500 g; GMA vende 450 g. Fotografía sin envase, formato GMA intacto.",
+    "5217": "Foto de alcachofa con tallo en aceite, tarro de medio galón. La denominación comercial como alcachofa confitada medio galón está corroborada en el catálogo del distribuidor Alvarez Catalunya; no se altera el nombre ni el formato de GMA."
+  },
+  "corroboration": [
+    "https://www.alvarezcat.com/media/attachments/2023/05/16/catalogo.pdf"
+  ]
+}
