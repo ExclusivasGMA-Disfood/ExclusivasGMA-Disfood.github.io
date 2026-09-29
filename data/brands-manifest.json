@@ -871,6 +871,31 @@
         "6534",
         "6628"
       ]
+    },
+    {
+      "id": "cecinas-pablo",
+      "name": "Cecinas Pablo",
+      "source": "https://astorgourmet.es/es/cecina/media-pieza-de-cecina-de-wagyu-251",
+      "sourceImage": "https://astorgourmet.es/img/m/3-small_default.jpg",
+      "original": "images/brands/originals/cecinas-pablo.jpg",
+      "image": "images/brands/cecinas-pablo.jpg",
+      "width": 98,
+      "height": 127,
+      "references": [
+        "6790",
+        "1966",
+        "6107",
+        "2522",
+        "6071",
+        "5122",
+        "5177",
+        "5178",
+        "2493",
+        "2494",
+        "4964",
+        "1976",
+        "1977"
+      ]
     }
   ]
 }

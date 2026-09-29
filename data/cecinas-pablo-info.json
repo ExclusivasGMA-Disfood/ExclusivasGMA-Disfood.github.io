@@ -1,0 +1,124 @@
+{
+  "1966": {
+    "brand": "Cecinas Pablo",
+    "source": "https://cecinaspablo.com/producto/tapa/",
+    "facts": [
+      [
+        "Producto",
+        "Cecina de vacuno; corte de tapa."
+      ],
+      [
+        "Elaboración",
+        "Salazón tradicional, secado, ligero ahumado con leña de roble o encina y maduración en bodega."
+      ]
+    ]
+  },
+  "2522": {
+    "brand": "Cecinas Pablo",
+    "source": "https://cecinaspablo.com/producto/media-tapa/",
+    "facts": [
+      [
+        "Producto",
+        "Cecina de vacuno; corte de tapa."
+      ],
+      [
+        "Elaboración",
+        "Salazón tradicional, secado, ligero ahumado con leña de roble o encina y maduración en bodega."
+      ],
+      [
+        "Presentación",
+        "Media pieza envasada al vacío."
+      ]
+    ]
+  },
+  "6071": {
+    "brand": "Cecinas Pablo",
+    "source": "https://cecinaspablo.com/producto/media-pieza-cecina-wagyu/",
+    "facts": [
+      [
+        "Producto",
+        "Cecina de vacuno de raza Wagyu."
+      ],
+      [
+        "Presentación",
+        "Media pieza."
+      ],
+      [
+        "Características",
+        "Grasa entreverada y textura suave."
+      ]
+    ]
+  },
+  "5177": {
+    "brand": "Cecinas Pablo",
+    "source": "https://cecinaspablo.com/producto/chorizo-leon-dulce-picante/",
+    "facts": [
+      [
+        "Variedad",
+        "Dulce"
+      ],
+      [
+        "Elaboración",
+        "Carne de cerdo en tripa natural; ligero ahumado con leña de roble o encina."
+      ],
+      [
+        "Presentación",
+        "Pieza individual envasada al vacío."
+      ]
+    ]
+  },
+  "5178": {
+    "brand": "Cecinas Pablo",
+    "source": "https://cecinaspablo.com/producto/chorizo-leon-dulce-picante/",
+    "facts": [
+      [
+        "Variedad",
+        "Picante"
+      ],
+      [
+        "Elaboración",
+        "Carne de cerdo en tripa natural; ligero ahumado con leña de roble o encina."
+      ],
+      [
+        "Presentación",
+        "Pieza individual envasada al vacío."
+      ]
+    ]
+  },
+  "5122": {
+    "brand": "Cecinas Pablo",
+    "source": "https://cecinaspablo.com/producto/crema-cecina-vacuno/",
+    "facts": [
+      [
+        "Producto",
+        "Crema de cecina de vacuno para untar."
+      ],
+      [
+        "Uso recomendado",
+        "Tostas, sándwiches, rellenos y acompañamientos."
+      ]
+    ]
+  },
+  "4964": {
+    "brand": "Cecinas Pablo",
+    "source": "https://cecinaspablo.com/producto/pastrami/",
+    "facts": [
+      [
+        "Producto",
+        "Carne de vacuno curada y cocida."
+      ],
+      [
+        "Elaboración",
+        "Piezas enteras curadas, recubiertas de especias, horneadas lentamente y envasadas al vacío."
+      ],
+      [
+        "Preparación",
+        "Calentar antes de consumir, también en sándwich o bocadillo."
+      ],
+      [
+        "Acompañamientos",
+        "Queso, mayonesa, pepinillos o mostaza."
+      ]
+    ]
+  }
+}

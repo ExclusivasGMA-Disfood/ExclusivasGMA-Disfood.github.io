@@ -1,0 +1,41 @@
+{
+  "supplier": "Cecinas Pablo",
+  "verifiedAt": "2026-09-29T05:05:03.403893+00:00",
+  "processing": "Compresión y reducción sin recortes ni retoques del producto.",
+  "images": [
+    {
+      "reference": "6071",
+      "file": "images/products/6071.webp",
+      "role": "primary",
+      "sourcePage": "https://astorgourmet.es/es/cecina/media-pieza-de-cecina-de-wagyu-251",
+      "sourceImage": "https://astorgourmet.es/912-thickbox_default/pieza-de-cecina-de-wagyu-12-kg-aprox.jpg",
+      "note": "Tienda enlazada desde la ficha oficial del fabricante; presentación individual. Peso variable orientativo; se conserva el formato del catálogo GMA."
+    },
+    {
+      "reference": "5178",
+      "file": "images/products/5178.webp",
+      "role": "primary",
+      "sourcePage": "https://astorgourmet.es/es/embutidos/chorizo-de-leon-vacio-indiv-picante-470-grs-aprox-34",
+      "sourceImage": "https://astorgourmet.es/837-thickbox_default/chorizo-de-leon-vacio-indiv-picante-470-grs-aprox.jpg",
+      "note": "Tienda enlazada desde la ficha oficial del fabricante; presentación individual. Peso variable orientativo; se conserva el formato del catálogo GMA."
+    }
+  ],
+  "pending": [
+    {
+      "reference": "6790",
+      "reason": "No se ha localizado una foto identificada expresamente como Angus."
+    },
+    {
+      "reference": "6107",
+      "reason": "Selección Especial no confirma expresamente buey; no se asigna una foto genérica de vacuno."
+    },
+    {
+      "reference": "1976",
+      "reason": "La fuente oficial documenta bolsas de 4 kg; el catálogo GMA indica 3 kg."
+    },
+    {
+      "reference": "1977",
+      "reason": "La fuente oficial documenta bolsas de 4 kg; el catálogo GMA indica 3 kg."
+    }
+  ]
+}

@@ -12,6 +12,7 @@ const sources = [
   'data/la-finca-info.json',
   'data/marzo-info.json',
   'data/avance-import-info.json',
+  'data/cecinas-pablo-info.json',
 ];
 const outputPath = join(root, 'data/product-specs.js');
 const specs = {};
