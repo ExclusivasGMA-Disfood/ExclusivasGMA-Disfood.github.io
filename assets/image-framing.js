@@ -1,8 +1,8 @@
-/* Individually reviewed, centred framing of original square photographs.
+/* Individually reviewed, centred framing of original photographs.
    Never changes image files, product details, or the dimensions of a card. */
 (async()=>{
   try{
-    const response=await fetch('data/image-framing.json?v=20260928.4');
+    const response=await fetch('data/image-framing.json?v=20260929-tomate-1');
     if(!response.ok)return;
     const data=await response.json();
     const frames='.item-photo,.discovery-photo,.desktop-product-photo,.product-visual';
@@ -19,15 +19,16 @@
       const source=CSS.escape(entry.source);
       rules.push(`html body :is(${frames})>img:is([src="${source}"],[src^="${source}?"]){padding:0!important;transform:scale(${scale})!important;transform-origin:center!important;object-fit:contain!important}`);
     }
-    // Carousel-only framing approved per photograph; source files stay unchanged.
-    const carouselRules=new Map();
-    for(const entry of data.carousels||[]){
+    // Separate scopes for approved carousel photographs and Tomate Nacional.
+    // Source files stay unchanged; each content box was reviewed individually.
+    const carouselRules=new Map(),catalogRules=new Map();
+    for(const entry of [...(data.carousels||[]),...(data.catalog||[])]){
       const [w,h]=entry.sourceSize||[],[x,y,right,bottom]=entry.contentBox||[];
       if(!/^images\/products\/[\w.-]+$/.test(entry.source)||!(w>0&&h>0&&x>=0&&y>=0&&right<=w&&bottom<=h&&right>x&&bottom>y)||!['cover','contain'].includes(entry.fit))continue;
-      carouselRules.set(entry.source,entry);
+      (data.catalog?.includes(entry)?catalogRules:carouselRules).set(entry.source,entry);
     }
-    if(carouselRules.size){
-      rules.push('html body :is(#newDiscovery,#bestDiscovery) .discovery-photo[data-framing]>img{inset:auto!important;left:var(--frame-left)!important;top:var(--frame-top)!important;width:var(--frame-width)!important;height:var(--frame-height)!important;max-width:none!important;max-height:none!important;padding:0!important;transform:none!important;object-fit:contain!important}');
+    if(carouselRules.size||catalogRules.size){
+      rules.push('html body :is(.item-photo,.discovery-photo,.desktop-product-photo,.product-visual)[data-framing]{overflow:hidden}html body :is(.item-photo,.discovery-photo,.desktop-product-photo,.product-visual)[data-framing]>img{inset:auto!important;left:var(--frame-left)!important;top:var(--frame-top)!important;width:var(--frame-width)!important;height:var(--frame-height)!important;max-width:none!important;max-height:none!important;padding:0!important;transform:none!important;object-fit:contain!important}');
       const tracked=new Map();
       function resizeFrame(frame){
         const entry=tracked.get(frame),img=frame.querySelector('img');
@@ -46,16 +47,18 @@
       const observer=typeof ResizeObserver==='function'?new ResizeObserver(entries=>entries.forEach(e=>resizeFrame(e.target))):null;
       function scan(){
         for(const [frame] of tracked)if(!frame.isConnected){observer?.unobserve(frame);tracked.delete(frame);}
-        document.querySelectorAll('#newDiscovery .discovery-photo,#bestDiscovery .discovery-photo').forEach(frame=>{
+        document.querySelectorAll(frames).forEach(frame=>{
           const img=frame.querySelector('img');if(!img)return;
           const source=img.getAttribute('src')?.split('?')[0];
-          const entry=carouselRules.get(source);if(!entry)return;
-          if(!tracked.has(frame)){tracked.set(frame,entry);observer?.observe(frame);}
+          const entry=catalogRules.get(source)||(frame.closest('#newDiscovery,#bestDiscovery')&&carouselRules.get(source));
+          if(!entry){if(tracked.has(frame)){observer?.unobserve(frame);tracked.delete(frame);delete frame.dataset.framing;}return;}
+          if(!tracked.has(frame))observer?.observe(frame);
+          tracked.set(frame,entry);
           resizeFrame(frame);
         });
       }
       const changes=new MutationObserver(scan);
-      for(const id of ['newDiscovery','bestDiscovery']){const root=document.getElementById(id);if(root)changes.observe(root,{childList:true,subtree:true});}
+      changes.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['src']});
       window.addEventListener('resize',()=>tracked.forEach((_,frame)=>resizeFrame(frame)),{passive:true});
       scan();
     }

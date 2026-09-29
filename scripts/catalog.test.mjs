@@ -29,16 +29,16 @@ for(const page of ['index.html','nuevo/index.html']){
     const d=w.document;
     assert.equal(d.querySelectorAll('#newDiscovery .discovery-card').length,6);
     assert.equal(d.querySelectorAll('#bestDiscovery .discovery-card').length,8);
-    assert.match(d.querySelector('#desktopResultMeta').textContent,/994/);
+    assert.match(d.querySelector('#desktopResultMeta').textContent,/993/);
     assert.equal(d.querySelectorAll('.desktop-product-card').length,72);
     const button=d.querySelector('.desktop-dept-button');const name=button.dataset.desktopDept;
     button.click();assert.equal(d.querySelector(`[data-desktop-dept="${name}"]`).getAttribute('aria-expanded'),'false');
     d.querySelector(`[data-desktop-dept="${name}"]`).click();assert.equal(d.querySelector(`[data-desktop-dept="${name}"]`).getAttribute('aria-expanded'),'true');
-    d.querySelector('#desktopExpandAll').click();assert.match(d.querySelector('#desktopResultMeta').textContent,/994/);
+    d.querySelector('#desktopExpandAll').click();assert.match(d.querySelector('#desktopResultMeta').textContent,/993/);
     d.querySelector('.desktop-more-button').click();assert.equal(d.querySelectorAll('.desktop-product-card').length,144);
     while(d.querySelector('.desktop-more-button'))d.querySelector('.desktop-more-button').click();
-    assert.equal(d.querySelectorAll('.desktop-product-card').length,994);
-    assert.equal(new Set([...d.querySelectorAll('.desktop-product-card')].map(e=>e.dataset.id)).size,994);
+    assert.equal(d.querySelectorAll('.desktop-product-card').length,993);
+    assert.equal(new Set([...d.querySelectorAll('.desktop-product-card')].map(e=>e.dataset.id)).size,993);
     d.querySelector('#desktopExpandAll').click();assert.equal(d.querySelector('#desktopExpandAll').getAttribute('aria-expanded'),'false');
     d.querySelector('#desktopExpandAll').click();assert.equal(d.querySelector('#desktopExpandAll').getAttribute('aria-expanded'),'true');
     d.querySelector('.desktop-group-button').click();const size=d.querySelectorAll('.desktop-product-card').length;
@@ -179,6 +179,29 @@ for(const page of ['index.html','nuevo/index.html']){
    const pdf=Buffer.from(pdfBytes).toString('latin1');
    assert.match(pdf,/1988/);assert.match(pdf,/1989/);assert.doesNotMatch(pdf,/1900/);
 
+  }finally{await w.happyDOM.close();}
+ });
+}
+
+for(const page of ['index.html','nuevo/index.html']){
+ test(`${page}: Dimardis agrupado con foto preferida y búsqueda exacta`,async()=>{
+  const w=await app(page);try{
+   const d=w.document;
+   w.testFilter('tomate dimardis');
+   const cards=[...d.querySelectorAll('.desktop-product-card')];
+   assert.equal(cards.length,1);
+   assert.match(cards[0].textContent,/2 formatos/);
+   assert.match(cards[0].querySelector('img').getAttribute('src'),/2631\.jpg/);
+   cards[0].querySelector('.desktop-add').click();
+   assert.equal(d.querySelector('#productFormatSelect').options.length,2);
+   assert.match(d.querySelector('.product-detail-ref').textContent,/2631/);
+   const small=[...d.querySelector('#productFormatSelect').options].find(o=>o.textContent.includes('4830'));
+   const select=d.querySelector('#productFormatSelect');select.value=small.value;select.dispatchEvent(new w.Event('change'));
+   assert.match(d.querySelector('.product-detail-ref').textContent,/4830/);
+   d.querySelector('#productClose').click();
+   w.testFilter('4830');d.querySelector('.desktop-product-open').click();
+   assert.match(d.querySelector('.product-detail-ref').textContent,/4830/);
+   assert.equal(w.testData.reduce((n,g)=>n+g.items.length,0),1001);
   }finally{await w.happyDOM.close();}
  });
 }

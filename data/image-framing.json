@@ -313,5 +313,247 @@
       "innerMargin": 0.08,
       "reason": "Producto completo sobre blanco. Encuadre individual revisado para equilibrar escala y centrado; original intacto."
     }
+  ],
+  "catalog": [
+    {
+      "ref": "1563",
+      "source": "images/products/1563.png",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        120,
+        17,
+        480,
+        599
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "2454",
+      "source": "images/products/2454.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        190,
+        214,
+        403,
+        574
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "2455",
+      "source": "images/products/2455.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        190,
+        214,
+        403,
+        574
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "2033",
+      "source": "images/products/2033.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        190,
+        214,
+        403,
+        574
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "4830",
+      "source": "images/products/4830.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        157,
+        155,
+        438,
+        477
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "2631",
+      "source": "images/products/2631.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        79,
+        51,
+        515,
+        547
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "1989",
+      "source": "images/products/1989.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        198,
+        128,
+        391,
+        575
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "1988",
+      "source": "images/products/1988.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        198,
+        128,
+        391,
+        575
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "993",
+      "source": "images/products/993.png",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        124,
+        26,
+        477,
+        596
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "1997",
+      "source": "images/products/1997.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        154,
+        214,
+        432,
+        573
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "1900",
+      "source": "images/products/1900.webp",
+      "sourceSize": [
+        800,
+        1200
+      ],
+      "contentBox": [
+        144,
+        300,
+        659,
+        914
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "1996",
+      "source": "images/products/1996-oficial-marzo.webp",
+      "sourceSize": [
+        800,
+        1200
+      ],
+      "contentBox": [
+        180,
+        427,
+        607,
+        1147
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    }
   ]
 }

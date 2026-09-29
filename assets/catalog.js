@@ -493,7 +493,8 @@ function collapseProductFormats(entries){
     else {
       const index=positions.get(key);
       // Prefer an available photo, but only among formats matching the active filters.
-      if(!imageUrlFor(grouped[index].it)&&imageUrlFor(entry.it))grouped[index]=entry;
+      const preferred=productFormatGroup(entry.it)?.preferredRef;
+      if(String(entry.it.ref)===preferred||(!imageUrlFor(grouped[index].it)&&imageUrlFor(entry.it)))grouped[index]=entry;
     }
   }
   return grouped;

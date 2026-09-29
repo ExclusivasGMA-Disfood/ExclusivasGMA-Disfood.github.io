@@ -62,3 +62,7 @@ Se sustituyen exclusivamente en Novedades la almendra 6744 por gilda triple de b
 ## Piloto autorizado: formatos de tomate Marzo
 
 Diez referencias de tomate frito, triturado y entero de Marzo se muestran en tres tarjetas, con selector de formato dentro de la ficha. Mapa explícito en data/product-formats.js; no extenderlo a otras marcas/productos sin petición. Mermelada separada. La búsqueda se aplica antes de agrupar y una referencia exacta abre su formato; seleccionados y PDF mantienen cada SKU/cantidad independiente. Permanecen 1.001 referencias y 994 tarjetas en navegación sin filtros. Registro y validación: docs/audits/2026-09-29/MARZO-FORMATOS.md.
+
+## BEHER y Tomate Nacional: ampliación autorizada
+
+BEHER muestra solo su identidad principal derecha mediante una ventana CSS sobre el original oficial. Dimardis 4830 y 2631 comparten una tarjeta con dos formatos y foto preferida 2631. Marzo frito y triturado prefieren 1988 y 1997 sobre blanco. Se conservan 1.001 referencias y se muestran 993 tarjetas sin filtros. Las 12 fotos disponibles de Tomate Nacional tienen encuadres manuales contain, centrados y con margen del 8 %, configurados en data/image-framing.json. No se modifica ningún archivo de fotografía ni se añaden reglas automáticas para otras familias. Ver docs/audits/2026-09-29/BEHER-TOMATE-NACIONAL.md.
