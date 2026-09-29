@@ -177,7 +177,7 @@ for(const page of ['index.html','nuevo/index.html']){
    Capture.API=Real.API;w.jspdf.jsPDF=Capture;
    await w.testGeneratePdf();
    const pdf=Buffer.from(pdfBytes).toString('latin1');
-   assert.match(pdf,/1988/);assert.match(pdf,/1989/);assert.doesNotMatch(pdf,/1900/);
+   assert.match(pdf,/Ref\. 1988\b/);assert.match(pdf,/Ref\. 1989\b/);assert.doesNotMatch(pdf,/Ref\. 1900\b/);
 
   }finally{await w.happyDOM.close();}
  });
