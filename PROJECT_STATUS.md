@@ -3,7 +3,7 @@
 ## Identidad y alcance
 
 - Catálogo oficial: `/`. Presentación alternativa: `/nuevo/` (sin indexación).
-- 1.001 referencias; 17 departamentos y 73 familias. No publicar precios.
+- 999 referencias; 17 departamentos y 73 familias. No publicar precios.
 - Geist para interfaz y lectura; Merriweather para títulos y nombres de producto, tal como estaba antes de la auditoría.
 - Referencia estética anterior a Crego: `82f3ca8d013bbd444bdb13b8c89641194098f933`.
 - Mantener encabezado, colores y organización; no mezclar una importación de proveedor con un rediseño.
@@ -70,3 +70,7 @@ BEHER muestra solo su identidad principal derecha mediante una ventana CSS sobre
 ## Organización de la Huerta
 
 El departamento pasa a Conservas de la Huerta. Dos familias: Huerta Nacional (Tomate Nacional, Verduras Selectas, Verduras y Frutas en Conserva, Legumbres) y Huerta Italia (Conserva Italiana, Tomate Italia). Lentejas, garbanzos y alubias se reúnen en Legumbres. Se conservan las 1.001 referencias, la selección por referencia y las agrupaciones de formatos. Registro: docs/audits/2026-09-29/HUERTA-ORGANIZACION.md.
+
+## Bajas solicitadas: mozzarella y cheddar rallados
+
+Retiradas 6703 (mozzarella rallada 70/30 Disfood) y 6754 (cheddar rojo rallado). Quedan 999 referencias y 991 tarjetas; sin cambios de diseño. Se conserva el mapa histórico de IDs para no alterar selecciones guardadas. Ver docs/audits/2026-09-29/BAJAS-QUESOS.md.
