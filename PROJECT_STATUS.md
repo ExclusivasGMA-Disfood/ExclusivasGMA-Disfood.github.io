@@ -106,3 +106,7 @@ En horizontal/escritorio, la cabecera del catálogo con las vistas y Desplegar/R
 ## Criterio vigente de logos: juntos, sin familias visibles
 
 La petición posterior elimina los seis bloques/títulos: una cuadrícula continua con el mismo orden editorial. data/brand-groups.json sirve solo para ordenar; render-brand-groups.mjs aplana la lista. assets/brands.js activa entrada suave de 380 ms y 6 px una vez por logo, respetando movimiento reducido y sin ocultarlos si no hay JS. Sustituye la presentación descrita en el apartado anterior. Ver docs/audits/2026-09-29/LOGOS-CONTINUOS-Y-EFECTO.md.
+
+## Entrada de logos reforzada
+
+El usuario no apreciaba el efecto: pasa a 750 ms, 18 px y escalonado de 110 ms por columna. Espera imagen decodificada y activa por encima de la navegación inferior. Sin cambios de tamaños ni orden; respeta movimiento reducido. Ver docs/audits/2026-09-29/LOGOS-EFECTO-VISIBLE.md.
