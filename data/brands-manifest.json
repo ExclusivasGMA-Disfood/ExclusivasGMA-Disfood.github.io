@@ -992,6 +992,72 @@
         "2798",
         "2799"
       ]
+    },
+    {
+      "id": "la-piuma",
+      "name": "La Piuma",
+      "source": "https://agriflegrea.com/pdf/Terrae_2024.pdf#page=28",
+      "sourceImage": "https://agriflegrea.com/pdf/Terrae_2024.pdf#page=28",
+      "original": "images/brands/originals/la-piuma.png",
+      "image": "images/brands/la-piuma.png",
+      "width": 194,
+      "height": 200,
+      "references": [
+        "4810",
+        "5268",
+        "5269",
+        "6748",
+        "6781"
+      ],
+      "processing": "Logo vectorial extraído de la página 28, sin fotografía de fondo; convertido a monocromo."
+    },
+    {
+      "id": "poggio-del-sasso",
+      "name": "Poggio del Sasso",
+      "source": "https://www.caviro.it/corporate/extrarepository/LDV_ITA.pdf#page=19",
+      "sourceImage": "https://www.caviro.it/corporate/extrarepository/LDV_ITA.pdf#page=19",
+      "original": "images/brands/originals/poggio-del-sasso.png",
+      "image": "images/brands/poggio-del-sasso.png",
+      "width": 400,
+      "height": 54,
+      "references": [
+        "5849",
+        "5850"
+      ],
+      "processing": "Imagen original del logo extraída con su máscara de transparencia de la página 19."
+    },
+    {
+      "id": "toso",
+      "name": "Toso",
+      "source": "https://toso.it/wp-content/uploads/2021/07/logo-toso.png",
+      "sourceImage": "https://toso.it/wp-content/uploads/2021/07/logo-toso.png",
+      "original": "images/brands/originals/toso.png",
+      "image": "images/brands/toso.png",
+      "width": 400,
+      "height": 185,
+      "references": [
+        "54",
+        "452",
+        "457",
+        "1570",
+        "6608"
+      ],
+      "processing": "Logo oficial."
+    },
+    {
+      "id": "montalto",
+      "name": "Barone Montalto",
+      "source": "https://www.baronemontalto.wine/wp-content/uploads/sites/5/2026/06/logo-bm.svg",
+      "sourceImage": "https://www.baronemontalto.wine/wp-content/uploads/sites/5/2026/06/logo-bm.svg",
+      "original": "images/brands/originals/montalto.svg",
+      "image": "images/brands/montalto.png",
+      "width": 274,
+      "height": 200,
+      "references": [
+        "5929",
+        "6093"
+      ],
+      "processing": "Logo oficial vigente."
     }
   ]
 }
