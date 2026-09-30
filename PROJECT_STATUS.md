@@ -154,3 +154,7 @@ Retirada 6617 del catálogo activo; 6715 recibe la foto aportada editada sobre b
 ## Carga de la principal — 30 septiembre 2026
 
 Principal con paquetes generados (5 JS, 1 CSS local) y variantes ligeras para las fotos de Novedades/Selección GMA. Diseño y secundaria conservados. Ejecutar `npm run build:main` después de cambiar los JS/CSS fuente, curación o fotos destacadas; `npm test` comprueba que lo generado esté al día. Fuentes compartidas siguen siendo editables; no editar paquetes minificados a mano. Registro: docs/audits/2026-09-30/CARGA-PRINCIPAL.md.
+
+## Estabilidad y carga inicial — principal
+
+Segunda optimización tras PageSpeed: contenido inicial prerenderizado usando los renderizadores existentes, manifiesto inicial de imágenes en paquete principal, CSS existente incluido en HTML, fuentes locales y alternativas WebP de logos. Sin cambios de diseño o secundaria. `npm run build:main` actualiza todo tras cambios de fuentes/datos. Ver docs/audits/2026-09-30/ESTABILIDAD-Y-CARGA.md. 23 pruebas locales correctas; medir la publicación para valorar rendimiento real de laboratorio.

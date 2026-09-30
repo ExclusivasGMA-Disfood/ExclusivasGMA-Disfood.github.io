@@ -279,3 +279,18 @@ test('principal: fotos ligeras en escaparates y originales en ficha',async()=>{
   assert.equal(detail.hasAttribute('srcset'),false);
  }finally{await w.happyDOM.close();}
 });
+
+test('principal: contenido inicial estable antes de ejecutar JavaScript',async()=>{
+ const w=new Window({settings:{disableJavaScriptEvaluation:true,disableJavaScriptFileLoading:true,disableCSSFileLoading:true}});
+ try{
+  w.document.write(fs.readFileSync('index.html','utf8'));
+  const d=w.document;
+  assert.equal(d.querySelectorAll('.discovery-card').length,14);
+  assert.equal(d.querySelectorAll('#groups > .dept-header').length,17);
+  assert.equal(d.querySelectorAll('.desktop-product-card').length,72);
+  assert.equal(d.querySelectorAll('link[href*="fonts.googleapis.com"]').length,0);
+  assert.ok(d.querySelector('#main-critical-styles').textContent.includes("font-family: 'Geist'"));
+  const ids=[...d.querySelectorAll('[id]')].map(n=>n.id);assert.equal(ids.length,new Set(ids).size);
+  for(const img of d.querySelectorAll('img[srcset*="images/optimized/"]'))assert.ok(fs.existsSync(img.getAttribute('srcset')));
+ }finally{await w.happyDOM.close();}
+});

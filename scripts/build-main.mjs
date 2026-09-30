@@ -4,12 +4,13 @@ import vm from 'node:vm';
 import {createHash} from 'node:crypto';
 import {minify} from 'terser';
 import sharp from 'sharp';
+import {prerender} from './prerender-main.mjs';
 const check=process.argv.includes('--check');
 const read=p=>fs.readFile(p,'utf8');
 const hash=b=>createHash('sha256').update(b).digest('hex').slice(0,12);
 const runtime=['runtime','pdf-loader','keyboard'];
 const app=['catalog','navigation-position','views','selection-review','session','resize','polish','discovery','image-framing','topbar','desktop','brands'];
-const styles=['catalog-base','catalog-components','brands','palette'];
+const styles=['fonts-local','catalog-base','catalog-components','brands','palette'];
 const outputs=new Map();
 const catalog=await read('data/catalog-data.js');
 const context={window:{}};vm.runInNewContext(catalog,context);
@@ -39,6 +40,9 @@ async function bundle(names,discovery=false){
  if(discovery)chunks.push(helper);
  for(const name of names){
   let source=await read(`assets/${name}.js`);
+  if(discovery&&name==='catalog'){
+   source=source.replace('const IMAGE_MANIFEST = Object.create(null);', 'const IMAGE_MANIFEST = '+JSON.stringify(manifest)+';');
+  }
   if(discovery&&name==='discovery'){
    const needle='src="${imageUrl}" alt=""';
    if(source.split(needle).length!==2)throw new Error('Discovery template changed; review image attributes');
@@ -53,10 +57,27 @@ outputs.set('assets/main-runtime.min.js',await bundle(runtime));
 outputs.set('assets/main-app.min.js',await bundle(app,true));
 outputs.set('assets/main-styles.css',(await Promise.all(styles.map(n=>read(`assets/${n}.css`)))).join('\n'));
 let html=await read('index.html');
+// Retain source paths in data attributes so regeneration remains deterministic.
+const logoTags=[...html.matchAll(/<img\b[^>]*src="images\/(?:brands\/[^"]+|gma-logo-catalogo\.png)"[^>]*>/g)];
+for(const [tag] of logoTags){
+ const source=tag.match(/src="([^"]+)/)[1];
+ const bytes=await fs.readFile(source);
+ const buffer=await sharp(bytes).webp({quality:90,smartSubsample:true}).toBuffer();
+ if(buffer.length>=bytes.length){html=html.replace(tag,tag.replace(/ srcset="[^"]*"/g,''));continue;}
+ const target='images/optimized/'+hash(bytes)+'.webp';outputs.set(target,buffer);
+ const replacement=tag.replace(/ srcset="[^"]*"/g,'').replace(/src="[^"]+"/, 'src="'+source+'" srcset="'+target+'"');
+ html=html.replace(tag,replacement);
+}
+// Self-host the exact font families; preload the two principal faces.
+html=html.replace(/<link[^>]+(?:fonts\.googleapis\.com|fonts\.gstatic\.com)[^>]*>\n?/g,'');
+const fontPreloads='<link rel="preload" as="font" href="assets/fonts/geist-400.woff2" type="font/woff2" crossorigin>\n<link rel="preload" as="font" href="assets/fonts/merriweather-700.woff2" type="font/woff2" crossorigin>';
+if(!html.includes('href="assets/fonts/geist-400.woff2"'))html=html.replace('</head>',fontPreloads+'\n</head>');
 // Works both on the initial source HTML and subsequent builds.
 const localCss=/<link rel="stylesheet" href="assets\/(?:catalog-base|catalog-components|brands|palette|main-styles)\.css[^"\n]*">/g;
+const inlineStyles='<style id="main-critical-styles">'+outputs.get('assets/main-styles.css').replaceAll('url(fonts/','url(assets/fonts/')+'</style>';
+html=html.replace(/<style id="main-critical-styles">[\s\S]*?<\/style>/,()=>inlineStyles);
 let first=true;
-html=html.replace(localCss,()=>{if(!first)return '';first=false;return `<link rel="stylesheet" href="assets/main-styles.css?v=${hash(outputs.get('assets/main-styles.css'))}">`;});
+html=html.replace(localCss,()=>{if(!first)return '';first=false;return inlineStyles;});
 const group=(names,target)=>{
  const pattern=new RegExp('<script src="assets/(?:'+names.join('|')+'|'+target.replaceAll('.','\\.')+')\\.js[^"\\n]*"></script>','g');
  let seen=false;
@@ -64,6 +85,7 @@ const group=(names,target)=>{
  if(!seen)throw new Error(`Missing script group ${target}`);
 };
 group(runtime,'main-runtime.min');group(app,'main-app.min');
+html=await prerender(html,outputs);
 outputs.set('index.html',html);
 for(const [path,content] of outputs){
  const data=Buffer.from(content);
