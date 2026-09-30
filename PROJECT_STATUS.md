@@ -164,3 +164,7 @@ Medición posterior: móvil 90–96 (LCP 2,7–3,6 s, CLS 0–0,001); escritorio
 ## Familias comerciales — principal
 
 Aplicada organización de 16 familias a las 998 referencias mediante data/main-taxonomy.json y data/catalog-main.js generado. Pasta incluye canelones y lasañas elaborados; Navidad es selección transversal. /nuevo/ y fuentes de datos originales conservadas. 25 pruebas correctas, incluida recuperación de selección anterior. Registro: docs/audits/2026-09-30/FAMILIAS-COMERCIALES.md.
+
+## Saltos al abrir familias
+
+Principal: conserva posición durante apertura/cierre, y el cierre de familia de escritorio ya no reconstruye tarjetas. Sin cambios de CSS ni secundaria. 27 pruebas correctas; límites y registro en docs/audits/2026-09-30/SALTOS-FAMILIAS.md.

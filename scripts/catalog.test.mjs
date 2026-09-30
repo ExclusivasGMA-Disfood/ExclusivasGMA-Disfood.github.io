@@ -335,3 +335,39 @@ test('principal: selección previa migra por referencia después de reordenar',a
   assert.equal(saved.clientName,'Prueba de continuidad');
  }finally{await w.happyDOM.close();}
 });
+
+test('principal: cerrar familia conserva tarjetas y posición de página',async()=>{
+ const w=await app();try{
+  const d=w.document;let y=565;
+  Object.defineProperty(w,'scrollY',{get:()=>y});
+  w.scrollTo=options=>{y=options.top;};
+  const card=d.querySelector('.desktop-product-card');
+  d.querySelector('.desktop-dept-button').click();
+  await new Promise(r=>setTimeout(r,40));
+  assert.equal(d.querySelector('.desktop-product-card'),card,'Cerrar el menú no reconstruye productos');
+  assert.equal(y,565);
+  const button=d.querySelectorAll('.desktop-dept-button')[1];button.click();
+  y=420; // Browser anchoring during replacement must not win the next frame.
+  await new Promise(r=>setTimeout(r,40));
+  assert.equal(y,565);
+  assert.equal(d.documentElement.style.overflowAnchor,'');
+ }finally{await w.happyDOM.close();}
+});
+
+test('principal: apertura móvil conserva la cabecera en su posición',async()=>{
+ const w=await app('index.html',390,844);try{
+  let y=500,shift=0;const d=w.document;
+  Object.defineProperty(w,'scrollY',{get:()=>y});
+  w.scrollTo=options=>{y=options.top;};
+  const rect=w.HTMLElement.prototype.getBoundingClientRect;
+  w.HTMLElement.prototype.getBoundingClientRect=function(){return this.classList.contains('dept-header')?{top:800+shift-y,height:50,bottom:850+shift-y}:rect.call(this);};
+  const original=w.eval('render');
+  w.eval('window.replaceRender=fn=>{render=fn}');
+  w.replaceRender(()=>{original();shift=120;});
+  d.querySelectorAll('.dept-header')[1].click();
+  await new Promise(r=>setTimeout(r,40));
+  assert.equal(d.querySelectorAll('.dept-header')[1].getBoundingClientRect().top,300);
+  assert.equal(y,620);
+  assert.equal(d.documentElement.style.overflowAnchor,'');
+ }finally{await w.happyDOM.close();}
+});

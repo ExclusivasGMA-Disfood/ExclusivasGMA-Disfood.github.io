@@ -10,7 +10,7 @@ const check=process.argv.includes('--check');
 const read=p=>fs.readFile(p,'utf8');
 const hash=b=>createHash('sha256').update(b).digest('hex').slice(0,12);
 const runtime=['runtime','pdf-loader','keyboard'];
-const app=['catalog','navigation-position','views','selection-review','session','resize','polish','discovery','image-framing','topbar','desktop','brands','main-taxonomy-ui'];
+const app=['main-scroll-stability','catalog','navigation-position','views','selection-review','session','resize','polish','discovery','image-framing','topbar','desktop','brands','main-taxonomy-ui'];
 const styles=['fonts-local','catalog-base','catalog-components','brands','palette'];
 const outputs=new Map();
 outputs.set('data/catalog-main.js',await buildTaxonomy());
@@ -43,6 +43,16 @@ async function bundle(names,discovery=false){
  for(const name of names){
   let source=await read(`assets/${name}.js`);
   if(discovery&&name==='catalog'){
+   const start=source.indexOf('    const dept = deptHeader.dataset.dept;');
+   const end=source.indexOf('    return;',start);
+   if(start<0||end<0)throw new Error('Family handler changed');
+   source=source.slice(0,start)+`    const dept = deptHeader.dataset.dept;
+    keepFamilyPosition(()=>{
+      if(openDepts.has(dept))openDepts.delete(dept);else openDepts.add(dept);
+      render();
+    },()=>groupsEl.querySelector('.dept-header[data-dept="'+CSS.escape(dept)+'"]'));
+`+source.slice(end);
+
    source=source.replace("'Pasta Italiana':'primeros","'Pasta':'primeros").replace("'Jamones y Paletas':'tablas","'Jamones y paletas':'tablas").replace("'Embutidos':'tablas","'Embutidos y charcutería':'tablas").replace("'Quesos y Lácteos':'tablas","'Quesos y lácteos':'tablas").replace("'Pescados y Salazones':'aperitivos","'Pescados y especialidades del mar':'aperitivos").replace("'Repostería':'carta","'Postres y repostería':'carta").replace("'Vinos y Bebidas':'carta","'Vinos y bebidas':'carta").replace("'Aperitivos':'aperitivos","'Aperitivos y tapas':'aperitivos");
    source=source.replace('const CATALOG_VERSION = 24;', 'const CATALOG_VERSION = 25;');
    source=source.replace('const geo = inferGeography(group, item);', 'const geo = inferGeography(item.classificationSource || group, item);');
@@ -50,6 +60,16 @@ async function bundle(names,discovery=false){
    source=source.replace('const drawing=SUBFAMILY_ICONS[title];','const drawing=SUBFAMILY_ICONS[window.GMA_SUBFAMILY_ALIASES?.[title]||title];');
    source=source.replace("${productFact('Familia', group.title)}","${productFact('Familia', group.dept)}").replace("${productFact('Departamento', group.dept)}","${productFact('Subfamilia', group.title)}${item.catalogTags?.length?productFact('Características de catálogo',item.catalogTags.join(' · ')):''}");
    source=source.replace('const IMAGE_MANIFEST = Object.create(null);', 'const IMAGE_MANIFEST = '+JSON.stringify(manifest)+';');
+  }
+  if(discovery&&name==='desktop'){
+   source=source.replace("      const dept=deptButton.dataset.desktopDept;",`      const dept=deptButton.dataset.desktopDept;
+      keepFamilyPosition(()=>{`);
+   source=source.replace('openDept=null;renderDesktopCatalog();','openDept=null;renderNavigation(groupRows(),activeGroupIndex(groupRows()));');
+   source=source.replace('      renderDesktopCatalog();\n      return;\n    }\n    const groupButton',`      renderDesktopCatalog();
+      },()=>familyList.querySelector('[data-desktop-dept="'+CSS.escape(dept)+'"]'),familyList);
+      return;
+    }
+    const groupButton`);
   }
   if(discovery&&name==='session')source=source.replace("if(!sessionBar)return;","if(!sessionBar || !$('sessionTitle') || !$('sessionSummary'))return;");
   if(discovery&&name==='topbar')source=source.replace("case 'filters':","case 'christmas': break;\n      case 'filters':");
