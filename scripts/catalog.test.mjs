@@ -307,9 +307,9 @@ test('principal: taxonomía única, referencias intactas y formatos juntos',asyn
   for(const old of original){const it=items.find(i=>i.ref===old.ref);for(const key of ['n','ref','modo','unid','nf','photo','isNew','origin'])assert.deepEqual(it[key],old[key],`${old.ref} ${key}`);}
   for(const ref of ['6765','3842','4287','2167']){assert.equal(find(ref).dept,'Pasta');assert.equal(find(ref).title,'Canelones y lasañas elaborados');}
   assert.equal(find('2423').dept,'Croquetas y bocados');
-  assert.equal(find('6715').title,'Rallados, loncheados y preparados');
+  assert.equal(find('6715').title,'Quesos loncheados');
   assert.equal(find('6018').title,'Legumbres y hummus');
-  assert.equal(find('199').title,'Pasta congelada sin relleno y láminas');
+  assert.equal(find('199').title,'Pasta sin relleno y láminas');
   assert.equal(find('00048').title,'Cecinas y bresaolas');
   assert.equal(find('00072').title,'Otros cortes y elaborados de cerdo');
   assert.equal(find('6142').title,'Huevos y ovoproductos');
@@ -370,4 +370,37 @@ test('principal: apertura móvil conserva la cabecera en su posición',async()=>
   assert.equal(y,620);
   assert.equal(d.documentElement.style.overflowAnchor,'');
  }finally{await w.happyDOM.close();}
+});
+
+test('principal: clasificación comercial revisada evita mezclas de producto',()=>{
+ const c={window:{}};vm.runInNewContext(fs.readFileSync('data/catalog-main.js','utf8'),c);
+ const groups=c.window.GMA_CATALOG_DATA;
+ const find=r=>groups.find(g=>g.items.some(i=>i.ref===r));
+ const expected={
+  'Blancos':['4846','4495','4496','5269'],
+  'Tintos':['5949','5268'],
+  'Rosados':['5851'],
+  'Vermuts':['4677','5128'],
+  'Licores y destilados':['5799'],
+  'Sangrías y bebidas aromatizadas':['5223','452'],
+  'Espumosos y champagne':['3184','54','3189','1136'],
+  'Vinos de aguja':['6052','3268','2798','2801','3177','2799','6534','440','1530'],
+  'Rebozados y panaturas':['5862','5884'],
+  'Bases culinarias y mezclas funcionales':['6418','6156'],
+  'Preparados y alternativas al queso':['5609'],
+  'Quesos loncheados':['5250','4150','6715','4787'],
+  'Pimientos rellenos':['3147'],
+  'Fruta en conserva':['6390'],
+  'Patés en costra':['12161'],
+  'Hígado de pato':['1915'],
+  'Salazones, mojamas y huevas':['5171','4832','4591'],
+  'Pasteles de pescado y marisco':['20714','9372','20799']
+ };
+ for(const [title,refs] of Object.entries(expected))for(const ref of refs)assert.equal(find(ref).title,title,ref);
+ const gustosi=groups.flatMap(g=>g.items).filter(i=>/^Gustosi /i.test(i.n));
+ assert.equal(gustosi.length,22);
+ for(const i of gustosi){assert.equal(find(i.ref).dept,'Ingredientes profesionales de cocina');assert.equal(find(i.ref).title,'Marinadas y adobos');}
+ const wines=groups.filter(g=>g.dept==='Vinos y bebidas');
+ for(const g of wines.filter(g=>['Tintos','Blancos','Rosados'].includes(g.title)))for(const i of g.items)assert.doesNotMatch(i.n,/spumante|vermouth|grappa|sangria|lambrusco|moscato/i,i.ref);
+ assert.equal(find('3842').dept,'Pasta');assert.equal(find('6765').dept,'Pasta');
 });

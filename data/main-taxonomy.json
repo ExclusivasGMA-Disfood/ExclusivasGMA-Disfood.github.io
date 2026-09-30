@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "families": [
     {
       "name": "Aperitivos y tapas",
@@ -146,20 +146,30 @@
           ]
         },
         {
-          "title": "Rallados, loncheados y preparados",
+          "title": "Rallados y mezclas para cocina",
           "refs": [
-            "5609",
             "2158",
             "512",
-            "5250",
-            "4150",
-            "6715",
             "2530",
             "6739",
             "2375",
             "2901",
-            "6061",
+            "6061"
+          ]
+        },
+        {
+          "title": "Quesos loncheados",
+          "refs": [
+            "5250",
+            "4150",
+            "6715",
             "4787"
+          ]
+        },
+        {
+          "title": "Preparados y alternativas al queso",
+          "refs": [
+            "5609"
           ]
         },
         {
@@ -170,7 +180,7 @@
           ]
         },
         {
-          "title": "Natas y cremas culinarias",
+          "title": "Natas y preparados para cocinar y montar",
           "refs": [
             "2303",
             "4545",
@@ -494,7 +504,7 @@
           ]
         },
         {
-          "title": "Pasta congelada sin relleno y láminas",
+          "title": "Pasta sin relleno y láminas",
           "refs": [
             "199",
             "783",
@@ -601,7 +611,6 @@
           "refs": [
             "6775",
             "8006",
-            "8008",
             "8009",
             "8010"
           ]
@@ -609,11 +618,12 @@
         {
           "title": "Cachopos y otros empanados",
           "refs": [
-            "6773"
+            "6773",
+            "8008"
           ]
         },
         {
-          "title": "Otros bocados salados",
+          "title": "Otros preparados salados",
           "refs": [
             "3148",
             "8004",
@@ -689,8 +699,7 @@
             "6034",
             "5797",
             "6640",
-            "3911",
-            "20714"
+            "3911"
           ]
         },
         {
@@ -722,13 +731,19 @@
           ]
         },
         {
-          "title": "Otras conservas y especialidades",
+          "title": "Otros pescados y mariscos",
           "refs": [
             "6004",
             "5996",
             "6698",
             "6699",
             "6697",
+            "5772"
+          ]
+        },
+        {
+          "title": "Salazones, mojamas y huevas",
+          "refs": [
             "5907",
             "6708",
             "5171",
@@ -738,15 +753,25 @@
             "4592",
             "6807",
             "4832",
-            "4591",
+            "4591"
+          ]
+        },
+        {
+          "title": "Otros ahumados y surtidos",
+          "refs": [
             "5746",
             "5785",
             "3497",
-            "5772",
-            "9372",
-            "20799",
             "5796",
             "5790"
+          ]
+        },
+        {
+          "title": "Pasteles de pescado y marisco",
+          "refs": [
+            "20714",
+            "9372",
+            "20799"
           ]
         }
       ]
@@ -886,7 +911,7 @@
       "legacyName": "Patés y Foie",
       "subfamilies": [
         {
-          "title": "Patés y mousses",
+          "title": "Patés, mousses y rillettes",
           "refs": [
             "5122",
             "429",
@@ -934,15 +959,9 @@
             "43011",
             "44011",
             "44057",
-            "42057"
-          ]
-        },
-        {
-          "title": "Terrinas",
-          "refs": [
+            "42057",
             "47024",
             "100591",
-            "12161",
             "29029",
             "77029",
             "12029",
@@ -958,8 +977,19 @@
           "refs": [
             "2297",
             "2406",
-            "1915",
             "4720"
+          ]
+        },
+        {
+          "title": "Patés en costra",
+          "refs": [
+            "12161"
+          ]
+        },
+        {
+          "title": "Hígado de pato",
+          "refs": [
+            "1915"
           ]
         }
       ]
@@ -969,7 +999,7 @@
       "legacyName": "Conservas de la Huerta",
       "subfamilies": [
         {
-          "title": "Tomate",
+          "title": "Tomate y salsas de tomate",
           "refs": [
             "1563",
             "6037",
@@ -1002,8 +1032,7 @@
           "refs": [
             "6632",
             "5951",
-            "3719",
-            "3147"
+            "3719"
           ]
         },
         {
@@ -1059,9 +1088,9 @@
           ]
         },
         {
-          "title": "Fruta en conserva",
+          "title": "Pimientos rellenos",
           "refs": [
-            "6390"
+            "3147"
           ]
         }
       ]
@@ -1151,7 +1180,7 @@
           ]
         },
         {
-          "title": "Sal y azúcar",
+          "title": "Sales",
           "refs": [
             "2374",
             "2135"
@@ -1170,7 +1199,70 @@
             "00353",
             "689",
             "00355",
-            "442",
+            "442"
+          ]
+        },
+        {
+          "title": "Huevos y ovoproductos",
+          "refs": [
+            "6142",
+            "6133"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ingredientes profesionales de cocina",
+      "legacyName": "Preparados de Cocina",
+      "subfamilies": [
+        {
+          "title": "Rebozados y panaturas",
+          "refs": [
+            "2665",
+            "5722",
+            "5883",
+            "5941",
+            "6596",
+            "5885",
+            "5863",
+            "5864",
+            "5862",
+            "5884"
+          ]
+        },
+        {
+          "title": "Mezclas para hamburguesas",
+          "refs": [
+            "6123",
+            "6483",
+            "6482",
+            "5874",
+            "5877",
+            "5879",
+            "5876"
+          ]
+        },
+        {
+          "title": "Bases culinarias y mezclas funcionales",
+          "refs": [
+            "6091",
+            "6785",
+            "5878",
+            "6081",
+            "6333",
+            "5875",
+            "5861",
+            "6418",
+            "6156"
+          ]
+        },
+        {
+          "title": "Marinadas y adobos",
+          "refs": [
+            "6075",
+            "5887",
+            "6057",
+            "5865",
             "5900",
             "5896",
             "5899",
@@ -1196,85 +1288,22 @@
           ]
         },
         {
-          "title": "Huevos y ovoproductos",
-          "refs": [
-            "6142",
-            "6133"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Ingredientes profesionales de cocina",
-      "legacyName": "Preparados de Cocina",
-      "subfamilies": [
-        {
-          "title": "Rebozados y panaturas",
-          "refs": [
-            "2665",
-            "5722",
-            "6418",
-            "5883",
-            "5941",
-            "6596",
-            "5885",
-            "5863",
-            "5864"
-          ]
-        },
-        {
-          "title": "Mezclas para hamburguesas",
-          "refs": [
-            "6123",
-            "6483",
-            "6482",
-            "5874",
-            "5877",
-            "5879",
-            "5876"
-          ]
-        },
-        {
-          "title": "Bases y mezclas culinarias",
-          "refs": [
-            "6091",
-            "6785",
-            "5878",
-            "6081",
-            "6333",
-            "5875",
-            "5861"
-          ]
-        },
-        {
-          "title": "Marinadas y adobos",
-          "refs": [
-            "6075",
-            "5887",
-            "6057",
-            "5865"
-          ]
-        },
-        {
           "title": "Especias y sazonadores",
           "refs": [
-            "5862",
-            "5884",
             "5965",
             "5882",
             "5881"
           ]
         },
         {
-          "title": "Aromas y potenciadores",
+          "title": "Aromas",
           "refs": [
             "5903",
             "5919",
             "5940",
             "5928",
             "5904",
-            "5989",
-            "6156"
+            "5989"
           ]
         }
       ]
@@ -1334,6 +1363,12 @@
             "2452",
             "5827"
           ]
+        },
+        {
+          "title": "Fruta en conserva",
+          "refs": [
+            "6390"
+          ]
         }
       ]
     },
@@ -1352,25 +1387,16 @@
             "4875",
             "6161",
             "3400",
-            "5223",
             "3367",
-            "4846",
-            "4677",
-            "5128",
-            "5799",
             "6718",
             "5838",
-            "1530",
-            "1136",
             "6159",
             "5482",
             "5734",
             "5211",
             "4511",
-            "4495",
             "6160",
             "4512",
-            "4496",
             "6128",
             "6591",
             "5926",
@@ -1386,9 +1412,6 @@
             "5839",
             "083",
             "5850",
-            "6052",
-            "3268",
-            "2798",
             "3211",
             "3210",
             "6020",
@@ -1397,7 +1420,9 @@
             "3378",
             "5849",
             "4810",
-            "6297"
+            "6297",
+            "5949",
+            "5268"
           ]
         },
         {
@@ -1417,7 +1442,6 @@
             "6129",
             "6782",
             "5",
-            "3184",
             "5910",
             "5929",
             "6093",
@@ -1425,15 +1449,14 @@
             "4450",
             "2111",
             "3165",
-            "6534",
-            "440",
-            "54",
-            "3189",
-            "5949",
             "5249",
             "3377",
             "1410",
-            "3747"
+            "3747",
+            "4846",
+            "4495",
+            "4496",
+            "5269"
           ]
         },
         {
@@ -1441,16 +1464,11 @@
           "refs": [
             "2785",
             "4",
-            "452",
             "6748",
             "5920",
             "4993",
-            "5268",
-            "2801",
-            "3177",
-            "2799",
-            "5269",
-            "4098"
+            "4098",
+            "5851"
           ]
         },
         {
@@ -1465,7 +1483,6 @@
             "6152",
             "4135",
             "6219",
-            "5851",
             "6723",
             "6724",
             "5483",
@@ -1473,7 +1490,57 @@
             "1479",
             "6608",
             "1570",
-            "6726"
+            "3184",
+            "54",
+            "3189",
+            "1136"
+          ]
+        },
+        {
+          "title": "Vinos de aguja",
+          "refs": [
+            "6052",
+            "3268",
+            "2798",
+            "2801",
+            "3177",
+            "2799",
+            "6534",
+            "440",
+            "1530"
+          ]
+        },
+        {
+          "title": "Vermuts",
+          "refs": [
+            "4677",
+            "5128"
+          ]
+        },
+        {
+          "title": "Sangrías y bebidas aromatizadas",
+          "refs": [
+            "5223",
+            "452"
+          ]
+        },
+        {
+          "title": "Marsala y preparados de Marsala",
+          "refs": [
+            "6148",
+            "6026"
+          ]
+        },
+        {
+          "title": "Licores y destilados",
+          "refs": [
+            "255",
+            "5132",
+            "3434",
+            "2985",
+            "2986",
+            "250",
+            "5799"
           ]
         },
         {
@@ -1484,16 +1551,9 @@
           ]
         },
         {
-          "title": "Licores",
+          "title": "Estuches de vino",
           "refs": [
-            "255",
-            "5132",
-            "3434",
-            "2985",
-            "2986",
-            "6148",
-            "6026",
-            "250"
+            "6726"
           ]
         }
       ]
@@ -1503,7 +1563,7 @@
       "legacyName": "Menaje y Servicios",
       "subfamilies": [
         {
-          "title": "Utensilios",
+          "title": "Utensilios y accesorios de servicio",
           "refs": [
             "6007",
             "6141",
@@ -1514,15 +1574,15 @@
             "6050",
             "6474",
             "5496",
-            "5497"
+            "5497",
+            "3201"
           ]
         },
         {
           "title": "Envases y bolsas",
           "refs": [
             "5912",
-            "5911",
-            "3201"
+            "5911"
           ]
         },
         {

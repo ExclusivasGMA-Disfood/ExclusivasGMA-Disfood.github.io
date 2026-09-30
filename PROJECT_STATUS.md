@@ -168,3 +168,7 @@ Aplicada organización de 16 familias a las 998 referencias mediante data/main-t
 ## Saltos al abrir familias
 
 Principal: conserva posición durante apertura/cierre, y el cierre de familia de escritorio ya no reconstruye tarjetas. Sin cambios de CSS ni secundaria. 27 pruebas correctas; límites y registro en docs/audits/2026-09-30/SALTOS-FAMILIAS.md.
+
+## Segunda revisión de clasificación
+
+Revisadas las 998 referencias: corregidos vinos por tipo, marinadas profesionales, rebozados, formatos de queso, salazones y patés. 16 familias conservadas, 23 referencias cambian de familia; 235 rutas cambian incluyendo renombrados. 28 pruebas correctas. Inventario íntegro y trazabilidad en docs/audits/2026-09-30/REVISION-CLASIFICACION.md e INVENTARIO-CLASIFICACION.md. Diseño y navegación intactos.
