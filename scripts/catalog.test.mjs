@@ -29,16 +29,16 @@ for(const page of ['index.html','nuevo/index.html']){
     const d=w.document;
     assert.equal(d.querySelectorAll('#newDiscovery .discovery-card').length,6);
     assert.equal(d.querySelectorAll('#bestDiscovery .discovery-card').length,8);
-    assert.match(d.querySelector('#desktopResultMeta').textContent,/991/);
+    assert.match(d.querySelector('#desktopResultMeta').textContent,/990/);
     assert.equal(d.querySelectorAll('.desktop-product-card').length,72);
     const button=d.querySelector('.desktop-dept-button');const name=button.dataset.desktopDept;
     button.click();assert.equal(d.querySelector(`[data-desktop-dept="${name}"]`).getAttribute('aria-expanded'),'false');
     d.querySelector(`[data-desktop-dept="${name}"]`).click();assert.equal(d.querySelector(`[data-desktop-dept="${name}"]`).getAttribute('aria-expanded'),'true');
-    d.querySelector('#desktopExpandAll').click();assert.match(d.querySelector('#desktopResultMeta').textContent,/991/);
+    d.querySelector('#desktopExpandAll').click();assert.match(d.querySelector('#desktopResultMeta').textContent,/990/);
     d.querySelector('.desktop-more-button').click();assert.equal(d.querySelectorAll('.desktop-product-card').length,144);
     while(d.querySelector('.desktop-more-button'))d.querySelector('.desktop-more-button').click();
-    assert.equal(d.querySelectorAll('.desktop-product-card').length,991);
-    assert.equal(new Set([...d.querySelectorAll('.desktop-product-card')].map(e=>e.dataset.id)).size,991);
+    assert.equal(d.querySelectorAll('.desktop-product-card').length,990);
+    assert.equal(new Set([...d.querySelectorAll('.desktop-product-card')].map(e=>e.dataset.id)).size,990);
     d.querySelector('#desktopExpandAll').click();assert.equal(d.querySelector('#desktopExpandAll').getAttribute('aria-expanded'),'false');
     d.querySelector('#desktopExpandAll').click();assert.equal(d.querySelector('#desktopExpandAll').getAttribute('aria-expanded'),'true');
     d.querySelector('.desktop-group-button').click();const size=d.querySelectorAll('.desktop-product-card').length;
@@ -165,7 +165,7 @@ for(const page of ['index.html','nuevo/index.html']){
    d.querySelector('#productClose').click();
    w.testFilter('',true);
    assert.equal(d.querySelectorAll('.desktop-product-card').length,2,'La revisión muestra ambos formatos seleccionados');
-   assert.equal(w.testData.reduce((n,g)=>n+g.items.length,0),999,'Se conserva el total vigente de referencias');
+   assert.equal(w.testData.reduce((n,g)=>n+g.items.length,0),998,'Se conserva el total vigente de referencias');
    const mobileRefs=w.testVisible().map(x=>x.it.ref);
    assert.equal(mobileRefs.length,2);
    const saved=JSON.parse(w.localStorage.getItem('gma-catalog-state'));
@@ -201,7 +201,7 @@ for(const page of ['index.html','nuevo/index.html']){
    d.querySelector('#productClose').click();
    w.testFilter('4830');d.querySelector('.desktop-product-open').click();
    assert.match(d.querySelector('.product-detail-ref').textContent,/4830/);
-   assert.equal(w.testData.reduce((n,g)=>n+g.items.length,0),999);
+   assert.equal(w.testData.reduce((n,g)=>n+g.items.length,0),998);
   }finally{await w.happyDOM.close();}
  });
 }

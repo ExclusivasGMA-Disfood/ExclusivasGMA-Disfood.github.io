@@ -142,3 +142,7 @@ Por petición del usuario, html/body usan blanco puro #FFFFFF en ambas rutas. Pa
 ## Novedades y Selección sobre blanco
 
 Ampliación expresa del fondo blanco a todas las superficies de Novedades y Selección GMA: secciones, cabeceras, carruseles, tarjetas, textos y fotos/placeholder. Insignias y acciones conservan la paleta. Ambas rutas verificadas. Ver docs/audits/2026-09-29/DISCOVERY-BLANCO.md.
+
+## Edam y baja de preparado — 30 septiembre 2026
+
+Retirada 6617 del catálogo activo; 6715 recibe la foto aportada editada sobre blanco, completa y centrada, en archivo WebP y manifiesto. 998 referencias, 990 tarjetas. Ningún cambio estético. 21 pruebas correctas; límites de revisión en docs/audits/2026-09-30/EDAM-Y-BAJA-PREPARADO.md.
