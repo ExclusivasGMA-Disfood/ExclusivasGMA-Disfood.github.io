@@ -2,7 +2,7 @@
    Never changes image files, product details, or the dimensions of a card. */
 (async()=>{
   try{
-    const response=await fetch('data/image-framing.json?v=20260929-pate-qez-1');
+    const response=await fetch('data/image-framing.json?v=20260930-edam-size-1');
     if(!response.ok)return;
     const data=await response.json();
     const frames='.item-photo,.discovery-photo,.desktop-product-photo,.product-visual';

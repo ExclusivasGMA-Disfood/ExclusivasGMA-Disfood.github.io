@@ -16,6 +16,22 @@
       ],
       "innerMargin": 0.08,
       "reason": "Marco blanco exterior de 130 px. Encuadre manual revisado; fotografía original intacta."
+    },
+    {
+      "ref": "6715",
+      "source": "images/products/6715-edam-blanco.webp",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "contentBox": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "innerMargin": 0.1,
+      "reason": "Petición del usuario: reducir ligeramente la fotografía del Edam, centrada y completa, sin modificar tarjeta ni otras imágenes."
     }
   ],
   "carousels": [
