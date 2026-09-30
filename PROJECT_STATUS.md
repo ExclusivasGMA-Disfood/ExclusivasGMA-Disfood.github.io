@@ -150,3 +150,7 @@ Retirada 6617 del catálogo activo; 6715 recibe la foto aportada editada sobre b
 ## Edam: reducción individual
 
 6715 usa escala 0,8 centrada en su marco mediante data/image-framing.json. Archivo original y tarjetas intactos. Petición posterior a la subida de foto; solo cambia su encuadre. Ver docs/audits/2026-09-30/EDAM-TAMANO.md.
+
+## Carga de la principal — 30 septiembre 2026
+
+Principal con paquetes generados (5 JS, 1 CSS local) y variantes ligeras para las fotos de Novedades/Selección GMA. Diseño y secundaria conservados. Ejecutar `npm run build:main` después de cambiar los JS/CSS fuente, curación o fotos destacadas; `npm test` comprueba que lo generado esté al día. Fuentes compartidas siguen siendo editables; no editar paquetes minificados a mano. Registro: docs/audits/2026-09-30/CARGA-PRINCIPAL.md.

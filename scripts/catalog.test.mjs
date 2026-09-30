@@ -258,3 +258,24 @@ for(const page of ['index.html','nuevo/index.html']){
   }finally{await w.happyDOM.close();}
  });
 }
+
+test('principal: fotos ligeras en escaparates y originales en ficha',async()=>{
+ const w=await app();try{
+  const d=w.document;
+  const images=[...d.querySelectorAll('.discovery-photo img')];
+  const optimized=images.filter(img=>img.hasAttribute('srcset'));
+  assert.ok(optimized.length>0);
+  for(const img of optimized){
+   assert.match(img.getAttribute('src'),/^images\/products\//);
+   assert.match(img.getAttribute('srcset'),/images\/thumbnails\//);
+   assert.equal(img.getAttribute('sizes'),'164px');
+   for(const entry of img.getAttribute('srcset').split(', ')){
+    assert.ok(fs.existsSync(entry.split(' ')[0].split('?')[0]));
+   }
+  }
+  optimized[0].closest('.discovery-open').click();
+  const detail=d.querySelector('.product-visual img');
+  assert.match(detail.getAttribute('src'),/^images\/products\//);
+  assert.equal(detail.hasAttribute('srcset'),false);
+ }finally{await w.happyDOM.close();}
+});

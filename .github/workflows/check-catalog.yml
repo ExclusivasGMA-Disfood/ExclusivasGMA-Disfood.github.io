@@ -9,6 +9,7 @@ on:
       - 'package*.json'
       - 'data/**'
       - 'images/products/**'
+      - 'images/thumbnails/**'
       - 'scripts/**'
       - '.github/workflows/check-catalog.yml'
   pull_request:
