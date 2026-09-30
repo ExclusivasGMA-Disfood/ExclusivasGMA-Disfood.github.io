@@ -5,13 +5,15 @@ import {createHash} from 'node:crypto';
 import {minify} from 'terser';
 import sharp from 'sharp';
 import {prerender} from './prerender-main.mjs';
+import {buildTaxonomy} from './build-taxonomy.mjs';
 const check=process.argv.includes('--check');
 const read=p=>fs.readFile(p,'utf8');
 const hash=b=>createHash('sha256').update(b).digest('hex').slice(0,12);
 const runtime=['runtime','pdf-loader','keyboard'];
-const app=['catalog','navigation-position','views','selection-review','session','resize','polish','discovery','image-framing','topbar','desktop','brands'];
+const app=['catalog','navigation-position','views','selection-review','session','resize','polish','discovery','image-framing','topbar','desktop','brands','main-taxonomy-ui'];
 const styles=['fonts-local','catalog-base','catalog-components','brands','palette'];
 const outputs=new Map();
+outputs.set('data/catalog-main.js',await buildTaxonomy());
 const catalog=await read('data/catalog-data.js');
 const context={window:{}};vm.runInNewContext(catalog,context);
 const refs=Object.values(context.window.GMA_CATALOG_CURATION).flat();
@@ -41,9 +43,22 @@ async function bundle(names,discovery=false){
  for(const name of names){
   let source=await read(`assets/${name}.js`);
   if(discovery&&name==='catalog'){
+   source=source.replace("'Pasta Italiana':'primeros","'Pasta':'primeros").replace("'Jamones y Paletas':'tablas","'Jamones y paletas':'tablas").replace("'Embutidos':'tablas","'Embutidos y charcutería':'tablas").replace("'Quesos y Lácteos':'tablas","'Quesos y lácteos':'tablas").replace("'Pescados y Salazones':'aperitivos","'Pescados y especialidades del mar':'aperitivos").replace("'Repostería':'carta","'Postres y repostería':'carta").replace("'Vinos y Bebidas':'carta","'Vinos y bebidas':'carta").replace("'Aperitivos':'aperitivos","'Aperitivos y tapas':'aperitivos");
+   source=source.replace('const CATALOG_VERSION = 24;', 'const CATALOG_VERSION = 25;');
+   source=source.replace('const geo = inferGeography(group, item);', 'const geo = inferGeography(item.classificationSource || group, item);');
+   source=source.replace('const SUBFAMILY_ICONS =', 'Object.assign(DEPT_ICONS,Object.fromEntries(DEPTS.map(d=>[d.name,DEPT_ICONS[d.legacyName||d.name]])));\nconst SUBFAMILY_ICONS =');
+   source=source.replace('const drawing=SUBFAMILY_ICONS[title];','const drawing=SUBFAMILY_ICONS[window.GMA_SUBFAMILY_ALIASES?.[title]||title];');
+   source=source.replace("${productFact('Familia', group.title)}","${productFact('Familia', group.dept)}").replace("${productFact('Departamento', group.dept)}","${productFact('Subfamilia', group.title)}${item.catalogTags?.length?productFact('Características de catálogo',item.catalogTags.join(' · ')):''}");
    source=source.replace('const IMAGE_MANIFEST = Object.create(null);', 'const IMAGE_MANIFEST = '+JSON.stringify(manifest)+';');
   }
+  if(discovery&&name==='session')source=source.replace("if(!sessionBar)return;","if(!sessionBar || !$('sessionTitle') || !$('sessionSummary'))return;");
+  if(discovery&&name==='topbar')source=source.replace("case 'filters':","case 'christmas': break;\n      case 'filters':");
   if(discovery&&name==='discovery'){
+   source=source.replaceAll('Todas las secciones','Todas las familias').replaceAll('Todas las familias</option>','Todas las subfamilias</option>');
+   // Department and subfamily labels are distinct after restructuring.
+   source=source.replace("deptSel.innerHTML='<option value=\"\">Todas las subfamilias</option>';","deptSel.innerHTML='<option value=\"\">Todas las familias</option>';");
+   source=source.replace('Sección: ${currentDept}','Familia: ${currentDept}').replace('Familia: ${familyFilter}','Subfamilia: ${familyFilter}');
+   source=source.replace(".slice().sort((a,b)=>a.title.localeCompare(b.title,'es'))",'.slice()');
    const needle='src="${imageUrl}" alt=""';
    if(source.split(needle).length!==2)throw new Error('Discovery template changed; review image attributes');
    source=source.replace(needle,'src="${imageUrl}"${mainDiscoveryImageAttrs(imageUrl)} alt=""');
@@ -57,6 +72,11 @@ outputs.set('assets/main-runtime.min.js',await bundle(runtime));
 outputs.set('assets/main-app.min.js',await bundle(app,true));
 outputs.set('assets/main-styles.css',(await Promise.all(styles.map(n=>read(`assets/${n}.css`)))).join('\n'));
 let html=await read('index.html');
+html=html.replace(/<script src="data\/catalog-(?:data|main)\.js[^"]*"><\/script>/,`<script src="data/catalog-main.js?v=${hash(outputs.get('data/catalog-main.js'))}"></script>`);
+if(!html.includes('data-menu-action="christmas"'))html=html.replace('<button type="button" data-menu-action="catalog">Catálogo</button>','<button type="button" data-menu-action="catalog">Catálogo</button>\n    <button type="button" data-menu-action="christmas">Selección de Navidad</button>');
+html=html.replace('>Sección del catálogo</div>','>Familia</div>').replace('aria-label="Filtrar por sección"','aria-label="Filtrar por familia"').replace('>Todas las secciones</option>','>Todas las familias</option>');
+html=html.replace(/(<div class="filter-group-title">)Familia(<\/div>\s*<select[^>]*id="familyFilterSelect")/,'$1Subfamilia$2').replace('id="familyFilterSelect" aria-label="Filtrar por familia"','id="familyFilterSelect" aria-label="Filtrar por subfamilia"').replace('Las familias se ajustan a la sección elegida.','Las subfamilias se ajustan a la familia elegida.');
+html=html.replace(/(id="familyFilterSelect"[^>]*><option value="">)Todas las familias/,'$1Todas las subfamilias');
 // Retain source paths in data attributes so regeneration remains deterministic.
 const logoTags=[...html.matchAll(/<img\b[^>]*src="images\/(?:brands\/[^"]+|gma-logo-catalogo\.png)"[^>]*>/g)];
 for(const [tag] of logoTags){

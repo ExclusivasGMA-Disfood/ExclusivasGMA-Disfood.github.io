@@ -160,3 +160,7 @@ Principal con paquetes generados (5 JS, 1 CSS local) y variantes ligeras para la
 Segunda optimización tras PageSpeed: contenido inicial prerenderizado usando los renderizadores existentes, manifiesto inicial de imágenes en paquete principal, CSS existente incluido en HTML, fuentes locales y alternativas WebP de logos. Sin cambios de diseño o secundaria. `npm run build:main` actualiza todo tras cambios de fuentes/datos. Ver docs/audits/2026-09-30/ESTABILIDAD-Y-CARGA.md. 23 pruebas locales correctas; medir la publicación para valorar rendimiento real de laboratorio.
 
 Medición posterior: móvil 90–96 (LCP 2,7–3,6 s, CLS 0–0,001); escritorio 96 (LCP 1,4 s, CLS 0). Diseño de escritorio comparado, búsqueda/ficha/selección comprobadas; no hay datos de usuarios reales. Informes y límites en el registro anterior.
+
+## Familias comerciales — principal
+
+Aplicada organización de 16 familias a las 998 referencias mediante data/main-taxonomy.json y data/catalog-main.js generado. Pasta incluye canelones y lasañas elaborados; Navidad es selección transversal. /nuevo/ y fuentes de datos originales conservadas. 25 pruebas correctas, incluida recuperación de selección anterior. Registro: docs/audits/2026-09-30/FAMILIAS-COMERCIALES.md.

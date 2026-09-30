@@ -4,8 +4,9 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import {Window} from 'happy-dom';
 
-async function app(page='index.html',width=1366,height=900){
+async function app(page='index.html',width=1366,height=900,savedState=null){
   const window=new Window({url:'https://catalog.test/'+(page.startsWith('nuevo')?'nuevo/':''),width,height,settings:{disableJavaScriptFileLoading:true,disableCSSFileLoading:true,enableJavaScriptEvaluation:true,suppressInsecureJavaScriptEnvironmentWarning:true}});
+  if(savedState)window.localStorage.setItem('gma-catalog-state',JSON.stringify(savedState));
   const match=window.matchMedia.bind(window);
   // Happy DOM does not implement comma-separated media alternatives correctly.
   window.matchMedia=query=>{const result=match(query.split(',')[0]);Object.defineProperty(result,'matches',{value:query.split(',').some(q=>match(q.trim()).matches)});return result;};
@@ -19,7 +20,7 @@ async function app(page='index.html',width=1366,height=900){
     const src=m[1].match(/src="([^"?]+)/)?.[1];
     scripts.push(src?fs.readFileSync(src,'utf8'):m[2]);
   }
-  window.eval(scripts.join('\n;\n')+'\nwindow.testStorage=GMAStorage;window.testLoadScript=loadExternalScript;window.testGeneratePdf=generatePdf;window.testFilter=(q,sel=false)=>{searchTerm=q;selectedOnly=sel;currentVisibleGroups().forEach(g=>{openDepts.add(g.dept);openGroups.add(g.title);});render();};window.testData=DATA;window.testVisible=()=>getVisibleItemsForGroup(DATA.find(g=>g.title==="Huerta Nacional"),DATA.findIndex(g=>g.title==="Huerta Nacional")).items;');
+  window.eval(scripts.join('\n;\n')+'\nwindow.testStorage=GMAStorage;window.testLoadScript=loadExternalScript;window.testGeneratePdf=generatePdf;window.testFilter=(q,sel=false)=>{searchTerm=q;selectedOnly=sel;currentVisibleGroups().forEach(g=>{openDepts.add(g.dept);openGroups.add(g.title);});render();};window.testData=DATA;window.testVisible=()=>getVisibleItemsForGroup(DATA.find(g=>g.items.some(i=>i.ref==="1988")),DATA.findIndex(g=>g.items.some(i=>i.ref==="1988"))).items;');
   await new Promise(resolve=>setTimeout(resolve,50));
   return window;
 }
@@ -207,7 +208,7 @@ for(const page of ['index.html','nuevo/index.html']){
 }
 
 test('Huerta: dos familias, legumbres reunidas y búsqueda por subgrupo',async()=>{
- const w=await app();try{
+ const w=await app('nuevo/index.html');try{
   const groups=w.testData.filter(g=>g.dept==='Conservas de la Huerta');
   assert.deepEqual(Array.from(groups,g=>g.title),['Huerta Nacional','Huerta Italia']);
   assert.equal(groups[0].items.length,47);assert.equal(groups[1].items.length,17);
@@ -286,11 +287,51 @@ test('principal: contenido inicial estable antes de ejecutar JavaScript',async()
   w.document.write(fs.readFileSync('index.html','utf8'));
   const d=w.document;
   assert.equal(d.querySelectorAll('.discovery-card').length,14);
-  assert.equal(d.querySelectorAll('#groups > .dept-header').length,17);
+  assert.equal(d.querySelectorAll('#groups > .dept-header').length,16);
   assert.equal(d.querySelectorAll('.desktop-product-card').length,72);
   assert.equal(d.querySelectorAll('link[href*="fonts.googleapis.com"]').length,0);
   assert.ok(d.querySelector('#main-critical-styles').textContent.includes("font-family: 'Geist'"));
   const ids=[...d.querySelectorAll('[id]')].map(n=>n.id);assert.equal(ids.length,new Set(ids).size);
   for(const img of d.querySelectorAll('img[srcset*="images/optimized/"]'))assert.ok(fs.existsSync(img.getAttribute('srcset')));
+ }finally{await w.happyDOM.close();}
+});
+
+test('principal: taxonomía única, referencias intactas y formatos juntos',async()=>{
+ const c={window:{}};vm.runInNewContext(fs.readFileSync('data/catalog-data.js','utf8'),c);
+ const original=c.window.GMA_CATALOG_DATA.flatMap(g=>g.items);
+ const w=await app();try{
+  const groups=w.testData,items=Array.from(groups).flatMap(g=>Array.from(g.items));
+  assert.equal(new Set(groups.map(g=>g.dept)).size,16);
+  assert.equal(items.length,998);assert.equal(new Set(items.map(i=>i.ref)).size,998);
+  const find=ref=>groups.find(g=>g.items.some(i=>i.ref===ref));
+  for(const old of original){const it=items.find(i=>i.ref===old.ref);for(const key of ['n','ref','modo','unid','nf','photo','isNew','origin'])assert.deepEqual(it[key],old[key],`${old.ref} ${key}`);}
+  for(const ref of ['6765','3842','4287','2167']){assert.equal(find(ref).dept,'Pasta');assert.equal(find(ref).title,'Canelones y lasañas elaborados');}
+  assert.equal(find('2423').dept,'Croquetas y bocados');
+  assert.equal(find('6715').title,'Rallados, loncheados y preparados');
+  assert.equal(find('6018').title,'Legumbres y hummus');
+  assert.equal(find('199').title,'Pasta congelada sin relleno y láminas');
+  assert.equal(find('00048').title,'Cecinas y bresaolas');
+  assert.equal(find('00072').title,'Otros cortes y elaborados de cerdo');
+  assert.equal(find('6142').title,'Huevos y ovoproductos');
+  const expected=JSON.parse(fs.readFileSync('data/main-taxonomy.json','utf8')).families.map(f=>f.name);
+  assert.deepEqual([...new Set(items.map(i=>find(i.ref).dept))],expected);
+  assert.deepEqual([...w.document.querySelector('#deptFilterSelect').options].slice(1).map(o=>o.value),expected);
+  w.document.querySelector('[data-menu-action="christmas"]').click();
+  assert.ok(w.document.querySelectorAll('.desktop-product-card').length>=40);
+  assert.ok(items.find(i=>i.ref==='8002').catalogTags.includes('Halal'));
+  assert.ok(items.find(i=>i.ref==='6712').catalogTags.includes('Por encargo'));
+ }finally{await w.happyDOM.close();}
+});
+
+test('principal: selección previa migra por referencia después de reordenar',async()=>{
+ const w=await app('index.html',1366,900,{catalogVersion:24,favs:{'12-6':8},favRefs:{'6715':3,'1988':2,'00048':4},clientName:'Prueba de continuidad'});
+ try{
+  assert.equal(w.document.querySelector('#desktopSelectionCount').textContent,'3');
+  const list=w.document.querySelector('#desktopSelectionList').textContent;
+  assert.match(list,/6715/);assert.match(list,/1988/);assert.match(list,/00048/);
+  w.testFilter('6715');w.document.querySelector('.desktop-add').click();
+  const saved=JSON.parse(w.localStorage.getItem('gma-catalog-state'));
+  assert.deepEqual(saved.favRefs,{'1988':2,'00048':4});
+  assert.equal(saved.clientName,'Prueba de continuidad');
  }finally{await w.happyDOM.close();}
 });
