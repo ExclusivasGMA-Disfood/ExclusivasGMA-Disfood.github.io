@@ -190,3 +190,10 @@ html.catalog-repositioning #groups .group-body,html.catalog-repositioning #group
 @media(min-width:640px) and (max-width:1100px){
  html body .desktop-main-head>.desktop-view-switch,html body .desktop-main-head>.desktop-expand-all{grid-row:2}
 }
+
+/* A shared commercial condition, separate from names and product photographs. */
+html body .order-badge{display:inline-flex;align-items:center;width:fit-content;max-width:100%;padding:3px 8px;margin:5px 0;border:1px solid #cbb786;border-radius:6px;background:#fff5de;color:#654b1c;font-family:'Geist',sans-serif;font-size:11px;font-weight:650;line-height:1.4;letter-spacing:0;text-transform:none;white-space:normal;vertical-align:middle}
+html body .product-order-condition{margin:10px 0 14px}
+html body .product-order-condition .order-badge{font-size:12px}
+html body .product-order-condition p{margin:3px 0 0;font-size:13px;line-height:1.5;color:var(--ink-soft)}
+html body .discovery-card-body .order-badge,html body .search-suggestion-copy .order-badge{font-size:10px;padding:2px 6px}

@@ -110,11 +110,11 @@
       ? `<img class="${productPhotoCropClass(it)}" src="${esc(image)}" alt="" loading="lazy" decoding="async">`
       : `${categoryPlaceholderSvg(group.title)}${it.origin?`<span class="fam-origin">${esc(it.origin)}</span>`:''}`;
     return `<article class="desktop-product-card ${selected?'fav':''}" data-id="${id}">
-      <button class="desktop-product-open" type="button" aria-label="Ver ficha de ${esc(productCardName(it))}">
+      <button class="desktop-product-open" type="button" aria-label="Ver ficha de ${esc(productCardName(it))}${productOrderText(it)}">
         <span class="desktop-product-photo ${image?'':'placeholder'}" ${image?'':`style="--fam:${esc(group.color)}"`}>${photo}</span>
-        <span class="desktop-product-copy"><span class="desktop-product-name">${esc(productCardName(it))}</span><span class="desktop-product-ref">${esc(productCardReference(it))}</span><span class="desktop-product-family">${esc(group.title)}</span></span>
+        <span class="desktop-product-copy"><span class="desktop-product-name">${esc(productCardName(it))}</span>${productOrderBadge(it)}<span class="desktop-product-ref">${esc(productCardReference(it))}</span><span class="desktop-product-family">${esc(group.title)}</span></span>
       </button>
-      <button class="desktop-add" type="button" data-id="${id}" aria-pressed="${selected}" aria-label="${productFormatGroup(it)&&!selectedOnly?'Elegir formato':selected?'Quitar de la selección':'Añadir a la selección'}: ${esc(productCardName(it))}"><svg viewBox="0 0 24 24">${selected?CHECK_ICON:PLUS_ICON}</svg></button>
+      <button class="desktop-add" type="button" data-id="${id}" aria-pressed="${selected}" aria-label="${productFormatGroup(it)&&!selectedOnly?'Elegir formato':selected?'Quitar de la selección':'Añadir a la selección'}: ${esc(productCardName(it))}${productOrderText(it)}"><svg viewBox="0 0 24 24">${selected?CHECK_ICON:PLUS_ICON}</svg></button>
     </article>`;
   }
   function renderProducts(rows,activeGi){
@@ -190,7 +190,7 @@
     selectionCount.textContent=ids.length;
     selectionList.innerHTML=ids.length?ids.map(id=>{
       const it=findItem(id),qty=favs[id]||1;
-      return `<div class="desktop-selection-item" data-selection-id="${id}"><div><div class="desktop-selection-name" title="${esc(it.n)}">${esc(it.n)}</div><div class="desktop-selection-ref">Ref. ${esc(it.ref)}</div></div><div class="desktop-qty"><button type="button" data-action="dec" aria-label="Restar unidad">−</button><span>${qty}</span><button type="button" data-action="inc" aria-label="Sumar unidad">+</button><button type="button" data-action="remove" aria-label="Quitar producto">×</button></div></div>`;
+      return `<div class="desktop-selection-item" data-selection-id="${id}"><div><div class="desktop-selection-name" title="${esc(it.n)}">${esc(it.n)}</div>${productOrderBadge(it)}<div class="desktop-selection-ref">Ref. ${esc(it.ref)}</div></div><div class="desktop-qty"><button type="button" data-action="dec" aria-label="Restar unidad">−</button><span>${qty}</span><button type="button" data-action="inc" aria-label="Sumar unidad">+</button><button type="button" data-action="remove" aria-label="Quitar producto">×</button></div></div>`;
     }).join(''):'<div class="desktop-selection-empty">Añade productos con el botón + para preparar una propuesta comercial.</div>';
   }
 
@@ -254,7 +254,7 @@
   document.getElementById('desktopCopySelection').addEventListener('click',async()=>{
     const ids=favIds();
     if(!ids.length){showToast('No hay referencias seleccionadas');return;}
-    const text=ids.map(id=>{const it=findItem(id);return `${it.ref} · ${it.n} · Cant. ${favs[id]}`}).join('\n');
+    const text=ids.map(id=>{const it=findItem(id);return `${it.ref} · ${it.n}${productOrderText(it)} · Cant. ${favs[id]}`}).join('\n');
     try{await navigator.clipboard.writeText(text);showToast('Selección copiada');}catch(error){showToast('No se pudo copiar la selección');}
   });
   document.getElementById('searchInput')?.addEventListener('input',()=>{forcedGroup=null;desktopGroupFocused=false;landscapeShowAll=true;landscapeDepartmentFocus=null;});
@@ -287,7 +287,7 @@
     document.querySelectorAll(`.desktop-add[data-id="${id}"]`).forEach(button=>{
       button.closest('.desktop-product-card')?.classList.toggle('fav',selected);
       button.setAttribute('aria-pressed',String(selected));
-      button.setAttribute('aria-label',`${selected?'Quitar de la selección':'Añadir a la selección'}: ${findItem(id).n}`);
+      button.setAttribute('aria-label',`${selected?'Quitar de la selección':'Añadir a la selección'}: ${findItem(id).n}${productOrderText(findItem(id))}`);
       const svg=button.querySelector('svg');if(svg)svg.innerHTML=selected?CHECK_ICON:PLUS_ICON;
     });
   };

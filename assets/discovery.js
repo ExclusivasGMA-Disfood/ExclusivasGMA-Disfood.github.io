@@ -59,7 +59,7 @@
     const photo=imageUrl?`<img class="${productPhotoCropClass(it)}" src="${imageUrl}" alt="" loading="lazy" decoding="async">`:`${categoryPlaceholderSvg(group.title)}${it.origin?`<span class="fam-origin">${it.origin}</span>`:''}`;
     const selected=Object.prototype.hasOwnProperty.call(favs,id);
     const icon=selected?CHECK_ICON:PLUS_ICON;
-    return `<article class="discovery-card ${selected?'fav':''}" data-product-id="${id}">${badge?`<span class="discovery-badge">${badge}</span>`:''}<button class="discovery-open" type="button" aria-label="Ver ficha de ${accessibleName}"><span class="discovery-photo ${imageUrl?'':'placeholder'}" ${imageUrl?'':`style="--fam:${famColor}"`}>${photo}</span><span class="discovery-card-body"><span class="discovery-name">${cardName.replace(/(\d) %/g,'$1&nbsp;%')}</span><span class="discovery-ref">Ref. ${it.ref}</span></span></button><button class="discovery-add" type="button" data-id="${id}" aria-pressed="${selected}" aria-label="${selected?'Quitar de la selección':'Añadir a la selección'}: ${accessibleName}"><svg viewBox="0 0 24 24">${icon}</svg></button></article>`;
+    return `<article class="discovery-card ${selected?'fav':''}" data-product-id="${id}">${badge?`<span class="discovery-badge">${badge}</span>`:''}<button class="discovery-open" type="button" aria-label="Ver ficha de ${accessibleName}${productOrderText(it)}"><span class="discovery-photo ${imageUrl?'':'placeholder'}" ${imageUrl?'':`style="--fam:${famColor}"`}>${photo}</span><span class="discovery-card-body"><span class="discovery-name">${cardName.replace(/(\d) %/g,'$1&nbsp;%')}</span>${productOrderBadge(it)}<span class="discovery-ref">Ref. ${it.ref}</span></span></button><button class="discovery-add" type="button" data-id="${id}" aria-pressed="${selected}" aria-label="${selected?'Quitar de la selección':'Añadir a la selección'}: ${accessibleName}${productOrderText(it)}"><svg viewBox="0 0 24 24">${icon}</svg></button></article>`;
   }
   function findRef(ref){for(let gi=0;gi<DATA.length;gi++)for(let ii=0;ii<DATA[gi].items.length;ii++){const it=DATA[gi].items[ii];if(String(it.ref)===String(ref))return {it,id:itemId(gi,ii)}}return null;}
   const desktopShowcaseMedia=window.matchMedia('(min-width:1000px), (orientation:landscape) and (min-width:640px) and (max-width:999px)');
@@ -86,7 +86,7 @@
       const selected=Object.prototype.hasOwnProperty.call(favs,id);
       const card=add.closest('.discovery-card');card?.classList.toggle('fav',selected);
       add.setAttribute('aria-pressed',String(selected));
-      add.setAttribute('aria-label',`${selected?'Quitar de la selección':'Añadir a la selección'}: ${findItem(id).n}`);
+      add.setAttribute('aria-label',`${selected?'Quitar de la selección':'Añadir a la selección'}: ${findItem(id).n}${productOrderText(findItem(id))}`);
       const svg=add.querySelector('svg');if(svg)svg.innerHTML=selected?CHECK_ICON:PLUS_ICON;
       return;
     }

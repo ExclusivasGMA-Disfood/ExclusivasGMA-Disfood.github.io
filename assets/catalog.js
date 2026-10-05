@@ -499,6 +499,10 @@ function collapseProductFormats(entries){
   }
   return grouped;
 }
+function productOrderBadge(item){
+  return item.onRequest===true?'<span class="order-badge">Por encargo</span>':'';
+}
+function productOrderText(item){return item.onRequest===true?' · Por encargo':'';}
 function productCardName(item){return (!selectedOnly&&productFormatGroup(item)?.name)||item.n;}
 function productCardReference(item){
   const g=!selectedOnly&&productFormatGroup(item);
@@ -558,7 +562,7 @@ function mountGroupItems(groupSection){
     row.dataset.id=id;
     row.setAttribute('role','button');
     row.setAttribute('tabindex','0');
-    row.setAttribute('aria-label',`Ver ficha de ${productCardName(it)}`);
+    row.setAttribute('aria-label',`Ver ficha de ${productCardName(it)}${productOrderText(it)}`);
     const imageUrl=imageUrlFor(it);
     const photoHtml=imageUrl
       ? `<div class="item-photo has-photo"><img class="${productPhotoCropClass(it)}" data-src="${imageUrl}" alt="" loading="lazy" decoding="async"></div>`
@@ -566,7 +570,7 @@ function mountGroupItems(groupSection){
     row.innerHTML=`
       <div class="item-photo-wrap">
         ${photoHtml}
-        <button class="add-btn tap" data-id="${id}" aria-label="${productFormatGroup(it)&&!selectedOnly?'Elegir formato':isFav?'Quitar de la selección':'Añadir a la selección'}: ${escapeCatalogText(productCardName(it))}" aria-pressed="${isFav}">
+        <button class="add-btn tap" data-id="${id}" aria-label="${productFormatGroup(it)&&!selectedOnly?'Elegir formato':isFav?'Quitar de la selección':'Añadir a la selección'}: ${escapeCatalogText(productCardName(it))}${productOrderText(it)}" aria-pressed="${isFav}">
           <svg viewBox="0 0 24 24">${isFav?'<path d="M4 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/>':'<path d="M12 5v14M5 12h14" stroke-linecap="round"/>'}</svg>
         </button>
       </div>
@@ -574,6 +578,7 @@ function mountGroupItems(groupSection){
         <div class="item-top">
           <div>
             <div class="item-name">${highlightRegex?highlightName(productCardName(it),highlightRegex):productCardName(it)}</div>
+            ${productOrderBadge(it)}
             <div class="item-meta">
               ${it.isNew?'<span class="tag new-badge">Nuevo</span>':''}
               ${(it.modo==='K'||it.unid<=1)?`<span class="tag">${it.unid} ud./caja</span>`:''}
@@ -1064,6 +1069,7 @@ function renderProductDetail(id){
       <div class="product-detail-info">
         <h3 class="product-detail-title">${escapeCatalogText(item.n)}</h3>
         <div class="product-detail-ref">Referencia ${item.ref}</div>
+        ${item.onRequest===true?`<div class="product-order-condition">${productOrderBadge(item)}<p>Producto por encargo. Consulta el plazo con tu comercial.</p></div>`:''}
         ${productFormatSelector(item)}
         ${SUPPLIER_PRODUCT_INFO[item.ref]?'':(()=>{const c=productDescription(group,item);return `<div class="product-description"><b>Sobre el producto</b><p>${c.desc}</p><p class="use">${c.use}</p></div>`})()}
         ${supplierTechnicalHtml(item)}
@@ -1174,7 +1180,7 @@ function closeProduct(){
 }
 async function shareProduct(id){
   const {group,item} = itemContext(id);
-  const text = `${item.n}
+  const text = `${item.n}${productOrderText(item)}
 Ref. ${item.ref}
 ${group.title}
 ${new URL('?ref='+encodeURIComponent(item.ref),location.href).href}`;
@@ -1281,7 +1287,7 @@ function syncSelectionState(id){
   document.querySelectorAll(`.add-btn[data-id="${id}"]`).forEach(btn=>{
     btn.closest('.item, .sheet-item')?.classList.toggle('fav',isFav);
     btn.setAttribute('aria-pressed',String(isFav));
-    btn.setAttribute('aria-label',`${isFav?'Quitar de la selección':'Añadir a la selección'}: ${findItem(id).n}`);
+    btn.setAttribute('aria-label',`${isFav?'Quitar de la selección':'Añadir a la selección'}: ${findItem(id).n}${productOrderText(findItem(id))}`);
     const svg=btn.querySelector('svg');
     if(svg) svg.innerHTML=isFav?CHECK_ICON:PLUS_ICON;
   });
@@ -1290,7 +1296,7 @@ function syncSelectionState(id){
   document.querySelectorAll(`.discovery-add[data-id="${id}"]`).forEach(btn=>{
     btn.closest('.discovery-card')?.classList.toggle('fav',isFav);
     btn.setAttribute('aria-pressed',String(isFav));
-    btn.setAttribute('aria-label',`${isFav?'Quitar de la selección':'Añadir a la selección'}: ${findItem(id).n}`);
+    btn.setAttribute('aria-label',`${isFav?'Quitar de la selección':'Añadir a la selección'}: ${findItem(id).n}${productOrderText(findItem(id))}`);
     const svg=btn.querySelector('svg');if(svg)svg.innerHTML=isFav?CHECK_ICON:PLUS_ICON;
   });
 }
@@ -1403,7 +1409,7 @@ function updateSearchSuggestions(){
     const photo=imageUrlFor(item);
     const image=photo?`<img src="${escapeCatalogText(photo)}" alt="" loading="lazy" decoding="async">`:
       '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="m6 16 4-4 3 3 2-2 3 3"/></svg>';
-    return `<button class="search-suggestion" type="button" role="option" id="searchSuggestion${i}" data-id="${id}" aria-selected="false"><span class="search-suggestion-photo">${image}</span><span class="search-suggestion-copy"><span class="search-suggestion-name">${escapeCatalogText(item.n)}</span><span class="search-suggestion-meta">Ref. ${escapeCatalogText(item.ref)} · ${escapeCatalogText(group.title)}</span></span></button>`;
+    return `<button class="search-suggestion" type="button" role="option" id="searchSuggestion${i}" data-id="${id}" aria-selected="false"><span class="search-suggestion-photo">${image}</span><span class="search-suggestion-copy"><span class="search-suggestion-name">${escapeCatalogText(item.n)}</span>${productOrderBadge(item)}<span class="search-suggestion-meta">Ref. ${escapeCatalogText(item.ref)} · ${escapeCatalogText(group.title)}</span></span></button>`;
   }).join(''):'<div class="search-suggestions-empty">No hay productos sugeridos. Puedes buscar en todo el catálogo.</div>';
   document.getElementById('searchSuggestionsAll').textContent=`Ver todos los resultados de «${typed}» →`;
   searchSuggestions.hidden=false;
@@ -1592,7 +1598,7 @@ function renderSheet(){
       row.innerHTML = `
         ${photoHtml}
         <div class="sheet-item-info">
-          <div class="sheet-item-name">${it.n}</div>
+          <div class="sheet-item-name">${it.n}</div>${productOrderBadge(it)}
           <div class="sheet-item-ref">Ref. ${it.ref} · ${MODO_LABEL[it.modo]||it.modo}</div>
           <button class="sheet-item-remove" data-id="${id}">Quitar</button>
         </div>
@@ -1794,7 +1800,7 @@ function buildProposalText(){
     const it = findItem(id);
     const qty = favs[id];
     const unitLabel = MODO_LABEL[it.modo] || it.modo;
-    lines.push(`${i+1}. ${it.n}`);
+    lines.push(`${i+1}. ${it.n}${productOrderText(it)}`);
     lines.push(`   Ref. ${it.ref} · ${unitLabel} × ${qty}`);
   });
   lines.push('');
@@ -1887,7 +1893,7 @@ async function generatePdf(){
       const unitLabel = MODO_LABEL[it.modo] || it.modo;
       return [
         String(i+1),
-        `${it.n}\nRef. ${it.ref} · ${it.unid} ud./caja`,
+        `${it.n}${productOrderText(it)}\nRef. ${it.ref} · ${it.unid} ud./caja`,
         unitLabel,
         String(qty),
       ];

@@ -441,3 +441,41 @@ for(const [width,height] of [[320,740],[390,844],[430,932],[844,390],[1366,900]]
   }finally{await w.happyDOM.abort();w.close();}
  });
 }
+
+for(const width of [390,1366]){
+ test(`Por encargo: tarjetas, ficha, selección y exportación ${width}`,async()=>{
+  const w=await app('index.html',width,900);try{
+   const d=w.document;
+   assert.equal(w.testData.flatMap(g=>g.items).filter(i=>i.onRequest===true).length,100);
+   for(const ref of ['2323','6712']){
+    w.testFilter(ref);
+    const gi=w.testData.findIndex(g=>g.items.some(i=>i.ref===ref));
+    const id=`${gi}-${w.testData[gi].items.findIndex(i=>i.ref===ref)}`;
+    const item=w.eval(`findItem('${id}')`);
+    assert.doesNotMatch(item.n,/encargo/i);
+    const card=d.querySelector(`${width<1000?'.item':'.desktop-product-card'}[data-id="${id}"]`);
+    assert.equal(card.querySelector('.order-badge').textContent,'Por encargo');
+    if(width<1000)for(const view of ['standard','carousel','visual']){
+     d.querySelector(`.view-btn[data-view="${view}"]`).click();
+     assert.equal(d.querySelector(`.item[data-id="${id}"] .order-badge`).textContent,'Por encargo');
+    }
+    w.eval(`openProduct('${id}')`);
+    assert.equal(d.querySelectorAll('#productDetail .order-badge').length,1);
+    assert.match(d.querySelector('#productDetail').textContent,/Consulta el plazo/);
+    d.querySelector('#productSelectBtn').click();
+    d.querySelector('#productClose').click();
+   }
+   w.eval('openSheet()');
+   assert.equal(d.querySelectorAll('.sheet-item .order-badge').length,2);
+   assert.equal((w.eval('buildProposalText()').match(/Por encargo/g)||[]).length,2);
+   w.eval(fs.readFileSync('assets/vendor/jspdf.umd.min.js','utf8'));
+   w.eval(fs.readFileSync('assets/vendor/jspdf.plugin.autotable.min.js','utf8'));
+   const Real=w.jspdf.jsPDF;let bytes;
+   function Capture(...args){const doc=new Real(...args);doc.save=()=>{bytes=doc.output('arraybuffer');};return doc;}
+   Capture.API=Real.API;w.jspdf.jsPDF=Capture;await w.testGeneratePdf();
+   assert.match(Buffer.from(bytes).toString('latin1'),/Por encargo/);
+   w.testFilter('6140');
+   assert.equal(d.querySelectorAll(`${width<1000?'.item':'.desktop-product-card'} .order-badge`).length,0);
+  }finally{await w.happyDOM.close();}
+ });
+}

@@ -71,7 +71,7 @@ async function bundle(names,discovery=false){
    source=source.replace('const geo = inferGeography(group, item);', 'const geo = inferGeography(item.classificationSource || group, item);');
    source=source.replace('const SUBFAMILY_ICONS =', 'Object.assign(DEPT_ICONS,Object.fromEntries(DEPTS.map(d=>[d.name,DEPT_ICONS[d.legacyName||d.name]])));\nconst SUBFAMILY_ICONS =');
    source=source.replace('const drawing=SUBFAMILY_ICONS[title];','const drawing=SUBFAMILY_ICONS[window.GMA_SUBFAMILY_ALIASES?.[title]||title];');
-   source=source.replace("${productFact('Familia', group.title)}","${productFact('Familia', group.dept)}").replace("${productFact('Departamento', group.dept)}","${productFact('Subfamilia', group.title)}${item.catalogTags?.length?productFact('Características de catálogo',item.catalogTags.join(' · ')):''}");
+   source=source.replace("${productFact('Familia', group.title)}","${productFact('Familia', group.dept)}").replace("${productFact('Departamento', group.dept)}","${productFact('Subfamilia', group.title)}${item.catalogTags?.filter(tag=>tag!=='Por encargo').length?productFact('Características de catálogo',item.catalogTags.filter(tag=>tag!=='Por encargo').join(' · ')):''}");
    source=source.replace('const IMAGE_MANIFEST = Object.create(null);', 'const IMAGE_MANIFEST = '+JSON.stringify(manifest)+';');
    source=source.replace('const value = IMAGE_MANIFEST[ref];','const value = IMAGE_MANIFEST[ref] || MAIN_BRAND_FALLBACKS[ref]?.image;');
    source='const MAIN_BRAND_FALLBACKS = '+JSON.stringify(brandFallbacks)+';\n'+source;

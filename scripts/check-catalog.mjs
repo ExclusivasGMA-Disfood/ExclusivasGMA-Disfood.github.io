@@ -26,7 +26,8 @@ for (const item of products) {
   if (!item.ref || !item.n || !Object.hasOwn(referenceFile, item.ref)) fail(`Referencia no válida: ${item.ref}`);
   if (refs.has(item.ref)) fail(`Referencia duplicada: ${item.ref}`);
   refs.add(item.ref);
-  const fields = new Set(['ref','n','sub','modo','unid','nf','photo','isNew','origin','s','discoveryName']);
+  const fields = new Set(['ref','n','sub','modo','unid','nf','photo','isNew','origin','s','discoveryName','onRequest']);
+  if (item.onRequest !== undefined && typeof item.onRequest !== 'boolean') fail(`Condición de catálogo no válida: ${item.ref}`);
   if (Object.keys(item).some(key => !fields.has(key))) fail(`Campo de catálogo no válido: ${item.ref}`);
 }
 for (const group of groups) {

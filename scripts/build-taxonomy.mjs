@@ -15,7 +15,7 @@ export async function buildTaxonomy(){
     if(used.has(ref)||!lookup.has(ref))throw new Error('Duplicate or unknown taxonomy reference '+ref);
     used.add(ref);const {g,i}=lookup.get(ref);const name=normalize(i.n);const tags=[];
     if(/halal/.test(name))tags.push('Halal');
-    if(/encargo/i.test(g.title)||/encargo/.test(name))tags.push('Por encargo');
+    if(i.onRequest===true)tags.push('Por encargo');
     if(/congel|\bi\.?q\.?f\b|\bcng\b|\bcong\b/.test(name)||/IQF/.test(g.title)||g.title==='Congelados')tags.push('Congelado');
     if(!tags.includes('Congelado')&&/refrigerad/.test(name))tags.push('Refrigerado');
     if(g.dept==='Navidad'||/navidad/.test(name))tags.push('Selección de Navidad');
