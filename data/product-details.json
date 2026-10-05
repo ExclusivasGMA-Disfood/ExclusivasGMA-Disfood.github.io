@@ -7383,5 +7383,125 @@
         "Porchetta Tridentum de Segata cocida al horno, presentada en media pieza para cortar al servicio."
       ]
     ]
+  },
+  "416": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Pasta tricolor en forma de mariposa, con tomate y espinacas."
+      ],
+      [
+        "Cocción",
+        "10 minutos, según el fabricante."
+      ],
+      [
+        "Conservación",
+        "Conservar en un lugar seco, alejado del calor y de la luz solar."
+      ]
+    ]
+  },
+  "115": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Pasta tricolor con tomate y espinacas, cuya forma en espiral ayuda a retener las salsas."
+      ],
+      [
+        "Cocción",
+        "10 minutos, según el fabricante."
+      ],
+      [
+        "Conservación",
+        "Conservar en un lugar seco, alejado del calor y de la luz solar."
+      ]
+    ]
+  },
+  "146": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Arroz de la variedad Arborio, recomendado por el fabricante para risottos y timbales."
+      ],
+      [
+        "Conservación",
+        "Conservar en un lugar seco, alejado del calor y de la luz solar."
+      ]
+    ]
+  },
+  "6607": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Arroz de la variedad Carnaroli, recomendado por el fabricante para preparar risottos."
+      ],
+      [
+        "Conservación",
+        "Conservar en un lugar seco, alejado del calor y de la luz solar."
+      ]
+    ]
+  },
+  "415": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Sémola de trigo duro remolida, de color amarillo y grano fino, recomendada para elaborar pan de trigo duro."
+      ],
+      [
+        "Conservación",
+        "Conservar en un lugar seco, alejado del calor y de la luz solar."
+      ]
+    ]
+  },
+  "3997": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Bizcochos savoiardi para preparar tiramisú, acompañar el desayuno o mojar en café."
+      ],
+      [
+        "Conservación",
+        "Conservar en un lugar seco, alejado del calor y de la luz solar."
+      ]
+    ]
+  },
+  "132": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Tomates rojos enteros y pelados, presentados en conserva."
+      ],
+      [
+        "Conservación",
+        "Conservar en un lugar seco, alejado del calor y de la luz solar."
+      ]
+    ]
+  },
+  "137": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Tomate troceado Gran Trito, recomendado por el fabricante para la preparación de pizzas."
+      ],
+      [
+        "Conservación",
+        "Conservar en un lugar seco, alejado del calor y de la luz solar."
+      ]
+    ]
   }
 }
