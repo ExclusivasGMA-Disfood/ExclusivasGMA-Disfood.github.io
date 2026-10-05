@@ -1,0 +1,53 @@
+/* Principal: Geist for catalog UI, Merriweather for first-impression headings and CTAs. */
+:root{
+ --font-body:'Geist',sans-serif;--font-heading:'Geist',sans-serif;
+ --catalog-body:'Geist',sans-serif;--catalog-heading:'Geist',sans-serif;
+ --white:#fff;--off-white:#FAFAF8;--light-grey:#F1F2F3;
+ --ink:#292B2E;--ink-soft:#62666B;--line:#DCDEE0;
+ --soft-linen:var(--off-white);--platinum:var(--light-grey);--sand-dune:#E4E6E8;
+ --night-bordeaux:var(--ink);--brick-ember:var(--ink);
+ --brand-wine:var(--ink);--brand-red:var(--ink);--brand-wine-dark:var(--ink);
+ --brand-gold:#DCDEE0;--brand-cream:var(--off-white);
+ --paper:var(--off-white);--paper-dim:var(--light-grey);--surface:#fff;--surface-2:var(--light-grey);
+ --teal:var(--ink);--teal-dark:var(--ink);--teal-tint:var(--light-grey);
+ --bx-red:var(--ink);--bx-line:#DCDEE0;--bx-hair:#DCDEE0;
+ --cta-red:#BB080B;--cta-dark:#7C151D;
+}
+html body,html body :is(button,input,textarea,select,h1,h2,h3,h4,h5,h6,.group-title,.item-name,.desktop-product-name,.product-detail-title,.dept-header-label,.bx-title){font-family:var(--font-body)}
+html body :is(h1,.bx-title,.discovery-head h2){font-family:'Merriweather',serif;font-weight:700}
+html,html body{background:var(--white)!important;color:var(--ink)}
+html body :is(.gma-topbar,.gma-search-panel,.gma-account-dialog,.gma-menu-panel,.desktop-side,.desktop-selection,.sheet,.product-sheet,.controls,.bottom-nav){background:var(--off-white)!important;color:var(--ink)!important}
+html body :is(.desktop-main,.desktop-main-head,.desktop-reading-family,.group,.group-header,.sub-divider){background:var(--light-grey)!important;color:var(--ink)!important;border-color:var(--line)!important}
+html body :is(.dept-header,.dept-header.open,.dept-header:active){background:var(--off-white)!important;color:var(--ink)!important;border-color:var(--line)!important}
+html body :is(.dept-header,.dept-header.open) :is(.dept-header-label,.chev),html body .dept-header::before{color:var(--ink)!important}
+html body :is(.group-title,.group-header .chev){color:var(--ink)!important}
+html body :is(.group.open .group-header,.group-header:hover,.group-header:active){background:#E4E6E8!important;color:var(--ink)!important;border-color:var(--line)!important;border-left-color:#62666B!important}
+html body :is(.group-count,.discovery-badge,.badge,.badge-new){background:var(--light-grey)!important;color:var(--ink)!important}
+html body :is(.desktop-dept-button,.desktop-group-button){background:var(--off-white)!important;color:var(--ink)!important;border-color:var(--line)!important}
+html body :is(.desktop-dept.active>.desktop-dept-button,.desktop-dept-button:hover,.desktop-group-button.active,.desktop-group-button:hover){background:#E4E6E8!important;color:var(--ink)!important;border-color:#62666B!important}
+html body :is(.desktop-view-button.active,button.desktop-view-button.active,.nav-btn.active,button.nav-btn.active){background:#E4E6E8!important;color:var(--ink)!important}
+html body :is(.item-photo.placeholder,.desktop-product-photo.placeholder){background:var(--off-white)!important;color:var(--ink-soft)}
+html body :is(.gma-topbar button,.gma-search-inner .search input,.desktop-panel-head h2,.desktop-breadcrumb,.desktop-reading-family){color:var(--ink)!important}
+html body :focus-visible{outline-color:#62666B}
+/* The red accent belongs to actions that add, prepare or export a selection. */
+html body :is(.btn-primary,.desktop-selection-open,.fav-bar-open){font-family:'Merriweather',serif;font-weight:700;background:var(--cta-red)!important;color:#fff!important;border-color:var(--cta-red)!important}
+html body :is(.btn-primary,.desktop-selection-open,.fav-bar-open):hover{background:var(--cta-dark)!important;border-color:var(--cta-dark)!important}
+html body :is(.btn-primary,.desktop-selection-open,.fav-bar-open) svg{stroke:currentColor}
+html body :is(.btn-secondary,.copy-text-link,.desktop-selection-copy){font-family:'Merriweather',serif;font-weight:700}
+/* Original logo colour on hover, keyboard focus, touch and persistent selection. */
+html body .gma-brands__select:is(:hover,:focus-visible,:active,[aria-pressed="true"]) .gma-brands__logo{filter:none;mix-blend-mode:normal}
+html body .gma-brands__select[aria-pressed="true"]{animation:none}
+html body .gma-brands__select:focus-visible{outline-color:var(--cta-dark)}
+/* The B&G source is white: a dark-red filter makes it visible on light backgrounds. */
+html body .gma-brands__item[data-brand="bg"] .gma-brands__select:is(:hover,:focus-visible,:active,[aria-pressed="true"]) .gma-brands__logo{filter:brightness(0) saturate(100%) invert(15%) sepia(38%) saturate(3378%) hue-rotate(330deg) brightness(85%) contrast(95%)}
+
+/* Restore selection circles to their original white/red appearance and source geometry. */
+html body :is(.discovery-add,.desktop-add,.add-btn){background:#fff;color:#BB080B}
+html body :is(.discovery-add,.desktop-add,.add-btn) svg{stroke:currentColor}
+html body :is(.discovery-card.fav .discovery-add,.desktop-product-card.fav .desktop-add,.item.fav .add-btn){background:#D2CFB6;color:#4B051D}
+
+/* Brand placeholders stay centred and smaller than product photographs. */
+html body :is(.item-photo,.desktop-product-photo,.discovery-photo,.product-visual) img[src^="images/brands/"],html body .item-photo img[data-src^="images/brands/"]{object-fit:contain!important;padding:18%!important;background:#fff;transform:none!important}
+
+/* Keep every main-menu action reachable on short and landscape screens. */
+html body .gma-menu-panel{max-height:calc(100vh - var(--topbar-h,65px) - 12px);max-height:calc(100dvh - var(--topbar-h,65px) - 12px);overflow-y:auto;overscroll-behavior:contain}

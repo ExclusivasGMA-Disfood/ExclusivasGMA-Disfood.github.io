@@ -1,0 +1,599 @@
+{
+  "version": 1,
+  "images": [
+    {
+      "ref": "6112",
+      "source": "images/products/6112.jpg",
+      "sourceSize": [
+        1200,
+        1200
+      ],
+      "contentBox": [
+        130,
+        130,
+        1070,
+        1070
+      ],
+      "innerMargin": 0.08
+    },
+    {
+      "ref": "6715",
+      "source": "images/products/6715-edam-blanco.webp",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "contentBox": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "innerMargin": 0.1
+    }
+  ],
+  "carousels": [
+    {
+      "ref": "6154",
+      "source": "images/products/6154.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        145,
+        45,
+        565,
+        545
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08
+    },
+    {
+      "ref": "3816",
+      "source": "images/products/3816.jpg",
+      "sourceSize": [
+        1200,
+        1200
+      ],
+      "contentBox": [
+        160,
+        365,
+        1030,
+        850
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08
+    },
+    {
+      "ref": "6777",
+      "source": "images/products/6777.webp",
+      "sourceSize": [
+        1028,
+        972
+      ],
+      "contentBox": [
+        0,
+        0,
+        1028,
+        972
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08
+    },
+    {
+      "ref": "6786",
+      "source": "images/products/6786.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        110,
+        75,
+        465,
+        575
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08
+    },
+    {
+      "ref": "6765",
+      "source": "images/products/6765.png",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        0,
+        100,
+        600,
+        570
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08
+    },
+    {
+      "ref": "6766",
+      "source": "images/products/6766.png",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        0,
+        140,
+        600,
+        465
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08
+    },
+    {
+      "ref": "1902",
+      "source": "images/products/1902.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        0,
+        125,
+        600,
+        530
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08
+    },
+    {
+      "ref": "6140",
+      "source": "images/products/6140.jpg",
+      "sourceSize": [
+        212,
+        240
+      ],
+      "contentBox": [
+        0,
+        0,
+        212,
+        240
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08
+    },
+    {
+      "ref": "3842",
+      "source": "images/products/3842-producto-tre-archi.jpg",
+      "sourceSize": [
+        1200,
+        1200
+      ],
+      "contentBox": [
+        55,
+        350,
+        1150,
+        930
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08
+    },
+    {
+      "ref": "4599",
+      "source": "images/products/4599.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        75,
+        105,
+        525,
+        515
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08
+    },
+    {
+      "ref": "6767",
+      "source": "images/products/6767.png",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        0,
+        145,
+        600,
+        465
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08
+    },
+    {
+      "ref": "049",
+      "source": "images/products/049.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        65,
+        65,
+        540,
+        530
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08
+    },
+    {
+      "ref": "802",
+      "source": "images/products/802.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        195,
+        50,
+        390,
+        545
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08
+    },
+    {
+      "ref": "6256",
+      "source": "images/products/6256.png",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        155,
+        30,
+        425,
+        535
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08
+    }
+  ],
+  "catalog": [
+    {
+      "ref": "1563",
+      "source": "images/products/1563.png",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        120,
+        17,
+        480,
+        599
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "2454",
+      "source": "images/products/2454.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        190,
+        214,
+        403,
+        574
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "2455",
+      "source": "images/products/2455.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        190,
+        214,
+        403,
+        574
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "2033",
+      "source": "images/products/2033.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        190,
+        214,
+        403,
+        574
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "4830",
+      "source": "images/products/4830-500g.jpg",
+      "sourceSize": [
+        1000,
+        1000
+      ],
+      "contentBox": [
+        214,
+        118,
+        785,
+        896
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "2631",
+      "source": "images/products/2631-frontal.jpg",
+      "sourceSize": [
+        1000,
+        1000
+      ],
+      "contentBox": [
+        134,
+        82,
+        866,
+        920
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "1989",
+      "source": "images/products/1989.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        198,
+        128,
+        391,
+        575
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "1988",
+      "source": "images/products/1988.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        198,
+        128,
+        391,
+        575
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "993",
+      "source": "images/products/993.png",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        124,
+        26,
+        477,
+        596
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "1997",
+      "source": "images/products/1997.jpg",
+      "sourceSize": [
+        600,
+        600
+      ],
+      "contentBox": [
+        154,
+        214,
+        432,
+        573
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "1900",
+      "source": "images/products/1900.webp",
+      "sourceSize": [
+        800,
+        1200
+      ],
+      "contentBox": [
+        144,
+        300,
+        659,
+        914
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "1996",
+      "source": "images/products/1996-oficial-marzo.webp",
+      "sourceSize": [
+        800,
+        1200
+      ],
+      "contentBox": [
+        180,
+        427,
+        607,
+        1147
+      ],
+      "fit": "contain",
+      "innerMargin": 0.08,
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "ref": "77029",
+      "source": "images/products/77029.jpg",
+      "sourceSize": [
+        1200,
+        1200
+      ],
+      "contentBox": [
+        450,
+        510,
+        752,
+        690
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08
+    },
+    {
+      "ref": "12029",
+      "source": "images/products/12029.jpg",
+      "sourceSize": [
+        1200,
+        1200
+      ],
+      "contentBox": [
+        450,
+        510,
+        752,
+        690
+      ],
+      "fit": "contain",
+      "position": [
+        0.5,
+        0.5
+      ],
+      "innerMargin": 0.08
+    }
+  ]
+}

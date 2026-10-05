@@ -1,0 +1,47 @@
+{
+  "source": "images/gma-logo-catalogo.png",
+  "assets": [
+    {
+      "path": "images/brand/gma-share-v1.png",
+      "width": 1200,
+      "height": 630,
+      "background": "#ffffff"
+    },
+    {
+      "path": "images/brand/gma-icon-32-v1.png",
+      "width": 32,
+      "height": 32,
+      "background": "#ffffff"
+    },
+    {
+      "path": "images/brand/gma-icon-48-v1.png",
+      "width": 48,
+      "height": 48,
+      "background": "#ffffff"
+    },
+    {
+      "path": "images/brand/gma-icon-192-v1.png",
+      "width": 192,
+      "height": 192,
+      "background": "#ffffff"
+    },
+    {
+      "path": "images/brand/gma-icon-512-v1.png",
+      "width": 512,
+      "height": 512,
+      "background": "#ffffff"
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "width": 180,
+      "height": 180,
+      "background": "#ffffff"
+    },
+    {
+      "path": "favicon.ico",
+      "width": 48,
+      "height": 48,
+      "background": "#ffffff"
+    }
+  ]
+}

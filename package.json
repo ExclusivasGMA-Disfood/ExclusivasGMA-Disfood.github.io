@@ -1,0 +1,13 @@
+{
+  "name": "gma-catalog-quality",
+  "private": true,
+  "scripts": {
+    "test": "node scripts/check-public-data.mjs && node scripts/version-assets.mjs --check && node scripts/build-main.mjs --check && node scripts/build-product-specs.mjs --check && node scripts/check-catalog.mjs && node scripts/check-images.mjs && node --test scripts/catalog.test.mjs",
+    "build:main": "node scripts/build-product-specs.mjs && node scripts/version-assets.mjs && node scripts/build-main.mjs"
+  },
+  "devDependencies": {
+    "happy-dom": "20.0.11",
+    "sharp": "0.34.5",
+    "terser": "5.44.0"
+  }
+}

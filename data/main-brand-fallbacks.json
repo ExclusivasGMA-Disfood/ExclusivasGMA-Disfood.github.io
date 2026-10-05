@@ -1,0 +1,478 @@
+{
+  "720": {
+    "brand": "Villani",
+    "image": "images/brands/villani.png"
+  },
+  "735": {
+    "brand": "Divella",
+    "image": "images/brands/divella.png"
+  },
+  "1976": {
+    "brand": "Cecinas Pablo",
+    "image": "images/brands/cecinas-pablo-transparent.png"
+  },
+  "1977": {
+    "brand": "Cecinas Pablo",
+    "image": "images/brands/cecinas-pablo-transparent.png"
+  },
+  "2463": {
+    "brand": "Chacinerías Díaz",
+    "image": "images/brands/diaz.png"
+  },
+  "3263": {
+    "brand": "Ken Foods",
+    "image": "images/brands/ken.png"
+  },
+  "3302": {
+    "brand": "Selec Mardis",
+    "image": "images/brands/selec-mardis.png"
+  },
+  "4083": {
+    "brand": "Chacinerías Díaz",
+    "image": "images/brands/diaz.png"
+  },
+  "4344": {
+    "brand": "Montesano",
+    "image": "images/brands/montesano.png"
+  },
+  "4692": {
+    "brand": "Chacinerías Díaz",
+    "image": "images/brands/diaz.png"
+  },
+  "5062": {
+    "brand": "Ciudad de Sansueña",
+    "image": "images/brands/sansuena.png"
+  },
+  "5168": {
+    "brand": "Montesano",
+    "image": "images/brands/montesano.png"
+  },
+  "5172": {
+    "brand": "Ciudad de Sansueña",
+    "image": "images/brands/sansuena.png"
+  },
+  "5238": {
+    "brand": "Montesano",
+    "image": "images/brands/montesano.png"
+  },
+  "5242": {
+    "brand": "Ciudad de Sansueña",
+    "image": "images/brands/sansuena.png"
+  },
+  "5265": {
+    "brand": "Conservas Marzo",
+    "image": "images/brands/marzo.png"
+  },
+  "5309": {
+    "brand": "Ciudad de Sansueña",
+    "image": "images/brands/sansuena.png"
+  },
+  "5337": {
+    "brand": "BEHER",
+    "image": "images/brands/beher.png"
+  },
+  "5374": {
+    "brand": "BEHER",
+    "image": "images/brands/beher.png"
+  },
+  "5491": {
+    "brand": "BEHER",
+    "image": "images/brands/beher.png"
+  },
+  "5494": {
+    "brand": "BEHER",
+    "image": "images/brands/beher.png"
+  },
+  "5534": {
+    "brand": "BEHER",
+    "image": "images/brands/beher.png"
+  },
+  "5547": {
+    "brand": "Ciudad de Sansueña",
+    "image": "images/brands/sansuena.png"
+  },
+  "5553": {
+    "brand": "Ciudad de Sansueña",
+    "image": "images/brands/sansuena.png"
+  },
+  "5554": {
+    "brand": "Ciudad de Sansueña",
+    "image": "images/brands/sansuena.png"
+  },
+  "5570": {
+    "brand": "Montesano",
+    "image": "images/brands/montesano.png"
+  },
+  "5571": {
+    "brand": "Montesano",
+    "image": "images/brands/montesano.png"
+  },
+  "5642": {
+    "brand": "BEHER",
+    "image": "images/brands/beher.png"
+  },
+  "5698": {
+    "brand": "Chacinerías Díaz",
+    "image": "images/brands/diaz.png"
+  },
+  "5827": {
+    "brand": "Conservas Marzo",
+    "image": "images/brands/marzo.png"
+  },
+  "5861": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5862": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5863": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5864": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5874": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5875": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5876": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5877": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5878": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5879": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5881": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5882": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5883": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5884": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5885": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5887": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5903": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5904": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5907": {
+    "brand": "Selec Mardis",
+    "image": "images/brands/selec-mardis.png"
+  },
+  "5919": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5928": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5929": {
+    "brand": "Barone Montalto",
+    "image": "images/brands/montalto.png"
+  },
+  "5940": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5941": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5965": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "5989": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "6017": {
+    "brand": "Chacinerías Díaz",
+    "image": "images/brands/diaz.png"
+  },
+  "6033": {
+    "brand": "Ahumados Domínguez",
+    "image": "images/brands/dominguez.png"
+  },
+  "6034": {
+    "brand": "Ahumados Domínguez",
+    "image": "images/brands/dominguez.png"
+  },
+  "6036": {
+    "brand": "Ciudad de Sansueña",
+    "image": "images/brands/sansuena.png"
+  },
+  "6037": {
+    "brand": "Conservas Marzo",
+    "image": "images/brands/marzo.png"
+  },
+  "6057": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "6081": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "6086": {
+    "brand": "Montesano",
+    "image": "images/brands/montesano.png"
+  },
+  "6093": {
+    "brand": "Barone Montalto",
+    "image": "images/brands/montalto.png"
+  },
+  "6107": {
+    "brand": "Cecinas Pablo",
+    "image": "images/brands/cecinas-pablo-transparent.png"
+  },
+  "6114": {
+    "brand": "BEHER",
+    "image": "images/brands/beher.png"
+  },
+  "6115": {
+    "brand": "BEHER",
+    "image": "images/brands/beher.png"
+  },
+  "6118": {
+    "brand": "BEHER",
+    "image": "images/brands/beher.png"
+  },
+  "6123": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "6124": {
+    "brand": "BEHER",
+    "image": "images/brands/beher.png"
+  },
+  "6134": {
+    "brand": "Montesano",
+    "image": "images/brands/montesano.png"
+  },
+  "6156": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "6169": {
+    "brand": "Ahumados Domínguez",
+    "image": "images/brands/dominguez.png"
+  },
+  "6219": {
+    "brand": "Louis Perdrier",
+    "image": "images/brands/louis-perdrier.png"
+  },
+  "6221": {
+    "brand": "Montesano",
+    "image": "images/brands/montesano.png"
+  },
+  "6240": {
+    "brand": "Ciudad de Sansueña",
+    "image": "images/brands/sansuena.png"
+  },
+  "6297": {
+    "brand": "Vi Enology",
+    "image": "images/brands/enology.png"
+  },
+  "6333": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "6334": {
+    "brand": "Ciudad de Sansueña",
+    "image": "images/brands/sansuena.png"
+  },
+  "6335": {
+    "brand": "Ciudad de Sansueña",
+    "image": "images/brands/sansuena.png"
+  },
+  "6336": {
+    "brand": "Ciudad de Sansueña",
+    "image": "images/brands/sansuena.png"
+  },
+  "6375": {
+    "brand": "Ciudad de Sansueña",
+    "image": "images/brands/sansuena.png"
+  },
+  "6393": {
+    "brand": "BEHER",
+    "image": "images/brands/beher.png"
+  },
+  "6394": {
+    "brand": "BEHER",
+    "image": "images/brands/beher.png"
+  },
+  "6418": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "6474": {
+    "brand": "Chacinerías Díaz",
+    "image": "images/brands/diaz.png"
+  },
+  "6482": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "6483": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "6620": {
+    "brand": "Caputo",
+    "image": "images/brands/caputo.png"
+  },
+  "6687": {
+    "brand": "Chacinerías Díaz",
+    "image": "images/brands/diaz.png"
+  },
+  "6697": {
+    "brand": "Conservas de Cambados",
+    "image": "images/brands/cambados-transparent.png"
+  },
+  "6698": {
+    "brand": "Conservas de Cambados",
+    "image": "images/brands/cambados-transparent.png"
+  },
+  "6700": {
+    "brand": "Conservas de Cambados",
+    "image": "images/brands/cambados-transparent.png"
+  },
+  "6711": {
+    "brand": "BEHER",
+    "image": "images/brands/beher.png"
+  },
+  "6714": {
+    "brand": "Soster",
+    "image": "images/brands/soster.png"
+  },
+  "6721": {
+    "brand": "Chacinerías Díaz",
+    "image": "images/brands/diaz.png"
+  },
+  "6727": {
+    "brand": "BEHER",
+    "image": "images/brands/beher.png"
+  },
+  "6731": {
+    "brand": "BEHER",
+    "image": "images/brands/beher.png"
+  },
+  "6734": {
+    "brand": "Ken Foods",
+    "image": "images/brands/ken.png"
+  },
+  "6752": {
+    "brand": "Ken Foods",
+    "image": "images/brands/ken.png"
+  },
+  "6785": {
+    "brand": "Pagani Chef",
+    "image": "images/brands/pagani.png"
+  },
+  "6787": {
+    "brand": "Selec Mardis",
+    "image": "images/brands/selec-mardis.png"
+  },
+  "6789": {
+    "brand": "Chacinerías Díaz",
+    "image": "images/brands/diaz.png"
+  },
+  "6790": {
+    "brand": "Cecinas Pablo",
+    "image": "images/brands/cecinas-pablo-transparent.png"
+  },
+  "6791": {
+    "brand": "Ibéricos Crego",
+    "image": "images/brands/crego.png"
+  },
+  "6805": {
+    "brand": "Galván",
+    "image": "images/brands/galvan.png"
+  },
+  "6809": {
+    "brand": "Ibéricos Crego",
+    "image": "images/brands/crego.png"
+  },
+  "6810": {
+    "brand": "Ibéricos Crego",
+    "image": "images/brands/crego.png"
+  },
+  "026": {
+    "brand": "Villani",
+    "image": "images/brands/villani.png"
+  },
+  "02711": {
+    "brand": "Carne de La Finca",
+    "image": "images/brands/la-finca.png"
+  },
+  "02496": {
+    "brand": "Carne de La Finca",
+    "image": "images/brands/la-finca.png"
+  },
+  "03089": {
+    "brand": "Carne de La Finca",
+    "image": "images/brands/la-finca.png"
+  },
+  "03329": {
+    "brand": "Carne de La Finca",
+    "image": "images/brands/la-finca.png"
+  },
+  "02910": {
+    "brand": "Carne de La Finca",
+    "image": "images/brands/la-finca.png"
+  },
+  "03330": {
+    "brand": "Carne de La Finca",
+    "image": "images/brands/la-finca.png"
+  },
+  "01266": {
+    "brand": "Carne de La Finca",
+    "image": "images/brands/la-finca.png"
+  },
+  "04033": {
+    "brand": "Carne de La Finca",
+    "image": "images/brands/la-finca.png"
+  },
+  "00355": {
+    "brand": "Carne de La Finca",
+    "image": "images/brands/la-finca.png"
+  }
+}
