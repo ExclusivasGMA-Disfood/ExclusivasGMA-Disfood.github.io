@@ -6181,5 +6181,869 @@
         "Botella de 250 ml."
       ]
     ]
+  },
+  "62": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Pasta larga de sémola en formato spaghetti, para combinar con salsas y acompañamientos variados."
+      ],
+      [
+        "Cocción",
+        "7 minutos, según el fabricante."
+      ],
+      [
+        "Conservación",
+        "Guardar protegido del calor, la luz solar y la humedad."
+      ]
+    ]
+  },
+  "414": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Pasta larga de sémola en hebras finas, con una cocción breve."
+      ],
+      [
+        "Cocción",
+        "6 minutos, según el fabricante."
+      ],
+      [
+        "Conservación",
+        "Guardar protegido del calor, la luz solar y la humedad."
+      ]
+    ]
+  },
+  "460": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Pasta larga de sémola en cintas estrechas, adecuada para recoger salsas y condimentos."
+      ],
+      [
+        "Cocción",
+        "8 minutos, según el fabricante."
+      ],
+      [
+        "Conservación",
+        "Guardar protegido del calor, la luz solar y la humedad."
+      ]
+    ]
+  },
+  "64": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Pasta corta tubular con estrías marcadas, pensada para salsas abundantes."
+      ],
+      [
+        "Cocción",
+        "9 minutos, según el fabricante."
+      ],
+      [
+        "Conservación",
+        "Guardar protegido del calor, la luz solar y la humedad."
+      ]
+    ]
+  },
+  "76": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Pasta corta con estrías helicoidales que ayudan a retener la salsa."
+      ],
+      [
+        "Cocción",
+        "9 minutos, según el fabricante."
+      ],
+      [
+        "Conservación",
+        "Guardar protegido del calor, la luz solar y la humedad."
+      ]
+    ]
+  },
+  "96": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Pasta corta de sémola en tubos estriados y corte oblicuo."
+      ],
+      [
+        "Cocción",
+        "9 minutos, según el fabricante."
+      ],
+      [
+        "Conservación",
+        "Guardar protegido del calor, la luz solar y la humedad."
+      ]
+    ]
+  },
+  "3858": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Pasta corta de sémola en formato penne regine."
+      ],
+      [
+        "Cocción",
+        "7 minutos, según el fabricante."
+      ],
+      [
+        "Conservación",
+        "Guardar protegido del calor, la luz solar y la humedad."
+      ]
+    ]
+  },
+  "400": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Pasta corta de sémola en espiral, para platos con salsas y otros acompañamientos."
+      ],
+      [
+        "Cocción",
+        "10 minutos, según el fabricante."
+      ],
+      [
+        "Conservación",
+        "Guardar protegido del calor, la luz solar y la humedad."
+      ]
+    ]
+  },
+  "411": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Pasta de sémola con forma de lazo, versátil para distintas preparaciones."
+      ],
+      [
+        "Cocción",
+        "10 minutos, según el fabricante."
+      ],
+      [
+        "Conservación",
+        "Guardar protegido del calor, la luz solar y la humedad."
+      ]
+    ]
+  },
+  "735": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Pasta fina de sémola presentada en nidos, para acompañar con salsas suaves o elaboradas."
+      ],
+      [
+        "Cocción",
+        "3 minutos, según el fabricante."
+      ],
+      [
+        "Conservación",
+        "Guardar protegido del calor, la luz solar y la humedad."
+      ]
+    ]
+  },
+  "2369": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Tubos de pasta de sémola para rellenar con carne, verduras o queso."
+      ],
+      [
+        "Conservación",
+        "Guardar protegido del calor, la luz solar y la humedad."
+      ]
+    ]
+  },
+  "5327": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Jamón de cebo de campo 100 % ibérico de la gama Roja. Presenta grasa infiltrada y procede de cerdos criados con cereales y recursos del campo."
+      ]
+    ]
+  },
+  "6113": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Jamón de cebo de campo 100 % ibérico ecológico, de textura jugosa y aromas con notas de frutos secos y hierbas."
+      ]
+    ]
+  },
+  "6112": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Jamón de bellota 100 % ibérico ecológico, elaborado a partir de cerdos criados en explotaciones certificadas."
+      ]
+    ]
+  },
+  "5329": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Jamón de bellota 100 % ibérico de la selección Oro, con curación tradicional y piezas seleccionadas por añada."
+      ]
+    ]
+  },
+  "5328": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Jamón de la selección Bernardo, procedente de animales seleccionados desde su cría y alimentados con cereales y recursos del campo."
+      ]
+    ]
+  },
+  "5348": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Jamón de bellota 100 % ibérico Oro deshuesado, preparado para facilitar el corte y el aprovechamiento de la pieza."
+      ]
+    ]
+  },
+  "5372": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Jamón de cebo de campo 100 % ibérico Roja sin hueso, de textura veteada y formato manejable para el corte."
+      ]
+    ]
+  },
+  "5334": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Chorizo cular de bellota 100 % ibérico, adobado con pimentón y especias. De textura untuosa y sabor intenso."
+      ]
+    ]
+  },
+  "5376": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Chorizo cular de bellota 100 % ibérico, adobado con pimentón y especias. De textura untuosa y sabor intenso."
+      ]
+    ]
+  },
+  "5605": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Chorizo de bellota 100 % ibérico ecológico, con pimentón ecológico y especias seleccionadas. De textura suave y sabor aromático."
+      ]
+    ]
+  },
+  "5332": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Caña de lomo de la selección Único, con grasa infiltrada visible al corte y textura veteada."
+      ]
+    ]
+  },
+  "5379": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Caña de lomo de la selección Único, con grasa infiltrada visible al corte y textura veteada."
+      ]
+    ]
+  },
+  "1595": {
+    "title": "Datos declarados · Ken Foods",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Queso crema de sabor lácteo suave y textura untuosa, estable tanto en frío como en preparaciones calientes."
+      ],
+      [
+        "Aplicaciones",
+        "Tartas de queso, mousses, semifríos, croquetas y tostas."
+      ]
+    ]
+  },
+  "2303": {
+    "title": "Datos declarados · Ken Foods",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Preparado culinario resistente al calor y compatible con ingredientes ácidos. Mantiene su estabilidad en recalentamiento y regeneración."
+      ],
+      [
+        "Aplicaciones",
+        "Cocina caliente, baño maría y elaboraciones que requieran congelación."
+      ]
+    ]
+  },
+  "4545": {
+    "title": "Datos declarados · Ken Foods",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Preparado de textura suave y sabor lácteo, con buena estabilidad y tolerancia a ingredientes ácidos."
+      ],
+      [
+        "Aplicaciones",
+        "Mousses y semifríos, además de salsas y cremas saladas."
+      ]
+    ]
+  },
+  "1576": {
+    "title": "Datos declarados · Ken Foods",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Preparado UHT cremoso para montar o cocinar, con buena consistencia y estabilidad."
+      ],
+      [
+        "Aplicaciones",
+        "Montados, pastelería y cocina; admite ingredientes ácidos."
+      ]
+    ]
+  },
+  "3144": {
+    "title": "Datos declarados · Ken Foods",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Preparado azucarado para montar, de gran firmeza y volumen. Contiene proteína láctea."
+      ],
+      [
+        "Aplicaciones",
+        "Chantilly, coberturas y decoración de pasteles."
+      ]
+    ]
+  },
+  "933": {
+    "title": "Datos declarados · Ken Foods",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Nata pasteurizada para cocinar, de textura cremosa y compatible con ingredientes ácidos."
+      ],
+      [
+        "Aplicaciones",
+        "Salsas, cremas y otras elaboraciones de cocina."
+      ]
+    ]
+  },
+  "6734": {
+    "title": "Datos declarados · Ken Foods",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Nata con un 38 % de materia grasa y sin carragenato, de textura cremosa y sabor lácteo."
+      ],
+      [
+        "Aplicaciones",
+        "Bases para heladería y mezclas que requieran cremosidad y homogeneidad."
+      ]
+    ]
+  },
+  "6094": {
+    "title": "Datos declarados · Ken Foods",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Mantequilla en pastilla para uso profesional, de textura suave y cremosa."
+      ],
+      [
+        "Aplicaciones",
+        "Cocina y pastelería."
+      ]
+    ]
+  },
+  "1320": {
+    "title": "Datos declarados · Ken Foods",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Preparado líquido de azúcar, yema y huevo para elaborar tocino de cielo."
+      ],
+      [
+        "Aplicaciones",
+        "Cocinar al baño maría para preparar el postre."
+      ]
+    ]
+  },
+  "1260": {
+    "title": "Datos declarados · Ken Foods",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Mezcla de nata fresca y cobertura de chocolate, cremosa y lista para montar."
+      ],
+      [
+        "Aplicaciones",
+        "Rellenos, bombones de trufa y postres en copa; admite aromas y licores."
+      ]
+    ]
+  },
+  "1307": {
+    "title": "Datos declarados · Ken Foods",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Sirope de caramelo de consistencia líquida y densa, listo para usar."
+      ],
+      [
+        "Aplicaciones",
+        "Bebidas, helados, crepes, gofres y tortitas."
+      ]
+    ]
+  },
+  "1309": {
+    "title": "Datos declarados · Ken Foods",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Sirope de chocolate elaborado con azúcares y cacao, listo para usar."
+      ],
+      [
+        "Aplicaciones",
+        "Bebidas, helados, crepes, gofres y tortitas."
+      ]
+    ]
+  },
+  "1310": {
+    "title": "Datos declarados · Ken Foods",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Sirope de fresa de consistencia líquida y densa, listo para usar."
+      ],
+      [
+        "Aplicaciones",
+        "Bebidas, helados, crepes, gofres y tortitas."
+      ]
+    ]
+  },
+  "6761": {
+    "title": "Datos declarados · Tre Archi",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Salsa cremosa con nata, bacon, yema de huevo, queso y cebolla."
+      ],
+      [
+        "Preparación",
+        "Descongelar en refrigeración durante 24 horas y calentar por encima de 75 °C durante 3 minutos."
+      ],
+      [
+        "Conservación",
+        "Mantener congelada a −18 °C."
+      ]
+    ]
+  },
+  "5770": {
+    "title": "Datos declarados · Tre Archi",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Postre de mascarpone y nata con bizcochos savoiardi bañados en café y amaretto."
+      ]
+    ]
+  },
+  "3842": {
+    "title": "Datos declarados · Tre Archi",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Lasaña de pasta al huevo con relleno de vacuno y cerdo, verduras, tomate y bechamel."
+      ]
+    ]
+  },
+  "4414": {
+    "title": "Datos declarados · Tre Archi",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Cintas anchas de pasta elaboradas con sémola de trigo duro y huevo pasteurizado."
+      ]
+    ]
+  },
+  "5301": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Nidos de pasta al huevo de cinta ancha, adecuados para acompañar con salsas densas."
+      ],
+      [
+        "Cocción",
+        "6 minutos, según el fabricante."
+      ]
+    ]
+  },
+  "130": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Nidos de pasta al huevo de cinta ancha, adecuados para acompañar con salsas densas."
+      ],
+      [
+        "Cocción",
+        "5 minutos, según el fabricante."
+      ]
+    ]
+  },
+  "124": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Pasta al huevo en cintas, presentada en nidos."
+      ],
+      [
+        "Cocción",
+        "5 minutos, según el fabricante."
+      ]
+    ]
+  },
+  "405": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Pasta al huevo en cintas, presentada en nidos."
+      ],
+      [
+        "Cocción",
+        "6 minutos, según el fabricante."
+      ]
+    ]
+  },
+  "126": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Nidos de pasta al huevo en cintas, para combinar con distintos tipos de salsa."
+      ],
+      [
+        "Cocción",
+        "5 minutos, según el fabricante."
+      ]
+    ]
+  },
+  "412": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Láminas de pasta al huevo para montar lasañas con distintos rellenos."
+      ]
+    ]
+  },
+  "5349": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Caña de lomo de bellota 100 % ibérico, elaborada con el músculo lumbar. Al corte presenta vetas de grasa infiltrada."
+      ]
+    ]
+  },
+  "5380": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Caña de lomo de bellota 100 % ibérico, elaborada con el músculo lumbar. Al corte presenta vetas de grasa infiltrada."
+      ]
+    ]
+  },
+  "5604": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Lomo de bellota 100 % ibérico ecológico, elaborado con el músculo lumbar de cerdos criados bajo certificación ecológica."
+      ]
+    ]
+  },
+  "5331": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Caña de lomo de cebo de campo 100 % ibérico, elaborada con el músculo lumbar y curada mediante métodos tradicionales."
+      ]
+    ]
+  },
+  "5378": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Caña de lomo de cebo de campo 100 % ibérico, elaborada con el músculo lumbar y curada mediante métodos tradicionales."
+      ]
+    ]
+  },
+  "5335": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Longaniza de bellota 100 % ibérica, con pimentón y especias que aportan su característico sabor y aroma."
+      ]
+    ]
+  },
+  "6588": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Chorizo de bellota 100 % ibérico loncheado, preparado para servir en aperitivos y tablas de embutidos."
+      ]
+    ]
+  },
+  "6669": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Chorizo de bellota 100 % ibérico loncheado, preparado para servir en aperitivos y tablas de embutidos."
+      ]
+    ]
+  },
+  "6587": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Salchichón cular de bellota 100 % ibérico presentado en lonchas, para servir directamente en aperitivos y tablas."
+      ]
+    ]
+  },
+  "5652": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Salchichón cular de bellota 100 % ibérico presentado en lonchas, para servir directamente en aperitivos y tablas."
+      ]
+    ]
+  },
+  "6770": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Paleta de cebo de campo 100 % ibérica cortada en lonchas, lista para presentar como aperitivo."
+      ]
+    ]
+  },
+  "6671": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Paleta de cebo de campo 100 % ibérica cortada en lonchas, lista para presentar como aperitivo."
+      ]
+    ]
+  },
+  "6710": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Paleta de bellota 100 % ibérica Oro en lonchas finas, preparada para servir en tapas y degustaciones."
+      ]
+    ]
+  },
+  "6670": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Lomo de cebo de campo 100 % ibérico en lonchas finas, preparado para servir en aperitivos y tablas."
+      ]
+    ]
+  },
+  "6760": {
+    "title": "Datos declarados · Tre Archi",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Cintas de pasta elaboradas con sémola de trigo duro y huevo pasteurizado."
+      ]
+    ]
+  },
+  "5351": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Paleta de cebo de campo 100 % ibérica de la gama Roja, procedente de la extremidad delantera del cerdo."
+      ]
+    ]
+  },
+  "5352": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Paleta de bellota 100 % ibérica Oro, de textura fundente y sabor persistente."
+      ]
+    ]
+  },
+  "5602": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Paleta de bellota 100 % ibérica ecológica, procedente de animales criados en fincas certificadas."
+      ]
+    ]
+  },
+  "5330": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Paleta de cebo de campo 100 % ibérica sin hueso, preparada para facilitar su corte y aprovechamiento."
+      ]
+    ]
+  },
+  "5345": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Paleta de bellota 100 % ibérica Oro sin hueso, con textura untuosa y notas dulces."
+      ]
+    ]
+  },
+  "5333": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Salchichón cular de bellota 100 % ibérico, elaborado con carnes seleccionadas y picado grueso."
+      ]
+    ]
+  },
+  "5377": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Salchichón cular de bellota 100 % ibérico, elaborado con carnes seleccionadas y picado grueso."
+      ]
+    ]
+  },
+  "5606": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Salchichón de bellota 100 % ibérico ecológico, condimentado con especias ecológicas y embutido en tripa natural."
+      ]
+    ]
+  },
+  "5336": {
+    "title": "Datos declarados · BEHER",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Panceta de bellota 100 % ibérica de la zona del vientre, adobada con especias para aportar sabor y aroma."
+      ]
+    ]
   }
 }
