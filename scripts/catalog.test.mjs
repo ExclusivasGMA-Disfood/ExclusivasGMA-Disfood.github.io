@@ -154,7 +154,7 @@ for(const page of ['index.html','nuevo/index.html']){
     await new Promise(r=>setTimeout(r,20));
    }
    assert.equal(w.eval('favIds().length'),2);
-   assert.ok([...d.querySelectorAll('.desktop-selection-name')].every(e=>/250 g|580 g/.test(e.textContent)));
+   assert.ok([...d.querySelectorAll('.desktop-selection-name')].every(e=>/250 g|540 g/.test(e.textContent)));
    assert.match(d.querySelector('#productPosition').textContent,/de 4$/);
    // A reference search must select the matching format, even if it is not the first card.
    d.querySelector('#productClose').click();
@@ -162,7 +162,7 @@ for(const page of ['index.html','nuevo/index.html']){
    assert.equal(d.querySelectorAll('.desktop-product-card').length,1);
    d.querySelector('.desktop-product-open').click();
    assert.match(d.querySelector('.product-detail-ref').textContent,/1988/);
-   assert.equal(d.querySelector('#productFormatSelect').selectedOptions[0].textContent.includes('580 g'),true);
+   assert.equal(d.querySelector('#productFormatSelect').selectedOptions[0].textContent.includes('540 g'),true);
    d.querySelector('#productClose').click();
    w.testFilter('',true);
    assert.equal(d.querySelectorAll('.desktop-product-card').length,2,'La revisión muestra ambos formatos seleccionados');

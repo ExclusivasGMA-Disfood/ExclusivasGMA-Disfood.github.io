@@ -1067,15 +1067,15 @@
     "facts": [
       [
         "Producto",
-        "Tomate Frito"
+        "Tomate frito"
       ],
       [
-        "Formato",
-        "Tarro Cristal 580"
+        "Presentación",
+        "Tarro de cristal"
       ],
       [
-        "Peso escurrido declarado",
-        "540 g"
+        "Peso neto",
+        "540 g, según el etiquetado del fabricante."
       ]
     ]
   },
@@ -7647,6 +7647,77 @@
       [
         "Variedades de uva",
         "Syrah, garnacha y cinsault."
+      ]
+    ]
+  },
+  "1458": {
+    "title": "Datos declarados · Soster Ibérica",
+    "completeness": "with-ingredients",
+    "facts": [
+      [
+        "Descripción",
+        "Burratina Palazzo elaborada con leche de vaca y nata, presentada en unidades de 120 g."
+      ],
+      [
+        "Presentación",
+        "Caja de 6 unidades de 120 g; 720 g en total."
+      ]
+    ],
+    "ingredients": "Leche entera de vaca, cuajo, sal, nata UHT (mín. 35 %)."
+  },
+  "1139": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Passata de tomate de textura densa y sin semillas, lista para utilizar en la cocina."
+      ],
+      [
+        "Conservación",
+        "Conservar en un lugar seco, alejado del calor y de la luz solar."
+      ]
+    ]
+  },
+  "4409": {
+    "title": "Datos declarados · Conservas Marzo",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Mermelada extra de fresa presentada en tarro de cristal."
+      ],
+      [
+        "Peso neto",
+        "340 g, según el etiquetado del fabricante."
+      ]
+    ]
+  },
+  "2452": {
+    "title": "Datos declarados · Conservas Marzo",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Mermelada extra de melocotón presentada en tarro de cristal."
+      ],
+      [
+        "Peso neto",
+        "340 g, según el etiquetado del fabricante."
+      ]
+    ]
+  },
+  "5827": {
+    "title": "Datos declarados · Conservas Marzo",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Mermelada extra de tomate presentada en tarro de cristal."
+      ],
+      [
+        "Peso neto",
+        "340 g, según el etiquetado del fabricante."
       ]
     ]
   }
