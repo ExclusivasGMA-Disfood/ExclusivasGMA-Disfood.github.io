@@ -154,7 +154,7 @@ for(const page of ['index.html','nuevo/index.html']){
     await new Promise(r=>setTimeout(r,20));
    }
    assert.equal(w.eval('favIds().length'),2);
-   assert.ok([...d.querySelectorAll('.desktop-selection-name')].every(e=>/250 GR|580 GR/i.test(e.textContent)));
+   assert.ok([...d.querySelectorAll('.desktop-selection-name')].every(e=>/250 g|580 g/.test(e.textContent)));
    assert.match(d.querySelector('#productPosition').textContent,/de 4$/);
    // A reference search must select the matching format, even if it is not the first card.
    d.querySelector('#productClose').click();
