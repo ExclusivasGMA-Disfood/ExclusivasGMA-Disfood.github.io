@@ -7503,5 +7503,151 @@
         "Conservar en un lugar seco, alejado del calor y de la luz solar."
       ]
     ]
+  },
+  "4511": {
+    "title": "Datos declarados · Barton & Guestier",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Cabernet Sauvignon con fruta negra, matices especiados y tostados, taninos suaves y final de vainilla y regaliz."
+      ],
+      [
+        "Maridaje",
+        "Parrilladas de carne, pasta y quesos."
+      ],
+      [
+        "Servicio",
+        "16–18 °C"
+      ]
+    ]
+  },
+  "4512": {
+    "title": "Datos declarados · Barton & Guestier",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Merlot de perfil frutal, con fresa, mora y un toque de café; textura sedosa."
+      ],
+      [
+        "Maridaje",
+        "Carnes, aves, pasta y quesos."
+      ],
+      [
+        "Servicio",
+        "16–18 °C"
+      ]
+    ]
+  },
+  "6591": {
+    "title": "Datos declarados · Barton & Guestier",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Pinot Noir con cereza, moca y especias; paso suave y taninos integrados."
+      ],
+      [
+        "Maridaje",
+        "Pizza, paella y risotto."
+      ],
+      [
+        "Servicio",
+        "14–16 °C"
+      ]
+    ]
+  },
+  "4495": {
+    "title": "Datos declarados · Barton & Guestier",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Chardonnay con pera, membrillo y vainilla; entrada fresca y textura redonda."
+      ],
+      [
+        "Maridaje",
+        "Aves, ensaladas y pasta."
+      ],
+      [
+        "Servicio",
+        "10–12 °C"
+      ]
+    ]
+  },
+  "4496": {
+    "title": "Datos declarados · Barton & Guestier",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Sauvignon Blanc de perfil fresco, con pomelo, piña y final cítrico."
+      ],
+      [
+        "Maridaje",
+        "Aperitivos, marisco y pescado a la parrilla."
+      ],
+      [
+        "Servicio",
+        "10–12 °C"
+      ]
+    ]
+  },
+  "6161": {
+    "title": "Datos declarados · Thomas Barton",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Tinto elaborado con merlot y cabernet sauvignon, con aromas de frambuesa madura y matices de tabaco. De estructura equilibrada y carácter frutal."
+      ],
+      [
+        "Maridaje",
+        "Carnes rojas, pollo asado y quesos maduros de pasta blanda."
+      ],
+      [
+        "Servicio",
+        "16–18 °C"
+      ]
+    ]
+  },
+  "5926": {
+    "title": "Datos declarados · Ramón Bilbao",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Tinto de tempranillo criado en roble americano, de perfil fresco y frutal. Presenta notas de mora y ciruela, acompañadas de vainilla, coco y regaliz; en boca resulta jugoso y equilibrado."
+      ]
+    ]
+  },
+  "5927": {
+    "title": "Datos declarados · Mar de Frades",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Albariño de carácter fresco y aromático, con notas florales, de eucalipto, menta y fruta tropical. En boca combina viveza, suavidad y volumen."
+      ],
+      [
+        "Elaboración",
+        "Vendimia manual, selección de la uva, fermentación con levaduras indígenas y trabajo sobre lías para aportar volumen y equilibrio."
+      ]
+    ]
+  },
+  "5851": {
+    "title": "Datos declarados · Moonlight & Roses",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Vino rosado de perfil fresco y elegante, con notas de frutos rojos."
+      ],
+      [
+        "Variedades de uva",
+        "Syrah, garnacha y cinsault."
+      ]
+    ]
   }
 }
