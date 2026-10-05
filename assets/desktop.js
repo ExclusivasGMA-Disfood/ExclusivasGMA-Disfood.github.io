@@ -188,9 +188,10 @@
     if(!desktopMedia.matches)return;
     const ids=favIds();
     selectionCount.textContent=ids.length;
+    const note=document.querySelector('.desktop-selection-note');if(note)note.textContent=ids.length?SELECTION_QUANTITY_NOTE:'Se conserva en este dispositivo y puede exportarse en PDF.';
     selectionList.innerHTML=ids.length?ids.map(id=>{
       const it=findItem(id),qty=favs[id]||1;
-      return `<div class="desktop-selection-item" data-selection-id="${id}"><div><div class="desktop-selection-name" title="${esc(it.n)}">${esc(it.n)}</div>${productOrderBadge(it)}<div class="desktop-selection-ref">Ref. ${esc(it.ref)}</div></div><div class="desktop-qty"><button type="button" data-action="dec" aria-label="Restar unidad">−</button><span>${qty}</span><button type="button" data-action="inc" aria-label="Sumar unidad">+</button><button type="button" data-action="remove" aria-label="Quitar producto">×</button></div></div>`;
+      return `<div class="desktop-selection-item" data-selection-id="${id}"><div><div class="desktop-selection-name" title="${esc(it.n)}">${esc(it.n)}</div>${productOrderBadge(it)}<div class="desktop-selection-ref">Ref. ${esc(it.ref)}${productBillingText(it)?' · '+productBillingText(it):''}</div></div><div><div class="quantity-label">Cantidad</div><div class="desktop-qty"><button type="button" data-action="dec" aria-label="${esc(productQuantityAction(it,'Restar'))}">−</button><span>${productQuantityText(it,qty)}</span><button type="button" data-action="inc" aria-label="${esc(productQuantityAction(it,'Sumar'))}">+</button><button type="button" data-action="remove" aria-label="Quitar producto">×</button></div></div></div>`;
     }).join(''):'<div class="desktop-selection-empty">Añade productos con el botón + para preparar una propuesta comercial.</div>';
   }
 
@@ -254,7 +255,7 @@
   document.getElementById('desktopCopySelection').addEventListener('click',async()=>{
     const ids=favIds();
     if(!ids.length){showToast('No hay referencias seleccionadas');return;}
-    const text=ids.map(id=>{const it=findItem(id);return `${it.ref} · ${it.n}${productOrderText(it)} · Cant. ${favs[id]}`}).join('\n');
+    const text=buildProposalText();
     try{await navigator.clipboard.writeText(text);showToast('Selección copiada');}catch(error){showToast('No se pudo copiar la selección');}
   });
   document.getElementById('searchInput')?.addEventListener('input',()=>{forcedGroup=null;desktopGroupFocused=false;landscapeShowAll=true;landscapeDepartmentFocus=null;});

@@ -141,7 +141,7 @@ for(const page of ['index.html','nuevo/index.html']){
    w.testFilter('tomate marzo');
    const cards=[...d.querySelectorAll('.desktop-product-card')];
    assert.equal(cards.length,4,'Tres grupos de tomate y una mermelada');
-   const frito=cards.find(c=>c.textContent.includes('Tomate frito · Marzo'));
+   const frito=cards.find(c=>c.textContent.includes('Tomate frito (Marzo)'));
    assert.ok(frito);frito.querySelector('.desktop-add').click();
    assert.equal(w.eval('favIds().length'),0,'El + pide formato, no elige una referencia silenciosamente');
    const select=d.querySelector('#productFormatSelect');assert.equal(select.options.length,3);
@@ -479,3 +479,33 @@ for(const width of [390,1366]){
   }finally{await w.happyDOM.close();}
  });
 }
+
+for(const width of [390,1366])test(`Cantidades: embalaje y facturación separados ${width}`,async()=>{
+ const w=await app('index.html',width,900);try{
+  const d=w.document;
+  for(const ref of ['6740','2323']){
+   w.testFilter(ref);
+   const gi=w.testData.findIndex(g=>g.items.some(i=>i.ref===ref));
+   const id=`${gi}-${w.testData[gi].items.findIndex(i=>i.ref===ref)}`;
+   w.eval(`openProduct('${id}')`);
+   const detail=d.querySelector('#productDetail').textContent;
+   assert.match(detail,/Contenido de la caja/);
+   assert.doesNotMatch(detail,/venta por kg|Unidad de la selección/);
+   if(ref==='2323')assert.match(detail,/Por kg, según el peso final/);
+   d.querySelector('#productSelectBtn').click();d.querySelector('#productClose').click();
+  }
+  w.eval('openSheet()');
+  for(const row of d.querySelectorAll('.sheet-item')){
+   assert.equal(row.querySelector('.qty-stepper span').textContent,'1');
+   assert.equal(row.querySelector('.quantity-label').textContent,'Cantidad');
+   assert.match(row.querySelector('[data-action="inc"]').getAttribute('aria-label'),/Sumar cantidad de /);
+  }
+  d.querySelector('.qty-stepper [data-action="inc"]').click();
+  const proposal=w.eval('buildProposalText()');
+  assert.match(proposal,/Cantidad: 2/);assert.match(proposal,/Cantidad: 1/);
+  assert.match(proposal,/Total: 2 referencias/);assert.doesNotMatch(proposal,/3 unidades|Cantidad: \d+ kg/);
+  assert.match(proposal,/Facturación por kg/);assert.match(proposal,/Por encargo/);
+  let copied;w.navigator.clipboard.writeText=async text=>{copied=text;};
+  d.querySelector('#desktopCopySelection').click();await new Promise(resolve=>setTimeout(resolve,20));assert.equal(copied,proposal);
+ }finally{await w.happyDOM.close();}
+});

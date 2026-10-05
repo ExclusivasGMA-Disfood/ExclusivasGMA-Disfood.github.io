@@ -197,3 +197,7 @@ html body .product-order-condition{margin:10px 0 14px}
 html body .product-order-condition .order-badge{font-size:12px}
 html body .product-order-condition p{margin:3px 0 0;font-size:13px;line-height:1.5;color:var(--ink-soft)}
 html body .discovery-card-body .order-badge,html body .search-suggestion-copy .order-badge{font-size:10px;padding:2px 6px}
+
+html body .quantity-label{font-size:11px;line-height:1.4;color:var(--ink-soft);margin:0 0 4px;text-align:center}
+html body .selection-quantity-note{font-size:12px;line-height:1.5;color:var(--ink-soft);padding:12px 4px;margin:4px 0}
+html body .qty-stepper span{padding:0 5px;white-space:nowrap}
