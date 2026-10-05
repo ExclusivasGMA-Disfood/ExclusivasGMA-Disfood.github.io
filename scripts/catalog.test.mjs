@@ -419,16 +419,16 @@ for(const [width,height] of [[320,740],[390,844],[430,932],[844,390],[1366,900]]
  test(`main dropdown destinations and dismissal ${width}x${height}`,async()=>{
   const w=await app('index.html',width,height);try{
    const d=w.document,menu=d.getElementById('topMenuPanel'),toggle=d.getElementById('topMenuToggle');
-   assert.deepEqual([...menu.querySelectorAll('button')].map(b=>b.textContent),['Inicio','Catálogo','Marcas','Selección de Navidad']);
+   assert.deepEqual([...menu.querySelectorAll('button')].map(b=>b.textContent),['Inicio','Catálogo','Marcas','Selección de Navidad','Contacto']);
    const desktop=d.getElementById('desktopCatalog');
    desktop.style.display=width>=1024?'block':'none';
    d.getElementById('siteHeader').getBoundingClientRect=()=>({height:65});
    Object.defineProperty(d.getElementById('controls'),'offsetHeight',{value:70});
    const groups=d.getElementById('groups');
-   for(const [el,top] of [[desktop,1000],[groups,900],[d.getElementById('gmaBrandsTitle'),5000]])el.getBoundingClientRect=()=>({top:top-w.scrollY});
+   for(const [el,top] of [[desktop,1000],[groups,900],[d.getElementById('gmaBrandsTitle'),5000],[d.getElementById('contacto'),6000]])el.getBoundingClientRect=()=>({top:top-w.scrollY});
    let y=200;
    Object.defineProperty(w,'scrollY',{get:()=>y});w.scrollTo=options=>{y=options.top;};
-   for(const [action,expected] of [['home',0],['catalog',width>=1024?923:753],['brands',width>=1024?4923:4853]]){
+   for(const [action,expected] of [['home',0],['catalog',width>=1024?923:753],['brands',width>=1024?4923:4853],['contact',width>=1024?5923:5853]]){
     toggle.click();assert.equal(menu.inert,false);
     menu.querySelector(`[data-menu-action="${action}"]`).click();
     await new Promise(resolve=>setTimeout(resolve,60));

@@ -14,7 +14,7 @@ function mainMenuNavigate(destination){
     if(destination==='home'){scrollImmediately(0);return;}
     const desktop=document.getElementById('desktopCatalog');
     const isDesktop=desktop&&getComputedStyle(desktop).display!=='none';
-    const target=destination==='brands'?document.getElementById('gmaBrandsTitle'):(isDesktop?desktop:groupsEl);
+    const target=destination==='contact'?document.getElementById('contacto'):destination==='brands'?document.getElementById('gmaBrandsTitle'):(isDesktop?desktop:groupsEl);
     if(!target)return;
     const headerHeight=document.getElementById('siteHeader').getBoundingClientRect().height;
     const controlsHeight=isDesktop?0:controls.offsetHeight;

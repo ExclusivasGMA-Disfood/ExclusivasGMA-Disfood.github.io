@@ -89,7 +89,7 @@ async function bundle(names,discovery=false){
     const groupButton`);
   }
   if(discovery&&name==='session')source=source.replace("if(!sessionBar)return;","if(!sessionBar || !$('sessionTitle') || !$('sessionSummary'))return;");
-  if(discovery&&name==='topbar')source=source.replace("case 'filters':", "case 'brands': mainMenuNavigate('brands');break;\n      case 'christmas': break;\n      case 'filters':").replace("case 'home': scrollImmediately(0);", "case 'home': mainMenuNavigate('home');").replace("case 'catalog': scrollToResults();", "case 'catalog': mainMenuNavigate('catalog');");
+  if(discovery&&name==='topbar')source=source.replace("case 'filters':", "case 'contact': mainMenuNavigate('contact');break;\n      case 'brands': mainMenuNavigate('brands');break;\n      case 'christmas': break;\n      case 'filters':").replace("case 'home': scrollImmediately(0);", "case 'home': mainMenuNavigate('home');").replace("case 'catalog': scrollToResults();", "case 'catalog': mainMenuNavigate('catalog');");
   if(discovery&&name==='discovery'){
    source=source.replaceAll('Todas las secciones','Todas las familias').replaceAll('Todas las familias</option>','Todas las subfamilias</option>');
    // Department and subfamily labels are distinct after restructuring.
