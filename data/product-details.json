@@ -7720,5 +7720,91 @@
         "340 g, según el etiquetado del fabricante."
       ]
     ]
+  },
+  "536": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Harina de trigo blando tipo 00 de fuerza, indicada para masas de fermentación larga."
+      ],
+      [
+        "Aplicaciones",
+        "Preparación de biga, mezclas de harinas, masas con fermentación controlada y elaboraciones destinadas a congelación."
+      ],
+      [
+        "Conservación",
+        "Conservar en un lugar seco, alejado del calor y de la luz solar."
+      ]
+    ]
+  },
+  "392": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Harina de trigo blando tipo 00 para pizza, con equilibrio entre fuerza y elasticidad."
+      ],
+      [
+        "Aplicaciones",
+        "Elaboración de pizzas de textura ligera."
+      ],
+      [
+        "Conservación",
+        "Conservar en un lugar seco, alejado del calor y de la luz solar."
+      ]
+    ]
+  },
+  "534": {
+    "title": "Datos declarados · Divella",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Harina de trigo blando tipo 00 formulada para pizza napolitana."
+      ],
+      [
+        "Aplicaciones",
+        "Masas de pizza con bordes altos y esponjosos."
+      ],
+      [
+        "Conservación",
+        "Conservar en un lugar seco, alejado del calor y de la luz solar."
+      ]
+    ]
+  },
+  "6256": {
+    "title": "Datos declarados · Caputo",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Harina Pizzeria de trigo blando tipo 00, con gluten elástico y resistente, indicada para la pizza napolitana clásica."
+      ],
+      [
+        "Aplicaciones",
+        "Masas de pizza de fermentación prolongada."
+      ]
+    ]
+  },
+  "6180": {
+    "title": "Datos declarados · Caputo",
+    "completeness": "facts-only",
+    "facts": [
+      [
+        "Descripción",
+        "Harina Saccorosso de trigo blando tipo 00, indicada para masas con reposos largos y fermentación prolongada en refrigeración."
+      ],
+      [
+        "Fuerza panadera",
+        "W 300–320."
+      ],
+      [
+        "Relación tenacidad/extensibilidad",
+        "P/L 0,50–0,60."
+      ]
+    ]
   }
 }
