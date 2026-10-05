@@ -1353,3 +1353,21 @@ html body :is(.item-photo,.desktop-product-photo,.discovery-photo,.product-visua
 
 /* Keep every main-menu action reachable on short and landscape screens. */
 html body .gma-menu-panel{max-height:calc(100vh - var(--topbar-h,65px) - 12px);max-height:calc(100dvh - var(--topbar-h,65px) - 12px);overflow-y:auto;overscroll-behavior:contain}
+
+/* Commercial contact */
+html body .gma-contact{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(240px,1fr);gap:48px;max-width:1200px;margin:40px auto 0;padding:40px 32px;border-top:1px solid #dedede;color:#202020;scroll-margin-top:90px}
+html body .gma-contact-eyebrow{font-family:'Geist',sans-serif;font-size:11px;font-weight:700;letter-spacing:.12em;color:#666;margin:0 0 12px}
+html body .gma-contact h2{font-family:'Geist',sans-serif;font-size:clamp(24px,3vw,32px);line-height:1.2;letter-spacing:-.035em;margin:0 0 16px;color:#202020}
+html body .gma-contact-intro>p:not(.gma-contact-eyebrow){font-size:15px;line-height:1.65;margin:0 0 14px;max-width:640px}
+html body .gma-contact-intro .gma-contact-help{color:#555;font-size:13px}
+html body .gma-contact-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+html body .gma-contact-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 18px;border:1px solid #d5d5d5;border-radius:12px;font-family:'Geist',sans-serif;font-size:14px;font-weight:650;text-decoration:none;line-height:1.4;text-align:center}
+html body .gma-contact-actions .gma-contact-primary{background:#ba0000;border-color:#ba0000;color:#fff}
+html body .gma-contact-actions .gma-contact-secondary{background:#fff;color:#202020}
+html body .gma-contact-details{font-style:normal;font-size:14px;line-height:1.7;padding-left:32px;border-left:1px solid #dedede;align-self:center;min-width:0}
+html body .gma-contact-details strong{display:block;font-size:17px;margin-bottom:8px}
+html body .gma-contact-details a{color:#333;text-underline-offset:4px;overflow-wrap:anywhere}
+html body .gma-contact-details p{margin:18px 0}
+html body .gma-contact-location{display:inline-flex;align-items:center;gap:8px;min-height:44px}
+html body .gma-contact a:focus-visible{outline:3px solid #ba0000;outline-offset:4px}
+@media(max-width:700px){html body .gma-contact{grid-template-columns:minmax(0,1fr);gap:28px;margin:24px 16px 0;padding:28px 4px}html body .gma-contact-details{border-left:0;border-top:1px solid #dedede;padding:24px 0 0}html body .gma-contact-actions{flex-direction:column}html body .gma-contact-actions a{width:100%}}
