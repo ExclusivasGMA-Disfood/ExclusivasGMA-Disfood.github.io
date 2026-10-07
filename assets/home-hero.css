@@ -1,0 +1,23 @@
+/* Cabecera fotográfica: estilos limitados a este componente. */
+.home-hero{width:100%;max-width:1600px;margin:0 auto 20px;background:#f4f1e9;position:relative;overflow:hidden}
+.home-hero-stage{position:relative;aspect-ratio:3/1}
+.home-hero-slide{position:absolute;inset:0}
+.home-hero-slide[hidden]{display:none!important}
+.home-hero-cover{display:block;width:100%;height:100%;object-fit:cover;object-position:center 52%}
+.home-hero-recipe,.home-hero-plate{display:block;width:100%;height:100%}
+.home-hero-plate img{display:block;width:100%;height:100%;object-fit:contain}
+.home-hero-ingredients{display:none}
+.home-hero-controls{display:flex;align-items:center;justify-content:center;gap:2px;height:44px;background:#fff}
+.home-hero-controls button{appearance:none;border:0;border-radius:0;background:transparent;color:#222;min-width:44px;height:44px;padding:0;cursor:pointer;font:24px/1 sans-serif;display:grid;place-items:center}
+.home-hero-controls .home-hero-dot span{display:block;width:7px;height:7px;border-radius:50%;background:#c5c5c5}
+.home-hero-controls .home-hero-dot[aria-pressed="true"] span{background:#222}
+.home-hero-controls [data-hero-pause]{font-size:16px}
+.home-hero button:focus-visible,.home-hero a:focus-visible{outline:2px solid #222;outline-offset:-3px}
+@media(max-width:600px){
+ .home-hero-stage{aspect-ratio:1/1.38}
+ .home-hero-recipe{display:flex;flex-direction:column}
+ .home-hero-plate{position:relative;overflow:hidden;height:59.4%;flex-shrink:0}
+ .home-hero-plate img{position:absolute;max-width:none;width:250%;height:auto;left:0;top:0}
+ .home-hero-ingredients{display:block;position:relative;overflow:hidden;flex:1}
+ .home-hero-ingredients img{position:absolute;max-width:none;width:166.6667%;height:auto;left:-66.6667%;top:0}
+}

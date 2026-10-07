@@ -1433,6 +1433,9 @@ html body .gma-contact a:focus-visible{outline:3px solid #ba0000;outline-offset:
 
 <link rel="preload" as="font" href="assets/fonts/geist-variable-latin.woff2" type="font/woff2" crossorigin>
 <link rel="preload" as="font" href="assets/fonts/merriweather-700.woff2" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/home-hero.css?v=20261007-1">
+<script src="assets/home-hero.js?v=20261007-1" defer></script>
+<script>if("scrollRestoration" in history)history.scrollRestoration="manual";</script>
 </head>
 <body>
 <div class="offline-banner" id="offlineBanner">Sin conexión · puedes seguir preparando tu selección mientras mantengas el catálogo abierto</div>
@@ -1468,6 +1471,27 @@ html body .gma-contact a:focus-visible{outline:3px solid #ba0000;outline-offset:
   <p>Acceso para clientes. Disponible próximamente.</p>
   <p>Puedes consultar el catálogo y preparar tu selección sin iniciar sesión. Para tramitarla, contacta con tu comercial habitual.</p>
   <p class="gma-account-status" id="accountStatus" role="status" aria-live="polite"></p>
+</section>
+
+<section class="home-hero" id="homeHero" aria-label="Inspiración gastronómica" aria-roledescription="carrusel">
+  <div class="home-hero-stage">
+    <div class="home-hero-slide" role="group" aria-roledescription="diapositiva" aria-label="1 de 2: mesa para compartir">
+      <img class="home-hero-cover" src="images/hero/mesa.webp" width="1200" height="901" alt="Mesa con jamón ibérico, pimientos, boquerones y pan con tomate" fetchpriority="high" decoding="async">
+    </div>
+    <div class="home-hero-slide" role="group" aria-roledescription="diapositiva" aria-label="2 de 2: ravioli con boletus y parmesano" hidden>
+      <a class="home-hero-recipe" href="images/hero/receta.webp" target="_blank" rel="noopener" aria-label="Ampliar receta y referencias de productos (nueva pestaña)">
+        <span class="home-hero-plate"><img src="images/hero/receta.webp" width="2172" height="724" alt="Ravioli con boletus y parmesano. Productos: ravioli formaggi Tre Archi, ref. 5718; Ken culinario, ref. 2303; parmesano Reggiano, ref. 049; boletus en dados Selec Mardis, ref. 3676; mantequilla Ken, ref. 6094; aceite de trufa blanca Viander, ref. 059." decoding="async"></span>
+        <span class="home-hero-ingredients" aria-hidden="true"><img src="images/hero/receta.webp" width="2172" height="724" alt="" decoding="async"></span>
+      </a>
+    </div>
+  </div>
+  <div class="home-hero-controls">
+    <button type="button" data-hero-prev aria-label="Foto anterior">‹</button>
+    <button type="button" class="home-hero-dot" data-hero-go="0" aria-label="Mostrar foto 1" aria-pressed="true"><span></span></button>
+    <button type="button" class="home-hero-dot" data-hero-go="1" aria-label="Mostrar foto 2" aria-pressed="false"><span></span></button>
+    <button type="button" data-hero-next aria-label="Foto siguiente">›</button>
+    <button type="button" data-hero-pause aria-label="Pausar carrusel" aria-pressed="false">Ⅱ</button>
+  </div>
 </section>
 <div class="app">
   <h1 class="sr-only">Catálogo profesional GMA Disfood</h1>
