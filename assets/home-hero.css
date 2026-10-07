@@ -17,7 +17,7 @@
  .home-hero-stage{aspect-ratio:1/1.38}
  .home-hero-recipe{display:flex;flex-direction:column}
  .home-hero-plate{position:relative;overflow:hidden;height:59.4%;flex-shrink:0}
- .home-hero-plate img{position:absolute;max-width:none;width:250%;height:auto;left:0;top:0}
+ .home-hero-plate img{position:absolute;max-width:none;width:250%;height:auto;left:-5.5%;top:0}
  .home-hero-ingredients{display:block;position:relative;overflow:hidden;flex:1}
  .home-hero-ingredients img{position:absolute;max-width:none;width:166.6667%;height:auto;left:-66.6667%;top:0}
 }
