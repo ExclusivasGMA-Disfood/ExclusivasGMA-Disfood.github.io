@@ -33,7 +33,7 @@ for (const item of products) {
 for (const group of groups) {
   if (!departments.some(dept => dept.name === group.dept)) fail(`Departamento sin definir: ${group.dept}`);
 }
-for (const [name, expected] of [['featured', 8], ['new', 6]]) {
+for (const [name, expected] of [['featured', 10], ['new', 6]]) {
   const selected = curation[name];
   if (!Array.isArray(selected) || selected.length !== expected) fail(`Selección ${name}: cantidad inesperada`);
   if (!Array.isArray(selected)) continue;
