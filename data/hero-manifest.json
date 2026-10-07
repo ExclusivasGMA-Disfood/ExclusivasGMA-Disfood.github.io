@@ -11,15 +11,6 @@
       "split": null
     },
     {
-      "id": "ravioli",
-      "image": "images/hero/receta.webp",
-      "width": 2172,
-      "height": 724,
-      "alt": "Ravioli con boletus y parmesano. Productos: ravioli formaggi Tre Archi, ref. 5718; Ken culinario, ref. 2303; parmesano Reggiano, ref. 049; boletus en dados Selec Mardis, ref. 3676; mantequilla Ken, ref. 6094; aceite de trufa blanca Viander, ref. 059.",
-      "layout": "pasta",
-      "split": null
-    },
-    {
       "id": "aperitivo",
       "image": "images/hero/aperitivo.webp",
       "width": 2172,
@@ -29,13 +20,13 @@
       "split": 0.66
     },
     {
-      "id": "risotto",
-      "image": "images/hero/risotto.webp",
+      "id": "blinis",
+      "image": "images/hero/blinis.webp",
       "width": 2172,
       "height": 724,
-      "alt": "Risotto con secreto ibérico y setas. Arroz Carnaroli Divella, ref. 6607; secreto Montesano, ref. 4345; mezcla de setas Selec Mardis, ref. 3675; Chianti Poggio del Sasso, ref. 5849.",
+      "alt": "Canapés de salmón con blinis Domínguez, ref. 5811; salmón Supreme Domínguez, ref. 6058; crema de queso a las finas hierbas Soster, ref. 486. Para completar: eneldo y limón.",
       "layout": "panel",
-      "split": 0.65
+      "split": 0.684
     },
     {
       "id": "sushi",
@@ -47,13 +38,22 @@
       "split": 0.665
     },
     {
-      "id": "blinis",
-      "image": "images/hero/blinis.webp",
+      "id": "ravioli",
+      "image": "images/hero/receta.webp",
       "width": 2172,
       "height": 724,
-      "alt": "Canapés de salmón con blinis Domínguez, ref. 5811; salmón Supreme Domínguez, ref. 6058; crema de queso a las finas hierbas Soster, ref. 486. Para completar: eneldo y limón.",
+      "alt": "Ravioli con boletus y parmesano. Productos: ravioli formaggi Tre Archi, ref. 5718; Ken culinario, ref. 2303; parmesano Reggiano, ref. 049; boletus en dados Selec Mardis, ref. 3676; mantequilla Ken, ref. 6094; aceite de trufa blanca Viander, ref. 059.",
+      "layout": "pasta",
+      "split": null
+    },
+    {
+      "id": "risotto",
+      "image": "images/hero/risotto.webp",
+      "width": 2172,
+      "height": 724,
+      "alt": "Risotto con secreto ibérico y setas. Arroz Carnaroli Divella, ref. 6607; secreto Montesano, ref. 4345; mezcla de setas Selec Mardis, ref. 3675; Chianti Poggio del Sasso, ref. 5849.",
       "layout": "panel",
-      "split": 0.684
+      "split": 0.65
     }
   ]
 }
