@@ -30,3 +30,11 @@
  .home-hero-panel .home-hero-ingredients{background:#f7f4ed}
  .home-hero-panel .home-hero-ingredients img{width:var(--panel-width);left:var(--panel-left);clip-path:inset(0 0 0 var(--split))}
 }
+
+/* Más aire alrededor de los platos, sin reducir las referencias en móvil. */
+@media(min-width:601px){
+ .home-hero-recipe{transform:scale(.92);transform-origin:center}
+}
+@media(max-width:600px){
+ .home-hero-plate{transform:scale(.88);transform-origin:center}
+}
