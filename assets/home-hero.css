@@ -38,3 +38,10 @@
 @media(max-width:600px){
  .home-hero-plate{transform:scale(.88);transform-origin:center}
 }
+
+.home-hero-mobile{display:none}
+@media(max-width:600px){
+ .home-hero-has-mobile .home-hero-recipe{display:none}
+ .home-hero-mobile{display:block;width:100%;height:100%}
+ .home-hero-mobile img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+}

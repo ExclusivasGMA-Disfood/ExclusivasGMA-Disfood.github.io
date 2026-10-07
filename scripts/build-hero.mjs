@@ -6,6 +6,7 @@ const ids=new Set();
 for(const s of slides){
  if(ids.has(s.id)||!/^images\/hero\/[\w-]+\.webp$/.test(s.image)||!['cover','pasta','panel'].includes(s.layout))throw Error('Entrada de cabecera no válida: '+s.id);
  ids.add(s.id);
+ if(s.mobile){if(!/^images\/hero\/[\w-]+\.webp$/.test(s.mobile.image))throw Error('Ruta móvil incorrecta');const mm=await sharp(s.mobile.image).metadata();if(mm.width!==s.mobile.width||mm.height!==s.mobile.height)throw Error('Dimensiones móviles incorrectas');}
  const m=await sharp(s.image).metadata();
  if(m.width!==s.width||m.height!==s.height)throw Error('Dimensiones incorrectas: '+s.image);
  if(s.layout==='panel'&&!(s.split>.3&&s.split<.8))throw Error('Encuadre incorrecto: '+s.id);
@@ -14,8 +15,8 @@ const image=(s,alt,extra='')=>`<img src="${esc(s.image)}" width="${s.width}" hei
 const framing=s=>{const sceneHeight=1/(3*s.split);const panelWidth=Math.min(100/(1-s.split),3*(1.38-sceneHeight)*100)*.96;return `--scene-width:${100/s.split}%;--scene-height:${sceneHeight/1.38*100}%;--panel-width:${panelWidth}%;--panel-left:${50-panelWidth*(1+s.split)/2}%;--split:${s.split*100}%`;};
 const content=`<section class="home-hero" id="homeHero" aria-label="Inspiración gastronómica" aria-roledescription="carrusel">
   <div class="home-hero-stage">
-${slides.map((s,i)=>`    <div class="home-hero-slide" role="group" aria-roledescription="diapositiva" aria-label="${i+1} de ${slides.length}: ${esc(s.id)}"${i?' hidden':''}>
-${s.layout==='cover'?'      '+image(s,s.alt,'class="home-hero-cover" fetchpriority="high"'):`      <div class="home-hero-recipe${s.layout==='panel'?' home-hero-panel':''}"${s.layout==='panel'?` style="${framing(s)}"`:''}>
+${slides.map((s,i)=>`    <div class="home-hero-slide${s.mobile?' home-hero-has-mobile':''}" role="group" aria-roledescription="diapositiva" aria-label="${i+1} de ${slides.length}: ${esc(s.id)}"${i?' hidden':''}>
+${s.mobile?'      <div class="home-hero-mobile">'+image(s.mobile,s.alt)+'</div>\n':''}${s.layout==='cover'?'      '+image(s,s.alt,'class="home-hero-cover" fetchpriority="high"'):`      <div class="home-hero-recipe${s.layout==='panel'?' home-hero-panel':''}"${s.layout==='panel'?` style="${framing(s)}"`:''}>
         <span class="home-hero-plate">${image(s,s.alt)}</span>
         <span class="home-hero-ingredients" aria-hidden="true">${image(s,'')}</span>
       </div>`}
