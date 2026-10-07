@@ -24,9 +24,9 @@
 
 @media(max-width:600px){
  .home-hero-controls{gap:0}
- .home-hero-controls .home-hero-dot{min-width:30px}
- .home-hero-panel .home-hero-plate{height:36.6%}
+ .home-hero-controls .home-hero-dot{min-width:0;flex:1;max-width:30px}
+ .home-hero-panel .home-hero-plate{height:var(--scene-height)}
  .home-hero-panel .home-hero-plate img{width:var(--scene-width);left:0}
  .home-hero-panel .home-hero-ingredients{background:#f7f4ed}
- .home-hero-panel .home-hero-ingredients img{width:262.5%;left:var(--panel-left);clip-path:inset(0 0 0 var(--split))}
+ .home-hero-panel .home-hero-ingredients img{width:var(--panel-width);left:var(--panel-left);clip-path:inset(0 0 0 var(--split))}
 }

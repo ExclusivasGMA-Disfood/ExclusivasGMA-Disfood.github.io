@@ -12,7 +12,7 @@
     },
     {
       "id": "aperitivo",
-      "image": "images/hero/aperitivo.webp",
+      "image": "images/hero/aperitivo-editorial.webp",
       "width": 2172,
       "height": 724,
       "alt": "Aperitivo con gildas de anchoa Selec Mardis, ref. 6140; patatas fritas 500 g, ref. 6740; boquerones en vinagre Solevante, ref. 5985; vermut La Chelo, ref. 4677.",
@@ -21,21 +21,21 @@
     },
     {
       "id": "blinis",
-      "image": "images/hero/blinis.webp",
+      "image": "images/hero/blinis-editorial.webp",
       "width": 2172,
       "height": 724,
       "alt": "Canapés de salmón con blinis Domínguez, ref. 5811; salmón Supreme Domínguez, ref. 6058; crema de queso a las finas hierbas Soster, ref. 486. Para completar: eneldo y limón.",
       "layout": "panel",
-      "split": 0.684
+      "split": 0.55
     },
     {
       "id": "sushi",
-      "image": "images/hero/sushi.webp",
+      "image": "images/hero/sushi-editorial.webp",
       "width": 2172,
       "height": 724,
       "alt": "Sushi con salmón ahumado especial sashimi Domínguez, ref. 5959. Para completar: arroz para sushi, nori, pepino, aguacate, vinagre de arroz y soja.",
       "layout": "panel",
-      "split": 0.665
+      "split": 0.535
     },
     {
       "id": "ravioli",
@@ -48,12 +48,48 @@
     },
     {
       "id": "risotto",
-      "image": "images/hero/risotto.webp",
+      "image": "images/hero/risotto-editorial.webp",
       "width": 2172,
       "height": 724,
       "alt": "Risotto con secreto ibérico y setas. Arroz Carnaroli Divella, ref. 6607; secreto Montesano, ref. 4345; mezcla de setas Selec Mardis, ref. 3675; Chianti Poggio del Sasso, ref. 5849.",
       "layout": "panel",
-      "split": 0.65
+      "split": 0.5
+    },
+    {
+      "id": "burrata",
+      "alt": "Ensalada de burrata Soster, ref. 2323; tomates rojos y amarillos semisecos Viander, refs. 5669 y 5670; pesto genovese, ref. 442; almendra frita, ref. 6744; AOVE Bombacha, ref. 6786.",
+      "image": "images/hero/burrata-editorial.webp",
+      "width": 2172,
+      "height": 724,
+      "layout": "panel",
+      "split": 0.39
+    },
+    {
+      "id": "tarta-queso",
+      "alt": "Tarta de queso al horno Bajocero, ref. 6774; mermelada de fresa Marzo, ref. 4409; almendra frita, ref. 6744.",
+      "image": "images/hero/tarta-queso-editorial.webp",
+      "width": 2172,
+      "height": 724,
+      "layout": "panel",
+      "split": 0.38
+    },
+    {
+      "id": "paella",
+      "alt": "Paella de secreto de bellota 100 % ibérico Montesano, ref. 4345, con AOVE Bombacha, ref. 6786. Para completar: arroz bomba, caldo, alcachofa, pimiento, tomate, ajo y azafrán.",
+      "image": "images/hero/paella-editorial.webp",
+      "width": 2172,
+      "height": 724,
+      "layout": "panel",
+      "split": 0.46
+    },
+    {
+      "id": "embutidos",
+      "alt": "Tabla de embutidos BEHER: chorizo de bellota 100 % ibérico, ref. 5334; salchichón de bellota 100 % ibérico, ref. 5333; lomo de bellota 100 % ibérico, ref. 5349.",
+      "image": "images/hero/embutidos-editorial.webp",
+      "width": 2172,
+      "height": 724,
+      "layout": "panel",
+      "split": 0.46
     }
   ]
 }
