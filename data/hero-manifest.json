@@ -17,7 +17,12 @@
       "height": 724,
       "alt": "Aperitivo con gildas de anchoa Selec Mardis, ref. 6140; patatas fritas 500 g, ref. 6740; boquerones en vinagre Solevante, ref. 5985; vermut La Chelo, ref. 4677.",
       "layout": "panel",
-      "split": 0.66
+      "split": 0.66,
+      "mobile": {
+        "image": "images/hero/aperitivo-mobile-proporcionado.webp",
+        "width": 1067,
+        "height": 1474
+      }
     },
     {
       "id": "embutidos",
