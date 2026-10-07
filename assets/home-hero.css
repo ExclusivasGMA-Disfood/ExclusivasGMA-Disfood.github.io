@@ -23,8 +23,10 @@
 }
 
 @media(max-width:600px){
- .home-hero-aperitivo .home-hero-plate{height:36.6%}
- .home-hero-aperitivo .home-hero-plate img{width:151.5%;left:0}
- .home-hero-aperitivo .home-hero-ingredients{background:#f7f4ed}
- .home-hero-aperitivo .home-hero-ingredients img{width:262.5%;left:-168.75%;clip-path:inset(0 0 0 66%)}
+ .home-hero-controls{gap:0}
+ .home-hero-controls .home-hero-dot{min-width:30px}
+ .home-hero-panel .home-hero-plate{height:36.6%}
+ .home-hero-panel .home-hero-plate img{width:var(--scene-width);left:0}
+ .home-hero-panel .home-hero-ingredients{background:#f7f4ed}
+ .home-hero-panel .home-hero-ingredients img{width:262.5%;left:var(--panel-left);clip-path:inset(0 0 0 var(--split))}
 }
