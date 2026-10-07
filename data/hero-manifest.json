@@ -47,6 +47,15 @@
       "split": 0.535
     },
     {
+      "id": "burrata",
+      "alt": "Ensalada con dos burratas pequeñas Soster, ref. 2323; tomates rojos y amarillos semisecos Viander, refs. 5669 y 5670; pesto genovese, ref. 442; almendra frita, ref. 6744; AOVE Bombacha, ref. 6786.",
+      "image": "images/hero/burrata-dos-pequenas.webp",
+      "width": 2172,
+      "height": 724,
+      "layout": "panel",
+      "split": 0.39
+    },
+    {
       "id": "ravioli",
       "image": "images/hero/receta.webp",
       "width": 2172,
@@ -63,15 +72,6 @@
       "alt": "Secreto ibérico Montesano, ref. 4345, con patatas fritas, pimientos verdes y pan. Tierras de Murillo Crianza Rioja, ref. 2752, para acompañar. Sales blanca y negra en pétalos Selec Mardis, refs. 2374 y 2135; AOVE picual primer día de cosecha, ref. 6611.",
       "layout": "panel",
       "split": 0.47
-    },
-    {
-      "id": "burrata",
-      "alt": "Ensalada con dos burratas pequeñas Soster, ref. 2323; tomates rojos y amarillos semisecos Viander, refs. 5669 y 5670; pesto genovese, ref. 442; almendra frita, ref. 6744; AOVE Bombacha, ref. 6786.",
-      "image": "images/hero/burrata-dos-pequenas.webp",
-      "width": 2172,
-      "height": 724,
-      "layout": "panel",
-      "split": 0.39
     },
     {
       "id": "tarta-queso",
