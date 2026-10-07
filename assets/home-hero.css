@@ -21,3 +21,10 @@
  .home-hero-ingredients{display:block;position:relative;overflow:hidden;flex:1}
  .home-hero-ingredients img{position:absolute;max-width:none;width:166.6667%;height:auto;left:-66.6667%;top:0}
 }
+
+@media(max-width:600px){
+ .home-hero-aperitivo .home-hero-plate{height:36.6%}
+ .home-hero-aperitivo .home-hero-plate img{width:151.5%;left:0}
+ .home-hero-aperitivo .home-hero-ingredients{background:#f7f4ed}
+ .home-hero-aperitivo .home-hero-ingredients img{width:262.5%;left:-168.75%;clip-path:inset(0 0 0 66%)}
+}
