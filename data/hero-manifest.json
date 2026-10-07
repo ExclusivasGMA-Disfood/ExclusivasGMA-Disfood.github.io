@@ -11,15 +11,6 @@
       "split": null
     },
     {
-      "id": "embutidos",
-      "alt": "Tabla de embutidos BEHER: chorizo de bellota 100 % ibérico, ref. 5334; salchichón de bellota 100 % ibérico, ref. 5333; lomo de bellota 100 % ibérico, ref. 5349.",
-      "image": "images/hero/embutidos-editorial.webp",
-      "width": 2172,
-      "height": 724,
-      "layout": "panel",
-      "split": 0.46
-    },
-    {
       "id": "aperitivo",
       "image": "images/hero/aperitivo-editorial.webp",
       "width": 2172,
@@ -27,6 +18,15 @@
       "alt": "Aperitivo con gildas de anchoa Selec Mardis, ref. 6140; patatas fritas 500 g, ref. 6740; boquerones en vinagre Solevante, ref. 5985; vermut La Chelo, ref. 4677.",
       "layout": "panel",
       "split": 0.66
+    },
+    {
+      "id": "embutidos",
+      "alt": "Tabla de embutidos BEHER: chorizo de bellota 100 % ibérico, ref. 5334; salchichón de bellota 100 % ibérico, ref. 5333; lomo de bellota 100 % ibérico, ref. 5349.",
+      "image": "images/hero/embutidos-editorial.webp",
+      "width": 2172,
+      "height": 724,
+      "layout": "panel",
+      "split": 0.46
     },
     {
       "id": "blinis",
