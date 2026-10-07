@@ -74,15 +74,6 @@
       "split": 0.38
     },
     {
-      "id": "paella",
-      "alt": "Paella de secreto de bellota 100 % ibérico Montesano, ref. 4345, con AOVE Bombacha, ref. 6786. Para completar: arroz bomba, caldo, alcachofa, pimiento, tomate, ajo y azafrán.",
-      "image": "images/hero/paella-editorial.webp",
-      "width": 2172,
-      "height": 724,
-      "layout": "panel",
-      "split": 0.46
-    },
-    {
       "id": "embutidos",
       "alt": "Tabla de embutidos BEHER: chorizo de bellota 100 % ibérico, ref. 5334; salchichón de bellota 100 % ibérico, ref. 5333; lomo de bellota 100 % ibérico, ref. 5349.",
       "image": "images/hero/embutidos-editorial.webp",
