@@ -21,10 +21,10 @@
     },
     {
       "id": "blinis",
-      "image": "images/hero/blinis-editorial.webp",
+      "image": "images/hero/blinis-perdrier.webp",
       "width": 2172,
       "height": 724,
-      "alt": "Canapés de salmón con blinis Domínguez, ref. 5811; salmón Supreme Domínguez, ref. 6058; crema de queso a las finas hierbas Soster, ref. 486. Para completar: eneldo y limón.",
+      "alt": "Canapés de salmón con blinis Domínguez, ref. 5811; salmón Supreme Domínguez, ref. 6058; crema de queso a las finas hierbas Soster, ref. 486. Para completar: eneldo y limón. Louis Perdrier Brut, ref. 4134, para acompañar.",
       "layout": "panel",
       "split": 0.55
     },
@@ -47,13 +47,13 @@
       "split": null
     },
     {
-      "id": "risotto",
-      "image": "images/hero/risotto-editorial.webp",
-      "width": 2172,
-      "height": 724,
-      "alt": "Risotto con secreto ibérico y setas. Arroz Carnaroli Divella, ref. 6607; secreto Montesano, ref. 4345; mezcla de setas Selec Mardis, ref. 3675; Chianti Poggio del Sasso, ref. 5849.",
+      "id": "secreto",
+      "image": "images/hero/secreto-murillo.webp",
+      "width": 2162,
+      "height": 727,
+      "alt": "Secreto ibérico Montesano, ref. 4345, con patatas fritas, pimientos verdes y pan. Tierras de Murillo Crianza Rioja, ref. 2752, para acompañar. Sales blanca y negra en pétalos Selec Mardis, refs. 2374 y 2135; AOVE picual primer día de cosecha, ref. 6611.",
       "layout": "panel",
-      "split": 0.5
+      "split": 0.47
     },
     {
       "id": "burrata",
