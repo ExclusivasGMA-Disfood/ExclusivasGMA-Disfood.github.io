@@ -29,7 +29,7 @@ for(const page of ['index.html','nuevo/index.html']){
   const w=await app(page);try{
     const d=w.document;
     assert.equal(d.querySelectorAll('#newDiscovery .discovery-card').length,6);
-    assert.equal(d.querySelectorAll('#bestDiscovery .discovery-card').length,8);
+    assert.equal(d.querySelectorAll('#bestDiscovery .discovery-card').length,10);
     assert.match(d.querySelector('#desktopResultMeta').textContent,/990/);
     assert.equal(d.querySelectorAll('.desktop-product-card').length,72);
     const button=d.querySelector('.desktop-dept-button');const name=button.dataset.desktopDept;
@@ -286,7 +286,7 @@ test('principal: contenido inicial estable antes de ejecutar JavaScript',async()
  try{
   w.document.write(fs.readFileSync('index.html','utf8'));
   const d=w.document;
-  assert.equal(d.querySelectorAll('.discovery-card').length,14);
+  assert.equal(d.querySelectorAll('.discovery-card').length,16);
   assert.equal(d.querySelectorAll('#groups > .dept-header').length,16);
   assert.equal(d.querySelectorAll('.desktop-product-card').length,72);
   assert.equal(d.querySelectorAll('link[href*="fonts.googleapis.com"]').length,0);

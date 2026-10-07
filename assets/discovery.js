@@ -72,9 +72,9 @@
     const newEl=document.getElementById('newDiscoveryScroll');if(newEl)newEl.innerHTML=freshHtml;
     const c=document.getElementById('newDiscoveryCount');if(c)c.textContent=`${fresh.length} referencias`;
 
-    /* Selección editorial de ocho referencias con fotografía sobre blanco; no representa ventas medidas. */
+    /* Selección de productos destacados. */
     const FEATURED_REFS=window.GMA_CATALOG_CURATION.featured;
-    const best=FEATURED_REFS.map(findRef).filter(Boolean),bestHtml=best.map(x=>cardFor(x.it,x.id,'Top')).join('');
+    const best=FEATURED_REFS.map(findRef).filter(Boolean),bestHtml=best.map(x=>cardFor(x.it,x.id,['5524','5721'].includes(String(x.it.ref))?'Más vendido':'Top')).join('');
     const count=document.getElementById('bestDiscoveryCount');if(count)count.textContent=`${best.length} referencias`;
     const bestEl=document.getElementById('bestDiscoveryScroll');if(bestEl)bestEl.innerHTML=bestHtml;
   }
