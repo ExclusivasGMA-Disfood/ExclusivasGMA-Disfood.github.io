@@ -45,3 +45,7 @@
  .home-hero-mobile{display:block;width:100%;height:100%}
  .home-hero-mobile img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 }
+
+.home-hero-cesar{background:#fff}
+.home-hero-cesar>img{display:block;width:100%;height:100%;object-fit:contain}
+@media(max-width:600px){.home-hero-stage:has(>.home-hero-cesar:not([hidden])){aspect-ratio:1402/1122}}
