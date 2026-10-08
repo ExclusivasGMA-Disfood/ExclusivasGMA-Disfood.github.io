@@ -38,11 +38,11 @@
       "image": "images/hero/blinis-perdrier-ordenado.webp",
       "width": 2172,
       "height": 724,
-      "alt": "Canapés de salmón con blinis Domínguez, ref. 5811; salmón Supreme Domínguez, ref. 6058; crema de queso a las finas hierbas Soster, ref. 486. Para completar: eneldo y limón. Louis Perdrier Brut, ref. 4134, para acompañar.",
+      "alt": "Canapés de salmón con blinis Domínguez, ref. 5811; salmón Supreme Domínguez, ref. 6058; queso a las finas hierbas Soster, ref. 486. Louis Perdrier Brut, ref. 4134, para acompañar.",
       "layout": "panel",
       "split": 0.55,
       "mobile": {
-        "image": "images/hero/blinis-mobile-continuo.webp",
+        "image": "images/hero/blinis-mobile-productos-pequenos.webp",
         "width": 1067,
         "height": 1474
       }
