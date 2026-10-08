@@ -12,13 +12,18 @@
     },
     {
       "id": "cesar",
-      "image": "images/hero/cesar-beneolive.webp",
-      "width": 1402,
-      "height": 1122,
+      "image": "images/hero/cesar-beneolive-desktop.webp",
+      "width": 2170,
+      "height": 725,
       "alt": "Ensalada César con fingers ref. 6775, parmesano ref. 049, anchoas ref. 4599 y aceite BeneOlive ref. 6610.",
       "layout": "cover",
       "split": null,
-      "compact": true
+      "compact": true,
+      "mobile": {
+        "image": "images/hero/cesar-beneolive-mobile.webp",
+        "width": 1068,
+        "height": 1473
+      }
     },
     {
       "id": "aperitivo",

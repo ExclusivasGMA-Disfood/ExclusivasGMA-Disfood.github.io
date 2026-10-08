@@ -48,4 +48,4 @@
 
 .home-hero-cesar{background:#fff}
 .home-hero-cesar>img{display:block;width:100%;height:100%;object-fit:contain}
-@media(max-width:600px){.home-hero-stage:has(>.home-hero-cesar:not([hidden])){aspect-ratio:1402/1122}}
+@media(max-width:600px){.home-hero-cesar>img{display:none}}
