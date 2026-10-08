@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "image": "images/families/familias-rojo.webp",
+  "width": 1024,
+  "height": 1536,
+  "families": [
+    {
+      "name": "Aperitivos y tapas",
+      "crop": [
+        90,
+        22,
+        200,
+        190
+      ]
+    },
+    {
+      "name": "Verduras, setas y legumbres",
+      "crop": [
+        410,
+        35,
+        200,
+        172
+      ]
+    },
+    {
+      "name": "Quesos y lácteos",
+      "crop": [
+        735,
+        54,
+        235,
+        155
+      ]
+    },
+    {
+      "name": "Jamones y paletas",
+      "crop": [
+        60,
+        275,
+        265,
+        200
+      ]
+    },
+    {
+      "name": "Embutidos y charcutería",
+      "crop": [
+        390,
+        325,
+        250,
+        150
+      ]
+    },
+    {
+      "name": "Patés y foie",
+      "crop": [
+        744,
+        314,
+        230,
+        161
+      ]
+    },
+    {
+      "name": "Carnes y elaborados cárnicos",
+      "crop": [
+        66,
+        557,
+        232,
+        155
+      ]
+    },
+    {
+      "name": "Pescados y especialidades del mar",
+      "crop": [
+        378,
+        544,
+        282,
+        168
+      ]
+    },
+    {
+      "name": "Croquetas y bocados",
+      "crop": [
+        752,
+        533,
+        218,
+        179
+      ]
+    },
+    {
+      "name": "Postres y repostería",
+      "crop": [
+        83,
+        793,
+        200,
+        180
+      ]
+    },
+    {
+      "name": "Vinos y bebidas",
+      "crop": [
+        444,
+        785,
+        142,
+        195
+      ]
+    },
+    {
+      "name": "Navidad",
+      "crop": [
+        735,
+        786,
+        212,
+        196
+      ]
+    },
+    {
+      "name": "Menaje y servicios",
+      "crop": [
+        62,
+        1042,
+        265,
+        185
+      ]
+    },
+    {
+      "name": "Aceites, salsas y básicos",
+      "crop": [
+        413,
+        1024,
+        212,
+        195
+      ]
+    },
+    {
+      "name": "Pasta",
+      "crop": [
+        709,
+        1058,
+        285,
+        160
+      ]
+    },
+    {
+      "name": "Harinas, masas y panadería",
+      "crop": [
+        93,
+        1278,
+        245,
+        181
+      ]
+    },
+    {
+      "name": "Ingredientes profesionales de cocina",
+      "crop": [
+        429,
+        1270,
+        232,
+        195
+      ]
+    }
+  ]
+}
