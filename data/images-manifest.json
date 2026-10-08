@@ -108,6 +108,7 @@
   "701": "images/products/701.jpg",
   "708": "images/products/708.jpg",
   "709": "images/products/709.webp",
+  "735": "images/products/735-divella-capelli-angelo.jpg",
   "736": "images/products/736.jpg",
   "747": "images/products/747.jpg",
   "754": "images/products/754.jpg",
@@ -142,9 +143,9 @@
   ],
   "905": "images/products/905.jpg",
   "933": "images/products/933.jpg",
-  "941": "images/products/941.jpg",
+  "941": "images/products/941-didi.webp",
   "947": "images/products/947.jpg",
-  "956": "images/products/956.jpg",
+  "956": "images/products/956-didi.webp",
   "957": "images/products/957-granbologna.png",
   "959": "images/products/959-granbologna.png",
   "962": "images/products/962-granbologna.png",
@@ -960,6 +961,7 @@
   "6729": "images/products/6729.jpg",
   "6730": "images/products/6730.jpg",
   "6732": "images/products/6732.jpg",
+  "6734": "images/products/6734-ken-nata-sin-carragenato.png",
   "6735": "images/products/6735.webp",
   "6736": "images/products/6736.webp",
   "6737": "images/products/6737.webp",
@@ -1093,7 +1095,5 @@
   "059": "images/products/059.jpg",
   "062": "images/products/062.jpg",
   "064": "images/products/064.jpg",
-  "065": "images/products/065.jpg",
-  "6734": "images/products/6734-ken-nata-sin-carragenato.png",
-  "735": "images/products/735-divella-capelli-angelo.jpg"
+  "065": "images/products/065.jpg"
 }
